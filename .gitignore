@@ -1,6 +1,11 @@
 # Game Debug Files
 atlas*.bmp
 *.log
+*.txt
+*.dll
+*.exe
+*.pdb
+*vcxproj*
 
 # Saves And User Files
 Saves/
