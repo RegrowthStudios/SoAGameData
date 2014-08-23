@@ -1,0 +1,21 @@
+#Name                Persistance frequency, Octaves, Low, High 
+
+# The function for flora distribution is the following:
+# fheight = Scaled_N()
+# And it is multiplied by the normal probability of the plant
+
+White_Flowers        0.45        0.01       3       -9    10
+Tall_Grass           0.45        0.01       3        1    2
+Tall_Weed            0.45        0.01       3        1    2
+Yellow_Grass         0.45        0.01       3        1    2
+Dry_Grass            0.45        0.01       3        1    2
+Red_Flower_Grass     0.45        0.01       3       -9    10
+Tall_Light_Grass     0.45        0.01       3        1    2
+Red_Bush             0.45        0.01       3       -9    10
+Short_Dark_Grass     0.45        0.01       3       -9    10
+Jungle_Plant_1       0.45        0.01       3       -9    10
+Blue_Flowers         0.45        0.01       3       -9    10
+Large_Yellow_Flower  0.45        0.01       3       -9    10
+Purple_Flower        0.45        0.01       3       -9    10
+Heart_Flower         0.45        0.01       3       -9    10
+Dandilion            0.45        0.01       3       -9    10

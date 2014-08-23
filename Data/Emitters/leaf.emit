@@ -1,0 +1,9 @@
+minDuration= 0
+minSize= 3
+maxSize= 6
+spawnTime= 1
+type= LINEAR
+initialVel= 0.03,-0.03,0.0
+particle= %TexturePack/Particle/leaf.png
+posOffset= 0,1.0,0
+randPosOffset= 0.5,0.5,0.5

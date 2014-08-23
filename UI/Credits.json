@@ -1,0 +1,88 @@
+{
+	"animation": "scramble",
+	"animationSpeed": 100,
+	"colors": {
+		"type": "colorDef",
+		"_comment": "Define colors here and use them later in the file.",
+		"colorLB1": {
+			"r": 39,"g": 187,"b": 228,"a": 255
+		},
+		"colorLB2": {
+			"r": 23,"g": 88,"b": 143,"a": 255
+		},
+		"colorGrey": {
+			"r": 128,"g": 128,"b": 128,"a":255
+		},
+        "colorAlpha": {
+			"r": 0,"g": 0,"b": 0,"a": 0
+		}
+	},
+    "background": {
+		"type": "texture",
+		"x": 0, "y": 92,
+		"width": 624, "height": 584,
+		"lColor": "colorLB2",
+		"rColor": "colorAlpha"
+	},
+	"creditsText": {
+		"type": "text",
+		"text": "Credits",
+		"justification": "center",
+		"x": 512,
+		"y": 620,
+		"textSize": 70
+	},
+	"buttonList1": {
+		"type": "buttonList",
+		"x": 25,
+		"y": 514,
+		"width": 1100,
+		"height": 41,
+		"padding": 10,
+		"lHoverColor": "colorLB1",
+
+		"_comment" : "buttons makes array objects implicitly button type",
+		"buttons": [
+			{
+				"text": "Lead Dev/Programmer: Benjamin Arnold",
+				"func": 0
+			},
+			{
+				"text": "Designer: Sebastian Corfitzen",
+				"func": 0
+			},
+            {
+				"text": "Designer: Anthony Keeton",
+				"func": 0
+			},
+			{
+				"text": "Sound/Music: Joshua Arnold",
+				"func": 0
+			},
+      {
+				"text": "Game Programmer: Cristian Zaloj",
+				"func": 0
+			},
+			{
+				"text": "Web Dev: Matthew Marshall",
+				"func": 0
+			},
+            {
+				"text": "Web Dev: Jesse Leskinen",
+				"func": 0
+			},
+			{
+				"text": "Artist: Georg Hammerschmid",
+				"func": 0
+			},
+            {
+				"text": "3D Artist: Andreas Ressl",
+				"func": 0
+			},
+			{
+				"text": "Back",
+				"func": 10
+			}
+		]
+	}
+}

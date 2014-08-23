@@ -172,3 +172,11 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+
+# Game Debug Files
+atlas*.bmp
+
+# Saves And User Files
+Saves/
+Data/options.ini
+Data/KeyConfig.ini

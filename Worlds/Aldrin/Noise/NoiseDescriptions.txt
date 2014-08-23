@@ -1,0 +1,133 @@
+[0]
+Default Noise
+Terrain influence is governed by:
+
+height += md * scaled_octave_noise_3d(octaves, persistence, frequency, lowBound, upBound, x, y, z);
+[1]
+Small Mountains
+Terrain influence is governed by:
+
+h = scaled_ridged_octave_noise_3d(octaves, persistence, frequency, lowBound, upBound, x, y, z);
+if (h > 16.0){
+    height += md * pow((h-16.0) * scale, 1.25); 
+}
+[2]
+Largs Mountains + Lakes
+Terrain influence is governed by:
+
+h = scaled_octave_noise_3d(octaves, persistence, frequency, lowBound, upBound, x, y, z);
+if (h > 7.5){
+    height += md * pow((h-7.5) * scale, 1.50);
+}else if (h < 4.0){
+    height -= md * ABS(4.0-h)/4 * scale*40;
+}
+[3]
+Hills + Plateaus
+Terrain influence is governed by:
+
+h = scaled_octave_noise_3d(octaves, persistence, frequency, lowBound, upBound, x, y, z);
+if (h > 7.42){ //plateaus
+    flags |= PLATEAU;
+    height += md * (h-7.42) * 10 + 0.015*4000 + 0.505*scale;
+}else if (h > 7.405){
+    flags |= PLATEAU;
+    height += md * (h-7.405) * 4000 + 0.505*scale;
+}else if (h > 6.9){
+    flags |= PLATEAU;
+    height += md * (h-6.9) * scale;
+}
+[4]
+Seaside Cliffs
+Terrain influence is governed by:
+
+if (height < 100 && height > -10)
+{
+    h = scaled_octave_noise_3d(octaves, persistence, frequency, lowBound, upBound, x, y, z);
+    if (height > 0){
+        if (h > 2){
+            height += md * (h-2.0)*(100 - height);
+        }else if (h < 1.5){
+            height -= md * (height*(125.0/128.0) - (height)*(height)*(height)*(height)*(height)/102400000.0)*(1.5-h)*1.5;
+        }
+    }else{
+        if (h > 2){
+            height -= md * (h-2.0)*(11 + height);
+        }
+    }
+}
+[5]
+Ridged
+Terrain influence is governed by:
+
+height += scaled_ridged_octave_noise_3d(octaves, persistence, frequency, lowBound, upBound, x, y, z);
+[6]
+Billowy Hills
+Terrain influence is governed by:
+
+height += md * scaled_reverse_ridged_octave_noise_3d(octaves, persistence, frequency, lowBound, upBound, x, y, z);
+[7]
+Jagged Cliffs
+Terrain influence is governed by:
+
+h = (octave_noise_3d(octaves, persistence, frequency, x, y, z)+1.0)*5.0; //number between 0 and 10
+//if h is 0.1 or less greater than the lowest integer value, it is a steep slope and we multiply by 10,
+//otherwise its a flat top
+if ((h > 1.1) && ((int)h > (int)(h-0.1))){ //steep part
+    h = ((int)h-1)+(h-(int)h)*10.0;
+}else{ //flat part
+    h = (int)h; 
+}
+height += md * h*scale;
+[8]
+Huge Mountains
+Terrain influence is governed by:
+
+height += md * scaled_ridged_octave_noise_2d(octaves, persistence, frequency, lowBound, upBound, x, z)*scale;
+[9]
+Volcanoes
+Terrain influence is governed by:
+
+h = octave_noise_3d(octaves, persistence, frequency,  x, y, z);
+if (h > 0.77){
+    height *= md * MAX(0,(1.0 - (h-0.45)*2));
+    flags |= VOLCANO;
+    height += md * scale*1.08 - (0.05)*scale*12.0 - (h-0.77)*scale*6.0;
+}else if (h > 0.72){
+    height *= md * MAX(0,(1.0 - (h-0.45)*2));
+    flags |= VOLCANO;
+    height += md * scale*1.08 - (h-0.72)*scale*12.0;
+}else if (h > 0.45){
+    height *= md * MAX(0,(1.0 - (h-0.45)*2));
+    flags |= VOLCANO;
+    height += md * (h-0.45)*scale*4;
+}
+[10]
+Canyons
+Terrain influence is governed by:
+
+h = (octave_noise_3d(octaves, persistence, frequency, x, y, z)+1.0)*50.0; //0-100
+off = 5.0;
+if (h < 40.0+off){ //gradual slope up
+    //height += (h-(20.0+off))*0.05*scale;
+    height += md * scale;
+}else if (h < 50.0+off){ //steep down
+    if ((int)h > (int)(h-0.2)){ //steep part
+        h = ((int)h)+(h-(int)h)*2.5-(40.0+off);
+    }else{ //flat part
+        h = ((int)h)+0.5-(40.0+off)+(h-(int)h-0.2)*0.625;
+    }
+    height += md * (scale - (h)*scale*0.1);
+}else if (h < 55.0+off){ //gradual down
+    height += md * (-(h-(50.0+off))*0.025*scale);
+}else if (h < 60.0+off){ //gradual up
+    height += md * (-(5.0-(h-(55.0+off)))*0.025*scale);
+}else if (h < 70.0+off){ //steep up
+    if ((int)h > (int)(h-0.2)){ //steep part
+        h = ((int)h)+(h-(int)h)*2.5-(60.0+off);
+    }else{ //flat part
+        h = ((int)h)+0.5-(60.0+off)+(h-(int)h-0.2)*0.625;
+    }
+    height += md * (h)*scale*0.1;
+}else if (h > 70.0+off){ //top
+    height += md * scale;
+}

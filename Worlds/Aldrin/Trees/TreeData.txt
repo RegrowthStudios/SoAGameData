@@ -1,0 +1,40 @@
+#										TreeData
+# READ THE README!
+# Register all trees here!
+
+#Tree name             file name
+
+Banzai                 Trees/Banzai.soatree
+Willow                 Trees/Willow.soatree
+Big_Willow             Trees/Big_Willow.soatree
+Desert                 Trees/Desert.soatree
+Palm                   Trees/Palm.soatree
+Pine                   Trees/Pine.soatree
+Standard_Deciduous1    Trees/Standard_Deciduous1.soatree
+Standard_Deciduous2    Trees/Standard_Deciduous2.soatree
+Standard_Deciduous1Dead    Trees/Standard_Deciduous1Dead.soatree
+Standard_Deciduous2Dead    Trees/Standard_Deciduous2Dead.soatree
+Swamp1                 Trees/Swamp1.soatree
+Tall_Jungle1           Trees/Tall_Jungle1.soatree
+Poplar                 Trees/Poplar.soatree
+Crown_Deciduous        Trees/Crown_Deciduous.soatree
+Blossom1               Trees/Blossom1.soatree
+DeadTree               Trees/DeadTree.soatree
+MassiveTree            Trees/MassiveTree.soatree
+RedwoodTree            Trees/RedwoodTree.soatree
+
+Grey_Mushroom          Mushrooms/Grey_Mushroom.soatree
+Blue_Mushroom          Mushrooms/Blue_Mushroom.soatree
+Purple_Mushroom        Mushrooms/Purple_Mushroom.soatree
+Dark_Blue_Mushroom2    Mushrooms/Dark_Blue_Mushroom2.soatree
+Purple_Mushroom2       Mushrooms/Purple_Mushroom2.soatree
+Dark_Blue_Mushroom3    Mushrooms/Dark_Blue_Mushroom3.soatree
+Dark_Purple_Mushroom   Mushrooms/Dark_Purple_Mushroom.soatree
+Grey_Mushroom2         Mushrooms/Grey_Mushroom2.soatree
+Dark_Blue_Mushroom     Mushrooms/Dark_Blue_Mushroom.soatree
+Blue_Mushroom2         Mushrooms/Blue_Mushroom2.soatree
+
+Boulder                Other/Boulder.soatree
+Bush1                  Other/Bush1.soatree
+Spike                  Other/Spike.soatree
+SpikeSmall             Other/SpikeSmall.soatree

@@ -1,0 +1,156 @@
+{
+	"animation": "fadeIn",
+	"animation": "fadeOut",
+	"animationSpeed": 100,
+	"colors": {
+		"type": "colorDef",
+		"_comment": "Define colors here and use them later in the file.",
+		"colorLB1": {
+			"r": 39,"g": 187,"b": 228,"a": 255
+		},
+		"colorLB2": {
+			"r": 23,"g": 88,"b": 143,"a": 255
+		},
+        "colorLightGrey": {
+			"r": 150,"g": 150,"b": 150,"a": 150
+		},
+		"colorAlpha": {
+			"r": 0,"g": 0,"b": 0,"a": 0
+		}
+	},
+	"background": {
+		"type": "texture",
+		"x": 0,
+		"y": 32,
+		"width": 512,
+		"height": 708,
+		"lColor": "colorLB2",
+		"rColor": "colorAlpha"
+	},
+     "texturePackBackground": {
+		"type": "texture",
+		"x": 675,
+		"y": 49,
+		"width": 683,
+		"height": 683,
+		"color": "colorLightGrey"
+	},
+    "texturePack": {
+		"type": "texture",
+		"x": 675,
+		"y": 49,
+		"width": 683,
+		"height": 683,
+        "source": "TEXTUREPACK"
+	},
+	"textureText": {
+		"type": "text",
+		"text": "Texture Packs",
+		"justification": "center",
+		"x": 256,
+		"y": 700,
+		"textSize": 30
+	},
+    "descriptionBackground": {
+    	"type": "texture",
+		"x": 20,
+		"y": 132,
+		"width": 512,
+		"height": 300,
+		"lColor": "colorLightGrey",
+		"rColor": "colorLightGrey"
+    },
+    "descriptionText": {
+		"type": "text",
+        "maxWidth": 700,
+		"text": "",
+		"justification": "left",
+		"x": 36,
+		"y": 420,
+		"textSize": 23
+	},
+	"selectPack": {
+		"type": "button",
+		"text": "Select Pack:",
+		"x": 20,
+		"y": 624,
+		"width": 470,
+		"height": 30,
+		"padding": 0,
+		"justification": "left",
+		"lHoverColor": "colorLB1",
+		"childPad": 13,
+		"childHeight": 22,
+        "alwaysOpen": 1,
+		"childBoxLColor": "colorLB2",
+        "hoverFunc": "TEXTUREPACK_DESCRIPTION",
+        "maxHeight": 140,
+		"_comment" : "for slider, type is implied",
+		 "slider": {
+			"x": 545,
+			"y": 526,
+			"width": 20,
+			"height": 105,
+			"slideSize": 30,
+			"frontColor": "colorLB1",
+			"backColor": "colorLB2",
+			"isVertical": 1
+		},
+		"displayVariable": "texturePackName",
+		"variable": "texturePackName",
+		"func" : 0,
+		"generateButtonsFrom": "Textures/TexturePacks/"		
+	},
+    "resLabel": {
+		"type": "button",
+		"x": 846,
+		"y": 10,
+		"width": 355,
+		"height": 30,
+		"text": "Resolution:",
+		"justification": "left",
+        "color": "colorLB2",
+		"hoverColor": "colorLB2",
+        "displayVariable": "currTextureRes",
+		"func": 0
+	},
+    "increaseRes": {
+		"type": "button",
+		"x": 1243,
+		"y": 10,
+		"width": 30,
+		"height": 30,
+        "textSize": 35,
+        "textJustification": "center",
+		"text": "+",
+		"justification": "left",
+        "color": "colorLB2",
+		"hoverColor": "colorLB1",
+		"func": 5001
+	},
+    "decreaseRes": {
+		"type": "button",
+		"x": 1208,
+		"y": 10,
+		"width": 30,
+		"height": 30,
+        "textSize": 35,
+        "textJustification": "center",
+		"text": "-",
+		"justification": "left",
+        "color": "colorLB2",
+		"hoverColor": "colorLB1",
+		"func": 5000
+	},
+	"backButton": {
+		"type": "button",
+		"x": 30,
+		"y": 40,
+		"width": 750,
+		"height": 35,
+		"text": "Back",
+		"justification": "left",
+		"lHoverColor": "colorLB1",
+		"func": 10
+	}
+}

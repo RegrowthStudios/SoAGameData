@@ -1,0 +1,47 @@
+#BASE (will be overwritten by child biomes
+Surface_Block_ID: 2
+Underwater_Block_ID: 1
+Beach_Block_ID: 2
+Base_Tree_Chance: 0.0015
+
+# If active is set to 1, far terrain will use this color rather
+# than the blended color map, unless there is snow or sand present.
+# Good for when surface block is not grass, or when debugging.
+# If active is set to 2, then it will be forced to be this color at all
+# times.
+
+#               Active  R   G   B
+Terrain_Color:  0       255 0   0   
+
+Tree_List:
+#   Name                Probability
+    Swamp1              2.000
+
+Flora_List:
+#   Name                Probability
+    Short_Dark_Grass           0.5
+	
+Min_Temp: 90.0
+Max_Temp: 160.0
+Temp_Slope_Length: 6.0
+Min_Rain: 185.0
+Max_Rain: 999.0
+Rain_Slope_Length: 6.0
+Max_Height: 600
+Max_Height_Slope_Length: 300
+
+Min_Terrain_Mult: 0.00
+Apply_Biome_At: 1.0
+
+Child_Biomes:
+#   Name                FileName
+Mushroom_Swamp          ChildBiomes/Mushroom_Swamp.txt
+
+Distribution_Noise:
+#Persistance frequency, Octaves,  Occurance,    SlopeWidth
+0.45         0.0001     2         0.9          0.1
+
+Unique_Terrain_Noise:
+#boggy waters
+#Type	Persistance frequency,  Octaves, Low, High, Scale, Composition
+0       0.55        0.00053      5        -10   3    0      0

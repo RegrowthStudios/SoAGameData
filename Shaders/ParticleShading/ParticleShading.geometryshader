@@ -1,0 +1,176 @@
+#version 330
+
+layout (points) in;
+layout (triangle_strip) out;
+layout (max_vertices = 24) out;
+
+uniform mat4 gVP;
+uniform vec2 UVstart;
+uniform float UVwidth;
+
+in vec2 particleLight[];
+flat in vec4 ModelMat0[];
+flat in vec4 ModelMat1[];
+flat in vec4 ModelMat2[];
+flat in vec4 ModelMat3[];
+
+out vec3 distVec;
+out vec2 UV;
+out vec2 light;
+
+void main()
+{
+	float halfSize = 0.175;
+	vec3 newPos;
+	vec3 up = vec3(0.0, 1.0, 0.0);
+	mat4 Model = mat4(ModelMat0[0], ModelMat1[0], ModelMat2[0], ModelMat3[0]);
+    vec3 pos = gl_in[0].gl_Position.xyz;
+	mat4 MVP = gVP * Model;
+	
+	light = particleLight[0];
+	distVec = vec3(Model * vec4(pos, 1.0));
+	
+	// FRONT
+	
+	newPos = pos + vec3(-halfSize, halfSize, halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+    UV = vec2(UVstart[0], UVstart[1]);
+    EmitVertex();
+
+	newPos = pos + vec3(-halfSize, -halfSize, halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+    UV = vec2(UVstart[0], UVstart[1]+UVwidth);
+    EmitVertex();
+
+	newPos = pos + vec3(halfSize, halfSize, halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+    UV = vec2(UVstart[0]+UVwidth, UVstart[1]);
+    EmitVertex();
+	
+	newPos = pos + vec3(halfSize, -halfSize, halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+	UV = vec2(UVstart[0]+UVwidth, UVstart[1]+UVwidth);
+    EmitVertex();
+	
+	EndPrimitive();
+	
+	//LEFT
+	
+	newPos = pos + vec3(-halfSize, halfSize, -halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+    UV = vec2(UVstart[0], UVstart[1]);
+    EmitVertex();
+
+	newPos = pos + vec3(-halfSize, -halfSize, -halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+    UV = vec2(UVstart[0], UVstart[1]+UVwidth);
+    EmitVertex();
+
+	newPos = pos + vec3(-halfSize, halfSize, halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+    UV = vec2(UVstart[0]+UVwidth, UVstart[1]);
+    EmitVertex();
+	
+	newPos = pos + vec3(-halfSize, -halfSize, halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+	UV = vec2(UVstart[0]+UVwidth, UVstart[1]+UVwidth);
+    EmitVertex();
+	
+	EndPrimitive();
+	
+	//RIGHT
+	
+	newPos = pos + vec3(halfSize, halfSize, halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+    UV = vec2(UVstart[0], UVstart[1]);
+    EmitVertex();
+
+	newPos = pos + vec3(halfSize, -halfSize, halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+    UV = vec2(UVstart[0], UVstart[1]+UVwidth);
+    EmitVertex();
+
+	newPos = pos + vec3(halfSize, halfSize, -halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+	UV = vec2(UVstart[0]+UVwidth, UVstart[1]);
+    EmitVertex();
+	
+	newPos = pos + vec3(halfSize, -halfSize, -halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+	UV = vec2(UVstart[0]+UVwidth, UVstart[1]+UVwidth);
+    EmitVertex();
+	
+	EndPrimitive();
+	
+	//BACK
+	
+	newPos = pos + vec3(halfSize, halfSize, -halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+    UV = vec2(UVstart[0], UVstart[1]);
+    EmitVertex();
+
+	newPos = pos + vec3(halfSize, -halfSize, -halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+    UV = vec2(UVstart[0], UVstart[1]+UVwidth);
+    EmitVertex();
+
+	newPos = pos + vec3(-halfSize, halfSize, -halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+    UV = vec2(UVstart[0]+UVwidth, UVstart[1]);
+    EmitVertex();
+	
+	newPos = pos + vec3(-halfSize, -halfSize, -halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+	UV = vec2(UVstart[0]+UVwidth, UVstart[1]+UVwidth);
+    EmitVertex();
+	
+	EndPrimitive();
+	
+	//BOTTOM
+	
+	newPos = pos + vec3(-halfSize, -halfSize, -halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+    UV = vec2(UVstart[0], UVstart[1]);
+    EmitVertex();
+
+	newPos = pos + vec3(halfSize, -halfSize, -halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+    UV = vec2(UVstart[0], UVstart[1]+UVwidth);
+    EmitVertex();
+
+	newPos = pos + vec3(-halfSize, -halfSize, halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+	UV = vec2(UVstart[0]+UVwidth, UVstart[1]);
+    EmitVertex();
+	
+	newPos = pos + vec3(halfSize, -halfSize, halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+	UV = vec2(UVstart[0]+UVwidth, UVstart[1]+UVwidth);
+    EmitVertex();
+	
+	EndPrimitive();
+	
+	//TOP
+
+	newPos = pos + vec3(halfSize, halfSize, halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+    UV = vec2(UVstart[0], UVstart[1]);
+    EmitVertex();
+
+	newPos = pos + vec3(halfSize, halfSize, -halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+    UV = vec2(UVstart[0], UVstart[1]+UVwidth);
+    EmitVertex();
+
+	newPos = pos + vec3(-halfSize, halfSize, halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+    UV = vec2(UVstart[0]+UVwidth, UVstart[1]);
+    EmitVertex();
+	
+	newPos = pos + vec3(-halfSize, halfSize, -halfSize);
+    gl_Position = MVP * vec4(newPos, 1.0);
+	UV = vec2(UVstart[0]+UVwidth, UVstart[1]+UVwidth);
+    EmitVertex();
+	
+	EndPrimitive();
+} 

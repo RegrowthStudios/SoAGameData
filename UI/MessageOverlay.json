@@ -1,0 +1,53 @@
+{
+	"animation": "fadeIn",
+	"animation": "fadeOut",
+	"animationSpeed": 100,
+	"colors": {
+		"type": "colorDef",
+		"_comment": "Define colors here and use them later in the file.",
+		"colorLB1": {
+			"r": 39,"g": 187,"b": 228,"a": 255
+		},
+		"colorLB2": {
+			"r": 23,"g": 88,"b": 143,"a": 255
+		},
+		"colorAlpha": {
+			"r": 0,"g": 0,"b": 0,"a": 0
+		}
+	},
+	"background": {
+		"type": "texture",
+		"x": 0,
+		"y": 252,
+		"width": 1498,
+		"height": 240,
+		"lColor": "colorLB2",
+		"rColor": "colorAlpha"
+	},
+	"confirmText": {
+		"type": "text",
+        "text": "Text Here",
+		"justification": "center",
+		"x": 683,
+		"y": 450,
+		"textSize": 25
+	},
+	"buttonList1": {
+		"type": "buttonList",
+		"x": 0,
+		"y": 344,
+		"width": 1366,
+		"height": 35,
+		"padding": 0,
+		"justification": "center",
+		"lHoverColor": "colorLB1",
+	
+		"_comment" : "buttons makes array objects implicitly button type",
+		"buttons": [
+			{
+				"text": "OK",
+				"func": -4
+			}
+		]
+	}
+}

@@ -1,0 +1,13 @@
+Texture contributors for the default pack:
+
+- Sebastian Corfitzen
+Inventory GUI buttons
+
+- Jay X
+TNT
+
+- Sir_Moodz
+Black Powder boxes and crates, ANFO
+
+- Scuttles
+Small cyan and pink mushrooms, mushroom cap blocks, purple and big yellow flowers, Submarium, Grass top texture

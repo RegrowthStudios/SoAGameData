@@ -1,0 +1,33 @@
+#To add a biome, add it here.
+
+#All lines preceded by # are ignored
+#The HexColor is the associated color in the BiomeMap
+
+Biome_Map_Filename: BiomeMap.png
+Biome_Color_Filename: BiomeColorBlended.png
+Water_Color_Filename: WaterColor.png
+
+#BIOMES SPECIFIED LAST WILL OVERWRITE PREVIOUS BIOMES IF THEY OVERLAP
+
+Base_Biomes:
+#Default biomes, simply so that there is always a biome in place.
+#BiomeName         FileName                           BiomeMap.png HexColor
+Frozen_Wasteland   BaseBiomes/Frozen_Wasteland.txt    00f2e3
+Tundra             BaseBiomes/Tundra.txt              00a9e3
+Taiga              BaseBiomes/Taiga.txt               00a99d
+Jungle             BaseBiomes/Jungle.txt              1a9540
+Dry_Plains         BaseBiomes/Dry_Plains.txt          979768
+Grassland          BaseBiomes/Grassland.txt           8ce31b
+Arid_Badlands      BaseBiomes/Arid_Badlands.txt       e6e69e
+Savannah           BaseBiomes/Savannah.txt            e2e401
+Temperate_Forest   BaseBiomes/Temperate_Forest.txt    1a661b
+Sparse_Forest      BaseBiomes/Sparse_Forest.txt       6c771a
+
+
+Main_Biomes:
+#BiomeName          FileName
+Swamp               MainBiomes/Swamp.txt   
+Semiarid_Desert     MainBiomes/Semiarid_Desert.txt        
+Sandy_Desert        MainBiomes/Sandy_Desert.txt    
+Banzai_Forest       MainBiomes/Banzai_Forest.txt
+Blossom_Grove       MainBiomes/Blossom_Grove.txt

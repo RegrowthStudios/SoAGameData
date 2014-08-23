@@ -1,0 +1,48 @@
+#BASE (will be overwritten by child biomes
+Surface_Block_ID: 5
+Underwater_Block_ID: 5
+Beach_Block_ID: 5
+Base_Tree_Chance: 0.00001
+
+# If active is set to 1, far terrain will use this color rather
+# than the blended color map, unless there is snow or sand present.
+# Good for when surface block is not grass, or when debugging.
+# If active is set to 2, then it will be forced to be this color at all
+# times.
+
+#               Active  R   G   B
+Terrain_Color:  0       255 0   0   
+
+Tree_List:
+#   Name                Probability
+    Palm                2.000
+
+Flora_List:
+#   Name                Probability
+	
+Min_Temp: 120.0
+Max_Temp: 999.0
+Temp_Slope_Length: 10.0
+Min_Rain: -999.0
+Max_Rain: 65.0
+Rain_Slope_Length: 10.0
+Max_Height: 1000
+Max_Height_Slope_Length: 500
+
+Min_Terrain_Mult: 0.04
+Apply_Biome_At: 0.2
+
+Child_Biomes:
+#   Name                FileName
+Oasis                   ChildBiomes/Oasis.txt
+
+Distribution_Noise:
+#Persistance frequency, Octaves,  Occurance,    SlopeWidth
+0.45         0.0001     3         0.65          0.2
+
+Unique_Terrain_Noise:
+#Type	Persistance frequency,  Octaves, Low, High, Scale, Composition
+0       0.55        0.0004      4        10   30    0      0
+#Sand Dunes
+#Type	Persistance frequency,  Octaves, Low, High, Scale, Composition
+5       0.45        0.002      3        -100    150   0      1

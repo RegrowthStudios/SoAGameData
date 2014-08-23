@@ -1,0 +1,8 @@
+minDuration= 0
+minSize= 30
+maxSize= 36
+spawnTime= 8
+type= STATIC
+particle= %TexturePack/Particle/fire_sulfur.png
+posOffset= 0,0,0
+randPosOffset= 0.5,0.5,0.5

@@ -1,0 +1,10 @@
+minDuration= 0
+maxDuration= 4000
+minSize= 4,1
+maxSize= 36,5
+spawnTime= 7,2
+type= LINEAR
+initialVel= 0.03,0.03,0.0
+particle= %TexturePack/Particle/smoke.png
+posOffset= 0,0.0,0
+randPosOffset= 0.5,0.5,0.5

@@ -1,0 +1,33 @@
+#Temperate_Forest
+
+#BASE (will be overwritten by any child biomes
+Surface_Block_ID: 2
+Underwater_Block_ID: 5
+Beach_Block_ID: 5
+Base_Tree_Chance: 0.002
+
+# If active is set to 1, far terrain will use this color rather
+# than the blended color map. Good for when surface block is 
+# not grass, or when debugging.
+
+#               Active  R   G   B
+Terrain_Color:  0       255   0   0   
+
+Tree_List:
+#   Name                 Probability
+    Standard_Deciduous1  0.500
+    Crown_Deciduous      0.25
+    Poplar               0.25
+    Standard_Deciduous2  0.600
+    Willow               0.300
+    Big_Willow           0.100
+
+
+Flora_List:
+#   Name                Probability
+    Tall_Grass          0.1
+    Tall_Weed           0.05
+    Red_Flower_Grass    0.05
+    Red_Bush            0.01
+    Tall_Light_Grass    0.02
+    Dry_Grass           0.02

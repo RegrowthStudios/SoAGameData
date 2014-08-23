@@ -1,0 +1,9 @@
+minDuration= 0
+maxDuration= 10
+minSize= 30
+maxSize= 36
+spawnTime= 20,5
+type= LINEAR
+particle= %TexturePack/Particle/fire_gas.png
+posOffset= 0,0,0
+randPosOffset= 0.5,0.5,0.5

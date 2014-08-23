@@ -1,0 +1,49 @@
+#BASE (will be overwritten by child biomes
+Surface_Block_ID: 2
+Underwater_Block_ID: 5
+Beach_Block_ID: 5
+Base_Tree_Chance: 0.0015
+
+# If active is set to 1, far terrain will use this color rather
+# than the blended color map, unless there is snow or sand present.
+# Good for when surface block is not grass, or when debugging.
+# If active is set to 2, then it will be forced to be this color at all
+# times.
+
+#               Active  R   G   B
+Terrain_Color:  0       255  0   0   
+
+Tree_List:
+#   Name                Probability
+    Blossom1      2.0
+
+Flora_List:
+#   Name                Probability
+	Tall_Grass          0.1
+    Tall_Weed           0.02
+    White_Flowers       0.2
+    Red_Flower_Grass    0.2
+    Red_Bush            0.005
+    Blue_Flowers        0.05
+    Dandilion           0.1
+    Purple_Flower       0.1
+    Large_Yellow_Flower 0.05
+    
+Min_Temp: 83.0
+Max_Temp: 166.0
+Temp_Slope_Length: 6.0
+Min_Rain: 100.0
+Max_Rain: 160.0
+Rain_Slope_Length: 6.0
+
+Min_Terrain_Mult: 0.6
+Apply_Biome_At: 0.5
+
+Child_Biomes:
+#   Name                FileName
+
+Distribution_Noise:
+#Persistance frequency, Octaves,  Occurance,    SlopeWidth
+0.45         0.000035     2         0.3          0.05
+
+Unique_Terrain_Noise:

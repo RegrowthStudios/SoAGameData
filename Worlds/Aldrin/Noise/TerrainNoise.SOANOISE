@@ -1,0 +1,58 @@
+# This is where the values for noise functions go. 
+# Lines preceded with a '#' symbol are ignored. Feel free to add notes.
+
+# NOTE: More octaves means slower generation, but more detailed results.
+# THIS FORMAT IS TEMPORARY!
+
+# $ means that the function is a modifier to the previous function, and determines where the previous function exists.
+# right now there can only be one $ modifier per noise function
+# DO NOT ADD OR REMOVE ANY $ FUNCTIONS! The engine doesn't yet support it.
+
+# not all noise functions use scale, but dont remove the 0 if it is there.
+
+#Type	Persistance frequency,  Octaves, Low, High, Scale 
+
+#Base Noise
+#Type	Persistance frequency,  Octaves, Low, High, Scale 
+0       0.45        0.0006      6        0    250   0
+
+#Small Mountains
+#Type	Persistance frequency,  Octaves, Low, High, Scale 
+1       0.5        0.000005   7       0    22    300
+
+#Large Mountains and Lakes
+#Type	Persistance frequency,  Octaves, Low, High, Scale 
+2       0.53        0.000006    7       1    10    350
+
+#Hills and Plateaus
+#Type	Persistance frequency,  Octaves, Low, High, Scale 
+3       0.52        0.00001     8        0    10    1200
+
+#Billowy Hills
+#Type	Persistance frequency,  Octaves, Low, High, Scale 
+6		0.7         0.0008      3        0    1000  1
+#                                    wavecut mult
+$ 0      0.7        0.00001   1       0.8    15   1
+
+#Jagged Cliffs
+#Type	Persistance frequency,  Octaves, Low, High, Scale 
+7		0.56        0.00025     7        0    1     80
+$ 0     0.7         0.00003     6        0.5  5     1
+
+#Mega Mountain    NOT IN USE. DON'T UNCOMMENT
+#Type	Persistance frequency,  Octaves, Low, High, Scale 
+#8      0.52        0.00009     9        1    2     8000    
+#$ 0     0.45        0.0000016   6        0.7  10    1
+
+#Volcanoes
+#Type	Persistance frequency,  Octaves, Low, High, Scale 
+#9      0.45        0.000006    2        1    2     7000 
+
+#Giant Canyons
+#Type	Persistance frequency,  Octaves, Low, High, Scale 
+10      0.5         0.000036    6        1    2     2500 
+$ 0     0.45        0.0000026   6        0.7  18    1
+
+#Oceans
+#Type	Persistance frequency,  Octaves, Low, High, Scale 
+11      0.44         0.0000002    6       -2.5    1    10000 

@@ -1,0 +1,30 @@
+#Dont remove any of these noise functions or change their types. But feel free to change other values
+#The game will look for these specifically and possibly crash if they are not found.
+
+#Cliffs distribution function
+#Type	Persistance frequency,  Octaves, Low, High, Scale 
+4       0.72        0.00012     6        0    3     1
+
+#Rivers Function
+#Type	Persistance frequency,  Octaves, Low, High, Scale 
+10000      0.4         0.00002     5        0    1     1
+
+#Tributaries Function
+#Type	Persistance frequency,  Octaves, Low, High, Scale 
+10001      0.4         0.0002      5        0    1     1  
+
+#Biome offset noise function
+#Type	Persistance frequency,  Octaves, Low, High, Scale 
+10002      0.52        1.0         1       -1    1     1
+
+#post river preturberance noise function
+#Type	Persistance frequency,  Octaves, Low, High, Scale 
+10003      0.4         0.009       3       -1    8     0
+
+#Temperature
+#Type	Persistance frequency,  Octaves, Low, High, Scale 
+10004      0.49        0.000001    7     100   150   0
+
+#Rainfall
+#Type	Persistance frequency,  Octaves, Low, High, Scale 
+10005      0.53        0.0000008     7        -40    350   0

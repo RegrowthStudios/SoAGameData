@@ -1,0 +1,58 @@
+#                        Leaves
+#Color Types
+
+#You currently MUST specify all needed colors.
+		
+#LEAVES1 ID 288
+#SET 0: 9 Colors
+#     R   G   B
+      2  54   0
+      5  52   4
+      7  96   3
+      3  84   9
+      9  65   6
+      7  40   2
+      0  35   0
+      17  91  2
+      15  102 2
+
+#SET 1: 4 Colors
+#     R   G   B
+      135 154 36
+      134 210 53
+      69  230 44
+      107 193 70
+	  
+#SET 2: 4 Colors
+#     R   G   B
+      80  81  46
+      69  98  17
+      93  126 26
+	  
+#LEAVES2 ID 289
+#SET 0: 9 Colors
+#     R   G   B
+      2  54   0
+      5  52   4
+      7  96   3
+      3  84   9
+      9  65   6
+      7  40   2
+      0  35   0
+      17  91  2
+      15  102 2
+
+#SET 1: 4 Colors
+#     R   G   B
+      223 32  85
+      255 255 255
+      238 159 187
+      186 65  133
+	  
+#SET 2: 4 Colors
+#     R   G   B
+      200  81  255
+      200  98  200
+      200  126 255
+	  
+	  

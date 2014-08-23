@@ -1,0 +1,8 @@
+minDuration= 0
+minSize= 250
+maxSize= 250
+spawnTime= 1
+type= STATIC
+particle= %TexturePack/Particle/explosion.png
+posOffset= 0,0,0
+randPosOffset= 0.0,0.0,0.0

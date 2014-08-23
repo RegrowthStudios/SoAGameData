@@ -1,0 +1,27 @@
+#Jungle
+
+#BASE (will be overwritten by any child biomes
+Surface_Block_ID: 2
+Underwater_Block_ID: 5
+Beach_Block_ID: 5
+Base_Tree_Chance: 0.004
+
+# If active is set to 1, far terrain will use this color rather
+# than the blended color map. Good for when surface block is 
+# not grass, or when debugging.
+
+#               Active  R   G   B
+Terrain_Color:  0       255   0   0   
+
+Tree_List:
+#   Name                Probability
+    Tall_Jungle1        2.000
+
+
+Flora_List:
+#   Name                Probability
+    Jungle_Plant_1      0.1
+    Purple_Flower       0.1
+    Heart_Flower        0.05
+    Short_Dark_Grass    0.5
+    Tall_Weed           0.1

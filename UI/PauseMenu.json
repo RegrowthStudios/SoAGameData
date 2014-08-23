@@ -1,0 +1,87 @@
+{
+	"animation": "fadeIn",
+	"animation": "fadeOut",
+	"animationSpeed": 100,
+	"colors": {
+		"type": "colorDef",
+		"_comment": "Define colors here and use them later in the file.",
+		"colorLB1": {
+			"r": 39,"g": 187,"b": 228,"a": 255
+		},
+		"colorLB2": {
+			"r": 23,"g": 88,"b": 143,"a": 255
+		},
+		"colorGrey": {
+			"r": 128,"g": 128,"b": 128,"a":255
+		}
+	},
+	"background": {
+		"type": "texture",
+		"x": 0,
+		"y": 204,
+		"width": 1498,
+		"height": 360,
+		"lColor": "colorLB2",
+		"rColor": "colorAlpha"
+	},
+	"pauseText": {
+		"type": "text",
+		"text": "Paused",
+		"justification": "center",
+		"x": 682,
+		"y": 517,
+		"textSize": 40
+	},
+	"buttonList1": {
+		"type": "buttonList",
+		"x": 266,
+		"y": 426,
+		"width": 1118,
+		"height": 45,
+		"padding": 0,
+		"justification": "left",
+		"lHoverColor": "colorLB1",
+	
+		"_comment" : "buttons keyword makes array objects implicitly button typed",
+		"buttons": [
+			{
+				"text": "Continue",
+				"func": 1
+			},
+			{
+				"text": "Options",
+				"func": 0,
+				"childPad": 13,
+				"childHeight": 22,
+				"childBoxLColor": "colorLB2",
+				"buttons": [
+					{
+						"justification": "left",
+						"text": "Game Options",
+						"func": 5
+					},
+					{
+						"text": "Video Options",
+						"func": 6
+					},
+					{
+						"text": "Audio Options",
+						"func": 7
+					},
+					{
+						"text": "Controls",
+						"func": 8
+					}
+				]
+			},
+            {
+                "text": "Texture Packs",
+                "func": 4
+            },
+			{
+				"text": "Exit to Main Menu",
+				"func": -1
+			}
+		]
+	}
+}
