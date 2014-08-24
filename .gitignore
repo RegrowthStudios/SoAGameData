@@ -6,3 +6,8 @@ atlas*.bmp
 Saves/
 Data/options.ini
 Data/KeyConfig.ini
+
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+desktop.ini
