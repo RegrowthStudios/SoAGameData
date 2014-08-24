@@ -1,0 +1,44 @@
+branchChanceCapMod: 0.3
+branchLeafShape: round
+branchLeafSizeMod: 1
+branchLeafYMod: 0
+branchStart: 0
+branchingPropsBottom:
+  chance: [0.5, 0.5]
+  direction: 0
+  length: [130, 45]
+  width: [4, 4]
+branchingPropsTop:
+  chance: [0.5, 0.5]
+  direction: 0
+  length: [30, 45]
+  width: [1, 1]
+droopyLeavesActive: false
+droopyLeavesDSlope: 0
+droopyLeavesLength: [20, 60]
+droopyLeavesSlope: 0
+hasThickCapBranches: false
+idBark: 4
+idCore: 4
+idLeaves: 289
+idRoot: 4
+idSpecialBlock: 0
+isSlopeRandom: false
+leafCapShape: cluster
+leafCapSize: [15, 18]
+mushroomCapCurlLength: 0
+mushroomCapGillThickness: 0
+mushroomCapInverted: false
+mushroomCapStretchMod: 0
+mushroomCapThickness: 0
+name: MassiveTree
+rootDepth: 1
+trunkChangeDirChance: 0
+trunkCoreWidth: 3
+trunkHeight: [92, 110]
+trunkHeightBase: [10, 14]
+trunkSlopeEnd: [4, 6]
+trunkSlopeStart: [2, 2]
+trunkWidthBase: [12, 15]
+trunkWidthMid: [7, 7]
+trunkWidthTop: [0, 0]

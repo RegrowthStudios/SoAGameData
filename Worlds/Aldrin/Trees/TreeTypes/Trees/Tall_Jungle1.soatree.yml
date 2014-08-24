@@ -1,0 +1,44 @@
+branchChanceCapMod: 0.3
+branchLeafShape: round
+branchLeafSizeMod: 0
+branchLeafYMod: 0
+branchStart: 0
+branchingPropsBottom:
+  chance: [0, 0]
+  direction: 1
+  length: [17, 38]
+  width: [1, 1]
+branchingPropsTop:
+  chance: [0, 0]
+  direction: 0
+  length: [31, 38]
+  width: [2, 2]
+droopyLeavesActive: false
+droopyLeavesDSlope: 0
+droopyLeavesLength: [10, 20]
+droopyLeavesSlope: 0
+hasThickCapBranches: false
+idBark: 4
+idCore: 4
+idLeaves: 289
+idRoot: 4
+idSpecialBlock: 0
+isSlopeRandom: false
+leafCapShape: cluster
+leafCapSize: [6, 7]
+mushroomCapCurlLength: 0
+mushroomCapGillThickness: 0
+mushroomCapInverted: false
+mushroomCapStretchMod: 0
+mushroomCapThickness: 0
+name: Tall_Jungle1
+rootDepth: 1
+trunkChangeDirChance: 0
+trunkCoreWidth: 3
+trunkHeight: [52, 64]
+trunkHeightBase: [9, 12]
+trunkSlopeEnd: [4, 18]
+trunkSlopeStart: [5, 5]
+trunkWidthBase: [3, 3]
+trunkWidthMid: [2, 2]
+trunkWidthTop: [0, 0]

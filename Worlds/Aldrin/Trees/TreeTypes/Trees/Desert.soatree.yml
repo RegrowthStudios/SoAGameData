@@ -1,0 +1,44 @@
+branchChanceCapMod: 0.3
+branchLeafShape: round
+branchLeafSizeMod: 0
+branchLeafYMod: 0
+branchStart: 0
+branchingPropsBottom:
+  chance: [0.1, 0.1]
+  direction: 0
+  length: [12, 11]
+  width: [1, 1]
+branchingPropsTop:
+  chance: [0.1, 0.1]
+  direction: 0
+  length: [9, 11]
+  width: [0, 0]
+droopyLeavesActive: false
+droopyLeavesDSlope: 0
+droopyLeavesLength: [9, 15]
+droopyLeavesSlope: 0
+hasThickCapBranches: false
+idBark: 4
+idCore: 4
+idLeaves: 289
+idRoot: 4
+idSpecialBlock: 0
+isSlopeRandom: false
+leafCapShape: round
+leafCapSize: [2, 3]
+mushroomCapCurlLength: 0
+mushroomCapGillThickness: 0
+mushroomCapInverted: false
+mushroomCapStretchMod: 0
+mushroomCapThickness: 0
+name: Desert
+rootDepth: 1
+trunkChangeDirChance: 0
+trunkCoreWidth: 2
+trunkHeight: [11, 15]
+trunkHeightBase: [5, 7]
+trunkSlopeEnd: [4, 6]
+trunkSlopeStart: [2, 2]
+trunkWidthBase: [3, 3]
+trunkWidthMid: [0, 1]
+trunkWidthTop: [0, 0]
