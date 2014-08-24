@@ -77,7 +77,7 @@ void main(){
     
     materialDiffuseColor.a = max(materialDiffuseColor.a, overlayColor.a);
     
-    if (materialDiffuseColor.a < 0.05){
+    if (materialDiffuseColor.a < 0.5){
        discard;
     }  
     
