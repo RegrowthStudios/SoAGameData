@@ -108,5 +108,5 @@ void main(){
         materialSpecularColor * pow(NdotH, specularExponent));
     
 
-    color =         vec4(mix(fogColor, colr, fogFactor), fadeAlpha * alphaMult * materialDiffuseColor.a); //apply fog and transparency
+    color = vec4(mix(fogColor, colr, fogFactor), fadeAlpha * alphaMult * materialDiffuseColor.a); //apply fog and transparency
 }

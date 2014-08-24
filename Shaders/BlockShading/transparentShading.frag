@@ -77,6 +77,10 @@ void main(){
     
     materialDiffuseColor.a = max(materialDiffuseColor.a, overlayColor.a);
     
+    if (materialDiffuseColor.a < 0.05){
+       discard;
+    }  
+    
     vec3 fragColor = materialDiffuseColor.rgb * fragmentColor.rgb;
     
 	vec3 materialAmbiantColor = ambientLight * fragColor;
