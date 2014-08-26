@@ -1,0 +1,44 @@
+branchChanceCapMod: 0.3
+branchLeafShape: round
+branchLeafSizeMod: 0
+branchLeafYMod: 0
+branchStart: 0
+branchingPropsBottom:
+  chance: [0, 0]
+  direction: 1
+  length: [12, 12]
+  width: [1, 1]
+branchingPropsTop:
+  chance: [0, 0]
+  direction: 0
+  length: [8, 12]
+  width: [1, 1]
+droopyLeavesActive: true
+droopyLeavesDSlope: 0
+droopyLeavesLength: [13, 18]
+droopyLeavesSlope: 0
+hasThickCapBranches: false
+idBark: 4
+idCore: 4
+idLeaves: 289
+idRoot: 4
+idSpecialBlock: 0
+isSlopeRandom: false
+leafCapShape: cluster
+leafCapSize: [4, 5]
+mushroomCapCurlLength: 0
+mushroomCapGillThickness: 0
+mushroomCapInverted: false
+mushroomCapStretchMod: 0
+mushroomCapThickness: 0
+name: Willow
+rootDepth: 1
+trunkChangeDirChance: 0
+trunkCoreWidth: 2
+trunkHeight: [18, 26]
+trunkHeightBase: [3, 5]
+trunkSlopeEnd: [8, 18]
+trunkSlopeStart: [10, 10]
+trunkWidthBase: [2, 2]
+trunkWidthMid: [1, 1]
+trunkWidthTop: [0, 0]

@@ -1,6 +1,7 @@
 # Game Debug Files
 atlas*.bmp
 *.log
+errorlog.txt
 
 # Saves And User Files
 Saves/
