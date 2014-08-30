@@ -10,4 +10,5 @@ atlas*.bmp
 # Saves And User Files
 Saves/
 Data/options.ini
+Data/test.ini
 Data/KeyConfig.ini
