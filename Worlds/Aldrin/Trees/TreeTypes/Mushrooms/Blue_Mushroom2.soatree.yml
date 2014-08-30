@@ -1,0 +1,44 @@
+branchChanceCapMod: 0
+branchLeafShape: unknown
+branchLeafSizeMod: 0
+branchLeafYMod: 0
+branchStart: 0
+branchingPropsBottom:
+  chance: [0, 0]
+  direction: 0
+  length: [30, 0]
+  width: [1, 3]
+branchingPropsTop:
+  chance: [0, 0]
+  direction: 0
+  length: [0, 0]
+  width: [1, 2]
+droopyLeavesActive: false
+droopyLeavesDSlope: 0
+droopyLeavesLength: [0, 0]
+droopyLeavesSlope: 0
+hasThickCapBranches: true
+idBark: 99
+idCore: 99
+idLeaves: 96
+idRoot: 99
+idSpecialBlock: 98
+isSlopeRandom: false
+leafCapShape: mushroom
+leafCapSize: [15, 25]
+mushroomCapCurlLength: 4
+mushroomCapGillThickness: 1
+mushroomCapInverted: false
+mushroomCapStretchMod: 2
+mushroomCapThickness: 2
+name: Blue_Mushroom2
+rootDepth: 1
+trunkChangeDirChance: 3
+trunkCoreWidth: 1
+trunkHeight: [85, 100]
+trunkHeightBase: [13, 18]
+trunkSlopeEnd: [200, 200]
+trunkSlopeStart: [200, 200]
+trunkWidthBase: [10, 15]
+trunkWidthMid: [5, 10]
+trunkWidthTop: [3, 3]

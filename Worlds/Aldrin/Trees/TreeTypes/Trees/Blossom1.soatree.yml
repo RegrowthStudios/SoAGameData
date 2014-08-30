@@ -1,0 +1,44 @@
+branchChanceCapMod: 0.1
+branchLeafShape: cluster
+branchLeafSizeMod: 1
+branchLeafYMod: 0
+branchStart: 0
+branchingPropsBottom:
+  chance: [0.4, 0.4]
+  direction: 0
+  length: [20, 20]
+  width: [1, 2]
+branchingPropsTop:
+  chance: [0.4, 0.4]
+  direction: 0
+  length: [10, 20]
+  width: [1, 1]
+droopyLeavesActive: false
+droopyLeavesDSlope: 0
+droopyLeavesLength: [20, 60]
+droopyLeavesSlope: 0
+hasThickCapBranches: false
+idBark: 4
+idCore: 4
+idLeaves: 289
+idRoot: 4
+idSpecialBlock: 0
+isSlopeRandom: false
+leafCapShape: cluster
+leafCapSize: [3, 6]
+mushroomCapCurlLength: 0
+mushroomCapGillThickness: 0
+mushroomCapInverted: false
+mushroomCapStretchMod: 0
+mushroomCapThickness: 0
+name: Blossom1
+rootDepth: 1
+trunkChangeDirChance: 0
+trunkCoreWidth: 2
+trunkHeight: [54, 108]
+trunkHeightBase: [2, 5]
+trunkSlopeEnd: [1, 6]
+trunkSlopeStart: [1, 1]
+trunkWidthBase: [2, 4]
+trunkWidthMid: [0, 2]
+trunkWidthTop: [0, 0]
