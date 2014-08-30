@@ -1,0 +1,44 @@
+branchChanceCapMod: 0
+branchLeafShape: round
+branchLeafSizeMod: 1
+branchLeafYMod: 0
+branchStart: 0
+branchingPropsBottom:
+  chance: [0, 0]
+  direction: 0
+  length: [13, 15]
+  width: [1, 1]
+branchingPropsTop:
+  chance: [0, 0]
+  direction: 0
+  length: [7, 15]
+  width: [0, 1]
+droopyLeavesActive: false
+droopyLeavesDSlope: 0
+droopyLeavesLength: [10, 20]
+droopyLeavesSlope: 0
+hasThickCapBranches: false
+idBark: 4
+idCore: 4
+idLeaves: 289
+idRoot: 4
+idSpecialBlock: 0
+isSlopeRandom: false
+leafCapShape: pine
+leafCapSize: [5, 6]
+mushroomCapCurlLength: 0
+mushroomCapGillThickness: 0
+mushroomCapInverted: false
+mushroomCapStretchMod: 0
+mushroomCapThickness: 0
+name: Pine
+rootDepth: 1
+trunkChangeDirChance: 0
+trunkCoreWidth: 2
+trunkHeight: [20, 40]
+trunkHeightBase: [5, 7]
+trunkSlopeEnd: [20, 40]
+trunkSlopeStart: [5, 5]
+trunkWidthBase: [1, 2]
+trunkWidthMid: [0, 0]
+trunkWidthTop: [0, 0]

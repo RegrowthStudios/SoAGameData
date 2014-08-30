@@ -1,0 +1,44 @@
+branchChanceCapMod: 0
+branchLeafShape: unknown
+branchLeafSizeMod: 0
+branchLeafYMod: 0
+branchStart: 0
+branchingPropsBottom:
+  chance: [0, 0]
+  direction: 0
+  length: [0, 0]
+  width: [0, 0]
+branchingPropsTop:
+  chance: [0, 0]
+  direction: 0
+  length: [0, 0]
+  width: [0, 0]
+droopyLeavesActive: false
+droopyLeavesDSlope: 0
+droopyLeavesLength: [0, 0]
+droopyLeavesSlope: 0
+hasThickCapBranches: false
+idBark: 66
+idCore: 66
+idLeaves: 289
+idRoot: 66
+idSpecialBlock: 0
+isSlopeRandom: true
+leafCapShape: unknown
+leafCapSize: [0, 0]
+mushroomCapCurlLength: 0
+mushroomCapGillThickness: 0
+mushroomCapInverted: false
+mushroomCapStretchMod: 0
+mushroomCapThickness: 0
+name: Boulder
+rootDepth: 1
+trunkChangeDirChance: 1
+trunkCoreWidth: 1
+trunkHeight: [5, 15]
+trunkHeightBase: [1, 9]
+trunkSlopeEnd: [1, 4]
+trunkSlopeStart: [1, 1]
+trunkWidthBase: [2, 8]
+trunkWidthMid: [4, 12]
+trunkWidthTop: [1, 1]
