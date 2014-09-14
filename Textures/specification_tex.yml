@@ -1,4 +1,4 @@
-﻿##########  tex-file format specifications (last updated: 20.08.2014)
+﻿##########  tex-file format specifications (last updated: 30.08.2014)
 
   #  The tex-file uses the same filename as the source texture specified in the block data, independent if used as a base texture or overlay texture
   #  Whether the specified source texture is treated as a base texture or overlay texture is defined via base and overlay texture paths in the tex file!
@@ -30,8 +30,8 @@ base:
   transparency: <true | false>
   #  Optional. If not specified in the file, then "false" is used as the default setting
   #  true: More performance heavy, but allows the base texture to use transparent pixels
-  #  false: Only supports fully opaque textures. Pixels with alpha values <1 will be underlayed with magenta color (hex ff00ff).
-  #  Base textures of standard blocks support alpha values ≥ 0.05, pixels with alpha values <0.5 will be ignored and don't show up in-game
+  #  false: Only supports fully opaque textures. Pixels with alpha values <1 will be underlayed with magenta color.
+  #  Base textures of standard blocks support alpha values ≥ 0.05, pixels with alpha values <0.05 will be ignored and don't show up in-game
   #  Base textures of mesh flora should only contain pixels with alpha = 0 or 1 (either fully transparent or fully opaque), otherwise they'll start to flicker in-game
 
 overlay:

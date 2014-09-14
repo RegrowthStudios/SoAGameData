@@ -1,11 +1,17 @@
 # Game Debug Files
 atlas*.bmp
 *.log
+*.txt
+*.dll
+*.exe
+*.pdb
+*vcxproj*
 errorlog.txt
 
 # Saves And User Files
 Saves/
 Data/options.ini
+Data/test.ini
 Data/KeyConfig.ini
 
 #OS junk files

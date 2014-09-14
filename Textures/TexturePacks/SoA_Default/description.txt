@@ -1,1 +1,0 @@
-This is the default 256x256 texture pack for SoA, created by Georg Hammerschmid aka _zombiehunter.
