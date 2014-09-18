@@ -54,9 +54,9 @@ void main(){
     specMod = clamp(specMod, 0.0, 1.0);
     
 	vec3 vpm = vec3(vertexPosition.x + cosdt*0.035, vertexPosition.y, vertexPosition.z + cosdt*0.025);
-	distVec = vec3(M * vec4(vpm ,1));
+	distVec = vec3(M * vec4(vpm, 1));
         
-    eyeDirection_worldspace = normalize(-distVec);
+    eyeDirection_worldspace = -distVec;
     
 	// Output position of the vertex, in clip space : MVP * (position)
 	gl_Position =  MVP * vec4( vpm ,1);

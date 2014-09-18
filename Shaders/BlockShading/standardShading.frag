@@ -94,7 +94,7 @@ void main(){
 	}
     
     //specular
-    vec3 H = normalize(lightPosition_worldspace + eyeDirection_worldspace);
+    vec3 H = normalize(lightPosition_worldspace + normalize(eyeDirection_worldspace));
     float NdotH = dot(normal_worldspace, H);
 	NdotH = clamp(NdotH, 0.0, 1.0);
 	
@@ -108,6 +108,5 @@ void main(){
         lightColor * sunLightMod * (fragColor * diffuseMult + 
         materialSpecularColor * pow(NdotH, specularExponent));
     
-
     color = vec4(mix(fogColor, colr, fogFactor), fadeAlpha * alphaMult * materialDiffuseColor.a); //apply fog and transparency
 }
