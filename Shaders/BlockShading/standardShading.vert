@@ -1,12 +1,12 @@
 #version 130
 
 in vec4 position_TextureType;
-in vec2 uvs;
+in vec4 uvs_animation_blendMode;
 in vec4 textureAtlas_textureIndex;
 in vec4 textureDimensions;
 in vec4 color_waveEffect;
 in vec3 overlayColor;
-in vec4 light_sunLight_animation_blendMode;
+in vec4 light_sunlight;
 in vec3 normal;
 
 // Output data ; will be interpolated for each fragment.
@@ -19,7 +19,8 @@ out vec3 overlayFragmentColor;
 flat out vec2 textureAtlas;
 out float fogFactor;
 out float fadeAlpha;
-out vec2 light;
+out vec3 lampLight;
+out float sunlight;
 out vec3 distVec;
 out vec3 normal_worldspace;
 out vec3 eyeDirection_worldspace;
@@ -73,7 +74,7 @@ void main(){
     overlayOUV[0] = mod((textureAtlas_textureIndex[3]), 16.0)/16.0;
 	overlayOUV[1] = (floor((textureAtlas_textureIndex[3])/16.0))/16.0 - 0.0625 * (textureDimensions[3]);
     
-	UV = uvs.xyxy / textureDimensions;
+	UV = uvs_animation_blendMode.xyxy / textureDimensions;
     
     texDimensions = textureDimensions;
     
@@ -82,12 +83,13 @@ void main(){
 	textureAtlas = textureAtlas_textureIndex.xy;
 	
     //add 0.1 in case we lose precision
-    int blendMode = int(light_sunLight_animation_blendMode[3] * 255.0 + 0.1);
+    int blendMode = int(uvs_animation_blendMode[3] + 0.1);
     alphaBlendFactor = float((blendMode & 0x3) - 1);
     additiveBlendFactor = float(((blendMode & 0xc) >> 2) - 1);
     multiplicativeBlendFactor = float((blendMode >> 4) - 1);
     
-	light = light_sunLight_animation_blendMode.xy;
+	lampLight = light_sunlight.xyz * 1.6;
+    sunlight = light_sunlight.w;
 	
     //diffuse
     diffuseMult = clamp( dot( normal_worldspace, lightPosition_worldspace ), 0,1 );
