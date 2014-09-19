@@ -47,10 +47,9 @@ void main(){
 	vec3 baseUV;
     vec3 overlayUV;
 	vec4 tUV;
-    float sunLightMod = sunlight * 1.05263;
+    
     vec3 flashLight = vec3(0.0);
-    sunLightMod = (sunLightMod - 0.6) * 2.5;
-    if (sunLightMod < 0.0) sunLightMod = 0.0;
+
 	float dist = length(distVec);
 		
 	tUV = fract(UV) * texDimensions;
@@ -109,9 +108,9 @@ void main(){
 		// Ambiant : simulates indirect lighting
 		materialAmbiantColor +
 		// Diffuse : "color" of the object
-		fragColor * (flashLight + sunLightMod * sunVal) +
+		fragColor * (flashLight + sunlight * sunVal) +
         fragColor * lampLight +
-        lightColor * sunLightMod * (fragColor * diffuseMult + 
+        lightColor * sunlight * (fragColor * diffuseMult + 
         materialSpecularColor * pow(NdotH, specularExponent));
     
     color = vec4(mix(fogColor, colr, fogFactor), fadeAlpha * alphaMult * materialDiffuseColor.a); //apply fog and transparency

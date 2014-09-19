@@ -89,7 +89,8 @@ void main(){
     multiplicativeBlendFactor = float((blendMode >> 4) - 1);
     
 	lampLight = light_sunlight.xyz * 1.6;
-    sunlight = light_sunlight.w;
+    
+    sunlight = light_sunlight.w * 1.05263;
 	
     //diffuse
     diffuseMult = clamp( dot( normal_worldspace, lightPosition_worldspace ), 0,1 );
