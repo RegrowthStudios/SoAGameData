@@ -11,7 +11,7 @@ flat in vec4 texDimensions;
 flat in float multiplicativeBlendFactor;
 flat in float additiveBlendFactor;
 flat in float alphaBlendFactor;
-in float dist;
+in vec3 distVec;
 in float fadeAlpha;
 
 // Ouput data
@@ -25,6 +25,8 @@ uniform float waveWidth;
 uniform float dt;
 
 void main(){
+
+    float dist = length(distVec);
 
 	// Material properties
 	vec4 colr;

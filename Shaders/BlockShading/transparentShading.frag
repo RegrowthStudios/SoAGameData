@@ -114,6 +114,5 @@ void main(){
         lightColor * sunLightMod * (fragColor * diffuseMult + 
         materialSpecularColor * pow(NdotH, specularExponent));
     
-
     color = vec4(mix(fogColor, colr, fogFactor), fadeAlpha * alphaMult * materialDiffuseColor.a); //apply fog and transparency
 }
