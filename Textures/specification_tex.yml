@@ -1,4 +1,4 @@
-﻿##########  tex-file format specifications (last updated: 30.08.2014)
+﻿##########  tex-file format specifications (last updated: 22.09.2014)
 
   #  The tex-file uses the same filename as the source texture specified in the block data, independent if used as a base texture or overlay texture
   #  Whether the specified source texture is treated as a base texture or overlay texture is defined via base and overlay texture paths in the tex file!
@@ -68,27 +68,27 @@ overlay:
   ###  Classic 8-way connection method:
   method: connect
   #  Source texture is required to have 12x4 tiles
-  #  Template: www.seedofandromeda.com/Assets/images/Modding/Texture/method_connect.png
+  #  Template: www.seedofandromeda.com/assets/images/modding/texture/method_connect.png
   innerSeams: <true | false>
   #  Optional. If not specified in the file, then "false" is used as the default setting
-  #  true: Textures do not connect around inner corners (see www.seedofandromeda.com/Assets/images/Modding/Texture/method_connect_innerSeams_true.png)
-  #  false: Textures connect around inner corners (see www.seedofandromeda.com/Assets/images/Modding/Texture/method_connect_innerSeams_false.png)
+  #  true: Textures do not connect around inner corners (see www.seedofandromeda.com/assets/images/modding/texture/method_connect_innerSeams_true.png)
+  #  false: Textures connect around inner corners (see www.seedofandromeda.com/assets/images/modding/texture/method_connect_innerSeams_false.png)
 
 
   ###  Horizontal 2-way connection method:
   method: horizontal
   #  Source texture is required to have 4x1 tiles
-  #  Template: www.seedofandromeda.com/Assets/images/Modding/Texture/method_horizontal.png
+  #  Template: www.seedofandromeda.com/assets/images/modding/texture/method_horizontal.png
   innerSeams: <true | false>
   #  Optional. If not specified in the file, then "false" is used as the default setting
-  #  true: Textures do not connect around inner corners (see www.seedofandromeda.com/Assets/images/Modding/Texture/method_horizontal_innerSeams_true.png)
-  #  false: Textures connect around inner corners (see www.seedofandromeda.com/Assets/images/Modding/Texture/method_horizontal_innerSeams_false.png)
+  #  true: Textures do not connect around inner corners (see www.seedofandromeda.com/assets/images/modding/texture/method_horizontal_innerSeams_true.png)
+  #  false: Textures connect around inner corners (see www.seedofandromeda.com/assets/images/modding/texture/method_horizontal_innerSeams_false.png)
 
 
   ###  Vertical 2-way connection method:
   method: vertical
   #  Source texture is required to have 1x4 tiles
-  #  Template: www.seedofandromeda.com/Assets/images/Modding/Texture/method_vertical.png
+  #  Template: www.seedofandromeda.com/assets/images/modding/texture/method_vertical.png
   reducedMethod: <none | top | bottom>
   #  Optional. If not specified in the file, then "none" is used as the default setting
   #  none: No reduced method applied, all 4 tiles of the tile set are used and connect as usual
@@ -99,7 +99,7 @@ overlay:
   ###  "Better Grass" connection method:
   method: grass
   #  Source texture is required to have 3x3 tiles
-  #  Template and explanation: www.seedofandromeda.com/Assets/images/Modding/Texture/method_grass.png
+  #  Template and explanation: www.seedofandromeda.com/assets/images/modding/texture/method_grass.png
   #  This method actually needs 10 tiles (0-9), but the top texture of the respective block is used as tile 9 (connects to tiles 4-8)
   #  Tile 9 uses the same texture methods and texture features than the top texture, independent of the texture features applied to the 3x3 tile set
 
