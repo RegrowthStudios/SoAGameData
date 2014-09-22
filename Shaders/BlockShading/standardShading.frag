@@ -10,7 +10,8 @@ in vec3 overlayFragmentColor;
 flat in vec2 textureAtlas;
 in float fogFactor;
 in float fadeAlpha;
-in vec2 light;
+in vec3 lampLight;
+in float sunlight;
 in vec3 distVec;
 in vec3 normal_worldspace;
 in vec3 eyeDirection_worldspace;
@@ -46,10 +47,9 @@ void main(){
 	vec3 baseUV;
     vec3 overlayUV;
 	vec4 tUV;
-    float sunLightMod = light[1] * 1.05263;
-	float lght = sunLightMod * sunVal + light[0];  //1.05363 * 0.95 == 1.0 for max light[1] val of 0.95
-    sunLightMod = (sunLightMod - 0.6) * 2.5;
-    if (sunLightMod < 0.0) sunLightMod = 0.0;
+
+    vec3 flashLight = vec3(0.0);
+	
 	float dist = length(distVec);
 		
 	tUV = fract(UV) * texDimensions;
@@ -85,16 +85,15 @@ void main(){
 		if (cosTheta < 0.1) cosTheta = 0.1-cosTheta/4;
 		if (cosTheta < 0) cosTheta = 0;
 		cosTheta *= 0.5;
-		lght += cosTheta;
+		flashLight = vec3(cosTheta);
 	}else if (lightType == 2.0){
 		float lightv = 0.5 - dist*0.03 + lightType;
 		if (lightv < 0) lightv = 0;
-		lght += lightv;
+		flashLight = vec3(lightv);
 	}
-	if (lght > 1.2) lght = 1.2;
     
-       //specular
-    vec3 H = normalize(lightPosition_worldspace + eyeDirection_worldspace);
+    //specular
+    vec3 H = normalize(lightPosition_worldspace + normalize(eyeDirection_worldspace));
     float NdotH = dot(normal_worldspace, H);
 	NdotH = clamp(NdotH, 0.0, 1.0);
 	
@@ -103,10 +102,10 @@ void main(){
 		// Ambiant : simulates indirect lighting
 		materialAmbiantColor +
 		// Diffuse : "color" of the object
-		fragColor * lght +
-        lightColor * sunLightMod * (fragColor * diffuseMult + 
+		fragColor * (flashLight + sunlight * sunVal) +
+        fragColor * lampLight +
+        lightColor * sunlight * (fragColor * diffuseMult + 
         materialSpecularColor * pow(NdotH, specularExponent));
     
-
     color = vec4(mix(fogColor, colr, fogFactor), fadeAlpha * alphaMult * materialDiffuseColor.a); //apply fog and transparency
 }

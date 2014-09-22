@@ -23,7 +23,8 @@ out vec3 overlayFragmentColor;
 flat out vec2 textureAtlas;
 out float fogFactor;
 out float fadeAlpha;
-out vec2 light;
+out vec3 lampLight;
+out float sunlight;
 out vec3 distVec;
 out vec3 normal_worldspace;
 out vec3 eyeDirection_worldspace;
@@ -87,7 +88,8 @@ void main(){
 	fragmentColor = vertexColor;
     overlayFragmentColor = overlayColor;
     
-	light = vertexLight;
+    lampLight = vec3(vertexLight.x);
+	sunlight = vertexLight.y;
     
     //diffuse
     diffuseMult = clamp( dot( normal_worldspace, lightPosition_worldspace ), 0,1 );
