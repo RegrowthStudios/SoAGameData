@@ -12,7 +12,7 @@ flat in float multiplicativeBlendFactor;
 flat in float additiveBlendFactor;
 flat in float alphaBlendFactor;
 in vec3 distVec;
-in float fadeAlpha;
+flat in float fadeAlpha;
 
 // Ouput data
 out vec4 color;

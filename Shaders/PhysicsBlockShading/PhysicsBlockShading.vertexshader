@@ -22,7 +22,7 @@ out vec3 fragmentColor;
 out vec3 overlayFragmentColor;
 flat out vec2 textureAtlas;
 out float fogFactor;
-out float fadeAlpha;
+flat out float fadeAlpha;
 out vec3 lampLight;
 out float sunlight;
 out vec3 distVec;
