@@ -9,7 +9,7 @@ in vec3 fragmentColor;
 in vec3 overlayFragmentColor;
 flat in vec2 textureAtlas;
 in float fogFactor;
-in float fadeAlpha;
+flat in float fadeAlpha;
 in vec3 lampLight;
 in float sunlight;
 in vec3 distVec;
