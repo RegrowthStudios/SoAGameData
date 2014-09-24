@@ -5,7 +5,7 @@ in vec3 vertexPosition_modelspace;
 in vec4 vertexUv_texUnit_texIndex;
 in vec4 vertexColor;
 //texture unit wave effect and texture location in a vec3 to save glVertexAttribPointer calls
-in vec2 vertexLight;
+in vec4 light_sunlight;
 
 // Output data ; will be interpolated for each fragment.
 out vec2 UV;
@@ -17,7 +17,8 @@ out float fadeAlpha;
 
 out vec3 EyeDirection_worldspace;
 out float alphaMod;
-out vec2 light;
+out vec3 lampLight;
+out float sunlight;
 
 // Values that stay constant for the whole mesh.
 uniform mat4 MVP;
@@ -56,7 +57,8 @@ void main(){
 	dist = length(gl_Position);
 	fogFactor = clamp(((FogEnd - dist + FogStart)/FogEnd), 0.0, 1.0);
 	
-	light = vertexLight;
+	lampLight = light_sunlight.rgb * 1.6;
+    sunlight = light_sunlight.a * 1.05263;
 	
 	textureUnitID = vertexUv_texUnit_texIndex.z;
 	fragmentColor = vertexColor;

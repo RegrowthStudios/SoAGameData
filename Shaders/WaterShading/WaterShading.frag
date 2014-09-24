@@ -9,7 +9,8 @@ in float fadeAlpha;
 in float alphaMod;
 in vec3 EyeDirection_worldspace;
 
-in vec2 light;
+in vec3 lampLight;
+in float sunlight;
 
 // Ouput data
 out vec4 color;
@@ -30,7 +31,6 @@ void main(){
 	vec3 n = normalize((texture2D( normalMap, UV+dt*0.05 ).rgb*2.0 - 1) * (texture2D( normalMap, UV*-2+dt*0.1 ).rgb*2.0 - 1.0)).rbg;
    
     float alpha = fragmentColor.a * fadeAlpha;
-	float sunLight = light[1] * sunVal;
 	
 	vec3 MaterialAmbiantColor = AmbientLight * fColor;
 	vec3 MaterialSpecularColor = vec3(0.3,0.3,0.3) * LightColor;
@@ -48,8 +48,8 @@ void main(){
 		// Ambiant : simulates indirect lighting
 		MaterialAmbiantColor*0.5 +
 		// Diffuse : "color" of the object
-		fColor * sunLight * cosThetaSun +
-        fColor * light[0] * cosThetaVoxel +
+		fColor * sunlight * sunVal * cosThetaSun +
+        fColor * lampLight * cosThetaVoxel +
 		MaterialSpecularColor * pow(NdotH, 8.0);
 	colr = mix(FogColor, colr, fogFactor); //apply fog
 	color = vec4(colr, clamp(alpha + alphaMod, 0.0, 1.0)); 
