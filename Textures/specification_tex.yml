@@ -8,6 +8,11 @@
   ####  Internal structure of tex files
   #  The "base" and "overlay" parts are both optional, the file is required to use valid YAML syntax!
 
+blendMode: <alpha | add | subtract | multiply>
+#  Optional. If not specified in the file, then "alpha" is used as the default setting
+#  alpha: Standard alpha blending is used to overlay the base texture
+#  add/subtract/multiply: The colors of the overlay texture are added/subtracted/multiplied to the base texture
+  
 base:
   path: <(path of base texture)>
   #  If there's no path defined here or it shows the same filename as the tex file, then the source texture specified in the block data is treated as a base texture
@@ -54,11 +59,6 @@ overlay:
   #  biome: Colors from the biome color map of the loaded planet are multiplied with the colors of the overlay texture
   #  water: Colors from the water color map of the loaded planet are multiplied with the colors of the overlay texture
   #  As an alternative, a path to a custom color map inside the texture pack can be defined
-  blendMode: <alpha | add | subtract | multiply>
-  #  Optional. If not specified in the file, then "alpha" is used as the default setting
-  #  alpha: Standard alpha blending is used to overlay the base texture
-  #  add/subtract/multiply: The colors of the overlay texture are added/subtracted/multiplied to the base texture
-
 
 
 
