@@ -1,4 +1,4 @@
-﻿##########  BlockTextures.yml  -  specification and internal format/structure - last updated: 27.09.2014
+﻿##########  BlockTextures.yml  -  specification and internal format/structure - last updated: 03.10.2014
 
   #  BlockTextures.yml contains a list of all blocks a texture pack should modify, sorted by block ID, the file path must be "Blocks/BlockTextures.yml"
   #  This file contains any information about the textures, texture handling methods, color and transparency properties a block should use
@@ -44,11 +44,11 @@
       #  texture: All blocks using the same base texture are coupled and will connect, independent of block ID
       #  As an alternative, a list of paths to coupled textures can be defined, separated by commas. The texture will connect to them independent of block IDs.
       #  The paths only work when the coupled textures use the same connection method, otherwise they give an error
-      useMapColor: <biome | water | (path of custom color map in texture pack)>
+      useMapColor: <biome | water | (path of custom color map) | (hexadecimal RGB color value)>
       #  Optional. If missing, then no color map is used for the base texture.
       #  biome: Colors from the biome color map of the loaded planet are multiplied with the colors of the base texture
       #  water: Colors from the water color map of the loaded planet are multiplied with the colors of the base texture
-      #  As an alternative, a path to a custom color map inside the texture pack can be defined
+      #  As an alternative, a path to a custom color map inside the texture pack or a single hexadecimal color value can be defined
       normalMap: (path of normal map file)
       #  Optional. If missing, then no normal map is applied to the base texture.
       specularMap: (path of specular map file)
@@ -64,11 +64,11 @@
       #  texture: All blocks using the same base texture are coupled and will connect, independent of block ID
       #  As an alternative, a list of paths to coupled textures can be defined, separated by commas. The texture will connect to them independent of block IDs.
       #  The paths only work when the coupled textures use the same connection method, otherwise they give an error
-      useMapColor: <biome | water | (path of custom color map in texture pack)>
+      useMapColor: <biome | water | (path of custom color map) | (hexadecimal RGB color value)>
       #  Optional. If missing, then no color map is used for the overlay texture.
       #  biome: Colors from the biome color map of the loaded planet are multiplied with the colors of the overlay texture
       #  water: Colors from the water color map of the loaded planet are multiplied with the colors of the overlay texture
-      #  As an alternative, a path to a custom color map inside the texture pack can be defined
+      #  As an alternative, a path to a custom color map inside the texture pack or a single hexadecimal color value can be defined
       normalMap: (path of normal map file)
       #  Optional. If missing, then no normal map is applied to the overlay texture.
       specularMap: (path of specular map file)
