@@ -60,8 +60,8 @@
       #  For further explanations, possible properties and templates for the texture handling methods, see below.
       coupling: <id | texture | [paths of coupled textures]>
       #  Optional. If not specified in the file, the default setting should be "id".
-      #  id: Only blocks having the same block ID are coupled and will connect, blocks using the same base texture but a different block ID do not connect to them
-      #  texture: All blocks using the same base texture are coupled and will connect, independent of block ID
+      #  id: Only blocks having the same block ID are coupled and will connect, blocks using the same overlay texture but a different block ID do not connect to them
+      #  texture: All blocks using the same overlay texture are coupled and will connect, independent of block ID
       #  As an alternative, a list of paths to coupled textures can be defined, separated by commas. The texture will connect to them independent of block IDs.
       #  The paths only work when the coupled textures use the same connection method, otherwise they give an error
       useMapColor: <biome | water | (path of custom color map) | (hexadecimal RGB color value)>
