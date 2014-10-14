@@ -1,4 +1,4 @@
-﻿##########  BlockTextures.yml  -  specification and internal format/structure - last updated: 13.10.2014
+﻿##########  BlockTextures.yml  -  specification and internal format/structure - last updated: 14.10.2014
 
   #  BlockTextures.yml contains a list of all blocks a texture pack should modify, sorted by block ID, the file path must be "Blocks/BlockTextures.yml"
   #  This file contains any information about the textures, texture handling methods, color and transparency properties a block should use
@@ -125,7 +125,7 @@
   ###  Repeating texture method:
   method: repeat
   #  Uses a larger texture (with a defined number of x and y tiles) which is displayed over an area of x and y blocks
-  #  Repeats itself over very large areas
+  #  Repeats itself over very large areas, therefore reducing lattice effects compared to single tile textures
   size: [x,y]
   #  x: Number of tiles in x direction (width of the tile set)
   #  y: Number of tiles in y direction (height of the tile set)
@@ -180,8 +180,8 @@
 
   ###  Block mesh types:
   #  All mesh types support the use of base and overlay textures as well as any form of color multiplication (color or useMapcolor properties)
-  #  Support for block transparency, (base texture using transparent pixels), normal maps and specular maps is limited to mesh type 0 (standard blocks)
-  #  The texture handling methods for blocks using mesh type 0 are restricted to: connect, horizontal, vertical, grass, repeat, random
-  #  The texture handling methods for blocks using mesh type 1 are restricted to: connect, horizontal, vertical, repeat, random
-  #  The texture handling methods for blocks using mesh types 2 and 3 are restricted to: vertical, random, flora
-  #  The texture handling methods for blocks using mesh type 4 are restricted to: random, flora
+  #  Support for block transparency, (base texture using transparent pixels), normal maps and specular maps is limited to mesh type "cube" (standard blocks)
+  #  The texture handling methods for blocks using mesh type "cube" are restricted to: connect, horizontal, vertical, grass, repeat, random
+  #  The texture handling methods for blocks using mesh type "flat" are restricted to: connect, horizontal, vertical, repeat, random
+  #  The texture handling methods for blocks using mesh types "cross" and "triangle" are restricted to: vertical, random, flora
+  #  The texture handling methods for blocks using mesh type "leaves" are restricted to: random
