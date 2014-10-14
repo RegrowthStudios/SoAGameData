@@ -1,4 +1,4 @@
-﻿##########  BlockTextures.yml  -  specification and internal format/structure - last updated: 03.10.2014
+﻿##########  BlockTextures.yml  -  specification and internal format/structure - last updated: 14.10.2014
 
   #  BlockTextures.yml contains a list of all blocks a texture pack should modify, sorted by block ID, the file path must be "Blocks/BlockTextures.yml"
   #  This file contains any information about the textures, texture handling methods, color and transparency properties a block should use
@@ -18,8 +18,7 @@
   #  Optional. If not specified, then "false" is used as the default setting.
   #  true: More performance heavy, but allows the base texture to use transparent pixels
   #  false: Only supports fully opaque textures. Pixels with alpha values <1 will be underlayed with magenta color.
-  #  Base textures of standard blocks support alpha values ≥ 0.05, pixels with alpha values <0.05 will be ignored and don't show up in-game
-  #  Base textures of mesh flora should only contain pixels with alpha = 0 or 1 (either fully transparent or fully opaque), otherwise they'll start to flicker in-game
+  #  Transparent base textures support alpha values ≥ 0.05, pixels with alpha values <0.05 will be ignored and don't show up in-game
   <texture | textureSide | textureTop | textureBottom | textureFront | textureBack | textureLeft | textureRight | textureOpX | textureOpY | textureOpZ>:
   #  Optional. If not specified, then the texture pack will apply no texture to this block. Same happens when different textures are applied to the same block face.
   #  texture: Used for mesh flora or when all block faces should show the same texture
@@ -35,9 +34,9 @@
   #  textureOpZ: Applies the texture to the opposite left and right faces (+/-Z for non-rotated blocks)
     base: (path of base texture)
     #  Required. If any texture should be applied to the respecitve block faces, there must at least be a base texture specified!
-      method: <connect | horizontal | vertical | grass | repeat | random>
+      method: <connect | horizontal | vertical | grass | repeat | random | flora>
       #  Optional. If missing, then there's no texture handling method applied to the base texture.
-      #  For further explanations, possible properties and templates for the texture handling methods, see below.
+      #  For further explanations, possible properties, templates and restrictions for the texture handling methods, see below.
       coupling: <id | texture | [paths of coupled textures]>
       #  Optional. If not specified in the file, the default setting should be "id".
       #  id: Only blocks having the same block ID are coupled and will connect, blocks using the same base texture but a different block ID do not connect to them
@@ -55,9 +54,9 @@
       #  Optional. If missing, then no specular map is applied to the base texture.
     overlay: (path of overlay texture)
     #  Optional. If missing, then there's no overlay applied to the respective block faces.
-      method: <connect | horizontal | vertical | grass | repeat | random>
+      method: <connect | horizontal | vertical | grass | repeat | random | flora>
       #  Optional. If missing, then there's no texture handling method applied to the overlay texture.
-      #  For further explanations, possible properties and templates for the texture handling methods, see below.
+      #  For further explanations, possible properties, templates and restrictions for the texture handling methods, see below.
       coupling: <id | texture | [paths of coupled textures]>
       #  Optional. If not specified in the file, the default setting should be "id".
       #  id: Only blocks having the same block ID are coupled and will connect, blocks using the same overlay texture but a different block ID do not connect to them
@@ -126,7 +125,7 @@
   ###  Repeating texture method:
   method: repeat
   #  Uses a larger texture (with a defined number of x and y tiles) which is displayed over an area of x and y blocks
-  #  Repeats itself over very large areas
+  #  Repeats itself over very large areas, therefore reducing lattice effects compared to single tile textures
   size: [x,y]
   #  x: Number of tiles in x direction (width of the tile set)
   #  y: Number of tiles in y direction (height of the tile set)
@@ -140,7 +139,7 @@
   ###  Random textures method:
   method: random
   #  Source texture can contain any number of tiles in a horizontal arrangement
-  #  The number of tiles is calculated from the width of the texture divided by the height
+  #  Randomization of blocks using this texture tile set is done in all directions in-game (x, y, z)
   weights: [list of weights]
   #  Optional. If not specified in the file, then "1" is used as the weight number for all tiles
   #  A list of full numbers separated with commas, there should be a weight number for every tile in the source texture, otherwise error
@@ -153,6 +152,23 @@
   #  all: All 6 faces of a block use exact the same texture (6-way symmetry)
 
 
+  ###  Random multiblock flora method:
+  method: flora
+  height: (n)
+  #  Source texture can contain any number of tile columns, the number of rows of the tile sheet is calculated as following: y=(n²+n)/2
+  #  n: Maximum growth height in blocks (equal to number of texture tiles for the tallest growth stage and number of possible growth stages). Must be defined, otherwise error!
+  #  Template for n=4 and 5 random variants: www.seedofandromeda.com/assets/images/modding/texture/method_flora.png
+  #  This method allows flora to use a separate texture for every growth stage (texture size for tallest growth stage in tiles: x=1, y=n)
+  #  The textures of all stages per random variant are arranged vertically in columns, with the smallest (1 block tall) at the top, and the tallest at the bottom
+  #  The tile sheet can contain any number of random variants/columns in a horizontal arrangement
+  #  Randomization is done in x and z direction in-game, all blocks in y direction (at a certain x,z position) use the same variant
+  weights: [list of weights]
+  #  Optional. If not specified in the file, then "1" is used as the weight number for all columns
+  #  A list of full numbers separated with commas, there should be a weight number for every tile column in the source texture, otherwise error
+  #  The probability (in %) to find a specific variant at a random position in-game is calculated as following:
+  #  Weight number of the tile divided by the sum of all weight numbers
+
+
 
 
 ##########  General restrictions and annotations:
@@ -162,6 +178,10 @@
   #  The maximum number of block texture tiles per texture pack is currently limited to 65536 tiles (256 texture atlasses with 256 tiles each)
   #  Every overlay, normal map and specular map tile counts as an extra tile in this case, even when they're combined to one final texture tile in-game
 
-  ###  Mesh flora:
-  #  Like normal blocks, all non-block shape flora (mesh flora) supports the use of base and overlay textures as well
-  #  The texture handling methods for mesh flora are restricted to random textures and the vertical connection method
+  ###  Block mesh types:
+  #  All mesh types support the use of base and overlay textures as well as any form of color multiplication (color or useMapcolor properties)
+  #  Support for block transparency, (base texture using transparent pixels), normal maps and specular maps is limited to mesh type "cube" (standard blocks)
+  #  The texture handling methods for blocks using mesh type "cube" are restricted to: connect, horizontal, vertical, grass, repeat, random
+  #  The texture handling methods for blocks using mesh type "flat" are restricted to: connect, horizontal, vertical, repeat, random
+  #  The texture handling methods for blocks using mesh types "cross" and "triangle" are restricted to: vertical, random, flora
+  #  The texture handling methods for blocks using mesh type "leaves" are restricted to: random
