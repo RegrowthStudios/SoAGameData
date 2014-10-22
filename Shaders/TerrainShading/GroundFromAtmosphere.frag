@@ -8,7 +8,7 @@ in vec2 UV;
 in vec3 Normal_worldspace;
 in vec3 fragmentColor;
 in vec4 slopeColor;
-in vec4 beachColor;
+//in vec4 beachColor;
 flat in float textureUnitID;
 in float temperature;
 in float rainfall;

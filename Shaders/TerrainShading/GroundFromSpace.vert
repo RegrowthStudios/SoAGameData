@@ -5,7 +5,7 @@ in vec2 vertexUV;
 in vec3 vertexNormal_modelspace;
 in vec3 vertexColor;
 in vec4 vertexSlopeColor;
-in vec4 vertexBeachColor;
+//in vec4 vertexBeachColor;
 in vec4 texTempRainSpec;
 
 // Output data ; will be interpolated for each fragment.
@@ -15,6 +15,8 @@ out vec3 lightColor;
 out vec2 UV;
 out vec3 Normal_worldspace;
 out vec3 fragmentColor;
+out vec4 slopeColor;
+//out vec4 beachColor;
 flat out float textureUnitID;
 out float temperature;
 out float rainfall;
@@ -64,6 +66,8 @@ void main(void)
     rainfall = texTempRainSpec[2]*0.00392157;
     specular = texTempRainSpec[3]*0.00392157;
 	fragmentColor = vertexColor;
+    slopeColor = vertexSlopeColor;
+    //beachColor = vertexBeachColor;
 	Normal_worldspace = vertexNormal_modelspace;
     
     gl_Position =  MVP * vec4( vertexPosition_modelspace ,1);
@@ -78,6 +82,8 @@ void main(void)
 	ray /= fFar;
     
     EyeDirection_worldspace = -ray;
+    
+    slope = dot(worldDir, vertexNormal_modelspace);
     
     float cosTheta = dot( worldDir, lightPos );
     lightMod = clamp((cosTheta+0.13)*10, 0.0, 1.0);
