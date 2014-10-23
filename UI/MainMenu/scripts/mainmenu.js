@@ -1,0 +1,1 @@
+// Any index.html specific JS goes here
