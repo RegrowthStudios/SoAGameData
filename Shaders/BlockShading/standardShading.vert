@@ -68,11 +68,11 @@ void main(){
 	
     //base OUV
 	OUV[0] = mod((textureAtlas_textureIndex[2]), 16.0)/16.0;
-	OUV[1] = (floor((textureAtlas_textureIndex[2])/16.0))/16.0 - 0.0625 * (textureDimensions[1]);
+	OUV[1] = ((floor((textureAtlas_textureIndex[2])/16.0))/16.0);
     
     //overlay OUV
     overlayOUV[0] = mod((textureAtlas_textureIndex[3]), 16.0)/16.0;
-	overlayOUV[1] = (floor((textureAtlas_textureIndex[3])/16.0))/16.0 - 0.0625 * (textureDimensions[3]);
+	overlayOUV[1] = ((floor((textureAtlas_textureIndex[3])/16.0))/16.0);
     
 	UV = uvs_animation_blendMode.xyxy / textureDimensions;
     
