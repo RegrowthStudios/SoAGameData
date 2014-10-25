@@ -73,7 +73,6 @@ void main(){
     materialDiffuseColor.rgb += additiveBlendFactor * overlayColor.rgb;
     
     vec3 fragColor = materialDiffuseColor.rgb * fragmentColor.rgb;
-    fragColor = fragColor * 0.00001 + materialDiffuseColor.rgb;
 	vec3 materialAmbiantColor = ambientLight * fragColor;
 
 	if (lightType == 1.0){

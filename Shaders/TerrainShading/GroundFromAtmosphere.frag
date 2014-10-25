@@ -81,7 +81,7 @@ void main (void)
 			fragColor = vec3(0.875,1.0,0.992); //dont hardcode this later?
 		}else{
 			fade = 1.0; //should not actually fade it
-			fragColor = texture( waterColorTexture, vec2(temperature, rainfall) ).rgb * fragmentColor; //we store depth in rainfall for water
+			fragColor = texture( waterColorTexture, vec2(temperature, 1.0 - rainfall) ).rgb * fragmentColor; //we store depth in rainfall for water
 			specmd += (texture( textures[4], UV*0.1+dt*0.00625 ).rgb*2.0 - 1) * (texture( textures[4], UV*-2*0.05+dt*0.0125 ).rgb*2.0 - 1.0)*10;
 		}
     }else if (textureUnitID == 2.0){
