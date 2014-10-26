@@ -4,16 +4,19 @@
         <meta charset="utf-8">
         <title>SoA Main Menu</title>
         <script type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script>
+        <script src="scripts/menu.js" type="text/javascript"></script>
         <script src="scripts/loadgame.js" type="text/javascript"></script>
         <script src="scripts/texteffect.js" type="text/javascript"></script>
         <script src="scripts/texteffect2.js" type="text/javascript"></script>
         <link href="styles/menu.css" rel="stylesheet" />
+        <link href="styles/loadgame.css" rel="stylesheet" />
         <link href="assets/fonts/the_league_of_orbitron/Orbitron.css" rel="stylesheet" />
         <link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" />
     </head>
     <body onload="loadGameEntry()">
         <img src="assets/images/header.png" id="menu-header" />
         <div id="load-game-outer-wrapper" class="outer-wrapper">
+            <br />
             <h3 class="header">Load Game</h3>
             <div id="load-game-inner-wrapper">
                 <h5>Select Save:</h5>
@@ -21,11 +24,16 @@
                     <ul id="save-games">
                         <!-- Save Games are listed here! -->
                         <li>Matt's World<span class="save-game-data">2014.09.26 21:23</span></li>
+                        <li>Matt's World<span class="save-game-data">2014.09.26 21:23</span></li>
+                        <li>Matt's World<span class="save-game-data">2014.09.26 21:23</span></li>
+                        <li>Matt's World<span class="save-game-data">2014.09.26 21:23</span></li>
                     </ul>
                 </div>
-                <h5>Launch Game</h5>
-                <h5>Delete Game</h5>
-                <br /><h5>Back</h5>
+                <div id="save-games-controls">
+                    <h5 class="save-games-control li-right">Launch Game</h5>
+                    <h5 class="save-games-control li-right">Delete Game</h5>
+                </div>
+                <br /><h5 class="save-games-control" href="index.html">Back</h5><br />
             </div>
         </div>
 

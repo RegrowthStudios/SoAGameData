@@ -1,6 +1,8 @@
 // Any loadgame.html specific JS goes here
 function loadGameEntry() {
 
+    App.print("loadGameEntry()");
+
     // Get the array of saves
     var saves = App.getSaveFiles();
 

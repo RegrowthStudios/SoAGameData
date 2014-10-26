@@ -5,6 +5,7 @@ atlas*.bmp
 *.dll
 *.exe
 *.pdb
+*.pak
 *vcxproj*
 errorlog.txt
 
