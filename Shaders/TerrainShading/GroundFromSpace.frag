@@ -47,7 +47,7 @@ void main (void)
     
     normal = Normal_worldspace;
     if (textureUnitID == 0.0){ //TERRAIN
-        fragColor = texture( colorTexture, vec2(temperature, rainfall) ).rgb * fragmentColor;
+        fragColor = texture( colorTexture, vec2(temperature, 1.0 - rainfall) ).rgb * fragmentColor;
 		MaterialDiffuseColor = (texture( textures[0], UV ).rgb + texture( textures[0], UV*4.0 ).rgb) * 0.6;
 	
         modifier = slope*1.27323954; //slope/(pi/4)

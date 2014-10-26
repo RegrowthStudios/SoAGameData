@@ -63,7 +63,7 @@ void main (void)
             }
             
         }else{
-            fragColor = texture( colorTexture, vec2(temperature, rainfall) ).rgb * fragmentColor;
+            fragColor = texture( colorTexture, vec2(temperature, 1.0 - rainfall) ).rgb * fragmentColor;
         }
 		MaterialDiffuseColor = (texture( textures[0], UV ).rgb + texture( textures[0], UV*4.0 ).rgb) * 0.6;
         
