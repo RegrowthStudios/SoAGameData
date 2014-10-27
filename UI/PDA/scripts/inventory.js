@@ -39,7 +39,7 @@ var sbspd = 100;
 //function for expanding the search bar
 function sbar(){
 	if(!sb){
-		console.log("");
+		//console.log("");
 		setTimeout("sbar()",1);
 		//basic timed while loop
 		var search = document.getElementById("search");
