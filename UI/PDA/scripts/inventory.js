@@ -2,18 +2,19 @@
 function inventoryEntry() {
 
     // Get the array of items
-  //  var inventory = App.getInventory();
+  var inventory = App.getInventory();
 
     // Get the save-games-wrapper
- //   var container = document.getElementById("item-list");
+  var container = document.getElementById("item-list");
 
  //   var html = '';
     
     // Construct all the list elements
-//    for (var i = 0; i < inventory.length; i += 2){
+    for (var i = 0; i < inventory.length; i += 2){
  //       html = html + "<li class='item' name=" + inventory[i] + ">"
  //       html = html + inventory[i] + "<span class='item-data'>" + " x " + inventory[i+1] + "</span></li>";
-  //  }
+			addItem(inventory[i],inventory[i+1],"CallBackName."+inventory[i]);
+    }
 
     // Set the HTML
    // container.innerHTML = html;
@@ -21,7 +22,7 @@ function inventoryEntry() {
     // Set up the click function
   //  $(".item").click(function() { selectItem($(this).attr("name")) });
     
- //   App.print("Finished creating list.");
+    App.print("Finished creating list.");
 }
 
 function selectItem(name) {
@@ -129,11 +130,4 @@ function render(){
 	}
 	
 	setInterval("itlist()",600);
-	
-	
-	
-addItem("HardWood","1");
-addItem("Bricks","46");
-addItem("Stone","277");
-addItem("Dirt","1K");
-addItem("Gravel","25");	
+
