@@ -51,17 +51,14 @@ void main(){
     vec3 flashLight = vec3(0.0);
 	
 	float dist = length(distVec);
-		
-	tUV = fract(UV) * texDimensions;
+    
+    vec4 frac = fract(UV);
+    frac.yw = vec2(1.0) - frac.yw;
+	tUV = frac * texDimensions / 16.0;
 	
-	baseUV[0] = tUV[0]/16.0 + OUV[0];
-	baseUV[1] = tUV[1]/16.0 + OUV[1];
-    baseUV[2] = textureAtlas.x;
-    
-    overlayUV[0] = tUV[2]/16.0 + overlayOUV[0];
-	overlayUV[1] = tUV[3]/16.0 + overlayOUV[1];
-    overlayUV[2] = textureAtlas.y;
-    
+    baseUV = vec3(tUV.xy + OUV.xy, textureAtlas.x);
+    overlayUV = vec3(tUV.zw + overlayOUV.xy, textureAtlas.y);
+
     vec4 dUV = UV * texDimensions;
 	
     materialDiffuseColor = textureGrad(textures, baseUV, dFdx(dUV.xy/16.0), dFdy(dUV.xy/16.0));
@@ -76,7 +73,6 @@ void main(){
     materialDiffuseColor.rgb += additiveBlendFactor * overlayColor.rgb;
     
     vec3 fragColor = materialDiffuseColor.rgb * fragmentColor.rgb;
-    
 	vec3 materialAmbiantColor = ambientLight * fragColor;
 
 	if (lightType == 1.0){
