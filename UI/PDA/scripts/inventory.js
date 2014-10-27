@@ -9,13 +9,14 @@ function inventoryEntry() {
 
     // Construct all the list elements
     for (var i = 0; i < inventory.length; i += 2){
-		addItem(inventory[i],inventory[i+1],"CallBackName."+inventory[i]);
+		addItem(inventory[i],inventory[i+1],inventory[i]);
     }
     App.print("Finished adding to list.");
 }
 
 function selectItem(name) {
-    App.print(name);
+    // 0 For left hand
+    App.selectItem(0, name);
 }
 
 function close() {
