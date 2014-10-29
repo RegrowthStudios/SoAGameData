@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SoA Main Menu</title>
+        <script type="text/javascript" src="scripts/inventory.js"></script>
+        <script src="../MainMenu/scripts/menu.js" type="text/javascript"></script>
+        <link href="styles/menu.css" rel="stylesheet" />
+        <link href="../MainMenu/assets/fonts/the_league_of_orbitron/Orbitron.css" rel="stylesheet" />
+    </head>
+	
+	<body onload="inventoryEntry()">
+		<div class="main">
+			<div class="head">
+				<div onclick="sbar()" id="search">
+					<div  id="searchbar">
+						<input type="text" id="search_term" />
+					</div>
+				</div>
+				<div style="" onclick="tmode()" id="viewmode">
+				</div>
+			</div>
+			<div id="ilist">
+				<div id="item-list-wrapper">
+					Loading....
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<!-- temporary styling and hacky fix for the menu.css size override.. pl0x somebody fix this, but be careful when adding divs -->
+<style>
+	
+	body{
+		background-color: rgba(0,0,0,00);
+		color:#fff;
+	}
+	
+	.main{
+		background-color: rgba(0,0,0,0);
+		position:absolute;
+		top:0px;
+		left:0px;
+		height:100%;
+		width:100%;
+	}
+	
+	.head{
+		width: 100%;
+		height:70px;
+		position: absolute;
+		top:0px;
+		left:0px;
+	}
+	
+	#search{
+		background-image: url('assets/icons/search.png');
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		background-repeat:no-repeat;
+		top:5px;
+		left:5px;
+	}
+	
+	#searchbar{
+		overflow: hidden;
+		position: relative;
+		height:60px;
+		float: right;
+		width:0px;
+	}
+	
+	#search_term{
+		background-color:#009;
+		border-color: #fff;
+		border-width: 1px;
+		font-size:35px;
+		color:#fff;
+		width:98%;
+		height:53px;
+		position: absolute;
+		width:0px;
+		top:1px;
+	}
+	
+	#viewmode{
+		background-image: url('assets/icons/grid.png');
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		background-repeat:no-repeat;
+		top:5px;
+		right:5px;
+	}
+	
+	#ilist{
+		width: 98%; 
+		height:480px;
+		position: absolute; 
+		top:70px; 
+		left:3px; 
+		border:1px solid; 
+		border-color:#fff; 
+		overflow-y:auto;
+		overflow-x:hidden;
+	}
+	
+	.itemGrid{
+		background-color:rgba(100,100,100,0);
+		width: 150px;
+		height: 150px;
+		float:left;
+		margin:3px;
+	}
+	
+	
+	.itemGrid:hover{
+		background-color:rgba(100,100,100,50);
+	}
+	
+	.itemThumbGrid{
+		
+	}
+	
+	.itemTextGrid{
+		
+	}
+	
+	.itemCountGrid{
+		
+	}
+	
+	.itemList{
+		background-color:rgba(100,100,100,0);
+		width: 2000px;
+		height: 40px;
+		margin:3px;
+	}
+	
+	.itemList:hover{
+		background-color:rgba(100,100,100,50);
+	}
+	
+	.itemThumbList{
+		
+	}
+	
+	.itemTextList{
+		position:relative;
+		left: 120px;
+	}
+	
+	.itemCountList{
+		position:relative;
+		top:-46px;
+	}
+	
+	@media screen and (max-width:1024px) {
+		
+		.itemGrid{
+			background-color:rgba(100,100,100,0);
+			width: 80px;
+			height: 80px;
+			float:left;
+			margin:3px;
+		}
+		.itemGrid:hover{
+			background-color:rgba(100,100,100,30);
+		}
+		
+		.itemThumbGrid{
+			
+		}
+		
+		.itemTextGrid{
+			
+		}
+		
+		.itemCountGrid{
+			
+		}
+		
+		.itemList{
+			background-color:rgba(100,100,100,0);
+			width: 1300px;
+			height: 20px;
+			margin:3px;
+		}
+		
+		.itemList:hover{
+			background-color:rgba(100,100,100,50);
+		}
+		
+		.itemThumbList{
+			
+		}
+		
+		.itemTextList{
+			position:relative;
+			left: 50px;
+		}
+		
+		.itemCountList{
+			position:relative;
+			top:-22px;
+		}
+    }
+}
+	
+</style>

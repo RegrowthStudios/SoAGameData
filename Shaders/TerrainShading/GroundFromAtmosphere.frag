@@ -8,7 +8,7 @@ in vec2 UV;
 in vec3 Normal_worldspace;
 in vec3 fragmentColor;
 in vec4 slopeColor;
-in vec4 beachColor;
+//in vec4 beachColor;
 flat in float textureUnitID;
 in float temperature;
 in float rainfall;
@@ -63,7 +63,7 @@ void main (void)
             }
             
         }else{
-            fragColor = texture( colorTexture, vec2(temperature, rainfall) ).rgb * fragmentColor;
+            fragColor = texture( colorTexture, vec2(temperature, 1.0 - rainfall) ).rgb * fragmentColor;
         }
 		MaterialDiffuseColor = (texture( textures[0], UV ).rgb + texture( textures[0], UV*4.0 ).rgb) * 0.6;
         
@@ -81,7 +81,7 @@ void main (void)
 			fragColor = vec3(0.875,1.0,0.992); //dont hardcode this later?
 		}else{
 			fade = 1.0; //should not actually fade it
-			fragColor = texture( waterColorTexture, vec2(temperature, rainfall) ).rgb * fragmentColor; //we store depth in rainfall for water
+			fragColor = texture( waterColorTexture, vec2(temperature, 1.0 - rainfall) ).rgb * fragmentColor; //we store depth in rainfall for water
 			specmd += (texture( textures[4], UV*0.1+dt*0.00625 ).rgb*2.0 - 1) * (texture( textures[4], UV*-2*0.05+dt*0.0125 ).rgb*2.0 - 1.0)*10;
 		}
     }else if (textureUnitID == 2.0){
