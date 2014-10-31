@@ -16,7 +16,7 @@ function loadGameEntry() {
     
     // Construct all the list elements
     for (var i = 0; i < saves.length; i += 2){
-        html = html + "<li class='saveFile' name=" + saves[i] + ">"
+        html = html + "<li class='saveFile' data-name=" + saves[i] + ">"
         html = html + saves[i] + "<span class='save-game-data'>" + saves[i+1] + "</span></li>";
     }
 
@@ -24,7 +24,7 @@ function loadGameEntry() {
     container.innerHTML = html;
 
     // Set up the click function
-    $(".saveFile").click(function() { loadGame($(this).attr("name")) });
+    $(".saveFile").click(function() { loadGame($(this).data("name")) });
     
     App.print("Finished creating list.");
 }
