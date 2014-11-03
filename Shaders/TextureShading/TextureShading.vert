@@ -6,7 +6,6 @@ in vec2 vertexUV;
 
 // Output data ; will be interpolated for each fragment.
 out vec2 UV;
-out vec3 fragmentColor;
 
 // Values that stay constant for the whole mesh.
 uniform mat4 MVP;
