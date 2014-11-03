@@ -1,10 +1,10 @@
 ﻿// Handles overlays
 $(document).ready(function () {
     $(".pop-overlay").click(function (e) {
-        $(".overlay[data-overlay-id='" + $(e.currentTarget).data("overlay-id") + "']").fadeIn(1000);
+        $(".overlay[data-overlay-id='" + $(e.currentTarget).data("overlay-id") + "']").fadeIn(100);
     });
     $(".close").click(function () {
-        $(".overlay").fadeOut(500);
+        $(".overlay").fadeOut(100);
     });
 });
 
