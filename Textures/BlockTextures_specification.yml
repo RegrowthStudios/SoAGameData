@@ -1,4 +1,4 @@
-﻿##########  BlockTextures.yml  -  specification and internal format/structure - last updated: 26.10.2014
+﻿##########  BlockTextures.yml  -  specification and internal format/structure - last updated: 03.11.2014
 
   #  BlockTextures.yml contains a list of all blocks a texture pack should modify, sorted by block ID, the file path must be "Blocks/BlockTextures.yml"
   #  This file contains any information about the textures, texture handling methods, color and transparency properties a block should use
@@ -19,19 +19,19 @@
   #  true: More performance heavy, but allows the base texture to use transparent pixels
   #  false: Only supports fully opaque textures. Pixels with alpha values <1 will be underlayed with magenta color.
   #  Transparent base textures support alpha values ≥ 0.05, pixels with alpha values <0.05 will be ignored and don't show up in-game
-  <texture | textureSide | textureTop | textureBottom | textureFront | textureBack | textureLeft | textureRight | textureOpX | textureOpY | textureOpZ>:
-  #  Optional. If not specified, then the texture pack will apply no texture to this block. Same happens when different textures are applied to the same block face.
+  <texture | textureOpX | textureOpY | textureOpZ | textureTop | textureBottom | textureFront | textureBack | textureLeft | textureRight>:
+  #  Optional. If not specified, then the texture pack will apply no texture to this block (will display magenta color instead)
+  # When different textureXXX properties link to the same block face, more precise ones will override more general ones (single faces > opposing faces > all faces)
   #  texture: Used for mesh flora or when all block faces should show the same texture
-  #  textureSide: Applies the texture to all side faces (+/-X and +/-Z for non-rotated blocks)
+  #  textureOpX: Applies the texture to the opposite front and back faces (+/-X non-rotated blocks)
+  #  textureOpY: Applies the texture to the opposite top and bottom faces (+/-Y for non-rotated blocks)
+  #  textureOpZ: Applies the texture to the opposite left and right faces (+/-Z for non-rotated blocks)
   #  textureTop: Applies the texture to the top face (+Y for non-rotated blocks)
   #  textureBottom: Applies the texture to the bottom face (-Y for non-rotated blocks)
   #  textureFront: Applies the texture to the front face (+X for non-rotated blocks)
   #  textureBack: Applies the texture to the back face (-X for non-rotated blocks)
   #  textureLeft: Applies the texture to the left face (+Z for non-rotated blocks)
   #  textureRight: Applies the texture to the right face (-Z for non-rotated blocks)
-  #  textureOpX: Applies the texture to the opposite front and back faces (+/-X non-rotated blocks)
-  #  textureOpY: Applies the texture to the opposite top and bottom faces (+/-Y for non-rotated blocks)
-  #  textureOpZ: Applies the texture to the opposite left and right faces (+/-Z for non-rotated blocks)
     base: (path of base texture)
     #  Required. If any texture should be applied to the respecitve block faces, there must at least be a base texture specified!
       method: <connect | horizontal | vertical | grass | repeat | random | flora>
@@ -156,9 +156,10 @@
   method: flora
   height: (n)
   #  Source texture can contain any number of tile columns, the number of rows of the tile sheet is calculated as following: y=(n²+n)/2
-  #  n: Maximum growth height in blocks (equal to number of texture tiles for the tallest growth stage and number of possible growth stages). Must be defined, otherwise error!
+  #  n: Maximum growth height in blocks (equal to number of texture tiles for the tallest growth stage and number of possible growth stages)
+  #  The growth height must be defined, be at least 2 and must not be higher than 32, otherwise this method gives an error
+  #  This method allows multiblock flora to use a separate texture for every growth stage as well as adding any number optional random variants
   #  Template for n=4 and 5 random variants: www.seedofandromeda.com/assets/images/modding/texture/method_flora.png
-  #  This method allows flora to use a separate texture for every growth stage (texture size for tallest growth stage in tiles: x=1, y=n)
   #  The textures of all stages per random variant are arranged vertically in columns, with the smallest (1 block tall) at the top, and the tallest at the bottom
   #  The tile sheet can contain any number of random variants/columns in a horizontal arrangement
   #  Randomization is done in x and z direction in-game, all blocks in y direction (at a certain x,z position) use the same variant
