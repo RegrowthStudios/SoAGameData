@@ -68,7 +68,7 @@ void main(){
     
     vec3 multColor = max(vec3(multiplicativeBlendFactor), overlayColor.rgb);
     
-    materialDiffuseColor.rgb *= multColor;
+    materialDiffuseColor.rgb *= multColor * fragmentColor.rgb;
     materialDiffuseColor.rgb = mix(materialDiffuseColor.rgb, overlayColor.rgb, min(alphaBlendFactor, overlayColor.a));
     materialDiffuseColor.rgb += additiveBlendFactor * overlayColor.rgb;
     
@@ -78,7 +78,7 @@ void main(){
        discard;
     }  
     
-    vec3 fragColor = materialDiffuseColor.rgb * fragmentColor.rgb;
+    vec3 fragColor = materialDiffuseColor.rgb;
     
 	vec3 materialAmbiantColor = ambientLight * fragColor;
 
