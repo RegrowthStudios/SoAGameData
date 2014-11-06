@@ -22,7 +22,7 @@ function slide(content) {
         setTimeout(function () {
             wrapper.stop(true, true).animate({
                 'height': contentHeight
-            }, 235);
+            }, 100);
         }, 10);
     } else {
         setTimeout(function () {
@@ -30,7 +30,7 @@ function slide(content) {
             setTimeout(function () {
                 wrapper.animate({
                     'height': 0
-                }, 235);
+                }, 100);
             }, 10);
         }, 10);
     }

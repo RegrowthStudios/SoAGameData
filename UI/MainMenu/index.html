@@ -14,7 +14,7 @@
         <link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" />
     </head>
     <body>
-        <img src="assets/images/header.png" id="menu-header" />
+        <img src="assets/images/logo.png" id="menu-header" />
         <div id="menu-options-outer-wrapper" class="outer-wrapper">
             <div id="menu-options-inner-wrapper">
                 <ul id="menu-options">
@@ -22,7 +22,7 @@
                         <audio class="hover" controls preload="auto" hidden>
                             <source src="assets/audio/menu_item_hover.mp3" />
                         </audio>
-                        <a class="SingleEffect" data-mid-id="start-game">New Game</a>
+                        <a class="SingleEffect" data-mid-id="start-game" href="newgame.html">New Game</a>
                     </li>
                     <li class="menu-item">
                         <audio class="hover" controls preload="auto" hidden>
@@ -77,7 +77,7 @@
                                     <audio class="hover" controls preload="auto" hidden>
                                         <source src="assets/audio/menu_item_hover.mp3" />
                                     </audio>
-                                    <a class="SingleEffect" data-mid-id="control-options">Control Options</a>
+                                    <a class="SingleEffect" data-mid-id="control-options">Controls</a>
                                 </li>
                             </ul>
                         </div>
@@ -112,9 +112,8 @@
             <div data-mid-id="mods">Manage the mods running in your game!</div>
         </div>
         
-        <div class="overlay" data-overlay-id="exit">
+        <div class="overlay hide" data-overlay-id="exit">
             <div class="dialog-wrapper">
-                <h2>Confirm</h2>
                 <p>Are you sure you wish to exit the game?</p>
                 <div class="yn-confirm">
                     <ul>

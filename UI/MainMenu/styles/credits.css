@@ -25,10 +25,19 @@
     font-size: 0.65em;
     font-style: italic;
 }
-.credit-description {
-    font-size: 0.55em;
-    letter-spacing: 1px;
-    margin-left: 5em;
-    text-shadow: none;
-    font-family: "orbitronlight";
+
+@media screen and (max-width:1024px) {
+    #credits-list {
+        font-size: 0.6em;
+    }
+    #credits-list > li {
+        margin-bottom: 10px;
+    }
+    .credit-header-image > img {
+        height: 25px;
+        width: 25px;
+    }
+    .credit-header-who {
+        line-height: 25px;
+    }
 }

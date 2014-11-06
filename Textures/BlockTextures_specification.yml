@@ -1,4 +1,4 @@
-﻿##########  BlockTextures.yml  -  specification and internal format/structure - last updated: 14.10.2014
+﻿##########  BlockTextures.yml  -  specification and internal format/structure - last updated: 05.11.2014
 
   #  BlockTextures.yml contains a list of all blocks a texture pack should modify, sorted by block ID, the file path must be "Blocks/BlockTextures.yml"
   #  This file contains any information about the textures, texture handling methods, color and transparency properties a block should use
@@ -10,28 +10,50 @@
   #  All textire paths must be relative to the texture pack and therefore show the folder+subfolders where the texture is located!
 
   
-(Block ID):
-  color: (hexadecimal RGB color value)
-  #  Optional. If not specified, then "ffffff" is used as the default setting
-  #  The whole block (base and overlay texture including all block faces) is multiplied with this color value
+- ID: (Block ID)
+  color: <biome | water | (path of custom color map) | [R, G, B]>
+  #  Optional. If not specified, then "[255, 255, 255]" is used as the default setting.
+  #  biome: Colors from the biome color map of the loaded planet are multiplied with the texture colors of the whole block
+  #  water: Colors from the water color map of the loaded planet are multiplied with the texture colors of the whole block
+  #  As an alternative, a path to a custom color map inside the texture pack or a single RGB color can be defined
+  altColors:
+  #  Optional. If not specified, then there are no alternate colors applied to this block.
+  #  Multiplies the texture colors of the whole block with one of up to 16 alternate colors, which can be defined here. Other color settings are overwritten by this.
+  #  Single blocks or larger block structures (e.g. leaves of trees) are generated using one specific alternate color, randomly picked from this list:
+    color0: [R, G, B]
+    color1: [R, G, B]
+    color2: [R, G, B]
+    color3: [R, G, B]
+    color4: [R, G, B]
+    color5: [R, G, B]
+    color6: [R, G, B]
+    color7: [R, G, B]
+    color8: [R, G, B]
+    color9: [R, G, B]
+    color10: [R, G, B]
+    color11: [R, G, B]
+    color12: [R, G, B]
+    color13: [R, G, B]
+    color14: [R, G, B]
+    color15: [R, G, B]
   transparency: <true | false>
   #  Optional. If not specified, then "false" is used as the default setting.
   #  true: More performance heavy, but allows the base texture to use transparent pixels
   #  false: Only supports fully opaque textures. Pixels with alpha values <1 will be underlayed with magenta color.
   #  Transparent base textures support alpha values ≥ 0.05, pixels with alpha values <0.05 will be ignored and don't show up in-game
-  <texture | textureSide | textureTop | textureBottom | textureFront | textureBack | textureLeft | textureRight | textureOpX | textureOpY | textureOpZ>:
-  #  Optional. If not specified, then the texture pack will apply no texture to this block. Same happens when different textures are applied to the same block face.
+  <texture | textureOpX | textureOpY | textureOpZ | textureTop | textureBottom | textureFront | textureBack | textureLeft | textureRight>:
+  #  Optional. If not specified, then the texture pack will apply no texture to this block (will display magenta color instead)
+  # When different textureXXX properties link to the same block face, more precise ones will override more general ones (single faces > opposing faces > all faces)
   #  texture: Used for mesh flora or when all block faces should show the same texture
-  #  textureSide: Applies the texture to all side faces (+/-X and +/-Z for non-rotated blocks)
+  #  textureOpX: Applies the texture to the opposite front and back faces (+/-X non-rotated blocks)
+  #  textureOpY: Applies the texture to the opposite top and bottom faces (+/-Y for non-rotated blocks)
+  #  textureOpZ: Applies the texture to the opposite left and right faces (+/-Z for non-rotated blocks)
   #  textureTop: Applies the texture to the top face (+Y for non-rotated blocks)
   #  textureBottom: Applies the texture to the bottom face (-Y for non-rotated blocks)
   #  textureFront: Applies the texture to the front face (+X for non-rotated blocks)
   #  textureBack: Applies the texture to the back face (-X for non-rotated blocks)
   #  textureLeft: Applies the texture to the left face (+Z for non-rotated blocks)
   #  textureRight: Applies the texture to the right face (-Z for non-rotated blocks)
-  #  textureOpX: Applies the texture to the opposite front and back faces (+/-X non-rotated blocks)
-  #  textureOpY: Applies the texture to the opposite top and bottom faces (+/-Y for non-rotated blocks)
-  #  textureOpZ: Applies the texture to the opposite left and right faces (+/-Z for non-rotated blocks)
     base: (path of base texture)
     #  Required. If any texture should be applied to the respecitve block faces, there must at least be a base texture specified!
       method: <connect | horizontal | vertical | grass | repeat | random | flora>
@@ -43,11 +65,11 @@
       #  texture: All blocks using the same base texture are coupled and will connect, independent of block ID
       #  As an alternative, a list of paths to coupled textures can be defined, separated by commas. The texture will connect to them independent of block IDs.
       #  The paths only work when the coupled textures use the same connection method, otherwise they give an error
-      useMapColor: <biome | water | (path of custom color map) | (hexadecimal RGB color value)>
-      #  Optional. If missing, then no color map is used for the base texture.
+      color: <biome | water | (path of custom color map) | [R, G, B]>
+      #  Optional. If not specified, then "[255, 255, 255]" is used as the default setting.
       #  biome: Colors from the biome color map of the loaded planet are multiplied with the colors of the base texture
       #  water: Colors from the water color map of the loaded planet are multiplied with the colors of the base texture
-      #  As an alternative, a path to a custom color map inside the texture pack or a single hexadecimal color value can be defined
+      #  As an alternative, a path to a custom color map inside the texture pack or a single RGB color can be defined
       normalMap: (path of normal map file)
       #  Optional. If missing, then no normal map is applied to the base texture.
       specularMap: (path of specular map file)
@@ -63,17 +85,17 @@
       #  texture: All blocks using the same overlay texture are coupled and will connect, independent of block ID
       #  As an alternative, a list of paths to coupled textures can be defined, separated by commas. The texture will connect to them independent of block IDs.
       #  The paths only work when the coupled textures use the same connection method, otherwise they give an error
-      useMapColor: <biome | water | (path of custom color map) | (hexadecimal RGB color value)>
-      #  Optional. If missing, then no color map is used for the overlay texture.
+      color: <biome | water | (path of custom color map) | [R, G, B]>
+      #  Optional. If not specified, then "[255, 255, 255]" is used as the default setting.
       #  biome: Colors from the biome color map of the loaded planet are multiplied with the colors of the overlay texture
       #  water: Colors from the water color map of the loaded planet are multiplied with the colors of the overlay texture
-      #  As an alternative, a path to a custom color map inside the texture pack or a single hexadecimal color value can be defined
+      #  As an alternative, a path to a custom color map inside the texture pack or a single RGB color can be defined
       normalMap: (path of normal map file)
       #  Optional. If missing, then no normal map is applied to the overlay texture.
       specularMap: (path of specular map file)
       #  Optional. If missing, then no specular map is applied to the overlay texture.
     blendMode: <alpha | add | subtract | multiply>
-    #  Optional. If not specified in the file, then "alpha" is used as the default setting
+    #  Optional. If not specified in the file, then "alpha" is used as the default setting.
     #  alpha: Standard alpha blending is used to overlay the base texture
     #  add/subtract/multiply: The colors of the overlay texture are added/subtracted/multiplied to the base texture
 
@@ -156,9 +178,10 @@
   method: flora
   height: (n)
   #  Source texture can contain any number of tile columns, the number of rows of the tile sheet is calculated as following: y=(n²+n)/2
-  #  n: Maximum growth height in blocks (equal to number of texture tiles for the tallest growth stage and number of possible growth stages). Must be defined, otherwise error!
+  #  n: Maximum growth height in blocks (equal to number of texture tiles for the tallest growth stage and number of possible growth stages)
+  #  The growth height must be defined, be at least 2 and must not be higher than 32, otherwise this method gives an error
+  #  This method allows multiblock flora to use a separate texture for every growth stage as well as adding any number optional random variants
   #  Template for n=4 and 5 random variants: www.seedofandromeda.com/assets/images/modding/texture/method_flora.png
-  #  This method allows flora to use a separate texture for every growth stage (texture size for tallest growth stage in tiles: x=1, y=n)
   #  The textures of all stages per random variant are arranged vertically in columns, with the smallest (1 block tall) at the top, and the tallest at the bottom
   #  The tile sheet can contain any number of random variants/columns in a horizontal arrangement
   #  Randomization is done in x and z direction in-game, all blocks in y direction (at a certain x,z position) use the same variant
@@ -180,7 +203,7 @@
 
   ###  Block mesh types:
   #  All mesh types support the use of base and overlay textures as well as any form of color multiplication (color or useMapcolor properties)
-  #  Support for block transparency, (base texture using transparent pixels), normal maps and specular maps is limited to mesh type "cube" (standard blocks)
+  #  Support for block transparency (base texture using transparent pixels), normal maps and specular maps is limited to mesh type "cube" (standard blocks)
   #  The texture handling methods for blocks using mesh type "cube" are restricted to: connect, horizontal, vertical, grass, repeat, random
   #  The texture handling methods for blocks using mesh type "flat" are restricted to: connect, horizontal, vertical, repeat, random
   #  The texture handling methods for blocks using mesh types "cross" and "triangle" are restricted to: vertical, random, flora

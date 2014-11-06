@@ -14,7 +14,7 @@
         <link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" />
     </head>
     <body onload="loadGameEntry()">
-        <img src="assets/images/header.png" id="menu-header" />
+        <img src="assets/images/logo.png" id="menu-header" />
         <div id="load-game-outer-wrapper" class="outer-wrapper">
             <br />
             <h3 class="header">Load Game</h3>
@@ -22,33 +22,37 @@
                 <h5>Select Save:</h5>
                 <div id="save-games-wrapper">
                     <ul id="save-games">
-                        <!-- Save Games are listed here! -->
-                        <li>Matt's World<span class="save-game-data">2014.09.26 21:23</span></li>
-                        <li>Matt's World<span class="save-game-data">2014.09.26 21:23</span></li>
-                        <li>Matt's World<span class="save-game-data">2014.09.26 21:23</span></li>
-                        <li>Matt's World<span class="save-game-data">2014.09.26 21:23</span></li>
                     </ul>
                 </div>
                 <div id="save-games-controls">
                     <h5 class="save-games-control li-right">Launch Game</h5>
                     <h5 class="save-games-control li-right">Delete Game</h5>
                 </div>
-                <br /><h5 class="save-games-control" href="index.html">Back</h5><br />
+                <br /><h5 class="save-games-control"><a href="index.html">back</a></h5><br />
             </div>
         </div>
 
-        <div class="overlay">
+        <div class="overlay hide" data-overlay-id="delete">
             <div class="dialog-wrapper">
                 <h2>Confirm</h2>
                 <p>Are you sure you wish to delete this save?</p>
                 <div class="yn-confirm">
                     <ul>
-                        <li><a>Yes</a></li>
-                        <li><a>No</a></li>
+                        <li class="menu-item">
+                            <audio class="hover" controls preload="auto" hidden>
+                                <source src="assets/audio/menu_item_hover.mp3" />
+                            </audio>
+                            <a>Yes</a>
+                        </li>
+                        <li class="menu-item">
+                            <audio class="hover" controls preload="auto" hidden>
+                                <source src="assets/audio/menu_item_hover.mp3" />
+                            </audio>
+                            <a class="close">No</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <a href="index.html">GO BACK</a>
     </body>
 </html>
