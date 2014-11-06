@@ -77,7 +77,24 @@ var inventoryItems = [""];
 function addItem(name,quantity,callbackName){
 	var item = {};
 	item["name"] = name;
-	item["quantity"] = quantity;
+	
+	var qq = "";
+	
+	if(quantity > 1000){
+		var testpoint = quantity/1000;
+		if(testpoint > 1000){
+			testpoint = testpoint/1000;
+			if(testpoint > 1000){
+				testpoint = testpoint/1000;
+				qq = (testpoint+"").split(".")[0]+"G";
+			}else{
+				qq = (testpoint+"").split(".")[0]+"M";
+			}
+		}else{
+			qq = (testpoint+"").split(".")[0]+"K";
+		}
+	}
+	item["quantity"] = qq;
 	item["callback"] = callbackName;
 	inventoryItems[inventoryItems.length] = item;
 	//broken
@@ -96,9 +113,9 @@ function tmode(){
 		modx = "List";
 		document.getElementById("viewmode").style.backgroundImage = "url('assets/icons/grid.png')"; 
 	}
-}
+} 
 
-var id = '<div onclick="'+ "selectItem('clickex')" +'" class="itemmodx"><div class="itemThumbmodx"></div> <div class="itemTextmodx">txt</div><div class="itemCountmodx">cnt</div></div>';
+var id = '<div onmouseup="'+ "callback(event,'clickex')" +'" class="itemmodx"><div class="itemThumbmodx"></div> <div class="itemTextmodx">txt</div><div class="itemCountmodx">cnt</div></div>';
 //render the item list every 150ms
 function itlist(){
 	var e = 1;
@@ -135,3 +152,11 @@ function itlist(){
 }
 //start render thread
 setInterval("itlist()",150);
+
+function callback(e,n){
+	var a = 0;
+	if((e.which || e.button) == 3){
+		a = 1;
+	}
+    App.selectItem(a, n);
+}
