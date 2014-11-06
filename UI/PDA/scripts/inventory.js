@@ -129,7 +129,9 @@ function itlist(){
 		e++;
 	}
 	//push list
-	document.getElementById("item-list-wrapper").innerHTML = list;
+	if(document.getElementById("item-list-wrapper").innerHTML != list){
+		document.getElementById("item-list-wrapper").innerHTML = list;
+	}
 }
 //start render thread
 setInterval("itlist()",150);
