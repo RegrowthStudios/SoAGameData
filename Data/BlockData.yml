@@ -14,7 +14,7 @@ None:
   explosionResistance: 1
   flammability: 0
   floatingAction: 0
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: none
   moveMod: 1
   movesPowder: true
@@ -50,7 +50,7 @@ Dirt:
   explosionResistance: 0.2
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -86,7 +86,7 @@ Grass Block:
   explosionResistance: 0.2
   flammability: 1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -122,7 +122,7 @@ Stone:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -158,7 +158,7 @@ Wood (Deciduous Tree):
   explosionResistance: 1
   flammability: 1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -194,7 +194,7 @@ Sand:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.9
   movesPowder: false
@@ -230,7 +230,7 @@ Mycelium Block:
   explosionResistance: 0.2
   flammability: 1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -266,7 +266,7 @@ Bone Block:
   explosionResistance: 0.2
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -302,7 +302,7 @@ Lithium Carbonate:
   explosionResistance: 0.2
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -338,7 +338,7 @@ Sodium Carbonate (Soda):
   explosionResistance: 0.2
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -374,7 +374,7 @@ Dry Ice:
   explosionResistance: 0.2
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -410,7 +410,7 @@ Methane Hydrate:
   explosionResistance: 0.2
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -446,7 +446,7 @@ Snow:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -482,7 +482,7 @@ Ice:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 7
   movesPowder: false
@@ -518,7 +518,7 @@ Mud Spawner:
   explosionResistance: 0.2
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -554,7 +554,7 @@ Mud Sink:
   explosionResistance: 0.2
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -590,7 +590,7 @@ Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 25368
+  lightColor: [18, 18, 18]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -626,7 +626,7 @@ Lamp:
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -662,7 +662,7 @@ Mud:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -698,7 +698,7 @@ Clay:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -734,7 +734,7 @@ Silicon:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -770,7 +770,7 @@ Red Sand:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.9
   movesPowder: false
@@ -806,7 +806,7 @@ Red Sand Spawner:
   explosionResistance: 0.2
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -842,7 +842,7 @@ Red Sand Sink:
   explosionResistance: 0.2
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -878,7 +878,7 @@ Gravel Spawner:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -914,7 +914,7 @@ Sand Spawner:
   explosionResistance: 0.2
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -950,7 +950,7 @@ Snow Spawner:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -986,7 +986,7 @@ Water Spawner:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1022,7 +1022,7 @@ Sand Sink:
   explosionResistance: 0.2
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1058,7 +1058,7 @@ Snow Sink:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1094,7 +1094,7 @@ Water Sink:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1130,7 +1130,7 @@ Gravel Sink:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1166,7 +1166,7 @@ Coal:
   explosionResistance: 1
   flammability: 1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1202,7 +1202,7 @@ Iron:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1238,7 +1238,7 @@ Gold:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1274,7 +1274,7 @@ Silver:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1310,7 +1310,7 @@ Copper:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1346,7 +1346,7 @@ Tin:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1382,7 +1382,7 @@ Lead:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1418,7 +1418,7 @@ Platinum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1454,7 +1454,7 @@ Quartz:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1490,7 +1490,7 @@ Diamond:
   explosionResistance: 1
   flammability: 0.8
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1526,7 +1526,7 @@ Ruby:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1562,7 +1562,7 @@ Emerald:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1598,7 +1598,7 @@ Sapphire:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1634,7 +1634,7 @@ Bauxite:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1670,7 +1670,7 @@ Magnetite:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1706,7 +1706,7 @@ Malachite:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1742,7 +1742,7 @@ Aluminium:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1778,7 +1778,7 @@ Sulfur:
   explosionResistance: 1
   flammability: 1.2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1814,7 +1814,7 @@ Rutile:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1850,7 +1850,7 @@ Seamorphite:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1886,7 +1886,7 @@ Thornmite:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1922,7 +1922,7 @@ Cassiterite:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1958,7 +1958,7 @@ Galena:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1994,7 +1994,7 @@ Pitchblende:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2030,7 +2030,7 @@ Scheelite:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2066,7 +2066,7 @@ Submarium:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2102,7 +2102,7 @@ Titanium:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2138,7 +2138,7 @@ Uranium:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 192
+  lightColor: [0, 6, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2174,7 +2174,7 @@ Tungsten:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2210,7 +2210,7 @@ Zinc:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2246,7 +2246,7 @@ Brass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2282,7 +2282,7 @@ Bronze:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2318,7 +2318,7 @@ Sandstone:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2354,7 +2354,7 @@ Dolomite:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2390,7 +2390,7 @@ Limestone:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2426,7 +2426,7 @@ Gravel:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.8
   movesPowder: false
@@ -2462,7 +2462,7 @@ Basalt:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2498,7 +2498,7 @@ Slate:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2534,7 +2534,7 @@ Gneiss:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2570,7 +2570,7 @@ Granite:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2606,7 +2606,7 @@ Marble:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2642,7 +2642,7 @@ Zincblende:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2678,7 +2678,7 @@ Steel:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2714,7 +2714,7 @@ Red Sandstone:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2750,7 +2750,7 @@ Tungsten Steel:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2786,7 +2786,7 @@ Semisolid Basalt:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 20808
+  lightColor: [20, 10, 8]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -2822,7 +2822,7 @@ Mossy Stone:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2858,7 +2858,7 @@ Plutonium:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 128
+  lightColor: [0, 4, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2894,7 +2894,7 @@ Lithium:
   explosionResistance: 1
   flammability: 2.5
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2930,7 +2930,7 @@ Aluminium-Lithium Alloy:
   explosionResistance: 1
   flammability: 1.5
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2966,7 +2966,7 @@ Coke:
   explosionResistance: 1
   flammability: 1.2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -3002,7 +3002,7 @@ White Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 25368
+  lightColor: [24, 24, 24]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3038,7 +3038,7 @@ White Lamp:
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3074,7 +3074,7 @@ Red Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 24576
+  lightColor: [24, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3110,7 +3110,7 @@ Red Lamp:
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3146,7 +3146,7 @@ Green Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 768
+  lightColor: [0, 24, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3182,7 +3182,7 @@ Green Lamp:
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3218,7 +3218,7 @@ Blue Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 24
+  lightColor: [0, 0, 24]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3254,7 +3254,7 @@ Blue Lamp:
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3290,7 +3290,7 @@ Wambronium:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3326,7 +3326,7 @@ Red Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 15360
+  lightColor: [15, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3362,7 +3362,7 @@ Blue Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 15
+  lightColor: [0, 0, 15]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3398,7 +3398,7 @@ Green Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 480
+  lightColor: [0, 15, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3434,7 +3434,7 @@ White Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 15855
+  lightColor: [15, 15, 15]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3470,7 +3470,7 @@ Blue Mushroom Block:
   explosionResistance: 1
   flammability: 0.5
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3506,7 +3506,7 @@ Purple Mushroom Block:
   explosionResistance: 1
   flammability: 0.5
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3542,7 +3542,7 @@ Lamella Block:
   explosionResistance: 1
   flammability: 0.5
   floatingAction: 1
-  lightColor: 10570
+  lightColor: [10, 10, 10]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3578,7 +3578,7 @@ Mushroom Stem Block:
   explosionResistance: 1
   flammability: 0.5
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3614,7 +3614,7 @@ Grey Mushroom Block:
   explosionResistance: 1
   flammability: 0.5
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3650,7 +3650,7 @@ Dark Purple Mushroom Block:
   explosionResistance: 1
   flammability: 0.5
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3686,7 +3686,7 @@ Dark Blue Mushroom Block:
   explosionResistance: 1
   flammability: 0.5
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3722,7 +3722,7 @@ Cyan Mushroom Block:
   explosionResistance: 1
   flammability: 0.5
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3758,7 +3758,7 @@ Pink Mushroom Block:
   explosionResistance: 1
   flammability: 0.5
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3794,7 +3794,7 @@ Green Mushroom Block:
   explosionResistance: 1
   flammability: 0.5
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3830,7 +3830,7 @@ Dark Green Mushroom Block:
   explosionResistance: 1
   flammability: 0.5
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3866,7 +3866,7 @@ Red Mushroom Block:
   explosionResistance: 1
   flammability: 0.5
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3902,7 +3902,7 @@ Dark Red Mushroom Block:
   explosionResistance: 1
   flammability: 0.5
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3938,7 +3938,7 @@ Brown Mushroom Block:
   explosionResistance: 1
   flammability: 0.5
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3974,7 +3974,7 @@ LED Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 25368
+  lightColor: [24, 24, 24]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4010,7 +4010,7 @@ LED Lamp:
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4046,7 +4046,7 @@ Trinitrotoluene (TNT):
   explosionResistance: 1
   flammability: 1e+007
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4082,7 +4082,7 @@ Nitroglycerin:
   explosionResistance: 1
   flammability: 1e+007
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4118,7 +4118,7 @@ Dynamite:
   explosionResistance: 1
   flammability: 1e+007
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4154,7 +4154,7 @@ Black Powder Crate 10kg:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4190,7 +4190,7 @@ Black Powder Crate 20kg:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4226,7 +4226,7 @@ Black Powder Box 1kg:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4262,7 +4262,7 @@ Black Powder Box 100g:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4298,7 +4298,7 @@ Black Powder:
   explosionResistance: 1
   flammability: 1e+007
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.8
   movesPowder: false
@@ -4334,7 +4334,7 @@ ANFO 25kg:
   explosionResistance: 20
   flammability: 1e+007
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4370,7 +4370,7 @@ Shrapnel Bomb (1kg Amatol):
   explosionResistance: 10
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4406,7 +4406,7 @@ Amatol 25kg:
   explosionResistance: 5
   flammability: 1e+007
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4442,7 +4442,7 @@ Ammonium Nitrate:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -4478,7 +4478,7 @@ Salpeter:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4514,7 +4514,7 @@ Diatomite (Kieselguhr):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4550,7 +4550,7 @@ Nitrocellulose:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -4586,7 +4586,7 @@ Blasting Gelatin:
   explosionResistance: 1
   flammability: 1e+007
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4622,7 +4622,7 @@ Firebomb:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4658,7 +4658,7 @@ Octanitrocubane (ONC):
   explosionResistance: 1
   flammability: 1e+007
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4694,7 +4694,7 @@ Alien Plantoid Mine:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4730,7 +4730,7 @@ Atomic Bomb (Mark I):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4766,7 +4766,7 @@ Thermonuclear Bomb (Mark II):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4802,7 +4802,7 @@ Three-Stage Bomb (Mark III):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4838,7 +4838,7 @@ Xenon Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 28543
+  lightColor: [28, 28, 30]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4874,7 +4874,7 @@ Xenon Lamp:
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4910,7 +4910,7 @@ Red Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 6144
+  lightColor: [6, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4946,7 +4946,7 @@ Green Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 192
+  lightColor: [0, 6, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4982,7 +4982,7 @@ Blue Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 6
+  lightColor: [0, 0, 6]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5018,7 +5018,7 @@ Light Metal Plating:
   explosionResistance: 1
   flammability: 1.5
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5054,7 +5054,7 @@ Pitch:
   explosionResistance: 1
   flammability: 1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.05
   movesPowder: false
@@ -5090,7 +5090,7 @@ White Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 6342
+  lightColor: [6, 6, 6]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5126,7 +5126,7 @@ Rubber:
   explosionResistance: 1
   flammability: 1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5162,7 +5162,7 @@ Thornmite Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5198,7 +5198,7 @@ Alumina Ceramic:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5234,7 +5234,7 @@ Ceramic Plating:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5270,7 +5270,7 @@ Tungsten Carbide:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5306,7 +5306,7 @@ Sandstone Bricks:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5342,7 +5342,7 @@ Red Sandstone Bricks:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5378,7 +5378,7 @@ Stone Bricks:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5414,7 +5414,7 @@ Granite Bricks:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5450,7 +5450,7 @@ Limestone Bricks:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5486,7 +5486,7 @@ Marble Bricks:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5522,7 +5522,7 @@ Aluminium Plating:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5558,7 +5558,7 @@ Steel Plating:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5594,7 +5594,7 @@ Tungsten Steel Plating:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5630,7 +5630,7 @@ Titanium Plating:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5666,7 +5666,7 @@ Thornmite Plating:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5702,7 +5702,7 @@ Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5738,7 +5738,7 @@ Lightweight Bricks:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5774,7 +5774,7 @@ Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5810,7 +5810,7 @@ Concrete:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5846,7 +5846,7 @@ Bricks:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5882,7 +5882,7 @@ Hardwood Planks:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5918,7 +5918,7 @@ Cobblestone:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5954,7 +5954,7 @@ Junglewood Planks:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5990,7 +5990,7 @@ Savannawood Planks:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6026,7 +6026,7 @@ Palmwood Planks:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6062,7 +6062,7 @@ Swampwood Planks:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6098,7 +6098,7 @@ Softwood Planks:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6134,7 +6134,7 @@ Deadwood Planks:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6170,7 +6170,7 @@ Darkwood Planks:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6206,7 +6206,7 @@ Ruberwood Planks:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6242,7 +6242,7 @@ Sugarwood Planks:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6278,7 +6278,7 @@ White Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6314,7 +6314,7 @@ Black Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6350,7 +6350,7 @@ Grey Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6386,7 +6386,7 @@ Brown Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6422,7 +6422,7 @@ Light Yellow Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6458,7 +6458,7 @@ Yellow Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6494,7 +6494,7 @@ Orange Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6530,7 +6530,7 @@ Red Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6566,7 +6566,7 @@ Dark Red Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6602,7 +6602,7 @@ Pink Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6638,7 +6638,7 @@ Magenta Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6674,7 +6674,7 @@ Lime Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6710,7 +6710,7 @@ Green Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6746,7 +6746,7 @@ Dark Green Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6782,7 +6782,7 @@ Cyan Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6818,7 +6818,7 @@ Light Blue Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6854,7 +6854,7 @@ Blue Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6890,7 +6890,7 @@ Dark Blue Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6926,7 +6926,7 @@ Purple Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6962,7 +6962,7 @@ Dark Purple Cloth Block:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6998,7 +6998,7 @@ Lapis Lazuli:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7034,7 +7034,7 @@ Black Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7070,7 +7070,7 @@ Grey Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7106,7 +7106,7 @@ Brown Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7142,7 +7142,7 @@ Light Yellow Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7178,7 +7178,7 @@ Yellow Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7214,7 +7214,7 @@ Orange Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7250,7 +7250,7 @@ Red Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7286,7 +7286,7 @@ Dark Red Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7322,7 +7322,7 @@ Pink Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7358,7 +7358,7 @@ Magenta Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7394,7 +7394,7 @@ Lime Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7430,7 +7430,7 @@ Green Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7466,7 +7466,7 @@ Dark Green Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7502,7 +7502,7 @@ Cyan Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7538,7 +7538,7 @@ Light Blue Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7574,7 +7574,7 @@ Blue Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7610,7 +7610,7 @@ Dark Blue Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7646,7 +7646,7 @@ Purple Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7682,7 +7682,7 @@ Dark Purple Gypsum:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7718,7 +7718,7 @@ Charred Wood (Deciduous Tree):
   explosionResistance: 1
   flammability: 0.1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7754,7 +7754,7 @@ Charred Wood (Dead Tree):
   explosionResistance: 1
   flammability: 0.1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7790,7 +7790,7 @@ Charred Wood (Coniferous Tree):
   explosionResistance: 1
   flammability: 0.1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7826,7 +7826,7 @@ Charred Wood (Palm Tree):
   explosionResistance: 1
   flammability: 0.1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7862,7 +7862,7 @@ Charred Wood (Jungle Tree):
   explosionResistance: 1
   flammability: 0.1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7898,7 +7898,7 @@ Charred Wood (Swamp Tree):
   explosionResistance: 1
   flammability: 0.1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7934,7 +7934,7 @@ Charred Wood (Sugar Tree):
   explosionResistance: 1
   flammability: 0.1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7970,7 +7970,7 @@ Charred Wood (Rubber Tree):
   explosionResistance: 1
   flammability: 0.1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8006,7 +8006,7 @@ Charred Wood (Fruit Tree):
   explosionResistance: 1
   flammability: 0.1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8042,7 +8042,7 @@ Charred Wood (Savanna Tree):
   explosionResistance: 1
   flammability: 0.1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8078,7 +8078,7 @@ Charred Hardwood Planks:
   explosionResistance: 1
   flammability: 0.2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8114,7 +8114,7 @@ Charred Softwood Planks:
   explosionResistance: 1
   flammability: 0.2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8150,7 +8150,7 @@ Charred Junglewood Planks:
   explosionResistance: 1
   flammability: 0.2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8186,7 +8186,7 @@ Charred Savannawood Planks:
   explosionResistance: 1
   flammability: 0.2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8222,7 +8222,7 @@ Charred Deadwood Planks:
   explosionResistance: 1
   flammability: 0.2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8258,7 +8258,7 @@ Charred Palmwood Planks:
   explosionResistance: 1
   flammability: 0.2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8294,7 +8294,7 @@ Charred Darkwood Planks:
   explosionResistance: 1
   flammability: 0.2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8330,7 +8330,7 @@ Charred Sugarwood Planks:
   explosionResistance: 1
   flammability: 0.2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8366,7 +8366,7 @@ Charred Rubberwood Planks:
   explosionResistance: 1
   flammability: 0.2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8402,7 +8402,7 @@ Charred Swampwood Planks:
   explosionResistance: 1
   flammability: 0.2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8438,7 +8438,7 @@ Charred Smooth Mushroom Block:
   explosionResistance: 1
   flammability: 0.05
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8474,7 +8474,7 @@ Charred Spotted Mushroom Block:
   explosionResistance: 1
   flammability: 0.05
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8510,7 +8510,7 @@ Charred Mushroom Stem Block:
   explosionResistance: 1
   flammability: 0.05
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8546,7 +8546,7 @@ Charred Lamella Block:
   explosionResistance: 1
   flammability: 0.05
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8582,7 +8582,7 @@ Charred Rubber:
   explosionResistance: 1
   flammability: 0.1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8618,7 +8618,7 @@ Rusty Iron:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8654,7 +8654,7 @@ Rusty Steel:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8690,7 +8690,7 @@ Patinated Copper:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8726,7 +8726,7 @@ Rusty Steel Plating:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8762,7 +8762,7 @@ Small Red Cactus (Bud):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -8798,7 +8798,7 @@ Small Red Cactus (Stem):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -8834,7 +8834,7 @@ Small Yellow Cactus (Bud):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -8870,7 +8870,7 @@ Small Yellow Cactus (Stem):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -8906,7 +8906,7 @@ Small Green Cactus (Bud):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -8942,7 +8942,7 @@ Small Green Cactus (Stem):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -8978,7 +8978,7 @@ Death Cactus:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -9014,7 +9014,7 @@ Mutated Death Cactus:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -9050,7 +9050,7 @@ Poison Cactus:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -9086,7 +9086,7 @@ Starch Cactus:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -9122,7 +9122,7 @@ Cactus Fruit:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.6
   movesPowder: false
@@ -9158,7 +9158,7 @@ Alien Crop Plant (Bud):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 16
+  lightColor: [0, 0, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -9194,7 +9194,7 @@ Ammonia Plant:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 512
+  lightColor: [0, 16, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -9230,7 +9230,7 @@ Common White Flowers:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9266,7 +9266,7 @@ Tall Grass:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -9302,7 +9302,7 @@ Fern:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -9338,7 +9338,7 @@ Yellow Grass:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -9374,7 +9374,7 @@ Dryland Grass:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -9410,7 +9410,7 @@ Red Flower Grass:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -9446,7 +9446,7 @@ Light Tall Grass:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -9482,7 +9482,7 @@ Small Yellow Flower:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9518,7 +9518,7 @@ Red Bush:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9554,7 +9554,7 @@ Dark Tall Grass:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -9590,7 +9590,7 @@ Jungle Plant 1:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9626,7 +9626,7 @@ Large Purple Flower:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9662,7 +9662,7 @@ Large Yellow Flower:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9698,7 +9698,7 @@ Pink Fringed Flower:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9734,7 +9734,7 @@ Red Fringed Flower:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9770,7 +9770,7 @@ Tiny Fringed Flower:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9806,7 +9806,7 @@ White Fringed Flower:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 5285
+  lightColor: [5, 5, 5]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9842,7 +9842,7 @@ Yellow Fringed Flower:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 5285
+  lightColor: [5, 5, 5]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9878,7 +9878,7 @@ Large Red Flower:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9914,7 +9914,7 @@ Green Mushroom:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
-  lightColor: 5285
+  lightColor: [5, 5, 5]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9950,7 +9950,7 @@ Dark Green Mushroom:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
-  lightColor: 5285
+  lightColor: [5, 5, 5]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9986,7 +9986,7 @@ Brown Mushroom:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
-  lightColor: 5285
+  lightColor: [5, 5, 5]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -10022,7 +10022,7 @@ Red Mushroom:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
-  lightColor: 5285
+  lightColor: [5, 5, 5]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -10058,7 +10058,7 @@ Dark Red Mushroom:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
-  lightColor: 5285
+  lightColor: [5, 5, 5]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -10094,7 +10094,7 @@ Grey Mushroom:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
-  lightColor: 5285
+  lightColor: [5, 5, 5]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -10130,7 +10130,7 @@ Wood (Fruit Tree):
   explosionResistance: 1
   flammability: 1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -10166,7 +10166,7 @@ Wood (Jungle Tree):
   explosionResistance: 1
   flammability: 1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -10202,7 +10202,7 @@ Wood (Savanna Tree):
   explosionResistance: 1
   flammability: 1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -10238,7 +10238,7 @@ Wood (Palm Tree):
   explosionResistance: 1
   flammability: 1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -10274,7 +10274,7 @@ Wood (Swamp Tree):
   explosionResistance: 1
   flammability: 1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -10310,7 +10310,7 @@ Wood (Coniferous Tree):
   explosionResistance: 1
   flammability: 1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -10346,7 +10346,7 @@ Wood (Dead Tree):
   explosionResistance: 1
   flammability: 1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -10382,7 +10382,7 @@ Leaves (Deciduous Tree):
   explosionResistance: 0.06
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10418,7 +10418,7 @@ Leaves (Jungle Tree):
   explosionResistance: 0.06
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10454,7 +10454,7 @@ Leaves (Savanna Tree):
   explosionResistance: 0.06
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10490,7 +10490,7 @@ Leaves (Palm Tree):
   explosionResistance: 0.06
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10526,7 +10526,7 @@ Leaves (Swamp Tree):
   explosionResistance: 0.06
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10562,7 +10562,7 @@ Leaves (Coniferous Tree):
   explosionResistance: 0.06
   flammability: 3
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10598,7 +10598,7 @@ Leaves (Fruit Tree):
   explosionResistance: 0.06
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10634,7 +10634,7 @@ Leaves (Blooming Fruit Tree):
   explosionResistance: 0.06
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10670,7 +10670,7 @@ Blue Mushroom:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
-  lightColor: 5285
+  lightColor: [5, 5, 5]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -10706,7 +10706,7 @@ Dark Blue Mushroom:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
-  lightColor: 5285
+  lightColor: [5, 5, 5]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -10742,7 +10742,7 @@ Purple Mushroom:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
-  lightColor: 5285
+  lightColor: [5, 5, 5]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -10778,7 +10778,7 @@ Dark Purple Mushroom:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
-  lightColor: 5285
+  lightColor: [5, 5, 5]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -10814,7 +10814,7 @@ Wood (Rubber Tree):
   explosionResistance: 1
   flammability: 1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -10850,7 +10850,7 @@ Leaves (Rubber Tree):
   explosionResistance: 0.06
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10886,7 +10886,7 @@ Wood (Sugar Tree):
   explosionResistance: 1
   flammability: 1
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -10922,7 +10922,7 @@ Leaves (Sugar Tree):
   explosionResistance: 0.06
   flammability: 2
   floatingAction: 1
-  lightColor: 16384
+  lightColor: [1, 0, 0]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10958,7 +10958,7 @@ Nitrogen:
   explosionResistance: 1
   flammability: 0
   floatingAction: 0
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -10994,7 +10994,7 @@ Oxygen:
   explosionResistance: 1
   flammability: 0
   floatingAction: 0
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11030,7 +11030,7 @@ Carbon Dioxide:
   explosionResistance: 1
   flammability: 0
   floatingAction: 0
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11066,7 +11066,7 @@ Nitrogen Dioxide:
   explosionResistance: 1
   flammability: 0
   floatingAction: 0
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11102,7 +11102,7 @@ Sulfur Dioxide:
   explosionResistance: 1
   flammability: 0
   floatingAction: 0
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11138,7 +11138,7 @@ Helium:
   explosionResistance: 1
   flammability: 0
   floatingAction: 0
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11174,7 +11174,7 @@ Argon:
   explosionResistance: 1
   flammability: 0
   floatingAction: 0
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11210,7 +11210,7 @@ Xenon:
   explosionResistance: 1
   flammability: 0
   floatingAction: 0
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11246,7 +11246,7 @@ Hydrogen:
   explosionResistance: 1
   flammability: 0
   floatingAction: 0
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11282,7 +11282,7 @@ Ammonia:
   explosionResistance: 1
   flammability: 0
   floatingAction: 0
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11318,7 +11318,7 @@ Methane:
   explosionResistance: 1
   flammability: 0
   floatingAction: 0
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11354,7 +11354,7 @@ Deuterium:
   explosionResistance: 1
   flammability: 0
   floatingAction: 0
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11390,7 +11390,7 @@ Water (Steam):
   explosionResistance: 1
   flammability: 0
   floatingAction: 0
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11426,7 +11426,7 @@ Rubber Sapling:
   explosionResistance: 0.05
   flammability: 2
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -11462,7 +11462,7 @@ Stone Succulent (Bud):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11498,7 +11498,7 @@ Blue Succulent (Bud):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11534,7 +11534,7 @@ Purple Succulent (Bud):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11570,7 +11570,7 @@ Stone Succulent (Stem):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11606,7 +11606,7 @@ Blue Succulent (Stem):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11642,7 +11642,7 @@ Purple Succulent (Stem):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11678,7 +11678,7 @@ Alien Crop Plant (Stem):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 16
+  lightColor: [0, 0, 16]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11714,7 +11714,7 @@ Charred Grass Block:
   explosionResistance: 1
   flammability: 0.05
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11750,7 +11750,7 @@ Cave Plant (Stem):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11786,7 +11786,7 @@ Cave Plant (Cap):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11822,7 +11822,7 @@ Frozen Nitrogen:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11858,7 +11858,7 @@ Desert Chalice Block:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11894,7 +11894,7 @@ Salpeter Plant Light Block:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 16
+  lightColor: [0, 0, 16]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11930,7 +11930,7 @@ Salpeter Plant Trap Block:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.001
   movesPowder: false
@@ -11966,7 +11966,7 @@ Patinated Brass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12002,7 +12002,7 @@ Patinated Bronze:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12038,7 +12038,7 @@ Metal Framed Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12074,7 +12074,7 @@ Ceramic Tiling:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12110,7 +12110,7 @@ Small Fern:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -12146,7 +12146,7 @@ Tall Fern:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12182,7 +12182,7 @@ Jungle Plant 2:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12218,7 +12218,7 @@ Jungle Plant 3:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -12254,7 +12254,7 @@ Jungle Plant 4:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -12290,7 +12290,7 @@ Jungle Plant 5:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12326,7 +12326,7 @@ Jungle Plant 6:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -12362,7 +12362,7 @@ Jungle Plant 7:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12398,7 +12398,7 @@ Deciduous Sapling:
   explosionResistance: 0.05
   flammability: 2
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12434,7 +12434,7 @@ Conifer Sapling:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12470,7 +12470,7 @@ Swamp Sapling:
   explosionResistance: 0.05
   flammability: 2
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12506,7 +12506,7 @@ Savanna Sapling:
   explosionResistance: 0.05
   flammability: 2
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12542,7 +12542,7 @@ Dead Sapling:
   explosionResistance: 0.05
   flammability: 2
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12578,7 +12578,7 @@ Jungle Sapling:
   explosionResistance: 0.05
   flammability: 2
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12614,7 +12614,7 @@ Fruit Tree Sapling:
   explosionResistance: 0.05
   flammability: 2
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12650,7 +12650,7 @@ Sugar Tree Sapling:
   explosionResistance: 0.05
   flammability: 2
   floatingAction: 2
-  lightColor: 8192
+  lightColor: [8, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12686,7 +12686,7 @@ Palm Sapling:
   explosionResistance: 0.05
   flammability: 2
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12722,7 +12722,7 @@ Sandbags:
   explosionResistance: 1
   flammability: 1.5
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.8
   movesPowder: false
@@ -12758,7 +12758,7 @@ Yellow Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 15840
+  lightColor: [15, 15, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12794,7 +12794,7 @@ Orange Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 15648
+  lightColor: [15, 9, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12830,7 +12830,7 @@ Magenta Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 15375
+  lightColor: [15, 0, 15]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12866,7 +12866,7 @@ Cyan Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 495
+  lightColor: [0, 15, 15]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12902,7 +12902,7 @@ Yellow Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 6336
+  lightColor: [6, 6, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12938,7 +12938,7 @@ Orange Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 6272
+  lightColor: [6, 4, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12974,7 +12974,7 @@ Magenta Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 6150
+  lightColor: [6, 0, 6]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13010,7 +13010,7 @@ Cyan Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 198
+  lightColor: [0, 6, 6]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13046,7 +13046,7 @@ Yellow Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 25344
+  lightColor: [24, 24, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13082,7 +13082,7 @@ Yellow Lamp:
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13118,7 +13118,7 @@ Orange Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 25024
+  lightColor: [24, 15, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13154,7 +13154,7 @@ Orange Lamp:
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13190,7 +13190,7 @@ Magenta Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 24600
+  lightColor: [24, 0, 24]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13226,7 +13226,7 @@ Magenta Lamp:
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13262,7 +13262,7 @@ Cyan Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 792
+  lightColor: [0, 24, 24]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13298,7 +13298,7 @@ Cyan Lamp:
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13334,7 +13334,7 @@ Cut Stone Block:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13370,7 +13370,7 @@ Cut Granite Block:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13406,7 +13406,7 @@ Cut Limestone Block:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13442,7 +13442,7 @@ Cut Marble Block:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13478,7 +13478,7 @@ Cut Sandstone Block:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13514,7 +13514,7 @@ Cut Red Sandstone Block:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13550,7 +13550,7 @@ Chiseled Marble Block:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13586,7 +13586,7 @@ Chiseled Sandstone Block:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13622,7 +13622,7 @@ Chiseled Red Sandstone Block:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13658,7 +13658,7 @@ Chiseled Marble Ornament Block:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13694,7 +13694,7 @@ Marble Column:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13730,7 +13730,7 @@ Twisted Marble Column:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13766,7 +13766,7 @@ Chiseled Sandstone Ornament Block:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13802,7 +13802,7 @@ Chiseled Red Sandstone Ornament Block:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13838,7 +13838,7 @@ Dry Mud:
   explosionResistance: 0.2
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13874,7 +13874,7 @@ Half-Dry Mud:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -13910,7 +13910,7 @@ Tholin Dust:
   explosionResistance: 1
   flammability: 2
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.9
   movesPowder: false
@@ -13946,7 +13946,7 @@ Frozen Methane:
   explosionResistance: 1
   flammability: 3
   floatingAction: 1
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 0.8
   movesPowder: false
@@ -13982,7 +13982,7 @@ Little Icecaps:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -14018,7 +14018,7 @@ Terror Lichen:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -14054,7 +14054,7 @@ Sorrowthorn:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -14090,7 +14090,7 @@ Skeleton Flower:
   explosionResistance: 0.05
   flammability: 3
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -14126,7 +14126,7 @@ Methane Ball Plant:
   explosionResistance: 1
   flammability: 5
   floatingAction: 2
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -14162,7 +14162,7 @@ Fire:
   explosionResistance: 0
   flammability: 0
   floatingAction: 2
-  lightColor: 25163
+  lightColor: [24, 18, 11]
   meshType: none
   moveMod: 1
   movesPowder: false
@@ -14198,7 +14198,7 @@ Fire (Sulfur):
   explosionResistance: 0
   flammability: 0
   floatingAction: 2
-  lightColor: 24
+  lightColor: [0, 5, 24]
   meshType: none
   moveMod: 1
   movesPowder: false
@@ -14234,7 +14234,7 @@ Fire (Light Metal):
   explosionResistance: 0
   flammability: 0
   floatingAction: 2
-  lightColor: 32767
+  lightColor: [31, 31, 31]
   meshType: none
   moveMod: 1
   movesPowder: false
@@ -14270,7 +14270,7 @@ Fire (Lithium):
   explosionResistance: 0
   flammability: 0
   floatingAction: 2
-  lightColor: 31749
+  lightColor: [31, 0, 5]
   meshType: none
   moveMod: 1
   movesPowder: false
@@ -14306,7 +14306,7 @@ Fire (Gas):
   explosionResistance: 0
   flammability: 0
   floatingAction: 2
-  lightColor: 11636
+  lightColor: [11, 11, 20]
   meshType: none
   moveMod: 1
   movesPowder: false
@@ -14342,7 +14342,7 @@ Water (1):
   explosionResistance: 0.9
   flammability: -5.5
   floatingAction: 0
-  lightColor: 0
+  lightColor: [0, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: true
