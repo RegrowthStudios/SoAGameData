@@ -16,7 +16,7 @@ void main(){
   uv.x = 0.4*sin(elapsedTime*50.0);
   uv.y = 0.4*cos(elapsedTime*50.0);
   float n = texture2D(noiseTex, (UV.xy * 3.5) + uv).r;
-  vec3 c = texture2D(sceneBuffer, UV.xy + (n * 0.005)).rgb;
+  vec3 c = texture2D(sceneBuffer, UV.xy + (n * 0.001)).rgb;
 
   float lum = dot(vec3(0.30, 0.59, 0.11), c);
   if (lum < luminanceThreshold)
