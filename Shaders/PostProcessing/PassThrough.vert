@@ -7,7 +7,7 @@ in vec2 vertexPosition_screenspace;
 out vec2 UV;
 
 void main(){
-	gl_Position =  vec4(vertexPosition_screenspace.x*2 - 1.0, vertexPosition_screenspace.y*2 - 1.0, 0, 1);
-	UV = vertexPosition_screenspace;
+	gl_Position =  vec4(vertexPosition_screenspace.xy, 0, 1);
+	UV = (vertexPosition_screenspace + 1.0) / 2.0;
 }
 
