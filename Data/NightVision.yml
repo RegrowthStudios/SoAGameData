@@ -1,14 +1,21 @@
-# This is the default night vision
-- Color: [0.1, 0.95, 0.2]
-  Contrast: 5.4
+# Class I
+- Color: [0.25, 0.50, 0.00]
+  Contrast: 7.0
   Filter: 0.5
-  Brightness: 5.0
-  Noise: 0.001
+  Brightness: 3.0
+  Noise: 0.002
   ColorNoise: 0.2
-# Add other kinds here
-- Color: [1.0, 0.0, 0.0]
-  Contrast: 4.4
+# Class II
+- Color: [0.10, 1.00, 0.00]
+  Contrast: 3.0
   Filter: 0.5
-  Brightness: 5.0
-  Noise: 0.001
-  ColorNoise: 0.2
+  Brightness: 6.0
+  Noise: 0.00075
+  ColorNoise: 0.075
+  # Class III
+- Color: [0.10, 1.00, 0.25]
+  Contrast: 1.0
+  Filter: 0.5
+  Brightness: 15.0
+  Noise: 0.0000
+  ColorNoise: 0.00
