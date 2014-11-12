@@ -1,0 +1,14 @@
+# This is the default night vision
+- Color: [0.1, 0.95, 0.2]
+  Contrast: 5.4
+  Filter: 0.5
+  Brightness: 5.0
+  Noise: 0.001
+  ColorNoise: 0.2
+# Add other kinds here
+- Color: [1.0, 0.0, 0.0]
+  Contrast: 4.4
+  Filter: 0.5
+  Brightness: 5.0
+  Noise: 0.001
+  ColorNoise: 0.2
