@@ -1,0 +1,8 @@
+# This is the default night vision
+- Color: [2.2, 0.92, 0.53] # HSL colors with hue in range [0, 2 * pi)
+  LuminanceExponent: 1.4 # Affects contrast
+  ColorAmplification: 5.0 # Affects overall brightness
+# Add other kinds here
+- Color: [0, 1.0, 0.5]
+  LuminanceExponent: 1.4
+  ColorAmplification: 5.0
