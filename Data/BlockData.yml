@@ -4,7 +4,7 @@ None:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -40,7 +40,7 @@ Dirt:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -76,7 +76,7 @@ Grass Block:
   burnTransformID: 325
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -112,7 +112,7 @@ Stone:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -148,7 +148,7 @@ Wood (Deciduous Tree):
   burnTransformID: 214
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -184,7 +184,7 @@ Sand:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -220,7 +220,7 @@ Mycelium Block:
   burnTransformID: 1
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -256,7 +256,7 @@ Bone Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -292,7 +292,7 @@ Lithium Carbonate:
   burnTransformID: 0
   collide: true
   color: [235, 235, 235]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -328,7 +328,7 @@ Sodium Carbonate (Soda):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -364,7 +364,7 @@ Dry Ice:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -400,7 +400,7 @@ Methane Hydrate:
   burnTransformID: 4024
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -436,7 +436,7 @@ Snow:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -472,7 +472,7 @@ Ice:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -508,7 +508,7 @@ Mud Spawner:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -544,7 +544,7 @@ Mud Sink:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -580,7 +580,7 @@ Lamp (on):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -616,7 +616,7 @@ Lamp:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -652,7 +652,7 @@ Mud:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -688,7 +688,7 @@ Clay:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -724,7 +724,7 @@ Silicon:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -760,7 +760,7 @@ Red Sand:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -796,7 +796,7 @@ Red Sand Spawner:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -832,7 +832,7 @@ Red Sand Sink:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -868,7 +868,7 @@ Gravel Spawner:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -904,7 +904,7 @@ Sand Spawner:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -940,7 +940,7 @@ Snow Spawner:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -976,7 +976,7 @@ Water Spawner:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1012,7 +1012,7 @@ Sand Sink:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1048,7 +1048,7 @@ Snow Sink:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1084,7 +1084,7 @@ Water Sink:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1120,7 +1120,7 @@ Gravel Sink:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1156,7 +1156,7 @@ Coal:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1192,7 +1192,7 @@ Iron:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1228,7 +1228,7 @@ Gold:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1264,7 +1264,7 @@ Silver:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1300,7 +1300,7 @@ Copper:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1336,7 +1336,7 @@ Tin:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1372,7 +1372,7 @@ Lead:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1408,7 +1408,7 @@ Platinum:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1444,7 +1444,7 @@ Quartz:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1480,7 +1480,7 @@ Diamond:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1516,7 +1516,7 @@ Ruby:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1552,7 +1552,7 @@ Emerald:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1588,7 +1588,7 @@ Sapphire:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1624,7 +1624,7 @@ Bauxite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1660,7 +1660,7 @@ Magnetite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1696,7 +1696,7 @@ Malachite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1732,7 +1732,7 @@ Aluminium:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1768,7 +1768,7 @@ Sulfur:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1804,7 +1804,7 @@ Rutile:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1840,7 +1840,7 @@ Seamorphite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1876,7 +1876,7 @@ Thornmite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1912,7 +1912,7 @@ Cassiterite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1948,7 +1948,7 @@ Galena:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -1984,7 +1984,7 @@ Pitchblende:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2020,7 +2020,7 @@ Scheelite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2056,7 +2056,7 @@ Submarium:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2092,7 +2092,7 @@ Titanium:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2128,7 +2128,7 @@ Uranium:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2164,7 +2164,7 @@ Tungsten:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2200,7 +2200,7 @@ Zinc:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2236,7 +2236,7 @@ Brass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2272,7 +2272,7 @@ Bronze:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2308,7 +2308,7 @@ Sandstone:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2344,7 +2344,7 @@ Dolomite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2380,7 +2380,7 @@ Limestone:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2416,7 +2416,7 @@ Gravel:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2452,7 +2452,7 @@ Basalt:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2488,7 +2488,7 @@ Slate:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2524,7 +2524,7 @@ Gneiss:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2560,7 +2560,7 @@ Granite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2596,7 +2596,7 @@ Marble:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2632,7 +2632,7 @@ Zincblende:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2668,7 +2668,7 @@ Steel:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2704,7 +2704,7 @@ Red Sandstone:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2740,7 +2740,7 @@ Tungsten Steel:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2776,7 +2776,7 @@ Semisolid Basalt:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2812,7 +2812,7 @@ Mossy Stone:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2848,7 +2848,7 @@ Plutonium:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2884,7 +2884,7 @@ Lithium:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2920,7 +2920,7 @@ Aluminium-Lithium Alloy:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2956,7 +2956,7 @@ Coke:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -2992,7 +2992,7 @@ White Lamp (on):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3028,7 +3028,7 @@ White Lamp:
   burnTransformID: 0
   collide: true
   color: [30, 30, 30]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3064,7 +3064,7 @@ Red Lamp (on):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3100,7 +3100,7 @@ Red Lamp:
   burnTransformID: 0
   collide: true
   color: [30, 30, 30]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3136,7 +3136,7 @@ Green Lamp (on):
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3172,7 +3172,7 @@ Green Lamp:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3208,7 +3208,7 @@ Blue Lamp (on):
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3244,7 +3244,7 @@ Blue Lamp:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3280,7 +3280,7 @@ Wambronium:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3316,7 +3316,7 @@ Red Bargonite Crystal:
   burnTransformID: 0
   collide: true
   color: [214, 214, 214]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3352,7 +3352,7 @@ Blue Bargonite Crystal:
   burnTransformID: 0
   collide: true
   color: [37, 37, 37]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3388,7 +3388,7 @@ Green Bargonite Crystal:
   burnTransformID: 0
   collide: true
   color: [37, 37, 37]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3424,7 +3424,7 @@ White Bargonite Crystal:
   burnTransformID: 0
   collide: true
   color: [214, 214, 214]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3460,7 +3460,7 @@ Blue Mushroom Block:
   burnTransformID: 235
   collide: true
   color: [0, 0, 0]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3496,7 +3496,7 @@ Purple Mushroom Block:
   burnTransformID: 235
   collide: true
   color: [150, 150, 150]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3532,7 +3532,7 @@ Lamella Block:
   burnTransformID: 237
   collide: true
   color: [205, 205, 205]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3568,7 +3568,7 @@ Mushroom Stem Block:
   burnTransformID: 236
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3604,7 +3604,7 @@ Grey Mushroom Block:
   burnTransformID: 235
   collide: true
   color: [100, 100, 100]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3640,7 +3640,7 @@ Dark Purple Mushroom Block:
   burnTransformID: 234
   collide: true
   color: [80, 80, 80]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3676,7 +3676,7 @@ Dark Blue Mushroom Block:
   burnTransformID: 234
   collide: true
   color: [0, 0, 0]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3712,7 +3712,7 @@ Cyan Mushroom Block:
   burnTransformID: 234
   collide: true
   color: [0, 0, 0]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3748,7 +3748,7 @@ Pink Mushroom Block:
   burnTransformID: 235
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3784,7 +3784,7 @@ Green Mushroom Block:
   burnTransformID: 234
   collide: true
   color: [120, 120, 120]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3820,7 +3820,7 @@ Dark Green Mushroom Block:
   burnTransformID: 235
   collide: true
   color: [70, 70, 70]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3856,7 +3856,7 @@ Red Mushroom Block:
   burnTransformID: 235
   collide: true
   color: [190, 190, 190]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3892,7 +3892,7 @@ Dark Red Mushroom Block:
   burnTransformID: 234
   collide: true
   color: [125, 125, 125]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3928,7 +3928,7 @@ Brown Mushroom Block:
   burnTransformID: 234
   collide: true
   color: [160, 160, 160]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -3964,7 +3964,7 @@ LED Lamp (on):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4000,7 +4000,7 @@ LED Lamp:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4036,7 +4036,7 @@ Trinitrotoluene (TNT):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4072,7 +4072,7 @@ Nitroglycerin:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4108,7 +4108,7 @@ Dynamite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4144,7 +4144,7 @@ Black Powder Crate 10kg:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4180,7 +4180,7 @@ Black Powder Crate 20kg:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4216,7 +4216,7 @@ Black Powder Box 1kg:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4252,7 +4252,7 @@ Black Powder Box 100g:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4288,7 +4288,7 @@ Black Powder:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4324,7 +4324,7 @@ ANFO 25kg:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4360,7 +4360,7 @@ Shrapnel Bomb (1kg Amatol):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4396,7 +4396,7 @@ Amatol 25kg:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4432,7 +4432,7 @@ Ammonium Nitrate:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4468,7 +4468,7 @@ Salpeter:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4504,7 +4504,7 @@ Diatomite (Kieselguhr):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4540,7 +4540,7 @@ Nitrocellulose:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4576,7 +4576,7 @@ Blasting Gelatin:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4612,7 +4612,7 @@ Firebomb:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4648,7 +4648,7 @@ Octanitrocubane (ONC):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4684,7 +4684,7 @@ Alien Plantoid Mine:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4720,7 +4720,7 @@ Atomic Bomb (Mark I):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4756,7 +4756,7 @@ Thermonuclear Bomb (Mark II):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4792,7 +4792,7 @@ Three-Stage Bomb (Mark III):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4828,7 +4828,7 @@ Xenon Lamp (on):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4864,7 +4864,7 @@ Xenon Lamp:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4900,7 +4900,7 @@ Red Stained Glass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 0, 0]
+  lightColorFilter: [1, 0, 0]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -4936,7 +4936,7 @@ Green Stained Glass:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  colorFilter: [0, 1, 0]
+  lightColorFilter: [0, 1, 0]
   colorOverlay: [0, 0, 0]
   crushable: false
   emitter: ""
@@ -4972,7 +4972,7 @@ Blue Stained Glass:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  colorFilter: [0, 0, 1]
+  lightColorFilter: [0, 0, 1]
   colorOverlay: [0, 0, 0]
   crushable: false
   emitter: ""
@@ -5008,7 +5008,7 @@ Light Metal Plating:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5044,7 +5044,7 @@ Pitch:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5080,7 +5080,7 @@ White Stained Glass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5116,7 +5116,7 @@ Rubber:
   burnTransformID: 238
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5152,7 +5152,7 @@ Thornmite Glass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5188,7 +5188,7 @@ Alumina Ceramic:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5224,7 +5224,7 @@ Ceramic Plating:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5260,7 +5260,7 @@ Tungsten Carbide:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5296,7 +5296,7 @@ Sandstone Bricks:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5332,7 +5332,7 @@ Red Sandstone Bricks:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5368,7 +5368,7 @@ Stone Bricks:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5404,7 +5404,7 @@ Granite Bricks:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5440,7 +5440,7 @@ Limestone Bricks:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5476,7 +5476,7 @@ Marble Bricks:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5512,7 +5512,7 @@ Aluminium Plating:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5548,7 +5548,7 @@ Steel Plating:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5584,7 +5584,7 @@ Tungsten Steel Plating:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5620,7 +5620,7 @@ Titanium Plating:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5656,7 +5656,7 @@ Thornmite Plating:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5692,7 +5692,7 @@ Gypsum:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5728,7 +5728,7 @@ Lightweight Bricks:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5764,7 +5764,7 @@ Glass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5800,7 +5800,7 @@ Concrete:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5836,7 +5836,7 @@ Bricks:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5872,7 +5872,7 @@ Hardwood Planks:
   burnTransformID: 224
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5908,7 +5908,7 @@ Cobblestone:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5944,7 +5944,7 @@ Junglewood Planks:
   burnTransformID: 226
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -5980,7 +5980,7 @@ Savannawood Planks:
   burnTransformID: 227
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6016,7 +6016,7 @@ Palmwood Planks:
   burnTransformID: 229
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6052,7 +6052,7 @@ Swampwood Planks:
   burnTransformID: 233
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6088,7 +6088,7 @@ Softwood Planks:
   burnTransformID: 225
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6124,7 +6124,7 @@ Deadwood Planks:
   burnTransformID: 228
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6160,7 +6160,7 @@ Darkwood Planks:
   burnTransformID: 230
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6196,7 +6196,7 @@ Ruberwood Planks:
   burnTransformID: 232
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6232,7 +6232,7 @@ Sugarwood Planks:
   burnTransformID: 231
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6268,7 +6268,7 @@ White Cloth Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6304,7 +6304,7 @@ Black Cloth Block:
   burnTransformID: 0
   collide: true
   color: [32, 32, 32]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6340,7 +6340,7 @@ Grey Cloth Block:
   burnTransformID: 0
   collide: true
   color: [128, 128, 128]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6376,7 +6376,7 @@ Brown Cloth Block:
   burnTransformID: 0
   collide: true
   color: [128, 128, 128]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6412,7 +6412,7 @@ Light Yellow Cloth Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6448,7 +6448,7 @@ Yellow Cloth Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6484,7 +6484,7 @@ Orange Cloth Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6520,7 +6520,7 @@ Red Cloth Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6556,7 +6556,7 @@ Dark Red Cloth Block:
   burnTransformID: 0
   collide: true
   color: [150, 150, 150]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6592,7 +6592,7 @@ Pink Cloth Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6628,7 +6628,7 @@ Magenta Cloth Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6664,7 +6664,7 @@ Lime Cloth Block:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6700,7 +6700,7 @@ Green Cloth Block:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6736,7 +6736,7 @@ Dark Green Cloth Block:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6772,7 +6772,7 @@ Cyan Cloth Block:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6808,7 +6808,7 @@ Light Blue Cloth Block:
   burnTransformID: 0
   collide: true
   color: [128, 128, 128]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6844,7 +6844,7 @@ Blue Cloth Block:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6880,7 +6880,7 @@ Dark Blue Cloth Block:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6916,7 +6916,7 @@ Purple Cloth Block:
   burnTransformID: 0
   collide: true
   color: [150, 150, 150]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6952,7 +6952,7 @@ Dark Purple Cloth Block:
   burnTransformID: 0
   collide: true
   color: [75, 75, 75]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -6988,7 +6988,7 @@ Lapis Lazuli:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7024,7 +7024,7 @@ Black Gypsum:
   burnTransformID: 0
   collide: true
   color: [45, 45, 45]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7060,7 +7060,7 @@ Grey Gypsum:
   burnTransformID: 0
   collide: true
   color: [150, 150, 150]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7096,7 +7096,7 @@ Brown Gypsum:
   burnTransformID: 0
   collide: true
   color: [150, 150, 150]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7132,7 +7132,7 @@ Light Yellow Gypsum:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7168,7 +7168,7 @@ Yellow Gypsum:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7204,7 +7204,7 @@ Orange Gypsum:
   burnTransformID: 0
   collide: true
   color: [245, 245, 245]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7240,7 +7240,7 @@ Red Gypsum:
   burnTransformID: 0
   collide: true
   color: [222, 222, 222]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7276,7 +7276,7 @@ Dark Red Gypsum:
   burnTransformID: 0
   collide: true
   color: [140, 140, 140]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7312,7 +7312,7 @@ Pink Gypsum:
   burnTransformID: 0
   collide: true
   color: [250, 250, 250]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7348,7 +7348,7 @@ Magenta Gypsum:
   burnTransformID: 0
   collide: true
   color: [222, 222, 222]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7384,7 +7384,7 @@ Lime Gypsum:
   burnTransformID: 0
   collide: true
   color: [60, 60, 60]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7420,7 +7420,7 @@ Green Gypsum:
   burnTransformID: 0
   collide: true
   color: [60, 60, 60]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7456,7 +7456,7 @@ Dark Green Gypsum:
   burnTransformID: 0
   collide: true
   color: [40, 40, 40]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7492,7 +7492,7 @@ Cyan Gypsum:
   burnTransformID: 0
   collide: true
   color: [100, 100, 100]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7528,7 +7528,7 @@ Light Blue Gypsum:
   burnTransformID: 0
   collide: true
   color: [160, 160, 160]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7564,7 +7564,7 @@ Blue Gypsum:
   burnTransformID: 0
   collide: true
   color: [40, 40, 40]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7600,7 +7600,7 @@ Dark Blue Gypsum:
   burnTransformID: 0
   collide: true
   color: [50, 50, 50]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7636,7 +7636,7 @@ Purple Gypsum:
   burnTransformID: 0
   collide: true
   color: [150, 150, 150]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7672,7 +7672,7 @@ Dark Purple Gypsum:
   burnTransformID: 0
   collide: true
   color: [85, 85, 85]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -7708,7 +7708,7 @@ Charred Wood (Deciduous Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -7744,7 +7744,7 @@ Charred Wood (Dead Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -7780,7 +7780,7 @@ Charred Wood (Coniferous Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -7816,7 +7816,7 @@ Charred Wood (Palm Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -7852,7 +7852,7 @@ Charred Wood (Jungle Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -7888,7 +7888,7 @@ Charred Wood (Swamp Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -7924,7 +7924,7 @@ Charred Wood (Sugar Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -7960,7 +7960,7 @@ Charred Wood (Rubber Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -7996,7 +7996,7 @@ Charred Wood (Fruit Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -8032,7 +8032,7 @@ Charred Wood (Savanna Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -8068,7 +8068,7 @@ Charred Hardwood Planks:
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -8104,7 +8104,7 @@ Charred Softwood Planks:
   burnTransformID: 0
   collide: true
   color: [48, 48, 48]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -8140,7 +8140,7 @@ Charred Junglewood Planks:
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -8176,7 +8176,7 @@ Charred Savannawood Planks:
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -8212,7 +8212,7 @@ Charred Deadwood Planks:
   burnTransformID: 0
   collide: true
   color: [48, 48, 48]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -8248,7 +8248,7 @@ Charred Palmwood Planks:
   burnTransformID: 0
   collide: true
   color: [48, 48, 48]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -8284,7 +8284,7 @@ Charred Darkwood Planks:
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -8320,7 +8320,7 @@ Charred Sugarwood Planks:
   burnTransformID: 0
   collide: true
   color: [48, 48, 48]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -8356,7 +8356,7 @@ Charred Rubberwood Planks:
   burnTransformID: 0
   collide: true
   color: [48, 48, 48]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -8392,7 +8392,7 @@ Charred Swampwood Planks:
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -8428,7 +8428,7 @@ Charred Smooth Mushroom Block:
   burnTransformID: 0
   collide: true
   color: [48, 48, 48]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -8464,7 +8464,7 @@ Charred Spotted Mushroom Block:
   burnTransformID: 0
   collide: true
   color: [48, 48, 48]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -8500,7 +8500,7 @@ Charred Mushroom Stem Block:
   burnTransformID: 0
   collide: true
   color: [48, 48, 48]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -8536,7 +8536,7 @@ Charred Lamella Block:
   burnTransformID: 0
   collide: true
   color: [48, 48, 48]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -8572,7 +8572,7 @@ Charred Rubber:
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -8608,7 +8608,7 @@ Rusty Iron:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -8644,7 +8644,7 @@ Rusty Steel:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -8680,7 +8680,7 @@ Patinated Copper:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -8716,7 +8716,7 @@ Rusty Steel Plating:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -8752,7 +8752,7 @@ Small Red Cactus (Bud):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -8788,7 +8788,7 @@ Small Red Cactus (Stem):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -8824,7 +8824,7 @@ Small Yellow Cactus (Bud):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -8860,7 +8860,7 @@ Small Yellow Cactus (Stem):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -8896,7 +8896,7 @@ Small Green Cactus (Bud):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -8932,7 +8932,7 @@ Small Green Cactus (Stem):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -8968,7 +8968,7 @@ Death Cactus:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -9004,7 +9004,7 @@ Mutated Death Cactus:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -9040,7 +9040,7 @@ Poison Cactus:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -9076,7 +9076,7 @@ Starch Cactus:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -9112,7 +9112,7 @@ Cactus Fruit:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -9148,7 +9148,7 @@ Alien Crop Plant (Bud):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -9184,7 +9184,7 @@ Ammonia Plant:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -9220,7 +9220,7 @@ Common White Flowers:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9256,7 +9256,7 @@ Tall Grass:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9292,7 +9292,7 @@ Fern:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9328,7 +9328,7 @@ Yellow Grass:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9364,7 +9364,7 @@ Dryland Grass:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9400,7 +9400,7 @@ Red Flower Grass:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9436,7 +9436,7 @@ Light Tall Grass:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9472,7 +9472,7 @@ Small Yellow Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9508,7 +9508,7 @@ Red Bush:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9544,7 +9544,7 @@ Dark Tall Grass:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9580,7 +9580,7 @@ Jungle Plant 1:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9616,7 +9616,7 @@ Large Purple Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9652,7 +9652,7 @@ Large Yellow Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9688,7 +9688,7 @@ Pink Fringed Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9724,7 +9724,7 @@ Red Fringed Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9760,7 +9760,7 @@ Tiny Fringed Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9796,7 +9796,7 @@ White Fringed Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9832,7 +9832,7 @@ Yellow Fringed Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9868,7 +9868,7 @@ Large Red Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9904,7 +9904,7 @@ Green Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9940,7 +9940,7 @@ Dark Green Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -9976,7 +9976,7 @@ Brown Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -10012,7 +10012,7 @@ Red Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -10048,7 +10048,7 @@ Dark Red Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -10084,7 +10084,7 @@ Grey Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -10120,7 +10120,7 @@ Wood (Fruit Tree):
   burnTransformID: 222
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -10156,7 +10156,7 @@ Wood (Jungle Tree):
   burnTransformID: 218
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -10192,7 +10192,7 @@ Wood (Savanna Tree):
   burnTransformID: 223
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -10228,7 +10228,7 @@ Wood (Palm Tree):
   burnTransformID: 217
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -10264,7 +10264,7 @@ Wood (Swamp Tree):
   burnTransformID: 219
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -10300,7 +10300,7 @@ Wood (Coniferous Tree):
   burnTransformID: 216
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -10336,7 +10336,7 @@ Wood (Dead Tree):
   burnTransformID: 215
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -10372,7 +10372,7 @@ Leaves (Deciduous Tree):
   burnTransformID: 0
   collide: false
   color: [93, 93, 93]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -10408,7 +10408,7 @@ Leaves (Jungle Tree):
   burnTransformID: 0
   collide: false
   color: [93, 93, 93]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -10444,7 +10444,7 @@ Leaves (Savanna Tree):
   burnTransformID: 0
   collide: false
   color: [93, 93, 93]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -10480,7 +10480,7 @@ Leaves (Palm Tree):
   burnTransformID: 0
   collide: false
   color: [93, 93, 93]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -10516,7 +10516,7 @@ Leaves (Swamp Tree):
   burnTransformID: 0
   collide: false
   color: [93, 93, 93]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -10552,7 +10552,7 @@ Leaves (Coniferous Tree):
   burnTransformID: 0
   collide: false
   color: [93, 93, 93]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -10588,7 +10588,7 @@ Leaves (Fruit Tree):
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -10624,7 +10624,7 @@ Leaves (Blooming Fruit Tree):
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -10660,7 +10660,7 @@ Blue Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -10696,7 +10696,7 @@ Dark Blue Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -10732,7 +10732,7 @@ Purple Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -10768,7 +10768,7 @@ Dark Purple Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -10804,7 +10804,7 @@ Wood (Rubber Tree):
   burnTransformID: 221
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -10840,7 +10840,7 @@ Leaves (Rubber Tree):
   burnTransformID: 0
   collide: false
   color: [93, 93, 93]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -10876,7 +10876,7 @@ Wood (Sugar Tree):
   burnTransformID: 220
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -10912,7 +10912,7 @@ Leaves (Sugar Tree):
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -10948,7 +10948,7 @@ Nitrogen:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -10984,7 +10984,7 @@ Oxygen:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11020,7 +11020,7 @@ Carbon Dioxide:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11056,7 +11056,7 @@ Nitrogen Dioxide:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11092,7 +11092,7 @@ Sulfur Dioxide:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11128,7 +11128,7 @@ Helium:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11164,7 +11164,7 @@ Argon:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11200,7 +11200,7 @@ Xenon:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11236,7 +11236,7 @@ Hydrogen:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11272,7 +11272,7 @@ Ammonia:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11308,7 +11308,7 @@ Methane:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11344,7 +11344,7 @@ Deuterium:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11380,7 +11380,7 @@ Water (Steam):
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11416,7 +11416,7 @@ Rubber Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -11452,7 +11452,7 @@ Stone Succulent (Bud):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11488,7 +11488,7 @@ Blue Succulent (Bud):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11524,7 +11524,7 @@ Purple Succulent (Bud):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11560,7 +11560,7 @@ Stone Succulent (Stem):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11596,7 +11596,7 @@ Blue Succulent (Stem):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11632,7 +11632,7 @@ Purple Succulent (Stem):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11668,7 +11668,7 @@ Alien Crop Plant (Stem):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11704,7 +11704,7 @@ Charred Grass Block:
   burnTransformID: 1
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
@@ -11740,7 +11740,7 @@ Cave Plant (Stem):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11776,7 +11776,7 @@ Cave Plant (Cap):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11812,7 +11812,7 @@ Frozen Nitrogen:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11848,7 +11848,7 @@ Desert Chalice Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11884,7 +11884,7 @@ Salpeter Plant Light Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11920,7 +11920,7 @@ Salpeter Plant Trap Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11956,7 +11956,7 @@ Patinated Brass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -11992,7 +11992,7 @@ Patinated Bronze:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -12028,7 +12028,7 @@ Metal Framed Glass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -12064,7 +12064,7 @@ Ceramic Tiling:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -12100,7 +12100,7 @@ Small Fern:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -12136,7 +12136,7 @@ Tall Fern:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -12172,7 +12172,7 @@ Jungle Plant 2:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -12208,7 +12208,7 @@ Jungle Plant 3:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -12244,7 +12244,7 @@ Jungle Plant 4:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -12280,7 +12280,7 @@ Jungle Plant 5:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -12316,7 +12316,7 @@ Jungle Plant 6:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -12352,7 +12352,7 @@ Jungle Plant 7:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -12388,7 +12388,7 @@ Deciduous Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -12424,7 +12424,7 @@ Conifer Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -12460,7 +12460,7 @@ Swamp Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -12496,7 +12496,7 @@ Savanna Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -12532,7 +12532,7 @@ Dead Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -12568,7 +12568,7 @@ Jungle Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -12604,7 +12604,7 @@ Fruit Tree Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -12640,7 +12640,7 @@ Sugar Tree Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -12676,7 +12676,7 @@ Palm Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -12712,7 +12712,7 @@ Sandbags:
   burnTransformID: 5
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -12748,7 +12748,7 @@ Yellow Bargonite Crystal:
   burnTransformID: 0
   collide: true
   color: [214, 214, 214]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -12784,7 +12784,7 @@ Orange Bargonite Crystal:
   burnTransformID: 0
   collide: true
   color: [214, 214, 214]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -12820,7 +12820,7 @@ Magenta Bargonite Crystal:
   burnTransformID: 0
   collide: true
   color: [214, 214, 214]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -12856,7 +12856,7 @@ Cyan Bargonite Crystal:
   burnTransformID: 0
   collide: true
   color: [37, 37, 37]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -12892,7 +12892,7 @@ Yellow Stained Glass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 0]
+  lightColorFilter: [1, 1, 0]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -12928,7 +12928,7 @@ Orange Stained Glass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 0.5882353, 0]
+  lightColorFilter: [1, 0.5882353, 0]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -12964,7 +12964,7 @@ Magenta Stained Glass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 0, 1]
+  lightColorFilter: [1, 0, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13000,7 +13000,7 @@ Cyan Stained Glass:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  colorFilter: [0, 0.7843137, 0.7843137]
+  lightColorFilter: [0, 0.7843137, 0.7843137]
   colorOverlay: [0, 0, 0]
   crushable: false
   emitter: ""
@@ -13036,7 +13036,7 @@ Yellow Lamp (on):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13072,7 +13072,7 @@ Yellow Lamp:
   burnTransformID: 0
   collide: true
   color: [30, 30, 30]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13108,7 +13108,7 @@ Orange Lamp (on):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13144,7 +13144,7 @@ Orange Lamp:
   burnTransformID: 0
   collide: true
   color: [30, 30, 30]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13180,7 +13180,7 @@ Magenta Lamp (on):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13216,7 +13216,7 @@ Magenta Lamp:
   burnTransformID: 0
   collide: true
   color: [30, 30, 30]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13252,7 +13252,7 @@ Cyan Lamp (on):
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13288,7 +13288,7 @@ Cyan Lamp:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13324,7 +13324,7 @@ Cut Stone Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13360,7 +13360,7 @@ Cut Granite Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13396,7 +13396,7 @@ Cut Limestone Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13432,7 +13432,7 @@ Cut Marble Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13468,7 +13468,7 @@ Cut Sandstone Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13504,7 +13504,7 @@ Cut Red Sandstone Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13540,7 +13540,7 @@ Chiseled Marble Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13576,7 +13576,7 @@ Chiseled Sandstone Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13612,7 +13612,7 @@ Chiseled Red Sandstone Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13648,7 +13648,7 @@ Chiseled Marble Ornament Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13684,7 +13684,7 @@ Marble Column:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13720,7 +13720,7 @@ Twisted Marble Column:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13756,7 +13756,7 @@ Chiseled Sandstone Ornament Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13792,7 +13792,7 @@ Chiseled Red Sandstone Ornament Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13828,7 +13828,7 @@ Dry Mud:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13864,7 +13864,7 @@ Half-Dry Mud:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13900,7 +13900,7 @@ Tholin Dust:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13936,7 +13936,7 @@ Frozen Methane:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
@@ -13972,7 +13972,7 @@ Little Icecaps:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -14008,7 +14008,7 @@ Terror Lichen:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -14044,7 +14044,7 @@ Sorrowthorn:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -14080,7 +14080,7 @@ Skeleton Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -14116,7 +14116,7 @@ Methane Ball Plant:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
@@ -14152,7 +14152,7 @@ Fire:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: Data/Emitters/fire.emit
@@ -14188,7 +14188,7 @@ Fire (Sulfur):
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: Data/Emitters/fire_sulfur.emit
@@ -14224,7 +14224,7 @@ Fire (Light Metal):
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: Data/Emitters/fire_metal.emit
@@ -14260,7 +14260,7 @@ Fire (Lithium):
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: Data/Emitters/fire_lithium.emit
@@ -14296,7 +14296,7 @@ Fire (Gas):
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: true
   emitter: Data/Emitters/fire_gas.emit
@@ -14332,7 +14332,7 @@ Water (1):
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  colorFilter: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Particle/water_particle.png
