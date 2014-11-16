@@ -4,8 +4,6 @@ None:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -15,6 +13,7 @@ None:
   flammability: 0
   floatingAction: 0
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: none
   moveMod: 1
   movesPowder: true
@@ -40,8 +39,6 @@ Dirt:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -51,6 +48,7 @@ Dirt:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -76,8 +74,6 @@ Grass Block:
   burnTransformID: 325
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -87,6 +83,7 @@ Grass Block:
   flammability: 1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -112,8 +109,6 @@ Stone:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -123,6 +118,7 @@ Stone:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -148,8 +144,6 @@ Wood (Deciduous Tree):
   burnTransformID: 214
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -159,6 +153,7 @@ Wood (Deciduous Tree):
   flammability: 1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -184,8 +179,6 @@ Sand:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -195,6 +188,7 @@ Sand:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.9
   movesPowder: false
@@ -220,8 +214,6 @@ Mycelium Block:
   burnTransformID: 1
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -231,6 +223,7 @@ Mycelium Block:
   flammability: 1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -256,8 +249,6 @@ Bone Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -267,6 +258,7 @@ Bone Block:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -292,8 +284,6 @@ Lithium Carbonate:
   burnTransformID: 0
   collide: true
   color: [235, 235, 235]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -303,6 +293,7 @@ Lithium Carbonate:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -328,8 +319,6 @@ Sodium Carbonate (Soda):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -339,6 +328,7 @@ Sodium Carbonate (Soda):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -364,8 +354,6 @@ Dry Ice:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -375,6 +363,7 @@ Dry Ice:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -400,8 +389,6 @@ Methane Hydrate:
   burnTransformID: 4024
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -411,6 +398,7 @@ Methane Hydrate:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -436,8 +424,6 @@ Snow:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -447,6 +433,7 @@ Snow:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -472,8 +459,6 @@ Ice:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -483,6 +468,7 @@ Ice:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 7
   movesPowder: false
@@ -508,8 +494,6 @@ Mud Spawner:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -519,6 +503,7 @@ Mud Spawner:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -544,8 +529,6 @@ Mud Sink:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -555,6 +538,7 @@ Mud Sink:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -580,8 +564,6 @@ Lamp (on):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -591,6 +573,7 @@ Lamp (on):
   flammability: 0
   floatingAction: 1
   lightColor: [18, 18, 18]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -616,8 +599,6 @@ Lamp:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -627,6 +608,7 @@ Lamp:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -652,8 +634,6 @@ Mud:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -663,6 +643,7 @@ Mud:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -688,8 +669,6 @@ Clay:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -699,6 +678,7 @@ Clay:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -724,8 +704,6 @@ Silicon:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -735,6 +713,7 @@ Silicon:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -760,8 +739,6 @@ Red Sand:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -771,6 +748,7 @@ Red Sand:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.9
   movesPowder: false
@@ -796,8 +774,6 @@ Red Sand Spawner:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -807,6 +783,7 @@ Red Sand Spawner:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -832,8 +809,6 @@ Red Sand Sink:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -843,6 +818,7 @@ Red Sand Sink:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -868,8 +844,6 @@ Gravel Spawner:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -879,6 +853,7 @@ Gravel Spawner:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -904,8 +879,6 @@ Sand Spawner:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -915,6 +888,7 @@ Sand Spawner:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -940,8 +914,6 @@ Snow Spawner:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -951,6 +923,7 @@ Snow Spawner:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -976,8 +949,6 @@ Water Spawner:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -987,6 +958,7 @@ Water Spawner:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1012,8 +984,6 @@ Sand Sink:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1023,6 +993,7 @@ Sand Sink:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1048,8 +1019,6 @@ Snow Sink:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1059,6 +1028,7 @@ Snow Sink:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1084,8 +1054,6 @@ Water Sink:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1095,6 +1063,7 @@ Water Sink:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1120,8 +1089,6 @@ Gravel Sink:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1131,6 +1098,7 @@ Gravel Sink:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1156,8 +1124,6 @@ Coal:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1167,6 +1133,7 @@ Coal:
   flammability: 1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1192,8 +1159,6 @@ Iron:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1203,6 +1168,7 @@ Iron:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1228,8 +1194,6 @@ Gold:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1239,6 +1203,7 @@ Gold:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1264,8 +1229,6 @@ Silver:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1275,6 +1238,7 @@ Silver:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1300,8 +1264,6 @@ Copper:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1311,6 +1273,7 @@ Copper:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1336,8 +1299,6 @@ Tin:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1347,6 +1308,7 @@ Tin:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1372,8 +1334,6 @@ Lead:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1383,6 +1343,7 @@ Lead:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1408,8 +1369,6 @@ Platinum:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1419,6 +1378,7 @@ Platinum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1444,8 +1404,6 @@ Quartz:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1455,6 +1413,7 @@ Quartz:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1480,8 +1439,6 @@ Diamond:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1491,6 +1448,7 @@ Diamond:
   flammability: 0.8
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1516,8 +1474,6 @@ Ruby:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1527,6 +1483,7 @@ Ruby:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1552,8 +1509,6 @@ Emerald:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1563,6 +1518,7 @@ Emerald:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1588,8 +1544,6 @@ Sapphire:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1599,6 +1553,7 @@ Sapphire:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1624,8 +1579,6 @@ Bauxite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1635,6 +1588,7 @@ Bauxite:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1660,8 +1614,6 @@ Magnetite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1671,6 +1623,7 @@ Magnetite:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1696,8 +1649,6 @@ Malachite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1707,6 +1658,7 @@ Malachite:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1732,8 +1684,6 @@ Aluminium:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1743,6 +1693,7 @@ Aluminium:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1768,8 +1719,6 @@ Sulfur:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1779,6 +1728,7 @@ Sulfur:
   flammability: 1.2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1804,8 +1754,6 @@ Rutile:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1815,6 +1763,7 @@ Rutile:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1840,8 +1789,6 @@ Seamorphite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1851,6 +1798,7 @@ Seamorphite:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1876,8 +1824,6 @@ Thornmite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1887,6 +1833,7 @@ Thornmite:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1912,8 +1859,6 @@ Cassiterite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1923,6 +1868,7 @@ Cassiterite:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1948,8 +1894,6 @@ Galena:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1959,6 +1903,7 @@ Galena:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -1984,8 +1929,6 @@ Pitchblende:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -1995,6 +1938,7 @@ Pitchblende:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2020,8 +1964,6 @@ Scheelite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2031,6 +1973,7 @@ Scheelite:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2056,8 +1999,6 @@ Submarium:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2067,6 +2008,7 @@ Submarium:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2092,8 +2034,6 @@ Titanium:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2103,6 +2043,7 @@ Titanium:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2128,8 +2069,6 @@ Uranium:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2138,7 +2077,8 @@ Uranium:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 6, 0]
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2164,8 +2104,6 @@ Tungsten:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2175,6 +2113,7 @@ Tungsten:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2200,8 +2139,6 @@ Zinc:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2211,6 +2148,7 @@ Zinc:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2236,8 +2174,6 @@ Brass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2247,6 +2183,7 @@ Brass:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2272,8 +2209,6 @@ Bronze:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2283,6 +2218,7 @@ Bronze:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2308,8 +2244,6 @@ Sandstone:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2319,6 +2253,7 @@ Sandstone:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2344,8 +2279,6 @@ Dolomite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2355,6 +2288,7 @@ Dolomite:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2380,8 +2314,6 @@ Limestone:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2391,6 +2323,7 @@ Limestone:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2416,8 +2349,6 @@ Gravel:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2427,6 +2358,7 @@ Gravel:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.8
   movesPowder: false
@@ -2452,8 +2384,6 @@ Basalt:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2463,6 +2393,7 @@ Basalt:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2488,8 +2419,6 @@ Slate:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2499,6 +2428,7 @@ Slate:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2524,8 +2454,6 @@ Gneiss:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2535,6 +2463,7 @@ Gneiss:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2560,8 +2489,6 @@ Granite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2571,6 +2498,7 @@ Granite:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2596,8 +2524,6 @@ Marble:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2607,6 +2533,7 @@ Marble:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2632,8 +2559,6 @@ Zincblende:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2643,6 +2568,7 @@ Zincblende:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2668,8 +2594,6 @@ Steel:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2679,6 +2603,7 @@ Steel:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2704,8 +2629,6 @@ Red Sandstone:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2715,6 +2638,7 @@ Red Sandstone:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2740,8 +2664,6 @@ Tungsten Steel:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2751,6 +2673,7 @@ Tungsten Steel:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2776,8 +2699,6 @@ Semisolid Basalt:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2786,7 +2707,8 @@ Semisolid Basalt:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [20, 10, 8]
+  lightColor: [20, 20, 20]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -2812,8 +2734,6 @@ Mossy Stone:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2823,6 +2743,7 @@ Mossy Stone:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2848,8 +2769,6 @@ Plutonium:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2858,7 +2777,8 @@ Plutonium:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 4, 0]
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2884,8 +2804,6 @@ Lithium:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2895,6 +2813,7 @@ Lithium:
   flammability: 2.5
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2920,8 +2839,6 @@ Aluminium-Lithium Alloy:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2931,6 +2848,7 @@ Aluminium-Lithium Alloy:
   flammability: 1.5
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -2956,8 +2874,6 @@ Coke:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2967,6 +2883,7 @@ Coke:
   flammability: 1.2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -2992,8 +2909,6 @@ White Lamp (on):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3003,6 +2918,7 @@ White Lamp (on):
   flammability: 0
   floatingAction: 1
   lightColor: [24, 24, 24]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3028,8 +2944,6 @@ White Lamp:
   burnTransformID: 0
   collide: true
   color: [30, 30, 30]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3039,6 +2953,7 @@ White Lamp:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3064,8 +2979,6 @@ Red Lamp (on):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3074,7 +2987,8 @@ Red Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [24, 0, 0]
+  lightColor: [24, 24, 24]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3100,8 +3014,6 @@ Red Lamp:
   burnTransformID: 0
   collide: true
   color: [30, 30, 30]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3111,6 +3023,7 @@ Red Lamp:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3136,8 +3049,6 @@ Green Lamp (on):
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3146,7 +3057,8 @@ Green Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 24, 0]
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3172,8 +3084,6 @@ Green Lamp:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3183,6 +3093,7 @@ Green Lamp:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3208,8 +3119,6 @@ Blue Lamp (on):
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3218,7 +3127,8 @@ Blue Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 24]
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3244,8 +3154,6 @@ Blue Lamp:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3255,6 +3163,7 @@ Blue Lamp:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3280,8 +3189,6 @@ Wambronium:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3291,6 +3198,7 @@ Wambronium:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3316,8 +3224,6 @@ Red Bargonite Crystal:
   burnTransformID: 0
   collide: true
   color: [214, 214, 214]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3326,7 +3232,8 @@ Red Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [15, 0, 0]
+  lightColor: [15, 15, 15]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3352,8 +3259,6 @@ Blue Bargonite Crystal:
   burnTransformID: 0
   collide: true
   color: [37, 37, 37]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3362,7 +3267,8 @@ Blue Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 15]
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3388,8 +3294,6 @@ Green Bargonite Crystal:
   burnTransformID: 0
   collide: true
   color: [37, 37, 37]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3398,7 +3302,8 @@ Green Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 15, 0]
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3424,8 +3329,6 @@ White Bargonite Crystal:
   burnTransformID: 0
   collide: true
   color: [214, 214, 214]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3435,6 +3338,7 @@ White Bargonite Crystal:
   flammability: 0
   floatingAction: 1
   lightColor: [15, 15, 15]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3460,8 +3364,6 @@ Blue Mushroom Block:
   burnTransformID: 235
   collide: true
   color: [0, 0, 0]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3471,6 +3373,7 @@ Blue Mushroom Block:
   flammability: 0.5
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3496,8 +3399,6 @@ Purple Mushroom Block:
   burnTransformID: 235
   collide: true
   color: [150, 150, 150]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3507,6 +3408,7 @@ Purple Mushroom Block:
   flammability: 0.5
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3532,8 +3434,6 @@ Lamella Block:
   burnTransformID: 237
   collide: true
   color: [205, 205, 205]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3543,6 +3443,7 @@ Lamella Block:
   flammability: 0.5
   floatingAction: 1
   lightColor: [10, 10, 10]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3568,8 +3469,6 @@ Mushroom Stem Block:
   burnTransformID: 236
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3579,6 +3478,7 @@ Mushroom Stem Block:
   flammability: 0.5
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3604,8 +3504,6 @@ Grey Mushroom Block:
   burnTransformID: 235
   collide: true
   color: [100, 100, 100]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3615,6 +3513,7 @@ Grey Mushroom Block:
   flammability: 0.5
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3640,8 +3539,6 @@ Dark Purple Mushroom Block:
   burnTransformID: 234
   collide: true
   color: [80, 80, 80]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3651,6 +3548,7 @@ Dark Purple Mushroom Block:
   flammability: 0.5
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3676,8 +3574,6 @@ Dark Blue Mushroom Block:
   burnTransformID: 234
   collide: true
   color: [0, 0, 0]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3687,6 +3583,7 @@ Dark Blue Mushroom Block:
   flammability: 0.5
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3712,8 +3609,6 @@ Cyan Mushroom Block:
   burnTransformID: 234
   collide: true
   color: [0, 0, 0]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3723,6 +3618,7 @@ Cyan Mushroom Block:
   flammability: 0.5
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3748,8 +3644,6 @@ Pink Mushroom Block:
   burnTransformID: 235
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3759,6 +3653,7 @@ Pink Mushroom Block:
   flammability: 0.5
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3784,8 +3679,6 @@ Green Mushroom Block:
   burnTransformID: 234
   collide: true
   color: [120, 120, 120]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3795,6 +3688,7 @@ Green Mushroom Block:
   flammability: 0.5
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3820,8 +3714,6 @@ Dark Green Mushroom Block:
   burnTransformID: 235
   collide: true
   color: [70, 70, 70]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3831,6 +3723,7 @@ Dark Green Mushroom Block:
   flammability: 0.5
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3856,8 +3749,6 @@ Red Mushroom Block:
   burnTransformID: 235
   collide: true
   color: [190, 190, 190]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3867,6 +3758,7 @@ Red Mushroom Block:
   flammability: 0.5
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3892,8 +3784,6 @@ Dark Red Mushroom Block:
   burnTransformID: 234
   collide: true
   color: [125, 125, 125]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3903,6 +3793,7 @@ Dark Red Mushroom Block:
   flammability: 0.5
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3928,8 +3819,6 @@ Brown Mushroom Block:
   burnTransformID: 234
   collide: true
   color: [160, 160, 160]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3939,6 +3828,7 @@ Brown Mushroom Block:
   flammability: 0.5
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3964,8 +3854,6 @@ LED Lamp (on):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3975,6 +3863,7 @@ LED Lamp (on):
   flammability: 0
   floatingAction: 1
   lightColor: [24, 24, 24]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4000,8 +3889,6 @@ LED Lamp:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -4011,6 +3898,7 @@ LED Lamp:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4036,8 +3924,6 @@ Trinitrotoluene (TNT):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 1
@@ -4047,6 +3933,7 @@ Trinitrotoluene (TNT):
   flammability: 1e+007
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4072,8 +3959,6 @@ Nitroglycerin:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 2
@@ -4083,6 +3968,7 @@ Nitroglycerin:
   flammability: 1e+007
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4108,8 +3994,6 @@ Dynamite:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 1.8
@@ -4119,6 +4003,7 @@ Dynamite:
   flammability: 1e+007
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4144,8 +4029,6 @@ Black Powder Crate 10kg:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 1
@@ -4155,6 +4038,7 @@ Black Powder Crate 10kg:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4180,8 +4064,6 @@ Black Powder Crate 20kg:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 2
@@ -4191,6 +4073,7 @@ Black Powder Crate 20kg:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4216,8 +4099,6 @@ Black Powder Box 1kg:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0.1
@@ -4227,6 +4108,7 @@ Black Powder Box 1kg:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4252,8 +4134,6 @@ Black Powder Box 100g:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0.01
@@ -4263,6 +4143,7 @@ Black Powder Box 100g:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4288,8 +4169,6 @@ Black Powder:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -4299,6 +4178,7 @@ Black Powder:
   flammability: 1e+007
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.8
   movesPowder: false
@@ -4324,8 +4204,6 @@ ANFO 25kg:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 2
@@ -4335,6 +4213,7 @@ ANFO 25kg:
   flammability: 1e+007
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4360,8 +4239,6 @@ Shrapnel Bomb (1kg Amatol):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0.001
@@ -4371,6 +4248,7 @@ Shrapnel Bomb (1kg Amatol):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4396,8 +4274,6 @@ Amatol 25kg:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0.8
@@ -4407,6 +4283,7 @@ Amatol 25kg:
   flammability: 1e+007
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4432,8 +4309,6 @@ Ammonium Nitrate:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0.5
@@ -4443,6 +4318,7 @@ Ammonium Nitrate:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -4468,8 +4344,6 @@ Salpeter:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -4479,6 +4353,7 @@ Salpeter:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4504,8 +4379,6 @@ Diatomite (Kieselguhr):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -4515,6 +4388,7 @@ Diatomite (Kieselguhr):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4540,8 +4414,6 @@ Nitrocellulose:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 1.8
@@ -4551,6 +4423,7 @@ Nitrocellulose:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -4576,8 +4449,6 @@ Blasting Gelatin:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 2.2
@@ -4587,6 +4458,7 @@ Blasting Gelatin:
   flammability: 1e+007
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4612,8 +4484,6 @@ Firebomb:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 2
@@ -4623,6 +4493,7 @@ Firebomb:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4648,8 +4519,6 @@ Octanitrocubane (ONC):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 3
@@ -4659,6 +4528,7 @@ Octanitrocubane (ONC):
   flammability: 1e+007
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4684,8 +4554,6 @@ Alien Plantoid Mine:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 3
@@ -4695,6 +4563,7 @@ Alien Plantoid Mine:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4720,8 +4589,6 @@ Atomic Bomb (Mark I):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 1000
@@ -4731,6 +4598,7 @@ Atomic Bomb (Mark I):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4756,8 +4624,6 @@ Thermonuclear Bomb (Mark II):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 10000
@@ -4767,6 +4633,7 @@ Thermonuclear Bomb (Mark II):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4792,8 +4659,6 @@ Three-Stage Bomb (Mark III):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 25000
@@ -4803,6 +4668,7 @@ Three-Stage Bomb (Mark III):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4828,8 +4694,6 @@ Xenon Lamp (on):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -4838,7 +4702,8 @@ Xenon Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [28, 28, 30]
+  lightColor: [28, 28, 28]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4864,8 +4729,6 @@ Xenon Lamp:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -4875,6 +4738,7 @@ Xenon Lamp:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4900,8 +4764,6 @@ Red Stained Glass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 0, 0]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -4910,7 +4772,8 @@ Red Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [6, 0, 0]
+  lightColor: [6, 6, 6]
+  lightColorFilter: [1, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4936,8 +4799,6 @@ Green Stained Glass:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  lightColorFilter: [0, 1, 0]
-  colorOverlay: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -4946,7 +4807,8 @@ Green Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 6, 0]
+  lightColor: [0, 0, 0]
+  lightColorFilter: [0, 1, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -4972,8 +4834,6 @@ Blue Stained Glass:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  lightColorFilter: [0, 0, 1]
-  colorOverlay: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -4982,7 +4842,8 @@ Blue Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 6]
+  lightColor: [0, 0, 0]
+  lightColorFilter: [0, 0, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5008,8 +4869,6 @@ Light Metal Plating:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5019,6 +4878,7 @@ Light Metal Plating:
   flammability: 1.5
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5044,8 +4904,6 @@ Pitch:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5055,6 +4913,7 @@ Pitch:
   flammability: 1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.05
   movesPowder: false
@@ -5080,8 +4939,6 @@ White Stained Glass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5091,6 +4948,7 @@ White Stained Glass:
   flammability: 0
   floatingAction: 1
   lightColor: [6, 6, 6]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5116,8 +4974,6 @@ Rubber:
   burnTransformID: 238
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5127,6 +4983,7 @@ Rubber:
   flammability: 1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5152,8 +5009,6 @@ Thornmite Glass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5163,6 +5018,7 @@ Thornmite Glass:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5188,8 +5044,6 @@ Alumina Ceramic:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5199,6 +5053,7 @@ Alumina Ceramic:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5224,8 +5079,6 @@ Ceramic Plating:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5235,6 +5088,7 @@ Ceramic Plating:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5260,8 +5114,6 @@ Tungsten Carbide:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5271,6 +5123,7 @@ Tungsten Carbide:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5296,8 +5149,6 @@ Sandstone Bricks:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5307,6 +5158,7 @@ Sandstone Bricks:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5332,8 +5184,6 @@ Red Sandstone Bricks:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5343,6 +5193,7 @@ Red Sandstone Bricks:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5368,8 +5219,6 @@ Stone Bricks:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5379,6 +5228,7 @@ Stone Bricks:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5404,8 +5254,6 @@ Granite Bricks:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5415,6 +5263,7 @@ Granite Bricks:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5440,8 +5289,6 @@ Limestone Bricks:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5451,6 +5298,7 @@ Limestone Bricks:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5476,8 +5324,6 @@ Marble Bricks:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5487,6 +5333,7 @@ Marble Bricks:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5512,8 +5359,6 @@ Aluminium Plating:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5523,6 +5368,7 @@ Aluminium Plating:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5548,8 +5394,6 @@ Steel Plating:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5559,6 +5403,7 @@ Steel Plating:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5584,8 +5429,6 @@ Tungsten Steel Plating:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5595,6 +5438,7 @@ Tungsten Steel Plating:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5620,8 +5464,6 @@ Titanium Plating:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5631,6 +5473,7 @@ Titanium Plating:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5656,8 +5499,6 @@ Thornmite Plating:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5667,6 +5508,7 @@ Thornmite Plating:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5692,8 +5534,6 @@ Gypsum:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5703,6 +5543,7 @@ Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5728,8 +5569,6 @@ Lightweight Bricks:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5739,6 +5578,7 @@ Lightweight Bricks:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5764,8 +5604,6 @@ Glass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5775,6 +5613,7 @@ Glass:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5800,8 +5639,6 @@ Concrete:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5811,6 +5648,7 @@ Concrete:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5836,8 +5674,6 @@ Bricks:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5847,6 +5683,7 @@ Bricks:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5872,8 +5709,6 @@ Hardwood Planks:
   burnTransformID: 224
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5883,6 +5718,7 @@ Hardwood Planks:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5908,8 +5744,6 @@ Cobblestone:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5919,6 +5753,7 @@ Cobblestone:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5944,8 +5779,6 @@ Junglewood Planks:
   burnTransformID: 226
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5955,6 +5788,7 @@ Junglewood Planks:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -5980,8 +5814,6 @@ Savannawood Planks:
   burnTransformID: 227
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -5991,6 +5823,7 @@ Savannawood Planks:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6016,8 +5849,6 @@ Palmwood Planks:
   burnTransformID: 229
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6027,6 +5858,7 @@ Palmwood Planks:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6052,8 +5884,6 @@ Swampwood Planks:
   burnTransformID: 233
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6063,6 +5893,7 @@ Swampwood Planks:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6088,8 +5919,6 @@ Softwood Planks:
   burnTransformID: 225
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6099,6 +5928,7 @@ Softwood Planks:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6124,8 +5954,6 @@ Deadwood Planks:
   burnTransformID: 228
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6135,6 +5963,7 @@ Deadwood Planks:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6160,8 +5989,6 @@ Darkwood Planks:
   burnTransformID: 230
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6171,6 +5998,7 @@ Darkwood Planks:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6196,8 +6024,6 @@ Ruberwood Planks:
   burnTransformID: 232
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6207,6 +6033,7 @@ Ruberwood Planks:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6232,8 +6059,6 @@ Sugarwood Planks:
   burnTransformID: 231
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6243,6 +6068,7 @@ Sugarwood Planks:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6268,8 +6094,6 @@ White Cloth Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6279,6 +6103,7 @@ White Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6304,8 +6129,6 @@ Black Cloth Block:
   burnTransformID: 0
   collide: true
   color: [32, 32, 32]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6315,6 +6138,7 @@ Black Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6340,8 +6164,6 @@ Grey Cloth Block:
   burnTransformID: 0
   collide: true
   color: [128, 128, 128]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6351,6 +6173,7 @@ Grey Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6376,8 +6199,6 @@ Brown Cloth Block:
   burnTransformID: 0
   collide: true
   color: [128, 128, 128]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6387,6 +6208,7 @@ Brown Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6412,8 +6234,6 @@ Light Yellow Cloth Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6423,6 +6243,7 @@ Light Yellow Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6448,8 +6269,6 @@ Yellow Cloth Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6459,6 +6278,7 @@ Yellow Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6484,8 +6304,6 @@ Orange Cloth Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6495,6 +6313,7 @@ Orange Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6520,8 +6339,6 @@ Red Cloth Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6531,6 +6348,7 @@ Red Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6556,8 +6374,6 @@ Dark Red Cloth Block:
   burnTransformID: 0
   collide: true
   color: [150, 150, 150]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6567,6 +6383,7 @@ Dark Red Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6592,8 +6409,6 @@ Pink Cloth Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6603,6 +6418,7 @@ Pink Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6628,8 +6444,6 @@ Magenta Cloth Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6639,6 +6453,7 @@ Magenta Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6664,8 +6479,6 @@ Lime Cloth Block:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6675,6 +6488,7 @@ Lime Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6700,8 +6514,6 @@ Green Cloth Block:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6711,6 +6523,7 @@ Green Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6736,8 +6549,6 @@ Dark Green Cloth Block:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6747,6 +6558,7 @@ Dark Green Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6772,8 +6584,6 @@ Cyan Cloth Block:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6783,6 +6593,7 @@ Cyan Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6808,8 +6619,6 @@ Light Blue Cloth Block:
   burnTransformID: 0
   collide: true
   color: [128, 128, 128]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6819,6 +6628,7 @@ Light Blue Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6844,8 +6654,6 @@ Blue Cloth Block:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6855,6 +6663,7 @@ Blue Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6880,8 +6689,6 @@ Dark Blue Cloth Block:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6891,6 +6698,7 @@ Dark Blue Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6916,8 +6724,6 @@ Purple Cloth Block:
   burnTransformID: 0
   collide: true
   color: [150, 150, 150]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6927,6 +6733,7 @@ Purple Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6952,8 +6759,6 @@ Dark Purple Cloth Block:
   burnTransformID: 0
   collide: true
   color: [75, 75, 75]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6963,6 +6768,7 @@ Dark Purple Cloth Block:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -6988,8 +6794,6 @@ Lapis Lazuli:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6999,6 +6803,7 @@ Lapis Lazuli:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7024,8 +6829,6 @@ Black Gypsum:
   burnTransformID: 0
   collide: true
   color: [45, 45, 45]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7035,6 +6838,7 @@ Black Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7060,8 +6864,6 @@ Grey Gypsum:
   burnTransformID: 0
   collide: true
   color: [150, 150, 150]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7071,6 +6873,7 @@ Grey Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7096,8 +6899,6 @@ Brown Gypsum:
   burnTransformID: 0
   collide: true
   color: [150, 150, 150]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7107,6 +6908,7 @@ Brown Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7132,8 +6934,6 @@ Light Yellow Gypsum:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7143,6 +6943,7 @@ Light Yellow Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7168,8 +6969,6 @@ Yellow Gypsum:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7179,6 +6978,7 @@ Yellow Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7204,8 +7004,6 @@ Orange Gypsum:
   burnTransformID: 0
   collide: true
   color: [245, 245, 245]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7215,6 +7013,7 @@ Orange Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7240,8 +7039,6 @@ Red Gypsum:
   burnTransformID: 0
   collide: true
   color: [222, 222, 222]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7251,6 +7048,7 @@ Red Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7276,8 +7074,6 @@ Dark Red Gypsum:
   burnTransformID: 0
   collide: true
   color: [140, 140, 140]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7287,6 +7083,7 @@ Dark Red Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7312,8 +7109,6 @@ Pink Gypsum:
   burnTransformID: 0
   collide: true
   color: [250, 250, 250]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7323,6 +7118,7 @@ Pink Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7348,8 +7144,6 @@ Magenta Gypsum:
   burnTransformID: 0
   collide: true
   color: [222, 222, 222]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7359,6 +7153,7 @@ Magenta Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7384,8 +7179,6 @@ Lime Gypsum:
   burnTransformID: 0
   collide: true
   color: [60, 60, 60]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7395,6 +7188,7 @@ Lime Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7420,8 +7214,6 @@ Green Gypsum:
   burnTransformID: 0
   collide: true
   color: [60, 60, 60]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7431,6 +7223,7 @@ Green Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7456,8 +7249,6 @@ Dark Green Gypsum:
   burnTransformID: 0
   collide: true
   color: [40, 40, 40]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7467,6 +7258,7 @@ Dark Green Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7492,8 +7284,6 @@ Cyan Gypsum:
   burnTransformID: 0
   collide: true
   color: [100, 100, 100]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7503,6 +7293,7 @@ Cyan Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7528,8 +7319,6 @@ Light Blue Gypsum:
   burnTransformID: 0
   collide: true
   color: [160, 160, 160]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7539,6 +7328,7 @@ Light Blue Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7564,8 +7354,6 @@ Blue Gypsum:
   burnTransformID: 0
   collide: true
   color: [40, 40, 40]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7575,6 +7363,7 @@ Blue Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7600,8 +7389,6 @@ Dark Blue Gypsum:
   burnTransformID: 0
   collide: true
   color: [50, 50, 50]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7611,6 +7398,7 @@ Dark Blue Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7636,8 +7424,6 @@ Purple Gypsum:
   burnTransformID: 0
   collide: true
   color: [150, 150, 150]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7647,6 +7433,7 @@ Purple Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7672,8 +7459,6 @@ Dark Purple Gypsum:
   burnTransformID: 0
   collide: true
   color: [85, 85, 85]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7683,6 +7468,7 @@ Dark Purple Gypsum:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7708,8 +7494,6 @@ Charred Wood (Deciduous Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -7719,6 +7503,7 @@ Charred Wood (Deciduous Tree):
   flammability: 0.1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7744,8 +7529,6 @@ Charred Wood (Dead Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -7755,6 +7538,7 @@ Charred Wood (Dead Tree):
   flammability: 0.1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7780,8 +7564,6 @@ Charred Wood (Coniferous Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -7791,6 +7573,7 @@ Charred Wood (Coniferous Tree):
   flammability: 0.1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7816,8 +7599,6 @@ Charred Wood (Palm Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -7827,6 +7608,7 @@ Charred Wood (Palm Tree):
   flammability: 0.1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7852,8 +7634,6 @@ Charred Wood (Jungle Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -7863,6 +7643,7 @@ Charred Wood (Jungle Tree):
   flammability: 0.1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7888,8 +7669,6 @@ Charred Wood (Swamp Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -7899,6 +7678,7 @@ Charred Wood (Swamp Tree):
   flammability: 0.1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7924,8 +7704,6 @@ Charred Wood (Sugar Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -7935,6 +7713,7 @@ Charred Wood (Sugar Tree):
   flammability: 0.1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7960,8 +7739,6 @@ Charred Wood (Rubber Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -7971,6 +7748,7 @@ Charred Wood (Rubber Tree):
   flammability: 0.1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -7996,8 +7774,6 @@ Charred Wood (Fruit Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -8007,6 +7783,7 @@ Charred Wood (Fruit Tree):
   flammability: 0.1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8032,8 +7809,6 @@ Charred Wood (Savanna Tree):
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -8043,6 +7818,7 @@ Charred Wood (Savanna Tree):
   flammability: 0.1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8068,8 +7844,6 @@ Charred Hardwood Planks:
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -8079,6 +7853,7 @@ Charred Hardwood Planks:
   flammability: 0.2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8104,8 +7879,6 @@ Charred Softwood Planks:
   burnTransformID: 0
   collide: true
   color: [48, 48, 48]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -8115,6 +7888,7 @@ Charred Softwood Planks:
   flammability: 0.2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8140,8 +7914,6 @@ Charred Junglewood Planks:
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -8151,6 +7923,7 @@ Charred Junglewood Planks:
   flammability: 0.2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8176,8 +7949,6 @@ Charred Savannawood Planks:
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -8187,6 +7958,7 @@ Charred Savannawood Planks:
   flammability: 0.2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8212,8 +7984,6 @@ Charred Deadwood Planks:
   burnTransformID: 0
   collide: true
   color: [48, 48, 48]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -8223,6 +7993,7 @@ Charred Deadwood Planks:
   flammability: 0.2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8248,8 +8019,6 @@ Charred Palmwood Planks:
   burnTransformID: 0
   collide: true
   color: [48, 48, 48]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -8259,6 +8028,7 @@ Charred Palmwood Planks:
   flammability: 0.2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8284,8 +8054,6 @@ Charred Darkwood Planks:
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -8295,6 +8063,7 @@ Charred Darkwood Planks:
   flammability: 0.2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8320,8 +8089,6 @@ Charred Sugarwood Planks:
   burnTransformID: 0
   collide: true
   color: [48, 48, 48]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -8331,6 +8098,7 @@ Charred Sugarwood Planks:
   flammability: 0.2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8356,8 +8124,6 @@ Charred Rubberwood Planks:
   burnTransformID: 0
   collide: true
   color: [48, 48, 48]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -8367,6 +8133,7 @@ Charred Rubberwood Planks:
   flammability: 0.2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8392,8 +8159,6 @@ Charred Swampwood Planks:
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -8403,6 +8168,7 @@ Charred Swampwood Planks:
   flammability: 0.2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8428,8 +8194,6 @@ Charred Smooth Mushroom Block:
   burnTransformID: 0
   collide: true
   color: [48, 48, 48]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -8439,6 +8203,7 @@ Charred Smooth Mushroom Block:
   flammability: 0.05
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8464,8 +8229,6 @@ Charred Spotted Mushroom Block:
   burnTransformID: 0
   collide: true
   color: [48, 48, 48]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -8475,6 +8238,7 @@ Charred Spotted Mushroom Block:
   flammability: 0.05
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8500,8 +8264,6 @@ Charred Mushroom Stem Block:
   burnTransformID: 0
   collide: true
   color: [48, 48, 48]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -8511,6 +8273,7 @@ Charred Mushroom Stem Block:
   flammability: 0.05
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8536,8 +8299,6 @@ Charred Lamella Block:
   burnTransformID: 0
   collide: true
   color: [48, 48, 48]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -8547,6 +8308,7 @@ Charred Lamella Block:
   flammability: 0.05
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8572,8 +8334,6 @@ Charred Rubber:
   burnTransformID: 0
   collide: true
   color: [64, 64, 64]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -8583,6 +8343,7 @@ Charred Rubber:
   flammability: 0.1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8608,8 +8369,6 @@ Rusty Iron:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -8619,6 +8378,7 @@ Rusty Iron:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8644,8 +8404,6 @@ Rusty Steel:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -8655,6 +8413,7 @@ Rusty Steel:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8680,8 +8439,6 @@ Patinated Copper:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -8691,6 +8448,7 @@ Patinated Copper:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8716,8 +8474,6 @@ Rusty Steel Plating:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -8727,6 +8483,7 @@ Rusty Steel Plating:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -8752,8 +8509,6 @@ Small Red Cactus (Bud):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -8763,6 +8518,7 @@ Small Red Cactus (Bud):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -8788,8 +8544,6 @@ Small Red Cactus (Stem):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -8799,6 +8553,7 @@ Small Red Cactus (Stem):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -8824,8 +8579,6 @@ Small Yellow Cactus (Bud):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -8835,6 +8588,7 @@ Small Yellow Cactus (Bud):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -8860,8 +8614,6 @@ Small Yellow Cactus (Stem):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -8871,6 +8623,7 @@ Small Yellow Cactus (Stem):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -8896,8 +8649,6 @@ Small Green Cactus (Bud):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -8907,6 +8658,7 @@ Small Green Cactus (Bud):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -8932,8 +8684,6 @@ Small Green Cactus (Stem):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -8943,6 +8693,7 @@ Small Green Cactus (Stem):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -8968,8 +8719,6 @@ Death Cactus:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -8979,6 +8728,7 @@ Death Cactus:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -9004,8 +8754,6 @@ Mutated Death Cactus:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -9015,6 +8763,7 @@ Mutated Death Cactus:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -9040,8 +8789,6 @@ Poison Cactus:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -9051,6 +8798,7 @@ Poison Cactus:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -9076,8 +8824,6 @@ Starch Cactus:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -9087,6 +8833,7 @@ Starch Cactus:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.4
   movesPowder: false
@@ -9112,8 +8859,6 @@ Cactus Fruit:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -9123,6 +8868,7 @@ Cactus Fruit:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.6
   movesPowder: false
@@ -9148,8 +8894,6 @@ Alien Crop Plant (Bud):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -9158,7 +8902,8 @@ Alien Crop Plant (Bud):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 1]
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -9184,8 +8929,6 @@ Ammonia Plant:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -9194,7 +8937,8 @@ Ammonia Plant:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 16, 0]
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -9220,8 +8964,6 @@ Common White Flowers:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9231,6 +8973,7 @@ Common White Flowers:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9256,8 +8999,6 @@ Tall Grass:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9267,6 +9008,7 @@ Tall Grass:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -9292,8 +9034,6 @@ Fern:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9303,6 +9043,7 @@ Fern:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -9328,8 +9069,6 @@ Yellow Grass:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9339,6 +9078,7 @@ Yellow Grass:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -9364,8 +9104,6 @@ Dryland Grass:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9375,6 +9113,7 @@ Dryland Grass:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -9400,8 +9139,6 @@ Red Flower Grass:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9411,6 +9148,7 @@ Red Flower Grass:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -9436,8 +9174,6 @@ Light Tall Grass:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9447,6 +9183,7 @@ Light Tall Grass:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -9472,8 +9209,6 @@ Small Yellow Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9483,6 +9218,7 @@ Small Yellow Flower:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9508,8 +9244,6 @@ Red Bush:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9519,6 +9253,7 @@ Red Bush:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9544,8 +9279,6 @@ Dark Tall Grass:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9555,6 +9288,7 @@ Dark Tall Grass:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -9580,8 +9314,6 @@ Jungle Plant 1:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9591,6 +9323,7 @@ Jungle Plant 1:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9616,8 +9349,6 @@ Large Purple Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9627,6 +9358,7 @@ Large Purple Flower:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9652,8 +9384,6 @@ Large Yellow Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9663,6 +9393,7 @@ Large Yellow Flower:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9688,8 +9419,6 @@ Pink Fringed Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9699,6 +9428,7 @@ Pink Fringed Flower:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9724,8 +9454,6 @@ Red Fringed Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9735,6 +9463,7 @@ Red Fringed Flower:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9760,8 +9489,6 @@ Tiny Fringed Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9771,6 +9498,7 @@ Tiny Fringed Flower:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9796,8 +9524,6 @@ White Fringed Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9807,6 +9533,7 @@ White Fringed Flower:
   flammability: 3
   floatingAction: 2
   lightColor: [5, 5, 5]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9832,8 +9559,6 @@ Yellow Fringed Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9843,6 +9568,7 @@ Yellow Fringed Flower:
   flammability: 3
   floatingAction: 2
   lightColor: [5, 5, 5]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9868,8 +9594,6 @@ Large Red Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9879,6 +9603,7 @@ Large Red Flower:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9904,8 +9629,6 @@ Green Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9915,6 +9638,7 @@ Green Mushroom:
   flammability: 1
   floatingAction: 2
   lightColor: [5, 5, 5]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9940,8 +9664,6 @@ Dark Green Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9951,6 +9673,7 @@ Dark Green Mushroom:
   flammability: 1
   floatingAction: 2
   lightColor: [5, 5, 5]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -9976,8 +9699,6 @@ Brown Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -9987,6 +9708,7 @@ Brown Mushroom:
   flammability: 1
   floatingAction: 2
   lightColor: [5, 5, 5]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -10012,8 +9734,6 @@ Red Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10023,6 +9743,7 @@ Red Mushroom:
   flammability: 1
   floatingAction: 2
   lightColor: [5, 5, 5]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -10048,8 +9769,6 @@ Dark Red Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10059,6 +9778,7 @@ Dark Red Mushroom:
   flammability: 1
   floatingAction: 2
   lightColor: [5, 5, 5]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -10084,8 +9804,6 @@ Grey Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10095,6 +9813,7 @@ Grey Mushroom:
   flammability: 1
   floatingAction: 2
   lightColor: [5, 5, 5]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -10120,8 +9839,6 @@ Wood (Fruit Tree):
   burnTransformID: 222
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -10131,6 +9848,7 @@ Wood (Fruit Tree):
   flammability: 1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -10156,8 +9874,6 @@ Wood (Jungle Tree):
   burnTransformID: 218
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -10167,6 +9883,7 @@ Wood (Jungle Tree):
   flammability: 1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -10192,8 +9909,6 @@ Wood (Savanna Tree):
   burnTransformID: 223
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -10203,6 +9918,7 @@ Wood (Savanna Tree):
   flammability: 1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -10228,8 +9944,6 @@ Wood (Palm Tree):
   burnTransformID: 217
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -10239,6 +9953,7 @@ Wood (Palm Tree):
   flammability: 1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -10264,8 +9979,6 @@ Wood (Swamp Tree):
   burnTransformID: 219
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -10275,6 +9988,7 @@ Wood (Swamp Tree):
   flammability: 1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -10300,8 +10014,6 @@ Wood (Coniferous Tree):
   burnTransformID: 216
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -10311,6 +10023,7 @@ Wood (Coniferous Tree):
   flammability: 1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -10336,8 +10049,6 @@ Wood (Dead Tree):
   burnTransformID: 215
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -10347,6 +10058,7 @@ Wood (Dead Tree):
   flammability: 1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -10372,8 +10084,6 @@ Leaves (Deciduous Tree):
   burnTransformID: 0
   collide: false
   color: [93, 93, 93]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10383,6 +10093,7 @@ Leaves (Deciduous Tree):
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10408,8 +10119,6 @@ Leaves (Jungle Tree):
   burnTransformID: 0
   collide: false
   color: [93, 93, 93]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10419,6 +10128,7 @@ Leaves (Jungle Tree):
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10444,8 +10154,6 @@ Leaves (Savanna Tree):
   burnTransformID: 0
   collide: false
   color: [93, 93, 93]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10455,6 +10163,7 @@ Leaves (Savanna Tree):
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10480,8 +10189,6 @@ Leaves (Palm Tree):
   burnTransformID: 0
   collide: false
   color: [93, 93, 93]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10491,6 +10198,7 @@ Leaves (Palm Tree):
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10516,8 +10224,6 @@ Leaves (Swamp Tree):
   burnTransformID: 0
   collide: false
   color: [93, 93, 93]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10527,6 +10233,7 @@ Leaves (Swamp Tree):
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10552,8 +10259,6 @@ Leaves (Coniferous Tree):
   burnTransformID: 0
   collide: false
   color: [93, 93, 93]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10563,6 +10268,7 @@ Leaves (Coniferous Tree):
   flammability: 3
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10588,8 +10294,6 @@ Leaves (Fruit Tree):
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10599,6 +10303,7 @@ Leaves (Fruit Tree):
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10624,8 +10329,6 @@ Leaves (Blooming Fruit Tree):
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10635,6 +10338,7 @@ Leaves (Blooming Fruit Tree):
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10660,8 +10364,6 @@ Blue Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10671,6 +10373,7 @@ Blue Mushroom:
   flammability: 1
   floatingAction: 2
   lightColor: [5, 5, 5]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -10696,8 +10399,6 @@ Dark Blue Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10707,6 +10408,7 @@ Dark Blue Mushroom:
   flammability: 1
   floatingAction: 2
   lightColor: [5, 5, 5]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -10732,8 +10434,6 @@ Purple Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10743,6 +10443,7 @@ Purple Mushroom:
   flammability: 1
   floatingAction: 2
   lightColor: [5, 5, 5]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -10768,8 +10469,6 @@ Dark Purple Mushroom:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10779,6 +10478,7 @@ Dark Purple Mushroom:
   flammability: 1
   floatingAction: 2
   lightColor: [5, 5, 5]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -10804,8 +10504,6 @@ Wood (Rubber Tree):
   burnTransformID: 221
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -10815,6 +10513,7 @@ Wood (Rubber Tree):
   flammability: 1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -10840,8 +10539,6 @@ Leaves (Rubber Tree):
   burnTransformID: 0
   collide: false
   color: [93, 93, 93]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10851,6 +10548,7 @@ Leaves (Rubber Tree):
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10876,8 +10574,6 @@ Wood (Sugar Tree):
   burnTransformID: 220
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -10887,6 +10583,7 @@ Wood (Sugar Tree):
   flammability: 1
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -10912,8 +10609,6 @@ Leaves (Sugar Tree):
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10922,7 +10617,8 @@ Leaves (Sugar Tree):
   explosionResistance: 0.06
   flammability: 2
   floatingAction: 1
-  lightColor: [1, 0, 0]
+  lightColor: [1, 1, 1]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -10948,8 +10644,6 @@ Nitrogen:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -10959,6 +10653,7 @@ Nitrogen:
   flammability: 0
   floatingAction: 0
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -10984,8 +10679,6 @@ Oxygen:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -10995,6 +10688,7 @@ Oxygen:
   flammability: 0
   floatingAction: 0
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11020,8 +10714,6 @@ Carbon Dioxide:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11031,6 +10723,7 @@ Carbon Dioxide:
   flammability: 0
   floatingAction: 0
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11056,8 +10749,6 @@ Nitrogen Dioxide:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11067,6 +10758,7 @@ Nitrogen Dioxide:
   flammability: 0
   floatingAction: 0
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11092,8 +10784,6 @@ Sulfur Dioxide:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11103,6 +10793,7 @@ Sulfur Dioxide:
   flammability: 0
   floatingAction: 0
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11128,8 +10819,6 @@ Helium:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11139,6 +10828,7 @@ Helium:
   flammability: 0
   floatingAction: 0
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11164,8 +10854,6 @@ Argon:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11175,6 +10863,7 @@ Argon:
   flammability: 0
   floatingAction: 0
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11200,8 +10889,6 @@ Xenon:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11211,6 +10898,7 @@ Xenon:
   flammability: 0
   floatingAction: 0
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11236,8 +10924,6 @@ Hydrogen:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11247,6 +10933,7 @@ Hydrogen:
   flammability: 0
   floatingAction: 0
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11272,8 +10959,6 @@ Ammonia:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11283,6 +10968,7 @@ Ammonia:
   flammability: 0
   floatingAction: 0
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11308,8 +10994,6 @@ Methane:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11319,6 +11003,7 @@ Methane:
   flammability: 0
   floatingAction: 0
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11344,8 +11029,6 @@ Deuterium:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11355,6 +11038,7 @@ Deuterium:
   flammability: 0
   floatingAction: 0
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11380,8 +11064,6 @@ Water (Steam):
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11391,6 +11073,7 @@ Water (Steam):
   flammability: 0
   floatingAction: 0
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: true
@@ -11416,8 +11099,6 @@ Rubber Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -11427,6 +11108,7 @@ Rubber Sapling:
   flammability: 2
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -11452,8 +11134,6 @@ Stone Succulent (Bud):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11463,6 +11143,7 @@ Stone Succulent (Bud):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11488,8 +11169,6 @@ Blue Succulent (Bud):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11499,6 +11178,7 @@ Blue Succulent (Bud):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11524,8 +11204,6 @@ Purple Succulent (Bud):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11535,6 +11213,7 @@ Purple Succulent (Bud):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11560,8 +11239,6 @@ Stone Succulent (Stem):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11571,6 +11248,7 @@ Stone Succulent (Stem):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11596,8 +11274,6 @@ Blue Succulent (Stem):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11607,6 +11283,7 @@ Blue Succulent (Stem):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11632,8 +11309,6 @@ Purple Succulent (Stem):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11643,6 +11318,7 @@ Purple Succulent (Stem):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11668,8 +11344,6 @@ Alien Crop Plant (Stem):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11678,7 +11352,8 @@ Alien Crop Plant (Stem):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 16]
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11704,8 +11379,6 @@ Charred Grass Block:
   burnTransformID: 1
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Data/Emitters/smoke.emit
   explosionPower: 0
@@ -11715,6 +11388,7 @@ Charred Grass Block:
   flammability: 0.05
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11740,8 +11414,6 @@ Cave Plant (Stem):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11751,6 +11423,7 @@ Cave Plant (Stem):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11776,8 +11449,6 @@ Cave Plant (Cap):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11787,6 +11458,7 @@ Cave Plant (Cap):
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11812,8 +11484,6 @@ Frozen Nitrogen:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11823,6 +11493,7 @@ Frozen Nitrogen:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11848,8 +11519,6 @@ Desert Chalice Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11859,6 +11528,7 @@ Desert Chalice Block:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11884,8 +11554,6 @@ Salpeter Plant Light Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11894,7 +11562,8 @@ Salpeter Plant Light Block:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 16]
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11920,8 +11589,6 @@ Salpeter Plant Trap Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11931,6 +11598,7 @@ Salpeter Plant Trap Block:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.001
   movesPowder: false
@@ -11956,8 +11624,6 @@ Patinated Brass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -11967,6 +11633,7 @@ Patinated Brass:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -11992,8 +11659,6 @@ Patinated Bronze:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12003,6 +11668,7 @@ Patinated Bronze:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12028,8 +11694,6 @@ Metal Framed Glass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12039,6 +11703,7 @@ Metal Framed Glass:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12064,8 +11729,6 @@ Ceramic Tiling:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12075,6 +11738,7 @@ Ceramic Tiling:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12100,8 +11764,6 @@ Small Fern:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -12111,6 +11773,7 @@ Small Fern:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -12136,8 +11799,6 @@ Tall Fern:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -12147,6 +11808,7 @@ Tall Fern:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12172,8 +11834,6 @@ Jungle Plant 2:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -12183,6 +11843,7 @@ Jungle Plant 2:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12208,8 +11869,6 @@ Jungle Plant 3:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -12219,6 +11878,7 @@ Jungle Plant 3:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -12244,8 +11904,6 @@ Jungle Plant 4:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -12255,6 +11913,7 @@ Jungle Plant 4:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -12280,8 +11939,6 @@ Jungle Plant 5:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -12291,6 +11948,7 @@ Jungle Plant 5:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12316,8 +11974,6 @@ Jungle Plant 6:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -12327,6 +11983,7 @@ Jungle Plant 6:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: triangle
   moveMod: 1
   movesPowder: false
@@ -12352,8 +12009,6 @@ Jungle Plant 7:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -12363,6 +12018,7 @@ Jungle Plant 7:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12388,8 +12044,6 @@ Deciduous Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -12399,6 +12053,7 @@ Deciduous Sapling:
   flammability: 2
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12424,8 +12079,6 @@ Conifer Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -12435,6 +12088,7 @@ Conifer Sapling:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12460,8 +12114,6 @@ Swamp Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -12471,6 +12123,7 @@ Swamp Sapling:
   flammability: 2
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12496,8 +12149,6 @@ Savanna Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -12507,6 +12158,7 @@ Savanna Sapling:
   flammability: 2
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12532,8 +12184,6 @@ Dead Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -12543,6 +12193,7 @@ Dead Sapling:
   flammability: 2
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12568,8 +12219,6 @@ Jungle Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -12579,6 +12228,7 @@ Jungle Sapling:
   flammability: 2
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12604,8 +12254,6 @@ Fruit Tree Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -12615,6 +12263,7 @@ Fruit Tree Sapling:
   flammability: 2
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12640,8 +12289,6 @@ Sugar Tree Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -12650,7 +12297,8 @@ Sugar Tree Sapling:
   explosionResistance: 0.05
   flammability: 2
   floatingAction: 2
-  lightColor: [8, 0, 0]
+  lightColor: [8, 8, 8]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12676,8 +12324,6 @@ Palm Sapling:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -12687,6 +12333,7 @@ Palm Sapling:
   flammability: 2
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -12712,8 +12359,6 @@ Sandbags:
   burnTransformID: 5
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12723,6 +12368,7 @@ Sandbags:
   flammability: 1.5
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.8
   movesPowder: false
@@ -12748,8 +12394,6 @@ Yellow Bargonite Crystal:
   burnTransformID: 0
   collide: true
   color: [214, 214, 214]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12758,7 +12402,8 @@ Yellow Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [15, 15, 0]
+  lightColor: [15, 15, 15]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12784,8 +12429,6 @@ Orange Bargonite Crystal:
   burnTransformID: 0
   collide: true
   color: [214, 214, 214]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12794,7 +12437,8 @@ Orange Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [15, 9, 0]
+  lightColor: [15, 15, 15]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12820,8 +12464,6 @@ Magenta Bargonite Crystal:
   burnTransformID: 0
   collide: true
   color: [214, 214, 214]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12830,7 +12472,8 @@ Magenta Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [15, 0, 15]
+  lightColor: [15, 15, 15]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12856,8 +12499,6 @@ Cyan Bargonite Crystal:
   burnTransformID: 0
   collide: true
   color: [37, 37, 37]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12866,7 +12507,8 @@ Cyan Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 15, 15]
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12892,8 +12534,6 @@ Yellow Stained Glass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 0]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12902,7 +12542,8 @@ Yellow Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [6, 6, 0]
+  lightColor: [6, 6, 6]
+  lightColorFilter: [1, 1, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12928,8 +12569,6 @@ Orange Stained Glass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 0.5882353, 0]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12938,7 +12577,8 @@ Orange Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [6, 4, 0]
+  lightColor: [6, 6, 6]
+  lightColorFilter: [1, 0.5882353, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12964,8 +12604,6 @@ Magenta Stained Glass:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 0, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12974,7 +12612,8 @@ Magenta Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [6, 0, 6]
+  lightColor: [6, 6, 6]
+  lightColorFilter: [1, 0, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13000,8 +12639,6 @@ Cyan Stained Glass:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  lightColorFilter: [0, 0.7843137, 0.7843137]
-  colorOverlay: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13010,7 +12647,8 @@ Cyan Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 6, 6]
+  lightColor: [0, 0, 0]
+  lightColorFilter: [0, 0.7843137, 0.7843137]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13036,8 +12674,6 @@ Yellow Lamp (on):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13046,7 +12682,8 @@ Yellow Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [24, 24, 0]
+  lightColor: [24, 24, 24]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13072,8 +12709,6 @@ Yellow Lamp:
   burnTransformID: 0
   collide: true
   color: [30, 30, 30]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13083,6 +12718,7 @@ Yellow Lamp:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13108,8 +12744,6 @@ Orange Lamp (on):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13118,7 +12752,8 @@ Orange Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [24, 15, 0]
+  lightColor: [24, 24, 24]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13144,8 +12779,6 @@ Orange Lamp:
   burnTransformID: 0
   collide: true
   color: [30, 30, 30]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13155,6 +12788,7 @@ Orange Lamp:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13180,8 +12814,6 @@ Magenta Lamp (on):
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13190,7 +12822,8 @@ Magenta Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [24, 0, 24]
+  lightColor: [24, 24, 24]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13216,8 +12849,6 @@ Magenta Lamp:
   burnTransformID: 0
   collide: true
   color: [30, 30, 30]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13227,6 +12858,7 @@ Magenta Lamp:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13252,8 +12884,6 @@ Cyan Lamp (on):
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13262,7 +12892,8 @@ Cyan Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 24, 24]
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13288,8 +12919,6 @@ Cyan Lamp:
   burnTransformID: 0
   collide: true
   color: [0, 0, 0]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13299,6 +12928,7 @@ Cyan Lamp:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13324,8 +12954,6 @@ Cut Stone Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13335,6 +12963,7 @@ Cut Stone Block:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13360,8 +12989,6 @@ Cut Granite Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13371,6 +12998,7 @@ Cut Granite Block:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13396,8 +13024,6 @@ Cut Limestone Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13407,6 +13033,7 @@ Cut Limestone Block:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13432,8 +13059,6 @@ Cut Marble Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13443,6 +13068,7 @@ Cut Marble Block:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13468,8 +13094,6 @@ Cut Sandstone Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13479,6 +13103,7 @@ Cut Sandstone Block:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13504,8 +13129,6 @@ Cut Red Sandstone Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13515,6 +13138,7 @@ Cut Red Sandstone Block:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13540,8 +13164,6 @@ Chiseled Marble Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13551,6 +13173,7 @@ Chiseled Marble Block:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13576,8 +13199,6 @@ Chiseled Sandstone Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13587,6 +13208,7 @@ Chiseled Sandstone Block:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13612,8 +13234,6 @@ Chiseled Red Sandstone Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13623,6 +13243,7 @@ Chiseled Red Sandstone Block:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13648,8 +13269,6 @@ Chiseled Marble Ornament Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13659,6 +13278,7 @@ Chiseled Marble Ornament Block:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13684,8 +13304,6 @@ Marble Column:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13695,6 +13313,7 @@ Marble Column:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13720,8 +13339,6 @@ Twisted Marble Column:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13731,6 +13348,7 @@ Twisted Marble Column:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13756,8 +13374,6 @@ Chiseled Sandstone Ornament Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13767,6 +13383,7 @@ Chiseled Sandstone Ornament Block:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13792,8 +13409,6 @@ Chiseled Red Sandstone Ornament Block:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13803,6 +13418,7 @@ Chiseled Red Sandstone Ornament Block:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13828,8 +13444,6 @@ Dry Mud:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13839,6 +13453,7 @@ Dry Mud:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -13864,8 +13479,6 @@ Half-Dry Mud:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13875,6 +13488,7 @@ Half-Dry Mud:
   flammability: 0
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
@@ -13900,8 +13514,6 @@ Tholin Dust:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13911,6 +13523,7 @@ Tholin Dust:
   flammability: 2
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.9
   movesPowder: false
@@ -13936,8 +13549,6 @@ Frozen Methane:
   burnTransformID: 0
   collide: true
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13947,6 +13558,7 @@ Frozen Methane:
   flammability: 3
   floatingAction: 1
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.8
   movesPowder: false
@@ -13972,8 +13584,6 @@ Little Icecaps:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -13983,6 +13593,7 @@ Little Icecaps:
   flammability: 1
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -14008,8 +13619,6 @@ Terror Lichen:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -14019,6 +13628,7 @@ Terror Lichen:
   flammability: 1
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -14044,8 +13654,6 @@ Sorrowthorn:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -14055,6 +13663,7 @@ Sorrowthorn:
   flammability: 1
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -14080,8 +13689,6 @@ Skeleton Flower:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -14091,6 +13698,7 @@ Skeleton Flower:
   flammability: 3
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -14116,8 +13724,6 @@ Methane Ball Plant:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0.01
@@ -14127,6 +13733,7 @@ Methane Ball Plant:
   flammability: 5
   floatingAction: 2
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
@@ -14152,8 +13759,6 @@ Fire:
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: Data/Emitters/fire.emit
   explosionPower: 0
@@ -14162,7 +13767,8 @@ Fire:
   explosionResistance: 0
   flammability: 0
   floatingAction: 2
-  lightColor: [24, 18, 11]
+  lightColor: [24, 24, 24]
+  lightColorFilter: [1, 1, 1]
   meshType: none
   moveMod: 1
   movesPowder: false
@@ -14188,8 +13794,6 @@ Fire (Sulfur):
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: Data/Emitters/fire_sulfur.emit
   explosionPower: 0
@@ -14198,7 +13802,8 @@ Fire (Sulfur):
   explosionResistance: 0
   flammability: 0
   floatingAction: 2
-  lightColor: [0, 5, 24]
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: none
   moveMod: 1
   movesPowder: false
@@ -14224,8 +13829,6 @@ Fire (Light Metal):
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: Data/Emitters/fire_metal.emit
   explosionPower: 0
@@ -14235,6 +13838,7 @@ Fire (Light Metal):
   flammability: 0
   floatingAction: 2
   lightColor: [31, 31, 31]
+  lightColorFilter: [1, 1, 1]
   meshType: none
   moveMod: 1
   movesPowder: false
@@ -14260,8 +13864,6 @@ Fire (Lithium):
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: Data/Emitters/fire_lithium.emit
   explosionPower: 0
@@ -14270,7 +13872,8 @@ Fire (Lithium):
   explosionResistance: 0
   flammability: 0
   floatingAction: 2
-  lightColor: [31, 0, 5]
+  lightColor: [31, 31, 31]
+  lightColorFilter: [1, 1, 1]
   meshType: none
   moveMod: 1
   movesPowder: false
@@ -14296,8 +13899,6 @@ Fire (Gas):
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: true
   emitter: Data/Emitters/fire_gas.emit
   explosionPower: 0
@@ -14306,7 +13907,8 @@ Fire (Gas):
   explosionResistance: 0
   flammability: 0
   floatingAction: 2
-  lightColor: [11, 11, 20]
+  lightColor: [11, 11, 11]
+  lightColorFilter: [1, 1, 1]
   meshType: none
   moveMod: 1
   movesPowder: false
@@ -14332,8 +13934,6 @@ Water (1):
   burnTransformID: 0
   collide: false
   color: [255, 255, 255]
-  lightColorFilter: [1, 1, 1]
-  colorOverlay: [255, 255, 255]
   crushable: false
   emitter: Particle/water_particle.png
   explosionPower: 0
@@ -14343,6 +13943,7 @@ Water (1):
   flammability: -5.5
   floatingAction: 0
   lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: true
