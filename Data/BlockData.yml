@@ -10386,7 +10386,7 @@ Leaves (Deciduous Tree):
   meshType: cube
   moveMod: 0.7
   movesPowder: false
-  occlusion: self
+  occlusion: selfOnly
   physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
@@ -10422,7 +10422,7 @@ Leaves (Jungle Tree):
   meshType: cube
   moveMod: 0.7
   movesPowder: false
-  occlusion: self
+  occlusion: selfOnly
   physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
@@ -10458,7 +10458,7 @@ Leaves (Savanna Tree):
   meshType: cube
   moveMod: 0.7
   movesPowder: false
-  occlusion: self
+  occlusion: selfOnly
   physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
@@ -10494,7 +10494,7 @@ Leaves (Palm Tree):
   meshType: cube
   moveMod: 0.7
   movesPowder: false
-  occlusion: self
+  occlusion: selfOnly
   physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
@@ -10530,7 +10530,7 @@ Leaves (Swamp Tree):
   meshType: cube
   moveMod: 0.7
   movesPowder: false
-  occlusion: self
+  occlusion: selfOnly
   physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
@@ -10566,7 +10566,7 @@ Leaves (Coniferous Tree):
   meshType: cube
   moveMod: 0.7
   movesPowder: false
-  occlusion: self
+  occlusion: selfOnly
   physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
@@ -10602,7 +10602,7 @@ Leaves (Fruit Tree):
   meshType: cube
   moveMod: 0.7
   movesPowder: false
-  occlusion: self
+  occlusion: selfOnly
   physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
@@ -10638,7 +10638,7 @@ Leaves (Blooming Fruit Tree):
   meshType: cube
   moveMod: 0.7
   movesPowder: false
-  occlusion: self
+  occlusion: selfOnly
   physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
@@ -10854,7 +10854,7 @@ Leaves (Rubber Tree):
   meshType: cube
   moveMod: 0.7
   movesPowder: false
-  occlusion: self
+  occlusion: selfOnly
   physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
@@ -10926,7 +10926,7 @@ Leaves (Sugar Tree):
   meshType: cube
   moveMod: 0.7
   movesPowder: false
-  occlusion: self
+  occlusion: selfOnly
   physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
