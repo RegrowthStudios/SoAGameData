@@ -11368,7 +11368,7 @@ Alien Crop Plant (Stem):
   textureFront: Blocks/Flora_block/aliencrop_side.png
   textureLeft: Blocks/Flora_block/aliencrop_side.png
   textureRight: Blocks/Flora_block/aliencrop_side.png
-  textureTop: Blocks/Flora_block/aliencrop_top_stem.png
+  textureTop: Blocks/Flora_block/aliencrop_bottom.png
   useable: true
   waterBreak: false
   waterMeshLevel: 0
@@ -13592,7 +13592,7 @@ Little Icecaps:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
-  lightColor: [0, 0, 0]
+  lightColor: [0, 6, 8]
   lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
@@ -13753,6 +13753,426 @@ Methane Ball Plant:
   waterBreak: true
   waterMeshLevel: 0
   waveEffect: 1
+Sanguine Sacs:
+  ID: 393
+  allowsLight: true
+  burnTransformID: 0
+  collide: false
+  color: [255, 255, 255]
+  crushable: true
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 0.05
+  flammability: 1
+  floatingAction: 2
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
+  meshType: cross
+  moveMod: 1
+  movesPowder: false
+  occlusion: none
+  physicsProperty: none
+  scatterSunRays: false
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: false
+  textureBack: Blocks/Flora_mesh/fungus_sacs_sanguine.png
+  textureBottom: Blocks/Flora_mesh/fungus_sacs_sanguine.png
+  textureFront: Blocks/Flora_mesh/fungus_sacs_sanguine.png
+  textureLeft: Blocks/Flora_mesh/fungus_sacs_sanguine.png
+  textureRight: Blocks/Flora_mesh/fungus_sacs_sanguine.png
+  textureTop: Blocks/Flora_mesh/fungus_sacs_sanguine.png
+  useable: true
+  waterBreak: true
+  waterMeshLevel: 0
+  waveEffect: 1
+Trtion Sacs:
+  ID: 394
+  allowsLight: true
+  burnTransformID: 0
+  collide: false
+  color: [255, 255, 255]
+  crushable: true
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 0.05
+  flammability: 1
+  floatingAction: 2
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
+  meshType: cross
+  moveMod: 1
+  movesPowder: false
+  occlusion: none
+  physicsProperty: none
+  scatterSunRays: false
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: false
+  textureBack: Blocks/Flora_mesh/fungus_sacs_triton.png
+  textureBottom: Blocks/Flora_mesh/fungus_sacs_triton.png
+  textureFront: Blocks/Flora_mesh/fungus_sacs_triton.png
+  textureLeft: Blocks/Flora_mesh/fungus_sacs_triton.png
+  textureRight: Blocks/Flora_mesh/fungus_sacs_triton.png
+  textureTop: Blocks/Flora_mesh/fungus_sacs_triton.png
+  useable: true
+  waterBreak: true
+  waterMeshLevel: 0
+  waveEffect: 1
+Dreamweed:
+  ID: 395
+  allowsLight: true
+  burnTransformID: 0
+  collide: false
+  color: [255, 255, 255]
+  crushable: true
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 0.05
+  flammability: 1
+  floatingAction: 2
+  lightColor: [0, 8, 6]
+  lightColorFilter: [1, 1, 1]
+  meshType: cross
+  moveMod: 0.6
+  movesPowder: false
+  occlusion: none
+  physicsProperty: none
+  scatterSunRays: false
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: false
+  textureBack: Blocks/Flora_mesh/plant_dreamweed.png
+  textureBottom: Blocks/Flora_mesh/plant_dreamweed.png
+  textureFront: Blocks/Flora_mesh/plant_dreamweed.png
+  textureLeft: Blocks/Flora_mesh/plant_dreamweed.png
+  textureRight: Blocks/Flora_mesh/plant_dreamweed.png
+  textureTop: Blocks/Flora_mesh/plant_dreamweed.png
+  useable: true
+  waterBreak: true
+  waterMeshLevel: 0
+  waveEffect: 1
+Light Blue Dreamweed:
+  ID: 396
+  allowsLight: true
+  burnTransformID: 0
+  collide: false
+  color: [255, 255, 255]
+  crushable: true
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 0.05
+  flammability: 1
+  floatingAction: 2
+  lightColor: [0, 6, 8]
+  lightColorFilter: [1, 1, 1]
+  meshType: cross
+  moveMod: 0.8
+  movesPowder: false
+  occlusion: none
+  physicsProperty: none
+  scatterSunRays: false
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: false
+  textureBack: Blocks/Flora_mesh/plant_dreamweed_blue_light.png
+  textureBottom: Blocks/Flora_mesh/plant_dreamweed_blue_light.png
+  textureFront: Blocks/Flora_mesh/plant_dreamweed_blue_light.png
+  textureLeft: Blocks/Flora_mesh/plant_dreamweed_blue_light.png
+  textureRight: Blocks/Flora_mesh/plant_dreamweed_blue_light.png
+  textureTop: Blocks/Flora_mesh/plant_dreamweed_blue_light.png
+  useable: true
+  waterBreak: true
+  waterMeshLevel: 0
+  waveEffect: 1
+Sticky Dreamweed:
+  ID: 397
+  allowsLight: true
+  burnTransformID: 0
+  collide: false
+  color: [255, 255, 255]
+  crushable: true
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 0.05
+  flammability: 1
+  floatingAction: 2
+  lightColor: [6, 8, 0]
+  lightColorFilter: [1, 1, 1]
+  meshType: cross
+  moveMod: 0.1
+  movesPowder: false
+  occlusion: none
+  physicsProperty: none
+  scatterSunRays: false
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: false
+  textureBack: Blocks/Flora_mesh/plant_dreamweed_sticky.png
+  textureBottom: Blocks/Flora_mesh/plant_dreamweed_sticky.png
+  textureFront: Blocks/Flora_mesh/plant_dreamweed_sticky.png
+  textureLeft: Blocks/Flora_mesh/plant_dreamweed_sticky.png
+  textureRight: Blocks/Flora_mesh/plant_dreamweed_sticky.png
+  textureTop: Blocks/Flora_mesh/plant_dreamweed_sticky.png
+  useable: true
+  waterBreak: true
+  waterMeshLevel: 0
+  waveEffect: 1
+Striped Dreamweed:
+  ID: 398
+  allowsLight: true
+  burnTransformID: 0
+  collide: false
+  color: [255, 255, 255]
+  crushable: true
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 0.05
+  flammability: 1
+  floatingAction: 2
+  lightColor: [6, 0, 8]
+  lightColorFilter: [1, 1, 1]
+  meshType: cross
+  moveMod: 0.8
+  movesPowder: false
+  occlusion: none
+  physicsProperty: none
+  scatterSunRays: false
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: false
+  textureBack: Blocks/Flora_mesh/plant_dreamweed_striped.png
+  textureBottom: Blocks/Flora_mesh/plant_dreamweed_striped.png
+  textureFront: Blocks/Flora_mesh/plant_dreamweed_striped.png
+  textureLeft: Blocks/Flora_mesh/plant_dreamweed_striped.png
+  textureRight: Blocks/Flora_mesh/plant_dreamweed_striped.png
+  textureTop: Blocks/Flora_mesh/plant_dreamweed_striped.png
+  useable: true
+  waterBreak: true
+  waterMeshLevel: 0
+  waveEffect: 1
+Mycelia Overgrown Stone (Little Icecaps):
+  ID: 399
+  allowsLight: false
+  burnTransformID: 0
+  collide: true
+  color: [255, 255, 255]
+  crushable: false
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 1
+  flammability: 0
+  floatingAction: 1
+  lightColor: [0, 4, 5]
+  lightColorFilter: [1, 1, 1]
+  meshType: cube
+  moveMod: 1
+  movesPowder: false
+  occlusion: all
+  physicsProperty: none
+  scatterSunRays: true
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: true
+  textureBack: Blocks/Terrain/stone_mycelia_icecaps_side.png
+  textureBottom: Blocks/Terrain/stone.png
+  textureFront: Blocks/Terrain/stone_mycelia_icecaps_side.png
+  textureLeft: Blocks/Terrain/stone_mycelia_icecaps_side.png
+  textureRight: Blocks/Terrain/stone_mycelia_icecaps_side.png
+  textureTop: Blocks/Terrain/stone_mycelia_icecaps_top.png
+  useable: true
+  waterBreak: false
+  waterMeshLevel: 0
+  waveEffect: 0
+Wood (Mangrove Tree):
+  ID: 400
+  allowsLight: false
+  burnTransformID: 401
+  collide: true
+  color: [255, 255, 255]
+  crushable: false
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 1
+  flammability: 1
+  floatingAction: 1
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
+  meshType: cube
+  moveMod: 1
+  movesPowder: false
+  occlusion: all
+  physicsProperty: none
+  scatterSunRays: true
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: true
+  textureBack: Blocks/Flora_block/wood_mangrove.png
+  textureBottom: Blocks/Flora_block/wood_mangrove.png
+  textureFront: Blocks/Flora_block/wood_mangrove.png
+  textureLeft: Blocks/Flora_block/wood_mangrove.png
+  textureRight: Blocks/Flora_block/wood_mangrove.png
+  textureTop: Blocks/Flora_block/wood_mangrove.png
+  useable: true
+  waterBreak: false
+  waterMeshLevel: 0
+  waveEffect: 0
+Charred Wood (Mangrove Tree):
+  ID: 401
+  allowsLight: false
+  burnTransformID: 0
+  collide: true
+  color: [64, 64, 64]
+  crushable: false
+  emitter: Data/Emitters/smoke.emit
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 1
+  flammability: 0.1
+  floatingAction: 1
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
+  meshType: cube
+  moveMod: 1
+  movesPowder: false
+  occlusion: all
+  physicsProperty: none
+  scatterSunRays: true
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: true
+  textureBack: Blocks/Flora_block/wood_mangrove.png
+  textureBottom: Blocks/Flora_block/wood_mangrove.png
+  textureFront: Blocks/Flora_block/wood_mangrove.png
+  textureLeft: Blocks/Flora_block/wood_mangrove.png
+  textureRight: Blocks/Flora_block/wood_mangrove.png
+  textureTop: Blocks/Flora_block/wood_mangrove.png
+  useable: true
+  waterBreak: false
+  waterMeshLevel: 0
+  waveEffect: 0
+Mangrovewood Planks:
+  ID: 402
+  allowsLight: false
+  burnTransformID: 403
+  collide: true
+  color: [255, 255, 255]
+  crushable: false
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 1
+  flammability: 2
+  floatingAction: 1
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
+  meshType: cube
+  moveMod: 1
+  movesPowder: false
+  occlusion: all
+  physicsProperty: none
+  scatterSunRays: true
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: true
+  textureBack: Blocks/Building/wooden_planks_mangrove.png
+  textureBottom: Blocks/Building/wooden_planks_mangrove.png
+  textureFront: Blocks/Building/wooden_planks_mangrove.png
+  textureLeft: Blocks/Building/wooden_planks_mangrove.png
+  textureRight: Blocks/Building/wooden_planks_mangrove.png
+  textureTop: Blocks/Building/wooden_planks_mangrove.png
+  useable: true
+  waterBreak: false
+  waterMeshLevel: 0
+  waveEffect: 0
+Charred Mangrovewood Planks:
+  ID: 403
+  allowsLight: false
+  burnTransformID: 0
+  collide: true
+  color: [64, 64, 64]
+  crushable: false
+  emitter: Data/Emitters/smoke.emit
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 1
+  flammability: 0.2
+  floatingAction: 1
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
+  meshType: cube
+  moveMod: 1
+  movesPowder: false
+  occlusion: all
+  physicsProperty: none
+  scatterSunRays: true
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: true
+  textureBack: Blocks/Building/wooden_planks_mangrove.png
+  textureBottom: Blocks/Building/wooden_planks_mangrove.png
+  textureFront: Blocks/Building/wooden_planks_mangrove.png
+  textureLeft: Blocks/Building/wooden_planks_mangrove.png
+  textureRight: Blocks/Building/wooden_planks_mangrove.png
+  textureTop: Blocks/Building/wooden_planks_mangrove.png
+  useable: true
+  waterBreak: false
+  waterMeshLevel: 0
+  waveEffect: 0
+Leaves (Mangrove Tree):
+  ID: 404
+  allowsLight: true
+  burnTransformID: 0
+  collide: false
+  color: [255, 255, 255]
+  crushable: true
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 0.06
+  flammability: 2
+  floatingAction: 1
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
+  meshType: cube
+  moveMod: 0.7
+  movesPowder: false
+  occlusion: selfOnly
+  physicsProperty: none
+  scatterSunRays: true
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: false
+  textureBack: Blocks/Flora_block/leaves_opaque_mangrove.png
+  textureBottom: Blocks/Flora_block/leaves_opaque_mangrove.png
+  textureFront: Blocks/Flora_block/leaves_opaque_mangrove.png
+  textureLeft: Blocks/Flora_block/leaves_opaque_mangrove.png
+  textureRight: Blocks/Flora_block/leaves_opaque_mangrove.png
+  textureTop: Blocks/Flora_block/leaves_opaque_mangrove.png
+  useable: true
+  waterBreak: false
+  waterMeshLevel: 0
+  waveEffect: 2
 Fire:
   ID: 1000
   allowsLight: true
