@@ -2077,7 +2077,7 @@ Uranium:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 0]
+  lightColor: [0, 6, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
@@ -2707,7 +2707,7 @@ Semisolid Basalt:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [20, 20, 20]
+  lightColor: [20, 10, 8]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
@@ -2777,7 +2777,7 @@ Plutonium:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 0]
+  lightColor: [0, 4, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
@@ -2978,7 +2978,7 @@ Red Lamp (on):
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [255, 255, 255]
+  color: [255, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2987,7 +2987,7 @@ Red Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [24, 24, 24]
+  lightColor: [24, 0, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
@@ -3013,7 +3013,7 @@ Red Lamp:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [30, 30, 30]
+  color: [30, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3048,7 +3048,7 @@ Green Lamp (on):
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [0, 0, 0]
+  color: [0, 255, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3057,7 +3057,7 @@ Green Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 0]
+  lightColor: [0, 24, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
@@ -3083,7 +3083,7 @@ Green Lamp:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [0, 0, 0]
+  color: [0, 30, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3118,7 +3118,7 @@ Blue Lamp (on):
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [0, 0, 0]
+  color: [0, 0, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3127,7 +3127,7 @@ Blue Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 0]
+  lightColor: [0, 0, 24]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
@@ -3153,7 +3153,7 @@ Blue Lamp:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [0, 0, 0]
+  color: [0, 0, 30]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3223,7 +3223,7 @@ Red Bargonite Crystal:
   allowsLight: true
   burnTransformID: 0
   collide: true
-  color: [214, 214, 214]
+  color: [214, 37, 37]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3232,8 +3232,8 @@ Red Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [15, 15, 15]
-  lightColorFilter: [1, 1, 1]
+  lightColor: [15, 0, 0]
+  lightColorFilter: [1, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3258,7 +3258,7 @@ Blue Bargonite Crystal:
   allowsLight: true
   burnTransformID: 0
   collide: true
-  color: [37, 37, 37]
+  color: [37, 37, 214]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3267,8 +3267,8 @@ Blue Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 0]
-  lightColorFilter: [1, 1, 1]
+  lightColor: [0, 0, 15]
+  lightColorFilter: [0, 0, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3293,7 +3293,7 @@ Green Bargonite Crystal:
   allowsLight: true
   burnTransformID: 0
   collide: true
-  color: [37, 37, 37]
+  color: [37, 214, 37]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3302,8 +3302,8 @@ Green Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 0]
-  lightColorFilter: [1, 1, 1]
+  lightColor: [0, 15, 0]
+  lightColorFilter: [0, 1, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -3363,7 +3363,7 @@ Blue Mushroom Block:
   allowsLight: false
   burnTransformID: 235
   collide: true
-  color: [0, 0, 0]
+  color: [0, 10, 162]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3398,7 +3398,7 @@ Purple Mushroom Block:
   allowsLight: false
   burnTransformID: 235
   collide: true
-  color: [150, 150, 150]
+  color: [150, 40, 200]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3433,7 +3433,7 @@ Lamella Block:
   allowsLight: false
   burnTransformID: 237
   collide: true
-  color: [205, 205, 205]
+  color: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3538,7 +3538,7 @@ Dark Purple Mushroom Block:
   allowsLight: false
   burnTransformID: 234
   collide: true
-  color: [80, 80, 80]
+  color: [80, 25, 95]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3573,7 +3573,7 @@ Dark Blue Mushroom Block:
   allowsLight: false
   burnTransformID: 234
   collide: true
-  color: [0, 0, 0]
+  color: [0, 5, 88]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3608,7 +3608,7 @@ Cyan Mushroom Block:
   allowsLight: false
   burnTransformID: 234
   collide: true
-  color: [0, 0, 0]
+  color: [0, 200, 200]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3643,7 +3643,7 @@ Pink Mushroom Block:
   allowsLight: false
   burnTransformID: 235
   collide: true
-  color: [255, 255, 255]
+  color: [255, 90, 200]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3678,7 +3678,7 @@ Green Mushroom Block:
   allowsLight: false
   burnTransformID: 234
   collide: true
-  color: [120, 120, 120]
+  color: [120, 160, 40]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3713,7 +3713,7 @@ Dark Green Mushroom Block:
   allowsLight: false
   burnTransformID: 235
   collide: true
-  color: [70, 70, 70]
+  color: [70, 90, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3748,7 +3748,7 @@ Red Mushroom Block:
   allowsLight: false
   burnTransformID: 235
   collide: true
-  color: [190, 190, 190]
+  color: [190, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3783,7 +3783,7 @@ Dark Red Mushroom Block:
   allowsLight: false
   burnTransformID: 234
   collide: true
-  color: [125, 125, 125]
+  color: [125, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3818,7 +3818,7 @@ Brown Mushroom Block:
   allowsLight: false
   burnTransformID: 234
   collide: true
-  color: [160, 160, 160]
+  color: [160, 100, 30]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -4702,7 +4702,7 @@ Xenon Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [28, 28, 28]
+  lightColor: [27, 27, 31]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
@@ -4763,7 +4763,7 @@ Red Stained Glass:
   allowsLight: true
   burnTransformID: 0
   collide: true
-  color: [255, 255, 255]
+  color: [255, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -4772,7 +4772,7 @@ Red Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [6, 6, 6]
+  lightColor: [6, 0, 0]
   lightColorFilter: [1, 0, 0]
   meshType: cube
   moveMod: 1
@@ -4798,7 +4798,7 @@ Green Stained Glass:
   allowsLight: true
   burnTransformID: 0
   collide: true
-  color: [0, 0, 0]
+  color: [0, 255, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -4807,7 +4807,7 @@ Green Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 0]
+  lightColor: [0, 6, 0]
   lightColorFilter: [0, 1, 0]
   meshType: cube
   moveMod: 1
@@ -4833,7 +4833,7 @@ Blue Stained Glass:
   allowsLight: true
   burnTransformID: 0
   collide: true
-  color: [0, 0, 0]
+  color: [0, 0, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -4842,7 +4842,7 @@ Blue Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 0]
+  lightColor: [0, 0, 6]
   lightColorFilter: [0, 0, 1]
   meshType: cube
   moveMod: 1
@@ -6198,7 +6198,7 @@ Brown Cloth Block:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [128, 128, 128]
+  color: [128, 80, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6233,7 +6233,7 @@ Light Yellow Cloth Block:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [255, 255, 255]
+  color: [255, 255, 180]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6268,7 +6268,7 @@ Yellow Cloth Block:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [255, 255, 255]
+  color: [255, 255, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6303,7 +6303,7 @@ Orange Cloth Block:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [255, 255, 255]
+  color: [255, 180, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6338,7 +6338,7 @@ Red Cloth Block:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [255, 255, 255]
+  color: [255, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6373,7 +6373,7 @@ Dark Red Cloth Block:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [150, 150, 150]
+  color: [150, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6408,7 +6408,7 @@ Pink Cloth Block:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [255, 255, 255]
+  color: [255, 200, 200]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6443,7 +6443,7 @@ Magenta Cloth Block:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [255, 255, 255]
+  color: [255, 0, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6478,7 +6478,7 @@ Lime Cloth Block:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [0, 0, 0]
+  color: [0, 255, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6513,7 +6513,7 @@ Green Cloth Block:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [0, 0, 0]
+  color: [0, 128, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6548,7 +6548,7 @@ Dark Green Cloth Block:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [0, 0, 0]
+  color: [0, 80, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6583,7 +6583,7 @@ Cyan Cloth Block:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [0, 0, 0]
+  color: [0, 200, 200]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6618,7 +6618,7 @@ Light Blue Cloth Block:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [128, 128, 128]
+  color: [128, 200, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6653,7 +6653,7 @@ Blue Cloth Block:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [0, 0, 0]
+  color: [0, 0, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6688,7 +6688,7 @@ Dark Blue Cloth Block:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [0, 0, 0]
+  color: [0, 0, 150]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6723,7 +6723,7 @@ Purple Cloth Block:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [150, 150, 150]
+  color: [150, 0, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6758,7 +6758,7 @@ Dark Purple Cloth Block:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [75, 75, 75]
+  color: [75, 0, 128]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6898,7 +6898,7 @@ Brown Gypsum:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [150, 150, 150]
+  color: [150, 100, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6933,7 +6933,7 @@ Light Yellow Gypsum:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [255, 255, 255]
+  color: [255, 148, 80]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6968,7 +6968,7 @@ Yellow Gypsum:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [255, 255, 255]
+  color: [255, 230, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7003,7 +7003,7 @@ Orange Gypsum:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [245, 245, 245]
+  color: [245, 160, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7038,7 +7038,7 @@ Red Gypsum:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [222, 222, 222]
+  color: [222, 50, 50]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7073,7 +7073,7 @@ Dark Red Gypsum:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [140, 140, 140]
+  color: [140, 40, 40]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7108,7 +7108,7 @@ Pink Gypsum:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [250, 250, 250]
+  color: [250, 200, 200]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7143,7 +7143,7 @@ Magenta Gypsum:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [222, 222, 222]
+  color: [222, 100, 222]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7178,7 +7178,7 @@ Lime Gypsum:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [60, 60, 60]
+  color: [60, 222, 60]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7213,7 +7213,7 @@ Green Gypsum:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [60, 60, 60]
+  color: [60, 128, 60]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7248,7 +7248,7 @@ Dark Green Gypsum:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [40, 40, 40]
+  color: [40, 80, 40]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7283,7 +7283,7 @@ Cyan Gypsum:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [100, 100, 100]
+  color: [100, 200, 200]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7318,7 +7318,7 @@ Light Blue Gypsum:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [160, 160, 160]
+  color: [160, 200, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7353,7 +7353,7 @@ Blue Gypsum:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [40, 40, 40]
+  color: [40, 65, 200]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7388,7 +7388,7 @@ Dark Blue Gypsum:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [50, 50, 50]
+  color: [50, 50, 160]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7423,7 +7423,7 @@ Purple Gypsum:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [150, 150, 150]
+  color: [150, 75, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7458,7 +7458,7 @@ Dark Purple Gypsum:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [85, 85, 85]
+  color: [85, 50, 140]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -8902,7 +8902,7 @@ Alien Crop Plant (Bud):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 0]
+  lightColor: [0, 0, 16]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
@@ -8937,7 +8937,7 @@ Ammonia Plant:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 0]
+  lightColor: [0, 16, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
@@ -10083,7 +10083,7 @@ Leaves (Deciduous Tree):
   allowsLight: true
   burnTransformID: 0
   collide: false
-  color: [93, 93, 93]
+  color: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10118,7 +10118,7 @@ Leaves (Jungle Tree):
   allowsLight: true
   burnTransformID: 0
   collide: false
-  color: [93, 93, 93]
+  color: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10153,7 +10153,7 @@ Leaves (Savanna Tree):
   allowsLight: true
   burnTransformID: 0
   collide: false
-  color: [93, 93, 93]
+  color: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10188,7 +10188,7 @@ Leaves (Palm Tree):
   allowsLight: true
   burnTransformID: 0
   collide: false
-  color: [93, 93, 93]
+  color: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10223,7 +10223,7 @@ Leaves (Swamp Tree):
   allowsLight: true
   burnTransformID: 0
   collide: false
-  color: [93, 93, 93]
+  color: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10258,7 +10258,7 @@ Leaves (Coniferous Tree):
   allowsLight: true
   burnTransformID: 0
   collide: false
-  color: [93, 93, 93]
+  color: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10538,7 +10538,7 @@ Leaves (Rubber Tree):
   allowsLight: true
   burnTransformID: 0
   collide: false
-  color: [93, 93, 93]
+  color: [255, 255, 255]
   crushable: true
   emitter: ""
   explosionPower: 0
@@ -10617,7 +10617,7 @@ Leaves (Sugar Tree):
   explosionResistance: 0.06
   flammability: 2
   floatingAction: 1
-  lightColor: [1, 1, 1]
+  lightColor: [16, 0, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
@@ -11352,7 +11352,7 @@ Alien Crop Plant (Stem):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 0]
+  lightColor: [0, 0, 16]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
@@ -11562,7 +11562,7 @@ Salpeter Plant Light Block:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 0]
+  lightColor: [0, 0, 16]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
@@ -12297,7 +12297,7 @@ Sugar Tree Sapling:
   explosionResistance: 0.05
   flammability: 2
   floatingAction: 2
-  lightColor: [8, 8, 8]
+  lightColor: [8, 0, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
@@ -12393,7 +12393,7 @@ Yellow Bargonite Crystal:
   allowsLight: true
   burnTransformID: 0
   collide: true
-  color: [214, 214, 214]
+  color: [214, 214, 37]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12402,8 +12402,8 @@ Yellow Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [15, 15, 15]
-  lightColorFilter: [1, 1, 1]
+  lightColor: [15, 15, 0]
+  lightColorFilter: [1, 1, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12428,7 +12428,7 @@ Orange Bargonite Crystal:
   allowsLight: true
   burnTransformID: 0
   collide: true
-  color: [214, 214, 214]
+  color: [214, 126, 37]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12437,8 +12437,8 @@ Orange Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [15, 15, 15]
-  lightColorFilter: [1, 1, 1]
+  lightColor: [15, 9, 0]
+  lightColorFilter: [1, 0.6, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12463,7 +12463,7 @@ Magenta Bargonite Crystal:
   allowsLight: true
   burnTransformID: 0
   collide: true
-  color: [214, 214, 214]
+  color: [214, 37, 214]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12472,8 +12472,8 @@ Magenta Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [15, 15, 15]
-  lightColorFilter: [1, 1, 1]
+  lightColor: [15, 0, 15]
+  lightColorFilter: [1, 0, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12498,7 +12498,7 @@ Cyan Bargonite Crystal:
   allowsLight: true
   burnTransformID: 0
   collide: true
-  color: [37, 37, 37]
+  color: [37, 214, 214]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12507,8 +12507,8 @@ Cyan Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 0]
-  lightColorFilter: [1, 1, 1]
+  lightColor: [0, 15, 15]
+  lightColorFilter: [0, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12533,7 +12533,7 @@ Yellow Stained Glass:
   allowsLight: true
   burnTransformID: 0
   collide: true
-  color: [255, 255, 255]
+  color: [255, 255, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12542,7 +12542,7 @@ Yellow Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [6, 6, 6]
+  lightColor: [6, 6, 0]
   lightColorFilter: [1, 1, 0]
   meshType: cube
   moveMod: 1
@@ -12568,7 +12568,7 @@ Orange Stained Glass:
   allowsLight: true
   burnTransformID: 0
   collide: true
-  color: [255, 255, 255]
+  color: [255, 150, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12577,8 +12577,8 @@ Orange Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [6, 6, 6]
-  lightColorFilter: [1, 0.5882353, 0]
+  lightColor: [6, 4, 0]
+  lightColorFilter: [1, 0.6, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12603,7 +12603,7 @@ Magenta Stained Glass:
   allowsLight: true
   burnTransformID: 0
   collide: true
-  color: [255, 255, 255]
+  color: [255, 0, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12612,7 +12612,7 @@ Magenta Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [6, 6, 6]
+  lightColor: [6, 0, 6]
   lightColorFilter: [1, 0, 1]
   meshType: cube
   moveMod: 1
@@ -12638,7 +12638,7 @@ Cyan Stained Glass:
   allowsLight: true
   burnTransformID: 0
   collide: true
-  color: [0, 0, 0]
+  color: [0, 200, 200]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12647,8 +12647,8 @@ Cyan Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 0]
-  lightColorFilter: [0, 0.7843137, 0.7843137]
+  lightColor: [0, 6, 6]
+  lightColorFilter: [0, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
@@ -12673,7 +12673,7 @@ Yellow Lamp (on):
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [255, 255, 255]
+  color: [255, 255, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12682,7 +12682,7 @@ Yellow Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [24, 24, 24]
+  lightColor: [24, 24, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
@@ -12708,7 +12708,7 @@ Yellow Lamp:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [30, 30, 30]
+  color: [30, 30, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12743,7 +12743,7 @@ Orange Lamp (on):
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [255, 255, 255]
+  color: [255, 150, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12752,7 +12752,7 @@ Orange Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [24, 24, 24]
+  lightColor: [24, 14, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
@@ -12778,7 +12778,7 @@ Orange Lamp:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [30, 30, 30]
+  color: [30, 18, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12813,7 +12813,7 @@ Magenta Lamp (on):
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [255, 255, 255]
+  color: [255, 0, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12822,7 +12822,7 @@ Magenta Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [24, 24, 24]
+  lightColor: [24, 0, 24]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
@@ -12848,7 +12848,7 @@ Magenta Lamp:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [30, 30, 30]
+  color: [30, 0, 30]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12883,7 +12883,7 @@ Cyan Lamp (on):
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [0, 0, 0]
+  color: [0, 200, 200]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12892,7 +12892,7 @@ Cyan Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 0]
+  lightColor: [0, 24, 24]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
@@ -12918,7 +12918,7 @@ Cyan Lamp:
   allowsLight: false
   burnTransformID: 0
   collide: true
-  color: [0, 0, 0]
+  color: [0, 24, 24]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -13767,7 +13767,7 @@ Fire:
   explosionResistance: 0
   flammability: 0
   floatingAction: 2
-  lightColor: [24, 24, 24]
+  lightColor: [24, 18, 11]
   lightColorFilter: [1, 1, 1]
   meshType: none
   moveMod: 1
@@ -13802,7 +13802,7 @@ Fire (Sulfur):
   explosionResistance: 0
   flammability: 0
   floatingAction: 2
-  lightColor: [0, 0, 0]
+  lightColor: [0, 0, 24]
   lightColorFilter: [1, 1, 1]
   meshType: none
   moveMod: 1
@@ -13872,7 +13872,7 @@ Fire (Lithium):
   explosionResistance: 0
   flammability: 0
   floatingAction: 2
-  lightColor: [31, 31, 31]
+  lightColor: [31, 0, 5]
   lightColorFilter: [1, 1, 1]
   meshType: none
   moveMod: 1
@@ -13907,7 +13907,7 @@ Fire (Gas):
   explosionResistance: 0
   flammability: 0
   floatingAction: 2
-  lightColor: [11, 11, 11]
+  lightColor: [11, 11, 20]
   lightColorFilter: [1, 1, 1]
   meshType: none
   moveMod: 1
@@ -13928,7 +13928,7 @@ Fire (Gas):
   waterBreak: true
   waterMeshLevel: 0
   waveEffect: 0
-Water (1):
+Water:
   ID: 3946
   allowsLight: true
   burnTransformID: 0
