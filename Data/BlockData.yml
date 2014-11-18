@@ -14173,6 +14173,41 @@ Leaves (Mangrove Tree):
   waterBreak: false
   waterMeshLevel: 0
   waveEffect: 2
+Mangrove Sapling:
+  ID: 405
+  allowsLight: true
+  burnTransformID: 0
+  collide: false
+  color: [255, 255, 255]
+  crushable: true
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 0.05
+  flammability: 2
+  floatingAction: 2
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
+  meshType: cross
+  moveMod: 1
+  movesPowder: false
+  occlusion: none
+  physicsProperty: none
+  scatterSunRays: false
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: false
+  textureBack: Blocks/Flora_mesh/sapling_mangrove.png
+  textureBottom: Blocks/Flora_mesh/sapling_mangrove.png
+  textureFront: Blocks/Flora_mesh/sapling_mangrove.png
+  textureLeft: Blocks/Flora_mesh/sapling_mangrove.png
+  textureRight: Blocks/Flora_mesh/sapling_mangrove.png
+  textureTop: Blocks/Flora_mesh/sapling_mangrove.png
+  useable: true
+  waterBreak: true
+  waterMeshLevel: 0
+  waveEffect: 0
 Fire:
   ID: 1000
   allowsLight: true
