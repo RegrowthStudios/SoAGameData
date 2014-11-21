@@ -14208,6 +14208,41 @@ Mangrove Sapling:
   waterBreak: true
   waterMeshLevel: 0
   waveEffect: 0
+Garas Vine:
+  ID: 406
+  allowsLight: true
+  burnTransformID: 0
+  collide: false
+  color: [255, 255, 255]
+  crushable: true
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 0.05
+  flammability: 3
+  floatingAction: 2
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
+  meshType: flat
+  moveMod: 1
+  movesPowder: false
+  occlusion: none
+  physicsProperty: none
+  scatterSunRays: false
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: false
+  textureBack: Blocks/Flora_mesh/vine_garas.png
+  textureBottom: Blocks/Flora_mesh/vine_garas.png
+  textureFront: Blocks/Flora_mesh/vine_garas.png
+  textureLeft: Blocks/Flora_mesh/vine_garas.png
+  textureRight: Blocks/Flora_mesh/vine_garas.png
+  textureTop: Blocks/Flora_mesh/vine_garas.png
+  useable: true
+  waterBreak: true
+  waterMeshLevel: 0
+  waveEffect: 1
 Fire:
   ID: 1000
   allowsLight: true
