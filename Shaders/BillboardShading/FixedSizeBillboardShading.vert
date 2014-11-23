@@ -1,24 +1,24 @@
 #version 130
-// Input vertex data, different for all executions of this shader.
-in vec3 position;
-in vec2 uv;
 
-// Values that stay constant for the whole mesh.
-out vec2 UV;
+// Uniforms
+uniform mat4 unWVP;
+uniform vec2 unSpriteDisplacement;
+uniform vec2 unSpriteScale;
+uniform vec2 unUVStart;
+uniform vec2 unUVSize;
 
-uniform mat4 MVP;
-uniform vec2 UVstart;
-uniform vec2 UVmod;
-uniform vec2 UVwidth;
-uniform float width;
-uniform float height;
+// Input
+in vec4 vPosition;
+in vec2 vUV;
+
+// Output
+out vec2 fUV;
 
 void main(){
-    gl_Position = MVP * vec4(position, 1.0f);
-	gl_Position /= gl_Position.w;
-    
-    gl_Position.xy += (uv + UVmod) * vec2(width, height);
-    
-	UV = UVstart + (uv * UVwidth);
+  fUV = unUVStart + (vUV * unUVSize);
+  
+  gl_Position = unWVP * vPosition;
+  gl_Position /= gl_Position.w;
+  gl_Position.xy += (vUV + unSpriteDisplacement) * unSpriteScale;
 }
 

@@ -1,74 +1,50 @@
 #version 130
 
-// Interpolated values from the vertex shaders
-in vec2 UV;
-in vec2 light;
-in vec3 distVec;
-flat in float textureUnitID;
-in vec2 maskUV;
-in vec4 Color;
+// Uniforms
+uniform sampler2D unTextures[8];
+uniform vec3 unAmbientLight;
+uniform float unSunIntensity;
+uniform float unLightType;
+uniform vec3 unCameraForward; // Camera forward vector in world space
+uniform float unAlphaThreshold;
 
-// Ouput data
-out vec4 color;
+// Input
+in vec2 fUV;
+in vec2 fLight;
+in vec3 fDistVec;
+in vec4 fColor;
+flat in int fTextureUnitID;
+in vec2 fMaskUV;
 
-// Values that stay constant for the whole mesh.
+// Output
+out vec4 pColor;
 
-uniform sampler2D textures[8];
-uniform vec3 LightPosition_worldspace;
-uniform vec3 AmbientLight;
-uniform vec3 LightColor;
-uniform vec3 FogColor;
-uniform float sunVal;
-uniform float lightType;
-uniform vec3 eyeNormalWorldspace;
-uniform float alphaThreshold;
+void main() {
+  // Diffuse color
+  vec4 diffuseColor  = texture(unTextures[fTextureUnitID], fUV);
+  diffuseColor *= texture(unTextures[6], fMaskUV);
 
-void main(){
+  // So the texture alpha (not the true alpha) is used for threshold calculations?
+  if (diffuseColor.a < unAlphaThreshold) discard;
 
-	// Material properties
-	vec3 colr;
-	vec4 MaterialDiffuseColor;
-	float lght = light[1] * sunVal + light[0];
-	
-	if (textureUnitID == 0.0){
-		MaterialDiffuseColor = texture( textures[0], UV ).rgba;
-	}else if (textureUnitID == 1.0){
-		MaterialDiffuseColor = texture( textures[1], UV ).rgba;
-	}else if (textureUnitID == 2.0){
-		MaterialDiffuseColor = texture( textures[2], UV ).rgba;
-	}else if (textureUnitID == 3.0){
-		MaterialDiffuseColor = texture( textures[3], UV ).rgba;
-	}else if (textureUnitID == 4.0){
-		MaterialDiffuseColor = texture( textures[4], UV ).rgba;
-	}else if (textureUnitID == 5.0){
-		MaterialDiffuseColor = texture( textures[5], UV ).rgba;
-	}else if (textureUnitID == 6.0){
-		MaterialDiffuseColor = texture( textures[6], UV ).rgba;
-	}else if (textureUnitID == 7.0){
-		MaterialDiffuseColor = texture( textures[7], UV ).rgba;
-	}else{
-		MaterialDiffuseColor = vec4(0.0, 1.0, 0.0, 1.0);
-	}
+  // We still modifying alpha here...
+  diffuseColor *= fColor;
 
-	MaterialDiffuseColor *= texture( textures[6], maskUV ).rgba;
-	if (MaterialDiffuseColor.a < alphaThreshold) discard;
-	
-	if (lightType == 1.0){
-		float dist = length(distVec);
-		float cosTheta = clamp( dot( eyeNormalWorldspace, normalize(distVec) ), 0,1 );
-		cosTheta = 1.0 - (1.0-cosTheta)*(1.0/(1.0-0.9)) - dist*0.007;
-		if (cosTheta < 0) cosTheta = 0;
-		cosTheta *= 0.5;
-		lght += cosTheta;
-	}else if (lightType == 2.0){
-		float dist = length(distVec);
-		float lightv = 0.5 - dist*0.03;
-		if (lightv < 0) lightv = 0;
-		lght += lightv;
-	}
-	if (lght > 1.2) lght = 1.2;
+  float lght = fLight.y * unSunIntensity + fLight.x;
+  float dist = length(fDistVec);
+  if (unLightType == 1.0) {
+    float cosTheta = clamp(dot(unCameraForward, normalize(fDistVec)), 0, 1);
+    cosTheta = 1.0 - (1.0 - cosTheta) * 10.0 - dist * 0.007;
+    if (cosTheta < 0) cosTheta = 0;
+    cosTheta *= 0.5;
+    lght += cosTheta;
+  } else if (unLightType == 2.0) {
+    float lightv = 0.5 - dist * 0.03;
+    if (lightv < 0) lightv = 0;
+    lght += lightv;
+  }
+  if (lght > 1.2) lght = 1.2;
 
-	vec3 MaterialAmbiantColor = AmbientLight * MaterialDiffuseColor.rgb * Color.rgb * lght;
-	
-	color = vec4(MaterialAmbiantColor, Color.a*MaterialDiffuseColor.a);
+  // Ambient light is fishy
+  pColor = vec4(diffuseColor.rgb * (unAmbientLight * lght), diffuseColor.a);
 }
