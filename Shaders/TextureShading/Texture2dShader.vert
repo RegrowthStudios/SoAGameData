@@ -5,7 +5,7 @@ uniform vec2 unScreenSize;
 uniform vec2 unScreenDisplacement;
 
 // Input
-in vec2 vPosition; // Position in screenspace
+in vec2 vPosition; // Position in screen space
 in vec2 vUV;
 in vec4 vTint;
 
@@ -13,7 +13,7 @@ in vec4 vTint;
 out vec2 fUV;
 out vec4 fTint;
 
-void main(){
+void main() {
   // Pass Data
   fTint = vTint;
   fUV = vUV;
