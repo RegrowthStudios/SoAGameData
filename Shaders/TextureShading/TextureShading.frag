@@ -1,17 +1,15 @@
 #version 130
 
-// Interpolated values from the vertex shaders
-in vec2 UV;
+// Uniforms
+uniform sampler2D unTex;
 
-// Ouput data
-out vec4 color;
+// Input
+in vec2 fUV;
 
-// Values that stay constant for the whole mesh.
-uniform sampler2D myTextureSampler;
+// Output
+out vec4 pColor;
 
-
-void main(){
-
-	color = texture( myTextureSampler, UV ).rgba;
-	color.rgb = color.rgb*2.5;
+void main() {
+  pColor = texture(unTex, fUV);
+  pColor.rgb *= 2.5; // Why...
 }
