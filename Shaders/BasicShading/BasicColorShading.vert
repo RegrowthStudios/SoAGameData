@@ -1,10 +1,11 @@
 #version 130
 
-// Input vertex data, different for all executions of this shader.
-in vec3 vertexPosition_modelspace;
+// Uniforms
+uniform mat4 unWVP;
 
-uniform mat4 MVP;
+// Input
+in vec4 vPosition; // Position in object space
 
-void main(){
-	gl_Position =  MVP * vec4( vertexPosition_modelspace ,1);
+void main() {
+  gl_Position =  unWVP * vPosition;
 }
