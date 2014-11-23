@@ -1,24 +1,22 @@
 #version 130
 
-// Interpolated values from the vertex shaders
-in vec2 UV;
-in vec4 fragmentColor;
+// Uniforms
+uniform sampler2D unTexMain;
+uniform sampler2D unTexMask;
+uniform float unMaskModifier;
+uniform vec2 unUVMaskStart;
 
-// Ouput data
-out vec4 color;
+// Input
+in vec2 fUV;
+in vec4 fTint;
 
-// Values that stay constant for the whole mesh.
-uniform sampler2D myTextureSampler;
-uniform sampler2D roundMaskTexture;
-uniform float isRound;
-uniform vec2 startUV;
+// Output
+out vec4 pColor;
 
-void main(){
-	vec4 colr;
-	if (isRound == 1.0){
-		colr = texture( myTextureSampler, UV ).rgba * texture( roundMaskTexture, (UV-startUV)*16.0).rgba * fragmentColor;
-	}else{
-		colr = texture( myTextureSampler, UV ).rgba * fragmentColor;
-	}
-	color = colr;
+void main() {
+  vec4 mask = vec4(1, 1, 1, 1);
+  // TODO: Investigate the necessity of this
+  //if(unMaskModifier != 0) mask = pow(texture(unTexMask, (fUV - unUVMaskStart) * 16.0), vec4(unMaskModifier)); // Ben's special goomba sauce
+  vec4 c = texture(unTexMain, fUV) * fTint; 
+  pColor = c * mask;
 }
