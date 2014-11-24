@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SOA-Paused</title>
+	</head>
+	<body>
+		<div style="">
+			Paused
+			<div>
+				<div>
+					<div onclick="sel(0);">
+						* Options
+					</div>
+					<div id="menu.0">
+						Things
+					</div>
+				</div>
+				<div>
+					<div onclick="sel(1);">
+						* Options
+					</div>
+					<div id="menu.1">
+						Things
+					</div>
+				</div>
+				<div>
+					<div onclick="sel(2);">
+						* Options
+					</div>
+					<div id="menu.2">
+						Things
+					</div>
+				</div>
+				<div>
+					<div onclick="sel(3);">
+						* Options
+					</div>
+					<div id="menu.3">
+						Things
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script>
+	function confirm(option_id){
+		//option ID will look something like 
+		//game.controls
+		//etc.
+	}
+	var lastsel = -1;
+ 	function sel(id){
+		if(lastsel != id){
+			collapse(lastsel);
+			expand(id);
+			lastsel = id;
+			console.log("E-O");
+		}
+	console.log("E-");
+	}
+	
+	expanded = {};
+	function expand(id){
+		expanded[id] = true;
+		document.getElementById("menu."+id).style.visibility = "visible";
+	}
+
+	function collapse(id){
+		if(expanded[id] == true){
+			expanded[id] = false;
+			document.getElementById("menu."+id).style.visibility = "hidden";
+		}
+	}
+</script>
