@@ -1,5 +1,3 @@
-#version 130
-
 // Uniforms
 uniform mat4 MVP;
 uniform vec3 worldOffset;

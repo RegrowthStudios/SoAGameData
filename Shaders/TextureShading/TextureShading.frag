@@ -1,5 +1,3 @@
-#version 130
-
 // Uniforms
 uniform sampler2D unTex;
 

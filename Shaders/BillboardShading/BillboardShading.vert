@@ -1,5 +1,3 @@
-#version 130
-
 // Uniforms
 uniform mat4 unWVP;
 uniform mat4 unWorld;

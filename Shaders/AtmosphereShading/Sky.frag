@@ -1,5 +1,3 @@
-#version 130
-
 //
 // Atmospheric scattering fragment shader
 //

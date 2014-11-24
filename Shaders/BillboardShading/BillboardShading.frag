@@ -1,5 +1,3 @@
-#version 130
-
 // Uniforms
 uniform sampler2D unTextures[8];
 uniform vec3 unAmbientLight;

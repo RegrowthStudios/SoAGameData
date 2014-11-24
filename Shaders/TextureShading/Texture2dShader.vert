@@ -1,5 +1,3 @@
-#version 130
-
 // Uniforms
 uniform vec2 unScreenSize;
 uniform vec2 unScreenDisplacement;
