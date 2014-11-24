@@ -8,20 +8,28 @@
 // Copyright (c) 2004 Sean O'Neil
 //
 
-uniform vec3 v3LightPos;
-uniform float g;
-uniform float g2;
+// Uniforms
+uniform vec3 unLightPos;
+uniform float unG;
+uniform float unG2;
 
-out vec4 color;
+// Input
+in vec3 fRayDirection;
+in vec3 fPrimaryColor;
+in vec3 fSecondaryColor;
 
-in vec3 v3Direction;
-in vec4 Color;
-in vec4 SecondaryColor;
+// Output
+out vec4 pColor;
 
 void main() {
-  float fCos = dot(v3LightPos, v3Direction) / length(v3Direction);
-  float fMiePhase = 1.5 * ((1.0 - g2) / (2.0 + g2)) * (1.0 + fCos * fCos) / pow(1.0 + g2 - 2.0*g*fCos, 1.5);
-  color = Color + fMiePhase * SecondaryColor;
-  color.a = max(max(color.r, color.b), color.g) * 8;
-  color.a = min(color.a, 1.0);
+  // Find Mie phase
+  float theta = dot(unLightPos, fRayDirection) / length(fRayDirection);
+  float miePhase = 1.5 * ((1.0 - unG2) / (2.0 + unG2)) * (1.0 + theta * theta) / pow(1.0 + unG2 - 2.0 * unG * theta, 1.5);
+  
+  // Calculate effect intensity
+  float maxIntensity = max(max(fPrimaryColor.r, fPrimaryColor.b), fPrimaryColor.g) * 8;
+  maxIntensity = min(maxIntensity, 1.0);
+
+  // Accumulate both lighting values
+  pColor = vec4(fPrimaryColor + miePhase * fSecondaryColor, maxIntensity);
 }
