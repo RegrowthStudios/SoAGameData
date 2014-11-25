@@ -37,7 +37,7 @@ void main() {
   // Accumulate blur samples
   float accum = 1;
   vec2 uv = fUV;
-  for(int i = 1; i < unNumSamples; i++) {
+  for(int i = 0; i < unNumSamples; i++) {
     float ratio = exp(-(i / unNumSamples) * unBlurIntensity);
     accum += ratio;
     uv -= sampleDisplacement;
