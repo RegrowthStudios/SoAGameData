@@ -1,5 +1,3 @@
-#version 130
-
 in vec4 position_TextureType;
 in vec4 uvs_animation_blendMode;
 in vec4 textureAtlas_textureIndex;

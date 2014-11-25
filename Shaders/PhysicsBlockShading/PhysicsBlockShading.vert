@@ -1,5 +1,3 @@
-#version 130
-
 // Input vertex data, different for all executions of this shader.
 in vec4 vertexPosition_blendMode;
 in vec2 vertexUV;
