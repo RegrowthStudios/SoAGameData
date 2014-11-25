@@ -2,12 +2,12 @@
 uniform sampler2D unTex;
 uniform float unExposure;
 uniform float unGamma;
-uniform float unBlurIntensity;
 #ifdef MOTION_BLUR
 uniform sampler2D unTexDepth;
 uniform int unNumSamples;
 uniform mat4 unVPInv;
 uniform mat4 unVPPrev;
+uniform float unBlurIntensity;
 #endif
 
 // Input
@@ -22,7 +22,7 @@ void main() {
 #ifdef MOTION_BLUR
   // Reconstruct position in world space
   float depth = texture(unTexDepth, fUV).x;  
-  vec4 screenPos = vec4(fUV.x * 2 - 1, (1.0 - fUV.y) * 2 - 1, depth, 1);
+  vec4 screenPos = vec4(fUV * 2 - 1, depth, 1);
   vec4 worldPos = unVPInv * screenPos;
   worldPos /= worldPos.w;
 
@@ -31,16 +31,19 @@ void main() {
   previousPos /= previousPos.w;
   
   // Compute pixel velocity
-  vec2 velocity = (screenPos.xy - previousPos.xy);
-  vec2 sampleDisplacement = velocity * (unBlurIntensity / unNumSamples);
-
+  vec2 velocity = (screenPos.xy - previousPos.xy) * 0.5;
+  vec2 sampleDisplacement = velocity / unNumSamples;
+  
   // Accumulate blur samples
+  float accum = 1;
   vec2 uv = fUV;
   for(int i = 1; i < unNumSamples; i++) {
+    float ratio = exp(-(i / unNumSamples) / unBlurIntensity);
+    accum += ratio;
     uv -= sampleDisplacement;
-    color += texture(unTex, uv).rgb;
+    color += texture(unTex, uv).rgb * ratio;
   }
-  color /= unNumSamples;
+  color /= accum;
 #endif
 
   color = 1.0 - exp(color * -unExposure); // Add exposure
