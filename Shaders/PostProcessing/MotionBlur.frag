@@ -31,14 +31,14 @@ void main() {
   previousPos /= previousPos.w;
   
   // Compute pixel velocity
-  vec2 velocity = (screenPos.xy - previousPos.xy) * 0.5;
+  vec2 velocity = (screenPos.xy - previousPos.xy) * 0.5 * unBlurIntensity;
   vec2 sampleDisplacement = velocity / unNumSamples;
   
   // Accumulate blur samples
   float accum = 1;
   vec2 uv = fUV;
   for(int i = 1; i < unNumSamples; i++) {
-    float ratio = exp(-(i / unNumSamples) / unBlurIntensity);
+    float ratio = exp(-(i / unNumSamples) * unBlurIntensity);
     accum += ratio;
     uv -= sampleDisplacement;
     color += texture(unTex, uv).rgb * ratio;
