@@ -1,56 +1,49 @@
-#version 130
+// Uniforms
+uniform sampler2D unTex;
+uniform float unExposure;
+uniform float unGamma;
+uniform float unBlurIntensity;
+#ifdef MOTION_BLUR
+uniform sampler2D unTexDepth;
+uniform int unNumSamples;
+uniform mat4 unVPInv;
+uniform mat4 unVPPrev;
+#endif
 
-in vec2 UV;
+// Input
+in vec2 fUV;
 
-out vec4 color;
+// Output
+out vec4 pColor;
 
-uniform sampler2D renderedTexture;
-uniform sampler2D depthTexture;
-uniform float fExposure;
-uniform float gamma;
+void main() {
+  vec3 color = texture(unTex, fUV).rgb;
 
-uniform int numSamples;
-uniform mat4 inverseVP;
-uniform mat4 prevVP;
+#ifdef MOTION_BLUR
+  // Reconstruct position in world space
+  float depth = texture(unTexDepth, fUV).x;  
+  vec4 screenPos = vec4(fUV.x * 2 - 1, (1.0 - fUV.y) * 2 - 1, depth, 1);
+  vec4 worldPos = unVPInv * screenPos;
+  worldPos /= worldPos.w;
 
-void main(){
-    vec3 Color = texture(renderedTexture, UV).xyz;
-       
-    // Get the depth buffer value at this pixel.  
-    float zOverW = texture(depthTexture, UV).r;  
-    // H is the viewport position at this pixel in the range -1 to 1.  
-    vec4 H = vec4(UV.x * 2 - 1, (1.0 - UV.y) * 2 - 1, zOverW, 1);  
-    // Transform by the view-projection inverse.  
-    vec4 D = inverseVP * H;  
-    // Divide by w to get the world position.  
-    vec4 worldPos = D / D.w;  
-    
-   // Current viewport position  
-   vec4 currentPos = H;  
-   // Use the world position, and transform by the previous view-  
-   // projection matrix.  
-   vec4 previousPos = prevVP * worldPos;  
-   // Convert to nonhomogeneous points [-1,1] by dividing by w.  
-   previousPos /= previousPos.w;  
-   // Use this frame's position and last frame's to compute the pixel  
-   // velocity.  
-   vec2 velocity = (currentPos.xy - previousPos.xy);  
-    
-    // Get the initial color at this pixel.  
+  // Construct pixel position of last frame
+  vec4 previousPos = unVPPrev * worldPos;
+  previousPos /= previousPos.w;
   
-    for(int i = 1; i < numSamples; ++i)  
-    {  
-      vec2 offset = velocity * (float(i+1) * 0.02);
-      // Sample the color buffer along the velocity vector.  
-      Color += texture(renderedTexture, UV - offset).xyz;  
-    }  
+  // Compute pixel velocity
+  vec2 velocity = (screenPos.xy - previousPos.xy);
+  vec2 sampleDisplacement = velocity * (unBlurIntensity / unNumSamples);
 
-    
-    // Average all of the samples to get the final blur color.  
-    Color = Color / (numSamples);
+  // Accumulate blur samples
+  vec2 uv = fUV;
+  for(int i = 1; i < unNumSamples; i++) {
+    uv -= sampleDisplacement;
+    color += texture(unTex, uv).rgb;
+  }
+  color /= unNumSamples;
+#endif
 
-    //gamma
-    float luminance = (0.2126*Color.r) + (0.7152*Color.g) + (0.0722*Color.b);
-	Color = 1.0 - exp(Color * -fExposure);
-    color = vec4(pow(Color, vec3(gamma)), 1.0);// + vec4(abs(velocity.x*1.0), abs(velocity.y*10.0), color.g*0.00001, 1.0); //some gamma correction
+  color = 1.0 - exp(color * -unExposure); // Add exposure
+  color = pow(color, vec3(unGamma)); // Gamma correction
+  pColor = vec4(color, 1.0);
 }
