@@ -126,7 +126,7 @@ void main() {
   accumulationColor *= scaledLength;
 
   // Account for NaN errors
-  accumulationColor = clamp(accumulationColor, vec3(0.0), vec3(1.0));
+  accumulationColor = clamp(accumulationColor, vec3(0.0), vec3(0.0));
 
   // Scale the Mie and Rayleigh colors
   SecondaryColor = accumulationColor * unKmESun;
