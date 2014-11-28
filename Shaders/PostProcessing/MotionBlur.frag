@@ -97,7 +97,7 @@ void main() {
 
     float sizeCoC = centerDepthBlur.y * maxCoC;
 
-	// accumulates blur samples
+    // accumulates blur samples
     for(int i = 0; i < 12; i++) {
         tapCoord = fUV + filterTaps[i] * sizeCoC;
         tapColor = texture(unTex, tapCoord).rgb;
