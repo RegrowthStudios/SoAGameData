@@ -3748,7 +3748,7 @@ Red Mushroom Block:
   allowsLight: false
   burnTransformID: 235
   collide: true
-  color: [190, 0, 0]
+  color: [200, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
