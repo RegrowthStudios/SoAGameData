@@ -42,7 +42,7 @@ float scale(float theta) {
 void main() {
   gl_Position =  unWVP * vPosition;
 
-  // Calculate the farhest intersection of the ray with the outer atmosphere
+  // Calculate the farthest intersection of the ray with the outer atmosphere
   vec3 worldPos = vPosition.xyz * unOuterRadius;
   vec3 ray = worldPos - unCameraPos;
   fRayDirection = -ray;
@@ -66,7 +66,6 @@ void main() {
   float startOffset = startDepth * scale(startAngle);
 
   // Initialize the scattering loop variables
-  //gl_FrontColor = vec4(0.0, 0.0, 0.0, 0.0);
   float sampleLength = (intersectFar - intersectNear) / unNumSamplesF;
   float scaledLength = sampleLength * unScale;
   vec3 sampleRay = ray * sampleLength;
