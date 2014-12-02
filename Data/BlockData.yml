@@ -14418,6 +14418,41 @@ Tarmac:
   waterBreak: false
   waterMeshLevel: 0
   waveEffect: 0
+Red Jungle Flower:
+  ID: 412
+  allowsLight: true
+  burnTransformID: 0
+  collide: false
+  color: [255, 255, 255]
+  crushable: true
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 0.05
+  flammability: 3
+  floatingAction: 2
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
+  meshType: cross
+  moveMod: 1
+  movesPowder: false
+  occlusion: none
+  physicsProperty: none
+  scatterSunRays: false
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: false
+  textureBack: Blocks/Flora_mesh/flower_red_jungle.png
+  textureBottom: Blocks/Flora_mesh/flower_red_jungle.png
+  textureFront: Blocks/Flora_mesh/flower_red_jungle.png
+  textureLeft: Blocks/Flora_mesh/flower_red_jungle.png
+  textureRight: Blocks/Flora_mesh/flower_red_jungle.png
+  textureTop: Blocks/Flora_mesh/flower_red_jungle.png
+  useable: true
+  waterBreak: true
+  waterMeshLevel: 0
+  waveEffect: 1
 Fire:
   ID: 1000
   allowsLight: true
