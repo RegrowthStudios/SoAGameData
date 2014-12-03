@@ -4573,12 +4573,12 @@ Alien Plantoid Mine:
   sinkVal: 0
   spawnerVal: 0
   supportive: true
-  textureBack: Blocks/Explosives/mine_plantoid.png
-  textureBottom: Blocks/Explosives/mine_plantoid.png
-  textureFront: Blocks/Explosives/mine_plantoid.png
-  textureLeft: Blocks/Explosives/mine_plantoid.png
-  textureRight: Blocks/Explosives/mine_plantoid.png
-  textureTop: Blocks/Explosives/mine_plantoid.png
+  textureBack: Blocks/Explosives/mine_plantoid_side.png
+  textureBottom: Blocks/Explosives/mine_plantoid_bottom.png
+  textureFront: Blocks/Explosives/mine_plantoid_side.png
+  textureLeft: Blocks/Explosives/mine_plantoid_side.png
+  textureRight: Blocks/Explosives/mine_plantoid_side.png
+  textureTop: Blocks/Explosives/mine_plantoid_top.png
   useable: true
   waterBreak: false
   waterMeshLevel: 0
