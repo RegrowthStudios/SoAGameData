@@ -2,6 +2,7 @@ None:
   ID: 0
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: false
@@ -18,7 +19,6 @@ None:
   moveMod: 1
   movesPowder: true
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -37,6 +37,7 @@ Dirt:
   ID: 1
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -53,7 +54,6 @@ Dirt:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -72,6 +72,7 @@ Grass Block:
   ID: 2
   allowsLight: false
   burnTransformID: 325
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -88,7 +89,6 @@ Grass Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -107,6 +107,7 @@ Stone:
   ID: 3
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -123,7 +124,6 @@ Stone:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -142,6 +142,7 @@ Wood (Deciduous Tree):
   ID: 4
   allowsLight: false
   burnTransformID: 214
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -158,7 +159,6 @@ Wood (Deciduous Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -177,6 +177,7 @@ Sand:
   ID: 5
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -193,7 +194,6 @@ Sand:
   moveMod: 0.9
   movesPowder: false
   occlusion: all
-  physicsProperty: powder
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -212,6 +212,7 @@ Mycelium Block:
   ID: 6
   allowsLight: false
   burnTransformID: 1
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -228,7 +229,6 @@ Mycelium Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -247,6 +247,7 @@ Bone Block:
   ID: 7
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -263,7 +264,6 @@ Bone Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -282,6 +282,7 @@ Lithium Carbonate:
   ID: 8
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [235, 235, 235]
   crushable: false
@@ -298,7 +299,6 @@ Lithium Carbonate:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -317,6 +317,7 @@ Sodium Carbonate (Soda):
   ID: 9
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -333,7 +334,6 @@ Sodium Carbonate (Soda):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -352,6 +352,7 @@ Dry Ice:
   ID: 10
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -368,7 +369,6 @@ Dry Ice:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -387,6 +387,7 @@ Methane Hydrate:
   ID: 11
   allowsLight: false
   burnTransformID: 4024
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -403,7 +404,6 @@ Methane Hydrate:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -422,6 +422,7 @@ Snow:
   ID: 12
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -438,7 +439,6 @@ Snow:
   moveMod: 0.7
   movesPowder: false
   occlusion: all
-  physicsProperty: snow
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -457,6 +457,7 @@ Ice:
   ID: 13
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -473,7 +474,6 @@ Ice:
   moveMod: 7
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -492,6 +492,7 @@ Mud Spawner:
   ID: 14
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -508,7 +509,6 @@ Mud Spawner:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 18
@@ -527,6 +527,7 @@ Mud Sink:
   ID: 15
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -543,7 +544,6 @@ Mud Sink:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 18
   spawnerVal: 0
@@ -562,6 +562,7 @@ Lamp (on):
   ID: 16
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -578,7 +579,6 @@ Lamp (on):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -597,6 +597,7 @@ Lamp:
   ID: 17
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -613,7 +614,6 @@ Lamp:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -632,6 +632,7 @@ Mud:
   ID: 18
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -648,7 +649,6 @@ Mud:
   moveMod: 0.4
   movesPowder: false
   occlusion: all
-  physicsProperty: snow
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -667,6 +667,7 @@ Clay:
   ID: 19
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -683,7 +684,6 @@ Clay:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -702,6 +702,7 @@ Silicon:
   ID: 20
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -718,7 +719,6 @@ Silicon:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -737,6 +737,7 @@ Red Sand:
   ID: 21
   allowsLight: false
   burnTransformID: 0
+  caPhysics: Data/CA/Sand.yml
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -753,7 +754,6 @@ Red Sand:
   moveMod: 0.9
   movesPowder: false
   occlusion: all
-  physicsProperty: powder
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -772,6 +772,7 @@ Red Sand Spawner:
   ID: 22
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -788,7 +789,6 @@ Red Sand Spawner:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 21
@@ -807,6 +807,7 @@ Red Sand Sink:
   ID: 23
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -823,7 +824,6 @@ Red Sand Sink:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 21
   spawnerVal: 0
@@ -842,6 +842,7 @@ Gravel Spawner:
   ID: 24
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -858,7 +859,6 @@ Gravel Spawner:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 67
@@ -877,6 +877,7 @@ Sand Spawner:
   ID: 25
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -893,7 +894,6 @@ Sand Spawner:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 5
@@ -912,6 +912,7 @@ Snow Spawner:
   ID: 26
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -928,7 +929,6 @@ Snow Spawner:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 12
@@ -947,6 +947,7 @@ Water Spawner:
   ID: 27
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -963,7 +964,6 @@ Water Spawner:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 4045
@@ -982,6 +982,7 @@ Sand Sink:
   ID: 28
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -998,7 +999,6 @@ Sand Sink:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 5
   spawnerVal: 0
@@ -1017,6 +1017,7 @@ Snow Sink:
   ID: 29
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1033,7 +1034,6 @@ Snow Sink:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 12
   spawnerVal: 0
@@ -1052,6 +1052,7 @@ Water Sink:
   ID: 30
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1068,7 +1069,6 @@ Water Sink:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 4045
   spawnerVal: 0
@@ -1087,6 +1087,7 @@ Gravel Sink:
   ID: 31
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1103,7 +1104,6 @@ Gravel Sink:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 67
   spawnerVal: 0
@@ -1122,6 +1122,7 @@ Coal:
   ID: 32
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1138,7 +1139,6 @@ Coal:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1157,6 +1157,7 @@ Iron:
   ID: 33
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1173,7 +1174,6 @@ Iron:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1192,6 +1192,7 @@ Gold:
   ID: 34
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1208,7 +1209,6 @@ Gold:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1227,6 +1227,7 @@ Silver:
   ID: 35
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1243,7 +1244,6 @@ Silver:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1262,6 +1262,7 @@ Copper:
   ID: 36
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1278,7 +1279,6 @@ Copper:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1297,6 +1297,7 @@ Tin:
   ID: 37
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1313,7 +1314,6 @@ Tin:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1332,6 +1332,7 @@ Lead:
   ID: 38
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1348,7 +1349,6 @@ Lead:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1367,6 +1367,7 @@ Platinum:
   ID: 39
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1383,7 +1384,6 @@ Platinum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1402,6 +1402,7 @@ Quartz:
   ID: 40
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1418,7 +1419,6 @@ Quartz:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1437,6 +1437,7 @@ Diamond:
   ID: 41
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1453,7 +1454,6 @@ Diamond:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1472,6 +1472,7 @@ Ruby:
   ID: 42
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1488,7 +1489,6 @@ Ruby:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1507,6 +1507,7 @@ Emerald:
   ID: 43
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1523,7 +1524,6 @@ Emerald:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1542,6 +1542,7 @@ Sapphire:
   ID: 44
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1558,7 +1559,6 @@ Sapphire:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1577,6 +1577,7 @@ Bauxite:
   ID: 45
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1593,7 +1594,6 @@ Bauxite:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1612,6 +1612,7 @@ Magnetite:
   ID: 46
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1628,7 +1629,6 @@ Magnetite:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1647,6 +1647,7 @@ Malachite:
   ID: 47
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1663,7 +1664,6 @@ Malachite:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1682,6 +1682,7 @@ Aluminium:
   ID: 48
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1698,7 +1699,6 @@ Aluminium:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1717,6 +1717,7 @@ Sulfur:
   ID: 49
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1733,7 +1734,6 @@ Sulfur:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1752,6 +1752,7 @@ Rutile:
   ID: 50
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1768,7 +1769,6 @@ Rutile:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1787,6 +1787,7 @@ Seamorphite:
   ID: 51
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1803,7 +1804,6 @@ Seamorphite:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1822,6 +1822,7 @@ Thornmite:
   ID: 52
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1838,7 +1839,6 @@ Thornmite:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1857,6 +1857,7 @@ Cassiterite:
   ID: 53
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1873,7 +1874,6 @@ Cassiterite:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1892,6 +1892,7 @@ Galena:
   ID: 54
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1908,7 +1909,6 @@ Galena:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1927,6 +1927,7 @@ Pitchblende:
   ID: 55
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1943,7 +1944,6 @@ Pitchblende:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1962,6 +1962,7 @@ Scheelite:
   ID: 56
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -1978,7 +1979,6 @@ Scheelite:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -1997,6 +1997,7 @@ Submarium:
   ID: 57
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2013,7 +2014,6 @@ Submarium:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2032,6 +2032,7 @@ Titanium:
   ID: 58
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2048,7 +2049,6 @@ Titanium:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2067,6 +2067,7 @@ Uranium:
   ID: 59
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2077,13 +2078,12 @@ Uranium:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 6, 0]
+  lightColor: [0, 0, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2102,6 +2102,7 @@ Tungsten:
   ID: 60
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2118,7 +2119,6 @@ Tungsten:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2137,6 +2137,7 @@ Zinc:
   ID: 61
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2153,7 +2154,6 @@ Zinc:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2172,6 +2172,7 @@ Brass:
   ID: 62
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2188,7 +2189,6 @@ Brass:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2207,6 +2207,7 @@ Bronze:
   ID: 63
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2223,7 +2224,6 @@ Bronze:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2242,6 +2242,7 @@ Sandstone:
   ID: 64
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2258,7 +2259,6 @@ Sandstone:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2277,6 +2277,7 @@ Dolomite:
   ID: 65
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2293,7 +2294,6 @@ Dolomite:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2312,6 +2312,7 @@ Limestone:
   ID: 66
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2328,7 +2329,6 @@ Limestone:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2347,6 +2347,7 @@ Gravel:
   ID: 67
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2363,7 +2364,6 @@ Gravel:
   moveMod: 0.8
   movesPowder: false
   occlusion: all
-  physicsProperty: snow
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2382,6 +2382,7 @@ Basalt:
   ID: 68
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2398,7 +2399,6 @@ Basalt:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2417,6 +2417,7 @@ Slate:
   ID: 69
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2433,7 +2434,6 @@ Slate:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2452,6 +2452,7 @@ Gneiss:
   ID: 70
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2468,7 +2469,6 @@ Gneiss:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2487,6 +2487,7 @@ Granite:
   ID: 71
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2503,7 +2504,6 @@ Granite:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2522,6 +2522,7 @@ Marble:
   ID: 72
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2538,7 +2539,6 @@ Marble:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2557,6 +2557,7 @@ Zincblende:
   ID: 73
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2573,7 +2574,6 @@ Zincblende:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2592,6 +2592,7 @@ Steel:
   ID: 74
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2608,7 +2609,6 @@ Steel:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2627,6 +2627,7 @@ Red Sandstone:
   ID: 75
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2643,7 +2644,6 @@ Red Sandstone:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2662,6 +2662,7 @@ Tungsten Steel:
   ID: 76
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2678,7 +2679,6 @@ Tungsten Steel:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2697,6 +2697,7 @@ Semisolid Basalt:
   ID: 77
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2707,13 +2708,12 @@ Semisolid Basalt:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [20, 10, 8]
+  lightColor: [20, 20, 20]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2732,6 +2732,7 @@ Mossy Stone:
   ID: 78
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2748,7 +2749,6 @@ Mossy Stone:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2767,6 +2767,7 @@ Plutonium:
   ID: 79
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2777,13 +2778,12 @@ Plutonium:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 4, 0]
+  lightColor: [0, 0, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2802,6 +2802,7 @@ Lithium:
   ID: 80
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2818,7 +2819,6 @@ Lithium:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2837,6 +2837,7 @@ Aluminium-Lithium Alloy:
   ID: 81
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2853,7 +2854,6 @@ Aluminium-Lithium Alloy:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2872,6 +2872,7 @@ Coke:
   ID: 82
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2888,7 +2889,6 @@ Coke:
   moveMod: 0.7
   movesPowder: false
   occlusion: all
-  physicsProperty: powder
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2907,6 +2907,7 @@ White Lamp (on):
   ID: 83
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -2923,7 +2924,6 @@ White Lamp (on):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2942,6 +2942,7 @@ White Lamp:
   ID: 84
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [30, 30, 30]
   crushable: false
@@ -2958,7 +2959,6 @@ White Lamp:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -2977,8 +2977,9 @@ Red Lamp (on):
   ID: 85
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [255, 0, 0]
+  color: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -2987,13 +2988,12 @@ Red Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [24, 0, 0]
+  lightColor: [24, 24, 24]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3012,8 +3012,9 @@ Red Lamp:
   ID: 86
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [30, 0, 0]
+  color: [30, 30, 30]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3028,7 +3029,6 @@ Red Lamp:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3047,8 +3047,9 @@ Green Lamp (on):
   ID: 87
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [0, 255, 0]
+  color: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3057,13 +3058,12 @@ Green Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 24, 0]
+  lightColor: [0, 0, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3082,8 +3082,9 @@ Green Lamp:
   ID: 88
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [0, 30, 0]
+  color: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3098,7 +3099,6 @@ Green Lamp:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3117,8 +3117,9 @@ Blue Lamp (on):
   ID: 89
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [0, 0, 255]
+  color: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3127,13 +3128,12 @@ Blue Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 24]
+  lightColor: [0, 0, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3152,8 +3152,9 @@ Blue Lamp:
   ID: 90
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [0, 0, 30]
+  color: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3168,7 +3169,6 @@ Blue Lamp:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -3187,6 +3187,7 @@ Wambronium:
   ID: 91
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -3203,7 +3204,6 @@ Wambronium:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3222,8 +3222,9 @@ Red Bargonite Crystal:
   ID: 92
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [214, 37, 37]
+  color: [214, 214, 214]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3232,13 +3233,12 @@ Red Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [15, 0, 0]
+  lightColor: [15, 15, 15]
   lightColorFilter: [1, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -3257,8 +3257,9 @@ Blue Bargonite Crystal:
   ID: 93
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [37, 37, 214]
+  color: [37, 37, 37]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3267,13 +3268,12 @@ Blue Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 15]
+  lightColor: [0, 0, 0]
   lightColorFilter: [0, 0, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -3292,8 +3292,9 @@ Green Bargonite Crystal:
   ID: 94
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [37, 214, 37]
+  color: [37, 37, 37]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3302,13 +3303,12 @@ Green Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 15, 0]
+  lightColor: [0, 0, 0]
   lightColorFilter: [0, 1, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -3327,6 +3327,7 @@ White Bargonite Crystal:
   ID: 95
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [214, 214, 214]
   crushable: false
@@ -3343,7 +3344,6 @@ White Bargonite Crystal:
   moveMod: 1
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -3362,8 +3362,9 @@ Blue Mushroom Block:
   ID: 96
   allowsLight: false
   burnTransformID: 235
+  caPhysics: ""
   collide: true
-  color: [0, 10, 162]
+  color: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3378,7 +3379,6 @@ Blue Mushroom Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3397,8 +3397,9 @@ Purple Mushroom Block:
   ID: 97
   allowsLight: false
   burnTransformID: 235
+  caPhysics: ""
   collide: true
-  color: [150, 40, 200]
+  color: [150, 150, 150]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3413,7 +3414,6 @@ Purple Mushroom Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3432,6 +3432,7 @@ Lamella Block:
   ID: 98
   allowsLight: false
   burnTransformID: 237
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -3448,7 +3449,6 @@ Lamella Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3467,6 +3467,7 @@ Mushroom Stem Block:
   ID: 99
   allowsLight: false
   burnTransformID: 236
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -3483,7 +3484,6 @@ Mushroom Stem Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3502,6 +3502,7 @@ Grey Mushroom Block:
   ID: 100
   allowsLight: false
   burnTransformID: 235
+  caPhysics: ""
   collide: true
   color: [100, 100, 100]
   crushable: false
@@ -3518,7 +3519,6 @@ Grey Mushroom Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3537,8 +3537,9 @@ Dark Purple Mushroom Block:
   ID: 101
   allowsLight: false
   burnTransformID: 234
+  caPhysics: ""
   collide: true
-  color: [80, 25, 95]
+  color: [80, 80, 80]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3553,7 +3554,6 @@ Dark Purple Mushroom Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3572,8 +3572,9 @@ Dark Blue Mushroom Block:
   ID: 102
   allowsLight: false
   burnTransformID: 234
+  caPhysics: ""
   collide: true
-  color: [0, 5, 88]
+  color: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3588,7 +3589,6 @@ Dark Blue Mushroom Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3607,8 +3607,9 @@ Cyan Mushroom Block:
   ID: 103
   allowsLight: false
   burnTransformID: 234
+  caPhysics: ""
   collide: true
-  color: [0, 200, 200]
+  color: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3623,7 +3624,6 @@ Cyan Mushroom Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3642,8 +3642,9 @@ Pink Mushroom Block:
   ID: 104
   allowsLight: false
   burnTransformID: 235
+  caPhysics: ""
   collide: true
-  color: [255, 90, 200]
+  color: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3658,7 +3659,6 @@ Pink Mushroom Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3677,8 +3677,9 @@ Green Mushroom Block:
   ID: 105
   allowsLight: false
   burnTransformID: 234
+  caPhysics: ""
   collide: true
-  color: [120, 160, 40]
+  color: [120, 120, 120]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3693,7 +3694,6 @@ Green Mushroom Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3712,8 +3712,9 @@ Dark Green Mushroom Block:
   ID: 106
   allowsLight: false
   burnTransformID: 235
+  caPhysics: ""
   collide: true
-  color: [70, 90, 0]
+  color: [70, 70, 70]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3728,7 +3729,6 @@ Dark Green Mushroom Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3747,8 +3747,13 @@ Red Mushroom Block:
   ID: 107
   allowsLight: false
   burnTransformID: 235
+  caPhysics: ""
   collide: true
+<<<<<<< HEAD
   color: [200, 0, 0]
+=======
+  color: [190, 190, 190]
+>>>>>>> 96c6af4857ce43eda3b6cb8c6817756c091bd57a
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3763,7 +3768,6 @@ Red Mushroom Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3782,8 +3786,9 @@ Dark Red Mushroom Block:
   ID: 108
   allowsLight: false
   burnTransformID: 234
+  caPhysics: ""
   collide: true
-  color: [125, 0, 0]
+  color: [125, 125, 125]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3798,7 +3803,6 @@ Dark Red Mushroom Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3817,8 +3821,9 @@ Brown Mushroom Block:
   ID: 109
   allowsLight: false
   burnTransformID: 234
+  caPhysics: ""
   collide: true
-  color: [160, 100, 30]
+  color: [160, 160, 160]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -3833,7 +3838,6 @@ Brown Mushroom Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3852,6 +3856,7 @@ LED Lamp (on):
   ID: 110
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -3868,7 +3873,6 @@ LED Lamp (on):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3887,6 +3891,7 @@ LED Lamp:
   ID: 111
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -3903,7 +3908,6 @@ LED Lamp:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3922,6 +3926,7 @@ Trinitrotoluene (TNT):
   ID: 112
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -3938,7 +3943,6 @@ Trinitrotoluene (TNT):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3957,6 +3961,7 @@ Nitroglycerin:
   ID: 113
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -3973,7 +3978,6 @@ Nitroglycerin:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -3992,6 +3996,7 @@ Dynamite:
   ID: 114
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4008,7 +4013,6 @@ Dynamite:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4027,6 +4031,7 @@ Black Powder Crate 10kg:
   ID: 115
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4043,7 +4048,6 @@ Black Powder Crate 10kg:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4062,6 +4066,7 @@ Black Powder Crate 20kg:
   ID: 116
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4078,7 +4083,6 @@ Black Powder Crate 20kg:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4097,6 +4101,7 @@ Black Powder Box 1kg:
   ID: 117
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4113,7 +4118,6 @@ Black Powder Box 1kg:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4132,6 +4136,7 @@ Black Powder Box 100g:
   ID: 118
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4148,7 +4153,6 @@ Black Powder Box 100g:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4167,6 +4171,7 @@ Black Powder:
   ID: 119
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4183,7 +4188,6 @@ Black Powder:
   moveMod: 0.8
   movesPowder: false
   occlusion: all
-  physicsProperty: powder
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4202,6 +4206,7 @@ ANFO 25kg:
   ID: 120
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4218,7 +4223,6 @@ ANFO 25kg:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4237,6 +4241,7 @@ Shrapnel Bomb (1kg Amatol):
   ID: 121
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4253,7 +4258,6 @@ Shrapnel Bomb (1kg Amatol):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4272,6 +4276,7 @@ Amatol 25kg:
   ID: 122
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4288,7 +4293,6 @@ Amatol 25kg:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4307,6 +4311,7 @@ Ammonium Nitrate:
   ID: 123
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4323,7 +4328,6 @@ Ammonium Nitrate:
   moveMod: 0.7
   movesPowder: false
   occlusion: all
-  physicsProperty: powder
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4342,6 +4346,7 @@ Salpeter:
   ID: 124
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4358,7 +4363,6 @@ Salpeter:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4377,6 +4381,7 @@ Diatomite (Kieselguhr):
   ID: 125
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4393,7 +4398,6 @@ Diatomite (Kieselguhr):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4412,6 +4416,7 @@ Nitrocellulose:
   ID: 126
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4428,7 +4433,6 @@ Nitrocellulose:
   moveMod: 0.7
   movesPowder: false
   occlusion: all
-  physicsProperty: snow
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4447,6 +4451,7 @@ Blasting Gelatin:
   ID: 127
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4463,7 +4468,6 @@ Blasting Gelatin:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4482,6 +4486,7 @@ Firebomb:
   ID: 128
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4498,7 +4503,6 @@ Firebomb:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4517,6 +4521,7 @@ Octanitrocubane (ONC):
   ID: 129
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4533,7 +4538,6 @@ Octanitrocubane (ONC):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4552,6 +4556,7 @@ Alien Plantoid Mine:
   ID: 130
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4568,7 +4573,6 @@ Alien Plantoid Mine:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4587,6 +4591,7 @@ Atomic Bomb (Mark I):
   ID: 131
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4603,7 +4608,6 @@ Atomic Bomb (Mark I):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4622,6 +4626,7 @@ Thermonuclear Bomb (Mark II):
   ID: 132
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4638,7 +4643,6 @@ Thermonuclear Bomb (Mark II):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4657,6 +4661,7 @@ Three-Stage Bomb (Mark III):
   ID: 133
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4673,7 +4678,6 @@ Three-Stage Bomb (Mark III):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4692,6 +4696,7 @@ Xenon Lamp (on):
   ID: 134
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4702,13 +4707,12 @@ Xenon Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [27, 27, 31]
+  lightColor: [27, 27, 27]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4727,6 +4731,7 @@ Xenon Lamp:
   ID: 135
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4743,7 +4748,6 @@ Xenon Lamp:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4762,8 +4766,9 @@ Red Stained Glass:
   ID: 136
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [255, 0, 0]
+  color: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -4772,13 +4777,12 @@ Red Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [6, 0, 0]
+  lightColor: [6, 6, 6]
   lightColorFilter: [1, 0, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -4797,8 +4801,9 @@ Green Stained Glass:
   ID: 137
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [0, 255, 0]
+  color: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -4807,13 +4812,12 @@ Green Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 6, 0]
+  lightColor: [0, 0, 0]
   lightColorFilter: [0, 1, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -4832,8 +4836,9 @@ Blue Stained Glass:
   ID: 138
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [0, 0, 255]
+  color: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -4842,13 +4847,12 @@ Blue Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 6]
+  lightColor: [0, 0, 0]
   lightColorFilter: [0, 0, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -4867,6 +4871,7 @@ Light Metal Plating:
   ID: 139
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4883,7 +4888,6 @@ Light Metal Plating:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4902,6 +4906,7 @@ Pitch:
   ID: 140
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4918,7 +4923,6 @@ Pitch:
   moveMod: 0.05
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -4937,6 +4941,7 @@ White Stained Glass:
   ID: 141
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4953,7 +4958,6 @@ White Stained Glass:
   moveMod: 1
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -4972,6 +4976,7 @@ Rubber:
   ID: 142
   allowsLight: false
   burnTransformID: 238
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -4988,7 +4993,6 @@ Rubber:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5007,6 +5011,7 @@ Thornmite Glass:
   ID: 143
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5023,7 +5028,6 @@ Thornmite Glass:
   moveMod: 1
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -5042,6 +5046,7 @@ Alumina Ceramic:
   ID: 144
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5058,7 +5063,6 @@ Alumina Ceramic:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5077,6 +5081,7 @@ Ceramic Plating:
   ID: 145
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5093,7 +5098,6 @@ Ceramic Plating:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5112,6 +5116,7 @@ Tungsten Carbide:
   ID: 146
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5128,7 +5133,6 @@ Tungsten Carbide:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5147,6 +5151,7 @@ Sandstone Bricks:
   ID: 147
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5163,7 +5168,6 @@ Sandstone Bricks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5182,6 +5186,7 @@ Red Sandstone Bricks:
   ID: 148
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5198,7 +5203,6 @@ Red Sandstone Bricks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5217,6 +5221,7 @@ Stone Bricks:
   ID: 149
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5233,7 +5238,6 @@ Stone Bricks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5252,6 +5256,7 @@ Granite Bricks:
   ID: 150
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5268,7 +5273,6 @@ Granite Bricks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5287,6 +5291,7 @@ Limestone Bricks:
   ID: 151
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5303,7 +5308,6 @@ Limestone Bricks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5322,6 +5326,7 @@ Marble Bricks:
   ID: 152
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5338,7 +5343,6 @@ Marble Bricks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5357,6 +5361,7 @@ Aluminium Plating:
   ID: 153
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5373,7 +5378,6 @@ Aluminium Plating:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5392,6 +5396,7 @@ Steel Plating:
   ID: 154
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5408,7 +5413,6 @@ Steel Plating:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5427,6 +5431,7 @@ Tungsten Steel Plating:
   ID: 155
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5443,7 +5448,6 @@ Tungsten Steel Plating:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5462,6 +5466,7 @@ Titanium Plating:
   ID: 156
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5478,7 +5483,6 @@ Titanium Plating:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5497,6 +5501,7 @@ Thornmite Plating:
   ID: 157
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5513,7 +5518,6 @@ Thornmite Plating:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5532,6 +5536,7 @@ Gypsum:
   ID: 158
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5548,7 +5553,6 @@ Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5567,6 +5571,7 @@ Lightweight Bricks:
   ID: 159
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5583,7 +5588,6 @@ Lightweight Bricks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5602,6 +5606,7 @@ Glass:
   ID: 160
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5618,7 +5623,6 @@ Glass:
   moveMod: 1
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -5637,6 +5641,7 @@ Concrete:
   ID: 161
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5653,7 +5658,6 @@ Concrete:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5672,6 +5676,7 @@ Bricks:
   ID: 162
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5688,7 +5693,6 @@ Bricks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5707,6 +5711,7 @@ Hardwood Planks:
   ID: 163
   allowsLight: false
   burnTransformID: 224
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5723,7 +5728,6 @@ Hardwood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5742,6 +5746,7 @@ Cobblestone:
   ID: 164
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5758,7 +5763,6 @@ Cobblestone:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5777,6 +5781,7 @@ Junglewood Planks:
   ID: 165
   allowsLight: false
   burnTransformID: 226
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5793,7 +5798,6 @@ Junglewood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5812,6 +5816,7 @@ Savannawood Planks:
   ID: 166
   allowsLight: false
   burnTransformID: 227
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5828,7 +5833,6 @@ Savannawood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5847,6 +5851,7 @@ Palmwood Planks:
   ID: 167
   allowsLight: false
   burnTransformID: 229
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5863,7 +5868,6 @@ Palmwood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5882,6 +5886,7 @@ Swampwood Planks:
   ID: 168
   allowsLight: false
   burnTransformID: 233
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5898,7 +5903,6 @@ Swampwood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5917,6 +5921,7 @@ Softwood Planks:
   ID: 169
   allowsLight: false
   burnTransformID: 225
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5933,7 +5938,6 @@ Softwood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5952,6 +5956,7 @@ Deadwood Planks:
   ID: 170
   allowsLight: false
   burnTransformID: 228
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -5968,7 +5973,6 @@ Deadwood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -5987,6 +5991,7 @@ Darkwood Planks:
   ID: 171
   allowsLight: false
   burnTransformID: 230
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -6003,7 +6008,6 @@ Darkwood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6022,6 +6026,7 @@ Ruberwood Planks:
   ID: 172
   allowsLight: false
   burnTransformID: 232
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -6038,7 +6043,6 @@ Ruberwood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6057,6 +6061,7 @@ Sugarwood Planks:
   ID: 173
   allowsLight: false
   burnTransformID: 231
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -6073,7 +6078,6 @@ Sugarwood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6092,6 +6096,7 @@ White Cloth Block:
   ID: 174
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -6108,7 +6113,6 @@ White Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6127,6 +6131,7 @@ Black Cloth Block:
   ID: 175
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [32, 32, 32]
   crushable: false
@@ -6143,7 +6148,6 @@ Black Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6162,6 +6166,7 @@ Grey Cloth Block:
   ID: 176
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [128, 128, 128]
   crushable: false
@@ -6178,7 +6183,6 @@ Grey Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6197,8 +6201,9 @@ Brown Cloth Block:
   ID: 177
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [128, 80, 0]
+  color: [128, 128, 128]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6213,7 +6218,6 @@ Brown Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6232,8 +6236,9 @@ Light Yellow Cloth Block:
   ID: 178
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [255, 255, 180]
+  color: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6248,7 +6253,6 @@ Light Yellow Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6267,8 +6271,9 @@ Yellow Cloth Block:
   ID: 179
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [255, 255, 0]
+  color: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6283,7 +6288,6 @@ Yellow Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6302,8 +6306,9 @@ Orange Cloth Block:
   ID: 180
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [255, 180, 0]
+  color: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6318,7 +6323,6 @@ Orange Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6337,8 +6341,9 @@ Red Cloth Block:
   ID: 181
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [255, 0, 0]
+  color: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6353,7 +6358,6 @@ Red Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6372,8 +6376,9 @@ Dark Red Cloth Block:
   ID: 182
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [150, 0, 0]
+  color: [150, 150, 150]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6388,7 +6393,6 @@ Dark Red Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6407,8 +6411,9 @@ Pink Cloth Block:
   ID: 183
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [255, 200, 200]
+  color: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6423,7 +6428,6 @@ Pink Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6442,8 +6446,9 @@ Magenta Cloth Block:
   ID: 184
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [255, 0, 255]
+  color: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6458,7 +6463,6 @@ Magenta Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6477,8 +6481,9 @@ Lime Cloth Block:
   ID: 185
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [0, 255, 0]
+  color: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6493,7 +6498,6 @@ Lime Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6512,8 +6516,9 @@ Green Cloth Block:
   ID: 186
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [0, 128, 0]
+  color: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6528,7 +6533,6 @@ Green Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6547,8 +6551,9 @@ Dark Green Cloth Block:
   ID: 187
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [0, 80, 0]
+  color: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6563,7 +6568,6 @@ Dark Green Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6582,8 +6586,9 @@ Cyan Cloth Block:
   ID: 188
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [0, 200, 200]
+  color: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6598,7 +6603,6 @@ Cyan Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6617,8 +6621,9 @@ Light Blue Cloth Block:
   ID: 189
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [128, 200, 255]
+  color: [128, 128, 128]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6633,7 +6638,6 @@ Light Blue Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6652,8 +6656,9 @@ Blue Cloth Block:
   ID: 190
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [0, 0, 255]
+  color: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6668,7 +6673,6 @@ Blue Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6687,8 +6691,9 @@ Dark Blue Cloth Block:
   ID: 191
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [0, 0, 150]
+  color: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6703,7 +6708,6 @@ Dark Blue Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6722,8 +6726,9 @@ Purple Cloth Block:
   ID: 192
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [150, 0, 255]
+  color: [150, 150, 150]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6738,7 +6743,6 @@ Purple Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6757,8 +6761,9 @@ Dark Purple Cloth Block:
   ID: 193
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [75, 0, 128]
+  color: [75, 75, 75]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6773,7 +6778,6 @@ Dark Purple Cloth Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6792,6 +6796,7 @@ Lapis Lazuli:
   ID: 194
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -6808,7 +6813,6 @@ Lapis Lazuli:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6827,6 +6831,7 @@ Black Gypsum:
   ID: 195
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [45, 45, 45]
   crushable: false
@@ -6843,7 +6848,6 @@ Black Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6862,6 +6866,7 @@ Grey Gypsum:
   ID: 196
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [150, 150, 150]
   crushable: false
@@ -6878,7 +6883,6 @@ Grey Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6897,8 +6901,9 @@ Brown Gypsum:
   ID: 197
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [150, 100, 0]
+  color: [150, 150, 150]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6913,7 +6918,6 @@ Brown Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6932,8 +6936,9 @@ Light Yellow Gypsum:
   ID: 198
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [255, 148, 80]
+  color: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6948,7 +6953,6 @@ Light Yellow Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -6967,8 +6971,9 @@ Yellow Gypsum:
   ID: 199
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [255, 230, 0]
+  color: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -6983,7 +6988,6 @@ Yellow Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7002,8 +7006,9 @@ Orange Gypsum:
   ID: 200
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [245, 160, 0]
+  color: [245, 245, 245]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7018,7 +7023,6 @@ Orange Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7037,8 +7041,9 @@ Red Gypsum:
   ID: 201
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [222, 50, 50]
+  color: [222, 222, 222]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7053,7 +7058,6 @@ Red Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7072,8 +7076,9 @@ Dark Red Gypsum:
   ID: 202
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [140, 40, 40]
+  color: [140, 140, 140]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7088,7 +7093,6 @@ Dark Red Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7107,8 +7111,9 @@ Pink Gypsum:
   ID: 203
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [250, 200, 200]
+  color: [250, 250, 250]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7123,7 +7128,6 @@ Pink Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7142,8 +7146,9 @@ Magenta Gypsum:
   ID: 204
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [222, 100, 222]
+  color: [222, 222, 222]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7158,7 +7163,6 @@ Magenta Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7177,8 +7181,9 @@ Lime Gypsum:
   ID: 205
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [60, 222, 60]
+  color: [60, 60, 60]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7193,7 +7198,6 @@ Lime Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7212,8 +7216,9 @@ Green Gypsum:
   ID: 206
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [60, 128, 60]
+  color: [60, 60, 60]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7228,7 +7233,6 @@ Green Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7247,8 +7251,9 @@ Dark Green Gypsum:
   ID: 207
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [40, 80, 40]
+  color: [40, 40, 40]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7263,7 +7268,6 @@ Dark Green Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7282,8 +7286,9 @@ Cyan Gypsum:
   ID: 208
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [100, 200, 200]
+  color: [100, 100, 100]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7298,7 +7303,6 @@ Cyan Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7317,8 +7321,9 @@ Light Blue Gypsum:
   ID: 209
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [160, 200, 255]
+  color: [160, 160, 160]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7333,7 +7338,6 @@ Light Blue Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7352,8 +7356,9 @@ Blue Gypsum:
   ID: 210
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [40, 65, 200]
+  color: [40, 40, 40]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7368,7 +7373,6 @@ Blue Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7387,8 +7391,9 @@ Dark Blue Gypsum:
   ID: 211
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [50, 50, 160]
+  color: [50, 50, 50]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7403,7 +7408,6 @@ Dark Blue Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7422,8 +7426,9 @@ Purple Gypsum:
   ID: 212
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [150, 75, 255]
+  color: [150, 150, 150]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7438,7 +7443,6 @@ Purple Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7457,8 +7461,9 @@ Dark Purple Gypsum:
   ID: 213
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [85, 50, 140]
+  color: [85, 85, 85]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -7473,7 +7478,6 @@ Dark Purple Gypsum:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7492,6 +7496,7 @@ Charred Wood (Deciduous Tree):
   ID: 214
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [64, 64, 64]
   crushable: false
@@ -7508,7 +7513,6 @@ Charred Wood (Deciduous Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7527,6 +7531,7 @@ Charred Wood (Dead Tree):
   ID: 215
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [64, 64, 64]
   crushable: false
@@ -7543,7 +7548,6 @@ Charred Wood (Dead Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7562,6 +7566,7 @@ Charred Wood (Coniferous Tree):
   ID: 216
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [64, 64, 64]
   crushable: false
@@ -7578,7 +7583,6 @@ Charred Wood (Coniferous Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7597,6 +7601,7 @@ Charred Wood (Palm Tree):
   ID: 217
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [64, 64, 64]
   crushable: false
@@ -7613,7 +7618,6 @@ Charred Wood (Palm Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7632,6 +7636,7 @@ Charred Wood (Jungle Tree):
   ID: 218
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [64, 64, 64]
   crushable: false
@@ -7648,7 +7653,6 @@ Charred Wood (Jungle Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7667,6 +7671,7 @@ Charred Wood (Swamp Tree):
   ID: 219
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [64, 64, 64]
   crushable: false
@@ -7683,7 +7688,6 @@ Charred Wood (Swamp Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7702,6 +7706,7 @@ Charred Wood (Sugar Tree):
   ID: 220
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [64, 64, 64]
   crushable: false
@@ -7718,7 +7723,6 @@ Charred Wood (Sugar Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7737,6 +7741,7 @@ Charred Wood (Rubber Tree):
   ID: 221
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [64, 64, 64]
   crushable: false
@@ -7753,7 +7758,6 @@ Charred Wood (Rubber Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7772,6 +7776,7 @@ Charred Wood (Fruit Tree):
   ID: 222
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [64, 64, 64]
   crushable: false
@@ -7788,7 +7793,6 @@ Charred Wood (Fruit Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7807,6 +7811,7 @@ Charred Wood (Savanna Tree):
   ID: 223
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [64, 64, 64]
   crushable: false
@@ -7823,7 +7828,6 @@ Charred Wood (Savanna Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7842,6 +7846,7 @@ Charred Hardwood Planks:
   ID: 224
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [64, 64, 64]
   crushable: false
@@ -7858,7 +7863,6 @@ Charred Hardwood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7877,6 +7881,7 @@ Charred Softwood Planks:
   ID: 225
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [48, 48, 48]
   crushable: false
@@ -7893,7 +7898,6 @@ Charred Softwood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7912,6 +7916,7 @@ Charred Junglewood Planks:
   ID: 226
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [64, 64, 64]
   crushable: false
@@ -7928,7 +7933,6 @@ Charred Junglewood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7947,6 +7951,7 @@ Charred Savannawood Planks:
   ID: 227
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [64, 64, 64]
   crushable: false
@@ -7963,7 +7968,6 @@ Charred Savannawood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -7982,6 +7986,7 @@ Charred Deadwood Planks:
   ID: 228
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [48, 48, 48]
   crushable: false
@@ -7998,7 +8003,6 @@ Charred Deadwood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8017,6 +8021,7 @@ Charred Palmwood Planks:
   ID: 229
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [48, 48, 48]
   crushable: false
@@ -8033,7 +8038,6 @@ Charred Palmwood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8052,6 +8056,7 @@ Charred Darkwood Planks:
   ID: 230
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [64, 64, 64]
   crushable: false
@@ -8068,7 +8073,6 @@ Charred Darkwood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8087,6 +8091,7 @@ Charred Sugarwood Planks:
   ID: 231
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [48, 48, 48]
   crushable: false
@@ -8103,7 +8108,6 @@ Charred Sugarwood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8122,6 +8126,7 @@ Charred Rubberwood Planks:
   ID: 232
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [48, 48, 48]
   crushable: false
@@ -8138,7 +8143,6 @@ Charred Rubberwood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8157,6 +8161,7 @@ Charred Swampwood Planks:
   ID: 233
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [64, 64, 64]
   crushable: false
@@ -8173,7 +8178,6 @@ Charred Swampwood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8192,6 +8196,7 @@ Charred Smooth Mushroom Block:
   ID: 234
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [48, 48, 48]
   crushable: false
@@ -8208,7 +8213,6 @@ Charred Smooth Mushroom Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8227,6 +8231,7 @@ Charred Spotted Mushroom Block:
   ID: 235
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [48, 48, 48]
   crushable: false
@@ -8243,7 +8248,6 @@ Charred Spotted Mushroom Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8262,6 +8266,7 @@ Charred Mushroom Stem Block:
   ID: 236
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [48, 48, 48]
   crushable: false
@@ -8278,7 +8283,6 @@ Charred Mushroom Stem Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8297,6 +8301,7 @@ Charred Lamella Block:
   ID: 237
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [48, 48, 48]
   crushable: false
@@ -8313,7 +8318,6 @@ Charred Lamella Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8332,6 +8336,7 @@ Charred Rubber:
   ID: 238
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [64, 64, 64]
   crushable: false
@@ -8348,7 +8353,6 @@ Charred Rubber:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8367,6 +8371,7 @@ Rusty Iron:
   ID: 239
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -8383,7 +8388,6 @@ Rusty Iron:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8402,6 +8406,7 @@ Rusty Steel:
   ID: 240
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -8418,7 +8423,6 @@ Rusty Steel:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8437,6 +8441,7 @@ Patinated Copper:
   ID: 241
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -8453,7 +8458,6 @@ Patinated Copper:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8472,6 +8476,7 @@ Rusty Steel Plating:
   ID: 242
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -8488,7 +8493,6 @@ Rusty Steel Plating:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8507,6 +8511,7 @@ Small Red Cactus (Bud):
   ID: 243
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -8523,7 +8528,6 @@ Small Red Cactus (Bud):
   moveMod: 0.4
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8542,6 +8546,7 @@ Small Red Cactus (Stem):
   ID: 244
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -8558,7 +8563,6 @@ Small Red Cactus (Stem):
   moveMod: 0.4
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8577,6 +8581,7 @@ Small Yellow Cactus (Bud):
   ID: 245
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -8593,7 +8598,6 @@ Small Yellow Cactus (Bud):
   moveMod: 0.4
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8612,6 +8616,7 @@ Small Yellow Cactus (Stem):
   ID: 246
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -8628,7 +8633,6 @@ Small Yellow Cactus (Stem):
   moveMod: 0.4
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8647,6 +8651,7 @@ Small Green Cactus (Bud):
   ID: 247
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -8663,7 +8668,6 @@ Small Green Cactus (Bud):
   moveMod: 0.4
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8682,6 +8686,7 @@ Small Green Cactus (Stem):
   ID: 248
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -8698,7 +8703,6 @@ Small Green Cactus (Stem):
   moveMod: 0.4
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8717,6 +8721,7 @@ Death Cactus:
   ID: 249
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -8733,7 +8738,6 @@ Death Cactus:
   moveMod: 0.4
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8752,6 +8756,7 @@ Mutated Death Cactus:
   ID: 250
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -8768,7 +8773,6 @@ Mutated Death Cactus:
   moveMod: 0.4
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8787,6 +8791,7 @@ Poison Cactus:
   ID: 251
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -8803,7 +8808,6 @@ Poison Cactus:
   moveMod: 0.4
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8822,6 +8826,7 @@ Starch Cactus:
   ID: 252
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -8838,7 +8843,6 @@ Starch Cactus:
   moveMod: 0.4
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8857,6 +8861,7 @@ Cactus Fruit:
   ID: 253
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -8873,7 +8878,6 @@ Cactus Fruit:
   moveMod: 0.6
   movesPowder: false
   occlusion: all
-  physicsProperty: snow
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8892,6 +8896,7 @@ Alien Crop Plant (Bud):
   ID: 254
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -8902,13 +8907,12 @@ Alien Crop Plant (Bud):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 16]
+  lightColor: [0, 0, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8927,6 +8931,7 @@ Ammonia Plant:
   ID: 255
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -8937,13 +8942,12 @@ Ammonia Plant:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 16, 0]
+  lightColor: [0, 0, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -8962,6 +8966,7 @@ Common White Flowers:
   ID: 256
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -8978,7 +8983,6 @@ Common White Flowers:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -8997,6 +9001,7 @@ Tall Grass:
   ID: 257
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9013,7 +9018,6 @@ Tall Grass:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9032,6 +9036,7 @@ Fern:
   ID: 258
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9048,7 +9053,6 @@ Fern:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9067,6 +9071,7 @@ Yellow Grass:
   ID: 259
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9083,7 +9088,6 @@ Yellow Grass:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9102,6 +9106,7 @@ Dryland Grass:
   ID: 260
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9118,7 +9123,6 @@ Dryland Grass:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9137,6 +9141,7 @@ Red Flower Grass:
   ID: 261
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9153,7 +9158,6 @@ Red Flower Grass:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9172,6 +9176,7 @@ Light Tall Grass:
   ID: 262
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9188,7 +9193,6 @@ Light Tall Grass:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9207,6 +9211,7 @@ Small Yellow Flower:
   ID: 263
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9223,7 +9228,6 @@ Small Yellow Flower:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9242,6 +9246,7 @@ Red Bush:
   ID: 264
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9258,7 +9263,6 @@ Red Bush:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9277,6 +9281,7 @@ Dark Tall Grass:
   ID: 265
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9293,7 +9298,6 @@ Dark Tall Grass:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9312,6 +9316,7 @@ Jungle Plant 1:
   ID: 266
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9328,7 +9333,6 @@ Jungle Plant 1:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9347,6 +9351,7 @@ Large Purple Flower:
   ID: 267
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9363,7 +9368,6 @@ Large Purple Flower:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9382,6 +9386,7 @@ Large Yellow Flower:
   ID: 268
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9398,7 +9403,6 @@ Large Yellow Flower:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9417,6 +9421,7 @@ Pink Fringed Flower:
   ID: 269
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9433,7 +9438,6 @@ Pink Fringed Flower:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9452,6 +9456,7 @@ Red Fringed Flower:
   ID: 270
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9468,7 +9473,6 @@ Red Fringed Flower:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9487,6 +9491,7 @@ Tiny Fringed Flower:
   ID: 271
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9503,7 +9508,6 @@ Tiny Fringed Flower:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9522,6 +9526,7 @@ White Fringed Flower:
   ID: 272
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9538,7 +9543,6 @@ White Fringed Flower:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9557,6 +9561,7 @@ Yellow Fringed Flower:
   ID: 273
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9573,7 +9578,6 @@ Yellow Fringed Flower:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9592,6 +9596,7 @@ Large Red Flower:
   ID: 274
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9608,7 +9613,6 @@ Large Red Flower:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9627,6 +9631,7 @@ Green Mushroom:
   ID: 275
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9643,7 +9648,6 @@ Green Mushroom:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9662,6 +9666,7 @@ Dark Green Mushroom:
   ID: 276
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9678,7 +9683,6 @@ Dark Green Mushroom:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9697,6 +9701,7 @@ Brown Mushroom:
   ID: 277
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9713,7 +9718,6 @@ Brown Mushroom:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9732,6 +9736,7 @@ Red Mushroom:
   ID: 278
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9748,7 +9753,6 @@ Red Mushroom:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9767,6 +9771,7 @@ Dark Red Mushroom:
   ID: 279
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9783,7 +9788,6 @@ Dark Red Mushroom:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9802,6 +9806,7 @@ Grey Mushroom:
   ID: 280
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -9818,7 +9823,6 @@ Grey Mushroom:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -9837,6 +9841,7 @@ Wood (Fruit Tree):
   ID: 281
   allowsLight: false
   burnTransformID: 222
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -9853,7 +9858,6 @@ Wood (Fruit Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -9872,6 +9876,7 @@ Wood (Jungle Tree):
   ID: 282
   allowsLight: false
   burnTransformID: 218
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -9888,7 +9893,6 @@ Wood (Jungle Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -9907,6 +9911,7 @@ Wood (Savanna Tree):
   ID: 283
   allowsLight: false
   burnTransformID: 223
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -9923,7 +9928,6 @@ Wood (Savanna Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -9942,6 +9946,7 @@ Wood (Palm Tree):
   ID: 284
   allowsLight: false
   burnTransformID: 217
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -9958,7 +9963,6 @@ Wood (Palm Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -9977,6 +9981,7 @@ Wood (Swamp Tree):
   ID: 285
   allowsLight: false
   burnTransformID: 219
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -9993,7 +9998,6 @@ Wood (Swamp Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -10012,6 +10016,7 @@ Wood (Coniferous Tree):
   ID: 286
   allowsLight: false
   burnTransformID: 216
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -10028,7 +10033,6 @@ Wood (Coniferous Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -10047,6 +10051,7 @@ Wood (Dead Tree):
   ID: 287
   allowsLight: false
   burnTransformID: 215
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -10063,7 +10068,6 @@ Wood (Dead Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -10082,6 +10086,7 @@ Leaves (Deciduous Tree):
   ID: 288
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -10098,7 +10103,6 @@ Leaves (Deciduous Tree):
   moveMod: 0.7
   movesPowder: false
   occlusion: selfOnly
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -10117,6 +10121,7 @@ Leaves (Jungle Tree):
   ID: 289
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -10133,7 +10138,6 @@ Leaves (Jungle Tree):
   moveMod: 0.7
   movesPowder: false
   occlusion: selfOnly
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -10152,6 +10156,7 @@ Leaves (Savanna Tree):
   ID: 290
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -10168,7 +10173,6 @@ Leaves (Savanna Tree):
   moveMod: 0.7
   movesPowder: false
   occlusion: selfOnly
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -10187,6 +10191,7 @@ Leaves (Palm Tree):
   ID: 291
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -10203,7 +10208,6 @@ Leaves (Palm Tree):
   moveMod: 0.7
   movesPowder: false
   occlusion: selfOnly
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -10222,6 +10226,7 @@ Leaves (Swamp Tree):
   ID: 292
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -10238,7 +10243,6 @@ Leaves (Swamp Tree):
   moveMod: 0.7
   movesPowder: false
   occlusion: selfOnly
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -10257,6 +10261,7 @@ Leaves (Coniferous Tree):
   ID: 293
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -10273,7 +10278,6 @@ Leaves (Coniferous Tree):
   moveMod: 0.7
   movesPowder: false
   occlusion: selfOnly
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -10292,6 +10296,7 @@ Leaves (Fruit Tree):
   ID: 294
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -10308,7 +10313,6 @@ Leaves (Fruit Tree):
   moveMod: 0.7
   movesPowder: false
   occlusion: selfOnly
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -10327,6 +10331,7 @@ Leaves (Blooming Fruit Tree):
   ID: 295
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -10343,7 +10348,6 @@ Leaves (Blooming Fruit Tree):
   moveMod: 0.7
   movesPowder: false
   occlusion: selfOnly
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -10362,6 +10366,7 @@ Blue Mushroom:
   ID: 296
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -10378,7 +10383,6 @@ Blue Mushroom:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -10397,6 +10401,7 @@ Dark Blue Mushroom:
   ID: 297
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -10413,7 +10418,6 @@ Dark Blue Mushroom:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -10432,6 +10436,7 @@ Purple Mushroom:
   ID: 298
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -10448,7 +10453,6 @@ Purple Mushroom:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -10467,6 +10471,7 @@ Dark Purple Mushroom:
   ID: 299
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -10483,7 +10488,6 @@ Dark Purple Mushroom:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -10502,6 +10506,7 @@ Wood (Rubber Tree):
   ID: 300
   allowsLight: false
   burnTransformID: 221
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -10518,7 +10523,6 @@ Wood (Rubber Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -10537,6 +10541,7 @@ Leaves (Rubber Tree):
   ID: 301
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -10553,7 +10558,6 @@ Leaves (Rubber Tree):
   moveMod: 0.7
   movesPowder: false
   occlusion: selfOnly
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -10572,6 +10576,7 @@ Wood (Sugar Tree):
   ID: 302
   allowsLight: false
   burnTransformID: 220
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -10588,7 +10593,6 @@ Wood (Sugar Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -10607,6 +10611,7 @@ Leaves (Sugar Tree):
   ID: 303
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -10617,13 +10622,12 @@ Leaves (Sugar Tree):
   explosionResistance: 0.06
   flammability: 2
   floatingAction: 1
-  lightColor: [16, 0, 0]
+  lightColor: [16, 16, 16]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 0.7
   movesPowder: false
   occlusion: selfOnly
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -10642,6 +10646,7 @@ Nitrogen:
   ID: 304
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: false
@@ -10658,7 +10663,6 @@ Nitrogen:
   moveMod: 1
   movesPowder: true
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -10677,6 +10681,7 @@ Oxygen:
   ID: 305
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: false
@@ -10693,7 +10698,6 @@ Oxygen:
   moveMod: 1
   movesPowder: true
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -10712,6 +10716,7 @@ Carbon Dioxide:
   ID: 306
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: false
@@ -10728,7 +10733,6 @@ Carbon Dioxide:
   moveMod: 1
   movesPowder: true
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -10747,6 +10751,7 @@ Nitrogen Dioxide:
   ID: 307
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: false
@@ -10763,7 +10768,6 @@ Nitrogen Dioxide:
   moveMod: 1
   movesPowder: true
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -10782,6 +10786,7 @@ Sulfur Dioxide:
   ID: 308
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: false
@@ -10798,7 +10803,6 @@ Sulfur Dioxide:
   moveMod: 1
   movesPowder: true
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -10817,6 +10821,7 @@ Helium:
   ID: 309
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: false
@@ -10833,7 +10838,6 @@ Helium:
   moveMod: 1
   movesPowder: true
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -10852,6 +10856,7 @@ Argon:
   ID: 310
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: false
@@ -10868,7 +10873,6 @@ Argon:
   moveMod: 1
   movesPowder: true
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -10887,6 +10891,7 @@ Xenon:
   ID: 311
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: false
@@ -10903,7 +10908,6 @@ Xenon:
   moveMod: 1
   movesPowder: true
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -10922,6 +10926,7 @@ Hydrogen:
   ID: 312
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: false
@@ -10938,7 +10943,6 @@ Hydrogen:
   moveMod: 1
   movesPowder: true
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -10957,6 +10961,7 @@ Ammonia:
   ID: 313
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: false
@@ -10973,7 +10978,6 @@ Ammonia:
   moveMod: 1
   movesPowder: true
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -10992,6 +10996,7 @@ Methane:
   ID: 314
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: false
@@ -11008,7 +11013,6 @@ Methane:
   moveMod: 1
   movesPowder: true
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -11027,6 +11031,7 @@ Deuterium:
   ID: 315
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: false
@@ -11043,7 +11048,6 @@ Deuterium:
   moveMod: 1
   movesPowder: true
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -11062,6 +11066,7 @@ Water (Steam):
   ID: 316
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: false
@@ -11078,7 +11083,6 @@ Water (Steam):
   moveMod: 1
   movesPowder: true
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -11097,6 +11101,7 @@ Rubber Sapling:
   ID: 317
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -11113,7 +11118,6 @@ Rubber Sapling:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -11132,6 +11136,7 @@ Stone Succulent (Bud):
   ID: 318
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -11148,7 +11153,6 @@ Stone Succulent (Bud):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -11167,6 +11171,7 @@ Blue Succulent (Bud):
   ID: 319
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -11183,7 +11188,6 @@ Blue Succulent (Bud):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -11202,6 +11206,7 @@ Purple Succulent (Bud):
   ID: 320
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -11218,7 +11223,6 @@ Purple Succulent (Bud):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -11237,6 +11241,7 @@ Stone Succulent (Stem):
   ID: 321
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -11253,7 +11258,6 @@ Stone Succulent (Stem):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -11272,6 +11276,7 @@ Blue Succulent (Stem):
   ID: 322
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -11288,7 +11293,6 @@ Blue Succulent (Stem):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -11307,6 +11311,7 @@ Purple Succulent (Stem):
   ID: 323
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -11323,7 +11328,6 @@ Purple Succulent (Stem):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -11342,6 +11346,7 @@ Alien Crop Plant (Stem):
   ID: 324
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -11352,13 +11357,12 @@ Alien Crop Plant (Stem):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 16]
+  lightColor: [0, 0, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -11377,6 +11381,7 @@ Charred Grass Block:
   ID: 325
   allowsLight: false
   burnTransformID: 1
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -11393,7 +11398,6 @@ Charred Grass Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -11412,6 +11416,7 @@ Cave Plant (Stem):
   ID: 326
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -11428,7 +11433,6 @@ Cave Plant (Stem):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -11447,6 +11451,7 @@ Cave Plant (Cap):
   ID: 327
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -11463,7 +11468,6 @@ Cave Plant (Cap):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -11482,6 +11486,7 @@ Frozen Nitrogen:
   ID: 328
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -11498,7 +11503,6 @@ Frozen Nitrogen:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -11517,6 +11521,7 @@ Desert Chalice Block:
   ID: 329
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -11533,7 +11538,6 @@ Desert Chalice Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -11552,6 +11556,7 @@ Salpeter Plant Light Block:
   ID: 330
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -11562,13 +11567,12 @@ Salpeter Plant Light Block:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 0, 16]
+  lightColor: [0, 0, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -11587,6 +11591,7 @@ Salpeter Plant Trap Block:
   ID: 331
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -11603,7 +11608,6 @@ Salpeter Plant Trap Block:
   moveMod: 0.001
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -11622,6 +11626,7 @@ Patinated Brass:
   ID: 332
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -11638,7 +11643,6 @@ Patinated Brass:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -11657,6 +11661,7 @@ Patinated Bronze:
   ID: 333
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -11673,7 +11678,6 @@ Patinated Bronze:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -11692,6 +11696,7 @@ Metal Framed Glass:
   ID: 334
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -11708,7 +11713,6 @@ Metal Framed Glass:
   moveMod: 1
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -11727,6 +11731,7 @@ Ceramic Tiling:
   ID: 335
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -11743,7 +11748,6 @@ Ceramic Tiling:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -11762,6 +11766,7 @@ Small Fern:
   ID: 336
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -11778,7 +11783,6 @@ Small Fern:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -11797,6 +11801,7 @@ Tall Fern:
   ID: 337
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -11813,7 +11818,6 @@ Tall Fern:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -11832,6 +11836,7 @@ Jungle Plant 2:
   ID: 338
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -11848,7 +11853,6 @@ Jungle Plant 2:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -11867,6 +11871,7 @@ Jungle Plant 3:
   ID: 339
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -11883,7 +11888,6 @@ Jungle Plant 3:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -11902,6 +11906,7 @@ Jungle Plant 4:
   ID: 340
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -11918,7 +11923,6 @@ Jungle Plant 4:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -11937,6 +11941,7 @@ Jungle Plant 5:
   ID: 341
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -11953,7 +11958,6 @@ Jungle Plant 5:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -11972,6 +11976,7 @@ Jungle Plant 6:
   ID: 342
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -11988,7 +11993,6 @@ Jungle Plant 6:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -12007,6 +12011,7 @@ Jungle Plant 7:
   ID: 343
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -12023,7 +12028,6 @@ Jungle Plant 7:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -12042,6 +12046,7 @@ Deciduous Sapling:
   ID: 344
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -12058,7 +12063,6 @@ Deciduous Sapling:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -12077,6 +12081,7 @@ Conifer Sapling:
   ID: 345
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -12093,7 +12098,6 @@ Conifer Sapling:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -12112,6 +12116,7 @@ Swamp Sapling:
   ID: 346
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -12128,7 +12133,6 @@ Swamp Sapling:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -12147,6 +12151,7 @@ Savanna Sapling:
   ID: 347
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -12163,7 +12168,6 @@ Savanna Sapling:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -12182,6 +12186,7 @@ Dead Sapling:
   ID: 348
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -12198,7 +12203,6 @@ Dead Sapling:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -12217,6 +12221,7 @@ Jungle Sapling:
   ID: 349
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -12233,7 +12238,6 @@ Jungle Sapling:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -12252,6 +12256,7 @@ Fruit Tree Sapling:
   ID: 350
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -12268,7 +12273,6 @@ Fruit Tree Sapling:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -12287,6 +12291,7 @@ Sugar Tree Sapling:
   ID: 351
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -12297,13 +12302,12 @@ Sugar Tree Sapling:
   explosionResistance: 0.05
   flammability: 2
   floatingAction: 2
-  lightColor: [8, 0, 0]
+  lightColor: [8, 8, 8]
   lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -12322,6 +12326,7 @@ Palm Sapling:
   ID: 352
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -12338,7 +12343,6 @@ Palm Sapling:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -12357,6 +12361,7 @@ Sandbags:
   ID: 353
   allowsLight: false
   burnTransformID: 5
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -12373,7 +12378,6 @@ Sandbags:
   moveMod: 0.8
   movesPowder: false
   occlusion: all
-  physicsProperty: liquid
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -12392,8 +12396,9 @@ Yellow Bargonite Crystal:
   ID: 354
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [214, 214, 37]
+  color: [214, 214, 214]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12402,13 +12407,12 @@ Yellow Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [15, 15, 0]
+  lightColor: [15, 15, 15]
   lightColorFilter: [1, 1, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -12427,8 +12431,9 @@ Orange Bargonite Crystal:
   ID: 355
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [214, 126, 37]
+  color: [214, 214, 214]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12437,13 +12442,12 @@ Orange Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [15, 9, 0]
+  lightColor: [15, 15, 15]
   lightColorFilter: [1, 0.6, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -12462,8 +12466,9 @@ Magenta Bargonite Crystal:
   ID: 356
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [214, 37, 214]
+  color: [214, 214, 214]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12472,13 +12477,12 @@ Magenta Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [15, 0, 15]
+  lightColor: [15, 15, 15]
   lightColorFilter: [1, 0, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -12497,8 +12501,9 @@ Cyan Bargonite Crystal:
   ID: 357
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [37, 214, 214]
+  color: [37, 37, 37]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12507,13 +12512,12 @@ Cyan Bargonite Crystal:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 15, 15]
+  lightColor: [0, 0, 0]
   lightColorFilter: [0, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -12532,8 +12536,9 @@ Yellow Stained Glass:
   ID: 358
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [255, 255, 0]
+  color: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12542,13 +12547,12 @@ Yellow Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [6, 6, 0]
+  lightColor: [6, 6, 6]
   lightColorFilter: [1, 1, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -12567,8 +12571,9 @@ Orange Stained Glass:
   ID: 359
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [255, 150, 0]
+  color: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12577,13 +12582,12 @@ Orange Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [6, 4, 0]
+  lightColor: [6, 6, 6]
   lightColorFilter: [1, 0.6, 0]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -12602,8 +12606,9 @@ Magenta Stained Glass:
   ID: 360
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [255, 0, 255]
+  color: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12612,13 +12617,12 @@ Magenta Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [6, 0, 6]
+  lightColor: [6, 6, 6]
   lightColorFilter: [1, 0, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -12637,8 +12641,9 @@ Cyan Stained Glass:
   ID: 361
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [0, 200, 200]
+  color: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12647,13 +12652,12 @@ Cyan Stained Glass:
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 6, 6]
+  lightColor: [0, 0, 0]
   lightColorFilter: [0, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: self
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -12672,8 +12676,9 @@ Yellow Lamp (on):
   ID: 362
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [255, 255, 0]
+  color: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12682,13 +12687,12 @@ Yellow Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [24, 24, 0]
+  lightColor: [24, 24, 24]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -12707,8 +12711,9 @@ Yellow Lamp:
   ID: 363
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [30, 30, 0]
+  color: [30, 30, 30]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12723,7 +12728,6 @@ Yellow Lamp:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -12742,8 +12746,9 @@ Orange Lamp (on):
   ID: 364
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [255, 150, 0]
+  color: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12752,13 +12757,12 @@ Orange Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [24, 14, 0]
+  lightColor: [24, 24, 24]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -12777,8 +12781,9 @@ Orange Lamp:
   ID: 365
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [30, 18, 0]
+  color: [30, 30, 30]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12793,7 +12798,6 @@ Orange Lamp:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -12812,8 +12816,9 @@ Magenta Lamp (on):
   ID: 366
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [255, 0, 255]
+  color: [255, 255, 255]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12822,13 +12827,12 @@ Magenta Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [24, 0, 24]
+  lightColor: [24, 24, 24]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -12847,8 +12851,9 @@ Magenta Lamp:
   ID: 367
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [30, 0, 30]
+  color: [30, 30, 30]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12863,7 +12868,6 @@ Magenta Lamp:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -12882,8 +12886,9 @@ Cyan Lamp (on):
   ID: 368
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [0, 200, 200]
+  color: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12892,13 +12897,12 @@ Cyan Lamp (on):
   explosionResistance: 0.9
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 24, 24]
+  lightColor: [0, 0, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -12917,8 +12921,9 @@ Cyan Lamp:
   ID: 369
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
-  color: [0, 24, 24]
+  color: [0, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -12933,7 +12938,6 @@ Cyan Lamp:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -12952,6 +12956,7 @@ Cut Stone Block:
   ID: 370
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -12968,7 +12973,6 @@ Cut Stone Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -12987,6 +12991,7 @@ Cut Granite Block:
   ID: 371
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -13003,7 +13008,6 @@ Cut Granite Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -13022,6 +13026,7 @@ Cut Limestone Block:
   ID: 372
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -13038,7 +13043,6 @@ Cut Limestone Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -13057,6 +13061,7 @@ Cut Marble Block:
   ID: 373
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -13073,7 +13078,6 @@ Cut Marble Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -13092,6 +13096,7 @@ Cut Sandstone Block:
   ID: 374
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -13108,7 +13113,6 @@ Cut Sandstone Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -13127,6 +13131,7 @@ Cut Red Sandstone Block:
   ID: 375
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -13143,7 +13148,6 @@ Cut Red Sandstone Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -13162,6 +13166,7 @@ Chiseled Marble Block:
   ID: 376
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -13178,7 +13183,6 @@ Chiseled Marble Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -13197,6 +13201,7 @@ Chiseled Sandstone Block:
   ID: 377
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -13213,7 +13218,6 @@ Chiseled Sandstone Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -13232,6 +13236,7 @@ Chiseled Red Sandstone Block:
   ID: 378
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -13248,7 +13253,6 @@ Chiseled Red Sandstone Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -13267,6 +13271,7 @@ Chiseled Marble Ornament Block:
   ID: 379
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -13283,7 +13288,6 @@ Chiseled Marble Ornament Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -13302,6 +13306,7 @@ Marble Column:
   ID: 380
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -13318,7 +13323,6 @@ Marble Column:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -13337,6 +13341,7 @@ Twisted Marble Column:
   ID: 381
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -13353,7 +13358,6 @@ Twisted Marble Column:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -13372,6 +13376,7 @@ Chiseled Sandstone Ornament Block:
   ID: 382
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -13388,7 +13393,6 @@ Chiseled Sandstone Ornament Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -13407,6 +13411,7 @@ Chiseled Red Sandstone Ornament Block:
   ID: 383
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -13423,7 +13428,6 @@ Chiseled Red Sandstone Ornament Block:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -13442,6 +13446,7 @@ Dry Mud:
   ID: 384
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -13458,7 +13463,6 @@ Dry Mud:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -13477,6 +13481,7 @@ Half-Dry Mud:
   ID: 385
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -13493,7 +13498,6 @@ Half-Dry Mud:
   moveMod: 0.7
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -13512,6 +13516,7 @@ Tholin Dust:
   ID: 386
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -13528,7 +13533,6 @@ Tholin Dust:
   moveMod: 0.9
   movesPowder: false
   occlusion: all
-  physicsProperty: powder
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -13547,6 +13551,7 @@ Frozen Methane:
   ID: 387
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -13563,7 +13568,6 @@ Frozen Methane:
   moveMod: 0.8
   movesPowder: false
   occlusion: all
-  physicsProperty: snow
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -13582,6 +13586,7 @@ Little Icecaps:
   ID: 388
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -13592,13 +13597,12 @@ Little Icecaps:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
-  lightColor: [0, 6, 8]
+  lightColor: [0, 0, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -13617,6 +13621,7 @@ Terror Lichen:
   ID: 389
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -13633,7 +13638,6 @@ Terror Lichen:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -13652,6 +13656,7 @@ Sorrowthorn:
   ID: 390
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -13668,7 +13673,6 @@ Sorrowthorn:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -13687,6 +13691,7 @@ Skeleton Flower:
   ID: 391
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -13703,7 +13708,6 @@ Skeleton Flower:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -13722,6 +13726,7 @@ Methane Ball Plant:
   ID: 392
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -13738,7 +13743,6 @@ Methane Ball Plant:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -13757,6 +13761,7 @@ Sanguine Sacs:
   ID: 393
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -13773,7 +13778,6 @@ Sanguine Sacs:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -13792,6 +13796,7 @@ Trtion Sacs:
   ID: 394
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -13808,7 +13813,6 @@ Trtion Sacs:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -13827,6 +13831,7 @@ Dreamweed:
   ID: 395
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -13837,13 +13842,12 @@ Dreamweed:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
-  lightColor: [0, 8, 6]
+  lightColor: [0, 0, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 0.6
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -13862,6 +13866,7 @@ Light Blue Dreamweed:
   ID: 396
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -13872,13 +13877,12 @@ Light Blue Dreamweed:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
-  lightColor: [0, 6, 8]
+  lightColor: [0, 0, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 0.8
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -13897,6 +13901,7 @@ Sticky Dreamweed:
   ID: 397
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -13907,13 +13912,12 @@ Sticky Dreamweed:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
-  lightColor: [6, 8, 0]
+  lightColor: [6, 6, 6]
   lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 0.1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -13932,6 +13936,7 @@ Striped Dreamweed:
   ID: 398
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -13942,13 +13947,12 @@ Striped Dreamweed:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
-  lightColor: [6, 0, 8]
+  lightColor: [6, 6, 6]
   lightColorFilter: [1, 1, 1]
   meshType: cross
   moveMod: 0.8
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -13967,6 +13971,7 @@ Mycelia Overgrown Stone (Little Icecaps):
   ID: 399
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -13977,13 +13982,12 @@ Mycelia Overgrown Stone (Little Icecaps):
   explosionResistance: 1
   flammability: 0
   floatingAction: 1
-  lightColor: [0, 4, 5]
+  lightColor: [0, 0, 0]
   lightColorFilter: [1, 1, 1]
   meshType: cube
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -14002,6 +14006,7 @@ Wood (Mangrove Tree):
   ID: 400
   allowsLight: false
   burnTransformID: 401
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -14018,7 +14023,6 @@ Wood (Mangrove Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -14037,6 +14041,7 @@ Charred Wood (Mangrove Tree):
   ID: 401
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [64, 64, 64]
   crushable: false
@@ -14053,7 +14058,6 @@ Charred Wood (Mangrove Tree):
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -14072,6 +14076,7 @@ Mangrovewood Planks:
   ID: 402
   allowsLight: false
   burnTransformID: 403
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -14088,7 +14093,6 @@ Mangrovewood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -14107,6 +14111,7 @@ Charred Mangrovewood Planks:
   ID: 403
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [64, 64, 64]
   crushable: false
@@ -14123,7 +14128,6 @@ Charred Mangrovewood Planks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -14142,6 +14146,7 @@ Leaves (Mangrove Tree):
   ID: 404
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -14158,7 +14163,6 @@ Leaves (Mangrove Tree):
   moveMod: 0.7
   movesPowder: false
   occlusion: selfOnly
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -14177,6 +14181,7 @@ Mangrove Sapling:
   ID: 405
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -14193,7 +14198,6 @@ Mangrove Sapling:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -14212,6 +14216,7 @@ Garas Vine:
   ID: 406
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -14228,7 +14233,6 @@ Garas Vine:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -14247,6 +14251,7 @@ Loam Bricks:
   ID: 407
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -14263,7 +14268,6 @@ Loam Bricks:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -14282,6 +14286,7 @@ Pink Mushroom:
   ID: 408
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -14298,7 +14303,6 @@ Pink Mushroom:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -14317,6 +14321,7 @@ Cyan Mushroom:
   ID: 409
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -14333,7 +14338,6 @@ Cyan Mushroom:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -14352,6 +14356,7 @@ Semisolid Tarmac:
   ID: 410
   allowsLight: false
   burnTransformID: 67
+  caPhysics: ""
   collide: true
   color: [170, 170, 170]
   crushable: false
@@ -14368,7 +14373,6 @@ Semisolid Tarmac:
   moveMod: 0.4
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -14387,6 +14391,7 @@ Tarmac:
   ID: 411
   allowsLight: false
   burnTransformID: 0
+  caPhysics: ""
   collide: true
   color: [255, 255, 255]
   crushable: false
@@ -14403,7 +14408,6 @@ Tarmac:
   moveMod: 1
   movesPowder: false
   occlusion: all
-  physicsProperty: none
   scatterSunRays: true
   sinkVal: 0
   spawnerVal: 0
@@ -14422,6 +14426,7 @@ Red Jungle Flower:
   ID: 412
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -14438,7 +14443,6 @@ Red Jungle Flower:
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -14457,6 +14461,7 @@ Fire:
   ID: 1000
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -14467,13 +14472,12 @@ Fire:
   explosionResistance: 0
   flammability: 0
   floatingAction: 2
-  lightColor: [24, 18, 11]
+  lightColor: [24, 24, 24]
   lightColorFilter: [1, 1, 1]
   meshType: none
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -14492,6 +14496,7 @@ Fire (Sulfur):
   ID: 1001
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -14502,13 +14507,12 @@ Fire (Sulfur):
   explosionResistance: 0
   flammability: 0
   floatingAction: 2
-  lightColor: [0, 0, 24]
+  lightColor: [0, 0, 0]
   lightColorFilter: [1, 1, 1]
   meshType: none
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -14527,6 +14531,7 @@ Fire (Light Metal):
   ID: 1002
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -14543,7 +14548,6 @@ Fire (Light Metal):
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -14562,6 +14566,7 @@ Fire (Lithium):
   ID: 1003
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -14572,13 +14577,12 @@ Fire (Lithium):
   explosionResistance: 0
   flammability: 0
   floatingAction: 2
-  lightColor: [31, 0, 5]
+  lightColor: [31, 31, 31]
   lightColorFilter: [1, 1, 1]
   meshType: none
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -14597,6 +14601,7 @@ Fire (Gas):
   ID: 1004
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: true
@@ -14607,13 +14612,12 @@ Fire (Gas):
   explosionResistance: 0
   flammability: 0
   floatingAction: 2
-  lightColor: [11, 11, 20]
+  lightColor: [11, 11, 11]
   lightColorFilter: [1, 1, 1]
   meshType: none
   moveMod: 1
   movesPowder: false
   occlusion: none
-  physicsProperty: none
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
@@ -14632,6 +14636,7 @@ Water:
   ID: 3946
   allowsLight: true
   burnTransformID: 0
+  caPhysics: ""
   collide: false
   color: [255, 255, 255]
   crushable: false
@@ -14648,7 +14653,6 @@ Water:
   moveMod: 1
   movesPowder: true
   occlusion: none
-  physicsProperty: liquid
   scatterSunRays: false
   sinkVal: 0
   spawnerVal: 0
