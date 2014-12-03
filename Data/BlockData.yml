@@ -3749,11 +3749,7 @@ Red Mushroom Block:
   burnTransformID: 235
   caPhysics: ""
   collide: true
-<<<<<<< HEAD
   color: [200, 0, 0]
-=======
-  color: [190, 190, 190]
->>>>>>> 96c6af4857ce43eda3b6cb8c6817756c091bd57a
   crushable: false
   emitter: ""
   explosionPower: 0
