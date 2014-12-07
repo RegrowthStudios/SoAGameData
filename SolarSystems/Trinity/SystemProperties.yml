@@ -1,0 +1,23 @@
+description: "The Trinity system is so cool"
+Binary:
+  name: Trinity_AB_Barycenter
+  bodies: [Trinity_A, Trinity_B]
+Trinity_A:
+  parent: Trinity_AB_Barycenter
+  path: Stars/TrinityA.yml
+  period: 3.0249e10
+  eccentricity: 0.0
+  pathColor: [255, 0, 0, 255]
+  orbitNormal: [-1.0, 0.0, 0.0]
+Trinity_B:
+  parent: Trinity_AB_Barycenter
+  path: Stars/TrinityB.yml
+  period: 3.0249e10
+  pathColor: [0, 255, 0, 255]
+  eccentricity: 0.0
+Trinity_C:
+  parent: Trinity_AB_Barycenter
+  path: Stars/TrinityC.yml
+  period: 4.7619e11
+  pathColor: [0, 0, 255, 0]
+  eccentricity: 0.13
