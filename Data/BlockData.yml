@@ -4758,7 +4758,7 @@ Xenon Lamp:
   waterBreak: false
   waterMeshLevel: 0
   waveEffect: 0
-Red Stained Glass:
+Red Bargonite Glass:
   ID: 136
   allowsLight: true
   burnTransformID: 0
@@ -4783,17 +4783,17 @@ Red Stained Glass:
   sinkVal: 0
   spawnerVal: 0
   supportive: true
-  textureBack: Blocks/Building/glass_stained.png
-  textureBottom: Blocks/Building/glass_stained.png
-  textureFront: Blocks/Building/glass_stained.png
-  textureLeft: Blocks/Building/glass_stained.png
-  textureRight: Blocks/Building/glass_stained.png
-  textureTop: Blocks/Building/glass_stained.png
+  textureBack: Blocks/Building/glass_bargonite.png
+  textureBottom: Blocks/Building/glass_bargonite.png
+  textureFront: Blocks/Building/glass_bargonite.png
+  textureLeft: Blocks/Building/glass_bargonite.png
+  textureRight: Blocks/Building/glass_bargonite.png
+  textureTop: Blocks/Building/glass_bargonite.png
   useable: true
   waterBreak: false
   waterMeshLevel: 0
   waveEffect: 0
-Green Stained Glass:
+Green Bargonite Glass:
   ID: 137
   allowsLight: true
   burnTransformID: 0
@@ -4818,17 +4818,17 @@ Green Stained Glass:
   sinkVal: 0
   spawnerVal: 0
   supportive: true
-  textureBack: Blocks/Building/glass_stained.png
-  textureBottom: Blocks/Building/glass_stained.png
-  textureFront: Blocks/Building/glass_stained.png
-  textureLeft: Blocks/Building/glass_stained.png
-  textureRight: Blocks/Building/glass_stained.png
-  textureTop: Blocks/Building/glass_stained.png
+  textureBack: Blocks/Building/glass_bargonite.png
+  textureBottom: Blocks/Building/glass_bargonite.png
+  textureFront: Blocks/Building/glass_bargonite.png
+  textureLeft: Blocks/Building/glass_bargonite.png
+  textureRight: Blocks/Building/glass_bargonite.png
+  textureTop: Blocks/Building/glass_bargonite.png
   useable: true
   waterBreak: false
   waterMeshLevel: 0
   waveEffect: 0
-Blue Stained Glass:
+Blue Bargonite Glass:
   ID: 138
   allowsLight: true
   burnTransformID: 0
@@ -4853,12 +4853,12 @@ Blue Stained Glass:
   sinkVal: 0
   spawnerVal: 0
   supportive: true
-  textureBack: Blocks/Building/glass_stained.png
-  textureBottom: Blocks/Building/glass_stained.png
-  textureFront: Blocks/Building/glass_stained.png
-  textureLeft: Blocks/Building/glass_stained.png
-  textureRight: Blocks/Building/glass_stained.png
-  textureTop: Blocks/Building/glass_stained.png
+  textureBack: Blocks/Building/glass_bargonite.png
+  textureBottom: Blocks/Building/glass_bargonite.png
+  textureFront: Blocks/Building/glass_bargonite.png
+  textureLeft: Blocks/Building/glass_bargonite.png
+  textureRight: Blocks/Building/glass_bargonite.png
+  textureTop: Blocks/Building/glass_bargonite.png
   useable: true
   waterBreak: false
   waterMeshLevel: 0
@@ -4933,7 +4933,7 @@ Pitch:
   waterBreak: false
   waterMeshLevel: 0
   waveEffect: 0
-White Stained Glass:
+White Bargonite Glass:
   ID: 141
   allowsLight: true
   burnTransformID: 0
@@ -4958,12 +4958,12 @@ White Stained Glass:
   sinkVal: 0
   spawnerVal: 0
   supportive: true
-  textureBack: Blocks/Building/glass_stained.png
-  textureBottom: Blocks/Building/glass_stained.png
-  textureFront: Blocks/Building/glass_stained.png
-  textureLeft: Blocks/Building/glass_stained.png
-  textureRight: Blocks/Building/glass_stained.png
-  textureTop: Blocks/Building/glass_stained.png
+  textureBack: Blocks/Building/glass_bargonite.png
+  textureBottom: Blocks/Building/glass_bargonite.png
+  textureFront: Blocks/Building/glass_bargonite.png
+  textureLeft: Blocks/Building/glass_bargonite.png
+  textureRight: Blocks/Building/glass_bargonite.png
+  textureTop: Blocks/Building/glass_bargonite.png
   useable: true
   waterBreak: false
   waterMeshLevel: 0
@@ -12528,7 +12528,7 @@ Cyan Bargonite Crystal:
   waterBreak: false
   waterMeshLevel: 0
   waveEffect: 0
-Yellow Stained Glass:
+Yellow Bargonite Glass:
   ID: 358
   allowsLight: true
   burnTransformID: 0
@@ -12553,17 +12553,17 @@ Yellow Stained Glass:
   sinkVal: 0
   spawnerVal: 0
   supportive: true
-  textureBack: Blocks/Building/glass_stained.png
-  textureBottom: Blocks/Building/glass_stained.png
-  textureFront: Blocks/Building/glass_stained.png
-  textureLeft: Blocks/Building/glass_stained.png
-  textureRight: Blocks/Building/glass_stained.png
-  textureTop: Blocks/Building/glass_stained.png
+  textureBack: Blocks/Building/glass_bargonite.png
+  textureBottom: Blocks/Building/glass_bargonite.png
+  textureFront: Blocks/Building/glass_bargonite.png
+  textureLeft: Blocks/Building/glass_bargonite.png
+  textureRight: Blocks/Building/glass_bargonite.png
+  textureTop: Blocks/Building/glass_bargonite.png
   useable: true
   waterBreak: false
   waterMeshLevel: 0
   waveEffect: 0
-Orange Stained Glass:
+Orange Bargonite Glass:
   ID: 359
   allowsLight: true
   burnTransformID: 0
@@ -12588,17 +12588,17 @@ Orange Stained Glass:
   sinkVal: 0
   spawnerVal: 0
   supportive: true
-  textureBack: Blocks/Building/glass_stained.png
-  textureBottom: Blocks/Building/glass_stained.png
-  textureFront: Blocks/Building/glass_stained.png
-  textureLeft: Blocks/Building/glass_stained.png
-  textureRight: Blocks/Building/glass_stained.png
-  textureTop: Blocks/Building/glass_stained.png
+  textureBack: Blocks/Building/glass_bargonite.png
+  textureBottom: Blocks/Building/glass_bargonite.png
+  textureFront: Blocks/Building/glass_bargonite.png
+  textureLeft: Blocks/Building/glass_bargonite.png
+  textureRight: Blocks/Building/glass_bargonite.png
+  textureTop: Blocks/Building/glass_bargonite.png
   useable: true
   waterBreak: false
   waterMeshLevel: 0
   waveEffect: 0
-Magenta Stained Glass:
+Magenta Bargonite Glass:
   ID: 360
   allowsLight: true
   burnTransformID: 0
@@ -12623,17 +12623,17 @@ Magenta Stained Glass:
   sinkVal: 0
   spawnerVal: 0
   supportive: true
-  textureBack: Blocks/Building/glass_stained.png
-  textureBottom: Blocks/Building/glass_stained.png
-  textureFront: Blocks/Building/glass_stained.png
-  textureLeft: Blocks/Building/glass_stained.png
-  textureRight: Blocks/Building/glass_stained.png
-  textureTop: Blocks/Building/glass_stained.png
+  textureBack: Blocks/Building/glass_bargonite.png
+  textureBottom: Blocks/Building/glass_bargonite.png
+  textureFront: Blocks/Building/glass_bargonite.png
+  textureLeft: Blocks/Building/glass_bargonite.png
+  textureRight: Blocks/Building/glass_bargonite.png
+  textureTop: Blocks/Building/glass_bargonite.png
   useable: true
   waterBreak: false
   waterMeshLevel: 0
   waveEffect: 0
-Cyan Stained Glass:
+Cyan Bargonite Glass:
   ID: 361
   allowsLight: true
   burnTransformID: 0
@@ -12658,12 +12658,12 @@ Cyan Stained Glass:
   sinkVal: 0
   spawnerVal: 0
   supportive: true
-  textureBack: Blocks/Building/glass_stained.png
-  textureBottom: Blocks/Building/glass_stained.png
-  textureFront: Blocks/Building/glass_stained.png
-  textureLeft: Blocks/Building/glass_stained.png
-  textureRight: Blocks/Building/glass_stained.png
-  textureTop: Blocks/Building/glass_stained.png
+  textureBack: Blocks/Building/glass_bargonite.png
+  textureBottom: Blocks/Building/glass_bargonite.png
+  textureFront: Blocks/Building/glass_bargonite.png
+  textureLeft: Blocks/Building/glass_bargonite.png
+  textureRight: Blocks/Building/glass_bargonite.png
+  textureTop: Blocks/Building/glass_bargonite.png
   useable: true
   waterBreak: false
   waterMeshLevel: 0
