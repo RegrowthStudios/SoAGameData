@@ -18,6 +18,11 @@ Trinity_B:
 Trinity_C:
   parent: Trinity_AB_Barycenter
   path: Stars/TrinityC.yml
-  period: 4.7619e11
-  pathColor: [0, 0, 255, 0]
-  eccentricity: 0.13
+  period: 1.7619e11
+  pathColor: [0, 0, 255, 255]
+  eccentricity: 0.63
+Hyperion:
+  parent: Trinity_B
+  path: GasGiants/Hyperion.yml
+  period: 3.1493e7
+  eccentricity: 0.0006
