@@ -26,3 +26,103 @@ Hyperion:
   path: GasGiants/Hyperion.yml
   period: 3.1493e7
   eccentricity: 0.0006
+Kolasi:
+  parent: Hyperion
+  path: Planets/Kolasi.yml
+  period: 1.5000e04
+  eccentricity: 0.0123
+Apollo:
+  parent: Hyperion
+  path: Planets/Apollo.yml
+  period: 3.0000e04
+  eccentricity: 0.0095
+Gemini:
+  parent: Hyperion
+  path: Planets/Gemini.yml
+  period: 4.5000e04
+  eccentricity: 0.0088
+Aldrin:
+  parent: Hyperion
+  path: Planets/Aldrin.yml
+  period: 9.0e4
+  eccentricity: 0.0017
+Darwin:
+  parent: Hyperion
+  path: Planets/Darwin.yml
+  period: 1.8000e05
+  eccentricity: 0.0075
+Fyto:
+  parent: Hyperion
+  path: Planets/Fyto.yml
+  period: 3.2000e05
+  eccentricity: 0.0052
+Selene:
+  parent: Hyperion
+  path: Planets/Selene.yml
+  period: 6.5455e05
+  eccentricity: 0.0005
+Niobe:
+  parent: Hyperion
+  path: Planets/Niobe.yml
+  period: 9.6000e05
+  eccentricity: 0.0
+Hyperion-1:
+  parent: Hyperion
+  path: Planets/Hyperion_1.yml
+  period: 9.6000e05
+  eccentricity: 0.0
+Hyperion-2:
+  parent: Hyperion
+  path: Planets/Hyperion_2.yml
+  period: 9.6000e05
+  eccentricity: 0.0
+Tantalus:
+  parent: Hyperion
+  path: Planets/Tantalus.yml
+  period: 1.4400e06
+  eccentricity: 0.0
+Pelops:
+  parent: Hyperion
+  path: Planets/Pelops.yml
+  period: 1.4400e06
+  eccentricity: 0.0
+Hyperion-3:
+  parent: Hyperion
+  path: Planets/Hyperion_3.yml
+  period: 1.4400e06
+  eccentricity: 0.0
+Arctos:
+  parent: Hyperion
+  path: Planets/Arctos.yml
+  period: 2.0160e06
+  eccentricity: 0.02
+Junos:
+  parent: Hyperion
+  path: Planets/Junos.yml
+  period: 2.3040e06
+  eccentricity: 0.0002
+Elios:
+  parent: Hyperion
+  path: Planets/Elios.yml
+  period: 2.5920e06
+  eccentricity: 0.0002
+Lotos:
+  parent: Hyperion
+  path: Planets/Lotos.yml
+  period: 2.8800e06
+  eccentricity: 0.0002
+Hyperion-4:
+  parent: Hyperion
+  path: Planets/Hyperion_4.yml
+  period: 3.1680e06
+  eccentricity: 0.0002
+Hyperion-5:
+  parent: Hyperion
+  path: Planets/Hyperion_5.yml
+  period: 3.4560e06
+  eccentricity: 0.0002
+Tros:
+  parent: Hyperion
+  path: Planets/Tros.yml
+  period: 1.0080e07
+  eccentricity: 0.1044
