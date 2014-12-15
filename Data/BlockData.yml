@@ -3749,7 +3749,7 @@ Red Mushroom Block:
   burnTransformID: 235
   caPhysics: ""
   collide: true
-  color: [190, 190, 190]
+  color: [200, 0, 0]
   crushable: false
   emitter: ""
   explosionPower: 0
@@ -4573,12 +4573,12 @@ Alien Plantoid Mine:
   sinkVal: 0
   spawnerVal: 0
   supportive: true
-  textureBack: Blocks/Explosives/mine_plantoid.png
-  textureBottom: Blocks/Explosives/mine_plantoid.png
-  textureFront: Blocks/Explosives/mine_plantoid.png
-  textureLeft: Blocks/Explosives/mine_plantoid.png
-  textureRight: Blocks/Explosives/mine_plantoid.png
-  textureTop: Blocks/Explosives/mine_plantoid.png
+  textureBack: Blocks/Explosives/mine_plantoid_side.png
+  textureBottom: Blocks/Explosives/mine_plantoid_bottom.png
+  textureFront: Blocks/Explosives/mine_plantoid_side.png
+  textureLeft: Blocks/Explosives/mine_plantoid_side.png
+  textureRight: Blocks/Explosives/mine_plantoid_side.png
+  textureTop: Blocks/Explosives/mine_plantoid_top.png
   useable: true
   waterBreak: false
   waterMeshLevel: 0
@@ -14239,6 +14239,216 @@ Garas Vine:
   textureLeft: Blocks/Flora_mesh/vine_garas.png
   textureRight: Blocks/Flora_mesh/vine_garas.png
   textureTop: Blocks/Flora_mesh/vine_garas.png
+  useable: true
+  waterBreak: true
+  waterMeshLevel: 0
+  waveEffect: 1
+Loam Bricks:
+  ID: 407
+  allowsLight: false
+  burnTransformID: 0
+  caPhysics: ""
+  collide: true
+  color: [255, 255, 255]
+  crushable: false
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 1
+  flammability: 0
+  floatingAction: 1
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
+  meshType: cube
+  moveMod: 1
+  movesPowder: false
+  occlusion: all
+  scatterSunRays: true
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: true
+  textureBack: Blocks/Building/bricks_loam_side.png
+  textureBottom: Blocks/Building/bricks_loam_top.png
+  textureFront: Blocks/Building/bricks_loam_side.png
+  textureLeft: Blocks/Building/bricks_loam_side.png
+  textureRight: Blocks/Building/bricks_loam_side.png
+  textureTop: Blocks/Building/bricks_loam_top.png
+  useable: true
+  waterBreak: false
+  waterMeshLevel: 0
+  waveEffect: 0
+Pink Mushroom:
+  ID: 408
+  allowsLight: true
+  burnTransformID: 0
+  caPhysics: ""
+  collide: false
+  color: [255, 255, 255]
+  crushable: true
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 0.05
+  flammability: 1
+  floatingAction: 2
+  lightColor: [5, 5, 5]
+  lightColorFilter: [1, 1, 1]
+  meshType: cross
+  moveMod: 1
+  movesPowder: false
+  occlusion: none
+  scatterSunRays: false
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: false
+  textureBack: Blocks/Flora_mesh/mushroom_small_pink.png
+  textureBottom: Blocks/Flora_mesh/mushroom_small_pink.png
+  textureFront: Blocks/Flora_mesh/mushroom_small_pink.png
+  textureLeft: Blocks/Flora_mesh/mushroom_small_pink.png
+  textureRight: Blocks/Flora_mesh/mushroom_small_pink.png
+  textureTop: Blocks/Flora_mesh/mushroom_small_pink.png
+  useable: true
+  waterBreak: true
+  waterMeshLevel: 0
+  waveEffect: 0
+Cyan Mushroom:
+  ID: 409
+  allowsLight: true
+  burnTransformID: 0
+  caPhysics: ""
+  collide: false
+  color: [255, 255, 255]
+  crushable: true
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 0.05
+  flammability: 1
+  floatingAction: 2
+  lightColor: [5, 5, 5]
+  lightColorFilter: [1, 1, 1]
+  meshType: cross
+  moveMod: 1
+  movesPowder: false
+  occlusion: none
+  scatterSunRays: false
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: false
+  textureBack: Blocks/Flora_mesh/mushroom_small_cyan.png
+  textureBottom: Blocks/Flora_mesh/mushroom_small_cyan.png
+  textureFront: Blocks/Flora_mesh/mushroom_small_cyan.png
+  textureLeft: Blocks/Flora_mesh/mushroom_small_cyan.png
+  textureRight: Blocks/Flora_mesh/mushroom_small_cyan.png
+  textureTop: Blocks/Flora_mesh/mushroom_small_cyan.png
+  useable: true
+  waterBreak: true
+  waterMeshLevel: 0
+  waveEffect: 0
+Semisolid Tarmac:
+  ID: 410
+  allowsLight: false
+  burnTransformID: 67
+  caPhysics: ""
+  collide: true
+  color: [170, 170, 170]
+  crushable: false
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 1
+  flammability: 1
+  floatingAction: 1
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
+  meshType: cube
+  moveMod: 0.4
+  movesPowder: false
+  occlusion: all
+  scatterSunRays: true
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: true
+  textureBack: Blocks/Building/tarmac.png
+  textureBottom: Blocks/Building/tarmac.png
+  textureFront: Blocks/Building/tarmac.png
+  textureLeft: Blocks/Building/tarmac.png
+  textureRight: Blocks/Building/tarmac.png
+  textureTop: Blocks/Building/tarmac.png
+  useable: true
+  waterBreak: false
+  waterMeshLevel: 0
+  waveEffect: 0
+Tarmac:
+  ID: 411
+  allowsLight: false
+  burnTransformID: 0
+  caPhysics: ""
+  collide: true
+  color: [255, 255, 255]
+  crushable: false
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 1
+  flammability: 0
+  floatingAction: 1
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
+  meshType: cube
+  moveMod: 1
+  movesPowder: false
+  occlusion: all
+  scatterSunRays: true
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: true
+  textureBack: Blocks/Building/tarmac.png
+  textureBottom: Blocks/Building/tarmac.png
+  textureFront: Blocks/Building/tarmac.png
+  textureLeft: Blocks/Building/tarmac.png
+  textureRight: Blocks/Building/tarmac.png
+  textureTop: Blocks/Building/tarmac.png
+  useable: true
+  waterBreak: false
+  waterMeshLevel: 0
+  waveEffect: 0
+Red Jungle Flower:
+  ID: 412
+  allowsLight: true
+  burnTransformID: 0
+  caPhysics: ""
+  collide: false
+  color: [255, 255, 255]
+  crushable: true
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 0.05
+  flammability: 3
+  floatingAction: 2
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
+  meshType: cross
+  moveMod: 1
+  movesPowder: false
+  occlusion: none
+  scatterSunRays: false
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: false
+  textureBack: Blocks/Flora_mesh/flower_red_jungle.png
+  textureBottom: Blocks/Flora_mesh/flower_red_jungle.png
+  textureFront: Blocks/Flora_mesh/flower_red_jungle.png
+  textureLeft: Blocks/Flora_mesh/flower_red_jungle.png
+  textureRight: Blocks/Flora_mesh/flower_red_jungle.png
+  textureTop: Blocks/Flora_mesh/flower_red_jungle.png
   useable: true
   waterBreak: true
   waterMeshLevel: 0
