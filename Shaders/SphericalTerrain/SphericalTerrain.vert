@@ -1,5 +1,6 @@
 // Uniforms
 uniform mat4 unWVP;
+uniform mat4 unRot;
 uniform vec2 unGridOffset;
 uniform float unRadius;
 uniform vec3 unCameraNormal;
@@ -25,7 +26,7 @@ void main() {
   position.z = normal.y * cos(theta2) - normal.y * sin(theta2) * unRadius;
   position.y = min(position.y, normal.x * sin(theta2) + normal.y * cos(theta2) * unRadius);
   position.xyz = normalize(position.xyz) * unRadius;
-  gl_Position = unWVP * position;
+  gl_Position = unWVP * unRot * position;
   
   if (abs(theta1) + abs(theta2) < 0.3) {
     fColor = vec3(1.0, 0.0, 0.0);
