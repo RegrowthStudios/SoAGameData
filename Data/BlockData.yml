@@ -14453,6 +14453,41 @@ Red Jungle Flower:
   waterBreak: true
   waterMeshLevel: 0
   waveEffect: 1
+Volcanic Ash:
+  ID: 413
+  allowsLight: false
+  burnTransformID: 0
+  caPhysics: Data/CA/Sand.yml
+  collide: true
+  color: [255, 255, 255]
+  crushable: false
+  emitter: ""
+  explosionPower: 0
+  explosionPowerLoss: 0
+  explosionRays: 0
+  explosionResistance: 1
+  flammability: 0
+  floatingAction: 1
+  lightColor: [0, 0, 0]
+  lightColorFilter: [1, 1, 1]
+  meshType: cube
+  moveMod: 0.75
+  movesPowder: false
+  occlusion: all
+  scatterSunRays: true
+  sinkVal: 0
+  spawnerVal: 0
+  supportive: true
+  textureBack: Blocks/Terrain/ash_volcanic.png
+  textureBottom: Blocks/Terrain/ash_volcanic.png
+  textureFront: Blocks/Terrain/ash_volcanic.png
+  textureLeft: Blocks/Terrain/ash_volcanic.png
+  textureRight: Blocks/Terrain/ash_volcanic.png
+  textureTop: Blocks/Terrain/ash_volcanic.png
+  useable: true
+  waterBreak: false
+  waterMeshLevel: 0
+  waveEffect: 0
 Fire:
   ID: 1000
   allowsLight: true
