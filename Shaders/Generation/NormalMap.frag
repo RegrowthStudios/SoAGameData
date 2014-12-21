@@ -20,7 +20,7 @@ void main() {
     float b = textureOffset(unHeightMap, fUV, ivec2(0, 1)).x;
     float bl = textureOffset(unHeightMap, fUV, ivec2(-1, 1)).x;
     float l = textureOffset(unHeightMap, fUV, ivec2(-1, 0)).x;
-    
+
     // Compute dX using Sobel:
     //           -1 0 1 
     //           -2 0 2
@@ -33,8 +33,7 @@ void main() {
     //            1  2  1
     float dY = bl + 2 * b + br - tl - 2 * t - tr;
     
-    vec3 middle = normalize(vec3(0.0, h, 0.0));
-    vec3 right = normalize(vec3(unWidth, dX, 0.0) - middle);
-    vec3 front = normalize(vec3(0.0, dY, unWidth) - middle);
+    vec3 right = normalize(vec3(unWidth, dX, 0.0));
+    vec3 front = normalize(vec3(0.0, dY, unWidth));
     pNormal = normalize(cross(front, right));
 }
