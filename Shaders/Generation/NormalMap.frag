@@ -10,7 +10,7 @@ out vec3 pNormal;
 
 void main() {
 
-    float h = texture(unHeightMap, fUV);
+    float h = texture(unHeightMap, fUV).x;
     // Get neighbor height values
     float tl = textureOffset(unHeightMap, fUV, ivec2(-1, -1)).x;
     float t = textureOffset(unHeightMap, fUV, ivec2(0, -1)).x;
@@ -33,8 +33,8 @@ void main() {
     //            1  2  1
     float dY = bl + 2 * b + br - tl - 2 * t - tr;
     
-    vec3 middle = vec3(0.0, h, 0.0);
-    vec3 right = vec3(unWidth, dX, 0.0) - middle;
-    vec3 front = vec3(0.0, dY, unWidth) - middle;
-    pNormal = normalize(cross(right, front));
+    vec3 middle = normalize(vec3(0.0, h, 0.0));
+    vec3 right = normalize(vec3(unWidth, dX, 0.0) - middle);
+    vec3 front = normalize(vec3(0.0, dY, unWidth) - middle);
+    pNormal = normalize(cross(front, right));
 }
