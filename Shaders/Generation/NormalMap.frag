@@ -1,5 +1,6 @@
 // Uniforms
 uniform sampler2D unHeightMap;
+uniform float unWidth;
 
 // Inputs
 in vec2 fUV;
@@ -32,6 +33,8 @@ void main() {
     //            1  2  1
     float dY = bl + 2 * b + br - tl - 2 * t - tr;
     
-    const float intensity = 1.0f;
-    pNormal = normalize(vec3(dX, intensity, dY));
+    vec3 middle = vec3(0.0, h, 0.0);
+    vec3 right = vec3(unWidth, dX, 0.0) - middle;
+    vec3 front = vec3(0.0, dY, unWidth) - middle;
+    pNormal = normalize(cross(right, front));
 }
