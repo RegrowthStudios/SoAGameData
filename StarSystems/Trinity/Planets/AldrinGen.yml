@@ -1,0 +1,12 @@
+baseHeight:
+  base: 10
+  ridgedNoise:
+    octaves: 6
+    persistence: 0.7
+    frequency: 0.01
+    low: -100.0
+    high: 1000.0
+temperature:
+   base: 128.0
+humidity:
+   base: 128.0

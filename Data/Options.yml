@@ -6,7 +6,7 @@ GraphicsOptions:
   terrainQuality: 0
   texturePack: Default
   maxFps: 60
-  motionBlur: 0.0
+  motionBlur: 0
   msaa: 0
 GameOptions:
   invertMouse: false

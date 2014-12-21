@@ -11,14 +11,14 @@
 
 
 // Uniforms
-uniform vec3 cornerPos
-uniform float frequency;
+uniform vec3 cornerPos = vec3(0.0, 0.0, 0.0);
+uniform float scale = 10.0;
 
 // Inputs
 in vec3 fPos;
 
 // Outputs
-out vec4 pColor;
+out float height;
 
 vec3 mod289(vec3 x) {
   return x - floor(x * (1.0 / 289.0)) * 289.0;
@@ -113,8 +113,5 @@ float snoise(vec3 v)
 }
 
 void main() {
-
-  float c = snoise((cornerPos + fPos) * frequency);
-
-  pColor = vec4(c, c, c, 1.0);
+  height = 1000.0;//(snoise((cornerPos + fPos) * scale) + 1.0) * 1000.0;
 }
