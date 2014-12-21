@@ -3,7 +3,7 @@ baseHeight:
   ridgedNoise:
     octaves: 6
     persistence: 0.7
-    frequency: 0.01
+    frequency: 0.0001
     low: -100.0
     high: 1000.0
 temperature:

@@ -13,6 +13,7 @@
 // Uniforms
 uniform vec3 cornerPos = vec3(0.0, 0.0, 0.0);
 uniform float scale = 10.0;
+uniform float unPatchWidth;
 
 // Inputs
 in vec3 fPos;
@@ -113,5 +114,5 @@ float snoise(vec3 v)
 }
 
 void main() {
-  height = 1000.0;//(snoise((cornerPos + fPos) * scale) + 1.0) * 1000.0;
+  height = (snoise(cornerPos + fPos * unPatchWidth) + 1.0) * 1000.0;
 }
