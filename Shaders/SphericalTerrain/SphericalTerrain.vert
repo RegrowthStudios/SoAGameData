@@ -2,7 +2,7 @@
 uniform mat4 unWVP;
 uniform mat3 unWV3x3;
 uniform vec3 unEyeDirWorld;
-uniform vec3 unLightDirWorld = vec3(0.0, 1.0, 0.0);
+uniform vec3 unLightDirWorld = vec3(0.0, 0.0, 1.0);
 
 // Input
 in vec4 vPosition; // Position in object space
