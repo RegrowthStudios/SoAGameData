@@ -1,3 +1,5 @@
+#define PI_SQUARED 9.86960
+
 /// Calculate the fresnel term for BRDFs
 /// @param reflectance: Reflectance value [0, 1]
 /// @param dotVH: Dot product of view and half-angle vectors
@@ -40,9 +42,13 @@ float cookTorrance(in vec3 N, in vec3 V, in vec3 L, in float reflectance, in flo
   float dotNL = dot(N, L);
   float dotVH = dot(V, H);
   
-  float F = fresnel(reflectance, dotVH);
+  float F = fresnel(reflectance + 1, dotVH);
   float D = microfacet(dotNH * dotNH, max(0.001, roughnessSquared));
   float G = geometricAttenuation(dotNH, dotVH, max(0.001, dotNV), dotNL);
   
-  return (F * D * G) / (3.14159 * dotNV);
+  return (F * D * G) / (PI_SQUARED * dotNV);
+}
+
+float intensity(in vec3 c) {
+  return 0.2 * c.r + 0.7 * c.g + 0.1 * c.b;
 }
