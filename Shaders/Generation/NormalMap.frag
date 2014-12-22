@@ -35,5 +35,5 @@ void main() {
     
     vec3 right = normalize(vec3(unWidth, dX, 0.0));
     vec3 front = normalize(vec3(0.0, dY, unWidth));
-    pNormal = normalize(cross(front, right));
+    pNormal = (normalize(cross(front, right)) + 1.0) / 2.0;
 }

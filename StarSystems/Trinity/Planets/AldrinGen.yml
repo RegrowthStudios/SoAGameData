@@ -1,8 +1,8 @@
 baseHeight:
   base: 10
   ridgedNoise:
-    octaves: 8
-    persistence: 0.7
+    octaves: 4
+    persistence: 0.9
     frequency: 0.0001
     low: -100.0
     high: 1000.0
