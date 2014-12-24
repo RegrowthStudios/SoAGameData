@@ -43,7 +43,7 @@ Gemini:
   eccentricity: 0.0088
 Aldrin:
   parent: Hyperion
-  path: Planets/Aldrin.yml
+  path: Planets/Aldrin/Aldrin.yml
   period: 9.0e4
   eccentricity: 0.0017
 Darwin:

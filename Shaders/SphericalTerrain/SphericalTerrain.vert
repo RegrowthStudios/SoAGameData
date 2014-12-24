@@ -9,12 +9,14 @@ in vec4 vPosition; // Position in object space
 in vec3 vTangent;
 in vec3 vColor;
 in vec2 vUV;
+in vec2 vTemp_Hum;
 
 // Output
 out vec3 fColor;
 out vec2 fUV;
 out vec3 fEyeDirTangent;
 out vec3 fLightDirTangent;
+out vec2 fTemp_Hum;
 
 void main() {
   vec3 normal = normalize(vPosition.xyz);
@@ -39,4 +41,5 @@ void main() {
   gl_Position = unWVP * vPosition;
   fColor = vColor;
   fUV = vUV;
+  fTemp_Hum = vTemp_Hum;
 }
