@@ -38,8 +38,13 @@ void main() {
   fLightDirTangent.z = dot( lightDirCamera, b );
   fLightDirTangent = normalize(fLightDirTangent);
   
+  float mult = 1.0;
+  float angle = dot(unLightDirWorld, -normal);
+  mult = clamp( 1.0 - angle * 3.0, 0.0, 1.0);
+  
+  
   gl_Position = unWVP * vPosition;
-  fColor = vColor;
+  fColor = vColor * mult;
   fUV = vUV;
   fTemp_Hum = vTemp_Hum;
 }
