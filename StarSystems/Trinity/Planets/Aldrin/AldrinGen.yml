@@ -1,0 +1,35 @@
+terrainColor: Planets/Aldrin/TerrainColor.png
+terrainTexture: Planets/Shared/terrain_a.png
+liquidColor: 
+  depthScale: 400.0
+  path: Planets/Shared/water_color.png
+baseHeight:
+  base: -300
+  noise:
+    octaves: 6
+    persistence: 0.9
+    frequency: 0.0006
+    low: 0.0
+    high: 256.0
+  ridgedNoise:
+    octaves: 4
+    persistence: 0.9
+    frequency: 0.0001
+    low: -400.0
+    high: 400.0
+temperature:
+  base: 64.0
+  noise:
+    octaves: 6
+    persistence: 0.9
+    frequency: 0.0002
+    low: 0.0
+    high: 128.0
+humidity:
+  base: 64.0
+  noise:
+    octaves: 6
+    persistence: 0.9
+    frequency: 0.0003
+    low: 0.0
+    high: 256.0
