@@ -1,8 +1,12 @@
-terrainColor: Planets/Aldrin/TerrainColor.png
-terrainTexture: Planets/Shared/terrain_a.png
+terrainColor: 
+  tint: [255, 255, 255]
+  colorPath: Planets/Aldrin/TerrainColor.png
+  texturePath: Planets/Shared/terrain_a.png
 liquidColor: 
   depthScale: 400.0
-  path: Planets/Shared/water_color.png
+  tint: [255, 255, 255]
+  colorPath: Planets/Shared/water_color.png
+  texturePath: Planets/Shared/water_a.png
 baseHeight:
   base: -300
   noise:
