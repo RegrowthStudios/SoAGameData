@@ -1,6 +1,6 @@
 // Uniforms
 uniform sampler2D unNormalMap;
-uniform sampler2D unTexture;
+uniform sampler2D unTexture ;
 uniform sampler2D unColorMap;
 uniform vec3 unNormMult;
 
@@ -22,5 +22,5 @@ void main() {
 
   vec3 color = fColor.rgb * texture(unColorMap, fTemp_Hum).rgb * texture(unTexture, fUV).rgb;
   
-  pColor = vec4(color * cosTheta, 1.0);
+  pColor = vec4(color * cosTheta * 1.5, 1.0);
 }

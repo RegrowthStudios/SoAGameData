@@ -3,4 +3,4 @@ planet:
   mass: 2.2694e24
   axis: [0.1, 0.9, 0.0]
   angularSpeed: 0.0000727
-  generation: "Planets/Aldrin/AldrinGen.yml"
+  generation: "Planets/Aldrin/terrain_gen.yml"

@@ -1,3 +1,4 @@
+biomes: "Planets/Andrin/biome_gen.yml"
 terrainColor: 
   tint: [255, 255, 255]
   colorPath: Planets/Aldrin/TerrainColor.png
@@ -12,9 +13,9 @@ baseHeight:
   noise:
     octaves: 6
     persistence: 0.9
-    frequency: 0.0006
+    frequency: 0.0005
     low: 0.0
-    high: 256.0
+    high: 200.0
   ridgedNoise:
     octaves: 4
     persistence: 0.9
@@ -28,7 +29,7 @@ temperature:
     persistence: 0.9
     frequency: 0.0002
     low: 0.0
-    high: 128.0
+    high: 200.0
 humidity:
   base: 64.0
   noise:
