@@ -23,13 +23,13 @@ baseHeight:
     low: -100.0
     high: 75.0
 temperature:
-  base: 128.0
+  base: 172.0
   noise:
     octaves: 6
     persistence: 0.9
     frequency: 0.00033
-    low: -128.0
-    high: 128.0
+    low: -64.0
+    high: 64.0
 humidity:
   base: 128.0
   noise:

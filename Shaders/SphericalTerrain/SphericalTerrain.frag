@@ -8,6 +8,7 @@ uniform vec3 unLightDirWorld = vec3(0.0, 0.0, 1.0);
 
 // Input
 in vec3 fColor;
+in vec2 fnUV;
 in vec2 fUV;
 in vec2 fTemp_Hum;
 in mat3 fTbn;
@@ -17,7 +18,7 @@ out vec4 pColor;
 
 void main() {
   
-  vec3 normal = fTbn * normalize(((texture(unNormalMap, fUV).rgb * 2.0) - 1.0) * unNormMult);
+  vec3 normal = fTbn * normalize(((texture(unNormalMap, fnUV).rgb * 2.0) - 1.0) * unNormMult);
   
   float cosTheta = clamp( dot( normal, unLightDirWorld ), 0,1 );
 

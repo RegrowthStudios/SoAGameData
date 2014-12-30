@@ -2,6 +2,7 @@
 uniform mat4 unWVP;
 uniform mat4 unW;
 uniform vec3 unLightDirWorld;
+uniform float unTexelWidth;
 
 // Input
 in vec4 vPosition; // Position in object space
@@ -12,6 +13,7 @@ in vec2 vTemp_Hum;
 
 // Output
 out vec3 fColor;
+out vec2 fnUV;
 out vec2 fUV;
 out vec2 fTemp_Hum;
 out mat3 fTbn;
@@ -32,6 +34,9 @@ void main() {
   gl_Position = unWVP * vPosition;
   fColor = vColor;
   fUV = vUV;
+  // Move normal map UV in by 1 texel in each direction
+  fnUV = vUV * ((unTexelWidth - 2.0001) / unTexelWidth);
+  fnUV = fUV + 1.0 / unTexelWidth + 0.0001;
   
   fTemp_Hum = vTemp_Hum;
 }
