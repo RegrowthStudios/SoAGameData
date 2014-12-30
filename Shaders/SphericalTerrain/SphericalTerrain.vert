@@ -1,8 +1,7 @@
 // Uniforms
 uniform mat4 unWVP;
-uniform mat3 unWV3x3;
-uniform vec3 unEyeDirWorld;
-uniform vec3 unLightDirWorld = vec3(0.0, 0.0, 1.0);
+uniform mat4 unW;
+uniform vec3 unLightDirWorld;
 
 // Input
 in vec4 vPosition; // Position in object space
@@ -14,37 +13,25 @@ in vec2 vTemp_Hum;
 // Output
 out vec3 fColor;
 out vec2 fUV;
-out vec3 fEyeDirTangent;
-out vec3 fLightDirTangent;
 out vec2 fTemp_Hum;
+out mat3 fTbn;
 
 void main() {
   vec3 normal = normalize(vPosition.xyz);
   
   // Compute TBN for converting to tangent space
-  vec3 n = unWV3x3 * normal;
-  vec3 t = unWV3x3 * vTangent;
-  vec3 b = normalize(unWV3x3 * normalize(cross( normal, vTangent)));
-
-  // Convert eye dir and light dir to tangent space
- /// vec3 eyeDirCamera = unWV3x3 * unEyeDirWorld;
- // fEyeDirTangent.x = dot( eyeDirCamera, t );
- // fEyeDirTangent.y = dot( eyeDirCamera, b );
- // fEyeDirTangent.z = dot( eyeDirCamera, n );
- // fEyeDirTangent = normalize(fEyeDirTangent);
-  vec3 lightDirCamera = unWV3x3 * unLightDirWorld; 
-  fLightDirTangent.x = dot( lightDirCamera, t );
-  fLightDirTangent.y = dot( lightDirCamera, n );
-  fLightDirTangent.z = dot( lightDirCamera, b );
-  fLightDirTangent = normalize(fLightDirTangent);
+  vec3 n = normalize((unW * vec4(normal, 0.0)).xyz);
+  vec3 t = normalize((unW * vec4(vTangent, 0.0)).xyz);
+  vec3 b = normalize((unW * vec4(cross( normal, vTangent), 0.0)).xyz);
+  fTbn = mat3(t, n, b);
   
   float mult = 1.0;
-  float angle = dot(unLightDirWorld, -normal);
+  float angle = dot(unLightDirWorld, -n);
   mult = clamp( 1.0 - angle * 3.0, 0.0, 1.0);
   
-  
   gl_Position = unWVP * vPosition;
-  fColor = vColor * mult;
+  fColor = vColor;
   fUV = vUV;
+  
   fTemp_Hum = vTemp_Hum;
 }
