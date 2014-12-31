@@ -19,7 +19,7 @@ out vec4 pColor;
 
 void main() {
   
-  vec3 normal = fTbn * vec3(0.0, 1.0, 0.0) + 0.0001 * normalize((texture(unNormalMap, fUV + unDt).rbg * 2.0) - 1.0) * ((texture(unNormalMap, (fUV - unDt) * 0.5).rbg * 2.0) - 1.0)  * unNormMult;
+  vec3 normal = fTbn * normalize(((texture(unNormalMap, fUV + unDt).rbg * 2.0) - 1.0) + (texture(unNormalMap, 0.5*(fUV - unDt)).rbg * 2.0) - 1.0) + 0.0001 * unNormMult;
  
   float cosTheta = clamp( dot( normal, unLightDirWorld ), 0,1 );
 

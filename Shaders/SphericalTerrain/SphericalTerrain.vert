@@ -7,13 +7,14 @@ uniform float unTexelWidth;
 // Input
 in vec4 vPosition; // Position in object space
 in vec3 vTangent;
-in vec3 vColor;
 in vec2 vUV;
+in vec3 vColor;
+in vec2 vNormUV;
 in vec2 vTemp_Hum;
 
 // Output
 out vec3 fColor;
-out vec2 fnUV;
+out vec2 fNormUV;
 out vec2 fUV;
 out vec2 fTemp_Hum;
 out mat3 fTbn;
@@ -35,8 +36,8 @@ void main() {
   fColor = vColor;
   fUV = vUV;
   // Move normal map UV in by 1 texel in each direction
-  fnUV = vUV * ((unTexelWidth - 2.0001) / unTexelWidth);
-  fnUV = fUV + 1.0 / unTexelWidth + 0.0001;
+  fNormUV = vNormUV * ((unTexelWidth - 2.0001) / unTexelWidth);
+  fNormUV = vNormUV + 1.0 / unTexelWidth + 0.0001;
   
   fTemp_Hum = vTemp_Hum;
 }
