@@ -1,6 +1,7 @@
 // Uniforms
 uniform mat4 unWVP;
 uniform mat4 unW;
+uniform float unFreezeTemp;
 
 // Input
 in vec4 vPosition; // Position in object space
@@ -14,6 +15,7 @@ out vec3 fColor;
 out vec2 fUV;
 out float fTemp;
 out float fDepth;
+out float frozen; // Needed to prevent shader precision issues
 out mat3 fTbn;
 
 void main() {
@@ -24,6 +26,13 @@ void main() {
   vec3 t = normalize((unW * vec4(vTangent, 0.0)).xyz);
   vec3 b = normalize((unW * vec4(cross( normal, vTangent), 0.0)).xyz);
   fTbn = mat3(t, n, b);
+  
+  // Check if the liquid is frozen
+  if (vColor_Temp.a <= unFreezeTemp) {
+    frozen = 1.0;
+  } else {
+    frozen = 0.0;
+  }
   
   gl_Position = unWVP * vPosition;
   fColor = vColor_Temp.rgb;
