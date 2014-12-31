@@ -6,8 +6,11 @@ terrainColor:
 liquidColor: 
   depthScale: 400.0
   tint: [255, 255, 255]
+  freezeTemp: 30.0
   colorPath: Planets/Shared/water_color.png
-  texturePath: Planets/Shared/water_a.png
+  texturePath: _shared/water_a.png
+tempLatitudeFalloff: 90.0
+humLatitudeFalloff: 30.0
 baseHeight:
   base: -60
   noise:
