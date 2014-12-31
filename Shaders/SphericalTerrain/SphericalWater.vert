@@ -17,11 +17,15 @@ out float fTemp;
 out float fDepth;
 out float frozen; // Needed to prevent shader precision issues
 out mat3 fTbn;
+out vec3 fEyeDir;
 
 void main() {
   vec3 normal = normalize(vPosition.xyz);
+
+  // Compute direction to eye
+  fEyeDir = normalize(-(unW * vPosition).xyz);
   
-  // Compute TBN for converting to tangent space
+  // Compute TBN for converting to world space
   vec3 n = normalize((unW * vec4(normal, 0.0)).xyz);
   vec3 t = normalize((unW * vec4(vTangent, 0.0)).xyz);
   vec3 b = normalize((unW * vec4(cross( normal, vTangent), 0.0)).xyz);

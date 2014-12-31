@@ -18,11 +18,15 @@ out vec2 fNormUV;
 out vec2 fUV;
 out vec2 fTemp_Hum;
 out mat3 fTbn;
+out vec3 fEyeDir;
 
 void main() {
   vec3 normal = normalize(vPosition.xyz);
   
-  // Compute TBN for converting to tangent space
+   // Compute direction to eye
+  fEyeDir = normalize(-(unW * vPosition).xyz);
+  
+  // Compute TBN for converting to world space
   vec3 n = normalize((unW * vec4(normal, 0.0)).xyz);
   vec3 t = normalize((unW * vec4(vTangent, 0.0)).xyz);
   vec3 b = normalize((unW * vec4(cross( normal, vTangent), 0.0)).xyz);
