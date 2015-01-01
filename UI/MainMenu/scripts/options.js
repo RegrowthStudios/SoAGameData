@@ -3,7 +3,7 @@ function createCategory(name) {
     var cid = name.replace(" ", "-");
     //<li class="header" data-category="disp">Display Options</li>
     var htmlCategory = "<li class='option-category' data-category='" + cid + "'>" + name + "</li>";
-    $("#video-options").append(htmlCategory);
+    $(".options").append(htmlCategory);
 }
 
 var controls = [];
@@ -21,9 +21,9 @@ function generateToggle(ID, name, initialVal, updateInRealTime, description, cat
     controls[ID] = initialVal;
     var oid = name.replace(" ", "-");
     var cid = category.replace(" ", "-");
-    var htmlControl = "<li class='video-option' data-mid-id='" + oid + "'>";
-    htmlControl += "<div class='option'>" + name + "</div>";
-    htmlControl += "<div class='option-value'>";
+    var htmlControl = "<li class='option' data-mid-id='" + oid + "'>";
+    htmlControl += "<div class='control'>" + name + "</div>";
+    htmlControl += "<div class='control-value'>";
     htmlControl += "<div class='checkbox' data-id='" + ID + "'>";
     htmlControl += "<input id='" + oid + "' type='checkbox' name='" + oid + "'" + initialVal + "'" + (updateInRealTime ? " oninput='handleToggleChange(value, " + ID + ")'" : "") + ">";
     htmlControl += "<label for='" + oid + "'></label>"
@@ -38,9 +38,9 @@ function generateToggle(ID, name, initialVal, updateInRealTime, description, cat
         elems.last().after(htmlControl);
     }
     var htmlDescriptor = "<div data-mid-id='" + oid + "'>" + description + "</div>"
-    $(htmlDescriptor).appendTo("#video-options-helper-wrapper").hide();
-    videoOptsDescs = $("#video-options-helper-wrapper > div");
-    videoOpts = $("#video-options > .video-option");
+    $(htmlDescriptor).appendTo(".options-helper-wrapper").hide();
+    videoOptsDescs = $(".options-helper-wrapper > div");
+    videoOpts = $(".options > .option");
     refreshDescControl();
 }
 
@@ -61,9 +61,9 @@ function generateSlider(ID, name, min, max, initialVal, intervalRes, updateInRea
     controls[ID] = initialVal;
     var oid = name.replace(" ", "-");
     var cid = category.replace(" ", "-");
-    var htmlControl = "<li class='video-option' data-mid-id='" + oid + "'>";
-    htmlControl += "<div class='option'>" + name + "</div>";
-    htmlControl += "<div class='option-value'>";
+    var htmlControl = "<li class='option' data-mid-id='" + oid + "'>";
+    htmlControl += "<div class='control'>" + name + "</div>";
+    htmlControl += "<div class='control-value'>";
     htmlControl += "<input type='range' min='" + min + "' max='" + max + "' value='" + ((initialVal >= min && initialVal <= max) ? initialVal : min) + "' id='" + oid + "' step='" + intervalRes + "' oninput='" + (updateInRealTime ? "handleSliderChange" : "updateSliderOutput") + "(value, \"" + oid + "\"," + ID + ")'>";
     htmlControl += "<output for='" + oid + "' id='" + oid + "-output'>" + initialVal + "</output>";
     htmlControl += "</div>";
@@ -76,9 +76,9 @@ function generateSlider(ID, name, min, max, initialVal, intervalRes, updateInRea
         elems.last().after(htmlControl);
     }
     var htmlDescriptor = "<div data-mid-id='" + oid + "'>" + description + "</div>"
-    $(htmlDescriptor).appendTo("#video-options-helper-wrapper").hide();
-    videoOptsDescs = $("#video-options-helper-wrapper > div");
-    videoOpts = $("#video-options > .video-option");
+    $(htmlDescriptor).appendTo(".options-helper-wrapper").hide();
+    videoOptsDescs = $(".options-helper-wrapper > div");
+    videoOpts = $(".options > .option");
     refreshDescControl();
 }
 
@@ -96,9 +96,9 @@ function generateCombo(ID, name, vals, initialVal, updateInRealTime, description
     controls[ID] = initialVal;
     var oid = name.replace(" ", "-");
     var cid = category.replace(" ", "-");
-    var htmlControl = "<li class='video-option' data-mid-id='" + oid + "'>";
-    htmlControl += "<div class='option'>" + name + "</div>";
-    htmlControl += "<div class='option-value'>";
+    var htmlControl = "<li class='option' data-mid-id='" + oid + "'>";
+    htmlControl += "<div class='control'>" + name + "</div>";
+    htmlControl += "<div class='control-value'>";
     htmlControl += "<select" + (updateInRealTime ? " onchange='handleComboChange(value, " + ID + ")'" : "") + ">";
     $.each(vals, function (i, v) {
         var vid = v.replace(" ", "-");
@@ -119,9 +119,9 @@ function generateCombo(ID, name, vals, initialVal, updateInRealTime, description
         elems.last().after(htmlControl);
     }
     var htmlDescriptor = "<div data-mid-id='" + oid + "'>" + description + "</div>"
-    $(htmlDescriptor).appendTo("#video-options-helper-wrapper").hide();
-    videoOptsDescs = $("#video-options-helper-wrapper > div");
-    videoOpts = $("#video-options > .video-option");
+    $(htmlDescriptor).appendTo(".options-helper-wrapper").hide();
+    videoOptsDescs = $(".options-helper-wrapper > div");
+    videoOpts = $(".options > .option");
     refreshDescControl();
 }
 
@@ -152,28 +152,28 @@ function updateSettings() {
 }
 
 
-var videoOpts;
-var videoOptsDescs;
+var opts;
+var optsDescs;
 // Handle menu item descriptions.
 function refreshDescControl() {
-    videoOpts.off('mouseover mouseout');
-    videoOpts.on('mouseover', function () {
+    opts.off('mouseover mouseout');
+    opts.on('mouseover', function () {
         var midId = $(this).data("mid-id");
-        for (var x = 0; x < videoOpts.length; ++x) {
-            if ($(videoOptsDescs[x]).data("mid-id") == midId) {
-                $(videoOptsDescs[x]).show(200);
+        for (var x = 0; x < opts.length; ++x) {
+            if ($(optDescs[x]).data("mid-id") == midId) {
+                $(optDescs[x]).show(200);
             } else {
-                $(videoOptsDescs[x]).stop(false, true);
+                $(optDescs[x]).stop(false, true);
             }
         }
     })
-    videoOpts.on('mouseout', function () {
+    opts.on('mouseout', function () {
         var midId = $(this).data("mid-id");
-        for (var x = 0; x < videoOpts.length; ++x) {
-            if ($(videoOptsDescs[x]).data("mid-id") == midId) {
-                $(videoOptsDescs[x]).hide(75);
+        for (var x = 0; x < opts.length; ++x) {
+            if ($(optDescs[x]).data("mid-id") == midId) {
+                $(optDescs[x]).hide(75);
             } else {
-                $(videoOptsDescs[x]).stop(false, true);
+                $(optDescs[x]).stop(false, true);
             }
         }
     });
