@@ -1,56 +1,122 @@
-#version 130
+// Uniforms
+uniform sampler2D unTex;
+uniform float unExposure;
+uniform float unGamma;
 
-in vec2 UV;
+#ifdef MOTION_BLUR
+uniform sampler2D unTexDepth;
+uniform int unNumSamples;
+uniform mat4 unVPInv;
+uniform mat4 unVPPrev;
+uniform float unBlurIntensity;
+#endif
 
-out vec4 color;
+#ifdef DEPTH_OF_FIELD
+uniform float unFocalLen;
+uniform float unZfocus;
 
-uniform sampler2D renderedTexture;
-uniform sampler2D depthTexture;
-uniform float fExposure;
-uniform float gamma;
+// TODO: Make these uniforms
+float sceneRange = 10.0f;
+float a = 2.4f;
+float Dlens = unFocalLen / a;
+float blurScale  = 5.0;
+float maxCoC = 20.0f;
+int Width = 1600;
+int Height = 900;
+#endif
 
-uniform int numSamples;
-uniform mat4 inverseVP;
-uniform mat4 prevVP;
+// Input
+in vec2 fUV;
 
-void main(){
-    vec3 Color = texture(renderedTexture, UV).xyz;
-       
-    // Get the depth buffer value at this pixel.  
-    float zOverW = texture(depthTexture, UV).r;  
-    // H is the viewport position at this pixel in the range -1 to 1.  
-    vec4 H = vec4(UV.x * 2 - 1, (1.0 - UV.y) * 2 - 1, zOverW, 1);  
-    // Transform by the view-projection inverse.  
-    vec4 D = inverseVP * H;  
-    // Divide by w to get the world position.  
-    vec4 worldPos = D / D.w;  
-    
-   // Current viewport position  
-   vec4 currentPos = H;  
-   // Use the world position, and transform by the previous view-  
-   // projection matrix.  
-   vec4 previousPos = prevVP * worldPos;  
-   // Convert to nonhomogeneous points [-1,1] by dividing by w.  
-   previousPos /= previousPos.w;  
-   // Use this frame's position and last frame's to compute the pixel  
-   // velocity.  
-   vec2 velocity = (currentPos.xy - previousPos.xy);  
-    
-    // Get the initial color at this pixel.  
-  
-    for(int i = 1; i < numSamples; ++i)  
-    {  
-      vec2 offset = velocity * (float(i+1) * 0.02);
-      // Sample the color buffer along the velocity vector.  
-      Color += texture(renderedTexture, UV - offset).xyz;  
-    }  
+// Output
+out vec4 pColor;
 
-    
-    // Average all of the samples to get the final blur color.  
-    Color = Color / (numSamples);
+void main() {
 
-    //gamma
-    float luminance = (0.2126*Color.r) + (0.7152*Color.g) + (0.0722*Color.b);
-	Color = 1.0 - exp(Color * -fExposure);
-    color = vec4(pow(Color, vec3(gamma)), 1.0);// + vec4(abs(velocity.x*1.0), abs(velocity.y*10.0), color.g*0.00001, 1.0); //some gamma correction
+  vec3 color = texture(unTex, fUV).rgb;
+
+#if defined(MOTION_BLUR) || defined(DEPTH_OF_FIELD)
+  float depth = texture(unTexDepth, fUV).x;
+#endif
+
+#ifdef MOTION_BLUR
+  // Reconstruct position in world space
+  vec4 screenPos = vec4(fUV * 2 - 1, depth, 1);
+  vec4 worldPos = unVPInv * screenPos;
+  worldPos /= worldPos.w;
+
+  // Construct pixel position of last frame
+  vec4 previousPos = unVPPrev * worldPos;
+  previousPos /= previousPos.w;
+
+  // Compute pixel velocity
+  vec2 velocity = (screenPos.xy - previousPos.xy) * 0.5 * unBlurIntensity;
+  vec2 sampleDisplacement = velocity / unNumSamples;
+
+  // Accumulate blur samples
+  float accum = 1;
+  vec2 uv = fUV;
+  for(int i = 0; i < unNumSamples; i++) {
+    float ratio = exp(-(i / unNumSamples) * unBlurIntensity);
+    accum += ratio;
+    uv -= sampleDisplacement;
+    color += texture(unTex, uv).rgb * ratio;
+  }
+  color /= accum;
+#endif
+
+#ifdef DEPTH_OF_FIELD
+  vec3 colorSum, tapColor;
+  vec2 centerDepthBlur, tapCoord, tapDepthBlur;
+  float totalContribution, tapContribution;
+
+  // Poissonian disc distribution
+  float dx = 1.0/float(Width);
+  float dy = 1.0/float(Height);
+  vec2 filterTaps[12];
+  filterTaps[0] = vec2(-0.326212 * dx, -0.40581 * dy);
+  filterTaps[1] = vec2(-0.840144 * dx, -0.07358 * dy);
+  filterTaps[2] = vec2(-0.695914 * dx, 0.457137 * dy);
+  filterTaps[3] = vec2(-0.203345 * dx, 0.620716 * dy);
+  filterTaps[4] = vec2(0.96234 * dx, -0.194983 * dy);
+  filterTaps[5] = vec2(0.473434 * dx, -0.480026 * dy);
+  filterTaps[6] = vec2(0.519456 * dx, 0.767022 * dy);
+  filterTaps[7] = vec2(0.185461 * dx, -0.893124 * dy);
+  filterTaps[8] = vec2(0.507431 * dx, 0.064425 * dy);
+  filterTaps[9] = vec2(0.89642 * dx, 0.412458 * dy);
+  filterTaps[10] = vec2(-0.32194 * dx, -0.932615 * dy);
+  filterTaps[11] = vec2(-0.791559 * dx, -0.59771 * dy);
+
+  colorSum = color.rgb;
+  totalContribution = 1.0;
+
+  float pixCoC = abs(Dlens * unFocalLen * (unZfocus - depth) / (unZfocus * (depth - unFocalLen)));
+  float blur = clamp(pixCoC * blurScale / maxCoC, 0.0, 1.0);
+
+  vec4 dofDepth = vec4(depth / sceneRange, blur, 0, 0);
+  centerDepthBlur = dofDepth.xy;
+
+  float sizeCoC = centerDepthBlur.y * maxCoC;
+
+  // Accumulates blur samples
+  for(int i = 0; i < 12; i++) {
+    tapCoord = fUV + filterTaps[i] * sizeCoC;
+    tapColor = texture(unTex, tapCoord).rgb;
+    float tapDepth = texture(unTexDepth, tapCoord).x;
+    float tapPixCoC = abs(Dlens * unFocalLen * (unZfocus - tapDepth) / (unZfocus * (tapDepth - unFocalLen)));
+    float tapBlur = clamp(tapPixCoC * blurScale / maxCoC, 0.0, 1.0);
+
+    vec4 tapDofDepth = vec4(tapDepth / sceneRange, tapBlur, 0, 0);
+    tapDepthBlur = tapDofDepth.xy;
+    tapContribution = (tapDepthBlur.x > centerDepthBlur.x) ? 1.0 : tapDepthBlur.y;
+    colorSum += tapColor * tapContribution;
+    totalContribution += tapContribution;
+  }
+
+  color = colorSum / totalContribution;
+#endif
+
+  color = 1.0 - exp(color * -unExposure); // Add exposure
+  color = pow(color, vec3(unGamma)); // Gamma correction
+  pColor = vec4(color, 1.0);
 }

@@ -1,5 +1,3 @@
-#version 130
-
 // Input vertex data, different for all executions of this shader.
 in vec3 position;
 in vec3 particleCenter_worldspace; //center position and sizez

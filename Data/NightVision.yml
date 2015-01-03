@@ -1,0 +1,21 @@
+# Class I
+- Color: [0.25, 0.50, 0.00]
+  Contrast: 7.0
+  Filter: 0.5
+  Brightness: 3.0
+  Noise: 0.002
+  ColorNoise: 0.2
+# Class II
+- Color: [0.10, 1.00, 0.00]
+  Contrast: 3.0
+  Filter: 0.5
+  Brightness: 6.0
+  Noise: 0.00075
+  ColorNoise: 0.075
+  # Class III
+- Color: [0.10, 1.00, 0.25]
+  Contrast: 1.0
+  Filter: 0.5
+  Brightness: 15.0
+  Noise: 0.0000
+  ColorNoise: 0.00
