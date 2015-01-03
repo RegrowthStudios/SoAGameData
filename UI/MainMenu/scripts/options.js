@@ -1,4 +1,9 @@
 ﻿//Generate Controls
+
+/**
+ * Creates a category for the options menu.
+ * name - Name of the category to be displayed to the user.
+ */
 function createCategory(name) {
     var cid = name.replace(" ", "-");
     //<li class="header" data-category="disp">Display Options</li>
@@ -21,14 +26,15 @@ function generateToggle(ID, name, initialVal, updateInRealTime, description, cat
     controls[ID] = initialVal;
     var oid = name.replace(" ", "-");
     var cid = category.replace(" ", "-");
-    var htmlControl = "<li class='option' data-mid-id='" + oid + "'>";
-    htmlControl += "<div class='control'>" + name + "</div>";
-    htmlControl += "<div class='control-value'>";
+    var htmlControl = "<li class='option row clearfix' data-mid-id='" + oid + "'>";
+    htmlControl += "<div class='control half-column'>" + name + "</div>";
+    htmlControl += "<div class='control-value half-column'>";
     htmlControl += "<div class='checkbox' data-id='" + ID + "'>";
     htmlControl += "<input id='" + oid + "' type='checkbox' name='" + oid + "'" + initialVal + "'" + (updateInRealTime ? " oninput='handleToggleChange(value, " + ID + ")'" : "") + ">";
-    htmlControl += "<label for='" + oid + "'></label>"
+    htmlControl += "<label for='" + oid + "'></label>";
     htmlControl += "</div>";
     htmlControl += "</div>";
+    htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
     htmlControl += "</li>";
     var cat = $(".option-category[data-category=" + cid + "]");
     var elems = cat.nextUntil(".option-category");
@@ -39,8 +45,8 @@ function generateToggle(ID, name, initialVal, updateInRealTime, description, cat
     }
     var htmlDescriptor = "<div data-mid-id='" + oid + "'>" + description + "</div>"
     $(htmlDescriptor).appendTo(".options-helper-wrapper").hide();
-    videoOptsDescs = $(".options-helper-wrapper > div");
-    videoOpts = $(".options > .option");
+    optsDescs = $(".options-helper-wrapper > div");
+    opts = $(".options > .option");
     refreshDescControl();
 }
 
@@ -61,12 +67,13 @@ function generateSlider(ID, name, min, max, initialVal, intervalRes, updateInRea
     controls[ID] = initialVal;
     var oid = name.replace(" ", "-");
     var cid = category.replace(" ", "-");
-    var htmlControl = "<li class='option' data-mid-id='" + oid + "'>";
-    htmlControl += "<div class='control'>" + name + "</div>";
-    htmlControl += "<div class='control-value'>";
+    var htmlControl = "<li class='option row clearfix' data-mid-id='" + oid + "'>";
+    htmlControl += "<div class='control half-column'>" + name + "</div>";
+    htmlControl += "<div class='control-value half-column'>";
     htmlControl += "<input type='range' min='" + min + "' max='" + max + "' value='" + ((initialVal >= min && initialVal <= max) ? initialVal : min) + "' id='" + oid + "' step='" + intervalRes + "' oninput='" + (updateInRealTime ? "handleSliderChange" : "updateSliderOutput") + "(value, \"" + oid + "\"," + ID + ")'>";
     htmlControl += "<output for='" + oid + "' id='" + oid + "-output'>" + initialVal + "</output>";
     htmlControl += "</div>";
+    htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
     htmlControl += "</li>";
     var cat = $(".option-category[data-category=" + cid + "]");
     var elems = cat.nextUntil(".option-category");
@@ -77,8 +84,8 @@ function generateSlider(ID, name, min, max, initialVal, intervalRes, updateInRea
     }
     var htmlDescriptor = "<div data-mid-id='" + oid + "'>" + description + "</div>"
     $(htmlDescriptor).appendTo(".options-helper-wrapper").hide();
-    videoOptsDescs = $(".options-helper-wrapper > div");
-    videoOpts = $(".options > .option");
+    optsDescs = $(".options-helper-wrapper > div");
+    opts = $(".options > .option");
     refreshDescControl();
 }
 
@@ -96,9 +103,9 @@ function generateCombo(ID, name, vals, initialVal, updateInRealTime, description
     controls[ID] = initialVal;
     var oid = name.replace(" ", "-");
     var cid = category.replace(" ", "-");
-    var htmlControl = "<li class='option' data-mid-id='" + oid + "'>";
-    htmlControl += "<div class='control'>" + name + "</div>";
-    htmlControl += "<div class='control-value'>";
+    var htmlControl = "<li class='option row clearfix' data-mid-id='" + oid + "'>";
+    htmlControl += "<div class='control half-column'>" + name + "</div>";
+    htmlControl += "<div class='control-value half-column'>";
     htmlControl += "<select" + (updateInRealTime ? " onchange='handleComboChange(value, " + ID + ")'" : "") + ">";
     $.each(vals, function (i, v) {
         var vid = v.replace(" ", "-");
@@ -110,6 +117,7 @@ function generateCombo(ID, name, vals, initialVal, updateInRealTime, description
     })
     htmlControl += "</select>";
     htmlControl += "</div>";
+    htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
     htmlControl += "</li>";
     var cat = $(".option-category[data-category=" + cid + "]");
     var elems = cat.nextUntil(".option-category");
@@ -120,8 +128,8 @@ function generateCombo(ID, name, vals, initialVal, updateInRealTime, description
     }
     var htmlDescriptor = "<div data-mid-id='" + oid + "'>" + description + "</div>"
     $(htmlDescriptor).appendTo(".options-helper-wrapper").hide();
-    videoOptsDescs = $(".options-helper-wrapper > div");
-    videoOpts = $(".options > .option");
+    optsDescs = $(".options-helper-wrapper > div");
+    opts = $(".options > .option");
     refreshDescControl();
 }
 

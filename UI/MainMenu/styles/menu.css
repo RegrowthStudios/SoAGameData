@@ -8,7 +8,7 @@ html, body {
     padding: 0;
 }
 body {
-    background-color: #000;
+    background-color: #0000;
     width: 100%;
     height: 100%;
     outline: 0;
@@ -117,4 +117,35 @@ ul {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e62cd3fe', endColorstr='#267db9e8',GradientType=1 ); /* IE6-8 */
     cursor: pointer;
     display: block;
+}
+
+/*******************/
+/* Content Corners */
+/*******************/
+
+.content-corner {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAWdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjA76PVpAAAASElEQVQoU2MQ2Pf+PwxbrDsPx8jiGIoYgACvIpACGEARhxkPlUMBcDlcCmAArgiXQrgcit1IAEUcmQMzEUQji2MogmGE+Pv/AOfTmIHAXv17AAAAAElFTkSuQmCC');
+}
+.content-corner-top-left {
+  left: 0;
+  top: 0;
+  background-position: 0 0;
+}
+.content-corner-top-right {
+  right: 0;
+  top: 0;
+  background-position: -4px 0;
+}
+.content-corner-bottom-right {
+  right: 0;
+  bottom: 0;
+  background-position: -4px -4px;
+}
+.content-corner-bottom-left {
+  left: 0;
+  bottom: 0;
+  background-position: 0 -4px;
 }

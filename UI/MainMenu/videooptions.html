@@ -14,42 +14,51 @@
         <link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" />
     </head>
 <body>
+    <!--<script>
+        $(document).ready(function() {
+            var i = 0;
+            createCategory("Basic Options");
+            generateCombo(i++, "Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "The resolution at which the game is rendered.", "Basic Options");
+            generateToggle(i++, "Fullscreen", "checked", 1, "If checked, the game fills the entire screen.", "Basic Options");
+        });
+    </script>-->
     <img src="assets/images/logo.png" id="menu-header" />
-    <div id="options-outer-wrapper" class="outer-wrapper">
-        <br />
+    <div class="outer-wrapper">
         <h3 class="header">Video Options</h3>
-        <div id="options-inner-wrapper" class="half-column">
-            <ul id="options">
-                <!--<li class="option-cateogry" data-category="disp">Display Options</li>-->
-                <!--<li class="video-option" data-mid-id="resolution">
-                    <div class="option">Resolution</div>
-                    <div class="option-value">
-                        <select>
-                            <option value="2560-1600">2560x1600 [16:10]</option>
-                            <option value="2560-1440">2560x1440 [16:9]</option>
-                            <option value="2560-1080">2560x1080 [64:27]</option>
-                            <option value="1920-1200">1920x1200</option>
-                            <option value="1920-1080">1920x1080</option>
-                            <option value="1856-1392">1856x1392</option>
-                            <option value="1856-1392">1856x1392</option>
-                        </select>
-                    </div>
-                </li>-->
-            </ul>
-        </div>
-        <div id="options-extra" class="half-column">
-            <div id="options-helper-wrapper">
-                <!--<div data-mid-id="start-game">Start a new game of Seed of Andromeda!</div>-->
-            </div>
-            <div id="options-extra-controls-wrapper">
-                <ul id="options-extra-controls">
-                    <li class="menu-item">
-                        <a class="SingleEffect" data-mid-id="apply" onclick="updateSettings()">Apply</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="SingleEffect" data-mid-id="exit">Exit</a>
-                    </li>
+        <div class="row clearfix">
+            <div class="half-column">
+                <ul class="options">
+                    <!--<li class="option-cateogry" data-category="disp">Display Options</li>-->
+                    <!--<li class="video-option" data-mid-id="resolution">
+                        <div class="option">Resolution</div>
+                        <div class="option-value">
+                            <select>
+                                <option value="2560-1600">2560x1600 [16:10]</option>
+                                <option value="2560-1440">2560x1440 [16:9]</option>
+                                <option value="2560-1080">2560x1080 [64:27]</option>
+                                <option value="1920-1200">1920x1200</option>
+                                <option value="1920-1080">1920x1080</option>
+                                <option value="1856-1392">1856x1392</option>
+                                <option value="1856-1392">1856x1392</option>
+                            </select>
+                        </div>
+                    </li>-->
                 </ul>
+            </div>
+            <div class="options-extra half-column">
+                <div class="options-helper-wrapper">
+                    <!--<div data-mid-id="start-game">Start a new game of Seed of Andromeda!</div>-->
+                </div>
+                <div class="options-extra-controls-wrapper">
+                    <ul class="options-extra-controls">
+                        <li class="menu-item">
+                            <a class="SingleEffect" data-mid-id="apply" onclick="updateSettings()">Apply</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="SingleEffect" data-mid-id="exit">Exit</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

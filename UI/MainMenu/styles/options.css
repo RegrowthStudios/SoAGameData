@@ -1,0 +1,44 @@
+﻿.row {
+    width: 100%;
+    position: relative;
+}
+.half-column {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    float: left;
+}
+
+.options {
+    margin-left: 40px;
+    margin-right: 80px;
+}
+
+.option-category {
+    font-size: 0.9em;
+}
+
+.option-category + .option, .option + .option-category {
+    margin-top: 20px;
+}
+.option {
+    margin-left: 20px;
+    padding-left: 20px;
+    background: rgba(0,0,0,0.4);
+    position: relative;
+    line-height: 44px;
+}
+.option ~ .option > .content-corner-top-left, .option ~ .option > .content-corner-top-right {
+    margin-top: -1px;
+}
+.option ~ .option {
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+.control {
+    text-shadow: none;
+    font-size: 0.75em;
+}
+.control-value {
+    text-align: center;
+    margin-top: -6px;
+}
