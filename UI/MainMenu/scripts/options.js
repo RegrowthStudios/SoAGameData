@@ -43,9 +43,9 @@ function generateToggle(ID, name, initialVal, updateInRealTime, description, cat
     } else {
         elems.last().after(htmlControl);
     }
-    var htmlDescriptor = "<div data-mid-id='" + oid + "'>" + description + "</div>"
+    var htmlDescriptor = "<div class='helper' data-mid-id='" + oid + "'>" + description + "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div></div>"
     $(htmlDescriptor).appendTo(".options-helper-wrapper").hide();
-    optsDescs = $(".options-helper-wrapper > div");
+    optDescs = $(".options-helper-wrapper > div");
     opts = $(".options > .option");
     refreshDescControl();
 }
@@ -82,9 +82,9 @@ function generateSlider(ID, name, min, max, initialVal, intervalRes, updateInRea
     } else {
         elems.last().after(htmlControl);
     }
-    var htmlDescriptor = "<div data-mid-id='" + oid + "'>" + description + "</div>"
+    var htmlDescriptor = "<div class='helper' data-mid-id='" + oid + "'>" + description + "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div></div>"
     $(htmlDescriptor).appendTo(".options-helper-wrapper").hide();
-    optsDescs = $(".options-helper-wrapper > div");
+    optDescs = $(".options-helper-wrapper > div");
     opts = $(".options > .option");
     refreshDescControl();
 }
@@ -126,9 +126,9 @@ function generateCombo(ID, name, vals, initialVal, updateInRealTime, description
     } else {
         elems.last().after(htmlControl);
     }
-    var htmlDescriptor = "<div data-mid-id='" + oid + "'>" + description + "</div>"
+    var htmlDescriptor = "<div class='helper' data-mid-id='" + oid + "'>" + description + "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div></div>"
     $(htmlDescriptor).appendTo(".options-helper-wrapper").hide();
-    optsDescs = $(".options-helper-wrapper > div");
+    optDescs = $(".options-helper-wrapper > div");
     opts = $(".options > .option");
     refreshDescControl();
 }
@@ -161,7 +161,7 @@ function updateSettings() {
 
 
 var opts;
-var optsDescs;
+var optDescs;
 // Handle menu item descriptions.
 function refreshDescControl() {
     opts.off('mouseover mouseout');
@@ -169,7 +169,7 @@ function refreshDescControl() {
         var midId = $(this).data("mid-id");
         for (var x = 0; x < opts.length; ++x) {
             if ($(optDescs[x]).data("mid-id") == midId) {
-                $(optDescs[x]).show(200);
+                $(optDescs[x]).show(0);
             } else {
                 $(optDescs[x]).stop(false, true);
             }
@@ -179,7 +179,7 @@ function refreshDescControl() {
         var midId = $(this).data("mid-id");
         for (var x = 0; x < opts.length; ++x) {
             if ($(optDescs[x]).data("mid-id") == midId) {
-                $(optDescs[x]).hide(75);
+                $(optDescs[x]).hide(0);
             } else {
                 $(optDescs[x]).stop(false, true);
             }

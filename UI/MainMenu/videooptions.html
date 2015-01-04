@@ -14,14 +14,37 @@
         <link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" />
     </head>
 <body>
-    <!--<script>
+    <script>
         $(document).ready(function() {
             var i = 0;
             createCategory("Basic Options");
-            generateCombo(i++, "Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "The resolution at which the game is rendered.", "Basic Options");
-            generateToggle(i++, "Fullscreen", "checked", 1, "If checked, the game fills the entire screen.", "Basic Options");
+            generateCombo(i++, "testResolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "The resolution at which the game is rendered.", "Basic Options");
+            generateToggle(i++, "testFullscreen", "checked", 1, "If checked, the game fills the entire screen.", "Basic Options");
+            generateCombo(i++, "test2Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "The resolution at which the game is rendered.", "Basic Options");
+            generateToggle(i++, "test2Fullscreen", "checked", 1, "If checked, the game fills the entire screen.", "Basic Options");
+            createCategory("Render Options");
+            generateCombo(i++, "Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "The resolution at which the game is rendered.", "Render Options");
+            generateToggle(i++, "Fullscreen", "checked", 1, "If checked, the game fills the entire screen.", "Render Options");
+            generateCombo(i++, "Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "The resolution at which the game is rendered.", "Render Options");
+            generateToggle(i++, "Fullscreen", "checked", 1, "If checked, the game fills the entire screen.", "Render Options");
+            generateCombo(i++, "Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "The resolution at which the game is rendered.", "Render Options");
+            generateToggle(i++, "Fullscreen", "checked", 1, "If checked, the game fills the entire screen.", "Render Options");
+            createCategory("Filter Options");
+            generateCombo(i++, "Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "The resolution at which the game is rendered.", "Filter Options");
+            generateToggle(i++, "Fullscreen", "checked", 1, "If checked, the game fills the entire screen.", "Filter Options");
+            generateCombo(i++, "Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "The resolution at which the game is rendered.", "Filter Options");
+            generateToggle(i++, "Fullscreen", "checked", 1, "If checked, the game fills the entire screen.", "Filter Options");
+            generateCombo(i++, "Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "The resolution at which the game is rendered.", "Filter Options");
         });
-    </script>-->
+    </script>
+    <script>
+        $(document).ready(function () {
+            var h = $(window).height();
+            h -= 409; //349 for other elements +60 for buffer.
+            $(".options").height(h);
+            $(".options-extra").height(h);
+        });
+    </script>
     <img src="assets/images/logo.png" id="menu-header" />
     <div class="outer-wrapper">
         <h3 class="header">Video Options</h3>
