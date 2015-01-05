@@ -1,0 +1,120 @@
+﻿/***********/
+/* General */
+/***********/
+
+html, body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../test/bg.jpg");
+    /*background-color: #0000;*/
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    color: white;
+    font-family: 'orbitronbold';
+    font-size: 36px;
+}
+
+@media screen and (max-width:1024px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+* {
+    cursor: default;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.right {
+    float: right;
+    clear: both;
+}
+
+.content-right {
+    text-align: right;
+}
+
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.hide {
+    display: none;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/**********/
+/* Header */
+/**********/
+
+#menu-header {
+    width: 60%;
+    height: 20%;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/***********/
+/* Content */
+/***********/
+
+.outer-wrapper {
+    margin-top: 40px;
+    position: relative;
+}
+
+.h {
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(255,255,255,0.9), 0 0 20px rgba(255,255,255,0.7);
+}
+
+/***********/
+/* Overlay */
+/***********/
+
+.overlay {
+  background: rgba(0,0,0,0.7);
+  width: 30%;
+  height: 30%;
+}

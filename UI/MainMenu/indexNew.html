@@ -14,15 +14,24 @@
 <body>
     <script>
         $(document).ready(function () {
+            generateLink("New Game", "", "", "Start a new game!");
+            generateLink("Load Game", "", "", "Load an old game!");
+            generateLink("Options", "", "", "Get stuck into the options!");
+            generateLink("World Editor", "", "", "Create your own game content!");
+            generateLink("Exit", "", "", "Exit the game.");
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
             setTimeout(function () {
                 var h2 = $("#options-extra").parent().height();
                 $("#options-extra").height(h2);
-            }, 20);
+            }, 30);
         });
     </script>
     <img src="assets/images/logo.png" id="menu-header" />
     <div id="outer-wrapper">
-        <h3 class="header">Control Options</h3>
+        <h3 class="header">Main Menu</h3>
         <div class="row">
             <div class="column-2">
                 <ul id="options" class="scrollable-pane full-height"></ul>

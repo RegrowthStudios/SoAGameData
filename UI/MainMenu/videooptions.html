@@ -4,81 +4,65 @@
         <meta charset="utf-8">
         <title>SoA Main Menu</title>
         <script type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script>
+        <script src="scripts/menu.js" type="text/javascript"></script>
         <script src="scripts/options.js" type="text/javascript"></script>
-        <script src="scripts/texteffect.js" type="text/javascript"></script>
-        <script src="scripts/texteffect2.js" type="text/javascript"></script>
-        <link href="styles/menu.css" rel="stylesheet" />
-        <link href="styles/options.css" rel="stylesheet" />
-        <link href="styles/videooptions.css" rel="stylesheet" />
+        <link href="styles/menu.min.css" rel="stylesheet" />
         <link href="assets/fonts/the_league_of_orbitron/Orbitron.css" rel="stylesheet" />
-        <link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" />
+        <!--<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" />-->
+        <link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
     </head>
 <body>
     <script>
         $(document).ready(function() {
             var i = 0;
             createCategory("Basic Options");
-            generateCombo(i++, "testResolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "The resolution at which the game is rendered.", "Basic Options");
-            generateToggle(i++, "testFullscreen", "checked", 1, "If checked, the game fills the entire screen.", "Basic Options");
-            generateCombo(i++, "test2Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "The resolution at which the game is rendered.", "Basic Options");
-            generateToggle(i++, "test2Fullscreen", "checked", 1, "If checked, the game fills the entire screen.", "Basic Options");
+            generateCombo(i++, "testResolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "Basic Options", "The resolution at which the game is rendered.");
+            generateToggle(i++, "testFullscreen", "checked", 1, "Basic Options", "If checked, the game fills the entire screen.");
+            generateCombo(i++, "test2Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "Basic Options", "The resolution at which the game is rendered.");
+            generateToggle(i++, "test2Fullscreen", "checked", 1, "Basic Options", "If checked, the game fills the entire screen.");
             createCategory("Render Options");
-            generateCombo(i++, "Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "The resolution at which the game is rendered.", "Render Options");
-            generateToggle(i++, "Fullscreen", "checked", 1, "If checked, the game fills the entire screen.", "Render Options");
-            generateCombo(i++, "Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "The resolution at which the game is rendered.", "Render Options");
-            generateToggle(i++, "Fullscreen", "checked", 1, "If checked, the game fills the entire screen.", "Render Options");
-            generateCombo(i++, "Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "The resolution at which the game is rendered.", "Render Options");
-            generateToggle(i++, "Fullscreen", "checked", 1, "If checked, the game fills the entire screen.", "Render Options");
+            generateCombo(i++, "1Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "Render Options", "The resolution at which the game is rendered.");
+            generateToggle(i++, "2Fullscreen", "checked", 1, "Render Options", "If checked, the game fills the entire screen.");
+            generateCombo(i++, "3Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "Render Options", "The resolution at which the game is rendered.");
+            generateToggle(i++, "4Fullscreen", "checked", 1, "Render Options", "If checked, the game fills the entire screen.");
+            generateCombo(i++, "5Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "Render Options", "The resolution at which the game is rendered.");
+            generateToggle(i++, "6Fullscreen", "checked", 1, "Render Options", "If checked, the game fills the entire screen.");
             createCategory("Filter Options");
-            generateCombo(i++, "Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "The resolution at which the game is rendered.", "Filter Options");
-            generateToggle(i++, "Fullscreen", "checked", 1, "If checked, the game fills the entire screen.", "Filter Options");
-            generateCombo(i++, "Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "The resolution at which the game is rendered.", "Filter Options");
-            generateToggle(i++, "Fullscreen", "checked", 1, "If checked, the game fills the entire screen.", "Filter Options");
-            generateCombo(i++, "Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "The resolution at which the game is rendered.", "Filter Options");
+            generateCombo(i++, "7Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "Filter Options", "The resolution at which the game is rendered.");
+            generateToggle(i++, "8Fullscreen", "checked", 1, "Filter Options", "If checked, the game fills the entire screen.");
+            generateCombo(i++, "9Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "Filter Options", "The resolution at which the game is rendered.");
+            generateToggle(i++, "10Fullscreen", "checked", 1, "Filter Options", "If checked, the game fills the entire screen.");
+            generateCombo(i++, "11Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", 0, "Filter Options", "The resolution at which the game is rendered.");
         });
     </script>
     <script>
         $(document).ready(function () {
-            var h = $(window).height();
-            h -= 409; //349 for other elements +60 for buffer.
-            $(".options").height(h);
-            $(".options-extra").height(h);
+            setTimeout(function () {
+                var h2 = $("#options-extra").parent().height();
+                $("#options-extra").height(h2);
+            }, 20);
         });
     </script>
     <img src="assets/images/logo.png" id="menu-header" />
-    <div class="outer-wrapper">
+    <div id="outer-wrapper">
         <h3 class="header">Video Options</h3>
-        <div class="row clearfix">
-            <div class="half-column">
-                <ul class="options">
-                    <!--<li class="option-cateogry" data-category="disp">Display Options</li>-->
-                    <!--<li class="video-option" data-mid-id="resolution">
-                        <div class="option">Resolution</div>
-                        <div class="option-value">
-                            <select>
-                                <option value="2560-1600">2560x1600 [16:10]</option>
-                                <option value="2560-1440">2560x1440 [16:9]</option>
-                                <option value="2560-1080">2560x1080 [64:27]</option>
-                                <option value="1920-1200">1920x1200</option>
-                                <option value="1920-1080">1920x1080</option>
-                                <option value="1856-1392">1856x1392</option>
-                                <option value="1856-1392">1856x1392</option>
-                            </select>
-                        </div>
-                    </li>-->
+        <div class="row">
+            <div class="column-2">
+                <ul id="options" class="scrollable-pane full-height">
+                    
                 </ul>
             </div>
-            <div class="options-extra half-column">
-                <div class="options-helper-wrapper">
-                    <!--<div data-mid-id="start-game">Start a new game of Seed of Andromeda!</div>-->
+            <div id="options-extra" class="column-2">
+                <div id="options-helper-wrapper">
+                    
                 </div>
-                <div class="options-extra-controls-wrapper">
-                    <ul class="options-extra-controls">
-                        <li class="menu-item">
-                            <a class="SingleEffect" data-mid-id="apply" onclick="updateSettings()">Apply</a>
+                <div id="option-controls-wrapper">
+                    <ul id="option-controls">
+                        <li>
+                            <a data-mid-id="apply" onclick="updateSettings()">Apply</a>
                         </li>
-                        <li class="menu-item">
-                            <a class="SingleEffect" data-mid-id="exit">Exit</a>
+                        <li>
+                            <a data-mid-id="exit">Exit</a>
                         </li>
                     </ul>
                 </div>
