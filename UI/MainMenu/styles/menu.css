@@ -22,6 +22,10 @@ body {
     font-size: 18px;
   }
 }
+::selection {
+  color: inherit;
+  background: none;
+}
 * {
   cursor: default;
 }
