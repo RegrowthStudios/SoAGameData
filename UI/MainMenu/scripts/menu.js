@@ -183,14 +183,14 @@ function ListItemGenerator() {
      * isSubList - Boolean stating if control is in a sublist.
      */
     function generateHTMLClickable(name, link, ID, updateCallback, isSubList) {
-        var oid = name.replace(" ", "-");
+        var oid = name.replace(/ /g, "-");
         var htmlControl = "";
-        if (typeof isSubList != undefined && isSubList) {
+        if (typeof isSubList != "undefined" && isSubList) {
             htmlControl += "<li class='sub-list-item clickable list-item row' data-oid='" + oid + "'>";
         } else {
             htmlControl += "<li class='list-item clickable row' data-oid='" + oid + "'>";
         }
-        if (typeof ID != undefined && typeof updateCallback != undefined) {
+        if (typeof ID != "undefined" && typeof updateCallback != "undefined") {
             htmlControl += "<a href='" + link + "' onclick='return " + updateCallback + "(" + ID + ", value, \"" + oid + "\");'>";
         } else {
             htmlControl += "<a href='" + link + "'>";
@@ -208,9 +208,9 @@ function ListItemGenerator() {
      * isSubList - Boolean stating if control is in a sublist.
      */
     function generateHTMLText(name, text, isSubList) {
-        var oid = name.replace(" ", "-");
+        var oid = name.replace(/ /g, "-");
         var htmlControl = "";
-        if (typeof isSubList != undefined && isSubList) {
+        if (typeof isSubList != "undefined" && isSubList) {
             htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
         } else {
             htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
@@ -231,9 +231,9 @@ function ListItemGenerator() {
      * isSubList - Boolean stating if control is in a sublist.
      */
     function generateHTMLToggle(name, initialVal, ID, updateCallback, updateInRealTime, isSubList) {
-        var oid = name.replace(" ", "-");
+        var oid = name.replace(/ /g, "-");
         var htmlControl = "";
-        if (typeof isSubList != undefined && isSubList) {
+        if (typeof isSubList != "undefined" && isSubList) {
             htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
         } else {
             htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
@@ -241,8 +241,8 @@ function ListItemGenerator() {
         htmlControl += "<div class='column-2'>" + name + "</div>";
         htmlControl += "<div class='content-center column-2'>";
         htmlControl += "<div class='checkbox'>";
-        if (typeof ID != undefined && typeof updateCallback != undefined) {
-            if (typeof updateInRealTime != undefined && updateInRealTime) {
+        if (typeof ID != "undefined" && typeof updateCallback != "undefined") {
+            if (typeof updateInRealTime != "undefined" && updateInRealTime) {
                 htmlControl += "<input id='" + oid + "' type='checkbox' name='" + oid + "' " + initialVal + " onchange='" + updateCallback + "(" + ID + ", value, \"" + oid + "\")'>";
             } else {
                 htmlControl += "<input id='" + oid + "' type='checkbox' name='" + oid + "' " + initialVal + " onchange='controls[" + ID + "] = value;'>";
@@ -270,17 +270,17 @@ function ListItemGenerator() {
      * isSubList - Boolean stating if control is in a sublist.
      */
     function generateHTMLSlider(name, min, max, initialVal, intervalRes, ID, updateCallback, updateInRealTime, isSubList) {
-        var oid = name.replace(" ", "-");
+        var oid = name.replace(/ /g, "-");
         var htmlControl = "";
-        if (typeof isSubList != undefined && isSubList) {
+        if (typeof isSubList != "undefined" && isSubList) {
             htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
         } else {
             htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
         }
         htmlControl += "<div class='column-2'>" + name + "</div>";
         htmlControl += "<div class='content-center column-2'>";
-        if (typeof ID != undefined && typeof updateCallback != undefined) {
-            if (typeof updateInRealTime != undefined && updateInRealTime) {
+        if (typeof ID != "undefined" && typeof updateCallback != "undefined") {
+            if (typeof updateInRealTime != "undefined" && updateInRealTime) {
                 htmlControl += "<input type='range' min='" + min + "' max='" + max + "' value='" + ((initialVal >= min && initialVal <= max) ? initialVal : min) + "' id='" + oid + "' step='" + intervalRes + "' oninput='return " + updateCallback + "(" + ID + ", value, \"" + oid + "\");'>";
             } else {
                 htmlControl += "<input type='range' min='" + min + "' max='" + max + "' value='" + ((initialVal >= min && initialVal <= max) ? initialVal : min) + "' id='" + oid + "' step='" + intervalRes + "' oninput='controls[" + ID + "] = value;'>";
@@ -305,17 +305,17 @@ function ListItemGenerator() {
      * isSubList - Boolean stating if control is in a sublist.
      */
     function generateHTMLCombo(name, vals, initialVal, ID, updateCallback, updateInRealTime, isSubList) {
-        var oid = name.replace(" ", "-");
+        var oid = name.replace(/ /g, "-");
         var htmlControl = "";
-        if (typeof isSubList != undefined && isSubList) {
+        if (typeof isSubList != "undefined" && isSubList) {
             htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
         } else {
             htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
         }
         htmlControl += "<div class='column-2'>" + name + "</div>";
         htmlControl += "<div class='content-center column-2'>";
-        if (typeof ID != undefined && typeof updateCallback != undefined) {
-            if (typeof updateInRealTime != undefined && updateInRealTime) {
+        if (typeof ID != "undefined" && typeof updateCallback != "undefined") {
+            if (typeof updateInRealTime != "undefined" && updateInRealTime) {
                 htmlControl += "<select onchange='" + updateCallback + "(" + ID + ", value, \"" + oid + "\")'>";
             } else {
                 htmlControl += "<select onchange='controls[" + ID + "] = value;'>";
@@ -324,7 +324,7 @@ function ListItemGenerator() {
             htmlControl += "<select>";
         }
         $.each(vals, function (i, v) {
-            var vid = v.replace(" ", "-");
+            var vid = v.replace(/ /g, "-");
             var init = "";
             if (v == initialVal) {
                 init = "selected";
@@ -338,12 +338,40 @@ function ListItemGenerator() {
         return htmlControl;
     }
     /**
+     * Generates the HTML code for a text area control.
+     * name - Name of the control to be displayed to the user.
+     * defaultVal - Default text in the text area.
+     * maxLength - Maximum length of the text inputted.
+     * ID - C++ ID for the control.
+     * isSubList - Boolean stating if control is in a sublist.
+     */
+    function generateHTMLTextArea(name, defaultVal, maxLength, ID, isSubList) {
+        var oid = name.replace(/ /g, "-");
+        var htmlControl = "";
+        if (typeof isSubList != "undefined" && isSubList) {
+            htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
+        } else {
+            htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
+        }
+        htmlControl += "<div class='column-2'>" + name + "</div>";
+        htmlControl += "<div class='content-center column-2'>";
+        if (typeof ID != "undefined") {
+            htmlControl += "<input type='text' size='40' maxlength='" + maxLength + "' placeholder='" + defaultVal + "' oninput='controls[" + ID + "] = value;'>"
+        } else {
+            htmlControl += "<input type='text' size='40' maxlength='" + maxLength + "' placeholder='" + defaultVal + "'>"
+        }
+        htmlControl += "</div>";
+        htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
+        htmlControl += "</li>";
+        return htmlControl;
+    }
+    /**
      * Generates the HTML code for a sublist.
      * name - Name of the control to be displayed to the user.
      * subItems - Array of objects detailing items to exist in the sublist.
      */
     function generateHTMLSubList(name, subItems) {
-        var lid = name.replace(" ", "-");
+        var lid = name.replace(/ /g, "-");
         var htmlControl = "<li class='list-item sub-list-owner row' data-oid='" + lid + "'>";
         htmlControl += name;
         htmlControl += "<div class='sub-list-wrapper'>"
@@ -352,23 +380,23 @@ function ListItemGenerator() {
             switch (v["type"]) {
                 case "click":
                     htmlControl += generateHTMLClickable(v["name"], v["link"], v["ID"], v["updateCallback"], true);
-                    addDescription(v["name"].replace(" ", "-"), v["description"]);
+                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
                     break;
                 case "text":
                     htmlControl += generateHTMLText(v["name"], v["text"], true);
-                    addDescription(v["name"].replace(" ", "-"), v["description"]);
+                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
                     break;
                 case "toggle":
                     htmlControl += generateHTMLToggle(v["name"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
-                    addDescription(v["name"].replace(" ", "-"), v["description"]);
+                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
                     break;
                 case "slider":
                     htmlControl += generateHTMLSlider(v["name"], v["min"], v["max"], v["initialVal"], v["intervalRes"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
-                    addDescription(v["name"].replace(" ", "-"), v["description"]);
+                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
                     break;
                 case "combo":
                     htmlControl += generateHTMLCombo(v["name"], v["vals"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
-                    addDescription(v["name"].replace(" ", "-"), v["description"]);
+                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
                     break;
             }
         });
@@ -385,7 +413,7 @@ function ListItemGenerator() {
      * name - Name of the category to be displayed to the user.
      */
     this.createCategory = function (name) {
-        var cid = name.replace(" ", "-");
+        var cid = name.replace(/ /g, "-");
         var htmlCategory = "<li class='list-header' data-category='" + cid + "'>" + name + "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div></li>";
         $("#options").append(htmlCategory);
     }
@@ -399,8 +427,8 @@ function ListItemGenerator() {
      * updateCallback - The name of the function to be called upon a change of state to the control.
      */
     this.generateClickable = function (name, link, category, description, ID, updateCallback) {
-        var oid = name.replace(" ", "-");
-        var cid = category.replace(" ", "-");
+        var oid = name.replace(/ /g, "-");
+        var cid = category.replace(/ /g, "-");
         placeControl(cid, generateHTMLClickable(name, link, ID, updateCallback));
         addDescription(oid, description);
     }
@@ -412,8 +440,8 @@ function ListItemGenerator() {
      * description - The description to be displayed, describing the control's effect on the game.
      */
     this.generateText = function (name, text, category, description) {
-        var oid = name.replace(" ", "-");
-        var cid = category.replace(" ", "-");
+        var oid = name.replace(/ /g, "-");
+        var cid = category.replace(/ /g, "-");
         placeControl(cid, generateHTMLText(name, text));
         addDescription(oid, description);
     }
@@ -428,11 +456,11 @@ function ListItemGenerator() {
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
      */
     this.generateToggle = function (name, initialVal, category, description, ID, updateCallback, updateInRealTime) {
-        if (typeof updateInRealTime != undefined && !updateInRealTime) {
+        if (typeof updateInRealTime != "undefined" && !updateInRealTime) {
             controls[ID] = initialVal;
         }
-        var oid = name.replace(" ", "-");
-        var cid = category.replace(" ", "-");
+        var oid = name.replace(/ /g, "-");
+        var cid = category.replace(/ /g, "-");
         placeControl(cid, generateHTMLToggle(name, initialVal, ID, updateCallback, updateInRealTime));
         addDescription(oid, description);
     }
@@ -450,11 +478,11 @@ function ListItemGenerator() {
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
      */
     function generateSlider(name, min, max, initialVal, intervalRes, category, description, ID, updateCallback, updateInRealTime) {
-        if (typeof updateInRealTime != undefined && !updateInRealTime) {
+        if (typeof updateInRealTime != "undefined" && !updateInRealTime) {
             controls[ID] = initialVal;
         }
-        var oid = name.replace(" ", "-");
-        var cid = category.replace(" ", "-");
+        var oid = name.replace(/ /g, "-");
+        var cid = category.replace(/ /g, "-");
         placeControl(cid, htmlControl);
         addDescription(oid, description);
     }
@@ -470,12 +498,28 @@ function ListItemGenerator() {
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
      */
     this.generateCombo = function (name, vals, initialVal, category, description, ID, updateCallback, updateInRealTime) {
-        if (typeof updateInRealTime != undefined && !updateInRealTime) {
+        if (typeof updateInRealTime != "undefined" && !updateInRealTime) {
             controls[ID] = initialVal;
         }
-        var oid = name.replace(" ", "-");
-        var cid = category.replace(" ", "-");
+        var oid = name.replace(/ /g, "-");
+        var cid = category.replace(/ /g, "-");
         placeControl(cid, generateHTMLCombo(name, vals, initialVal, ID, updateCallback, updateInRealTime));
+        addDescription(oid, description);
+    }
+    /**
+     * Generates a text area control.
+     * name - Name of the control to be displayed to the user.
+     * defaultVal - Default text in the text area.
+     * maxLength - Maximum length of the text inputted.
+     * category - The category to place the control under.
+     * description - The description to be displayed, describing the control's effect on the game.
+     * ID - C++ ID for the control.
+     */
+    this.generateTextArea = function (name, defaultVal, maxLength, category, description, ID) {
+        controls[ID] = "";
+        var oid = name.replace(/ /g, "-");
+        var cid = category.replace(/ /g, "-");
+        placeControl(cid, generateHTMLTextArea(name, defaultVal, maxLength, ID));
         addDescription(oid, description);
     }
     /**
@@ -486,8 +530,8 @@ function ListItemGenerator() {
      * description - The description to be displayed, describing the control's effect on the game.
      */
     this.generateSubList = function (name, subItems, category, description) {
-        var lid = name.replace(" ", "-");
-        var cid = category.replace(" ", "-");
+        var lid = name.replace(/ /g, "-");
+        var cid = category.replace(/ /g, "-");
         placeControl(cid, generateHTMLSubList(name, subItems));
         addDescription(lid, description);
     }
