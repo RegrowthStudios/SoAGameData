@@ -32,7 +32,10 @@ var optDescs;
 // Handle item descriptions.
 function refreshDescControl() {
     opts.off('mouseover mouseout');
-    opts.on('mouseover', function () {
+    opts.on('mouseover', function (e) {
+        if ($(e.currentTarget).hasClass("sub-list-item")) {
+            e.stopPropagation();
+        }
         var midId = $(this).data("oid");
         for (var x = 0; x < opts.length; ++x) {
             if ($(optDescs[x]).data("oid") == midId) {
@@ -42,7 +45,10 @@ function refreshDescControl() {
             }
         }
     })
-    opts.on('mouseout', function () {
+    opts.on('mouseout', function (e) {
+        if ($(e.currentTarget).hasClass("sub-list-item")) {
+            e.stopPropagation();
+        }
         var midId = $(this).data("oid");
         for (var x = 0; x < opts.length; ++x) {
             if ($(optDescs[x]).data("oid") == midId) {
@@ -68,6 +74,63 @@ $(document).ready(function () {
             $("#options").height(h);
         }, 10);
     }
+});
+
+//Resize extra options to fit with left column.
+$(document).ready(function () {
+    setTimeout(function () {
+        var h2 = $("#options-extra").parent().height();
+        $("#options-extra").height(h2);
+    }, 20);
+});
+
+//Handle sub-lists.
+$(document).ready(function () {
+    var animationDur = 300;
+    function toggleExpansionSubList(elem) {
+        if (elem.hasClass("contracted")) {
+            var h = elem.data("height");
+            elem.animate({
+                height: h
+            }, animationDur, function () {
+                elem.removeClass("contracted");
+                elem.addClass("expanded");
+            });
+            var opts = $("#options");
+            opts.animate({
+                scrollTop: opts.scrollTop() + h
+            }, animationDur);
+        } else {
+            elem.animate({
+                height: 0
+            }, animationDur, function () {
+                elem.height(0);
+                elem.removeClass("expanded");
+                elem.addClass("contracted");
+            });
+        }
+    }
+
+    setTimeout(function () {
+        $.each($(".sub-list-wrapper"), function (i, v) {
+            //hide to prevent "flashing" of options menu.
+            var elem = $(v).hide();
+            //show momentarily to measure height (not displayed).
+            elem.data("height", elem.show().height());
+            elem.hide();
+            toggleExpansionSubList(elem);
+            $(elem).parent().on("click", function () {
+                toggleExpansionSubList(elem);
+            });
+            //show once the animation dur has passed (allowing the options to be slid out of view).
+            setTimeout(function () {
+                elem.show();
+            }, animationDur);
+        });
+        $(".sub-list-item").on("click", function (e) {
+            e.stopPropagation();
+        });
+    }, 10);
 });
 
 /**************/
@@ -107,7 +170,7 @@ function ListItemGenerator() {
             var htmlDescriptor = "<div class='helper' data-oid='" + oid + "'>" + description + "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div></div>"
             $(htmlDescriptor).appendTo("#options-helper-wrapper").hide();
             optDescs = $("#options-helper-wrapper > div");
-            opts = $("#options > .list-item");
+            opts = $("#options .list-item, #options .sub-list-item");
             refreshDescControl();
         }
     }
@@ -123,7 +186,7 @@ function ListItemGenerator() {
         var oid = name.replace(" ", "-");
         var htmlControl = "";
         if (typeof isSubList != undefined && isSubList) {
-            htmlControl += "<li class='sub-list-item clickable row' data-oid='" + oid + "'>";
+            htmlControl += "<li class='sub-list-item clickable list-item row' data-oid='" + oid + "'>";
         } else {
             htmlControl += "<li class='list-item clickable row' data-oid='" + oid + "'>";
         }
@@ -148,7 +211,7 @@ function ListItemGenerator() {
         var oid = name.replace(" ", "-");
         var htmlControl = "";
         if (typeof isSubList != undefined && isSubList) {
-            htmlControl += "<li class='sub-list-item row' data-oid='" + oid + "'>";
+            htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
         } else {
             htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
         }
@@ -171,7 +234,7 @@ function ListItemGenerator() {
         var oid = name.replace(" ", "-");
         var htmlControl = "";
         if (typeof isSubList != undefined && isSubList) {
-            htmlControl += "<li class='sub-list-item row' data-oid='" + oid + "'>";
+            htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
         } else {
             htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
         }
@@ -210,7 +273,7 @@ function ListItemGenerator() {
         var oid = name.replace(" ", "-");
         var htmlControl = "";
         if (typeof isSubList != undefined && isSubList) {
-            htmlControl += "<li class='sub-list-item row' data-oid='" + oid + "'>";
+            htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
         } else {
             htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
         }
@@ -245,7 +308,7 @@ function ListItemGenerator() {
         var oid = name.replace(" ", "-");
         var htmlControl = "";
         if (typeof isSubList != undefined && isSubList) {
-            htmlControl += "<li class='sub-list-item row' data-oid='" + oid + "'>";
+            htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
         } else {
             htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
         }
@@ -281,26 +344,31 @@ function ListItemGenerator() {
      */
     function generateHTMLSubList(name, subItems) {
         var lid = name.replace(" ", "-");
-        var htmlControl = "<li class='list-item row' data-oid='" + lid + "'>";
+        var htmlControl = "<li class='list-item sub-list-owner row' data-oid='" + lid + "'>";
         htmlControl += name;
         htmlControl += "<div class='sub-list-wrapper'>"
         htmlControl += "<ul class='sub-list'>";
         $.each(subItems, function (i, v) {
             switch (v["type"]) {
                 case "click":
-                    htmlContent += generateHTMLClickable(v["name"], v["link"], v["ID"], v["updateCallback"], true);
+                    htmlControl += generateHTMLClickable(v["name"], v["link"], v["ID"], v["updateCallback"], true);
+                    addDescription(v["name"].replace(" ", "-"), v["description"]);
                     break;
                 case "text":
-                    htmlContent += generateHTMLText(v["name"], v["text"], true);
+                    htmlControl += generateHTMLText(v["name"], v["text"], true);
+                    addDescription(v["name"].replace(" ", "-"), v["description"]);
                     break;
                 case "toggle":
-                    htmlContent += generateHTMLToggle(v["name"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
+                    htmlControl += generateHTMLToggle(v["name"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
+                    addDescription(v["name"].replace(" ", "-"), v["description"]);
                     break;
                 case "slider":
-                    htmlContent += generateHTMLSlider(v["name"], v["min"], v["max"], v["initialVal"], v["intervalRes"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
+                    htmlControl += generateHTMLSlider(v["name"], v["min"], v["max"], v["initialVal"], v["intervalRes"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
+                    addDescription(v["name"].replace(" ", "-"), v["description"]);
                     break;
                 case "combo":
-                    htmlContent += generateHTMLCombo(v["name"], v["vals"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
+                    htmlControl += generateHTMLCombo(v["name"], v["vals"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
+                    addDescription(v["name"].replace(" ", "-"), v["description"]);
                     break;
             }
         });
@@ -333,7 +401,7 @@ function ListItemGenerator() {
     this.generateClickable = function (name, link, category, description, ID, updateCallback) {
         var oid = name.replace(" ", "-");
         var cid = category.replace(" ", "-");
-        placeControl(cid, generateHTMLLink(name, link, ID, updateCallback));
+        placeControl(cid, generateHTMLClickable(name, link, ID, updateCallback));
         addDescription(oid, description);
     }
     /**

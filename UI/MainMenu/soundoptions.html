@@ -8,18 +8,9 @@
     <script src="scripts/options.js" type="text/javascript"></script>
     <link href="styles/menu.min.css" rel="stylesheet" />
     <link href="assets/fonts/the_league_of_orbitron/Orbitron.css" rel="stylesheet" />
-    <!--<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet" />-->
     <link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <script>
-        $(document).ready(function () {
-            setTimeout(function () {
-                var h2 = $("#options-extra").parent().height();
-                $("#options-extra").height(h2);
-            }, 20);
-        });
-    </script>
     <img src="assets/images/logo.png" id="menu-header" />
     <div id="outer-wrapper">
         <h3 class="header">Sound Options</h3>
@@ -31,18 +22,18 @@
                 <div id="options-helper-wrapper">
 
                 </div>
-                <div id="option-controls-wrapper">
-                    <ul id="option-controls">
-                        <li>
-                            <a data-mid-id="apply" onclick="updateSettings()">Apply</a>
-                        </li>
-                        <li>
-                            <a data-mid-id="exit">Exit</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
+    </div>
+    <div id="option-controls-wrapper">
+        <ul id="option-controls">
+            <li>
+                <a data-mid-id="apply" onclick="updateSettings()">Apply</a>
+            </li>
+            <li>
+                <a data-mid-id="exit">Exit</a>
+            </li>
+        </ul>
     </div>
 </body>
 </html>
