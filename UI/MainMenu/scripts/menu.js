@@ -133,11 +133,228 @@ $(document).ready(function () {
     }, 10);
 });
 
+/*******************/
+/* Discrete Slider */
+/*******************/
+
+function DiscreteSlider(controls, elements, sliderFrame, startIndex, animationDuration, autoplayOptions) {
+    var elements = typeof elements !== "undefined" ? elements : null;
+    var index = typeof startIndex !== "undefined" ? startIndex : 0;
+    var element = elements[index];
+    $(element).show(); // Ensure the starting element is already visible.
+    var animationDuration = typeof animationDuration !== "undefined" ? animationDuration : 200;
+    var controlsLocked = false;
+    var slideShowDelay, slideShowPauseDelay, slideShowPaused, ignoreMouseOut, automateID, automateSlideshow;
+    var _this = this;
+
+    if (typeof autoplayOptions !== "undefined") {
+        slideShowDelay = typeof autoplayOptions["slideShowDelay"] !== "undefined" ? autoplayOptions["slideShowDelay"] : 6000;
+        slideShowPauseDelay = typeof autoplayOptions["slideShowPauseDelay"] !== "undefined" ? autoplayOptions["slideShowPauseDelay"] : 7000;
+        slideShowPaused = true;
+        ignoreMouseOut = false;
+        automateID = new Array();
+        automateSlideshow = function () {
+            if (slideShowPaused == false) {
+                _this.nextItem();
+                _this.clearTimeouts();
+            }
+            automateID[automateID.length] = setTimeout(function () {
+                _this.automateSlideshow();
+            }, slideShowDelay);
+        }
+        _this.playSlideshow = function () {
+            if (!ignoreMouseOut && (elements.length > 1)) {
+                _this.clearTimeouts();
+                slideShowPaused = false;
+                automateID[automateID.length] = setTimeout(function () {
+                    _this.automateSlideshow();
+                }, slideShowDelay);
+            }
+        }
+        _this.pauseSlideshow = function () {
+            slideShowPaused = true;
+        }
+        _this.pauseSlideshowDelay = function () {
+            slideShowPaused = true;
+            ignoreMouseOut = true;
+            setTimeout(function () {
+                ignoreMouseOut = false;
+                _this.playSlideshow();
+            }, slideShowPauseDelay);
+        }
+    }
+
+    function clearTimeouts () {
+        while (automateID.length > 0) {
+            clearTimeout(automateID[0]);
+            automateID.splice(0, 1);
+        }
+    };
+
+    _this.nextItem = function () {
+        if (elements.length > 1) {
+            _this.lockControls();
+            if (index != (elements.length - 1)) {
+                var nextElement = $(elements[index + 1]);
+                nextElement.prop("right", "-100%");
+                $(element).hide("slide", { direction: "left", easing: "easeInOutCirc" }, animationDuration);
+                nextElement.show("slide", { direction: "right", easing: "easeInOutCirc" }, animationDuration, function () {
+                    _this.unlockControls();
+                });
+                element = nextElement;
+                index++;
+            } else {
+                var nextElement = $(elements[0]);
+                nextElement.prop("right", "-100%");
+                $(element).hide("slide", { direction: "left", easing: "easeInOutCirc" }, animationDuration);
+                nextElement.show("slide", { direction: "right", easing: "easeInOutCirc" }, animationDuration, function () {
+                    _this.unlockControls();
+                });
+                element = nextElement;
+                index = 0;
+            }
+        }
+    }
+    _this.previousItem = function () {
+        if (elements.length > 1) {
+            _this.lockControls();
+            if (index != 0) {
+                var nextElement = $(elements[index - 1]);
+                nextElement.prop("left", "-100%");
+                $(element).hide("slide", { direction: "right", easing: "easeInOutCirc" }, animationDuration);
+                nextElement.show("slide", { direction: "left", easing: "easeInOutCirc" }, animationDuration, function () {
+                    _this.unlockControls();
+                });
+                element = nextElement;
+                index--;
+            } else {
+                var nextElement = $(elements[(elements.length - 1)]);
+                nextElement.prop("left", "-100%");
+                $(element).hide("slide", { direction: "right", easing: "easeInOutCirc" }, animationDuration);
+                nextElement.show("slide", { direction: "left", easing: "easeInOutCirc" }, animationDuration, function () {
+                    _this.unlockControls();
+                });
+                element = nextElement;
+                index = (elements.length - 1);
+            }
+        }
+    }
+    _this.setItem = function (targetIndex, scrollTo) {
+        if (targetIndex < 0 || targetIndex > elements.length) {
+            return -1;
+        }
+        if (typeof autoplayOptions !== "undefined") {
+            _this.pauseSlideshowDelay();
+        }
+        _this.lockControls();
+        var nextElement = $(elements[targetIndex]);
+        nextElement.prop("left", "-100%");
+        $(element).hide("slide", { direction: "left", easing: "easeInOutCirc" }, animationDuration);
+        nextElement.show("slide", { direction: "right", easing: "easeInOutCirc" }, animationDuration, function () {
+            _this.unlockControls();
+        });
+        if (typeof scrollTo !== "undefined") {
+            $('html, body').animate({
+                scrollTop: scrollTo.offset().top - 200
+            }, 1000);
+        }
+        element = nextElement;
+        index = targetIndex;
+    }
+    _this.lockControls = function () {
+        controlsLocked = true;
+    }
+    _this.unlockControls = function () {
+        controlsLocked = false;
+    }
+    _this.lockControlsTemp = function (duration) {
+        if (typeof duration !== "number") {
+            return -1;
+        }
+        controlsLocked = true;
+        setTimeout(function () {
+            controlsLocked = false;
+        }, duration);
+    };
+    _this.updateElementsList = function (newElements, replace) {
+        if (typeof newElements == "undefined" && !(newElements[0] instanceof jQuery)) {
+            return -1;
+        }
+        var replace = typeof replace !== "undefined" ? replace : false;
+        if (replace) {
+            elements = newElements;
+            if (elements.length < 2) {
+                if (controls.previous instanceof jQuery) {
+                    controls.previous.fadeOut();
+                }
+                if (controls.next instanceof jQuery) {
+                    controls.next.fadeOut();
+                }
+            }
+        } else {
+            elements = elements.concat(newElements);
+            if (elements.length < 2) {
+                if (controls.previous instanceof jQuery) {
+                    controls.previous.fadeOut();
+                }
+                if (controls.next instanceof jQuery) {
+                    controls.next.fadeOut();
+                }
+            }
+        }
+        $.each(newElements, function (i, v) {
+            $(v).hover(function () {
+                _this.pauseSlideshow();
+            }, function () {
+                _this.playSlideshow();
+            });
+        });
+    }
+
+    if (typeof autoplayOptions !== "undefined" && sliderFrame instanceof jQuery) {
+        sliderFrame.hover(function () {
+            _this.pauseSlideshow();
+        }, function () {
+            _this.playSlideshow();
+        });
+    }
+    if (controls.next instanceof jQuery) {
+        controls.next.click(function () {
+            if (!controlsLocked) {
+                if (typeof autoplayOptions !== "undefined") {
+                    _this.pauseSlideshowDelay();
+                }
+                _this.nextItem();
+            }
+        });
+    }
+    if (controls.previous instanceof jQuery) {
+        controls.previous.click(function () {
+            if (!controlsLocked) {
+                if (typeof autoplayOptions !== "undefined") {
+                    _this.pauseSlideshowDelay();
+                }
+                _this.previousItem();
+            }
+        });
+    }
+
+    if (elements.length < 2) {
+        if (controls.previous instanceof jQuery) {
+            controls.previous.fadeOut();
+        }
+        if (controls.next instanceof jQuery) {
+            controls.next.fadeOut();
+        }
+    }
+}
+
 /**************/
 /* List Items */
 /**************/
 
 var controls = [];
+var discreteSliders = [];
 // JS "Class" function that facilitates the creation of list items - largely controls, but also static elements.
 function ListItemGenerator() {
 
@@ -185,12 +402,12 @@ function ListItemGenerator() {
     function generateHTMLClickable(name, link, ID, updateCallback, isSubList) {
         var oid = name.replace(/ /g, "-");
         var htmlControl = "";
-        if (typeof isSubList != "undefined" && isSubList) {
+        if (typeof isSubList !== "undefined" && isSubList) {
             htmlControl += "<li class='sub-list-item clickable list-item row' data-oid='" + oid + "'>";
         } else {
             htmlControl += "<li class='list-item clickable row' data-oid='" + oid + "'>";
         }
-        if (typeof ID != "undefined" && typeof updateCallback != "undefined") {
+        if (typeof ID !== "undefined" && typeof updateCallback !== "undefined") {
             htmlControl += "<a href='" + link + "' onclick='return " + updateCallback + "(" + ID + ", value, \"" + oid + "\");'>";
         } else {
             htmlControl += "<a href='" + link + "'>";
@@ -210,7 +427,7 @@ function ListItemGenerator() {
     function generateHTMLText(name, text, isSubList) {
         var oid = name.replace(/ /g, "-");
         var htmlControl = "";
-        if (typeof isSubList != "undefined" && isSubList) {
+        if (typeof isSubList !== "undefined" && isSubList) {
             htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
         } else {
             htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
@@ -233,7 +450,7 @@ function ListItemGenerator() {
     function generateHTMLToggle(name, initialVal, ID, updateCallback, updateInRealTime, isSubList) {
         var oid = name.replace(/ /g, "-");
         var htmlControl = "";
-        if (typeof isSubList != "undefined" && isSubList) {
+        if (typeof isSubList !== "undefined" && isSubList) {
             htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
         } else {
             htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
@@ -241,8 +458,8 @@ function ListItemGenerator() {
         htmlControl += "<div class='column-2'>" + name + "</div>";
         htmlControl += "<div class='content-center column-2'>";
         htmlControl += "<div class='checkbox'>";
-        if (typeof ID != "undefined" && typeof updateCallback != "undefined") {
-            if (typeof updateInRealTime != "undefined" && updateInRealTime) {
+        if (typeof ID !== "undefined" && typeof updateCallback !== "undefined") {
+            if (typeof updateInRealTime !== "undefined" && updateInRealTime) {
                 htmlControl += "<input id='" + oid + "' type='checkbox' name='" + oid + "' " + initialVal + " onchange='" + updateCallback + "(" + ID + ", value, \"" + oid + "\")'>";
             } else {
                 htmlControl += "<input id='" + oid + "' type='checkbox' name='" + oid + "' " + initialVal + " onchange='controls[" + ID + "] = value;'>";
@@ -272,15 +489,15 @@ function ListItemGenerator() {
     function generateHTMLSlider(name, min, max, initialVal, intervalRes, ID, updateCallback, updateInRealTime, isSubList) {
         var oid = name.replace(/ /g, "-");
         var htmlControl = "";
-        if (typeof isSubList != "undefined" && isSubList) {
+        if (typeof isSubList !== "undefined" && isSubList) {
             htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
         } else {
             htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
         }
         htmlControl += "<div class='column-2'>" + name + "</div>";
         htmlControl += "<div class='content-center column-2'>";
-        if (typeof ID != "undefined" && typeof updateCallback != "undefined") {
-            if (typeof updateInRealTime != "undefined" && updateInRealTime) {
+        if (typeof ID !== "undefined" && typeof updateCallback !== "undefined") {
+            if (typeof updateInRealTime !== "undefined" && updateInRealTime) {
                 htmlControl += "<input type='range' min='" + min + "' max='" + max + "' value='" + ((initialVal >= min && initialVal <= max) ? initialVal : min) + "' id='" + oid + "' step='" + intervalRes + "' oninput='return " + updateCallback + "(" + ID + ", value, \"" + oid + "\");'>";
             } else {
                 htmlControl += "<input type='range' min='" + min + "' max='" + max + "' value='" + ((initialVal >= min && initialVal <= max) ? initialVal : min) + "' id='" + oid + "' step='" + intervalRes + "' oninput='controls[" + ID + "] = value;'>";
@@ -295,42 +512,33 @@ function ListItemGenerator() {
         return htmlControl;
     }
     /**
-     * Generates the HTML code for a combobox control.
+     * Generates the HTML code for a discrete slider control.
      * name - Name of the control to be displayed to the user.
-     * vals - Array of values to exist in the combobox.
+     * vals - Array of values to exist in the discrete slider.
      * initialVal - The initial value of the control. Takes a value from the array of values provided.
      * ID - C++ ID for the control.
      * updateCallback - The name of the function to be called when relaying the current state of the control.
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
      * isSubList - Boolean stating if control is in a sublist.
      */
-    function generateHTMLCombo(name, vals, initialVal, ID, updateCallback, updateInRealTime, isSubList) {
+    function generateHTMLDiscreteSlider(name, vals, initialVal, ID, updateCallback, updateInRealTime, isSubList) {
         var oid = name.replace(/ /g, "-");
         var htmlControl = "";
-        if (typeof isSubList != "undefined" && isSubList) {
+        if (typeof isSubList !== "undefined" && isSubList) {
             htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
         } else {
             htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
         }
         htmlControl += "<div class='column-2'>" + name + "</div>";
         htmlControl += "<div class='content-center column-2'>";
-        if (typeof ID != "undefined" && typeof updateCallback != "undefined") {
-            if (typeof updateInRealTime != "undefined" && updateInRealTime) {
-                htmlControl += "<select onchange='" + updateCallback + "(" + ID + ", value, \"" + oid + "\")'>";
-            } else {
-                htmlControl += "<select onchange='controls[" + ID + "] = value;'>";
-            }
-        } else {
-            htmlControl += "<select>";
-        }
+        htmlControl += "<div id='control-previous-" + oid + "' class='control-previous'><span>&lt;</span></div>";
+        htmlControl += "<div id='control-discrete-slider-" + oid + "' class='control-discrete-slider'>";
         $.each(vals, function (i, v) {
             var vid = v.replace(/ /g, "-");
-            var init = "";
-            if (v == initialVal) {
-                init = "selected";
-            }
-            htmlControl += "<option value='" + vid + "'" + init + ">" + v + "</option>";
-        })
+            htmlControl += "<div data-value='" + vid + "' style='display:none;'>" + v + "</div>";
+        });
+        htmlControl += "</div>"
+        htmlControl += "<div id='control-next-" + oid + "' class='control-next'><span>&gt;</span></div>";
         htmlControl += "</select>";
         htmlControl += "</div>";
         htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
@@ -348,17 +556,17 @@ function ListItemGenerator() {
     function generateHTMLTextArea(name, defaultVal, maxLength, ID, isSubList) {
         var oid = name.replace(/ /g, "-");
         var htmlControl = "";
-        if (typeof isSubList != "undefined" && isSubList) {
+        if (typeof isSubList !== "undefined" && isSubList) {
             htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
         } else {
             htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
         }
         htmlControl += "<div class='column-2'>" + name + "</div>";
         htmlControl += "<div class='content-center column-2'>";
-        if (typeof ID != "undefined") {
-            htmlControl += "<input type='text' size='40' maxlength='" + maxLength + "' placeholder='" + defaultVal + "' oninput='controls[" + ID + "] = value;'>"
+        if (typeof ID !== "undefined") {
+            htmlControl += "<input type='text' maxlength='" + maxLength + "' placeholder='" + defaultVal + "' oninput='controls[" + ID + "] = value;'>"
         } else {
-            htmlControl += "<input type='text' size='40' maxlength='" + maxLength + "' placeholder='" + defaultVal + "'>"
+            htmlControl += "<input type='text' maxlength='" + maxLength + "' placeholder='" + defaultVal + "'>"
         }
         htmlControl += "</div>";
         htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
@@ -456,7 +664,7 @@ function ListItemGenerator() {
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
      */
     this.generateToggle = function (name, initialVal, category, description, ID, updateCallback, updateInRealTime) {
-        if (typeof updateInRealTime != "undefined" && !updateInRealTime) {
+        if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
             controls[ID] = initialVal;
         }
         var oid = name.replace(/ /g, "-");
@@ -477,19 +685,19 @@ function ListItemGenerator() {
      * updateCallback - The callback function to be called on user update of the control.
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
      */
-    function generateSlider(name, min, max, initialVal, intervalRes, category, description, ID, updateCallback, updateInRealTime) {
-        if (typeof updateInRealTime != "undefined" && !updateInRealTime) {
+    this.generateSlider = function (name, min, max, initialVal, intervalRes, category, description, ID, updateCallback, updateInRealTime) {
+        if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
             controls[ID] = initialVal;
         }
         var oid = name.replace(/ /g, "-");
         var cid = category.replace(/ /g, "-");
-        placeControl(cid, htmlControl);
+        placeControl(cid, generateHTMLSlider(name, min, max, initialVal, intervalRes, ID, updateCallback, updateInRealTime));
         addDescription(oid, description);
     }
     /**
-     * Generates a combobox control.
+     * Generates a discrete slider control.
      * name - Name of the control to be displayed to the user.
-     * vals - Array of values to exist in the combobox.
+     * vals - Array of values to exist in the discrete slider.
      * initialVal - The initial value of the control. Takes a value from the array of values provided.
      * category - The category to place the control under.
      * description - The description to be displayed, describing the control's effect on the game.
@@ -497,14 +705,24 @@ function ListItemGenerator() {
      * updateCallback - The callback function to be called on user update of the control.
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
      */
-    this.generateCombo = function (name, vals, initialVal, category, description, ID, updateCallback, updateInRealTime) {
-        if (typeof updateInRealTime != "undefined" && !updateInRealTime) {
+    this.generateDiscreteSlider = function (name, vals, initialVal, category, description, ID, updateCallback, updateInRealTime) {
+        if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
             controls[ID] = initialVal;
         }
         var oid = name.replace(/ /g, "-");
         var cid = category.replace(/ /g, "-");
-        placeControl(cid, generateHTMLCombo(name, vals, initialVal, ID, updateCallback, updateInRealTime));
+        placeControl(cid, generateHTMLDiscreteSlider(name, vals, initialVal, ID, updateCallback, updateInRealTime));
         addDescription(oid, description);
+        var initialvid = initialVal.replace(/ /g, "-");
+        var elements = new Array();
+        var startIndex = 0;
+        $.each($("#control-discrete-slider-" + oid + " > div"), function (i, v) {
+            elements[i] = $(v);
+            if ($(v).data("value") == initialvid) {
+                startIndex = i;
+            }
+        });
+        discreteSliders[ID] = new DiscreteSlider({ next: $("#control-next-" + oid + " > span"), previous: $("#control-previous-" + oid + " > span") }, elements, $("#control-discrete-slider-" + oid), startIndex);
     }
     /**
      * Generates a text area control.

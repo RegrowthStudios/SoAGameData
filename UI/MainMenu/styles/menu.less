@@ -386,3 +386,128 @@ ul {
 /************/
 /* Controls */
 /************/
+
+.list-item input, .list-item select {
+    vertical-align: middle;
+}
+
+input {
+    background: rgba(0,0,0,0.2);
+}
+
+// Range
+
+input[type=range] {
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 8px;
+    .transition;
+    -webkit-box-shadow: inset 0 0 6px rgba(16,190,239,0.8);
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 8px;
+    width: 16px;
+    background: #10BEEF;
+    -webkit-box-shadow: 0 0 6px rgba(16,190,239,0.9);
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:hover::-webkit-slider-runnable-track {
+    -webkit-box-shadow: inset 0 0 8px rgba(16,190,239,0.9);
+}
+
+.list-item input[type=range] + output {
+    margin-left: 5px;
+}
+
+// Text
+
+input[type=text] {
+    border: none;
+    padding: 4px 8px;
+    color: #EEE;
+    .transition;
+    -webkit-box-shadow: inset 0 0 6px rgba(16,190,239,0.8);
+}
+
+input[type=text]::-webkit-input-placeholder {
+    color: #CCC;
+}
+
+input[type=text]:hover, input[type=text]:focus {
+    -webkit-box-shadow: inset 0 0 10px rgba(16,190,239,1), inset 0 0 6px rgba(16,190,239,0.8);
+    outline: none;
+}
+
+// Checkbox
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    .transition;
+    -webkit-box-shadow: inset 0 0 6px rgba(16,190,239,0.8);
+}
+
+input[type=checkbox]:focus {
+    outline: none;
+}
+
+input[type=checkbox]:hover:not(:checked) {
+    -webkit-box-shadow: inset 0 0 9px rgba(16,190,239,0.9);
+}
+
+input[type=checkbox]:checked {
+    -webkit-box-shadow: inset 0 0 16px rgba(16,190,239,1), inset 0 0 10px rgba(16,190,239,0.9), inset 0 0 6px rgba(16,190,239,0.8);
+}
+
+// Discrete Slider
+
+//TODO: general styling
+.control-discrete-slider {
+    .transition;
+    display: inline-block;
+    max-height: 44px;
+    overflow: hidden;
+    margin-bottom: -18px; // Fix overflow hidden increasing height of parent element.
+}
+
+.control-next, .control-previous {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.control-next > span, .control-previous > span {
+    .transition;
+    display: inline-block;
+}
+
+.control-next > span:hover, .control-previous > span:hover {
+    -webkit-filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.9));
+    cursor: pointer;
+}
+.control-discrete-slider:hover {
+    text-shadow: 0 0 7px #FFF;
+}
+
+.list-item .control-discrete-slider {
+    width: 50%;
+    text-align: center;
+}
+
+.list-item .control-next {
+    width: 25%;
+    text-align: left;
+}
+
+.list-item .control-previous {
+    width: 25%;
+    text-align: right;
+}
