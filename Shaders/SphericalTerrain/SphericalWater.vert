@@ -8,7 +8,7 @@ in vec4 vPosition; // Position in object space
 in vec3 vTangent;
 in vec4 vColor_Temp;
 in vec2 vUV;
-in vec2 vDepth;
+in float vDepth;
 
 // Output
 out vec3 fColor;
