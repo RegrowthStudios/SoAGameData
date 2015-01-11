@@ -8,8 +8,8 @@ body {
   padding: 0;
 }
 body {
-  background: url("../test/bg.jpg");
-  /*background-color: #0000;*/
+  /*background: url("../test/bg.jpg");*/
+  background-color: #0000;
   width: 100%;
   height: 100%;
   outline: 0;
