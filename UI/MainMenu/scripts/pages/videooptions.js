@@ -1,0 +1,24 @@
+﻿$(document).ready(function () {
+    var i = 0;
+    var lig = new ListItemGenerator();
+    lig.createCategory("Basic Options");
+    lig.generateDiscreteSlider("testResolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", "Basic Options", "The resolution at which the game is rendered.", i++, "test", true);
+    lig.generateToggle("testFullscreen", "checked", "Basic Options", "If checked, the game fills the entire screen.", i++, "handleToggleChange", true);
+    lig.generateTextArea("testTextArea", "Default Text", 30, "Basic Options", "This is a text area.", i++);
+    lig.generateSlider("testSlider", 0, 100, 25, 1, "Basic Options", "This is a slider.", i++);
+    lig.generateDiscreteSlider("test2Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", "Basic Options", "The resolution at which the game is rendered.", i++, "test", false);
+    lig.generateToggle("test2Fullscreen", "", "Basic Options", "If checked, the game fills the entire screen.", i++, "handleToggleChange", false);
+    lig.createCategory("Render Options");
+    lig.generateDiscreteSlider("1Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", "Render Options", "The resolution at which the game is rendered.", i++, "test", false);
+    lig.generateToggle("2Fullscreen", "checked", "Render Options", "If checked, the game fills the entire screen.", i++, "handleToggleChange", false);
+    lig.generateDiscreteSlider("3Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", "Render Options", "The resolution at which the game is rendered.", i++, "test", false);
+    lig.generateToggle("4Fullscreen", "checked", "Render Options", "If checked, the game fills the entire screen.", i++, "handleToggleChange", false);
+    lig.generateDiscreteSlider("5Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", "Render Options", "The resolution at which the game is rendered.", i++, "test", false);
+    lig.generateToggle("6Fullscreen", "checked", "Render Options", "If checked, the game fills the entire screen.", i++, "handleToggleChange", false);
+    lig.createCategory("Filter Options");
+    lig.generateDiscreteSlider("7Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", "Filter Options", "The resolution at which the game is rendered.", i++, "test", false);
+    lig.generateToggle("8Fullscreen", "checked", "Filter Options", "If checked, the game fills the entire screen.", i++, "handleToggleChange", false);
+    lig.generateDiscreteSlider("9Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", "Filter Options", "The resolution at which the game is rendered.", i++, "test", false);
+    lig.generateToggle("10Fullscreen", "checked", "Filter Options", "If checked, the game fills the entire screen.", i++, "handleToggleChange", false);
+    lig.generateDiscreteSlider("11Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", "Filter Options", "The resolution at which the game is rendered.", i++, "test", false);
+});

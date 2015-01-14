@@ -1,66 +1,4 @@
-﻿// Handles overlays
-$(document).ready(function () {
-    $(".pop-overlay").click(function (e) {
-        $(".overlay[data-overlay-id='" + $(e.currentTarget).data("overlay-id") + "']").fadeIn(100);
-    });
-    $(".close").click(function () {
-        $(".overlay").fadeOut(100);
-    });
-});
-
-//// Handles menu item hover
-//$(document).ready(function () {
-//    $(".menu-item").mouseenter(function () {
-//        $(this).children(".hover")[0].play();
-//    });
-//});
-
-//// Handles sub menu expand/contract
-//$(document).ready(function () {
-//    $(".menu-item-expandable").click(function () {
-//        if ($(this).hasClass("expanded")) {
-//            $(this).children(".contract")[0].play();
-//        } else {
-//            $(this).children(".expand")[0].play();
-//        }
-//        $(this).toggleClass("expanded");
-//    });
-//});
-
-var opts;
-var optDescs;
-// Handle item descriptions.
-function refreshDescControl() {
-    opts.off('mouseover mouseout');
-    opts.on('mouseover', function (e) {
-        if ($(e.currentTarget).hasClass("sub-list-item")) {
-            e.stopPropagation();
-        }
-        var midId = $(this).data("oid");
-        for (var x = 0; x < opts.length; ++x) {
-            if ($(optDescs[x]).data("oid") == midId) {
-                $(optDescs[x]).show(0);
-            } else {
-                $(optDescs[x]).stop(false, true);
-            }
-        }
-    })
-    opts.on('mouseout', function (e) {
-        if ($(e.currentTarget).hasClass("sub-list-item")) {
-            e.stopPropagation();
-        }
-        var midId = $(this).data("oid");
-        for (var x = 0; x < opts.length; ++x) {
-            if ($(optDescs[x]).data("oid") == midId) {
-                $(optDescs[x]).hide(0);
-            } else {
-                $(optDescs[x]).stop(false, true);
-            }
-        }
-    });
-}
-
-//Resize scrollable panes to corret height.
+﻿// Resize scrollable panes to corret height.
 $(document).ready(function () {
     if ($(".scrollable-pane.full-height").length > 0) {
         setTimeout(function () {
@@ -76,7 +14,7 @@ $(document).ready(function () {
     }
 });
 
-//Resize extra options to fit with left column.
+// Resize extra options to fit with left column.
 $(document).ready(function () {
     setTimeout(function () {
         var h2 = $("#options-extra").parent().height();
@@ -84,7 +22,7 @@ $(document).ready(function () {
     }, 20);
 });
 
-//Handle sub-lists.
+// Handle sub-lists.
 $(document).ready(function () {
     var animationDur = 300;
     function toggleExpansionSubList(elem) {
@@ -131,6 +69,55 @@ $(document).ready(function () {
             e.stopPropagation();
         });
     }, 10);
+});
+
+/***********************/
+/* Dynamic Page Loader */
+/***********************/
+
+function loadNewPage(name, filePath) {
+    var fileProperties = App.getFileProperties(name); // Returns JavaScript Object of form: { CSS: [ "filepath1.css", "filepath2.css" ], JS: [ "filepath3.js", "filepath.js" ] }
+    var filesToLoad = {};
+    filesToLoad["CSS"] = fileProperties["CSS"];
+    filesToLoad["JS"] = fileProperties["JS"];
+    var stringifiedFilesToLoad = JSON.stringify(filesToLoad);
+
+    if (typeof filePath == "string") {
+        window.location.assign(filePath + "?name=" + name + "&filesToLoad=" + stringifiedFilesToLoad);
+    } else {
+        window.location.assign("/index.html?name=" + name + "&filesToLoad=" + stringifiedFilesToLoad);
+    }
+}
+
+//function loadNewPage(name, filePath) {
+//    window.location.assign("/index.html?name=" + name + "&filesToLoad=" + filePath);
+//}
+
+// Load controls for page.
+$(document).ready(function () {
+    var lig = new ListItemGenerator();
+    var controls = App.getControls(); // Latest page passed in on loadNewPage();
+    //var controls = [ { type: "click", name: "New Game", linkData: { name: "New Game" }, category: "", ID: 0, description: "Start a new game!" }, { type: "click", name: "Load Game", linkData: { name: "Load Game" }, category: "", ID: 1, description: "Load an old game!" } ];
+    // [ { type: "click", name: "New Game", linkData: { name: "New Game" }, category: "", ID: <id number>, description: "Start a new game!" }, { type: "click", name: "Load Game", linkData: { name: "Load Game" }, category: "", ID: <id number>, description: "Load an old game!" } ]
+    $.each(controls, function (i, v) {
+        switch (v["type"]) {
+            case "click":
+                lig.generateClickable(v["name"], v["linkData"], v["category"], v["description"], v["ID"], v["updateCallback"]);
+                break;
+            case "text":
+                lig.generateText(v["name"], v["text"], v["category"], v["description"]);
+                break;
+            case "toggle":
+                lig.generateToggle(v["name"], v["initialValue"], v["category"], v["description"], v["ID"], v["updateCallback"], v["updateInRealTime"]);
+                break;
+            case "slider":
+                lig.generateSlider(v["name"], v["min"], v["max"], v["initialVal"], v["intervalRes"], v["category"], v["description"], v["ID"], v["updateCallback"], v["updateInRealTime"]);
+                break;
+            case "combo":
+                lig.generateDiscreteSlider(v["name"], v["vals"], v["initialVal"], v["category"], v["description"], v["ID"], v["updateCallback"], v["updateInRealTime"])
+                break;
+        }
+    });
 });
 
 /*******************/
@@ -353,6 +340,39 @@ function DiscreteSlider(controls, elements, sliderFrame, startIndex, animationDu
 /* List Items */
 /**************/
 
+var opts;
+var optDescs;
+// Handle item descriptions.
+function refreshDescControl() {
+    opts.off('mouseover mouseout');
+    opts.on('mouseover', function (e) {
+        if ($(e.currentTarget).hasClass("sub-list-item")) {
+            e.stopPropagation();
+        }
+        var midId = $(this).data("oid");
+        for (var x = 0; x < opts.length; ++x) {
+            if ($(optDescs[x]).data("oid") == midId) {
+                $(optDescs[x]).show(0);
+            } else {
+                $(optDescs[x]).stop(false, true);
+            }
+        }
+    })
+    opts.on('mouseout', function (e) {
+        if ($(e.currentTarget).hasClass("sub-list-item")) {
+            e.stopPropagation();
+        }
+        var midId = $(this).data("oid");
+        for (var x = 0; x < opts.length; ++x) {
+            if ($(optDescs[x]).data("oid") == midId) {
+                $(optDescs[x]).hide(0);
+            } else {
+                $(optDescs[x]).stop(false, true);
+            }
+        }
+    });
+}
+
 var controls = [];
 var discreteSliders = [];
 // JS "Class" function that facilitates the creation of list items - largely controls, but also static elements.
@@ -399,7 +419,7 @@ function ListItemGenerator() {
      * updateCallback - The name of the function to be called when relaying the current state of the control.
      * isSubList - Boolean stating if control is in a sublist.
      */
-    function generateHTMLClickable(name, link, ID, updateCallback, isSubList) {
+    function generateHTMLClickable(name, linkData, ID, updateCallback, isSubList) {
         var oid = name.replace(/ /g, "-");
         var htmlControl = "";
         if (typeof isSubList !== "undefined" && isSubList) {
@@ -408,9 +428,9 @@ function ListItemGenerator() {
             htmlControl += "<li class='list-item clickable row' data-oid='" + oid + "'>";
         }
         if (typeof ID !== "undefined" && typeof updateCallback !== "undefined") {
-            htmlControl += "<a href='" + link + "' onclick='return " + updateCallback + "(" + ID + ", value, \"" + oid + "\");'>";
+            htmlControl += "<a href='#' onclick='" + updateCallback + "(" + ID + ", value, \"" + oid + "\"); loadNewPage(" + linkData["name"] + ", " + linkData["filePath"] + ");'>";
         } else {
-            htmlControl += "<a href='" + link + "'>";
+            htmlControl += "<a href='#'>";
         }
         htmlControl += name;
         htmlControl += "</a>";
@@ -603,7 +623,7 @@ function ListItemGenerator() {
                     addDescription(v["name"].replace(/ /g, "-"), v["description"]);
                     break;
                 case "combo":
-                    htmlControl += generateHTMLCombo(v["name"], v["vals"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
+                    htmlControl += generateHTMLDiscreteSlider(v["name"], v["vals"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
                     addDescription(v["name"].replace(/ /g, "-"), v["description"]);
                     break;
             }
@@ -634,10 +654,10 @@ function ListItemGenerator() {
      * ID - C++ ID for the control.
      * updateCallback - The name of the function to be called upon a change of state to the control.
      */
-    this.generateClickable = function (name, link, category, description, ID, updateCallback) {
+    this.generateClickable = function (name, linkData, category, description, ID, updateCallback) {
         var oid = name.replace(/ /g, "-");
         var cid = category.replace(/ /g, "-");
-        placeControl(cid, generateHTMLClickable(name, link, ID, updateCallback));
+        placeControl(cid, generateHTMLClickable(name, linkData, ID, updateCallback));
         addDescription(oid, description);
     }
     /**
