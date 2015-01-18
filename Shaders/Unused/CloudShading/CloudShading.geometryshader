@@ -1,0 +1,59 @@
+#version 330
+
+layout (points) in;
+layout (triangle_strip) out;
+layout (max_vertices = 4) out;
+
+uniform mat4 gVP;
+
+in vec3 gcolor[];
+in float gsize[];
+in float gfogFactor[];
+in vec3 gvertexPosWorld[];
+in vec2 UVstart[];
+
+out vec3 fcolor;
+out vec3 distVec;
+out vec2 UV;
+out float fogFactor;
+out vec3 vertexPosWorld;
+
+void main()
+{
+	vertexPosWorld = gvertexPosWorld[0];
+	fogFactor = gfogFactor[0];
+	fcolor = gcolor[0];
+	vec2 UVst = UVstart[0];
+    vec3 Pos = gl_in[0].gl_Position.xyz;
+	vec3 gCameraPos = vec3(0.0,0.0,0.0); //camera is always at origin
+	float size = gsize[0];
+	vec3 toCamera = normalize(gCameraPos - Pos);
+    vec3 up = vec3(0.0, 1.0, 0.0);
+    vec3 right = normalize(cross(toCamera, up));
+	vec3 crossb = normalize(cross(right, toCamera));
+	distVec = vec3(Pos);
+	
+	Pos -= (right * size/2.0);
+	Pos -= (crossb * size/2.0);
+    gl_Position = gVP * vec4(Pos, 1.0);
+    UV = vec2(UVst[0]+0.0, UVst[1]+0.0);
+    EmitVertex();
+
+	Pos += (crossb*size);
+    gl_Position = gVP * vec4(Pos, 1.0);
+    UV = vec2(UVst[0]+0.0, UVst[1]+0.25);
+    EmitVertex();
+
+    Pos += (right*size);
+	Pos -= (crossb*size);
+    gl_Position = gVP * vec4(Pos, 1.0);
+    UV = vec2(UVst[0]+0.25, UVst[1]+0.0);
+    EmitVertex();
+
+	Pos += (crossb*size);
+    gl_Position = gVP * vec4(Pos, 1.0);
+    UV = vec2(UVst[0]+0.25, UVst[1]+0.25);
+    EmitVertex();
+
+    EndPrimitive();
+} 

@@ -1,9 +1,9 @@
-#version 130
+// Uniforms
+uniform vec4 unColor;
 
-uniform vec4 Color;
+// Output
+out vec4 pColor;
 
-out vec4 color;
-
-void main(){
-	color = Color;
+void main() {
+  pColor = unColor;
 }

@@ -1,5 +1,3 @@
-#version 130
-
 // Interpolated values from the vertex shaders
 in float lightMod;
 in float ambientLight;

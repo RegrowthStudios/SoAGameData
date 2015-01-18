@@ -1,0 +1,29 @@
+#version 330 core
+
+// Input vertex data, different for all executions of this shader.
+layout(location = 0) in vec4 pos;
+layout(location = 1) in vec4 colorT;
+layout(location = 2) in float Texture;
+
+// Values that stay constant for the whole mesh.
+out vec3 gcolor;
+out float gfogFactor;
+out float gsize;
+out vec3 gvertexPosWorld;
+uniform mat4 M;
+uniform float FogEnd;
+uniform float FogStart;
+out vec2 UVstart;
+
+void main(){	
+	gcolor = colorT.rgb;
+	gsize = pos[3];
+	gl_Position = M * vec4(pos.xyz, 1.0);
+	gvertexPosWorld = (gl_Position).xyz;
+	float dist = length(gvertexPosWorld);
+	gfogFactor = clamp(((FogEnd - dist + FogStart + gvertexPosWorld.y*10)/FogEnd), 0.0, 1.0);
+	
+	UVstart[0] = mod((Texture), 4.0)/4.0;
+	UVstart[1] = 1.0 - (floor((Texture/4.0))/4.0) - 0.25;
+}
+

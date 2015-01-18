@@ -1,5 +1,3 @@
-#version 130
-
 // Interpolated values from the vertex shaders
 in vec4 UV;
 in vec2 overlayUV;

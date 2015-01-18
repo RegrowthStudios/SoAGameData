@@ -1,5 +1,3 @@
-#version 130
-
 in vec4 position_TextureType;
 in vec4 uvs_animation_blendMode;
 in vec4 textureAtlas_textureIndex;
@@ -84,9 +82,9 @@ void main(){
 	
     //add 0.1 in case we lose precision
     int blendMode = int(uvs_animation_blendMode[3] + 0.1);
-    alphaBlendFactor = float((blendMode & 0x3) - 1);
+    alphaBlendFactor = float(blendMode & 0x3);
     additiveBlendFactor = float(((blendMode & 0xc) >> 2) - 1);
-    multiplicativeBlendFactor = float((blendMode >> 4) - 1);
+    multiplicativeBlendFactor = float(blendMode >> 4);
     
 	lampLight = light_sunlight.xyz * 1.6;
     
