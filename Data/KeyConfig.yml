@@ -1,0 +1,248 @@
+Vertical:
+  type: 0
+  defaultPositiveKey: 119
+  defaultNegativeKey: 115
+  positiveKey: 119
+  negativeKey: 115
+  joystickButton: -1
+  joystickAxis: -1
+Horizontal:
+  type: 0
+  defaultPositiveKey: 100
+  defaultNegativeKey: 97
+  positiveKey: 100
+  negativeKey: 97
+  joystickButton: -1
+  joystickAxis: -1
+Sprint:
+  type: 1
+  defaultPositiveKey: 1073742049
+  defaultNegativeKey: 3452816845
+  positiveKey: 1073742049
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Crouch:
+  type: 1
+  defaultPositiveKey: 1073742048
+  defaultNegativeKey: 3452816845
+  positiveKey: 1073742048
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Mega Speed:
+  type: 1
+  defaultPositiveKey: 1073742050
+  defaultNegativeKey: 3452816845
+  positiveKey: 1073742050
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Jump:
+  type: 1
+  defaultPositiveKey: 32
+  defaultNegativeKey: 3452816845
+  positiveKey: 32
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Planet Rotation:
+  type: 0
+  defaultPositiveKey: 61
+  defaultNegativeKey: 45
+  positiveKey: 61
+  negativeKey: 45
+  joystickButton: -1
+  joystickAxis: -1
+Block Select:
+  type: 1
+  defaultPositiveKey: 98
+  defaultNegativeKey: 3452816845
+  positiveKey: 98
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Mouse Right:
+  type: 1
+  defaultPositiveKey: 3
+  defaultNegativeKey: 3452816845
+  positiveKey: 3
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Mouse Left:
+  type: 1
+  defaultPositiveKey: 1
+  defaultNegativeKey: 3452816845
+  positiveKey: 1
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Block Scanner:
+  type: 1
+  defaultPositiveKey: 113
+  defaultNegativeKey: 3452816845
+  positiveKey: 113
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Zoom:
+  type: 1
+  defaultPositiveKey: 1073742052
+  defaultNegativeKey: 3131961357
+  positiveKey: 1073742052
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Reload Textures:
+  type: 1
+  defaultPositiveKey: 1073741886
+  defaultNegativeKey: 3131961357
+  positiveKey: 1073741886
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Reload Blocks:
+  type: 1
+  defaultPositiveKey: 1073741887
+  defaultNegativeKey: 3131961357
+  positiveKey: 1073741887
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Inventory:
+  type: 1
+  defaultPositiveKey: 9
+  defaultNegativeKey: 3131961357
+  positiveKey: 9
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Pause:
+  type: 1
+  defaultPositiveKey: 27
+  defaultNegativeKey: 3131961357
+  positiveKey: 27
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Draw Mode:
+  type: 1
+  defaultPositiveKey: 109
+  defaultNegativeKey: 3131961357
+  positiveKey: 109
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Reload Shaders:
+  type: 1
+  defaultPositiveKey: 1073741892
+  defaultNegativeKey: 3131961357
+  positiveKey: 1073741892
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Grid Toggle:
+  type: 1
+  defaultPositiveKey: 103
+  defaultNegativeKey: 3131961357
+  positiveKey: 103
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Planet Draw Mode:
+  type: 1
+  defaultPositiveKey: 106
+  defaultNegativeKey: 3131961357
+  positiveKey: 106
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Sonar:
+  type: 1
+  defaultPositiveKey: 114
+  defaultNegativeKey: 3131961357
+  positiveKey: 114
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Debug:
+  type: 1
+  defaultPositiveKey: 104
+  defaultNegativeKey: 3131961357
+  positiveKey: 104
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Fly:
+  type: 1
+  defaultPositiveKey: 102
+  defaultNegativeKey: 3131961357
+  positiveKey: 102
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+HUD:
+  type: 1
+  defaultPositiveKey: 116
+  defaultNegativeKey: 3131961357
+  positiveKey: 116
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Marker:
+  type: 1
+  defaultPositiveKey: 99
+  defaultNegativeKey: 3131961357
+  positiveKey: 99
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Water Update:
+  type: 1
+  defaultPositiveKey: 110
+  defaultNegativeKey: 3131961357
+  positiveKey: 110
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Flash Light:
+  type: 1
+  defaultPositiveKey: 108
+  defaultNegativeKey: 3131961357
+  positiveKey: 108
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Update Physics Blocks:
+  type: 1
+  defaultPositiveKey: 112
+  defaultNegativeKey: 3131961357
+  positiveKey: 112
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Update Frustum:
+  type: 1
+  defaultPositiveKey: 117
+  defaultNegativeKey: 3131961357
+  positiveKey: 117
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Random Debug:
+  type: 1
+  defaultPositiveKey: 54
+  defaultNegativeKey: 3452816845
+  positiveKey: 54
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1
+Scan WSO:
+  type: 1
+  defaultPositiveKey: 91
+  defaultNegativeKey: 3131961357
+  positiveKey: 91
+  negativeKey: 0
+  joystickButton: -1
+  joystickAxis: -1

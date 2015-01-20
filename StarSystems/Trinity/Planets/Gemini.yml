@@ -1,0 +1,5 @@
+planet:
+  diameter: 6400.0
+  mass: 5.9722e23
+  axis: [0.1, 0.9, 0.0]
+  angularSpeed: 0.0000727

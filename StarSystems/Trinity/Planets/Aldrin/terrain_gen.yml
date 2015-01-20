@@ -1,0 +1,37 @@
+biomes: "Planets/Aldrin/biome_gen.yml"
+terrainColor: 
+  tint: [255, 255, 255]
+  colorPath: Planets/Aldrin/TerrainColor.png
+  texturePath: _shared/terrain_b.png
+liquidColor: 
+  depthScale: 3000.0
+  tint: [255, 255, 255]
+  freezeTemp: 88.0
+  colorPath: _shared/water_color.png
+  texturePath: _shared/water_a.png
+tempLatitudeFalloff: 190.0
+humLatitudeFalloff: 30.0
+baseHeight:
+  base: 0
+  noise:
+    octaves: 8
+    persistence: 0.9
+    frequency: 0.0003
+    low: 1.0
+    high: 50.0
+temperature:
+  base: 172.0
+  noise:
+    octaves: 6
+    persistence: 0.9
+    frequency: 0.00033
+    low: -64.0
+    high: 64.0
+humidity:
+  base: 128.0
+  noise:
+    octaves: 6
+    persistence: 0.9
+    frequency: 0.0003
+    low: -128.0
+    high: 128.0

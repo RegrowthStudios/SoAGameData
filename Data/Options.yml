@@ -1,0 +1,16 @@
+GraphicsOptions:
+  enableParticles: true
+  fov: 70
+  gamma: 1.0
+  voxelRenderDistance: 400
+  terrainQuality: 0
+  texturePack: Default
+  maxFps: 60
+  motionBlur: 0
+  msaa: 0
+GameOptions:
+  invertMouse: false
+  mouseSensitivity: 30.0
+SoundOptions:
+  effectVolume: 1.0
+  musicVolume: 1.0

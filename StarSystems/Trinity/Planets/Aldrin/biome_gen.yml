@@ -1,0 +1,31 @@
+baseLookupMap: "Planets/Aldrin/base_biomes.png"
+aridBadlands:
+  displayName: "Arid Badlands"
+  mapColor: [230, 230, 158]
+dryPlains:
+  displayName: "Dry Plains"
+  mapColor: [151, 151, 104]
+frozenWasteland:
+  displayName: "Frozen Wasteland"
+  mapColor: [0, 242, 227]
+grassland:
+  displayName: "Grassland"
+  mapColor: [140, 227, 27]
+jungle:
+  displayName: "Jungle"
+  mapColor: [26, 149, 64]
+savannah:
+  displayName: "Savannah"
+  mapColor: [226, 228, 1]
+sparseForest:
+  displayName: "Sparse Forest"
+  mapColor: [108, 119, 26]
+taiga:
+  displayName: "Taiga"
+  mapColor: [0, 169, 157]
+temperateForest:
+  displayName: "Temperate Forest"
+  mapColor: [26, 102, 27]
+tundra:
+  displayName: "Tundra"
+  mapColor: [0, 169, 227]

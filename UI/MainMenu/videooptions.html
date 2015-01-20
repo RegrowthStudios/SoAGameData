@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SoA Main Menu</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="scripts/menu.js" type="text/javascript"></script>
+    <script src="scripts/options.js" type="text/javascript"></script>
+    <link href="styles/menu.min.css" rel="stylesheet" />
+    <link href="assets/fonts/the_league_of_orbitron/Orbitron.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+            var i = 0;
+            var lig = new ListItemGenerator();
+            lig.createCategory("Basic Options");
+            lig.generateDiscreteSlider("testResolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", "Basic Options", "The resolution at which the game is rendered.", i++, "test", true);
+            lig.generateToggle("testFullscreen", "checked", "Basic Options", "If checked, the game fills the entire screen.", i++, "handleToggleChange", true);
+            lig.generateTextArea("testTextArea", "Default Text", 30, "Basic Options", "This is a text area.", i++);
+            lig.generateSlider("testSlider", 0, 100, 25, 1, "Basic Options", "This is a slider.", i++);
+            lig.generateDiscreteSlider("test2Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", "Basic Options", "The resolution at which the game is rendered.", i++, "test", false);
+            lig.generateToggle("test2Fullscreen", "", "Basic Options", "If checked, the game fills the entire screen.", i++, "handleToggleChange", false);
+            lig.createCategory("Render Options");
+            lig.generateDiscreteSlider("1Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", "Render Options", "The resolution at which the game is rendered.", i++, "test", false);
+            lig.generateToggle("2Fullscreen", "checked", "Render Options", "If checked, the game fills the entire screen.", i++, "handleToggleChange", false);
+            lig.generateDiscreteSlider("3Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", "Render Options", "The resolution at which the game is rendered.", i++, "test", false);
+            lig.generateToggle("4Fullscreen", "checked", "Render Options", "If checked, the game fills the entire screen.", i++, "handleToggleChange", false);
+            lig.generateDiscreteSlider("5Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", "Render Options", "The resolution at which the game is rendered.", i++, "test", false);
+            lig.generateToggle("6Fullscreen", "checked", "Render Options", "If checked, the game fills the entire screen.", i++, "handleToggleChange", false);
+            lig.createCategory("Filter Options");
+            lig.generateDiscreteSlider("7Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", "Filter Options", "The resolution at which the game is rendered.", i++, "test", false);
+            lig.generateToggle("8Fullscreen", "checked", "Filter Options", "If checked, the game fills the entire screen.", i++, "handleToggleChange", false);
+            lig.generateDiscreteSlider("9Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", "Filter Options", "The resolution at which the game is rendered.", i++, "test", false);
+            lig.generateToggle("10Fullscreen", "checked", "Filter Options", "If checked, the game fills the entire screen.", i++, "handleToggleChange", false);
+            lig.generateDiscreteSlider("11Resolution", ["1920x1080", "2560x1440", "1856x1392"], "1920x1080", "Filter Options", "The resolution at which the game is rendered.", i++, "test", false);
+        });
+    </script>
+    <img src="assets/images/logo.png" id="menu-header" />
+    <div id="outer-wrapper">
+        <h3 class="header">Video Options</h3>
+        <div class="row">
+            <div class="column-2">
+                <ul id="options" class="scrollable-pane full-height"></ul>
+            </div>
+            <div id="options-extra" class="column-2">
+                <div id="options-helper-wrapper">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="option-controls-wrapper">
+        <ul id="option-controls">
+            <li>
+                <a data-mid-id="apply" onclick="updateSettings()">Apply</a>
+            </li>
+            <li>
+                <a data-mid-id="exit">Exit</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
