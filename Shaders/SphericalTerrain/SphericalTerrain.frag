@@ -1,6 +1,6 @@
 // Uniforms
 uniform sampler2D unNormalMap;
-uniform sampler2D unTexture ;
+uniform sampler2D unTexture;
 uniform sampler2D unColorMap;
 uniform vec3 unNormMult;
 uniform vec3 unEyeDirWorld;

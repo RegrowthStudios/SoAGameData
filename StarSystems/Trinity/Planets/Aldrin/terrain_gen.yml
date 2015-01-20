@@ -4,7 +4,7 @@ terrainColor:
   colorPath: Planets/Aldrin/TerrainColor.png
   texturePath: _shared/terrain_b.png
 liquidColor: 
-  depthScale: 400.0
+  depthScale: 3000.0
   tint: [255, 255, 255]
   freezeTemp: 88.0
   colorPath: _shared/water_color.png
@@ -12,19 +12,13 @@ liquidColor:
 tempLatitudeFalloff: 190.0
 humLatitudeFalloff: 30.0
 baseHeight:
-  base: -70
+  base: 0
   noise:
     octaves: 8
     persistence: 0.9
-    frequency: 0.0002
-    low: 0.0
+    frequency: 0.0003
+    low: 1.0
     high: 50.0
-  ridgedNoise:
-    octaves: 6
-    persistence: 0.9
-    frequency: 0.0001
-    low: -100.0
-    high: 75.0
 temperature:
   base: 172.0
   noise:
