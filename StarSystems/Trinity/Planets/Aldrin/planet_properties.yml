@@ -2,5 +2,5 @@ planet:
   diameter: 9200.0
   mass: 2.2694e24
   axis: [0.1, 0.9, 0.0]
-  angularSpeed: 2100.727
+  rotationalPeriod: 1.04
   generation: "Planets/Aldrin/terrain_gen.yml"
