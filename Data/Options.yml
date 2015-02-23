@@ -13,4 +13,4 @@ GameOptions:
   mouseSensitivity: 30.0
 SoundOptions:
   effectVolume: 1.0
-  musicVolume: 1.0
+  musicVolume: 0.0
