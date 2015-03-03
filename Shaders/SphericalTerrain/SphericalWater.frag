@@ -2,9 +2,9 @@
 uniform sampler2D unNormalMap;
 uniform sampler2D unColorMap;
 uniform float unDepthScale;
-uniform vec3 unNormMult;
 uniform float unDt;
 uniform vec3 unLightDirWorld = vec3(0.0, 0.0, 1.0);
+uniform float unAlpha;
 
 // Input
 in vec3 fColor;
@@ -40,8 +40,7 @@ void main() {
   } else {
     vec3 normal = fTbn * normalize(((texture(unNormalMap, fUV + unDt).rbg * 2.0) - 1.0) * 0.6 +
         ((texture(unNormalMap, 0.5*(fUV - unDt)).rbg * 2.0) - 1.0) * 0.2 + 
-        ((texture(unNormalMap, 0.1*(fUV - unDt)).rbg * 2.0) - 1.0) * 0.2 +
-        0.0001 * unNormMult);
+        ((texture(unNormalMap, 0.1*(fUV - unDt)).rbg * 2.0) - 1.0) * 0.2);
      
     
     vec2 colorUV = vec2(fTemp, fDepth / unDepthScale);
@@ -50,6 +49,6 @@ void main() {
     
     float diffuse = computeDiffuse(normal); 
     float specular = computeSpecular(normal);
-    pColor = vec4(color * diffuse + vec3(1.0) * specular, 1.0);
+    pColor = vec4(color * diffuse + vec3(1.0) * specular, unAlpha);
   }
 }

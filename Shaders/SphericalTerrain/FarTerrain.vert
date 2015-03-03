@@ -21,11 +21,11 @@ out vec2 fTemp_Hum;
 out mat3 fTbn;
 out vec3 fEyeDir;
 
-vec3 computeTangent(vec3 wPosition) {
+vec3 computeTangent(vec3 wPosition, vec3 nPosition) {
     vec3 tangent = wPosition;
     tangent.x += 10.0;
     tangent = normalize(tangent) * (unRadius + vPosition.y);
-    return normalize(tangent - wPosition);
+    return normalize(tangent - nPosition);
 }
 
 void main() {
@@ -35,7 +35,7 @@ void main() {
   vec3 normal = normalize(wPosition);
   vec3 nPosition = normal * (unRadius + vPosition.y);
   
-  vec3 tangent = computeTangent(wPosition);
+  vec3 tangent = computeTangent(wPosition, nPosition);
   
   vec3 vpos = vPosition.xyz + (nPosition - wPosition);
   
