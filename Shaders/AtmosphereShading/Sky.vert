@@ -15,7 +15,6 @@ uniform float unCameraHeight2; // Camera Height ^ 2
 uniform float unOuterRadius; // Outer (atmosphere) radius
 uniform float unOuterRadius2; // unOuterRadius^2
 uniform float unInnerRadius; // Inner (planetary) radius
-uniform float unInnerRadius2; // unInnerRadius^2
 uniform float unKrESun; // Kr * ESun
 uniform float unKmESun; // Km * ESun
 uniform float unKr4PI; // Kr * 4 * PI
@@ -23,6 +22,7 @@ uniform float unKm4PI; // Km * 4 * PI
 uniform float unScale; // 1 / (unOuterRadius - unInnerRadius)
 uniform float unScaleDepth; // Altitude at which the atmosphere's average density is found
 uniform float unScaleOverScaleDepth; // unScale / unScaleDepth
+// TODO(Ben): #these should not be uniforms
 uniform int unNumSamples; // Number of integration samples
 uniform float unNumSamplesF; // (float)unNumSamples
 
@@ -49,7 +49,6 @@ void main() {
   float intersectFar = length(ray);
   ray /= intersectFar;
   
-
   // Calculate the closest intersection of the ray with the outer atmosphere
   float intersectNear = 0.0;
   if(unCameraHeight2 > unOuterRadius2) {
