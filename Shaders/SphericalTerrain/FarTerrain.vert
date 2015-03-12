@@ -36,6 +36,7 @@ out vec2 fUV;
 out vec2 fTemp_Hum;
 out mat3 fTbn;
 out vec3 fEyeDir;
+out vec3 fNormal;
 // Scattering
 out vec3 fPrimaryColor;
 out vec3 fSecondaryColor;
@@ -113,6 +114,7 @@ void main() {
   vec3 wPosition = vec3(unW * vPosition);
   wPosition.y = unRadius + vPosition.y;
   vec3 normal = normalize(wPosition);
+  fNormal = normal;
   vec3 nPosition = normal * (unRadius + vPosition.y);
   
   computeScattering(nPosition);
