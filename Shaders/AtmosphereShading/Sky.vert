@@ -45,7 +45,7 @@ void main() {
   // Calculate the farthest intersection of the ray with the outer atmosphere
   vec3 worldPos = vPosition.xyz * unOuterRadius;
   vec3 ray = worldPos - unCameraPos;
-  fRayDirection = -ray;
+  fRayDirection = -ray; // TODO: Normalize here instead of in frag?
   float intersectFar = length(ray);
   ray /= intersectFar;
   

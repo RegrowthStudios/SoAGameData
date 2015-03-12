@@ -3,8 +3,11 @@ uniform sampler2D unNormalMap;
 uniform sampler2D unColorMap;
 uniform float unDepthScale;
 uniform float unDt;
-uniform vec3 unLightDirWorld = vec3(0.0, 0.0, 1.0);
+uniform vec3 unLightDirWorld;
 uniform float unAlpha;
+// Scattering
+uniform float unG;
+uniform float unG2;
 
 // Input
 in vec3 fColor;
@@ -14,6 +17,9 @@ in float fDepth;
 in float frozen;
 in mat3 fTbn;
 in vec3 fEyeDir;
+// Scattering
+in vec3 fPrimaryColor;
+in vec3 fSecondaryColor;
 
 // Output
 out vec4 pColor;
@@ -31,12 +37,17 @@ float computeSpecular(vec3 normal) {
 
 void main() {
   
+  float theta = dot(unLightDirWorld, fEyeDir);
+  float miePhase = 1.5 * ((1.0 - unG2) / (2.0 + unG2)) * (1.0 + theta * theta) / pow(1.0 + unG2 - 2.0 * unG * theta, 1.5);
+  
+  vec3 scatterColor = fPrimaryColor + miePhase * fSecondaryColor;
+  
   if (frozen > 0.5) {
     vec3 normal = fTbn * vec3(0.0, 1.0, 0.0);
     // Diffuse lighting
     float diffuse = computeDiffuse(normal);
     float specular = computeSpecular(normal);
-    pColor = vec4(fColor.rgb * diffuse + vec3(1.0) * specular, 1.0);
+    pColor = vec4(fColor.rgb * diffuse + scatterColor + vec3(1.0) * specular, 1.0);
   } else {
     vec3 normal = fTbn * normalize(((texture(unNormalMap, fUV + unDt).rbg * 2.0) - 1.0) * 0.6 +
         ((texture(unNormalMap, 0.5*(fUV - unDt)).rbg * 2.0) - 1.0) * 0.2 + 
@@ -49,6 +60,6 @@ void main() {
     
     float diffuse = computeDiffuse(normal); 
     float specular = computeSpecular(normal);
-    pColor = vec4(color * diffuse + vec3(1.0) * specular, unAlpha);
+    pColor = vec4(color * diffuse + scatterColor + vec3(1.0) * specular, unAlpha);
   }
 }
