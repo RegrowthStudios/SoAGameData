@@ -7,7 +7,6 @@ in vec3 fragmentColor;
 in vec3 overlayFragmentColor;
 flat in vec2 textureAtlas;
 in float fogFactor;
-flat in float fadeAlpha;
 in vec3 lampLight;
 in float sunlight;
 in vec3 distVec;
@@ -36,6 +35,7 @@ uniform vec3 lightPosition_worldspace;
 uniform float specularExponent;
 uniform float specularIntensity;
 uniform float alphaMult;
+uniform float fadeDistance;
 
 void main(){
 
@@ -107,6 +107,8 @@ void main(){
         fragColor * lampLight +
         lightColor * sunlight * (fragColor * diffuseMult + 
         materialSpecularColor * pow(NdotH, specularExponent));
+    // Calculate fade
+	float fadeAlpha = clamp(1.0 - (dist - fadeDistance) * 0.06, 0.0, 1.0);
     
     color = vec4(mix(fogColor, colr, fogFactor), fadeAlpha * alphaMult * materialDiffuseColor.a); //apply fog and transparency
 }

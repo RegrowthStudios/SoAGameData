@@ -28,6 +28,7 @@ void main() {
   float maxIntensity = max(max(fPrimaryColor.r, fPrimaryColor.b), fPrimaryColor.g) * 8;
   maxIntensity = min(maxIntensity, 1.0);
 
+  vec3 color = fPrimaryColor + miePhase * fSecondaryColor;
   // Accumulate both lighting values
-  pColor = vec4(fPrimaryColor + miePhase * fSecondaryColor, maxIntensity);
+  pColor = vec4(color, maxIntensity);
 }

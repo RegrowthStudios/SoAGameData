@@ -93,9 +93,17 @@ void main() {
   // Scale integration
   accumulationColor *= scaledLength;
 
+  // Hack to darken over horizon
+  float camHeight = length(unCameraPos);
+  vec3 camNormal = unCameraPos / camHeight;
+  camHeight = max(camHeight, unInnerRadius);
+  float horizonAngle = acos(unInnerRadius / camHeight);
+  float lodAngle = acos(dot(camNormal, normalize(worldPos)));
+  float mult = clamp(((horizonAngle + 0.3) - lodAngle) * 3.0, 0.0, 1.0); 
+  
   // Account for NaN errors
-  accumulationColor = clamp(accumulationColor, vec3(0.0), vec3(3000000000000.0));
-
+  accumulationColor = clamp(accumulationColor, vec3(0.0), vec3(3000000.0)) * mult;
+  
   // Scale the Mie and Rayleigh colors
   fSecondaryColor = accumulationColor * unKmESun;
   fPrimaryColor = accumulationColor * (unInvWavelength * unKrESun);

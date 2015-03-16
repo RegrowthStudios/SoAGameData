@@ -113,7 +113,7 @@ baseHeight:
           children:
           - type: constant
             op: sub
-            val: 1650000.0
+            val: 2650000.0
             clamp: [0.0, 350000.0]
 temperature:
   base: 172.0

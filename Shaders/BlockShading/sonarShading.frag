@@ -10,7 +10,6 @@ flat in float multiplicativeBlendFactor;
 flat in float additiveBlendFactor;
 flat in float alphaBlendFactor;
 in vec3 distVec;
-flat in float fadeAlpha;
 
 // Ouput data
 out vec4 color;
@@ -21,6 +20,7 @@ uniform sampler2DArray textures;
 uniform float sonarDistance;
 uniform float waveWidth;
 uniform float dt;
+uniform float fadeDistance;
 
 void main(){
 
@@ -61,6 +61,7 @@ void main(){
 	}else{
 		discard;
 	}
-
+    // Calculate fade
+	float fadeAlpha = clamp(1.0 - (dist - fadeDistance) * 0.06, 0.0, 1.0);
 	color = vec4(colr.rgb, min(colr.a*fadeAlpha, (1.0 - dt)));
 }
