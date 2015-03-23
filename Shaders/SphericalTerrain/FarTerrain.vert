@@ -4,6 +4,7 @@ uniform vec3 unTranslation;
 uniform vec3 unLightDirWorld;
 uniform float unHeightOffset;
 uniform float unTexelWidth;
+uniform float unNormalmapWidth;
 uniform float unRadius;
 // Scattering
 uniform vec3 unCameraPos;
@@ -136,8 +137,7 @@ void main() {
   fColor = vColor;
   fUV = vUV;
   // Move normal map UV in by 1 texel in each direction
-  fNormUV = vNormUV * ((unTexelWidth - 2.0001) / unTexelWidth);
-  fNormUV = vNormUV + 1.0 / unTexelWidth + 0.0001;
+  fNormUV = vNormUV * unNormalmapWidth + 1.1 * unTexelWidth;
   
   fTemp_Hum = vTemp_Hum;
 }

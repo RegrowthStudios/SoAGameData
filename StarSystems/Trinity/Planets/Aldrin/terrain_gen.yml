@@ -16,6 +16,12 @@ humHeightFalloff: 1.0
 baseHeight:
   base: 100
   funcs:
+    # Tiny detail
+    - octaves: 9
+      persistence: 0.9
+      frequency: 0.15
+      low: 0.0
+      high: 50.0
     # Small detail
     - octaves: 6
       persistence: 0.9

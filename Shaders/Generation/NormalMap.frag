@@ -1,6 +1,7 @@
 // Uniforms
 uniform sampler2D unHeightMap;
 uniform float unWidth;
+uniform float unTexelWidth;
 
 // Inputs
 in vec2 fUV;
