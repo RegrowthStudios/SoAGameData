@@ -1,7 +1,8 @@
 // Uniforms
-uniform mat4 unWVP;
-uniform mat4 unW;
+uniform mat4 unVP;
+uniform vec3 unTranslation;
 uniform vec3 unLightDirWorld;
+uniform float unHeightOffset;
 uniform float unTexelWidth;
 uniform float unRadius;
 // Scattering
@@ -111,8 +112,9 @@ vec3 computeTangent(vec3 wPosition, vec3 nPosition) {
 
 void main() {
   // Calculate spherical position
-  vec3 wPosition = vec3(unW * vPosition);
-  wPosition.y = unRadius + vPosition.y;
+  vec3 relPos = vPosition.xyz + unTranslation;
+  vec3 wPosition = relPos;
+  wPosition.y = unRadius + vPosition.y + unHeightOffset;
   vec3 normal = normalize(wPosition);
   fNormal = normal;
   vec3 nPosition = normal * (unRadius + vPosition.y);
@@ -121,22 +123,15 @@ void main() {
   
   vec3 tangent = computeTangent(wPosition, nPosition);
   
-  vec3 vpos = vPosition.xyz + (nPosition - wPosition);
+  vec3 vpos = relPos + (nPosition - wPosition);
   
    // Compute direction to eye
-  fEyeDir = normalize(-(unW * vec4(vpos, 1.0)).xyz);
+  fEyeDir = normalize(-vpos);
   
   // Compute TBN for converting to world space
-  vec3 n = normalize((unW * vec4(normal, 0.0)).xyz);
-  vec3 t = normalize((unW * vec4(tangent, 0.0)).xyz);
-  vec3 b = normalize((unW * vec4(cross( normal, tangent), 0.0)).xyz);
-  fTbn = mat3(t, n, b);
+  fTbn = mat3(tangent, normal, cross( normal, tangent));
   
-  float mult = 1.0;
-  float angle = dot(unLightDirWorld, -n);
-  mult = clamp( 1.0 - angle * 3.0, 0.0, 1.0);
-  
-  gl_Position = unWVP * vec4(vpos, 1.0);
+  gl_Position = unVP * vec4(vpos, 1.0);
   
   fColor = vColor;
   fUV = vUV;

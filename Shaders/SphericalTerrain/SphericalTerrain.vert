@@ -1,6 +1,5 @@
 // Uniforms
 uniform mat4 unWVP;
-uniform mat4 unW;
 uniform vec3 unLightDirWorld;
 uniform float unTexelWidth;
 // Scattering
@@ -51,6 +50,8 @@ void computeScattering(vec3 worldPos) {
 	worldPos = normalize(worldPos);
 	float intersectFar = length(ray);
 	ray /= intersectFar;
+    
+    fEyeDir = -ray;
 	
 	// Calculate the closest intersection of the ray with the outer atmosphere
 	float intersectNear = 0.0;
@@ -106,18 +107,14 @@ void main() {
   
   computeScattering(vPosition.xyz);
   
-   // Compute direction to eye // TODO: OPTIMIZE WITH RAY
-  fEyeDir = normalize(-(unW * vPosition).xyz);
-  
   // Compute TBN for converting to world space
-  vec3 n = normalize((unW * vec4(normal, 0.0)).xyz);
-  vec3 t = normalize((unW * vec4(vTangent, 0.0)).xyz);
-  vec3 b = normalize((unW * vec4(cross( normal, vTangent), 0.0)).xyz);
-  fTbn = mat3(t, n, b);
+  vec3 b = cross(normal, vTangent);
+  fTbn = mat3(vTangent, normal, b);
   
-  float mult = 1.0;
-  float angle = dot(unLightDirWorld, -n);
-  mult = clamp( 1.0 - angle * 3.0, 0.0, 1.0);
+  /// Code for darkening terrain over horizon
+  //float mult = 1.0;
+  //float angle = dot(unLightDirWorld, -normal);
+  //mult = clamp( 1.0 - angle * 3.0, 0.0, 1.0);
   
   gl_Position = unWVP * vPosition;
   fColor = vColor;

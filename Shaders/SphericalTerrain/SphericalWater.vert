@@ -1,6 +1,5 @@
 // Uniforms
 uniform mat4 unWVP;
-uniform mat4 unW;
 uniform float unFreezeTemp;
 // Scattering
 uniform vec3 unLightDirWorld;
@@ -50,6 +49,8 @@ void computeScattering(vec3 worldPos) {
 	worldPos = normalize(worldPos);
 	float intersectFar = length(ray);
 	ray /= intersectFar;
+    
+    fEyeDir = -ray;
 	
 	// Calculate the closest intersection of the ray with the outer atmosphere
 	float intersectNear = 0.0;
@@ -104,15 +105,10 @@ void main() {
   vec3 normal = normalize(vPosition.xyz);
   
   computeScattering(vPosition.xyz);
-
-  // Compute direction to eye
-  fEyeDir = normalize(-(unW * vPosition).xyz);
   
   // Compute TBN for converting to world space
-  vec3 n = normalize((unW * vec4(normal, 0.0)).xyz);
-  vec3 t = normalize((unW * vec4(vTangent, 0.0)).xyz);
-  vec3 b = normalize((unW * vec4(cross( normal, vTangent), 0.0)).xyz);
-  fTbn = mat3(t, n, b);
+  vec3 b = cross(normal, vTangent);
+  fTbn = mat3(vTangent, normal, b);
   
   // Check if the liquid is frozen
   if (vColor_Temp.a <= unFreezeTemp) {
