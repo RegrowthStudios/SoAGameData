@@ -16,7 +16,6 @@ out vec3 fragmentColor;
 out vec3 overlayFragmentColor;
 flat out vec2 textureAtlas;
 out float fogFactor;
-flat out float fadeAlpha;
 out vec3 lampLight;
 out float sunlight;
 out vec3 distVec;
@@ -32,7 +31,6 @@ flat out float alphaBlendFactor;
 // Values that stay constant for the whole mesh.
 uniform mat4 MVP;
 uniform mat4 M;
-uniform float fadeDistance;
 uniform float fogEnd;
 uniform float fogStart;
 uniform float dt;
@@ -53,16 +51,13 @@ void main(){
     
 	vec3 vpm = vec3(vertexPosition.x + cosdt*0.035, vertexPosition.y, vertexPosition.z + cosdt*0.025);
 	distVec = vec3(M * vec4(vpm, 1));
-        
+
     eyeDirection_worldspace = -distVec;
     
 	// Output position of the vertex, in clip space : MVP * (position)
 	gl_Position =  MVP * vec4( vpm ,1);
-	
-	float dist = length(M * vec4( vpm ,1));
-	fadeAlpha = 1.0 - clamp((dist - fadeDistance)*0.06, 0.0, 1.0);
     
-	fogFactor = clamp(((fogEnd - dist + fogStart)/fogEnd), 0.0, 1.0);
+	fogFactor = clamp(((fogEnd - length(distVec) + fogStart)/fogEnd), 0.0, 1.0);
 	
     //base OUV
 	OUV[0] = mod((textureAtlas_textureIndex[2]), 16.0)/16.0;
