@@ -15,7 +15,6 @@ uniform float unCameraHeight2; // Camera Height ^ 2
 uniform float unOuterRadius; // Outer (atmosphere) radius
 uniform float unOuterRadius2; // unOuterRadius^2
 uniform float unInnerRadius; // Inner (planetary) radius
-uniform float unInnerRadius2; // unInnerRadius^2
 uniform float unKrESun; // Kr * ESun
 uniform float unKmESun; // Km * ESun
 uniform float unKr4PI; // Kr * 4 * PI
@@ -23,6 +22,7 @@ uniform float unKm4PI; // Km * 4 * PI
 uniform float unScale; // 1 / (unOuterRadius - unInnerRadius)
 uniform float unScaleDepth; // Altitude at which the atmosphere's average density is found
 uniform float unScaleOverScaleDepth; // unScale / unScaleDepth
+// TODO(Ben): #these should not be uniforms
 uniform int unNumSamples; // Number of integration samples
 uniform float unNumSamplesF; // (float)unNumSamples
 
@@ -45,11 +45,10 @@ void main() {
   // Calculate the farthest intersection of the ray with the outer atmosphere
   vec3 worldPos = vPosition.xyz * unOuterRadius;
   vec3 ray = worldPos - unCameraPos;
-  fRayDirection = -ray;
+  fRayDirection = -ray; // TODO: Normalize here instead of in frag?
   float intersectFar = length(ray);
   ray /= intersectFar;
   
-
   // Calculate the closest intersection of the ray with the outer atmosphere
   float intersectNear = 0.0;
   if(unCameraHeight2 > unOuterRadius2) {
@@ -94,9 +93,17 @@ void main() {
   // Scale integration
   accumulationColor *= scaledLength;
 
+  // Hack to darken over horizon
+  float camHeight = length(unCameraPos);
+  vec3 camNormal = unCameraPos / camHeight;
+  camHeight = max(camHeight, unInnerRadius);
+  float horizonAngle = acos(unInnerRadius / camHeight);
+  float lodAngle = acos(dot(camNormal, normalize(worldPos)));
+  float mult = clamp(((horizonAngle + 0.3) - lodAngle) * 3.0, 0.0, 1.0); 
+  
   // Account for NaN errors
-  accumulationColor = clamp(accumulationColor, vec3(0.0), vec3(3000000000000.0));
-
+  accumulationColor = clamp(accumulationColor, vec3(0.0), vec3(3000000.0)) * mult;
+  
   // Scale the Mie and Rayleigh colors
   fSecondaryColor = accumulationColor * unKmESun;
   fPrimaryColor = accumulationColor * (unInvWavelength * unKrESun);
