@@ -33,7 +33,7 @@ float computeSpecular(vec3 normal) {
     //specular
     vec3 H = normalize(unLightDirWorld + fEyeDir);
     float nDotH = clamp(dot(normal, H), 0.0, 1.0);
-    return pow(nDotH, 16.0) * 0.1;
+    return pow(nDotH, 16.0) * 0.03;
 }
 
 void main() {
@@ -48,7 +48,7 @@ void main() {
   float miePhase = 1.5 * ((1.0 - unG2) / (2.0 + unG2)) * (1.0 + theta * theta) / pow(1.0 + unG2 - 2.0 * unG * theta, 1.5);
   
   vec3 scatterColor = fPrimaryColor + miePhase * fSecondaryColor;
-  vec3 color = mix(fColor.rgb, rockColor, steepness);
-  color *= texture(unColorMap, fTemp_Hum).rgb * ((texture(unTexture, fUV).rgb + texture(unTexture, -0.007 * fUV).rgb) * 0.5);
+  //vec3 color = mix(fColor.rgb, rockColor, steepness);
+  vec3 color = texture(unColorMap, fTemp_Hum).rgb * ((texture(unTexture, fUV).rgb + texture(unTexture, -0.007 * fUV).rgb) * 0.5);
   pColor = vec4(color * diffuse + scatterColor + vec3(1.0) * specular, unAlpha);
 }
