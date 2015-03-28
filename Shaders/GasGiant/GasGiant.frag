@@ -15,6 +15,6 @@ float computeDiffuse(vec3 normal) {
 }
 
 void main() {
-    pColor = texture(unColorBandLookup, vec2(0.0, 0.0));
+    pColor = texture(unColorBandLookup, fUV);
     
 }
