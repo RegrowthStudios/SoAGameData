@@ -167,11 +167,10 @@ float cubedNoise(vec3 position, int octaves, float frequency, float amplitude, f
 }
 uniform float unDt;
 void main() {
-	//float noise = noise(fPosition + vec3(unDt) * 0.01, 8, 0.4, 0.5, 1.1);
-	float absNoise = noise(fPosition + vec3(unDt, 0, unDt) * 0.1, 7, 1.8, 1.0, 0.7);
-	//float ridgedNoise = ridgedNoise(fPosition, 2, 0.3, 0.25, 0.85);
+	float absNoise = noise(fPosition + vec3(unDt, 0, unDt) * 0.01, 6, 0.8, 1.0, 0.7);
+	float ridgedNoise = ridgedNoise(vec3(fPosition.x, fPosition.y, fPosition.z), 7, 4.3, 1.0, 0.85);
 	
-	float final = absNoise * 0.07 - 0.25;
+	float final = (absNoise + ridgedNoise * 0.5) * 0.07  - 0.25;
 	
     pColor = texture(unColorBandLookup, fUV + fUV * final);
 }
