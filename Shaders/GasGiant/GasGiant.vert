@@ -14,7 +14,7 @@ out vec2 fUV;
 
 void main() {
     fNormal = vNormal;
-	fUV = vUV;
-	fPosition = vPosition;
+    fUV = vUV;
+    fPosition = vPosition;
     gl_Position = unWVP * vec4(vPosition, 1.0);
 }
