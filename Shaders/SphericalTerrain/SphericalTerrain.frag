@@ -49,6 +49,6 @@ void main() {
   
   vec3 scatterColor = fPrimaryColor + miePhase * fSecondaryColor;
   //vec3 color = mix(fColor.rgb, rockColor, steepness);
-  vec3 color = texture(unColorMap, fTemp_Hum).rgb * ((texture(unTexture, fUV).rgb + texture(unTexture, -0.007 * fUV).rgb) * 0.5);
+  vec3 color = fColor.rgb * texture(unColorMap, fTemp_Hum).rgb * ((texture(unTexture, fUV).rgb + texture(unTexture, -0.007 * fUV).rgb) * 0.5);
   pColor = vec4(color * diffuse + scatterColor + vec3(1.0) * specular, unAlpha);
 }
