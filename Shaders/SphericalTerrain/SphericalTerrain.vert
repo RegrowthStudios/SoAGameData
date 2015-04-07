@@ -1,6 +1,5 @@
 // Uniforms
 uniform mat4 unWVP;
-uniform vec3 unLightDirWorld;
 uniform float unTexelWidth;
 uniform float unNormalmapWidth;
 
@@ -32,6 +31,7 @@ void main() {
   scatter(vPosition.xyz);
   fPrimaryColor = sPrimaryColor;
   fSecondaryColor = sSecondaryColor;
+  fEyeDir = normalize(-sRay);
   
   // Compute TBN for converting to world space
   vec3 b = cross(normal, vTangent);

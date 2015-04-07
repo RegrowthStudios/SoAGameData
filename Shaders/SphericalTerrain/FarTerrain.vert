@@ -1,7 +1,6 @@
 // Uniforms
 uniform mat4 unVP;
 uniform vec3 unTranslation;
-uniform vec3 unLightDirWorld;
 uniform float unHeightOffset;
 uniform float unTexelWidth;
 uniform float unNormalmapWidth;
