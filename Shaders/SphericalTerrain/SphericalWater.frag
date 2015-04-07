@@ -60,6 +60,6 @@ void main() {
     
     float diffuse = computeDiffuse(normal); 
     float specular = computeSpecular(normal);
-    pColor = vec4(color * diffuse + scatterColor + vec3(1.0) * specular, unAlpha);
+    pColor = vec4(color * diffuse + scatterColor * 1.5 + vec3(1.0) * specular, unAlpha);
   }
 }

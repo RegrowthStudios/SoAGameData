@@ -1,10 +1,11 @@
 // Uniforms
 uniform sampler2D unColorBandLookup;
-uniform vec3 unLightDirWorld = vec3(0.0, 0.0, 1.0);
+uniform vec3 unLightDir;
+uniform float unDT;
 
 // Input
-in vec3 fNormal;
 in vec3 fPosition;
+in vec3 fNormal;
 in vec2 fUV;
 
 // Output
@@ -101,7 +102,7 @@ float snoise(vec3 v) {
 }
 
 float computeDiffuse(vec3 normal) {
-    return clamp( dot( normal, unLightDirWorld ), 0,1 );
+    return clamp( dot( normal, unLightDir ), 0,1 );
 }
 
 float noise(vec3 position, int octaves, float frequency, float amplitude, float persistence) {
@@ -165,14 +166,15 @@ float cubedNoise(vec3 position, int octaves, float frequency, float amplitude, f
 	}
 	return total / maxAmplitude;
 }
-uniform float unDt;
+
 void main() {
-	float absNoise = noise(fPosition + vec3(unDt, 0, unDt) * 0.01, 6, 0.8, 1.0, 0.7);
-	float ridgedNoise = ridgedNoise(vec3(fPosition.x, fPosition.y, fPosition.z), 7, 4.3, 1.0, 0.85);
+	float n1 = noise(fPosition + vec3(unDT, 0, unDT) * 0.01, 6, 0.8, 1.0, 0.7);
+    float n2 = ridgedNoise(fPosition + vec3(unDT, 0, unDT) * 0.01, 3, 40.8, 1.0, 0.8);
+	float n3 = ridgedNoise(vec3(fPosition.x, fPosition.y, fPosition.z), 7, 4.3, 1.0, 0.85);
 	
-	float final = (absNoise + ridgedNoise * 0.5) * 0.07  - 0.25;
+	float final = (n1 + n2 * 0.5 + n3 * 0.5) * 0.07  - 0.25;
 	
-    pColor = texture(unColorBandLookup, fUV + fUV * final);
+    pColor = vec4(texture(unColorBandLookup, fUV + fUV * final).rgb * computeDiffuse(fNormal), 1.0);
 }
 
 /*

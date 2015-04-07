@@ -24,11 +24,12 @@ void main() {
   float theta = dot(unLightPos, fRayDirection) / length(fRayDirection);
   float miePhase = 1.5 * ((1.0 - unG2) / (2.0 + unG2)) * (1.0 + theta * theta) / pow(1.0 + unG2 - 2.0 * unG * theta, 1.5);
   
+  vec3 c = fPrimaryColor * 1.5;
   // Calculate effect intensity
-  float maxIntensity = max(max(fPrimaryColor.r, fPrimaryColor.b), fPrimaryColor.g) * 8;
+  float maxIntensity = max(max( c.r, c.b), c.g);
   maxIntensity = min(maxIntensity, 1.0);
 
-  vec3 color = fPrimaryColor + miePhase * fSecondaryColor;
+  vec3 color = c + miePhase * fSecondaryColor;
   // Accumulate both lighting values
   pColor = vec4(color, maxIntensity);
 }
