@@ -45,7 +45,7 @@ void main() {
   float specular = computeSpecular(normal);
 
   float theta = dot(unLightDirWorld, fEyeDir);
-  float miePhase = 1.5 * ((1.0 - unG2) / (2.0 + unG2)) * (1.0 + theta * theta) / pow(1.0 + unG2 - 2.0 * unG * theta, 1.5);
+  float miePhase = ((1.0 - unG2) / (2.0 + unG2)) * (1.0 + theta * theta) / pow(1.0 + unG2 - 2.0 * unG * theta, 1.5);
   
   vec3 scatterColor = fPrimaryColor + miePhase * fSecondaryColor;
   //vec3 color = mix(fColor.rgb, rockColor, steepness);

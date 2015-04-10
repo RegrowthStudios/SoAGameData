@@ -1,21 +1,8 @@
-// Uniforms
-uniform sampler2D unColorBandLookup;
-uniform vec3 unLightDirWorld;
 uniform float unDT;
-// Scattering
-uniform float unG;
-uniform float unG2;
 
-// Input
 in vec3 fPosition;
-in vec3 fNormal;
-in vec2 fUV;
-// Scattering
-in vec3 fPrimaryColor;
-in vec3 fSecondaryColor;
-in vec3 fEyeDir;
 
-// Output
+
 out vec4 pColor;
 
 vec3 mod289(vec3 x) {
@@ -108,10 +95,6 @@ float snoise(vec3 v) {
                                 dot(p2,x2), dot(p3,x3) ) );
 }
 
-float computeDiffuse(vec3 normal) {
-    return clamp( dot( normal, unLightDirWorld ), 0,1 );
-}
-
 float noise(vec3 position, int octaves, float frequency, float amplitude, float persistence) {
 	float total = 0.0;
 	float maxAmplitude = 0.0;
@@ -175,50 +158,11 @@ float cubedNoise(vec3 position, int octaves, float frequency, float amplitude, f
 }
 
 void main() {
-	float n1 = noise(fPosition + vec3(unDT, 0, unDT) * 0.01, 6, 0.8, 1.0, 0.7);
-    float n2 = ridgedNoise(fPosition + vec3(unDT, 0, unDT) * 0.01, 3, 40.8, 1.0, 0.8);
+    float n1 = noise(fPosition + vec3(unDT, 0, unDT), 6, 0.8, 1.0, 0.7);
+    float n2 = ridgedNoise(fPosition + vec3(unDT, 0, unDT), 3, 40.8, 1.0, 0.8);
 	float n3 = ridgedNoise(vec3(fPosition.x, fPosition.y, fPosition.z), 7, 4.3, 1.0, 0.85);
 	
-	float final = (n1 + n2 * 0.5 + n3 * 0.5) * 0.07  - 0.25;
+	float final = (n1 + n2 * 0.5 + n3 * 0.5) * 0.5;
 	
-    float theta = dot(unLightDirWorld, fEyeDir);
-    float miePhase = ((1.0 - unG2) / (2.0 + unG2)) * (1.0 + theta * theta) / pow(1.0 + unG2 - 2.0 * unG * theta, 1.5);
-    vec3 scatterColor = fPrimaryColor + miePhase * fSecondaryColor;
-    
-    pColor = vec4(texture(unColorBandLookup, fUV + fUV * final).rgb * computeDiffuse(fNormal) + scatterColor, 1.0);
+    pColor = vec4(final, 1.0 - final, final, 1.0);
 }
-
-/*
-switch (fn.func) {
-    case TerrainStage::NOISE:
-        fSource += "total += snoise(fPosition * frequency) * amplitude;\n";
-        break;
-    case TerrainStage::RIDGED_NOISE:
-        fSource += "total += ((1.0 - abs(snoise(fPosition * frequency))) * 2.0 - 1.0) * amplitude;\n";
-        break;
-    case TerrainStage::ABS_NOISE:
-        fSource += "total += abs(snoise(fPosition * frequency)) * amplitude;\n";
-        break;
-    case TerrainStage::SQUARED_NOISE:
-        fSource += "tmp = snoise(fPosition * frequency);\n";
-        fSource += "total += tmp * tmp * amplitude;\n";
-        break;
-    case TerrainStage::CUBED_NOISE:
-        fSource += "tmp = snoise(fPosition * frequency);\n";
-        fSource += "total += tmp * tmp * tmp * amplitude;\n";
-        break;
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
