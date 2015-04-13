@@ -37,5 +37,5 @@ void main() {
     
     float totalBrightness = spikeBrightness + glowBrightness + texColor * textureMult;
     
-    pColor = vec4(unColor * totalBrightness, clamp(totalBrightness, 0.0, 1.0));
+    pColor = vec4(unColor * totalBrightness, clamp(totalBrightness, 0.0, 0.9));
 }

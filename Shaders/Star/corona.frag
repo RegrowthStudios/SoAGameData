@@ -14,14 +14,14 @@ out vec4 pColor;
 void main() {
 
     // Offset position with low octave noise
-    float ox = noise(vec4(fPosition + 1000.0, unDT), 1, 0.4, 1.0, 0.7);
-    float oy = noise(vec4(fPosition + 2000.0, unDT), 1, 0.4, 1.0, 0.7);
-    float oz = noise(vec4(fPosition, unDT), 1, 0.4, 1.0, 0.7);
+    float ox = noise(vec4(fPosition + 1000.0, unDT), 1, 0.4, 0.7);
+    float oy = noise(vec4(fPosition + 2000.0, unDT), 1, 0.4, 0.7);
+    float oz = noise(vec4(fPosition, unDT), 1, 0.4, 0.7);
 
     vec3 nDistVec = normalize(fPosition + vec3(ox, oy, oz) * 0.5);
     
     // Get noise with normalized position to offset position again
-    vec3 pos = fPosition + noise(vec4(nDistVec, unDT), 5, 1.6, 1.0, 0.7) * 0.6;
+    vec3 pos = fPosition + noise(vec4(nDistVec, unDT), 5, 1.6, 0.7) * 0.6;
 
     // Calculate brightness based on distance
     float dist = length(pos);

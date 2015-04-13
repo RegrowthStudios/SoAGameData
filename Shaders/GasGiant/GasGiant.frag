@@ -41,5 +41,5 @@ void main() {
     float miePhase = ((1.0 - unG2) / (2.0 + unG2)) * (1.0 + theta * theta) / pow(1.0 + unG2 - 2.0 * unG * theta, 1.5);
     vec3 scatterColor = fPrimaryColor + miePhase * fSecondaryColor;
     vec2 uv = vec2(0.5, fTexCoord + final);
-    pColor = vec4(texture(unColorBandLookup, uv).rgb + 0.00001 * scatterColor, 1.0) * computeDiffuse(fNormal);
+    pColor = vec4((texture(unColorBandLookup, uv).rgb* computeDiffuse(fNormal) + scatterColor) , 1.0);
 }
