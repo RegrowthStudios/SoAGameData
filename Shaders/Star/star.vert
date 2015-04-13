@@ -8,8 +8,6 @@ in vec4 vPosition;
 out vec3 fPosition;
 
 void main() {
-  
-    fPosition = vPosition.xyz;
-    
+    fPosition = vPosition.xyz; 
     gl_Position = unWVP * vPosition;
 }

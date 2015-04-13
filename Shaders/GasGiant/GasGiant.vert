@@ -3,12 +3,11 @@ uniform mat4 unWVP;
 
 // Input
 in vec4 vPosition;
-in vec2 vUV;
+in float vTexCoord;
 
 // Output
-out vec3 fPosition;
 out vec3 fNormal;
-out vec2 fUV;
+out float fTexCoord;
 // Scattering
 out vec3 fPrimaryColor;
 out vec3 fSecondaryColor;
@@ -17,9 +16,8 @@ out vec3 fEyeDir;
 #include "Shaders/AtmosphereShading/scatter.glsl"
 
 void main() {
-    fNormal = normalize(vPosition.xyz);
-    fUV = vUV;
-    fPosition = vPosition.xyz;
+    fTexCoord = vTexCoord;
+    fNormal = vPosition.xyz;
     
     scatter(vPosition.xyz * unInnerRadius);
     fPrimaryColor = sPrimaryColor;
