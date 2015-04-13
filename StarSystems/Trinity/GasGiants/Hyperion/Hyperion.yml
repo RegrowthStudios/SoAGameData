@@ -1,0 +1,7 @@
+gasGiant:
+  diameter: 154190.0
+  mass: 9.1375e27
+  axis: [0.0, 1.0, 0.0]
+  rotationalPeriod: 1.04
+  oblateness: 1.0
+  colorMap: GasGiants/Hyperion/color.png

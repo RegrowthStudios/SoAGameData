@@ -1,0 +1,12 @@
+planet:
+  diameter: 9200.0
+  mass: 2.2694e24
+  axis: [0.1, 0.9, 0.0]
+  rotationalPeriod: 1.04
+  generation: "Planets/Aldrin/terrain_gen.yml"
+  atmosphere:
+    scaleDepth: 0.25
+    kr: 0.0025
+    km: 0.002
+    g: -0.99
+    waveLength: [0.65, 0.57, 0.475]
