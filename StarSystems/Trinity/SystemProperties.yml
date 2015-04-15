@@ -1,18 +1,27 @@
 description: "The Trinity system is so cool"
+
 Trinity:
   type: Barycenter
   comps: ["Trinity AB", "Trinity C"]
   RA: 0.0
   dec: 0.0
   dist: 425.0
+Trinity C:
+  type: Star
+  par: "Trinity"
+  path: Stars/TrinityC.yml
+  t: 4.76193541668919e+11
+  e: 0.13
+  p: 66
+  a: 0
 Trinity AB:
   type: Barycenter
   comps: ["Trinity A", "Trinity B"]
   par: Trinity
   t: 4.76193541668919e+11
   e: 0.13
-  p: 246
-  a: 180
+  p: 246.0
+  a: 180.0
 Trinity A:
   type: Star
   path: Stars/TrinityA.yml
@@ -21,22 +30,27 @@ Trinity A:
   e: 0.0
   i: 2.2
   n: 136
-  a: 45.0
+  a: 45
 Trinity B:
   type: Star
   path: Stars/TrinityB.yml
   par: "Trinity AB"
   t: 1.02469311556389e+10
-  e: 0.0
+  e: 0
   i: 2.2
-  n: 136.0
-  a: 225.0
-Trinity C:
-  type: Star
-  par: "Trinity AB"
-  path: Stars/TrinityC.yml
-  t: 1.7619e11
-  e: 0.63
+  n: 136
+  a: 225
+(B-1) Phidias:
+  type: Asteroid
+  path: Asteroids/B1_Phidias.yml
+  par: Trinity B
+  ref: Hyperion
+  td: 6
+  e: 0.0806
+  i: 6.45
+  n: 351
+  p: 24
+  a: 186
 Hyperion:
   type: Planet
   path: GasGiants/Hyperion/properties.yml
@@ -48,69 +62,99 @@ Hyperion:
   a: 221
 Kolasi:
   type: Moon
-  par: Hyperion
   path: Planets/Kolasi/properties.yml
-  t: 1.5000e04
+  par: Hyperion
+  ref: Tantalus
+  td: 96
   e: 0.0123
+  i: 0
+  p: 0
+  a: 90
 Apollo:
   type: Moon
-  par: Hyperion
   path: Planets/Apollo/properties.yml
-  t: 3.0000e04
+  par: Hyperion
+  ref: Tantalus
+  td: 48
   e: 0.0095
+  i: 0
+  p: 0
+  a: 177
 Gemini:
   type: Moon
   par: Hyperion
   path: Planets/Gemini/properties.yml
-  t: 4.5000e04
+  ref: Tantalus
+  td: 32
   e: 0.0088
+  i: 0
+  p: 0
+  a: 110
 Aldrin:
   type: Moon
-  par: Hyperion
   path: Planets/Aldrin/properties.yml
-  t: 9.0e4
+  par: Hyperion
+  ref: Tantalus
+  td: 16
   e: 0.0017
+  i: 0
+  p: 0
+  a: 3
 Darwin:
   type: Moon
-  par: Hyperion
   path: Planets/Darwin/properties.yml
-  t: 1.8000e05
+  par: Hyperion
+  ref: Tantalus
+  td: 8
   e: 0.0075
+  i: 0
+  p: 0
+  a: 237
 Fyto:
   type: Moon
-  par: Hyperion
   path: Planets/Fyto/properties.yml
-  t: 3.2000e05
+  par: Hyperion
+  ref: Tantalus
+  tf: 2
+  td: 9
   e: 0.0052
+  i: 0
+  p: 0
+  a: 51
 Selene:
   type: Moon
   path: Planets/Selene/properties.yml
   par: Hyperion
   ref: Tantalus
-  tf: 5.0
-  td: 11.0
+  tf: 5
+  td: 11
   e: 0.0005
-  i: 0.0
-  p: 0.0
-  a: 277.0
+  i: 0
+  p: 0
+  a: 277
 Niobe:
   type: Moon
-  par: Hyperion
   path: Planets/Niobe/properties.yml
-  t: 9.6000e05
+  par: Hyperion
+  ref: Tantalus
+  tf: 2
+  td: 3
   e: 0.0
+  i: 0
+  p: 0
+  a: 196
 Hyperion-1:
-  type: Moon
+  type: DwarfMoon
+  path: Asteroids/Hyperion1.yml
   par: Hyperion
-  path: Asteroids/Hyperion1/properties.yml
-  t: 9.6000e05
-  e: 0.0
+  ref: Niobe
+  trojan: L4
 Hyperion-2:
-  type: Moon
+  type: DwarfMoon
+  path: Asteroids/Hyperion2.yml
   par: Hyperion
-  path: Asteroids/Hyperion2/properties.yml
-  t: 9.6000e05
-  e: 0.0
+  ref: Niobe
+  trojan: L5
 Tantalus:
   type: Moon
   path: Planets/Tantalus/properties.yml
@@ -119,58 +163,92 @@ Tantalus:
   e: 0
   i: 0
   p: 0
-  a: 55
+  a: 45
 Pelops:
   type: Moon
-  par: Hyperion
   path: Planets/Pelops/properties.yml
-  t: 1.4400e06
-  e: 0.0
+  par: Hyperion
+  ref: Tantalus
+  trojan: L4
 Hyperion-3:
   type: DwarfMoon
-  path: Asteroids/Hyperion3/properties.yml
+  path: Asteroids/Hyperion3.yml
   par: Hyperion
   ref: Tantalus
   trojan: L5
 Arctos:
   type: Moon
-  par: Hyperion
   path: Planets/Arctos/properties.yml
-  t: 2.0160e06
-  e: 0.02
+  par: Hyperion
+  ref: Tantalus
+  tf: 7
+  td: 5
+  e: 0.0002
+  i: 0
+  p: 0
+  a: 184
 Junos:
   type: Moon
-  par: Hyperion
   path: Planets/Junos/properties.yml
-  t: 2.3040e06
+  par: Hyperion
+  ref: Tantalus
+  tf: 8
+  td: 5
   e: 0.0002
+  i: 0
+  p: 0
+  a: 325
 Elios:
   type: Moon
-  par: Hyperion
   path: Planets/Elios/properties.yml
-  t: 2.5920e06
+  par: Hyperion
+  ref: Tantalus
+  tf: 9
+  td: 5
   e: 0.0002
+  i: 0
+  p: 0
+  a: 67
 Lotos:
   type: Moon
-  par: Hyperion
   path: Planets/Lotos/properties.yml
-  t: 2.8800e06
+  par: Hyperion
+  ref: Tantalus
+  tf: 2
   e: 0.0002
+  i: 0
+  p: 0
+  a: 220
 Hyperion-4:
-  type: Moon
+  type: DwarfMoon
+  path: Asteroids/Hyperion4.yml
   par: Hyperion
-  path: Asteroids/Hyperion4/properties.yml
-  t: 3.1680e06
+  ref: Tantalus
+  tf: 11
+  td: 5
   e: 0.0002
+  i: 0
+  p: 0
+  a: 145
 Hyperion-5:
-  type: Moon
+  type: DwarfMoon
+  path: Asteroids/Hyperion5.yml
   par: Hyperion
-  path: Asteroids/Hyperion5/properties.yml
-  t: 3.4560e06
+  ref: Tantalus
+  tf: 12
+  td: 5
   e: 0.0002
+  i: 0
+  p: 0
+  a: 302
 Tros:
   type: Moon
-  par: Hyperion
   path: Planets/Tros/properties.yml
-  t: 1.0080e07
-  e: 0.1044
+  par: Hyperion
+  ref: Tantalus
+  tf: 4
+  e: 0.0744
+  i: 7.59
+  n: 84
+  p: 198
+  a: 280
