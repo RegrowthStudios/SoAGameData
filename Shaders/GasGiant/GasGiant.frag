@@ -24,8 +24,11 @@ float computeDiffuse(vec3 normal) {
 }
 
 void main() {
+    float xx = cos(fNormal.y * 50.0);
+    vec3 position = fNormal + xx * 0.04;
     vec3 tOffset = vec3(unDT, 0.0, unDT);
-    vec3 position = fNormal + tOffset;
+    position.xz *= 0.5;
+    position = position + tOffset;
     float n1 = noise(position, 6, 10.0, 0.8) * 0.01;
     float n2 = ridgedNoise(position, 5, 5.8, 0.75) * 0.015 - 0.01;
 

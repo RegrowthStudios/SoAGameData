@@ -1,128 +1,176 @@
 description: "The Trinity system is so cool"
-Binary:
-  name: Trinity_AB_Barycenter
-  bodies: [Trinity_A, Trinity_B]
-Trinity_A:
-  parent: Trinity_AB_Barycenter
+Trinity:
+  type: Barycenter
+  comps: ["Trinity AB", "Trinity C"]
+  RA: 0.0
+  dec: 0.0
+  dist: 425.0
+Trinity AB:
+  type: Barycenter
+  comps: ["Trinity A", "Trinity B"]
+  par: Trinity
+  t: 4.76193541668919e+11
+  e: 0.13
+  p: 246
+  a: 180
+Trinity A:
+  type: Star
   path: Stars/TrinityA.yml
-  t: 3.0249e10
+  par: "Trinity AB"
+  t: 1.02469311556389e+10
   e: 0.0
-  pathColor: [255, 0, 0, 255]
-  orbitNormal: [-1.0, 0.0, 0.0]
-Trinity_B:
-  parent: Trinity_AB_Barycenter
+  i: 2.2
+  n: 136
+  a: 45.0
+Trinity B:
+  type: Star
   path: Stars/TrinityB.yml
-  t: 3.0249e10
-  pathColor: [0, 255, 0, 255]
+  par: "Trinity AB"
+  t: 1.02469311556389e+10
   e: 0.0
-Trinity_C:
-  parent: Trinity_AB_Barycenter
+  i: 2.2
+  n: 136.0
+  a: 225.0
+Trinity C:
+  type: Star
+  par: "Trinity AB"
   path: Stars/TrinityC.yml
   t: 1.7619e11
-  pathColor: [0, 0, 255, 255]
   e: 0.63
 Hyperion:
-  parent: Trinity_B
+  type: Planet
   path: GasGiants/Hyperion/properties.yml
-  t: 3.1493e7
+  par: Trinity B
+  t: 3.14928e+7
   e: 0.0006
+  i: 0
+  p: 99
+  a: 221
 Kolasi:
-  parent: Hyperion
-  path: Planets/Kolasi.yml
+  type: Moon
+  par: Hyperion
+  path: Planets/Kolasi/properties.yml
   t: 1.5000e04
   e: 0.0123
 Apollo:
-  parent: Hyperion
-  path: Planets/Apollo.yml
+  type: Moon
+  par: Hyperion
+  path: Planets/Apollo/properties.yml
   t: 3.0000e04
   e: 0.0095
 Gemini:
-  parent: Hyperion
-  path: Planets/Gemini.yml
+  type: Moon
+  par: Hyperion
+  path: Planets/Gemini/properties.yml
   t: 4.5000e04
   e: 0.0088
 Aldrin:
-  parent: Hyperion
+  type: Moon
+  par: Hyperion
   path: Planets/Aldrin/properties.yml
   t: 9.0e4
-  e: 0.5017
+  e: 0.0017
 Darwin:
-  parent: Hyperion
-  path: Planets/Darwin.yml
+  type: Moon
+  par: Hyperion
+  path: Planets/Darwin/properties.yml
   t: 1.8000e05
   e: 0.0075
 Fyto:
-  parent: Hyperion
-  path: Planets/Fyto.yml
+  type: Moon
+  par: Hyperion
+  path: Planets/Fyto/properties.yml
   t: 3.2000e05
   e: 0.0052
 Selene:
-  parent: Hyperion
-  path: Planets/Selene.yml
-  t: 6.5455e05
+  type: Moon
+  path: Planets/Selene/properties.yml
+  par: Hyperion
+  ref: Tantalus
+  tf: 5.0
+  td: 11.0
   e: 0.0005
+  i: 0.0
+  p: 0.0
+  a: 277.0
 Niobe:
-  parent: Hyperion
-  path: Planets/Niobe.yml
+  type: Moon
+  par: Hyperion
+  path: Planets/Niobe/properties.yml
   t: 9.6000e05
   e: 0.0
 Hyperion-1:
-  parent: Hyperion
-  path: Planets/Hyperion_1.yml
+  type: Moon
+  par: Hyperion
+  path: Asteroids/Hyperion1/properties.yml
   t: 9.6000e05
   e: 0.0
 Hyperion-2:
-  parent: Hyperion
-  path: Planets/Hyperion_2.yml
+  type: Moon
+  par: Hyperion
+  path: Asteroids/Hyperion2/properties.yml
   t: 9.6000e05
   e: 0.0
 Tantalus:
-  parent: Hyperion
-  path: Planets/Tantalus.yml
-  t: 1.4400e06
-  e: 0.0
+  type: Moon
+  path: Planets/Tantalus/properties.yml
+  par: Hyperion
+  t: 1.44e+6
+  e: 0
+  i: 0
+  p: 0
+  a: 55
 Pelops:
-  parent: Hyperion
-  path: Planets/Pelops.yml
+  type: Moon
+  par: Hyperion
+  path: Planets/Pelops/properties.yml
   t: 1.4400e06
   e: 0.0
 Hyperion-3:
-  parent: Hyperion
-  path: Planets/Hyperion_3.yml
-  t: 1.4400e06
-  e: 0.0
+  type: DwarfMoon
+  path: Asteroids/Hyperion3/properties.yml
+  par: Hyperion
+  ref: Tantalus
+  trojan: L5
 Arctos:
-  parent: Hyperion
-  path: Planets/Arctos.yml
+  type: Moon
+  par: Hyperion
+  path: Planets/Arctos/properties.yml
   t: 2.0160e06
   e: 0.02
 Junos:
-  parent: Hyperion
-  path: Planets/Junos.yml
+  type: Moon
+  par: Hyperion
+  path: Planets/Junos/properties.yml
   t: 2.3040e06
   e: 0.0002
 Elios:
-  parent: Hyperion
-  path: Planets/Elios.yml
+  type: Moon
+  par: Hyperion
+  path: Planets/Elios/properties.yml
   t: 2.5920e06
   e: 0.0002
 Lotos:
-  parent: Hyperion
-  path: Planets/Lotos.yml
+  type: Moon
+  par: Hyperion
+  path: Planets/Lotos/properties.yml
   t: 2.8800e06
   e: 0.0002
 Hyperion-4:
-  parent: Hyperion
-  path: Planets/Hyperion_4.yml
+  type: Moon
+  par: Hyperion
+  path: Asteroids/Hyperion4/properties.yml
   t: 3.1680e06
   e: 0.0002
 Hyperion-5:
-  parent: Hyperion
-  path: Planets/Hyperion_5.yml
+  type: Moon
+  par: Hyperion
+  path: Asteroids/Hyperion5/properties.yml
   t: 3.4560e06
   e: 0.0002
 Tros:
-  parent: Hyperion
-  path: Planets/Tros.yml
+  type: Moon
+  par: Hyperion
+  path: Planets/Tros/properties.yml
   t: 1.0080e07
   e: 0.1044

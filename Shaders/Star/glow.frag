@@ -20,7 +20,7 @@ void main() {
     const float spikeMult1 = 1.0;
     const float spikeMult2 = 0.02;
     const float glowMult = 0.65;
-    const float textureMult = 0.6;
+    const float textureMult = 0.3;
     // =================================
 
     vec2 nDistVec = normalize(fPosition);
@@ -28,9 +28,9 @@ void main() {
     
     float spikeVal = snoise(vec3(nDistVec, unNoiseZ) * spikeFrequency) * spikeMult1 + spikeShift;
     
-    float dist = length(fPosition) + 0.6;
+    float dist = length(fPosition);
     // Calculate brightness based on distance
-    float brightness = ((1.0 / (dist * dist)) - 1.0);
+    float brightness = ((1.0 / pow(dist + 0.15, 0.5)) - 1.0);
     float spikeBrightness = brightness * spikeMult2 * clamp(spikeVal, 0.0, 1.0);
     float glowBrightness = brightness * glowMult;
     float texColor = texture(unTexture, fTex).r;
