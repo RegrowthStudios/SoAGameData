@@ -40,6 +40,28 @@ Trinity B:
   i: 2.2
   n: 136
   a: 225
+Hermes:
+  type: Planet
+  path: Planets/Hermes/properties.yml
+  par: Trinity B
+  ref: Hyperion
+  td: 54
+  e: 0.055
+  i: 4.39
+  n: 161
+  p: 238
+  a: 5
+Minerva:
+  type: Planet
+  path: Planets/Minerva/properties.yml
+  par: Trinity B
+  ref: Hyperion
+  td: 18
+  e: 0.025
+  i: 2.05
+  n: 157
+  p: 242
+  a: 38
 (B-1) Phidias:
   type: Asteroid
   path: Asteroids/B1_Phidias.yml
@@ -51,6 +73,17 @@ Trinity B:
   n: 351
   p: 24
   a: 186
+Endor:
+  type: Planet
+  path: IceGiants/Endor/properties.yml
+  par: Trinity B
+  ref: Hyperion
+  td: 3
+  e: 0.002
+  i: 0.5
+  n: 55
+  p: 278
+  a: 184
 Hyperion:
   type: Planet
   path: GasGiants/Hyperion/properties.yml
