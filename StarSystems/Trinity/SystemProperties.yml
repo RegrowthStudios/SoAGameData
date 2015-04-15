@@ -252,3 +252,145 @@ Tros:
   n: 84
   p: 198
   a: 280
+(B-2) Eunomia:
+  type: Asteroid
+  path: Asteroids/B2_Eunomia.yml
+  par: Trinity B
+  ref: Hyperion
+  tf: 6
+  e: 0.0384
+  i: 1.5
+  n: 5
+  p: 355
+  a: 72
+(B-3) Philotes:
+  type: DwarfPlanet
+  path: Planets/Philotes/properties.yml
+  par: Trinity B
+  ref: Hyperion
+  tf: 8
+  e: 0.0682
+  i: 0.08
+  n: 176
+  p: 103
+  a: 44
+(B-4) Miseria:
+  type: DwarfPlanet
+  path: Planets/Miseria/properties.yml
+  par: Trinity B
+  ref: Hyperion
+  tf: 10
+  e: 0.0501
+  i: 0.08
+  n: 306
+  p: 116
+  a: 234
+(B-5) Hygeia:
+  type: Asteroid
+  path: Asteroids/B5_Hygeia.yml
+  par: Trinity B
+  ref: Hyperion
+  tf: 11
+  e: 0.1544
+  i: 5.7
+  n: 138
+  p: 87
+  a: 260
+(B-6) Aeon:
+  type: DwarfPlanet
+  path: Planets/Aeon/properties.yml
+  par: Trinity B
+  ref: Hyperion
+  tf: 12
+  e: 0.0023
+  i: 0.08
+  n: 345
+  p: 159
+  a: 286
+(B-6) Aeon-1:
+  type: DwarfMoon
+  path: Asteroids/B6_Aeon1.yml
+  par: (B-6) Aeon
+  ref: (B-6) Puck
+  tf: 5
+  td: 22
+  e: 0
+  i: 0
+  a: 270
+(B-6) Aeon-2:
+  type: DwarfMoon
+  path: Asteroids/B6_Aeon2.yml
+  par: (B-6) Aeon
+  ref: (B-6) Puck
+  tf: 5
+  td: 21
+  e: 0
+  i: 0
+  a: 86
+(B-6) Aeon-3:
+  type: DwarfMoon
+  path: Asteroids/B6_Aeon3.yml
+  par: (B-6) Aeon
+  ref: (B-6) Puck
+  td: 4
+  e: 0
+  i: 0
+  a: 246
+(B-6) Aeon-4:
+  type: DwarfMoon
+  path: Asteroids/B6_Aeon4.yml
+  par: (B-6) Aeon
+  ref: (B-6) Puck
+  tf: 5
+  td: 18
+  e: 0
+  i: 0
+  a: 90
+(B-6) Aeon-5:
+  type: DwarfMoon
+  path: Asteroids/B6_Aeon5.yml
+  par: (B-6) Aeon
+  ref: (B-6) Puck
+  tf: 5
+  td: 17
+  e: 0
+  i: 0
+  a: 302
+(B-6) Aeon-6:
+  type: DwarfMoon
+  path: Asteroids/B6_Aeon6.yml
+  par: (B-6) Aeon
+  ref: (B-6) Puck
+  tf: 10
+  td: 33
+  e: 0
+  i: 0
+  a: 159
+(B-6) Aeon-7:
+  type: DwarfMoon
+  path: Asteroids/B6_Aeon7.yml
+  par: (B-6) Aeon
+  ref: (B-6) Puck
+  td: 3
+  e: 0
+  i: 0
+  a: 137
+(B-6) Puck:
+  type: Moon
+  path: Planets/Puck/properties.yml
+  par: (B-6) Aeon
+  t: 9.1764e+4
+  e: 0
+  i: 0
+  a: 2
+(AB-3) Somnus:
+  type: Comet
+  path: Comets/AB3_Somnus.yml
+  par: Trinity AB
+  ref: Trinity A
+  tf: 10
+  e: 0.145
+  i: 3.03
+  n: 0
+  p: 100
+  a: 45
