@@ -1,0 +1,31 @@
+##########  SystemProperties.yml  -  specification / property explanations - last updated: 15.04.2015
+
+(Object Name):
+  # type: Basic object type determining the appearance of orbits, object markers and selectors. All selected objects use rgba(255, 0, 0, 1.0)
+    # Barycenter - The colors are taken from its binary component A type and used for the barycenter marker cross, selector and orbit
+    # Star - color rgba(255, 255, 0, 0.5), color hover rgba(255, 255, 0, 1.0) - used for all kinds of stellar and substellar objects
+    # Planet - color rgba(0, 255, 0, 0.5), color hover rgba(0, 255, 0, 1.0)
+    # DwarfPlanet - color rgba(0, 128, 0, 0.2), color hover rgba(0, 128, 0, 0.5)
+    # Moon - color rgba(96, 128, 255, 0.5), color hover rgba(96, 128, 255, 1.0)
+    # DwarfMoon - color rgba(48, 64, 128, 0.2), color hover rgba(48, 64, 128, 0.5)
+    # Asteroid - color rgba(0, 0, 0, 0.0), color hover rgba(160, 160, 160, 0.5)
+    # Comet - color rgba(0, 0, 0, 0.0), color hover rgba(160, 208, 255, 0.5)
+  # comps: Binary components [compNameA, compNameB]
+  # path: Path of the object properties yaml file within the star system folder
+  # par: parent object
+    # static - Fixed objects in space with no orbit use this as parent
+  # RA: Position of static objects relative to our sun, right ascension in °
+  # Dec: Position of static objects relative to our sun, declination in °
+  # dist:  Distance of static objects from our sun in ly
+  # t: Orbital period in s
+  # ref: Orbital period reference body
+  # tf: Reference body period factor
+  # td: Reference body period divisor
+  # e: Eccentricity
+  # p: Longitude of the periapsis in °
+  # i: Inclination in °
+  # n:  Longitude of the ascending node in °
+  # a: True anomaly (start settings) in °
+  # trojan: Position of co-orbital objects, uses the same period and orbital parameters than its orbital reference body, only modifies the anomaly
+    # L4 - Trojan occupying lagrangian point 4 of the reference bodies orbit (a+60°)
+    # L5 - Trojan occupying lagrangian point 5 of the reference bodies orbit (a-60°)
