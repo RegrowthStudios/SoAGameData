@@ -42,7 +42,10 @@
             var pageTitle = getUrlParameter("name").replace(/%20/g, " ");
             $("#page-header").text(pageTitle);
 
+            console.log(getUrlParameter("filesToLoad"));
+            console.log(getUrlParameter("filesToLoad").replace(/%22/g, "\""));
             var filesToLoad = JSON.parse(getUrlParameter("filesToLoad").replace(/%22/g, "\""));
+            console.log(filesToLoad);
             $.each(filesToLoad["CSS"], function (i, v) {
                 loadCSSFile(v);
             });

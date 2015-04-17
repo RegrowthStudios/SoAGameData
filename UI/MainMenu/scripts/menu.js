@@ -75,50 +75,55 @@ $(document).ready(function () {
 /* Dynamic Page Loader */
 /***********************/
 
-function loadNewPage(name, filePath) {
-    var fileProperties = App.getFileProperties(name); // Returns JavaScript Object of form: { CSS: [ "filepath1.css", "filepath2.css" ], JS: [ "filepath3.js", "filepath.js" ] }
-    var filesToLoad = {};
-    filesToLoad["CSS"] = fileProperties["CSS"];
-    filesToLoad["JS"] = fileProperties["JS"];
-    var stringifiedFilesToLoad = JSON.stringify(filesToLoad);
+//function loadNewPage(name, filePath) {
+//    App.setCurrentPage(name);
+//    var pageProperties = App.getPageProperties(); // Returns JavaScript Object of form: { CSS: [ "filepath1.css", "filepath2.css" ], JS: [ "filepath3.js", "filepath.js" ] }
+//    var filesToLoad = {};
+//    filesToLoad["CSS"] = pageProperties["CSS"];
+//    filesToLoad["JS"] = pageProperties["JS"];
+//    var stringifiedFilesToLoad = JSON.stringify(filesToLoad);
 
-    if (typeof filePath == "string") {
-        window.location.assign(filePath + "?name=" + name + "&filesToLoad=" + stringifiedFilesToLoad);
-    } else {
-        window.location.assign("/index.html?name=" + name + "&filesToLoad=" + stringifiedFilesToLoad);
-    }
-}
+//    if (typeof filePath == "string") {
+//        window.location.assign(filePath + "?name=" + name + "&filesToLoad=" + stringifiedFilesToLoad);
+//    } else {
+//        window.location.assign("/index.html?name=" + name + "&filesToLoad=" + stringifiedFilesToLoad);
+//    }
+//}
 
 //function loadNewPage(name, filePath) {
 //    window.location.assign("/index.html?name=" + name + "&filesToLoad=" + filePath);
 //}
 
 // Load controls for page.
-$(document).ready(function () {
-    var lig = new ListItemGenerator();
-    var controls = App.getControls(); // Latest page passed in on loadNewPage();
-    //var controls = [ { type: "click", name: "New Game", linkData: { name: "New Game" }, category: "", ID: 0, description: "Start a new game!" }, { type: "click", name: "Load Game", linkData: { name: "Load Game" }, category: "", ID: 1, description: "Load an old game!" } ];
-    // [ { type: "click", name: "New Game", linkData: { name: "New Game" }, category: "", ID: <id number>, description: "Start a new game!" }, { type: "click", name: "Load Game", linkData: { name: "Load Game" }, category: "", ID: <id number>, description: "Load an old game!" } ]
-    $.each(controls, function (i, v) {
-        switch (v["type"]) {
-            case "click":
-                lig.generateClickable(v["name"], v["linkData"], v["category"], v["description"], v["ID"], v["updateCallback"]);
-                break;
-            case "text":
-                lig.generateText(v["name"], v["text"], v["category"], v["description"]);
-                break;
-            case "toggle":
-                lig.generateToggle(v["name"], v["initialValue"], v["category"], v["description"], v["ID"], v["updateCallback"], v["updateInRealTime"]);
-                break;
-            case "slider":
-                lig.generateSlider(v["name"], v["min"], v["max"], v["initialVal"], v["intervalRes"], v["category"], v["description"], v["ID"], v["updateCallback"], v["updateInRealTime"]);
-                break;
-            case "combo":
-                lig.generateDiscreteSlider(v["name"], v["vals"], v["initialVal"], v["category"], v["description"], v["ID"], v["updateCallback"], v["updateInRealTime"])
-                break;
-        }
-    });
-});
+//$(document).ready(function () {
+//    var lig = new ListItemGenerator();
+//    var controls = App.getControls(); // Latest page passed in on loadNewPage();
+//    //var controls = [ { function: "lig.generateClickable(args);", args: { name: "New Game", linkData: { name: "New Game" }, category: "", ID: 0, description: "Start a new game!" } }, { function: "lig.generateClickable(args);", args: { name: "Load Game", linkData: { name: "Load Game" }, category: "", ID: 1, description: "Load an old game!" } } ];
+//    // [ { function: "generateClickable(args);", args: { name: "New Game", linkData: { name: "New Game" }, category: "", ID: 0, description: "Start a new game!" } }, { function: "generateClickable(args);", args: { name: "Load Game", linkData: { name: "Load Game" }, category: "", ID: 1, description: "Load an old game!" } } ]
+//    //$.each(controls, function (i, v) {
+//    //    switch (v["type"]) {
+//    //        case "click":
+//    //            lig.generateClickable(v["name"], v["linkData"], v["category"], v["description"], v["ID"], v["updateCallback"]);
+//    //            break;
+//    //        case "text":
+//    //            lig.generateText(v["name"], v["text"], v["category"], v["description"]);
+//    //            break;
+//    //        case "toggle":
+//    //            lig.generateToggle(v["name"], v["initialValue"], v["category"], v["description"], v["ID"], v["updateCallback"], v["updateInRealTime"]);
+//    //            break;
+//    //        case "slider":
+//    //            lig.generateSlider(v["name"], v["min"], v["max"], v["initialVal"], v["intervalRes"], v["category"], v["description"], v["ID"], v["updateCallback"], v["updateInRealTime"]);
+//    //            break;
+//    //        case "combo":
+//    //            lig.generateDiscreteSlider(v["name"], v["vals"], v["initialVal"], v["category"], v["description"], v["ID"], v["updateCallback"], v["updateInRealTime"])
+//    //            break;
+//    //    }
+//    //});
+//    $.each(controls, function (i, v) {
+//        var func = new Function(v["function"]);
+//        func(v["args"]);
+//    });
+//});
 
 /*******************/
 /* Discrete Slider */
@@ -654,11 +659,11 @@ function ListItemGenerator() {
      * ID - C++ ID for the control.
      * updateCallback - The name of the function to be called upon a change of state to the control.
      */
-    this.generateClickable = function (name, linkData, category, description, ID, updateCallback) {
-        var oid = name.replace(/ /g, "-");
-        var cid = category.replace(/ /g, "-");
-        placeControl(cid, generateHTMLClickable(name, linkData, ID, updateCallback));
-        addDescription(oid, description);
+    this.generateClickable = function (args) {
+        var oid = args["name"].replace(/ /g, "-");
+        var cid = args["category"].replace(/ /g, "-");
+        placeControl(cid, generateHTMLClickable(args["name"], args["linkData"], args["ID"], args["updateCallback"]));
+        addDescription(oid, args["description"]);
     }
     /**
      * Generates a static text element.
@@ -667,11 +672,11 @@ function ListItemGenerator() {
      * category - The category to place the control under.
      * description - The description to be displayed, describing the control's effect on the game.
      */
-    this.generateText = function (name, text, category, description) {
-        var oid = name.replace(/ /g, "-");
-        var cid = category.replace(/ /g, "-");
-        placeControl(cid, generateHTMLText(name, text));
-        addDescription(oid, description);
+    this.generateText = function (args) {
+        var oid = args["name"].replace(/ /g, "-");
+        var cid = args["category"].replace(/ /g, "-");
+        placeControl(cid, generateHTMLText(args["name"], args["text"]));
+        addDescription(oid, args["description"]);
     }
     /**
      * Generates a toggle control.
@@ -683,14 +688,14 @@ function ListItemGenerator() {
      * updateCallback - The callback function to be called on user update of the control.
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
      */
-    this.generateToggle = function (name, initialVal, category, description, ID, updateCallback, updateInRealTime) {
-        if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
-            controls[ID] = initialVal;
+    this.generateToggle = function (args) {
+        if (typeof args["updateInRealTime"] !== "undefined" && !args["updateInRealTime"]) {
+            controls[args["ID"]] = args["initialVal"];
         }
-        var oid = name.replace(/ /g, "-");
-        var cid = category.replace(/ /g, "-");
-        placeControl(cid, generateHTMLToggle(name, initialVal, ID, updateCallback, updateInRealTime));
-        addDescription(oid, description);
+        var oid = args["name"].replace(/ /g, "-");
+        var cid = args["category"].replace(/ /g, "-");
+        placeControl(cid, generateHTMLToggle(args["name"], args["initialVal"], args["ID"], args["updateCallback"], args["updateInRealTime"]));
+        addDescription(oid, args["description"]);
     }
     /**
      * Generates a slider control.
@@ -705,14 +710,14 @@ function ListItemGenerator() {
      * updateCallback - The callback function to be called on user update of the control.
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
      */
-    this.generateSlider = function (name, min, max, initialVal, intervalRes, category, description, ID, updateCallback, updateInRealTime) {
-        if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
-            controls[ID] = initialVal;
+    this.generateSlider = function (args) {
+        if (typeof args["updateInRealTime"] !== "undefined" && !args["updateInRealTime"]) {
+            controls[args["ID"]] = args["initialVal"];
         }
-        var oid = name.replace(/ /g, "-");
-        var cid = category.replace(/ /g, "-");
-        placeControl(cid, generateHTMLSlider(name, min, max, initialVal, intervalRes, ID, updateCallback, updateInRealTime));
-        addDescription(oid, description);
+        var oid = args["name"].replace(/ /g, "-");
+        var cid = args["category"].replace(/ /g, "-");
+        placeControl(cid, generateHTMLSlider(args["name"], args["min"], args["max"], args["initialVal"], args["intervalRes"], args["ID"], args["updateCallback"], args["updateInRealTime"]));
+        addDescription(oid, args["description"]);
     }
     /**
      * Generates a discrete slider control.
@@ -725,15 +730,15 @@ function ListItemGenerator() {
      * updateCallback - The callback function to be called on user update of the control.
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
      */
-    this.generateDiscreteSlider = function (name, vals, initialVal, category, description, ID, updateCallback, updateInRealTime) {
-        if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
-            controls[ID] = initialVal;
+    this.generateDiscreteSlider = function (args) {
+        if (typeof args["updateInRealTime"] !== "undefined" && !args["updateInRealTime"]) {
+            controls[args["ID"]] = args["initialVal"];
         }
-        var oid = name.replace(/ /g, "-");
-        var cid = category.replace(/ /g, "-");
-        placeControl(cid, generateHTMLDiscreteSlider(name, vals, initialVal, ID, updateCallback, updateInRealTime));
-        addDescription(oid, description);
-        var initialvid = initialVal.replace(/ /g, "-");
+        var oid = args["name"].replace(/ /g, "-");
+        var cid = args["category"].replace(/ /g, "-");
+        placeControl(cid, generateHTMLDiscreteSlider(args["name"], args["vals"], args["initialVal"], args["ID"], args["updateCallback"], args["updateInRealTime"]));
+        addDescription(oid, args["description"]);
+        var initialvid = args["initialVal"].replace(/ /g, "-");
         var elements = new Array();
         var startIndex = 0;
         $.each($("#control-discrete-slider-" + oid + " > div"), function (i, v) {
@@ -742,7 +747,7 @@ function ListItemGenerator() {
                 startIndex = i;
             }
         });
-        discreteSliders[ID] = new DiscreteSlider({ next: $("#control-next-" + oid + " > span"), previous: $("#control-previous-" + oid + " > span") }, elements, $("#control-discrete-slider-" + oid), startIndex);
+        discreteSliders[args["ID"]] = new DiscreteSlider({ next: $("#control-next-" + oid + " > span"), previous: $("#control-previous-" + oid + " > span") }, elements, $("#control-discrete-slider-" + oid), startIndex);
     }
     /**
      * Generates a text area control.
@@ -753,12 +758,12 @@ function ListItemGenerator() {
      * description - The description to be displayed, describing the control's effect on the game.
      * ID - C++ ID for the control.
      */
-    this.generateTextArea = function (name, defaultVal, maxLength, category, description, ID) {
-        controls[ID] = "";
-        var oid = name.replace(/ /g, "-");
-        var cid = category.replace(/ /g, "-");
-        placeControl(cid, generateHTMLTextArea(name, defaultVal, maxLength, ID));
-        addDescription(oid, description);
+    this.generateTextArea = function (args) {
+        controls[args["ID"]] = "";
+        var oid = args["name"].replace(/ /g, "-");
+        var cid = args["category"].replace(/ /g, "-");
+        placeControl(cid, generateHTMLTextArea(args["name"], args["defaultVal"], args["maxLength"], args["ID"]));
+        addDescription(oid, args["description"]);
     }
     /**
      * Generates a sublist.
@@ -767,10 +772,10 @@ function ListItemGenerator() {
      * category - The category to place the control under.
      * description - The description to be displayed, describing the control's effect on the game.
      */
-    this.generateSubList = function (name, subItems, category, description) {
-        var lid = name.replace(/ /g, "-");
-        var cid = category.replace(/ /g, "-");
-        placeControl(cid, generateHTMLSubList(name, subItems));
-        addDescription(lid, description);
+    this.generateSubList = function (args) {
+        var lid = args["name"].replace(/ /g, "-");
+        var cid = args["category"].replace(/ /g, "-");
+        placeControl(cid, generateHTMLSubList(args["name"], args["subItems"]));
+        addDescription(lid, args["description"]);
     }
 }
