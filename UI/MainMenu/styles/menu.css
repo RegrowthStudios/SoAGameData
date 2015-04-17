@@ -132,7 +132,7 @@ ul {
 .list-item {
   font-size: 0.55em;
   text-shadow: none;
-  line-height: 44px;
+  line-height: 2.22222222em;
   font-family: 'orbitronregular';
   text-transform: none;
   margin-left: 20px;
@@ -146,7 +146,7 @@ ul {
 }
 .sub-list-item {
   font-size: 0.9em;
-  line-height: 34px;
+  line-height: 1.9em;
   margin-left: 0;
 }
 .list-item.clickable:hover {
@@ -445,7 +445,7 @@ input[type=checkbox]:checked {
   -webkit-transition: all linear 0.2s;
   transition: all linear 0.2s;
   display: inline-block;
-  max-height: 44px;
+  max-height: 2.22222222em;
   overflow: hidden;
   margin-bottom: -18px;
 }
@@ -473,6 +473,7 @@ input[type=checkbox]:checked {
 .list-item .control-discrete-slider {
   width: 50%;
   text-align: center;
+  vertical-align: top;
 }
 .list-item .control-next {
   width: 25%;
@@ -481,5 +482,87 @@ input[type=checkbox]:checked {
 .list-item .control-previous {
   width: 25%;
   text-align: right;
+}
+/**********************/
+/* Responsive Styling */
+/**********************/
+@media screen and (max-width: 1480px) and (min-height: 721px) {
+  body {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1366px) and (min-height: 601px) {
+  body {
+    font-size: 24px;
+  }
+  input[type=text] {
+    padding: 3px 8px;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  body {
+    font-size: 18px;
+  }
+  input[type=text] {
+    padding: 2px 8px;
+    font-size: 10px;
+  }
+  input[type=checkbox] {
+    height: 13px;
+    width: 13px;
+  }
+}
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 12px;
+  }
+  input[type=text] {
+    padding: 1px 8px;
+    font-size: 9px;
+    width: 80px;
+  }
+  input[type=checkbox] {
+    height: 10px;
+    width: 10px;
+  }
+  input[type=range] {
+    width: 70px;
+  }
+}
+@media screen and (max-height: 800px) and (min-width: 1367px) {
+  body {
+    font-size: 30px;
+  }
+}
+@media screen and (max-height: 720px) and (min-width: 1181px) {
+  body {
+    font-size: 24px;
+  }
+  input[type=text] {
+    padding: 3px 8px;
+    font-size: 11px;
+  }
+}
+@media screen and (max-height: 600px) and (min-width: 901px) {
+  body {
+    font-size: 18px;
+  }
+  input[type=text] {
+    padding: 2px 8px;
+    font-size: 10px;
+  }
+  input[type=checkbox] {
+    height: 13px;
+    width: 13px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  input[type=range] {
+    width: 90px;
+  }
+  input[type=text] {
+    width: 100px;
+  }
 }
 /*# sourceMappingURL=menu.css.map */
