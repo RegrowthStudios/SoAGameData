@@ -20,7 +20,7 @@ void main() {
     // =================================
 
     vec2 nDistVec = normalize(fPosition);
-    vec2 fTex = (vec2(fPosition.x, fPosition.y * textureYSmush) + 1.0) / 2.0;
+    vec2 fTex = (vec2(fPosition.x, fPosition.y) + 1.0) / 2.0;
     
     float spikeVal = snoise(vec3(nDistVec, unNoiseZ) * spikeFrequency) + spikeShift;
     
