@@ -1,6 +1,5 @@
 star:
   surfaceTemperature: 3525
   diameter: 404000.0
-  mass: 6.56172e29
+  mass: 6.56172e+29
   axis: [0.0, 1.0, 0.0]
-  angularSpeed: 1.0

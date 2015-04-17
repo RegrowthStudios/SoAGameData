@@ -1,6 +1,6 @@
 gasGiant:
   diameter: 154190.0
-  mass: 9.1375e27
+  mass: 9.1375e+27
   axis: [0.0, 1.0, 0.0]
   rotationalPeriod: 0.34720833333333333
   oblateness: 1.0

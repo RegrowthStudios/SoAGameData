@@ -84,6 +84,62 @@ Endor:
   n: 55
   p: 278
   a: 184
+Abyssos:
+  type: Moon
+  path: Planets/Abyssos/properties.yml
+  par: Endor
+  ref: Baros
+  td: 30
+  e: 0.0009
+  i: 0.6
+  n: 62
+  p: 290
+  a: 90
+Vandor:
+  type: Moon
+  path: Planets/Vandor/properties.yml
+  par: Endor
+  ref: Baros
+  tf: 2
+  td: 15
+  e: 0.007
+  i: 0.4
+  n: 64
+  p: 288
+  a: 270
+Ares:
+  type: Moon
+  path: Planets/Ares/properties.yml
+  par: Endor
+  ref: Baros
+  tf: 2
+  td: 5
+  e: 0.011
+  i: 0.05
+  n: 68
+  p: 286
+  a: 23
+Baros:
+  type: Moon
+  path: Planets/Baros/properties.yml
+  par: Endor
+  t: 1.44e+6
+  e: 0.0163
+  i: 0
+  p: 306
+  a: 351
+Endor-1:
+  type: Moon
+  path: Asteroids/Endor1.yml
+  par: Endor
+  ref: Baros
+  tf: 19
+  td: 8
+  e: 0.0192
+  i: 158.1
+  n: 65
+  p: 190
+  a: 183
 Hyperion:
   type: Planet
   path: GasGiants/Hyperion/properties.yml
