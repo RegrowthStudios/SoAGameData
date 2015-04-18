@@ -129,7 +129,7 @@ Baros:
   p: 306
   a: 351
 Endor-1:
-  type: Moon
+  type: DwarfMoon
   path: Asteroids/Endor1.yml
   par: Endor
   ref: Baros
@@ -341,6 +341,17 @@ Tros:
   n: 84
   p: 198
   a: 280
+Pantheon:
+  type: Planet
+  path: GasGiants/Pantheon/properties.yml
+  par: Trinity B
+  ref: Hyperion
+  tf: 4
+  e: 0.0059
+  i: 0.08
+  n: 252
+  p: 112
+  a: 136
 (B-2) Eunomia:
   type: Asteroid
   path: Asteroids/B2_Eunomia.yml
