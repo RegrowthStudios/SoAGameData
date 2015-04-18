@@ -1,15 +1,15 @@
-##########  SystemProperties.yml  -  specification / property explanations - last updated: 15.04.2015
+##########  SystemProperties.yml  -  specification / property explanations - last updated: 18.04.2015
 
 (Object Name):
-  # type: Basic object type determining the appearance of orbits, object markers and selectors. All selected objects use rgba(255, 0, 0, 1.0)
+  # type: Basic object type determining the appearance of orbits, object markers and selectors. All selected objects use RGB(255, 0, 0)
     # Barycenter - The colors are taken from its binary component A type and used for the barycenter marker cross, selector and orbit
-    # Star - color rgba(255, 255, 0, 0.5), color hover rgba(255, 255, 0, 1.0) - used for all kinds of stellar and substellar objects
-    # Planet - color rgba(0, 255, 0, 0.5), color hover rgba(0, 255, 0, 1.0)
-    # DwarfPlanet - color rgba(0, 128, 0, 0.2), color hover rgba(0, 128, 0, 0.5)
-    # Moon - color rgba(96, 128, 255, 0.5), color hover rgba(96, 128, 255, 1.0)
-    # DwarfMoon - color rgba(48, 64, 128, 0.2), color hover rgba(48, 64, 128, 0.5)
-    # Asteroid - color rgba(0, 0, 0, 0.0), color hover rgba(160, 160, 160, 0.5)
-    # Comet - color rgba(0, 0, 0, 0.0), color hover rgba(160, 208, 255, 0.5)
+    # Star - color RGB(160, 160, 0) / color hover RGB(255, 255, 0) - used for all kinds of stellar and substellar objects
+    # Planet - color RGB(0, 160, 0) / color hover RGB(0, 255, 0)
+    # DwarfPlanet - color RGB(0, 80, 0) / color hover RGB(0, 128, 0)
+    # Moon - color RGB(60, 80, 160) / color hover RGB(96, 128, 255)
+    # DwarfMoon - color RGB(30, 40, 64) / color hover RGB(48, 64, 128)
+    # Asteroid - not visible / color hover RGB(80, 80, 80)
+    # Comet - not visible / color hover RGB(80, 104, 128)
   # comps: Binary components [compNameA, compNameB]
   # path: Path of the object properties yaml file within the star system folder
   # par: parent object
