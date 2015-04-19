@@ -21,11 +21,11 @@ void main() {
     vec3 nDistVec = normalize(fPosition + vec3(ox, oy, oz) * 0.5);
     
     // Get noise with normalized position to offset position again
-    vec3 pos = fPosition + noise(vec4(nDistVec, unDT), 5, 1.6, 0.7) * 0.6;
+    vec3 pos = fPosition + noise(vec4(nDistVec, unDT), 3, 4.6, 0.7) * 0.6;
 
     // Calculate brightness based on distance
     float dist = length(pos);
-    float brightness = 1.0 / (dist * dist) - 1.0 / (unMaxSize * unMaxSize);
+    float brightness = (1.0 / (dist * dist) - 1.0 / (unMaxSize * unMaxSize)) * 0.7;
     
     // Calculate color
     vec3 color = unColor * brightness;
