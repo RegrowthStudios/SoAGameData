@@ -401,6 +401,381 @@ var ListItemGenerator = {
                 elems.last().after(htmlControl);
             }
         }
+    },
+    /**
+     * Adds a description for a control to the DOM.
+     * oid - The control ID of the control that the description should be attached to.
+     * htmlControl - The HTML of the description to be added.
+     */
+    addDescription: function (oid, description) {
+        if (typeof description == "string") {
+            var htmlDescriptor = "<div class='helper' data-oid='" + oid + "'>" + description + "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div></div>"
+            $(htmlDescriptor).appendTo("#options-helper-wrapper").hide();
+            optDescs = $("#options-helper-wrapper > div");
+            opts = $("#options .list-item, #options .sub-list-item");
+            refreshDescControl();
+        }
+    },
+    /**
+     * Generates the HTML code for a clickable control (i.e. a link or otherwise button-like control).
+     * name - Name of the control to be displayed to the user.
+     * link - Path to the file the button should take the user to.
+     * ID - C++ ID for the control.
+     * updateCallback - The name of the function to be called when relaying the current state of the control.
+     * isSubList - Boolean stating if control is in a sublist.
+     */
+    generateHTMLClickable: function (name, linkData, ID, updateCallback, isSubList) {
+        var oid = name.replace(/ /g, "-");
+        var htmlControl = "";
+        if (typeof isSubList !== "undefined" && isSubList) {
+            htmlControl += "<li class='sub-list-item clickable list-item row' data-oid='" + oid + "'>";
+        } else {
+            htmlControl += "<li class='list-item clickable row' data-oid='" + oid + "'>";
+        }
+        if (typeof ID !== "undefined" && typeof updateCallback !== "undefined") {
+            htmlControl += "<a href='#' onclick='" + updateCallback + "(" + ID + ", value, \"" + oid + "\"); loadNewPage(" + linkData["name"] + ", " + linkData["filePath"] + ");'>";
+        } else {
+            htmlControl += "<a href='#'>";
+        }
+        htmlControl += name;
+        htmlControl += "</a>";
+        htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
+        htmlControl += "</li>";
+        return htmlControl;
+    },
+    /**
+     * Generates the HTML code for a static text element.
+     * name - Name of the element to be displayed to the user.
+     * text - Text to be displayed in the element.
+     * isSubList - Boolean stating if control is in a sublist.
+     */
+    generateHTMLText: function (name, text, isSubList) {
+        var oid = name.replace(/ /g, "-");
+        var htmlControl = "";
+        if (typeof isSubList !== "undefined" && isSubList) {
+            htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
+        } else {
+            htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
+        }
+        htmlControl += "<div class='column-2'>" + name + "</div>";
+        htmlControl += "<div class='content-center column-2'>" + text + "</div>";
+        htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
+        htmlControl += "</li>";
+        return htmlControl;
+    },
+    /**
+     * Generates the HTML code for a toggleable control.
+     * name - Name of the control to be displayed to the user.
+     * initialVal - Initial value of the control.
+     * ID - C++ ID for the control.
+     * updateCallback - The name of the function to be called when relaying the current state of the control.
+     * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
+     * isSubList - Boolean stating if control is in a sublist.
+     */
+    generateHTMLToggle: function (name, initialVal, ID, updateCallback, updateInRealTime, isSubList) {
+        var oid = name.replace(/ /g, "-");
+        var htmlControl = "";
+        if (typeof isSubList !== "undefined" && isSubList) {
+            htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
+        } else {
+            htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
+        }
+        htmlControl += "<div class='column-2'>" + name + "</div>";
+        htmlControl += "<div class='content-center column-2'>";
+        htmlControl += "<div class='checkbox'>";
+        if (typeof ID !== "undefined" && typeof updateCallback !== "undefined") {
+            if (typeof updateInRealTime !== "undefined" && updateInRealTime) {
+                htmlControl += "<input id='" + oid + "' type='checkbox' name='" + oid + "' " + initialVal + " onchange='" + updateCallback + "(" + ID + ", value, \"" + oid + "\")'>";
+            } else {
+                htmlControl += "<input id='" + oid + "' type='checkbox' name='" + oid + "' " + initialVal + " onchange='controls[" + ID + "] = value;'>";
+            }            
+        } else {
+            htmlControl += "<input id='" + oid + "' type='checkbox' name='" + oid + "' " + initialVal + ">";
+        }
+        htmlControl += "<label for='" + oid + "'></label>";
+        htmlControl += "</div>";
+        htmlControl += "</div>";
+        htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
+        htmlControl += "</li>";
+        return htmlControl;
+    },
+    /**
+     * Generates the HTML code for a slideable control.
+     * name - Name of the control to be displayed to the user.
+     * min - The minimum value of the slider.
+     * max - The maximum value of the slider.
+     * initialVal - The initial value of the control. Takes a value between min and max.
+     * intervalRes - The size of each interval in the slider.
+     * ID - C++ ID for the control.
+     * updateCallback - The name of the function to be called when relaying the current state of the control.
+     * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
+     * isSubList - Boolean stating if control is in a sublist.
+     */
+    generateHTMLSlider: function (name, min, max, initialVal, intervalRes, ID, updateCallback, updateInRealTime, isSubList) {
+        var oid = name.replace(/ /g, "-");
+        var htmlControl = "";
+        if (typeof isSubList !== "undefined" && isSubList) {
+            htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
+        } else {
+            htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
+        }
+        htmlControl += "<div class='column-2'>" + name + "</div>";
+        htmlControl += "<div class='content-center column-2'>";
+        if (typeof ID !== "undefined" && typeof updateCallback !== "undefined") {
+            if (typeof updateInRealTime !== "undefined" && updateInRealTime) {
+                htmlControl += "<input type='range' min='" + min + "' max='" + max + "' value='" + ((initialVal >= min && initialVal <= max) ? initialVal : min) + "' id='" + oid + "' step='" + intervalRes + "' oninput='return " + updateCallback + "(" + ID + ", value, \"" + oid + "\");'>";
+            } else {
+                htmlControl += "<input type='range' min='" + min + "' max='" + max + "' value='" + ((initialVal >= min && initialVal <= max) ? initialVal : min) + "' id='" + oid + "' step='" + intervalRes + "' oninput='controls[" + ID + "] = value;'>";
+            }
+        } else {
+            htmlControl += "<input type='range' min='" + min + "' max='" + max + "' value='" + ((initialVal >= min && initialVal <= max) ? initialVal : min) + "' id='" + oid + "' step='" + intervalRes + "'>";
+        }
+        htmlControl += "<output for='" + oid + "' id='" + oid + "-output'>" + initialVal + "</output>";
+        htmlControl += "</div>";
+        htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
+        htmlControl += "</li>";
+        return htmlControl;
+    },
+    /**
+     * Generates the HTML code for a discrete slider control.
+     * name - Name of the control to be displayed to the user.
+     * vals - Array of values to exist in the discrete slider.
+     * initialVal - The initial value of the control. Takes a value from the array of values provided.
+     * ID - C++ ID for the control.
+     * updateCallback - The name of the function to be called when relaying the current state of the control.
+     * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
+     * isSubList - Boolean stating if control is in a sublist.
+     */
+    generateHTMLDiscreteSlider: function (name, vals, initialVal, ID, updateCallback, updateInRealTime, isSubList) {
+        var oid = name.replace(/ /g, "-");
+        var htmlControl = "";
+        if (typeof isSubList !== "undefined" && isSubList) {
+            htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
+        } else {
+            htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
+        }
+        htmlControl += "<div class='column-2'>" + name + "</div>";
+        htmlControl += "<div class='content-center column-2'>";
+        htmlControl += "<div id='control-previous-" + oid + "' class='control-previous'><span>&lt;</span></div>";
+        htmlControl += "<div id='control-discrete-slider-" + oid + "' class='control-discrete-slider'>";
+        $.each(vals, function (i, v) {
+            var vid = v.replace(/ /g, "-");
+            htmlControl += "<div data-value='" + vid + "' style='display:none;'>" + v + "</div>";
+        });
+        htmlControl += "</div>"
+        htmlControl += "<div id='control-next-" + oid + "' class='control-next'><span>&gt;</span></div>";
+        htmlControl += "</select>";
+        htmlControl += "</div>";
+        htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
+        htmlControl += "</li>";
+        return htmlControl;
+    },
+    /**
+     * Generates the HTML code for a text area control.
+     * name - Name of the control to be displayed to the user.
+     * defaultVal - Default text in the text area.
+     * maxLength - Maximum length of the text inputted.
+     * ID - C++ ID for the control.
+     * isSubList - Boolean stating if control is in a sublist.
+     */
+    generateHTMLTextArea: function (name, defaultVal, maxLength, ID, isSubList) {
+        var oid = name.replace(/ /g, "-");
+        var htmlControl = "";
+        if (typeof isSubList !== "undefined" && isSubList) {
+            htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
+        } else {
+            htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
+        }
+        htmlControl += "<div class='column-2'>" + name + "</div>";
+        htmlControl += "<div class='content-center column-2'>";
+        if (typeof ID !== "undefined") {
+            htmlControl += "<input type='text' maxlength='" + maxLength + "' placeholder='" + defaultVal + "' oninput='controls[" + ID + "] = value;'>"
+        } else {
+            htmlControl += "<input type='text' maxlength='" + maxLength + "' placeholder='" + defaultVal + "'>"
+        }
+        htmlControl += "</div>";
+        htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
+        htmlControl += "</li>";
+        return htmlControl;
+    },
+    /**
+     * Generates the HTML code for a sublist.
+     * name - Name of the control to be displayed to the user.
+     * subItems - Array of objects detailing items to exist in the sublist.
+     */
+    generateHTMLSubList: function (name, subItems) {
+        var lid = name.replace(/ /g, "-");
+        var htmlControl = "<li class='list-item sub-list-owner row' data-oid='" + lid + "'>";
+        htmlControl += name;
+        htmlControl += "<div class='sub-list-wrapper'>"
+        htmlControl += "<ul class='sub-list'>";
+        $.each(subItems, function (i, v) {
+            switch (v["type"]) {
+                case "click":
+                    htmlControl += generateHTMLClickable(v["name"], v["link"], v["ID"], v["updateCallback"], true);
+                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                    break;
+                case "text":
+                    htmlControl += generateHTMLText(v["name"], v["text"], true);
+                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                    break;
+                case "toggle":
+                    htmlControl += generateHTMLToggle(v["name"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
+                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                    break;
+                case "slider":
+                    htmlControl += generateHTMLSlider(v["name"], v["min"], v["max"], v["initialVal"], v["intervalRes"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
+                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                    break;
+                case "combo":
+                    htmlControl += generateHTMLDiscreteSlider(v["name"], v["vals"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
+                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                    break;
+            }
+        });
+        htmlControl += "</ul>"
+        htmlControl += "</div>";
+        htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
+        htmlControl += "</li>"
+        return htmlControl;
+    },
+
+
+    /**
+     * Creates a category for the options menu.
+     * name - Name of the category to be displayed to the user.
+     */
+    createCategory: function (name) {
+        var cid = name.replace(/ /g, "-");
+        var htmlCategory = "<li class='list-header' data-category='" + cid + "'>" + name + "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div></li>";
+        $("#options").append(htmlCategory);
+    },
+    /**
+     * Generates a clickable control (i.e. a link or otherwise button-like control).
+     * name - Name of the control to be displayed to the user.
+     * link - Path to the file the button should take the user to.
+     * category - The category to place the control under.
+     * description - The description to be displayed, describing the control's effect on the game.
+     * ID - C++ ID for the control.
+     * updateCallback - The name of the function to be called upon a change of state to the control.
+     */
+    generateClickable: function (name, link, category, description, ID, updateCallback) {
+        var oid = name.replace(/ /g, "-");
+        var cid = category.replace(/ /g, "-");
+		this.placeControl(cid, this.generateHTMLClickable(name, link, ID, updateCallback));
+		this.addDescription(oid, description);
+    },
+    /**
+     * Generates a static text element.
+     * name - Name of the control to be displayed to the user.
+     * text - Text to be displayed in the element.
+     * category - The category to place the control under.
+     * description - The description to be displayed, describing the control's effect on the game.
+     */
+    generateText: function (args) {
+        var oid = args["name"].replace(/ /g, "-");
+        var cid = args["category"].replace(/ /g, "-");
+        placeControl(cid, this.generateHTMLText(args["name"], args["text"]));
+        this.addDescription(oid, args["description"]);
+    },
+    /**
+     * Generates a toggle control.
+     * name - Name of the control to be displayed to the user.
+     * initialVal - The initial value of the control. Takes either an empty string or "checked".
+     * category - The category to place the control under.
+     * description - The description to be displayed, describing the control's effect on the game.
+     * ID - C++ ID for the control.
+     * updateCallback - The callback function to be called on user update of the control.
+     * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
+     */
+    generateToggle: function (args) {
+        if (typeof args["updateInRealTime"] !== "undefined" && !args["updateInRealTime"]) {
+            controls[args["ID"]] = args["initialVal"];
+        }
+        var oid = args["name"].replace(/ /g, "-");
+        var cid = args["category"].replace(/ /g, "-");
+        this.placeControl(cid, this.generateHTMLToggle(args["name"], args["initialVal"], args["ID"], args["updateCallback"], args["updateInRealTime"]));
+        this.addDescription(oid, args["description"]);
+    },
+    /**
+     * Generates a slider control.
+     * name - Name of the control to be displayed to the user.
+     * min - The minimum value of the slider.
+     * max - The maximum value of the slider.
+     * initialVal - The initial value of the control. Takes a value between min and max.
+     * intervalRes - The size of each interval in the slider.
+     * category - The category to place the control under.
+     * description - The description to be displayed, describing the control's effect on the game.
+     * ID - C++ ID for the control.
+     * updateCallback - The callback function to be called on user update of the control.
+     * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
+     */
+    tgenerateSlider: function (args) {
+        if (typeof args["updateInRealTime"] !== "undefined" && !args["updateInRealTime"]) {
+            controls[args["ID"]] = args["initialVal"];
+        }
+        var oid = args["name"].replace(/ /g, "-");
+        var cid = args["category"].replace(/ /g, "-");
+        this.placeControl(cid, this.generateHTMLSlider(args["name"], args["min"], args["max"], args["initialVal"], args["intervalRes"], args["ID"], args["updateCallback"], args["updateInRealTime"]));
+        this.addDescription(oid, args["description"]);
+    },
+    /**
+     * Generates a discrete slider control.
+     * name - Name of the control to be displayed to the user.
+     * vals - Array of values to exist in the discrete slider.
+     * initialVal - The initial value of the control. Takes a value from the array of values provided.
+     * category - The category to place the control under.
+     * description - The description to be displayed, describing the control's effect on the game.
+     * ID - C++ ID for the control.
+     * updateCallback - The callback function to be called on user update of the control.
+     * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
+     */
+    generateDiscreteSlider: function (args) {
+        if (typeof args["updateInRealTime"] !== "undefined" && !args["updateInRealTime"]) {
+            controls[args["ID"]] = args["initialVal"];
+        }
+        var oid = args["name"].replace(/ /g, "-");
+        var cid = args["category"].replace(/ /g, "-");
+        this.placeControl(cid, this.generateHTMLDiscreteSlider(args["name"], args["vals"], args["initialVal"], args["ID"], args["updateCallback"], args["updateInRealTime"]));
+        this.addDescription(oid, args["description"]);
+        var initialvid = args["initialVal"].replace(/ /g, "-");
+        var elements = new Array();
+        var startIndex = 0;
+        $.each($("#control-discrete-slider-" + oid + " > div"), function (i, v) {
+            elements[i] = $(v);
+            if ($(v).data("value") == initialvid) {
+                startIndex = i;
+            }
+        });
+        discreteSliders[args["ID"]] = new DiscreteSlider({ next: $("#control-next-" + oid + " > span"), previous: $("#control-previous-" + oid + " > span") }, elements, $("#control-discrete-slider-" + oid), startIndex);
+    },
+    /**
+     * Generates a text area control.
+     * name - Name of the control to be displayed to the user.
+     * defaultVal - Default text in the text area.
+     * maxLength - Maximum length of the text inputted.
+     * category - The category to place the control under.
+     * description - The description to be displayed, describing the control's effect on the game.
+     * ID - C++ ID for the control.
+     */
+    generateTextArea: function (args) {
+        controls[args["ID"]] = "";
+        var oid = args["name"].replace(/ /g, "-");
+        var cid = args["category"].replace(/ /g, "-");
+        this.placeControl(cid, this.generateHTMLTextArea(args["name"], args["defaultVal"], args["maxLength"], args["ID"]));
+        this.addDescription(oid, args["description"]);
+    },
+    /**
+     * Generates a sublist.
+     * name - Name of the control to be displayed to the user.
+     * subItems - Array of objects detailing items to exist in the sublist.
+     * category - The category to place the control under.
+     * description - The description to be displayed, describing the control's effect on the game.
+     */
+    generateSubList: function (args) {
+        var lid = args["name"].replace(/ /g, "-");
+        var cid = args["category"].replace(/ /g, "-");
+        this.placeControl(cid, this.generateHTMLSubList(args["name"], args["subItems"]));
+        this.addDescription(lid, args["description"]);
     }
-    
 }
