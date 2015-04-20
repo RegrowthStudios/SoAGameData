@@ -1,29 +1,25 @@
 ﻿// Resize scrollable panes to corret height.
-$(document).ready(function () {
+function resizeScrollablePlanes() {
     if ($(".scrollable-pane.full-height").length > 0) {
-        setTimeout(function () {
-            var h = $(window).height();
-            var r = $("#menu-header").height();
-            r += parseInt($("#outer-wrapper").css('marginTop'));
-            r += $(".header").outerHeight(true);
-            r += parseInt($("#options").css('marginTop'));
-            r += 60; //Buffer at bottom.
-            h -= r;
-            $("#options").height(h);
-        }, 10);
+        var h = $(window).height();
+        var r = $("#menu-header").height();
+        r += parseInt($("#outer-wrapper").css('marginTop'));
+        r += $(".header").outerHeight(true);
+        r += parseInt($("#options").css('marginTop'));
+        r += 60; //Buffer at bottom.
+        h -= r;
+        $("#options").height(h);
     }
-});
+};
 
 // Resize extra options to fit with left column.
-$(document).ready(function () {
-    setTimeout(function () {
-        var h2 = $("#options-extra").parent().height();
-        $("#options-extra").height(h2);
-    }, 20);
-});
+function resizeExtraOptions() {
+    var h2 = $("#options-extra").parent().height();
+    $("#options-extra").height(h2);
+};
 
 // Handle sub-lists.
-$(document).ready(function () {
+function handleSubLists() {
     var animationDur = 300;
     function toggleExpansionSubList(elem) {
         if (elem.hasClass("contracted")) {
@@ -48,28 +44,25 @@ $(document).ready(function () {
             });
         }
     }
-
-    setTimeout(function () {
-        $.each($(".sub-list-wrapper"), function (i, v) {
-            //hide to prevent "flashing" of options menu.
-            var elem = $(v).hide();
-            //show momentarily to measure height (not displayed).
-            elem.data("height", elem.show().height());
-            elem.hide();
+    $.each($(".sub-list-wrapper"), function (i, v) {
+        //hide to prevent "flashing" of options menu.
+        var elem = $(v).hide();
+        //show momentarily to measure height (not displayed).
+        elem.data("height", elem.show().height());
+        elem.hide();
+        toggleExpansionSubList(elem);
+        $(elem).parent().on("click", function () {
             toggleExpansionSubList(elem);
-            $(elem).parent().on("click", function () {
-                toggleExpansionSubList(elem);
-            });
-            //show once the animation dur has passed (allowing the options to be slid out of view).
-            setTimeout(function () {
-                elem.show();
-            }, animationDur);
         });
-        $(".sub-list-item").on("click", function (e) {
+        //show once the animation dur has passed (allowing the options to be slid out of view).
+        setTimeout(function () {
+            elem.show();
+        }, animationDur);
+    });
+    $(".sub-list-item").on("click", function (e) {
             e.stopPropagation();
         });
-    }, 10);
-});
+};
 
 /***********************/
 /* Dynamic Page Loader */
@@ -79,8 +72,13 @@ function loadNewPage(name, filePath) {
     App.setCurrentPage(name);
     var pageProperties = App.getPageProperties(); // Returns JavaScript Object of form: { CSS: [ "filepath1.css", "filepath2.css" ], JS: [ "filepath3.js", "filepath.js" ] }
     var filesToLoad = {};
+<<<<<<< HEAD
     filesToLoad["CSS"] = pageProperties["CSS"];
     filesToLoad["JS"] = pageProperties["JS"];
+=======
+    filesToLoad["CSS"] = pageProperties[0];
+    filesToLoad["JS"] = pageProperties[1];
+>>>>>>> 2372527ea97003b647c847693365f4c90157db3e
     var stringifiedFilesToLoad = JSON.stringify(filesToLoad);
 
     if (typeof filePath == "string") {
@@ -95,35 +93,36 @@ function loadNewPage(name, filePath) {
 //}
 
 // Load controls for page.
-//$(document).ready(function () {
-//    var lig = new ListItemGenerator();
-//    var controls = App.getControls(); // Latest page passed in on loadNewPage();
-//    //var controls = [ { function: "lig.generateClickable(args);", args: { name: "New Game", linkData: { name: "New Game" }, category: "", ID: 0, description: "Start a new game!" } }, { function: "lig.generateClickable(args);", args: { name: "Load Game", linkData: { name: "Load Game" }, category: "", ID: 1, description: "Load an old game!" } } ];
-//    // [ { function: "generateClickable(args);", args: { name: "New Game", linkData: { name: "New Game" }, category: "", ID: 0, description: "Start a new game!" } }, { function: "generateClickable(args);", args: { name: "Load Game", linkData: { name: "Load Game" }, category: "", ID: 1, description: "Load an old game!" } } ]
-//    //$.each(controls, function (i, v) {
-//    //    switch (v["type"]) {
-//    //        case "click":
-//    //            lig.generateClickable(v["name"], v["linkData"], v["category"], v["description"], v["ID"], v["updateCallback"]);
-//    //            break;
-//    //        case "text":
-//    //            lig.generateText(v["name"], v["text"], v["category"], v["description"]);
-//    //            break;
-//    //        case "toggle":
-//    //            lig.generateToggle(v["name"], v["initialValue"], v["category"], v["description"], v["ID"], v["updateCallback"], v["updateInRealTime"]);
-//    //            break;
-//    //        case "slider":
-//    //            lig.generateSlider(v["name"], v["min"], v["max"], v["initialVal"], v["intervalRes"], v["category"], v["description"], v["ID"], v["updateCallback"], v["updateInRealTime"]);
-//    //            break;
-//    //        case "combo":
-//    //            lig.generateDiscreteSlider(v["name"], v["vals"], v["initialVal"], v["category"], v["description"], v["ID"], v["updateCallback"], v["updateInRealTime"])
-//    //            break;
-//    //    }
-//    //});
-//    $.each(controls, function (i, v) {
-//        var func = new Function(v["function"]);
-//        func(v["args"]);
-//    });
-//});
+$(document).ready(function () {
+    var lig = new ListItemGenerator();
+    var controls = App.getControls(); // Latest page passed in on loadNewPage();
+    $.each(controls, function (i, v) {
+        switch (v[0]) {
+            case "click":
+                lig.generateClickable(v[1], v[2], v[3], v[4], v[5], v[6]);
+                break;
+            case "text":
+                lig.generateText(v[1], v[2], v[3], v[4]);
+                break;
+            case "toggle":
+                lig.generateToggle(v[1], v[2], v[3], v[4], v[5], v[6], v[7]);
+                break;
+            case "slider":
+                lig.generateSlider(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8], v[9], v[10]);
+                break;
+            case "discrete":
+                lig.generateDiscreteSlider(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8]);
+                break;
+            case "combo":
+                lig.generateComboBox(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8]);
+                break;
+        }
+    });
+
+    resizeScrollablePlanes();
+    resizeExtraOptions();
+    handleSubLists();
+});
 
 /*******************/
 /* Discrete Slider */
@@ -562,9 +561,8 @@ var ListItemGenerator = {
             var vid = v.replace(/ /g, "-");
             htmlControl += "<div data-value='" + vid + "' style='display:none;'>" + v + "</div>";
         });
-        htmlControl += "</div>"
+        htmlControl += "</div>";
         htmlControl += "<div id='control-next-" + oid + "' class='control-next'><span>&gt;</span></div>";
-        htmlControl += "</select>";
         htmlControl += "</div>";
         htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
         htmlControl += "</li>";
@@ -611,25 +609,29 @@ var ListItemGenerator = {
         htmlControl += "<ul class='sub-list'>";
         $.each(subItems, function (i, v) {
             switch (v[0]) {
-                case "click": // Make sure this matches generate clickable: type, name, link, category, description, ID, updateCallback
-                    htmlControl += ListItemGenerator.generateHTMLClickable(v[1], v[2], v[5], v[6]);
-                    ListItemGenerator.addDescription(v[2].replace(/ /g, "-"), v[4]);
+                case "click": // Make sure this matches generate clickable: name, linkData, description, ID, updateCallback
+                    htmlControl += ListItemGenerator.generateHTMLClickable(v[1], v[2], v[4], v[5], true);
+                    ListItemGenerator.addDescription(v[1].replace(/ /g, "-"), v[3]);
                     break;
-                case "text":
-                    htmlControl += ListItemGenerator.generateHTMLText(v["name"], v["text"], true);
-                    ListItemGenerator.addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                case "text": // Make sure this matches generate text: name, text, description
+                    htmlControl += ListItemGenerator.generateHTMLText(v[1], v[2], true);
+                    ListItemGenerator.addDescription(v[1].replace(/ /g, "-"), v[3]);
                     break;
-                case "toggle":
-                    htmlControl += ListItemGenerator.generateHTMLToggle(v["name"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
-                    ListItemGenerator.addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                case "toggle": // Make sure this matches generate toggle: name, initialVal, description, ID, updateCallback, updateInRealTime
+                    htmlControl += ListItemGenerator.generateHTMLToggle(v[1], v[2], v[4], v[5], v[6], true);
+                    ListItemGenerator.addDescription(v[1].replace(/ /g, "-"), v[3]);
                     break;
-                case "slider":
-                    htmlControl += ListItemGenerator.generateHTMLSlider(v["name"], v["min"], v["max"], v["initialVal"], v["intervalRes"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
-                    ListItemGenerator.addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                case "slider": // Make sure this matches generate slider: name, min, max, initialVal, intervalRes, description, ID, updateCallback, updateInRealTime
+                    htmlControl += ListItemGenerator.generateHTMLSlider(v[1], v[2], v[3], v[4], v[5], v[7], v[8], v[9], true);
+                    ListItemGenerator.addDescription(v[1].replace(/ /g, "-"), v[6]);
                     break;
-                case "combo":
-                    htmlControl += ListItemGenerator.generateHTMLDiscreteSlider(v["name"], v["vals"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
-                    ListItemGenerator.addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                case "discrete": // Make sure this matches generate discrete: name, vals, initialVal, description, ID, updateCallback, updateInRealTime
+                    htmlControl += ListItemGenerator.generateHTMLDiscreteSlider(v[1], v[2], v[3], v[5], v[6], v[7], true);
+                    ListItemGenerator.addDescription(v[1].replace(/ /g, "-"), v[4]);
+                    break;
+                case "combo": // Make sure this matches generate combo box: name, vals, initialVal, description, ID, updateCallback, updateInRealTime
+                    htmlControl += ListItemGenerator.generateHTMLComboBox(v[1], v[2], v[3], v[5], v[6], v[7], true);
+                    ListItemGenerator.addDescription(v[1].replace(/ /g, "-"), v[4]);
                     break;
             }
         });
@@ -637,6 +639,41 @@ var ListItemGenerator = {
         htmlControl += "</div>";
         htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
         htmlControl += "</li>"
+        return htmlControl;
+    },
+    /**
+     * Generates the HTML code for a combo box control.
+     * name - Name of the control to be displayed to the user.
+     * vals - Array of values to exist in the combo box.
+     * initialVal - The initial value of the control. Takes a value from the array of values provided.
+     * ID - C++ ID for the control.
+     * updateCallback - The name of the function to be called when relaying the current state of the control.
+     * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
+     * isSubList - Boolean stating if control is in a sublist.
+     */
+    generateHTMLComboBox: function (name, vals, initialVal, ID, updateCallback, updateInRealTime, isSubList) {
+        var oid = name.replace(/ /g, "-");
+        var htmlControl = "";
+        if (typeof isSubList !== "undefined" && isSubList) {
+            htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
+        } else {
+            htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
+        }
+        htmlControl += "<div class='column-2'>" + name + "</div>";
+        htmlControl += "<div class='content-center column-2'>";
+        htmlControl += "<select class='combo'>";
+        $.each(vals, function (i, v) {
+            var vid = v.replace(/ /g, "-");
+            if (v == initialVal) {
+
+            } else {
+                htmlControl += "<option data-value='" + vid + "'>" + v + "</option>";
+            }
+        });
+        htmlControl += "</select>";
+        htmlControl += "</div>";
+        htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
+        htmlControl += "</li>";
         return htmlControl;
     },
 
@@ -653,16 +690,16 @@ var ListItemGenerator = {
     /**
      * Generates a clickable control (i.e. a link or otherwise button-like control).
      * name - Name of the control to be displayed to the user.
-     * link - Path to the file the button should take the user to.
+     * linkData - Array of name of file and path to the file the button should take the user to.
      * category - The category to place the control under.
      * description - The description to be displayed, describing the control's effect on the game.
      * ID - C++ ID for the control.
      * updateCallback - The name of the function to be called upon a change of state to the control.
      */
-    generateClickable: function (name, link, category, description, ID, updateCallback) {
+    generateClickable: function (name, linkData, category, description, ID, updateCallback) {
         var oid = name.replace(/ /g, "-");
         var cid = category.replace(/ /g, "-");
-		this.placeControl(cid, this.generateHTMLClickable(name, link, ID, updateCallback));
+		this.placeControl(cid, this.generateHTMLClickable(name, linkData, ID, updateCallback));
 		this.addDescription(oid, description);
     },
     /**
@@ -738,12 +775,12 @@ var ListItemGenerator = {
         var cid = category.replace(/ /g, "-");
         this.placeControl(cid, this.generateHTMLDiscreteSlider(name, vals, initialVal, ID, updateCallback, updateInRealTime));
         this.addDescription(oid, description);
-        var initialvid = initialVal.replace(/ /g, "-");
+        var initialVid = initialVal.replace(/ /g, "-");
         var elements = new Array();
         var startIndex = 0;
         $.each($("#control-discrete-slider-" + oid + " > div"), function (i, v) {
             elements[i] = $(v);
-            if ($(v).data("value") == initialvid) {
+            if ($(v).data("value") == initialVid) {
                 startIndex = i;
             }
         });
@@ -777,5 +814,26 @@ var ListItemGenerator = {
         var cid = category.replace(/ /g, "-");
         this.placeControl(cid, this.generateHTMLSubList(name, subItems));
         this.addDescription(lid, description);
+    },
+    /**
+     * Generates a combo box.
+     * name - Name of the control to be displayed to the user.
+     * vals - Array of values to exist in the combo box.
+     * initialVal - The initial value of the control. Takes a value from the array of values provided.
+     * category - The category to place the control under.
+     * description - The description to be displayed, describing the control's effect on the game.
+     * ID - C++ ID for the control.
+     * updateCallback - The callback function to be called on user update of the control.
+     * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
+     */
+    generateComboBox: function (name, vals, initialVal, category, description, ID, updateCallback, updateInRealTime) {
+        if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
+            controls[ID] = initialVal;
+        }
+        var oid = name.replace(/ /g, "-");
+        var cid = category.replace(/ /g, "-");
+        this.placeControl(cid, this.generateHTMLComboBox(name, vals, initialVal, ID, updateCallback, updateInRealTime));
+        this.addDescription(oid, description);
+        var initialVid = initialVal.replace(/ /g, "-");
     }
 }

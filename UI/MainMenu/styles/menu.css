@@ -8,7 +8,6 @@ body {
   padding: 0;
 }
 body {
-  /*background: url("../test/bg.jpg");*/
   background-color: #0000;
   width: 100%;
   height: 100%;
@@ -438,6 +437,32 @@ input[type=checkbox]:hover:not(:checked) {
 }
 input[type=checkbox]:checked {
   -webkit-box-shadow: inset 0 0 16px #10beef, inset 0 0 10px rgba(16, 190, 239, 0.9), inset 0 0 6px rgba(16, 190, 239, 0.8);
+}
+select.combo {
+  height: 16px;
+  width: 120px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #10beef;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: inset 0 0 12px #10beef, inset 0 0 6px rgba(16, 190, 239, 0.8);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  padding: 3px;
+  margin: 0;
+}
+select.combo > option {
+  height: 16px;
+  width: 120px;
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid rgba(16, 190, 239, 0.4);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .control-discrete-slider {
   -moz-transition: all linear 0.2s;
