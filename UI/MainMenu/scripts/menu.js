@@ -102,7 +102,10 @@ $(document).ready(function () {
                 lig.generateSlider(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8], v[9], v[10]);
                 break;
             case "discrete":
-                lig.generateDiscreteSlider(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8])
+                lig.generateDiscreteSlider(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8]);
+                break;
+            case "combo":
+                lig.generateComboBox(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8]);
                 break;
         }
     });
@@ -617,6 +620,10 @@ var ListItemGenerator = {
                     htmlControl += ListItemGenerator.generateHTMLDiscreteSlider(v[1], v[2], v[3], v[5], v[6], v[7], true);
                     ListItemGenerator.addDescription(v[1].replace(/ /g, "-"), v[4]);
                     break;
+                case "combo": // Make sure this matches generate combo box: name, vals, initialVal, description, ID, updateCallback, updateInRealTime
+                    htmlControl += ListItemGenerator.generateHTMLComboBox(v[1], v[2], v[3], v[5], v[6], v[7], true);
+                    ListItemGenerator.addDescription(v[1].replace(/ /g, "-"), v[4]);
+                    break;
             }
         });
         htmlControl += "</ul>"
@@ -635,7 +642,7 @@ var ListItemGenerator = {
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
      * isSubList - Boolean stating if control is in a sublist.
      */
-    generateHTMLDiscreteSlider: function (name, vals, initialVal, ID, updateCallback, updateInRealTime, isSubList) {
+    generateHTMLComboBox: function (name, vals, initialVal, ID, updateCallback, updateInRealTime, isSubList) {
         var oid = name.replace(/ /g, "-");
         var htmlControl = "";
         if (typeof isSubList !== "undefined" && isSubList) {
@@ -810,7 +817,7 @@ var ListItemGenerator = {
      * updateCallback - The callback function to be called on user update of the control.
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
      */
-    generateDiscreteSlider: function (name, vals, initialVal, category, description, ID, updateCallback, updateInRealTime) {
+    generateComboBox: function (name, vals, initialVal, category, description, ID, updateCallback, updateInRealTime) {
         if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
             controls[ID] = initialVal;
         }
