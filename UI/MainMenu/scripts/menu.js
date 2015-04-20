@@ -1,29 +1,25 @@
 ﻿// Resize scrollable panes to corret height.
-$(document).ready(function () {
+function resizeScrollablePlanes() {
     if ($(".scrollable-pane.full-height").length > 0) {
-        setTimeout(function () {
-            var h = $(window).height();
-            var r = $("#menu-header").height();
-            r += parseInt($("#outer-wrapper").css('marginTop'));
-            r += $(".header").outerHeight(true);
-            r += parseInt($("#options").css('marginTop'));
-            r += 60; //Buffer at bottom.
-            h -= r;
-            $("#options").height(h);
-        }, 10);
+        var h = $(window).height();
+        var r = $("#menu-header").height();
+        r += parseInt($("#outer-wrapper").css('marginTop'));
+        r += $(".header").outerHeight(true);
+        r += parseInt($("#options").css('marginTop'));
+        r += 60; //Buffer at bottom.
+        h -= r;
+        $("#options").height(h);
     }
-});
+};
 
 // Resize extra options to fit with left column.
-$(document).ready(function () {
-    setTimeout(function () {
-        var h2 = $("#options-extra").parent().height();
-        $("#options-extra").height(h2);
-    }, 20);
-});
+function resizeExtraOptions() {
+    var h2 = $("#options-extra").parent().height();
+    $("#options-extra").height(h2);
+};
 
 // Handle sub-lists.
-$(document).ready(function () {
+function handleSubLists() {
     var animationDur = 300;
     function toggleExpansionSubList(elem) {
         if (elem.hasClass("contracted")) {
@@ -48,82 +44,73 @@ $(document).ready(function () {
             });
         }
     }
-
-    setTimeout(function () {
-        $.each($(".sub-list-wrapper"), function (i, v) {
-            //hide to prevent "flashing" of options menu.
-            var elem = $(v).hide();
-            //show momentarily to measure height (not displayed).
-            elem.data("height", elem.show().height());
-            elem.hide();
+    $.each($(".sub-list-wrapper"), function (i, v) {
+        //hide to prevent "flashing" of options menu.
+        var elem = $(v).hide();
+        //show momentarily to measure height (not displayed).
+        elem.data("height", elem.show().height());
+        elem.hide();
+        toggleExpansionSubList(elem);
+        $(elem).parent().on("click", function () {
             toggleExpansionSubList(elem);
-            $(elem).parent().on("click", function () {
-                toggleExpansionSubList(elem);
-            });
-            //show once the animation dur has passed (allowing the options to be slid out of view).
-            setTimeout(function () {
-                elem.show();
-            }, animationDur);
         });
-        $(".sub-list-item").on("click", function (e) {
+        //show once the animation dur has passed (allowing the options to be slid out of view).
+        setTimeout(function () {
+            elem.show();
+        }, animationDur);
+    });
+    $(".sub-list-item").on("click", function (e) {
             e.stopPropagation();
         });
-    }, 10);
-});
+};
 
 /***********************/
 /* Dynamic Page Loader */
 /***********************/
 
-//function loadNewPage(name, filePath) {
-//    App.setCurrentPage(name);
-//    var pageProperties = App.getPageProperties(); // Returns JavaScript Object of form: { CSS: [ "filepath1.css", "filepath2.css" ], JS: [ "filepath3.js", "filepath.js" ] }
-//    var filesToLoad = {};
-//    filesToLoad["CSS"] = pageProperties["CSS"];
-//    filesToLoad["JS"] = pageProperties["JS"];
-//    var stringifiedFilesToLoad = JSON.stringify(filesToLoad);
-
-//    if (typeof filePath == "string") {
-//        window.location.assign(filePath + "?name=" + name + "&filesToLoad=" + stringifiedFilesToLoad);
-//    } else {
-//        window.location.assign("/index.html?name=" + name + "&filesToLoad=" + stringifiedFilesToLoad);
-//    }
-//}
-
 function loadNewPage(name, filePath) {
-    window.location.assign("/index.html?name=" + name + "&filesToLoad=" + filePath);
+    App.setCurrentPage(name);
+    var pageProperties = App.getPageProperties(); // Returns JavaScript Object of form: { CSS: [ "filepath1.css", "filepath2.css" ], JS: [ "filepath3.js", "filepath.js" ] }
+    var filesToLoad = {};
+    filesToLoad["CSS"] = pageProperties[0];
+    filesToLoad["JS"] = pageProperties[1];
+    var stringifiedFilesToLoad = JSON.stringify(filesToLoad);
+
+    if (typeof filePath == "string") {
+        window.location.assign(filePath + "?name=" + name + "&filesToLoad=" + stringifiedFilesToLoad);
+    } else {
+        window.location.assign("/index.html?name=" + name + "&filesToLoad=" + stringifiedFilesToLoad);
+    }
 }
 
 // Load controls for page.
-//$(document).ready(function () {
-//    var lig = new ListItemGenerator();
-//    var controls = App.getControls(); // Latest page passed in on loadNewPage();
-//    //var controls = [ { function: "lig.generateClickable(args);", args: { name: "New Game", linkData: { name: "New Game" }, category: "", ID: 0, description: "Start a new game!" } }, { function: "lig.generateClickable(args);", args: { name: "Load Game", linkData: { name: "Load Game" }, category: "", ID: 1, description: "Load an old game!" } } ];
-//    // [ { function: "generateClickable(args);", args: { name: "New Game", linkData: { name: "New Game" }, category: "", ID: 0, description: "Start a new game!" } }, { function: "generateClickable(args);", args: { name: "Load Game", linkData: { name: "Load Game" }, category: "", ID: 1, description: "Load an old game!" } } ]
-//    //$.each(controls, function (i, v) {
-//    //    switch (v["type"]) {
-//    //        case "click":
-//    //            lig.generateClickable(v["name"], v["linkData"], v["category"], v["description"], v["ID"], v["updateCallback"]);
-//    //            break;
-//    //        case "text":
-//    //            lig.generateText(v["name"], v["text"], v["category"], v["description"]);
-//    //            break;
-//    //        case "toggle":
-//    //            lig.generateToggle(v["name"], v["initialValue"], v["category"], v["description"], v["ID"], v["updateCallback"], v["updateInRealTime"]);
-//    //            break;
-//    //        case "slider":
-//    //            lig.generateSlider(v["name"], v["min"], v["max"], v["initialVal"], v["intervalRes"], v["category"], v["description"], v["ID"], v["updateCallback"], v["updateInRealTime"]);
-//    //            break;
-//    //        case "combo":
-//    //            lig.generateDiscreteSlider(v["name"], v["vals"], v["initialVal"], v["category"], v["description"], v["ID"], v["updateCallback"], v["updateInRealTime"])
-//    //            break;
-//    //    }
-//    //});
-//    $.each(controls, function (i, v) {
-//        var func = new Function(v["function"]);
-//        func(v["args"]);
-//    });
-//});
+$(document).ready(function () {
+    var lig = new ListItemGenerator();
+    var controls = App.getControls(); // Latest page passed in on loadNewPage();
+    $.each(controls, function (i, v) {
+        switch (v[0]) {
+            case "click":
+                lig.generateClickable(v[1], v[2], v[3], v[4], v[5], v[6]);
+                break;
+            case "text":
+                lig.generateText(v[1], v[2], v[3], v[4]);
+                break;
+            case "toggle":
+                lig.generateToggle(v[1], v[2], v[3], v[4], v[5], v[6], v[7]);
+                break;
+            case "slider":
+                lig.generateSlider(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8], v[9], v[10]);
+                break;
+            case "combo":
+                lig.generateDiscreteSlider(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8])
+                break;
+        }
+    });
+
+    resizeScrollablePlanes();
+    resizeExtraOptions();
+    handleSubLists();
+});
 
 /*******************/
 /* Discrete Slider */
