@@ -90,9 +90,9 @@ $(document).ready(function () {
 //    }
 //}
 
-//function loadNewPage(name, filePath) {
-//    window.location.assign("/index.html?name=" + name + "&filesToLoad=" + filePath);
-//}
+function loadNewPage(name, filePath) {
+    window.location.assign("/index.html?name=" + name + "&filesToLoad=" + filePath);
+}
 
 // Load controls for page.
 //$(document).ready(function () {
@@ -433,7 +433,7 @@ var ListItemGenerator = {
             htmlControl += "<li class='list-item clickable row' data-oid='" + oid + "'>";
         }
         if (typeof ID !== "undefined" && typeof updateCallback !== "undefined") {
-            htmlControl += "<a href='#' onclick='" + updateCallback + "(" + ID + ", value, \"" + oid + "\"); loadNewPage(" + linkData["name"] + ", " + linkData["filePath"] + ");'>";
+            htmlControl += "<a href='#' onclick='" + updateCallback + "(" + ID + ", \"" + oid + "\"); loadNewPage(" + linkData[0] + ", " + linkData[1] + ");'>";
         } else {
             htmlControl += "<a href='#'>";
         }
@@ -610,26 +610,26 @@ var ListItemGenerator = {
         htmlControl += "<div class='sub-list-wrapper'>"
         htmlControl += "<ul class='sub-list'>";
         $.each(subItems, function (i, v) {
-            switch (v["type"]) {
-                case "click":
-                    htmlControl += generateHTMLClickable(v["name"], v["link"], v["ID"], v["updateCallback"], true);
-                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+            switch (v[0]) {
+                case "click": // Make sure this matches generate clickable: type, name, link, category, description, ID, updateCallback
+                    htmlControl += ListItemGenerator.generateHTMLClickable(v[1], v[2], v[5], v[6]);
+                    ListItemGenerator.addDescription(v[2].replace(/ /g, "-"), v[4]);
                     break;
                 case "text":
-                    htmlControl += generateHTMLText(v["name"], v["text"], true);
-                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                    htmlControl += ListItemGenerator.generateHTMLText(v["name"], v["text"], true);
+                    ListItemGenerator.addDescription(v["name"].replace(/ /g, "-"), v["description"]);
                     break;
                 case "toggle":
-                    htmlControl += generateHTMLToggle(v["name"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
-                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                    htmlControl += ListItemGenerator.generateHTMLToggle(v["name"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
+                    ListItemGenerator.addDescription(v["name"].replace(/ /g, "-"), v["description"]);
                     break;
                 case "slider":
-                    htmlControl += generateHTMLSlider(v["name"], v["min"], v["max"], v["initialVal"], v["intervalRes"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
-                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                    htmlControl += ListItemGenerator.generateHTMLSlider(v["name"], v["min"], v["max"], v["initialVal"], v["intervalRes"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
+                    ListItemGenerator.addDescription(v["name"].replace(/ /g, "-"), v["description"]);
                     break;
                 case "combo":
-                    htmlControl += generateHTMLDiscreteSlider(v["name"], v["vals"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
-                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                    htmlControl += ListItemGenerator.generateHTMLDiscreteSlider(v["name"], v["vals"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
+                    ListItemGenerator.addDescription(v["name"].replace(/ /g, "-"), v["description"]);
                     break;
             }
         });
@@ -672,11 +672,11 @@ var ListItemGenerator = {
      * category - The category to place the control under.
      * description - The description to be displayed, describing the control's effect on the game.
      */
-    generateText: function (args) {
-        var oid = args["name"].replace(/ /g, "-");
-        var cid = args["category"].replace(/ /g, "-");
-        placeControl(cid, this.generateHTMLText(args["name"], args["text"]));
-        this.addDescription(oid, args["description"]);
+    generateText: function (name, text, category, description) {
+        var oid = name.replace(/ /g, "-");
+        var cid = category.replace(/ /g, "-");
+        placeControl(cid, this.generateHTMLText(name, text));
+        this.addDescription(oid, description);
     },
     /**
      * Generates a toggle control.
@@ -688,14 +688,14 @@ var ListItemGenerator = {
      * updateCallback - The callback function to be called on user update of the control.
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
      */
-    generateToggle: function (args) {
-        if (typeof args["updateInRealTime"] !== "undefined" && !args["updateInRealTime"]) {
-            controls[args["ID"]] = args["initialVal"];
+    generateToggle: function (name, initialVal, category, description, ID, updateCallback, updateInRealTime) {
+        if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
+            controls[ID] = initialVal;
         }
-        var oid = args["name"].replace(/ /g, "-");
-        var cid = args["category"].replace(/ /g, "-");
-        this.placeControl(cid, this.generateHTMLToggle(args["name"], args["initialVal"], args["ID"], args["updateCallback"], args["updateInRealTime"]));
-        this.addDescription(oid, args["description"]);
+        var oid = name.replace(/ /g, "-");
+        var cid = category.replace(/ /g, "-");
+        this.placeControl(cid, this.generateHTMLToggle(name, initialVal, ID, updateCallback, updateInRealTime));
+        this.addDescription(oid, description);
     },
     /**
      * Generates a slider control.
@@ -710,14 +710,14 @@ var ListItemGenerator = {
      * updateCallback - The callback function to be called on user update of the control.
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
      */
-    tgenerateSlider: function (args) {
-        if (typeof args["updateInRealTime"] !== "undefined" && !args["updateInRealTime"]) {
-            controls[args["ID"]] = args["initialVal"];
+    generateSlider: function (name, min, max, initialVal, intervalRes, category, description, ID, updateCallback, updateInRealTime) {
+        if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
+            controls[ID] = initialVal;
         }
-        var oid = args["name"].replace(/ /g, "-");
-        var cid = args["category"].replace(/ /g, "-");
-        this.placeControl(cid, this.generateHTMLSlider(args["name"], args["min"], args["max"], args["initialVal"], args["intervalRes"], args["ID"], args["updateCallback"], args["updateInRealTime"]));
-        this.addDescription(oid, args["description"]);
+        var oid = name.replace(/ /g, "-");
+        var cid = category.replace(/ /g, "-");
+        this.placeControl(cid, this.generateHTMLSlider(name, min, max, initialVal, intervalRes, ID, updateCallback, updateInRealTime));
+        this.addDescription(oid, description);
     },
     /**
      * Generates a discrete slider control.
@@ -730,15 +730,15 @@ var ListItemGenerator = {
      * updateCallback - The callback function to be called on user update of the control.
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
      */
-    generateDiscreteSlider: function (args) {
-        if (typeof args["updateInRealTime"] !== "undefined" && !args["updateInRealTime"]) {
-            controls[args["ID"]] = args["initialVal"];
+    generateDiscreteSlider: function (name, vals, initialVal, category, description, ID, updateCallback, updateInRealTime) {
+        if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
+            controls[ID] = initialVal;
         }
-        var oid = args["name"].replace(/ /g, "-");
-        var cid = args["category"].replace(/ /g, "-");
-        this.placeControl(cid, this.generateHTMLDiscreteSlider(args["name"], args["vals"], args["initialVal"], args["ID"], args["updateCallback"], args["updateInRealTime"]));
-        this.addDescription(oid, args["description"]);
-        var initialvid = args["initialVal"].replace(/ /g, "-");
+        var oid = name.replace(/ /g, "-");
+        var cid = category.replace(/ /g, "-");
+        this.placeControl(cid, this.generateHTMLDiscreteSlider(name, vals, initialVal, ID, updateCallback, updateInRealTime));
+        this.addDescription(oid, description);
+        var initialvid = initialVal.replace(/ /g, "-");
         var elements = new Array();
         var startIndex = 0;
         $.each($("#control-discrete-slider-" + oid + " > div"), function (i, v) {
@@ -747,7 +747,7 @@ var ListItemGenerator = {
                 startIndex = i;
             }
         });
-        discreteSliders[args["ID"]] = new DiscreteSlider({ next: $("#control-next-" + oid + " > span"), previous: $("#control-previous-" + oid + " > span") }, elements, $("#control-discrete-slider-" + oid), startIndex);
+        discreteSliders[ID] = new DiscreteSlider({ next: $("#control-next-" + oid + " > span"), previous: $("#control-previous-" + oid + " > span") }, elements, $("#control-discrete-slider-" + oid), startIndex);
     },
     /**
      * Generates a text area control.
@@ -758,12 +758,12 @@ var ListItemGenerator = {
      * description - The description to be displayed, describing the control's effect on the game.
      * ID - C++ ID for the control.
      */
-    generateTextArea: function (args) {
-        controls[args["ID"]] = "";
-        var oid = args["name"].replace(/ /g, "-");
-        var cid = args["category"].replace(/ /g, "-");
-        this.placeControl(cid, this.generateHTMLTextArea(args["name"], args["defaultVal"], args["maxLength"], args["ID"]));
-        this.addDescription(oid, args["description"]);
+    generateTextArea: function (name, defaultVal, maxLength, category, description, ID) {
+        controls[ID] = "";
+        var oid = name.replace(/ /g, "-");
+        var cid = category.replace(/ /g, "-");
+        this.placeControl(cid, this.generateHTMLTextArea(name, defaultVal, maxLength, ID));
+        this.addDescription(oid, description);
     },
     /**
      * Generates a sublist.
@@ -772,10 +772,10 @@ var ListItemGenerator = {
      * category - The category to place the control under.
      * description - The description to be displayed, describing the control's effect on the game.
      */
-    generateSubList: function (args) {
-        var lid = args["name"].replace(/ /g, "-");
-        var cid = args["category"].replace(/ /g, "-");
-        this.placeControl(cid, this.generateHTMLSubList(args["name"], args["subItems"]));
-        this.addDescription(lid, args["description"]);
+    generateSubList: function (name, subItems, category, description) {
+        var lid = name.replace(/ /g, "-");
+        var cid = category.replace(/ /g, "-");
+        this.placeControl(cid, this.generateHTMLSubList(name, subItems));
+        this.addDescription(lid, description);
     }
 }
