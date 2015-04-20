@@ -28,18 +28,18 @@ Trinity A:
   par: "Trinity AB"
   t: 1.02469311556389e+10
   e: 0.0
-  i: 2.2
-  n: 136
-  a: 45
+  i: 0
+  n: 0
+  a: 0
 Trinity B:
   type: Star
   path: Stars/TrinityB.yml
   par: "Trinity AB"
   t: 1.02469311556389e+10
   e: 0
-  i: 2.2
-  n: 136
-  a: 225
+  i: 0
+  n: 0
+  a: 0
 Hermes:
   type: Planet
   path: Planets/Hermes/properties.yml

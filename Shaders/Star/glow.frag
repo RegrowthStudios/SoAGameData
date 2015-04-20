@@ -1,7 +1,8 @@
 // Uniforms
-uniform vec3 unColor;
 uniform sampler2D unTexture;
+uniform sampler2D unColorMap;
 uniform float unNoiseZ;
+uniform float unColorMapU;
 
 // Input
 in vec2 fPosition;
@@ -30,6 +31,8 @@ void main() {
     float spikeBrightness = brightness * spikeMult2 * clamp(spikeVal, 0.0, 1.0);
     vec4 texColor = texture(unTexture, fTex).rgba;
 
+	// Calculate color
+	vec3 temperatureColor = texture(unColorMap, vec2(unColorMapU, 1.0 - texColor.r + 0.125)).rgb;
 	
-    pColor = vec4((texColor.rgb + spikeBrightness) * unColor, texColor.a);
+    pColor = vec4((texColor.rgb + spikeBrightness) * temperatureColor, texColor.a);
 }

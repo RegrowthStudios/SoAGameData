@@ -75,24 +75,24 @@ $(document).ready(function () {
 /* Dynamic Page Loader */
 /***********************/
 
-//function loadNewPage(name, filePath) {
-//    App.setCurrentPage(name);
-//    var pageProperties = App.getPageProperties(); // Returns JavaScript Object of form: { CSS: [ "filepath1.css", "filepath2.css" ], JS: [ "filepath3.js", "filepath.js" ] }
-//    var filesToLoad = {};
-//    filesToLoad["CSS"] = pageProperties["CSS"];
-//    filesToLoad["JS"] = pageProperties["JS"];
-//    var stringifiedFilesToLoad = JSON.stringify(filesToLoad);
-
-//    if (typeof filePath == "string") {
-//        window.location.assign(filePath + "?name=" + name + "&filesToLoad=" + stringifiedFilesToLoad);
-//    } else {
-//        window.location.assign("/index.html?name=" + name + "&filesToLoad=" + stringifiedFilesToLoad);
-//    }
-//}
-
 function loadNewPage(name, filePath) {
-    window.location.assign("/index.html?name=" + name + "&filesToLoad=" + filePath);
+    App.setCurrentPage(name);
+    var pageProperties = App.getPageProperties(); // Returns JavaScript Object of form: { CSS: [ "filepath1.css", "filepath2.css" ], JS: [ "filepath3.js", "filepath.js" ] }
+    var filesToLoad = {};
+    filesToLoad["CSS"] = pageProperties["CSS"];
+    filesToLoad["JS"] = pageProperties["JS"];
+    var stringifiedFilesToLoad = JSON.stringify(filesToLoad);
+
+    if (typeof filePath == "string") {
+        window.location.assign(filePath + "?name=" + name + "&filesToLoad=" + stringifiedFilesToLoad);
+    } else {
+        window.location.assign("/index.html?name=" + name + "&filesToLoad=" + stringifiedFilesToLoad);
+    }
 }
+
+//function loadNewPage(name, filePath) {
+//    window.location.assign("/index.html?name=" + name + "&filesToLoad=" + filePath);
+//}
 
 // Load controls for page.
 //$(document).ready(function () {
@@ -419,7 +419,7 @@ var ListItemGenerator = {
     /**
      * Generates the HTML code for a clickable control (i.e. a link or otherwise button-like control).
      * name - Name of the control to be displayed to the user.
-     * link - Path to the file the button should take the user to.
+     * linkData - Path to the file the button should take the user to.
      * ID - C++ ID for the control.
      * updateCallback - The name of the function to be called when relaying the current state of the control.
      * isSubList - Boolean stating if control is in a sublist.
