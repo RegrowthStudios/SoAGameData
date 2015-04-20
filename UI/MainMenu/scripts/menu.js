@@ -101,7 +101,7 @@ $(document).ready(function () {
             case "slider":
                 lig.generateSlider(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8], v[9], v[10]);
                 break;
-            case "combo":
+            case "discrete":
                 lig.generateDiscreteSlider(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8])
                 break;
         }
@@ -549,9 +549,8 @@ var ListItemGenerator = {
             var vid = v.replace(/ /g, "-");
             htmlControl += "<div data-value='" + vid + "' style='display:none;'>" + v + "</div>";
         });
-        htmlControl += "</div>"
+        htmlControl += "</div>";
         htmlControl += "<div id='control-next-" + oid + "' class='control-next'><span>&gt;</span></div>";
-        htmlControl += "</select>";
         htmlControl += "</div>";
         htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
         htmlControl += "</li>";
@@ -598,25 +597,25 @@ var ListItemGenerator = {
         htmlControl += "<ul class='sub-list'>";
         $.each(subItems, function (i, v) {
             switch (v[0]) {
-                case "click": // Make sure this matches generate clickable: type, name, link, category, description, ID, updateCallback
-                    htmlControl += ListItemGenerator.generateHTMLClickable(v[1], v[2], v[5], v[6]);
-                    ListItemGenerator.addDescription(v[2].replace(/ /g, "-"), v[4]);
+                case "click": // Make sure this matches generate clickable: name, linkData, description, ID, updateCallback
+                    htmlControl += ListItemGenerator.generateHTMLClickable(v[1], v[2], v[4], v[5], true);
+                    ListItemGenerator.addDescription(v[1].replace(/ /g, "-"), v[3]);
                     break;
-                case "text":
-                    htmlControl += ListItemGenerator.generateHTMLText(v["name"], v["text"], true);
-                    ListItemGenerator.addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                case "text": // Make sure this matches generate text: name, text, description
+                    htmlControl += ListItemGenerator.generateHTMLText(v[1], v[2], true);
+                    ListItemGenerator.addDescription(v[1].replace(/ /g, "-"), v[3]);
                     break;
-                case "toggle":
-                    htmlControl += ListItemGenerator.generateHTMLToggle(v["name"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
-                    ListItemGenerator.addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                case "toggle": // Make sure this matches generate toggle: name, initialVal, description, ID, updateCallback, updateInRealTime
+                    htmlControl += ListItemGenerator.generateHTMLToggle(v[1], v[2], v[4], v[5], v[6], true);
+                    ListItemGenerator.addDescription(v[1].replace(/ /g, "-"), v[3]);
                     break;
-                case "slider":
-                    htmlControl += ListItemGenerator.generateHTMLSlider(v["name"], v["min"], v["max"], v["initialVal"], v["intervalRes"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
-                    ListItemGenerator.addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                case "slider": // Make sure this matches generate slider: name, min, max, initialVal, intervalRes, description, ID, updateCallback, updateInRealTime
+                    htmlControl += ListItemGenerator.generateHTMLSlider(v[1], v[2], v[3], v[4], v[5], v[7], v[8], v[9], true);
+                    ListItemGenerator.addDescription(v[1].replace(/ /g, "-"), v[6]);
                     break;
-                case "combo":
-                    htmlControl += ListItemGenerator.generateHTMLDiscreteSlider(v["name"], v["vals"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
-                    ListItemGenerator.addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                case "discrete": // Make sure this matches generate discrete: name, vals, initialVal, description, ID, updateCallback, updateInRealTime
+                    htmlControl += ListItemGenerator.generateHTMLDiscreteSlider(v[1], v[2], v[3], v[5], v[6], v[7], true);
+                    ListItemGenerator.addDescription(v[1].replace(/ /g, "-"), v[4]);
                     break;
             }
         });
@@ -624,6 +623,41 @@ var ListItemGenerator = {
         htmlControl += "</div>";
         htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
         htmlControl += "</li>"
+        return htmlControl;
+    },
+    /**
+     * Generates the HTML code for a combo box control.
+     * name - Name of the control to be displayed to the user.
+     * vals - Array of values to exist in the combo box.
+     * initialVal - The initial value of the control. Takes a value from the array of values provided.
+     * ID - C++ ID for the control.
+     * updateCallback - The name of the function to be called when relaying the current state of the control.
+     * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
+     * isSubList - Boolean stating if control is in a sublist.
+     */
+    generateHTMLDiscreteSlider: function (name, vals, initialVal, ID, updateCallback, updateInRealTime, isSubList) {
+        var oid = name.replace(/ /g, "-");
+        var htmlControl = "";
+        if (typeof isSubList !== "undefined" && isSubList) {
+            htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
+        } else {
+            htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
+        }
+        htmlControl += "<div class='column-2'>" + name + "</div>";
+        htmlControl += "<div class='content-center column-2'>";
+        htmlControl += "<select class='combo'>";
+        $.each(vals, function (i, v) {
+            var vid = v.replace(/ /g, "-");
+            if (v == initialVal) {
+
+            } else {
+                htmlControl += "<option data-value='" + vid + "'>" + v + "</option>";
+            }
+        });
+        htmlControl += "</select>";
+        htmlControl += "</div>";
+        htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
+        htmlControl += "</li>";
         return htmlControl;
     },
 
@@ -640,16 +674,16 @@ var ListItemGenerator = {
     /**
      * Generates a clickable control (i.e. a link or otherwise button-like control).
      * name - Name of the control to be displayed to the user.
-     * link - Path to the file the button should take the user to.
+     * linkData - Array of name of file and path to the file the button should take the user to.
      * category - The category to place the control under.
      * description - The description to be displayed, describing the control's effect on the game.
      * ID - C++ ID for the control.
      * updateCallback - The name of the function to be called upon a change of state to the control.
      */
-    generateClickable: function (name, link, category, description, ID, updateCallback) {
+    generateClickable: function (name, linkData, category, description, ID, updateCallback) {
         var oid = name.replace(/ /g, "-");
         var cid = category.replace(/ /g, "-");
-		this.placeControl(cid, this.generateHTMLClickable(name, link, ID, updateCallback));
+		this.placeControl(cid, this.generateHTMLClickable(name, linkData, ID, updateCallback));
 		this.addDescription(oid, description);
     },
     /**
@@ -725,12 +759,12 @@ var ListItemGenerator = {
         var cid = category.replace(/ /g, "-");
         this.placeControl(cid, this.generateHTMLDiscreteSlider(name, vals, initialVal, ID, updateCallback, updateInRealTime));
         this.addDescription(oid, description);
-        var initialvid = initialVal.replace(/ /g, "-");
+        var initialVid = initialVal.replace(/ /g, "-");
         var elements = new Array();
         var startIndex = 0;
         $.each($("#control-discrete-slider-" + oid + " > div"), function (i, v) {
             elements[i] = $(v);
-            if ($(v).data("value") == initialvid) {
+            if ($(v).data("value") == initialVid) {
                 startIndex = i;
             }
         });
@@ -764,5 +798,26 @@ var ListItemGenerator = {
         var cid = category.replace(/ /g, "-");
         this.placeControl(cid, this.generateHTMLSubList(name, subItems));
         this.addDescription(lid, description);
+    },
+    /**
+     * Generates a combo box.
+     * name - Name of the control to be displayed to the user.
+     * vals - Array of values to exist in the combo box.
+     * initialVal - The initial value of the control. Takes a value from the array of values provided.
+     * category - The category to place the control under.
+     * description - The description to be displayed, describing the control's effect on the game.
+     * ID - C++ ID for the control.
+     * updateCallback - The callback function to be called on user update of the control.
+     * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
+     */
+    generateDiscreteSlider: function (name, vals, initialVal, category, description, ID, updateCallback, updateInRealTime) {
+        if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
+            controls[ID] = initialVal;
+        }
+        var oid = name.replace(/ /g, "-");
+        var cid = category.replace(/ /g, "-");
+        this.placeControl(cid, this.generateHTMLComboBox(name, vals, initialVal, ID, updateCallback, updateInRealTime));
+        this.addDescription(oid, description);
+        var initialVid = initialVal.replace(/ /g, "-");
     }
 }
