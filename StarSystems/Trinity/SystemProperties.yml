@@ -8,12 +8,8 @@ Trinity:
   dist: 425.0
 Trinity C:
   type: Star
-  par: "Trinity"
   path: Stars/TrinityC.yml
-  t: 4.76193541668919e+11
-  e: 0.13
-  p: 66
-  a: 0
+  par: "Trinity"
 Trinity AB:
   type: Barycenter
   comps: ["Trinity A", "Trinity B"]
@@ -28,18 +24,13 @@ Trinity A:
   par: "Trinity AB"
   t: 1.02469311556389e+10
   e: 0.0
-  i: 0
-  n: 0
-  a: 0
+  i: 2.5
+  n: 136
+  a: 45
 Trinity B:
   type: Star
   path: Stars/TrinityB.yml
   par: "Trinity AB"
-  t: 1.02469311556389e+10
-  e: 0
-  i: 0
-  n: 0
-  a: 0
 Hermes:
   type: Planet
   path: Planets/Hermes/properties.yml
