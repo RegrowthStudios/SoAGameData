@@ -72,13 +72,8 @@ function loadNewPage(name, filePath) {
     App.setCurrentPage(name);
     var pageProperties = App.getPageProperties(); // Returns JavaScript Object of form: { CSS: [ "filepath1.css", "filepath2.css" ], JS: [ "filepath3.js", "filepath.js" ] }
     var filesToLoad = {};
-<<<<<<< HEAD
-    filesToLoad["CSS"] = pageProperties["CSS"];
-    filesToLoad["JS"] = pageProperties["JS"];
-=======
     filesToLoad["CSS"] = pageProperties[0];
     filesToLoad["JS"] = pageProperties[1];
->>>>>>> 2372527ea97003b647c847693365f4c90157db3e
     var stringifiedFilesToLoad = JSON.stringify(filesToLoad);
 
     if (typeof filePath == "string") {
