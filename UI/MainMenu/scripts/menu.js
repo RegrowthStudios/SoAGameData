@@ -51,7 +51,7 @@ function handleSubLists() {
         elem.data("height", elem.show().height());
         elem.hide();
         toggleExpansionSubList(elem);
-        $(elem).parent().on("click", function () {
+        $(elem).off().parent().on("click", function () {
             toggleExpansionSubList(elem);
         });
         //show once the animation dur has passed (allowing the options to be slid out of view).
@@ -59,7 +59,7 @@ function handleSubLists() {
             elem.show();
         }, animationDur);
     });
-    $(".sub-list-item").on("click", function (e) {
+    $(".sub-list-item").off().on("click", function (e) {
             e.stopPropagation();
         });
 };
@@ -686,12 +686,18 @@ var ListItemGenerator = {
      * description - The description to be displayed, describing the control's effect on the game.
      * ID - C++ ID for the control.
      * updateCallback - The name of the function to be called upon a change of state to the control.
+     * resizeUI - Boolean defaulting to true, if true resize UI functions are called.
      */
-    generateClickable: function (name, linkData, category, description, ID, updateCallback) {
+    generateClickable: function (name, linkData, category, description, ID, updateCallback, resizeUI) {
         var oid = name.replace(/ /g, "-");
         var cid = category.replace(/ /g, "-");
 		this.placeControl(cid, this.generateHTMLClickable(name, linkData, ID, updateCallback));
 		this.addDescription(oid, description);
+		if (typeof resizeUI === "undefined" || resizeUI) {
+		    resizeScrollablePlanes();
+		    resizeExtraOptions();
+		    handleSubLists();
+		}
     },
     /**
      * Generates a static text element.
@@ -699,12 +705,18 @@ var ListItemGenerator = {
      * text - Text to be displayed in the element.
      * category - The category to place the control under.
      * description - The description to be displayed, describing the control's effect on the game.
+     * resizeUI - Boolean defaulting to true, if true resize UI functions are called.
      */
-    generateText: function (name, text, category, description) {
+    generateText: function (name, text, category, description, resizeUI) {
         var oid = name.replace(/ /g, "-");
         var cid = category.replace(/ /g, "-");
         placeControl(cid, this.generateHTMLText(name, text));
         this.addDescription(oid, description);
+        if (typeof resizeUI === "undefined" || resizeUI) {
+            resizeScrollablePlanes();
+            resizeExtraOptions();
+            handleSubLists();
+        }
     },
     /**
      * Generates a toggle control.
@@ -715,8 +727,9 @@ var ListItemGenerator = {
      * ID - C++ ID for the control.
      * updateCallback - The callback function to be called on user update of the control.
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
+     * resizeUI - Boolean defaulting to true, if true resize UI functions are called.
      */
-    generateToggle: function (name, initialVal, category, description, ID, updateCallback, updateInRealTime) {
+    generateToggle: function (name, initialVal, category, description, ID, updateCallback, updateInRealTime, resizeUI) {
         if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
             controls[ID] = initialVal;
         }
@@ -724,6 +737,11 @@ var ListItemGenerator = {
         var cid = category.replace(/ /g, "-");
         this.placeControl(cid, this.generateHTMLToggle(name, initialVal, ID, updateCallback, updateInRealTime));
         this.addDescription(oid, description);
+        if (typeof resizeUI === "undefined" || resizeUI) {
+            resizeScrollablePlanes();
+            resizeExtraOptions();
+            handleSubLists();
+        }
     },
     /**
      * Generates a slider control.
@@ -737,8 +755,9 @@ var ListItemGenerator = {
      * ID - C++ ID for the control.
      * updateCallback - The callback function to be called on user update of the control.
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
+     * resizeUI - Boolean defaulting to true, if true resize UI functions are called.
      */
-    generateSlider: function (name, min, max, initialVal, intervalRes, category, description, ID, updateCallback, updateInRealTime) {
+    generateSlider: function (name, min, max, initialVal, intervalRes, category, description, ID, updateCallback, updateInRealTime, resizeUI) {
         if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
             controls[ID] = initialVal;
         }
@@ -746,6 +765,11 @@ var ListItemGenerator = {
         var cid = category.replace(/ /g, "-");
         this.placeControl(cid, this.generateHTMLSlider(name, min, max, initialVal, intervalRes, ID, updateCallback, updateInRealTime));
         this.addDescription(oid, description);
+        if (typeof resizeUI === "undefined" || resizeUI) {
+            resizeScrollablePlanes();
+            resizeExtraOptions();
+            handleSubLists();
+        }
     },
     /**
      * Generates a discrete slider control.
@@ -757,8 +781,9 @@ var ListItemGenerator = {
      * ID - C++ ID for the control.
      * updateCallback - The callback function to be called on user update of the control.
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
+     * resizeUI - Boolean defaulting to true, if true resize UI functions are called.
      */
-    generateDiscreteSlider: function (name, vals, initialVal, category, description, ID, updateCallback, updateInRealTime) {
+    generateDiscreteSlider: function (name, vals, initialVal, category, description, ID, updateCallback, updateInRealTime, resizeUI) {
         if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
             controls[ID] = initialVal;
         }
@@ -766,6 +791,11 @@ var ListItemGenerator = {
         var cid = category.replace(/ /g, "-");
         this.placeControl(cid, this.generateHTMLDiscreteSlider(name, vals, initialVal, ID, updateCallback, updateInRealTime));
         this.addDescription(oid, description);
+        if (typeof resizeUI === "undefined" || resizeUI) {
+            resizeScrollablePlanes();
+            resizeExtraOptions();
+            handleSubLists();
+        }
         var initialVid = initialVal.replace(/ /g, "-");
         var elements = new Array();
         var startIndex = 0;
@@ -785,13 +815,19 @@ var ListItemGenerator = {
      * category - The category to place the control under.
      * description - The description to be displayed, describing the control's effect on the game.
      * ID - C++ ID for the control.
+     * resizeUI - Boolean defaulting to true, if true resize UI functions are called.
      */
-    generateTextArea: function (name, defaultVal, maxLength, category, description, ID) {
+    generateTextArea: function (name, defaultVal, maxLength, category, description, ID, resizeUI) {
         controls[ID] = "";
         var oid = name.replace(/ /g, "-");
         var cid = category.replace(/ /g, "-");
         this.placeControl(cid, this.generateHTMLTextArea(name, defaultVal, maxLength, ID));
         this.addDescription(oid, description);
+        if (typeof resizeUI === "undefined" || resizeUI) {
+            resizeScrollablePlanes();
+            resizeExtraOptions();
+            handleSubLists();
+        }
     },
     /**
      * Generates a sublist.
@@ -799,12 +835,18 @@ var ListItemGenerator = {
      * subItems - Array of objects detailing items to exist in the sublist.
      * category - The category to place the control under.
      * description - The description to be displayed, describing the control's effect on the game.
+     * resizeUI - Boolean defaulting to true, if true resize UI functions are called.
      */
-    generateSubList: function (name, subItems, category, description) {
+    generateSubList: function (name, subItems, category, description, resizeUI) {
         var lid = name.replace(/ /g, "-");
         var cid = category.replace(/ /g, "-");
         this.placeControl(cid, this.generateHTMLSubList(name, subItems));
         this.addDescription(lid, description);
+        if (typeof resizeUI === "undefined" || resizeUI) {
+            resizeScrollablePlanes();
+            resizeExtraOptions();
+            handleSubLists();
+        }
     },
     /**
      * Generates a combo box.
@@ -816,8 +858,9 @@ var ListItemGenerator = {
      * ID - C++ ID for the control.
      * updateCallback - The callback function to be called on user update of the control.
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
+     * resizeUI - Boolean defaulting to true, if true resize UI functions are called.
      */
-    generateComboBox: function (name, vals, initialVal, category, description, ID, updateCallback, updateInRealTime) {
+    generateComboBox: function (name, vals, initialVal, category, description, ID, updateCallback, updateInRealTime, resizeUI) {
         if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
             controls[ID] = initialVal;
         }
@@ -825,6 +868,10 @@ var ListItemGenerator = {
         var cid = category.replace(/ /g, "-");
         this.placeControl(cid, this.generateHTMLComboBox(name, vals, initialVal, ID, updateCallback, updateInRealTime));
         this.addDescription(oid, description);
-        var initialVid = initialVal.replace(/ /g, "-");
+        if (typeof resizeUI === "undefined" || resizeUI) {
+            resizeScrollablePlanes();
+            resizeExtraOptions();
+            handleSubLists();
+        }
     }
 }
