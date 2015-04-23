@@ -17,7 +17,7 @@ void main() {
     // ========== Change These =========
     const float spikeFrequency = 15.5;
     const float spikeShift = 0.2;
-    const float spikeMult2 = 0.01;
+    const float spikeMult2 = 0.02;
     // =================================
 
     vec2 nDistVec = normalize(fPosition);
