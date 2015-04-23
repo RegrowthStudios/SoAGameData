@@ -84,28 +84,26 @@ function loadNewPage(name, filePath) {
 }
 
 // Load controls for page.
-$(document).ready(function () {
-    var lig = new ListItemGenerator();
-    var controls = App.getControls(); // Latest page passed in on loadNewPage();
+function initialisePage (controls) {
     $.each(controls, function (i, v) {
         switch (v[0]) {
             case "click":
-                lig.generateClickable(v[1], v[2], v[3], v[4], v[5], v[6]);
+                ListItemGenerator.generateClickable(v[1], v[2], v[3], v[4], v[5], v[6]);
                 break;
             case "text":
-                lig.generateText(v[1], v[2], v[3], v[4]);
+                ListItemGenerator.generateText(v[1], v[2], v[3], v[4]);
                 break;
             case "toggle":
-                lig.generateToggle(v[1], v[2], v[3], v[4], v[5], v[6], v[7]);
+                ListItemGenerator.generateToggle(v[1], v[2], v[3], v[4], v[5], v[6], v[7]);
                 break;
             case "slider":
-                lig.generateSlider(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8], v[9], v[10]);
+                ListItemGenerator.generateSlider(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8], v[9], v[10]);
                 break;
             case "discrete":
-                lig.generateDiscreteSlider(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8]);
+                ListItemGenerator.generateDiscreteSlider(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8]);
                 break;
             case "combo":
-                lig.generateComboBox(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8]);
+                ListItemGenerator.generateComboBox(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8]);
                 break;
         }
     });
@@ -113,7 +111,7 @@ $(document).ready(function () {
     resizeScrollablePlanes();
     resizeExtraOptions();
     handleSubLists();
-});
+};
 
 /*******************/
 /* Discrete Slider */
