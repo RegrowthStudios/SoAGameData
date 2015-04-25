@@ -35,6 +35,7 @@ void main() {
 	// Calculate color
 	vec3 temperatureColor = texture(unColorMap, vec2(unColorMapU, 1.0 - texColor.r + 0.125)).rgb;
 	
-	vec3 shiftColor = unColorShift * max((texColor.r - 0.97) * 33.34, 0.0);
-    pColor = vec4((texColor.rgb + spikeBrightness) * temperatureColor + shiftColor, texColor.a);
+    float s = 40.0;
+	vec3 shiftColor = unColorShift * max((1.0 - dist) * s - (s - 1.0), 0.0);
+    pColor = vec4((texColor.rgb + spikeBrightness) * temperatureColor + shiftColor * 0.025, texColor.a);
 }
