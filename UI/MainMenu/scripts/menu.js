@@ -89,8 +89,11 @@ function loadNewPage(name, filePath) {
 
 // Load controls for page.
 $(document).ready(function () {
+    App.print("HERE");
     var lig = new ListItemGenerator();
+    App.print("HERE");
     var controls = App.getControls(); // Latest page passed in on loadNewPage();
+    App.print("HERE2");
     $.each(controls, function (i, v) {
         switch (v[0]) {
             case "click":

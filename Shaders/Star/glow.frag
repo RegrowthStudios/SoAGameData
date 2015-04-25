@@ -3,6 +3,7 @@ uniform sampler2D unTexture;
 uniform sampler2D unColorMap;
 uniform float unNoiseZ;
 uniform float unColorMapU;
+uniform vec3 unColorShift;
 
 // Input
 in vec2 fPosition;
@@ -34,5 +35,6 @@ void main() {
 	// Calculate color
 	vec3 temperatureColor = texture(unColorMap, vec2(unColorMapU, 1.0 - texColor.r + 0.125)).rgb;
 	
-    pColor = vec4((texColor.rgb + spikeBrightness) * temperatureColor, texColor.a);
+	vec3 shiftColor = unColorShift * max((texColor.r - 0.97) * 33.34, 0.0);
+    pColor = vec4((texColor.rgb + spikeBrightness) * temperatureColor + shiftColor, texColor.a);
 }
