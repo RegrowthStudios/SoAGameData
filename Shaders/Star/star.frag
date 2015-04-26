@@ -1,18 +1,31 @@
 uniform float unDT;
 uniform vec3 unColor;
+uniform vec3 unCenterDir;
+uniform float unRadius;
 
 in vec3 fPosition;
 
 out vec4 pColor;
 
-#include "Shaders/Noise/snoise3.glsl"
+#include "Shaders/Noise/snoise4.glsl"
 
 void main() {
-    float n1 = noise(fPosition - vec3(unDT, unDT, unDT), 6, 0.8, 0.7);
-    float n2 = ridgedNoise(fPosition + vec3(unDT, unDT, unDT), 3, 40.8, 0.8);
-	float n3 = ridgedNoise(vec3(fPosition.x, fPosition.y, fPosition.z), 7, 4.3, 0.85);
+    vec4 position = vec4(fPosition, unDT);
+    float n = (noise(position, 4, 40.0, 0.7) + 1.0) * 0.5;
+
+    // Get worldspace position
+    vec4 sPosition = position * unRadius;
+    
+    // Sunspots
+    float s = 0.2;
+    float frequency = 0.00001;
+    float t1 = snoise(sPosition * frequency) - s;
+    float t2 = snoise((sPosition + unRadius) * frequency) - s;
+	float ss = (max(t1, 0.0) * max(t2, 0.0)) * 2.0;
+    // Accumulate total noise
+    float total = n - ss;
 	
-	float final = (n1 + n2 * 0.5 + n3 * 0.5) + 0.75;
+	float theta = 1.0 - dot(unCenterDir, fPosition);
 	
-    pColor = vec4(unColor * final, 1.0);
+    pColor = vec4(unColor + total - theta, 1.0);
 }

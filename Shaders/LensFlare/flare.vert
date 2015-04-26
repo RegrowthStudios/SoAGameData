@@ -25,5 +25,5 @@ void main() {
 	vec2 offsetVec = vec2(0.0) - centerPos;
 	fIntensity = max(0.0, 1.0 - length(offsetVec) / 1.0) * unIntensity;
     // Move the vertex in screen space.
-    gl_Position.xy += vPosition * unDims + offsetVec * pow(vOffset, 2.0) * 0.5;
+    gl_Position.xy += vPosition * unDims + offsetVec * vOffset * vOffset * 0.5;
 }

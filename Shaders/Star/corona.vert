@@ -13,7 +13,8 @@ in vec2 vPosition;
 out vec3 fPosition;
 
 void main() {
-    fPosition = (unCameraRight * vPosition.x + unCameraUp * vPosition.y) * unMaxSize;
-    vec3 vpw = unCenter + fPosition * unStarRadius;
+    fPosition = (unCameraRight * vPosition.x + unCameraUp * vPosition.y);
+    vec3 vpw = fPosition * unMaxSize;
+    vpw = unCenter + vpw * unStarRadius;
     gl_Position = unWVP * vec4(vpw, 1.0);
 }
