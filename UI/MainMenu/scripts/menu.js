@@ -88,16 +88,7 @@ function loadNewPage(name, filePath) {
 //}
 
 // Load controls for page.
-<<<<<<< HEAD
-$(document).ready(function () {
-    App.print("HERE");
-    var lig = new ListItemGenerator();
-    App.print("HERE");
-    var controls = App.getControls(); // Latest page passed in on loadNewPage();
-    App.print("HERE2");
-=======
 function initializePage(controls) {
->>>>>>> 9d9464f6e9e31b1e8f74662690e6a6f8cd16ded6
     $.each(controls, function (i, v) {
         if ( v == "END" ) continue;
         App.print(v);
