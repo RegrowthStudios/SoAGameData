@@ -10,7 +10,7 @@ Trinity:
 Trinity C:
   type: Star
   path: Stars/TrinityC.yml
-  par: "Trinity"
+  par: Trinity
 Trinity AB:
   type: Barycenter
   comps: ["Trinity A", "Trinity B"]
@@ -22,7 +22,7 @@ Trinity AB:
 Trinity A:
   type: Star
   path: Stars/TrinityA.yml
-  par: "Trinity AB"
+  par: Trinity AB
   t: 1.02469311556389e+10
   e: 0.0
   i: 2.5
@@ -31,7 +31,7 @@ Trinity A:
 Trinity B:
   type: Star
   path: Stars/TrinityB.yml
-  par: "Trinity AB"
+  par: Trinity AB
 Hermes:
   type: Planet
   path: Planets/Hermes/properties.yml
@@ -701,6 +701,88 @@ Algor-11:
   n: 88
   p: 128
   a: 318
+Karimoon-Keobar:
+  type: Barycenter
+  comps: ["Keobar", "Karimoon"]
+  par: Trinity B
+  ref: Hyperion
+  tf: 36
+  e: 0.067
+  i: 5.01
+  n: 8
+  p: 53
+  a: 208
+Keobar:
+  type: Planet
+  path: Planets/Keobar/properties.yml
+  par: Karimoon-Keobar
+  t: 4.2336e+5
+  e: 0.0443
+  i: 35.2
+  n: 37
+  p: 75
+  a: 267
+Karimoon:
+  type: Planet
+  path: Planets/Karimoon/properties.yml
+  par: Karimoon-Keobar
+Xerxes:
+  type: Moon
+  path: Planets/Xerxes/properties.yml
+  par: Karimoon-Keobar
+  ref: Keobar
+  tf: 7
+  e: 0.0077
+  i: 0
+  p: 112
+  a: 244
+Karimoon-Keobar-1:
+  type: DwarfMoon
+  path: Asteroids/KarimKeob1.yml
+  par: Karimoon-Keobar
+  ref: Keobar
+  tf: 35
+  td: 3
+  e: 0.005
+  i: 0.3
+  n: 282
+  p: 112
+  a: 195
+Karimoon-Keobar-2:
+  type: DwarfMoon
+  path: Asteroids/KarimKeob2.yml
+  par: Karimoon-Keobar
+  ref: Keobar
+  tf: 14
+  e: 0.005
+  i: 0.55
+  n: 282
+  p: 112
+  a: 81
+Karimoon-Keobar-3:
+  type: DwarfMoon
+  path: Asteroids/KarimKeob3.yml
+  par: Karimoon-Keobar
+  ref: Keobar
+  tf: 49
+  td: 3
+  e: 0.005
+  i: 0.49
+  n: 282
+  p: 112
+  a: 344
+Karimoon-Keobar-4:
+  type: DwarfMoon
+  path: Asteroids/KarimKeob4.yml
+  par: Karimoon-Keobar
+  ref: Keobar
+  tf: 56
+  td: 3
+  e: 0.005
+  i: 1.2
+  n: 282
+  p: 112
+  a: 174
 (AB-3) Somnus:
   type: Comet
   path: Comets/AB3_Somnus.yml
