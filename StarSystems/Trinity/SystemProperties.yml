@@ -50,6 +50,15 @@ Demoleon:
   n: 333
   p: 75
   a: 200
+Elysion:
+  type: Planet
+  path: GasGiants/Elysion/properties.yml
+  par: Trinity A
+  t: 3.15792e+8
+  e: 0.0082
+  i: 0
+  p: 105
+  a: 199
 Trinity B:
   type: Star
   path: Stars/TrinityB.yml
@@ -624,7 +633,7 @@ Rigor:
   path: Planets/Rigor/properties.yml
   par: Algor
   ref: Cryos
-  td: 5
+  td: 2
   e: 0.0003
   i: 0
   p: 166
