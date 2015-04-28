@@ -26,7 +26,7 @@ void main() {
 	// Decrease intensity with distance
 	fIntensity = max(0.0, 1.0 - distance / 1.0) * unIntensity;
 	// Decrease intensity when it gets too close
-	fIntensity *= min(1.0, distance);
+	fIntensity *= min(1.0, distance * 2.0);
 	
 	// Rotate the vertices
 	vec2 offsetDir = offsetVec / distance;
