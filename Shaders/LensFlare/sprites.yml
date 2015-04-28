@@ -1,21 +1,27 @@
 spritesPerRow: 4
-intensity: 0.2
+intensity: 0.5
 sprites:
   - offset: 1.0
-    size: 1.3
-    textureIndex: 1
-  - offset: 1.25
-    size: 1.0
-    textureIndex: 1
-  - offset: 1.1
-    size: 1.75
+    size: 2.0
     textureIndex: 0
+  - offset: 1.35
+    size: 0.3
+    textureIndex: 1
   - offset: 1.5
-    size: 0.65
-    textureIndex: 0
-  - offset: 1.6
-    size: 0.9
-    textureIndex: 0
+    size: 0.4
+    textureIndex: 4
   - offset: 1.7
-    size: 0.45
-    textureIndex: 0
+    size: 0.6
+    textureIndex: 5
+  - offset: 1.9
+    size: 1.2
+    textureIndex: 6
+  - offset: 2.1
+    size: 0.4
+    textureIndex: 2
+  - offset: 2.25
+    size: 0.2
+    textureIndex: 3
+  - offset: 2.75
+    size: 2.0
+    textureIndex: 7
