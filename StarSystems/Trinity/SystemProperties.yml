@@ -28,6 +28,28 @@ Trinity A:
   i: 2.5
   n: 136
   a: 45
+Delphius:
+  type: Planet
+  path: Planets/Delphius/properties.yml
+  par: Trinity A
+  ref: Elysion
+  td: 82
+  e: 0.034
+  i: 3.39
+  n: 327
+  p: 81
+  a: 56
+Demoleon:
+  type: Planet
+  path: Planets/Demoleon/properties.yml
+  par: Trinity A
+  ref: Elysion
+  td: 41
+  e: 0.045
+  i: 3.87
+  n: 333
+  p: 75
+  a: 200
 Trinity B:
   type: Star
   path: Stars/TrinityB.yml
@@ -542,7 +564,7 @@ Maia:
   a: 2
 Algor:
   type: Planet
-  path: GasGiants/Pantheon/properties.yml
+  path: Planets/Algor/properties.yml
   par: Trinity B
   ref: Hyperion
   tf: 20
