@@ -32,8 +32,7 @@ void main() {
     // Calculate brightness based on distance
     float spikeBrightness = ((1.0 / pow(dist + 0.15, 0.5)) - 1.0);
     spikeBrightness = spikeBrightness * spikeMult2 * clamp(spikeVal, 0.0, 1.0);
-	vec2 ovTex = vec2(unColorMapU, 0.0);
-    vec3 texColor = texture(unTexture, fTex).rgb + texture(unTextureOverlay, ovTex).rgb;
+    vec3 texColor = texture(unTexture, fTex).rgb + texture(unTextureOverlay, fTex).rgb * unColorMapU;
 
 	// Calculate color
 	vec3 temperatureColor = texture(unColorMap, vec2(unColorMapU, 1.0 - texColor.r + 0.125)).rgb;
