@@ -1,0 +1,13 @@
+gasGiant:
+  diameter: 122080.0
+  mass: 7.1666e+26
+  axis: [0.0, 1.0, 0.0]
+  rotationalPeriod: 10.833
+  oblateness: 0.09
+  colorMap: GasGiants/Elysion/color.png
+  atmosphere:
+    scaleDepth: 0.25
+    kr: 0.0025
+    km: 0.002
+    g: -0.99
+    waveLength: [0.75, 0.72, 0.65]

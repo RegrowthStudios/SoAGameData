@@ -1,0 +1,4 @@
+planet:
+  diameter: 25000.0
+  mass: 1.0451e+25
+  axis: [0.1, 0.9, 0.0]
