@@ -1,3 +1,4 @@
+spritesPerRow: 4
 intensity: 0.2
 sprites:
   - offset: 1.0

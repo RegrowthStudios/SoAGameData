@@ -12,5 +12,5 @@ out vec4 pColor;
 
 void main() {   
 	vec4 texColor = texture(unTexture, fUV).rgba * fIntensity;
-	pColor = vec4(texColor.rgb * unColor, texColor.a);
+	pColor = texColor.rgba * 2.0 + 0.0001 * vec4(texColor.rgb * unColor, texColor.a);
 }
