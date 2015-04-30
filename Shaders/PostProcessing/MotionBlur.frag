@@ -58,7 +58,7 @@ void main() {
   vec2 uv = fUV;
   for(int i = 0; i < unNumSamples; i++) {
     float ratio = exp(-(i / unNumSamples) * unBlurIntensity);
-    accum += ratio;
+    accum += ratio;h
     uv -= sampleDisplacement;
     color += texture(unTex, uv).rgb * ratio;
   }
@@ -115,8 +115,9 @@ void main() {
 
   color = colorSum / totalContribution;
 #endif
-
-  color = 1.0 - exp(color * -unExposure); // Add exposure
-  color = pow(color, vec3(unGamma)); // Gamma correction
+  color = (1.0 - exp(color * -unExposure)); // Add exposure
+  
+  color = pow(color, vec3(unGamma));
+  
   pColor = vec4(color, 1.0);
 }
