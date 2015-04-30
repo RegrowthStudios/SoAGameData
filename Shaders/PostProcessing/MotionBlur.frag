@@ -115,7 +115,7 @@ void main() {
 
   color = colorSum / totalContribution;
 #endif
-  color = (1.0 - exp(color * -unExposure)); // Add exposure
+  color = (1.0 - exp(color * -(unExposure * 2.0))); // Add exposure
   
   color = pow(color, vec3(unGamma));
   
