@@ -45,5 +45,5 @@ void main() {
     pColor = vec4(color * (brightness + spikeBrightness + hRay + ovCol.r), 1.0);
     
     // Reverse the gamma
-    pColor *= pColor;
+    pColor.rgb *= pColor.rgb;
 }
