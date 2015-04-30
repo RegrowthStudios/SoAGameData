@@ -9,8 +9,7 @@ html, body {
 }
 
 body {
-    background: url("../test/bg.jpg");
-    /*background-color: #0000;*/
+    background-color: #0000;
     width: 100%;
     height: 100%;
     outline: 0;
@@ -81,6 +80,18 @@ ul {
     -o-transition: @target @time-function @time;
     -webkit-transition: @target @time-function @time;
     transition: @target @time-function @time;
+}
+
+.boxSizing(@box-sizing: border-box) {
+    -moz-box-sizing: @box-sizing;
+    -webkit-box-sizing: @box-sizing;
+    box-sizing: @box-sizing;
+}
+
+.appearance(@appearance: none) {
+    -moz-appearance: @appearance;
+    -webkit-appearance: @appearance;
+    appearance: @appearance;
 }
 
 .clearfix() {
@@ -160,7 +171,7 @@ ul {
 .list-item {
     .small-size;
     text-shadow: none;
-    line-height: 44px;
+    line-height: 2.22222222em;
     font-family: 'orbitronregular';
     text-transform: none;
     margin-left: 20px;
@@ -172,7 +183,7 @@ ul {
 
 .sub-list-item {
     font-size: 0.9em;
-    line-height: 34px;
+    line-height: 1.9em;
     margin-left: 0;
 }
 
@@ -468,13 +479,37 @@ input[type=checkbox]:checked {
     -webkit-box-shadow: inset 0 0 16px rgba(16,190,239,1), inset 0 0 10px rgba(16,190,239,0.9), inset 0 0 6px rgba(16,190,239,0.8);
 }
 
+// Combo Box
+
+select.combo {
+    height: 16px;
+    width: 120px;
+    background: rgba(0,0,0,0.6);
+    border: 1px solid rgba(16,190,239,1);
+    .boxSizing();
+    -webkit-box-shadow: inset 0 0 12px rgba(16,190,239,1), inset 0 0 6px rgba(16,190,239,0.8);
+    .appearance();
+    cursor: pointer;
+    outline: none;
+    padding: 3px;
+    margin: 0;
+}
+
+select.combo > option {
+    height: 16px;
+    width: 120px;
+    background: rgba(0,0,0,0.6);
+    border-bottom: 1px solid rgba(16,190,239,0.4);
+    .boxSizing();
+}
+
 // Discrete Slider
 
 //TODO: general styling
 .control-discrete-slider {
     .transition;
     display: inline-block;
-    max-height: 44px;
+    max-height: 2.22222222em;
     overflow: hidden;
     margin-bottom: -18px; // Fix overflow hidden increasing height of parent element.
 }
@@ -500,6 +535,7 @@ input[type=checkbox]:checked {
 .list-item .control-discrete-slider {
     width: 50%;
     text-align: center;
+    vertical-align: top;
 }
 
 .list-item .control-next {
@@ -510,4 +546,88 @@ input[type=checkbox]:checked {
 .list-item .control-previous {
     width: 25%;
     text-align: right;
+}
+
+/**********************/
+/* Responsive Styling */
+/**********************/
+
+@media screen and (max-width: 1480px) and (min-height: 721px) {
+    body {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 1366px) and (min-height: 601px) {
+    body {
+        font-size: 24px;
+    }
+    input[type=text] {
+        padding: 3px 8px;
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 1180px) {
+    body {
+        font-size: 18px;
+    }
+    input[type=text] {
+        padding: 2px 8px;
+        font-size: 10px;
+    }
+    input[type=checkbox] {
+        height: 13px;
+        width: 13px;
+    }
+}
+@media screen and (max-width: 900px) {
+    body {
+        font-size: 12px;
+    }
+    input[type=text] {
+        padding: 1px 8px;
+        font-size: 9px;
+        width: 80px;
+    }
+    input[type=checkbox] {
+        height: 10px;
+        width: 10px;
+    }
+    input[type=range] {
+        width: 70px;
+    }
+}
+@media screen and (max-height: 800px) and (min-width: 1367px) {
+    body {
+        font-size: 30px;
+    }
+}
+@media screen and (max-height: 720px) and (min-width: 1181px) {
+    body {
+        font-size: 24px;
+    }
+    input[type=text] {
+        padding: 3px 8px;
+        font-size: 11px;
+    }
+}
+@media screen and (max-height: 600px) and (min-width: 901px) {
+    body {
+    font-size: 18px;
+    }
+    input[type=text] {
+        padding: 2px 8px;
+        font-size: 10px;
+    }
+    input[type=checkbox] {
+        height: 13px;
+        width: 13px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    input[type=range] {
+        width: 90px;
+    }
+    input[type=text] {
+        width: 100px;
+    }
 }

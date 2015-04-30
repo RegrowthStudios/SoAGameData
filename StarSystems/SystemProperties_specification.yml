@@ -1,0 +1,31 @@
+##########  SystemProperties.yml  -  specification / property explanations - last updated: 18.04.2015
+
+(Object Name):
+  # type: Basic object type determining the appearance of orbits, object markers and selectors. All selected objects use RGB(255, 0, 0)
+    # Barycenter - The colors are taken from its binary component A type and used for the barycenter marker cross, selector and orbit
+    # Star - color RGB(160, 160, 0) / color hover RGB(255, 255, 0) - used for all kinds of stellar and substellar objects
+    # Planet - color RGB(0, 160, 0) / color hover RGB(0, 255, 0)
+    # DwarfPlanet - color RGB(0, 80, 0) / color hover RGB(0, 128, 0)
+    # Moon - color RGB(60, 80, 160) / color hover RGB(96, 128, 255)
+    # DwarfMoon - color RGB(30, 40, 64) / color hover RGB(48, 64, 128)
+    # Asteroid - not visible / color hover RGB(80, 80, 80)
+    # Comet - not visible / color hover RGB(80, 104, 128)
+  # comps: Binary components [compNameA, compNameB]
+  # path: Path of the object properties yaml file within the star system folder
+  # par: parent object
+    # static - Fixed objects in space with no orbit use this as parent
+  # RA: Position of static objects relative to our sun, right ascension in °
+  # Dec: Position of static objects relative to our sun, declination in °
+  # dist:  Distance of static objects from our sun in ly
+  # t: Orbital period in s
+  # ref: Orbital period reference body
+  # tf: Reference body period factor
+  # td: Reference body period divisor
+  # e: Eccentricity
+  # p: Longitude of the periapsis in °
+  # i: Inclination in °
+  # n:  Longitude of the ascending node in °
+  # a: True anomaly (starting position) in °
+  # trojan: Position of co-orbital objects, uses the same period and orbital parameters than its orbital reference body, only modifies the anomaly
+    # L4 - Trojan occupying lagrangian point 4 of the reference bodies orbit (a+60°)
+    # L5 - Trojan occupying lagrangian point 5 of the reference bodies orbit (a-60°)

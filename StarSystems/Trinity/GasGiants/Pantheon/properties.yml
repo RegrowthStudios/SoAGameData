@@ -1,0 +1,13 @@
+gasGiant:
+  diameter: 132570.0
+  mass: 1.4930e+27
+  axis: [0.0, 1.0, 0.0]
+  rotationalPeriod: 9.716
+  oblateness: 0.07
+  colorMap: GasGiants/Pantheon/color.png
+  atmosphere:
+    scaleDepth: 0.25
+    kr: 0.0025
+    km: 0.002
+    g: -0.99
+    waveLength: [0.70, 0.70, 0.70]

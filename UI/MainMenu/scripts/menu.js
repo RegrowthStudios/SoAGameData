@@ -1,91 +1,25 @@
-﻿// Handles overlays
-$(document).ready(function () {
-    $(".pop-overlay").click(function (e) {
-        $(".overlay[data-overlay-id='" + $(e.currentTarget).data("overlay-id") + "']").fadeIn(100);
-    });
-    $(".close").click(function () {
-        $(".overlay").fadeOut(100);
-    });
-});
-
-//// Handles menu item hover
-//$(document).ready(function () {
-//    $(".menu-item").mouseenter(function () {
-//        $(this).children(".hover")[0].play();
-//    });
-//});
-
-//// Handles sub menu expand/contract
-//$(document).ready(function () {
-//    $(".menu-item-expandable").click(function () {
-//        if ($(this).hasClass("expanded")) {
-//            $(this).children(".contract")[0].play();
-//        } else {
-//            $(this).children(".expand")[0].play();
-//        }
-//        $(this).toggleClass("expanded");
-//    });
-//});
-
-var opts;
-var optDescs;
-// Handle item descriptions.
-function refreshDescControl() {
-    opts.off('mouseover mouseout');
-    opts.on('mouseover', function (e) {
-        if ($(e.currentTarget).hasClass("sub-list-item")) {
-            e.stopPropagation();
-        }
-        var midId = $(this).data("oid");
-        for (var x = 0; x < opts.length; ++x) {
-            if ($(optDescs[x]).data("oid") == midId) {
-                $(optDescs[x]).show(0);
-            } else {
-                $(optDescs[x]).stop(false, true);
-            }
-        }
-    })
-    opts.on('mouseout', function (e) {
-        if ($(e.currentTarget).hasClass("sub-list-item")) {
-            e.stopPropagation();
-        }
-        var midId = $(this).data("oid");
-        for (var x = 0; x < opts.length; ++x) {
-            if ($(optDescs[x]).data("oid") == midId) {
-                $(optDescs[x]).hide(0);
-            } else {
-                $(optDescs[x]).stop(false, true);
-            }
-        }
-    });
-}
-
-//Resize scrollable panes to corret height.
-$(document).ready(function () {
+﻿// Resize scrollable panes to corret height.
+function resizeScrollablePlanes() {
     if ($(".scrollable-pane.full-height").length > 0) {
-        setTimeout(function () {
-            var h = $(window).height();
-            var r = $("#menu-header").height();
-            r += parseInt($("#outer-wrapper").css('marginTop'));
-            r += $(".header").outerHeight(true);
-            r += parseInt($("#options").css('marginTop'));
-            r += 60; //Buffer at bottom.
-            h -= r;
-            $("#options").height(h);
-        }, 10);
+        var h = $(window).height();
+        var r = $("#menu-header").height();
+        r += parseInt($("#outer-wrapper").css('marginTop'));
+        r += $(".header").outerHeight(true);
+        r += parseInt($("#options").css('marginTop'));
+        r += 60; //Buffer at bottom.
+        h -= r;
+        $("#options").height(h);
     }
-});
+};
 
-//Resize extra options to fit with left column.
-$(document).ready(function () {
-    setTimeout(function () {
-        var h2 = $("#options-extra").parent().height();
-        $("#options-extra").height(h2);
-    }, 20);
-});
+// Resize extra options to fit with left column.
+function resizeExtraOptions() {
+    var h2 = $("#options-extra").parent().height();
+    $("#options-extra").height(h2);
+};
 
-//Handle sub-lists.
-$(document).ready(function () {
+// Handle sub-lists.
+function handleSubLists() {
     var animationDur = 300;
     function toggleExpansionSubList(elem) {
         if (elem.hasClass("contracted")) {
@@ -110,28 +44,80 @@ $(document).ready(function () {
             });
         }
     }
-
-    setTimeout(function () {
-        $.each($(".sub-list-wrapper"), function (i, v) {
-            //hide to prevent "flashing" of options menu.
-            var elem = $(v).hide();
-            //show momentarily to measure height (not displayed).
-            elem.data("height", elem.show().height());
-            elem.hide();
+    $.each($(".sub-list-wrapper"), function (i, v) {
+        //hide to prevent "flashing" of options menu.
+        var elem = $(v).hide();
+        //show momentarily to measure height (not displayed).
+        elem.data("height", elem.show().height());
+        elem.hide();
+        toggleExpansionSubList(elem);
+        $(elem).off().parent().on("click", function () {
             toggleExpansionSubList(elem);
-            $(elem).parent().on("click", function () {
-                toggleExpansionSubList(elem);
-            });
-            //show once the animation dur has passed (allowing the options to be slid out of view).
-            setTimeout(function () {
-                elem.show();
-            }, animationDur);
         });
-        $(".sub-list-item").on("click", function (e) {
+        //show once the animation dur has passed (allowing the options to be slid out of view).
+        setTimeout(function () {
+            elem.show();
+        }, animationDur);
+    });
+    $(".sub-list-item").off().on("click", function (e) {
             e.stopPropagation();
         });
-    }, 10);
-});
+};
+
+/***********************/
+/* Dynamic Page Loader */
+/***********************/
+
+function loadNewPage(name, filePath) {
+    App.setCurrentPage(name);
+    var pageProperties = App.getPageProperties(); // Returns JavaScript Object of form: { CSS: [ "filepath1.css", "filepath2.css" ], JS: [ "filepath3.js", "filepath.js" ] }
+    var filesToLoad = {};
+    filesToLoad["CSS"] = pageProperties[0];
+    filesToLoad["JS"] = pageProperties[1];
+    var stringifiedFilesToLoad = JSON.stringify(filesToLoad);
+
+    if (typeof filePath == "string") {
+        window.location.assign(filePath + "?name=" + name + "&filesToLoad=" + stringifiedFilesToLoad);
+    } else {
+        window.location.assign("/index.html?name=" + name + "&filesToLoad=" + stringifiedFilesToLoad);
+    }
+}
+
+//function loadNewPage(name, filePath) {
+//    window.location.assign("/index.html?name=" + name + "&filesToLoad=" + filePath);
+//}
+
+// Load controls for page.
+function initializePage(controls) {
+    $.each(controls, function (i, v) {
+        if ( v == "END" ) continue;
+        App.print(v);
+        switch (v[0]) {
+            case "click":
+                ListItemGenerator.generateClickable(v[1], v[2], v[3], v[4], v[5], v[6]);
+                break;
+            case "text":
+                ListItemGenerator.generateText(v[1], v[2], v[3], v[4]);
+                break;
+            case "toggle":
+                ListItemGenerator.generateToggle(v[1], v[2], v[3], v[4], v[5], v[6], v[7]);
+                break;
+            case "slider":
+                ListItemGenerator.generateSlider(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8], v[9], v[10]);
+                break;
+            case "discrete":
+                ListItemGenerator.generateDiscreteSlider(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8]);
+                break;
+            case "combo":
+                ListItemGenerator.generateComboBox(v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8]);
+                break;
+        }
+    });
+
+    resizeScrollablePlanes();
+    resizeExtraOptions();
+    handleSubLists();
+};
 
 /*******************/
 /* Discrete Slider */
@@ -353,10 +339,43 @@ function DiscreteSlider(controls, elements, sliderFrame, startIndex, animationDu
 /* List Items */
 /**************/
 
+var opts;
+var optDescs;
+// Handle item descriptions.
+function refreshDescControl() {
+    opts.off('mouseover mouseout');
+    opts.on('mouseover', function (e) {
+        if ($(e.currentTarget).hasClass("sub-list-item")) {
+            e.stopPropagation();
+        }
+        var midId = $(this).data("oid");
+        for (var x = 0; x < opts.length; ++x) {
+            if ($(optDescs[x]).data("oid") == midId) {
+                $(optDescs[x]).show(0);
+            } else {
+                $(optDescs[x]).stop(false, true);
+            }
+        }
+    })
+    opts.on('mouseout', function (e) {
+        if ($(e.currentTarget).hasClass("sub-list-item")) {
+            e.stopPropagation();
+        }
+        var midId = $(this).data("oid");
+        for (var x = 0; x < opts.length; ++x) {
+            if ($(optDescs[x]).data("oid") == midId) {
+                $(optDescs[x]).hide(0);
+            } else {
+                $(optDescs[x]).stop(false, true);
+            }
+        }
+    });
+}
+
 var controls = [];
 var discreteSliders = [];
 // JS "Class" function that facilitates the creation of list items - largely controls, but also static elements.
-function ListItemGenerator() {
+var ListItemGenerator = {
 
 
     /**
@@ -364,7 +383,7 @@ function ListItemGenerator() {
      * cid - The category ID of the category that the control should be added to.
      * htmlControl - The HTML of the control to be added.
      */
-    function placeControl(cid, htmlControl) {
+    placeControl: function (cid, htmlControl) {
         var cat = $(".list-header[data-category=" + cid + "]");
         if (cat.length == 0) {
             $("#options").append(htmlControl);
@@ -376,13 +395,13 @@ function ListItemGenerator() {
                 elems.last().after(htmlControl);
             }
         }
-    }
+    },
     /**
      * Adds a description for a control to the DOM.
      * oid - The control ID of the control that the description should be attached to.
      * htmlControl - The HTML of the description to be added.
      */
-    function addDescription(oid, description) {
+    addDescription: function (oid, description) {
         if (typeof description == "string") {
             var htmlDescriptor = "<div class='helper' data-oid='" + oid + "'>" + description + "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div></div>"
             $(htmlDescriptor).appendTo("#options-helper-wrapper").hide();
@@ -390,16 +409,16 @@ function ListItemGenerator() {
             opts = $("#options .list-item, #options .sub-list-item");
             refreshDescControl();
         }
-    }
+    },
     /**
      * Generates the HTML code for a clickable control (i.e. a link or otherwise button-like control).
      * name - Name of the control to be displayed to the user.
-     * link - Path to the file the button should take the user to.
+     * linkData - Path to the file the button should take the user to.
      * ID - C++ ID for the control.
      * updateCallback - The name of the function to be called when relaying the current state of the control.
      * isSubList - Boolean stating if control is in a sublist.
      */
-    function generateHTMLClickable(name, link, ID, updateCallback, isSubList) {
+    generateHTMLClickable: function (name, linkData, ID, updateCallback, isSubList) {
         var oid = name.replace(/ /g, "-");
         var htmlControl = "";
         if (typeof isSubList !== "undefined" && isSubList) {
@@ -408,23 +427,23 @@ function ListItemGenerator() {
             htmlControl += "<li class='list-item clickable row' data-oid='" + oid + "'>";
         }
         if (typeof ID !== "undefined" && typeof updateCallback !== "undefined") {
-            htmlControl += "<a href='" + link + "' onclick='return " + updateCallback + "(" + ID + ", value, \"" + oid + "\");'>";
+            htmlControl += "<a href='#' onclick='" + updateCallback + "(" + ID + ", \"" + oid + "\"); loadNewPage(" + linkData[0] + ", " + linkData[1] + ");'>";
         } else {
-            htmlControl += "<a href='" + link + "'>";
+            htmlControl += "<a href='#'>";
         }
         htmlControl += name;
         htmlControl += "</a>";
         htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
         htmlControl += "</li>";
         return htmlControl;
-    }
+    },
     /**
      * Generates the HTML code for a static text element.
      * name - Name of the element to be displayed to the user.
      * text - Text to be displayed in the element.
      * isSubList - Boolean stating if control is in a sublist.
      */
-    function generateHTMLText(name, text, isSubList) {
+    generateHTMLText: function (name, text, isSubList) {
         var oid = name.replace(/ /g, "-");
         var htmlControl = "";
         if (typeof isSubList !== "undefined" && isSubList) {
@@ -437,7 +456,7 @@ function ListItemGenerator() {
         htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
         htmlControl += "</li>";
         return htmlControl;
-    }
+    },
     /**
      * Generates the HTML code for a toggleable control.
      * name - Name of the control to be displayed to the user.
@@ -447,7 +466,7 @@ function ListItemGenerator() {
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
      * isSubList - Boolean stating if control is in a sublist.
      */
-    function generateHTMLToggle(name, initialVal, ID, updateCallback, updateInRealTime, isSubList) {
+    generateHTMLToggle: function (name, initialVal, ID, updateCallback, updateInRealTime, isSubList) {
         var oid = name.replace(/ /g, "-");
         var htmlControl = "";
         if (typeof isSubList !== "undefined" && isSubList) {
@@ -473,7 +492,7 @@ function ListItemGenerator() {
         htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
         htmlControl += "</li>";
         return htmlControl;
-    }
+    },
     /**
      * Generates the HTML code for a slideable control.
      * name - Name of the control to be displayed to the user.
@@ -486,7 +505,7 @@ function ListItemGenerator() {
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
      * isSubList - Boolean stating if control is in a sublist.
      */
-    function generateHTMLSlider(name, min, max, initialVal, intervalRes, ID, updateCallback, updateInRealTime, isSubList) {
+    generateHTMLSlider: function (name, min, max, initialVal, intervalRes, ID, updateCallback, updateInRealTime, isSubList) {
         var oid = name.replace(/ /g, "-");
         var htmlControl = "";
         if (typeof isSubList !== "undefined" && isSubList) {
@@ -510,7 +529,7 @@ function ListItemGenerator() {
         htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
         htmlControl += "</li>";
         return htmlControl;
-    }
+    },
     /**
      * Generates the HTML code for a discrete slider control.
      * name - Name of the control to be displayed to the user.
@@ -521,7 +540,7 @@ function ListItemGenerator() {
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
      * isSubList - Boolean stating if control is in a sublist.
      */
-    function generateHTMLDiscreteSlider(name, vals, initialVal, ID, updateCallback, updateInRealTime, isSubList) {
+    generateHTMLDiscreteSlider: function (name, vals, initialVal, ID, updateCallback, updateInRealTime, isSubList) {
         var oid = name.replace(/ /g, "-");
         var htmlControl = "";
         if (typeof isSubList !== "undefined" && isSubList) {
@@ -537,14 +556,13 @@ function ListItemGenerator() {
             var vid = v.replace(/ /g, "-");
             htmlControl += "<div data-value='" + vid + "' style='display:none;'>" + v + "</div>";
         });
-        htmlControl += "</div>"
+        htmlControl += "</div>";
         htmlControl += "<div id='control-next-" + oid + "' class='control-next'><span>&gt;</span></div>";
-        htmlControl += "</select>";
         htmlControl += "</div>";
         htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
         htmlControl += "</li>";
         return htmlControl;
-    }
+    },
     /**
      * Generates the HTML code for a text area control.
      * name - Name of the control to be displayed to the user.
@@ -553,7 +571,7 @@ function ListItemGenerator() {
      * ID - C++ ID for the control.
      * isSubList - Boolean stating if control is in a sublist.
      */
-    function generateHTMLTextArea(name, defaultVal, maxLength, ID, isSubList) {
+    generateHTMLTextArea: function (name, defaultVal, maxLength, ID, isSubList) {
         var oid = name.replace(/ /g, "-");
         var htmlControl = "";
         if (typeof isSubList !== "undefined" && isSubList) {
@@ -572,39 +590,43 @@ function ListItemGenerator() {
         htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
         htmlControl += "</li>";
         return htmlControl;
-    }
+    },
     /**
      * Generates the HTML code for a sublist.
      * name - Name of the control to be displayed to the user.
      * subItems - Array of objects detailing items to exist in the sublist.
      */
-    function generateHTMLSubList(name, subItems) {
+    generateHTMLSubList: function (name, subItems) {
         var lid = name.replace(/ /g, "-");
         var htmlControl = "<li class='list-item sub-list-owner row' data-oid='" + lid + "'>";
         htmlControl += name;
         htmlControl += "<div class='sub-list-wrapper'>"
         htmlControl += "<ul class='sub-list'>";
         $.each(subItems, function (i, v) {
-            switch (v["type"]) {
-                case "click":
-                    htmlControl += generateHTMLClickable(v["name"], v["link"], v["ID"], v["updateCallback"], true);
-                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+            switch (v[0]) {
+                case "click": // Make sure this matches generate clickable: name, linkData, description, ID, updateCallback
+                    htmlControl += ListItemGenerator.generateHTMLClickable(v[1], v[2], v[4], v[5], true);
+                    ListItemGenerator.addDescription(v[1].replace(/ /g, "-"), v[3]);
                     break;
-                case "text":
-                    htmlControl += generateHTMLText(v["name"], v["text"], true);
-                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                case "text": // Make sure this matches generate text: name, text, description
+                    htmlControl += ListItemGenerator.generateHTMLText(v[1], v[2], true);
+                    ListItemGenerator.addDescription(v[1].replace(/ /g, "-"), v[3]);
                     break;
-                case "toggle":
-                    htmlControl += generateHTMLToggle(v["name"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
-                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                case "toggle": // Make sure this matches generate toggle: name, initialVal, description, ID, updateCallback, updateInRealTime
+                    htmlControl += ListItemGenerator.generateHTMLToggle(v[1], v[2], v[4], v[5], v[6], true);
+                    ListItemGenerator.addDescription(v[1].replace(/ /g, "-"), v[3]);
                     break;
-                case "slider":
-                    htmlControl += generateHTMLSlider(v["name"], v["min"], v["max"], v["initialVal"], v["intervalRes"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
-                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                case "slider": // Make sure this matches generate slider: name, min, max, initialVal, intervalRes, description, ID, updateCallback, updateInRealTime
+                    htmlControl += ListItemGenerator.generateHTMLSlider(v[1], v[2], v[3], v[4], v[5], v[7], v[8], v[9], true);
+                    ListItemGenerator.addDescription(v[1].replace(/ /g, "-"), v[6]);
                     break;
-                case "combo":
-                    htmlControl += generateHTMLCombo(v["name"], v["vals"], v["initialVal"], v["ID"], v["updateCallback"], v["updateInRealTime"], true);
-                    addDescription(v["name"].replace(/ /g, "-"), v["description"]);
+                case "discrete": // Make sure this matches generate discrete: name, vals, initialVal, description, ID, updateCallback, updateInRealTime
+                    htmlControl += ListItemGenerator.generateHTMLDiscreteSlider(v[1], v[2], v[3], v[5], v[6], v[7], true);
+                    ListItemGenerator.addDescription(v[1].replace(/ /g, "-"), v[4]);
+                    break;
+                case "combo": // Make sure this matches generate combo box: name, vals, initialVal, description, ID, updateCallback, updateInRealTime
+                    htmlControl += ListItemGenerator.generateHTMLComboBox(v[1], v[2], v[3], v[5], v[6], v[7], true);
+                    ListItemGenerator.addDescription(v[1].replace(/ /g, "-"), v[4]);
                     break;
             }
         });
@@ -613,46 +635,93 @@ function ListItemGenerator() {
         htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
         htmlControl += "</li>"
         return htmlControl;
-    }
+    },
+    /**
+     * Generates the HTML code for a combo box control.
+     * name - Name of the control to be displayed to the user.
+     * vals - Array of values to exist in the combo box.
+     * initialVal - The initial value of the control. Takes a value from the array of values provided.
+     * ID - C++ ID for the control.
+     * updateCallback - The name of the function to be called when relaying the current state of the control.
+     * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
+     * isSubList - Boolean stating if control is in a sublist.
+     */
+    generateHTMLComboBox: function (name, vals, initialVal, ID, updateCallback, updateInRealTime, isSubList) {
+        var oid = name.replace(/ /g, "-");
+        var htmlControl = "";
+        if (typeof isSubList !== "undefined" && isSubList) {
+            htmlControl += "<li class='sub-list-item list-item row' data-oid='" + oid + "'>";
+        } else {
+            htmlControl += "<li class='list-item row' data-oid='" + oid + "'>";
+        }
+        htmlControl += "<div class='column-2'>" + name + "</div>";
+        htmlControl += "<div class='content-center column-2'>";
+        htmlControl += "<select class='combo'>";
+        $.each(vals, function (i, v) {
+            var vid = v.replace(/ /g, "-");
+            if (v == initialVal) {
+
+            } else {
+                htmlControl += "<option data-value='" + vid + "'>" + v + "</option>";
+            }
+        });
+        htmlControl += "</select>";
+        htmlControl += "</div>";
+        htmlControl += "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div>";
+        htmlControl += "</li>";
+        return htmlControl;
+    },
 
 
     /**
      * Creates a category for the options menu.
      * name - Name of the category to be displayed to the user.
      */
-    this.createCategory = function (name) {
+    createCategory: function (name) {
         var cid = name.replace(/ /g, "-");
         var htmlCategory = "<li class='list-header' data-category='" + cid + "'>" + name + "<div class='content-corner-top-right content-corner'></div><div class='content-corner-bottom-right content-corner'></div><div class='content-corner-top-left content-corner'></div><div class='content-corner-bottom-left content-corner'></div></li>";
         $("#options").append(htmlCategory);
-    }
+    },
     /**
      * Generates a clickable control (i.e. a link or otherwise button-like control).
      * name - Name of the control to be displayed to the user.
-     * link - Path to the file the button should take the user to.
+     * linkData - Array of name of file and path to the file the button should take the user to.
      * category - The category to place the control under.
      * description - The description to be displayed, describing the control's effect on the game.
      * ID - C++ ID for the control.
      * updateCallback - The name of the function to be called upon a change of state to the control.
+     * resizeUI - Boolean defaulting to true, if true resize UI functions are called.
      */
-    this.generateClickable = function (name, link, category, description, ID, updateCallback) {
+    generateClickable: function (name, linkData, category, description, ID, updateCallback, resizeUI) {
         var oid = name.replace(/ /g, "-");
         var cid = category.replace(/ /g, "-");
-        placeControl(cid, generateHTMLClickable(name, link, ID, updateCallback));
-        addDescription(oid, description);
-    }
+		this.placeControl(cid, this.generateHTMLClickable(name, linkData, ID, updateCallback));
+		this.addDescription(oid, description);
+		if (typeof resizeUI === "undefined" || resizeUI) {
+		    resizeScrollablePlanes();
+		    resizeExtraOptions();
+		    handleSubLists();
+		}
+    },
     /**
      * Generates a static text element.
      * name - Name of the control to be displayed to the user.
      * text - Text to be displayed in the element.
      * category - The category to place the control under.
      * description - The description to be displayed, describing the control's effect on the game.
+     * resizeUI - Boolean defaulting to true, if true resize UI functions are called.
      */
-    this.generateText = function (name, text, category, description) {
+    generateText: function (name, text, category, description, resizeUI) {
         var oid = name.replace(/ /g, "-");
         var cid = category.replace(/ /g, "-");
-        placeControl(cid, generateHTMLText(name, text));
-        addDescription(oid, description);
-    }
+        placeControl(cid, this.generateHTMLText(name, text));
+        this.addDescription(oid, description);
+        if (typeof resizeUI === "undefined" || resizeUI) {
+            resizeScrollablePlanes();
+            resizeExtraOptions();
+            handleSubLists();
+        }
+    },
     /**
      * Generates a toggle control.
      * name - Name of the control to be displayed to the user.
@@ -662,16 +731,22 @@ function ListItemGenerator() {
      * ID - C++ ID for the control.
      * updateCallback - The callback function to be called on user update of the control.
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
+     * resizeUI - Boolean defaulting to true, if true resize UI functions are called.
      */
-    this.generateToggle = function (name, initialVal, category, description, ID, updateCallback, updateInRealTime) {
+    generateToggle: function (name, initialVal, category, description, ID, updateCallback, updateInRealTime, resizeUI) {
         if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
             controls[ID] = initialVal;
         }
         var oid = name.replace(/ /g, "-");
         var cid = category.replace(/ /g, "-");
-        placeControl(cid, generateHTMLToggle(name, initialVal, ID, updateCallback, updateInRealTime));
-        addDescription(oid, description);
-    }
+        this.placeControl(cid, this.generateHTMLToggle(name, initialVal, ID, updateCallback, updateInRealTime));
+        this.addDescription(oid, description);
+        if (typeof resizeUI === "undefined" || resizeUI) {
+            resizeScrollablePlanes();
+            resizeExtraOptions();
+            handleSubLists();
+        }
+    },
     /**
      * Generates a slider control.
      * name - Name of the control to be displayed to the user.
@@ -684,16 +759,22 @@ function ListItemGenerator() {
      * ID - C++ ID for the control.
      * updateCallback - The callback function to be called on user update of the control.
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
+     * resizeUI - Boolean defaulting to true, if true resize UI functions are called.
      */
-    this.generateSlider = function (name, min, max, initialVal, intervalRes, category, description, ID, updateCallback, updateInRealTime) {
+    generateSlider: function (name, min, max, initialVal, intervalRes, category, description, ID, updateCallback, updateInRealTime, resizeUI) {
         if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
             controls[ID] = initialVal;
         }
         var oid = name.replace(/ /g, "-");
         var cid = category.replace(/ /g, "-");
-        placeControl(cid, generateHTMLSlider(name, min, max, initialVal, intervalRes, ID, updateCallback, updateInRealTime));
-        addDescription(oid, description);
-    }
+        this.placeControl(cid, this.generateHTMLSlider(name, min, max, initialVal, intervalRes, ID, updateCallback, updateInRealTime));
+        this.addDescription(oid, description);
+        if (typeof resizeUI === "undefined" || resizeUI) {
+            resizeScrollablePlanes();
+            resizeExtraOptions();
+            handleSubLists();
+        }
+    },
     /**
      * Generates a discrete slider control.
      * name - Name of the control to be displayed to the user.
@@ -704,26 +785,32 @@ function ListItemGenerator() {
      * ID - C++ ID for the control.
      * updateCallback - The callback function to be called on user update of the control.
      * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
+     * resizeUI - Boolean defaulting to true, if true resize UI functions are called.
      */
-    this.generateDiscreteSlider = function (name, vals, initialVal, category, description, ID, updateCallback, updateInRealTime) {
+    generateDiscreteSlider: function (name, vals, initialVal, category, description, ID, updateCallback, updateInRealTime, resizeUI) {
         if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
             controls[ID] = initialVal;
         }
         var oid = name.replace(/ /g, "-");
         var cid = category.replace(/ /g, "-");
-        placeControl(cid, generateHTMLDiscreteSlider(name, vals, initialVal, ID, updateCallback, updateInRealTime));
-        addDescription(oid, description);
-        var initialvid = initialVal.replace(/ /g, "-");
+        this.placeControl(cid, this.generateHTMLDiscreteSlider(name, vals, initialVal, ID, updateCallback, updateInRealTime));
+        this.addDescription(oid, description);
+        if (typeof resizeUI === "undefined" || resizeUI) {
+            resizeScrollablePlanes();
+            resizeExtraOptions();
+            handleSubLists();
+        }
+        var initialVid = initialVal.replace(/ /g, "-");
         var elements = new Array();
         var startIndex = 0;
         $.each($("#control-discrete-slider-" + oid + " > div"), function (i, v) {
             elements[i] = $(v);
-            if ($(v).data("value") == initialvid) {
+            if ($(v).data("value") == initialVid) {
                 startIndex = i;
             }
         });
         discreteSliders[ID] = new DiscreteSlider({ next: $("#control-next-" + oid + " > span"), previous: $("#control-previous-" + oid + " > span") }, elements, $("#control-discrete-slider-" + oid), startIndex);
-    }
+    },
     /**
      * Generates a text area control.
      * name - Name of the control to be displayed to the user.
@@ -732,25 +819,63 @@ function ListItemGenerator() {
      * category - The category to place the control under.
      * description - The description to be displayed, describing the control's effect on the game.
      * ID - C++ ID for the control.
+     * resizeUI - Boolean defaulting to true, if true resize UI functions are called.
      */
-    this.generateTextArea = function (name, defaultVal, maxLength, category, description, ID) {
+    generateTextArea: function (name, defaultVal, maxLength, category, description, ID, resizeUI) {
         controls[ID] = "";
         var oid = name.replace(/ /g, "-");
         var cid = category.replace(/ /g, "-");
-        placeControl(cid, generateHTMLTextArea(name, defaultVal, maxLength, ID));
-        addDescription(oid, description);
-    }
+        this.placeControl(cid, this.generateHTMLTextArea(name, defaultVal, maxLength, ID));
+        this.addDescription(oid, description);
+        if (typeof resizeUI === "undefined" || resizeUI) {
+            resizeScrollablePlanes();
+            resizeExtraOptions();
+            handleSubLists();
+        }
+    },
     /**
      * Generates a sublist.
      * name - Name of the control to be displayed to the user.
      * subItems - Array of objects detailing items to exist in the sublist.
      * category - The category to place the control under.
      * description - The description to be displayed, describing the control's effect on the game.
+     * resizeUI - Boolean defaulting to true, if true resize UI functions are called.
      */
-    this.generateSubList = function (name, subItems, category, description) {
+    generateSubList: function (name, subItems, category, description, resizeUI) {
         var lid = name.replace(/ /g, "-");
         var cid = category.replace(/ /g, "-");
-        placeControl(cid, generateHTMLSubList(name, subItems));
-        addDescription(lid, description);
+        this.placeControl(cid, this.generateHTMLSubList(name, subItems));
+        this.addDescription(lid, description);
+        if (typeof resizeUI === "undefined" || resizeUI) {
+            resizeScrollablePlanes();
+            resizeExtraOptions();
+            handleSubLists();
+        }
+    },
+    /**
+     * Generates a combo box.
+     * name - Name of the control to be displayed to the user.
+     * vals - Array of values to exist in the combo box.
+     * initialVal - The initial value of the control. Takes a value from the array of values provided.
+     * category - The category to place the control under.
+     * description - The description to be displayed, describing the control's effect on the game.
+     * ID - C++ ID for the control.
+     * updateCallback - The callback function to be called on user update of the control.
+     * updateInRealTime - Boolean stating if the control's updateCallback should be called on state changes.
+     * resizeUI - Boolean defaulting to true, if true resize UI functions are called.
+     */
+    generateComboBox: function (name, vals, initialVal, category, description, ID, updateCallback, updateInRealTime, resizeUI) {
+        if (typeof updateInRealTime !== "undefined" && !updateInRealTime) {
+            controls[ID] = initialVal;
+        }
+        var oid = name.replace(/ /g, "-");
+        var cid = category.replace(/ /g, "-");
+        this.placeControl(cid, this.generateHTMLComboBox(name, vals, initialVal, ID, updateCallback, updateInRealTime));
+        this.addDescription(oid, description);
+        if (typeof resizeUI === "undefined" || resizeUI) {
+            resizeScrollablePlanes();
+            resizeExtraOptions();
+            handleSubLists();
+        }
     }
 }

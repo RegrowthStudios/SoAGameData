@@ -38,7 +38,7 @@ float computeSpecular(vec3 normal) {
 void main() {
   
   float theta = dot(unLightDirWorld, fEyeDir);
-  float miePhase = 1.5 * ((1.0 - unG2) / (2.0 + unG2)) * (1.0 + theta * theta) / pow(1.0 + unG2 - 2.0 * unG * theta, 1.5);
+  float miePhase = ((1.0 - unG2) / (2.0 + unG2)) * (1.0 + theta * theta) / pow(1.0 + unG2 - 2.0 * unG * theta, 1.5);
   
   vec3 scatterColor = fPrimaryColor + miePhase * fSecondaryColor;
   
@@ -60,6 +60,6 @@ void main() {
     
     float diffuse = computeDiffuse(normal); 
     float specular = computeSpecular(normal);
-    pColor = vec4(color * diffuse + scatterColor + vec3(1.0) * specular, unAlpha);
+    pColor = vec4(color * diffuse + scatterColor * 1.5 + vec3(1.0) * specular, unAlpha);
   }
 }

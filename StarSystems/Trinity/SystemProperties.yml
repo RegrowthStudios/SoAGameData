@@ -1,128 +1,827 @@
 description: "The Trinity system is so cool"
-Binary:
-  name: Trinity_AB_Barycenter
-  bodies: [Trinity_A, Trinity_B]
-Trinity_A:
-  parent: Trinity_AB_Barycenter
-  path: Stars/TrinityA.yml
-  period: 3.0249e10
-  eccentricity: 0.0
-  pathColor: [255, 0, 0, 255]
-  orbitNormal: [-1.0, 0.0, 0.0]
-Trinity_B:
-  parent: Trinity_AB_Barycenter
-  path: Stars/TrinityB.yml
-  period: 3.0249e10
-  pathColor: [0, 255, 0, 255]
-  eccentricity: 0.0
-Trinity_C:
-  parent: Trinity_AB_Barycenter
+
+Trinity:
+  type: Barycenter
+  comps: ["Trinity AB", "Trinity C"]
+  par: static
+  RA: 0.0
+  dec: 0.0
+  dist: 425.0
+Trinity C:
+  type: Star
   path: Stars/TrinityC.yml
-  period: 1.7619e11
-  pathColor: [0, 0, 255, 255]
-  eccentricity: 0.63
+  par: Trinity
+Trinity AB:
+  type: Barycenter
+  comps: ["Trinity A", "Trinity B"]
+  par: Trinity
+  t: 4.76193541668919e+11
+  e: 0.13
+  p: 246.0
+  a: 180.0
+Trinity A:
+  type: Star
+  path: Stars/TrinityA.yml
+  par: Trinity AB
+  t: 1.02469311556389e+10
+  e: 0.0
+  i: 2.2
+  n: 136
+  a: 45
+Delphius:
+  type: Planet
+  path: Planets/Delphius/properties.yml
+  par: Trinity A
+  ref: Elysion
+  td: 82
+  e: 0.034
+  i: 3.39
+  n: 327
+  p: 81
+  a: 56
+Demoleon:
+  type: Planet
+  path: Planets/Demoleon/properties.yml
+  par: Trinity A
+  ref: Elysion
+  td: 41
+  e: 0.045
+  i: 3.87
+  n: 333
+  p: 75
+  a: 200
+Elysion:
+  type: Planet
+  path: GasGiants/Elysion/properties.yml
+  par: Trinity A
+  t: 3.15792e+8
+  e: 0.0082
+  i: 0
+  p: 105
+  a: 199
+Trinity B:
+  type: Star
+  path: Stars/TrinityB.yml
+  par: Trinity AB
+Hermes:
+  type: Planet
+  path: Planets/Hermes/properties.yml
+  par: Trinity B
+  ref: Hyperion
+  td: 54
+  e: 0.055
+  i: 4.39
+  n: 161
+  p: 238
+  a: 5
+Minerva:
+  type: Planet
+  path: Planets/Minerva/properties.yml
+  par: Trinity B
+  ref: Hyperion
+  td: 18
+  e: 0.025
+  i: 2.05
+  n: 157
+  p: 242
+  a: 38
+(B-1) Phidias:
+  type: Asteroid
+  path: Asteroids/B1_Phidias.yml
+  par: Trinity B
+  ref: Hyperion
+  td: 6
+  e: 0.0806
+  i: 6.45
+  n: 351
+  p: 24
+  a: 186
+Endor:
+  type: Planet
+  path: IceGiants/Endor/properties.yml
+  par: Trinity B
+  ref: Hyperion
+  td: 3
+  e: 0.002
+  i: 0.5
+  n: 55
+  p: 278
+  a: 184
+Abyssos:
+  type: Moon
+  path: Planets/Abyssos/properties.yml
+  par: Endor
+  ref: Baros
+  td: 30
+  e: 0.0009
+  i: 0.6
+  n: 62
+  p: 290
+  a: 90
+Vandor:
+  type: Moon
+  path: Planets/Vandor/properties.yml
+  par: Endor
+  ref: Baros
+  tf: 2
+  td: 15
+  e: 0.007
+  i: 0.4
+  n: 64
+  p: 288
+  a: 270
+Ares:
+  type: Moon
+  path: Planets/Ares/properties.yml
+  par: Endor
+  ref: Baros
+  tf: 2
+  td: 5
+  e: 0.011
+  i: 0.05
+  n: 68
+  p: 286
+  a: 23
+Baros:
+  type: Moon
+  path: Planets/Baros/properties.yml
+  par: Endor
+  t: 1.44e+6
+  e: 0.0163
+  i: 0
+  p: 306
+  a: 351
+Endor-1:
+  type: DwarfMoon
+  path: Asteroids/Endor1.yml
+  par: Endor
+  ref: Baros
+  tf: 19
+  td: 8
+  e: 0.0192
+  i: 158.1
+  n: 65
+  p: 190
+  a: 183
 Hyperion:
-  parent: Trinity_B
-  path: GasGiants/Hyperion.yml
-  period: 3.1493e7
-  eccentricity: 0.0006
+  type: Planet
+  path: GasGiants/Hyperion/properties.yml
+  par: Trinity B
+  t: 3.14928e+7
+  e: 0.0006
+  i: 0
+  p: 99
+  a: 221
 Kolasi:
-  parent: Hyperion
-  path: Planets/Kolasi.yml
-  period: 1.5000e04
-  eccentricity: 0.0123
+  type: Moon
+  path: Planets/Kolasi/properties.yml
+  par: Hyperion
+  ref: Tantalus
+  td: 96
+  e: 0.0123
+  i: 0
+  p: 0
+  a: 90
 Apollo:
-  parent: Hyperion
-  path: Planets/Apollo.yml
-  period: 3.0000e04
-  eccentricity: 0.0095
+  type: Moon
+  path: Planets/Apollo/properties.yml
+  par: Hyperion
+  ref: Tantalus
+  td: 48
+  e: 0.0095
+  i: 0
+  p: 0
+  a: 177
 Gemini:
-  parent: Hyperion
-  path: Planets/Gemini.yml
-  period: 4.5000e04
-  eccentricity: 0.0088
+  type: Moon
+  par: Hyperion
+  path: Planets/Gemini/properties.yml
+  ref: Tantalus
+  td: 32
+  e: 0.0088
+  i: 0
+  p: 0
+  a: 110
 Aldrin:
-  parent: Hyperion
-  path: Planets/Aldrin/planet_properties.yml
-  period: 9.0e4
-  eccentricity: 0.0017
+  type: Moon
+  path: Planets/Aldrin/properties.yml
+  par: Hyperion
+  ref: Tantalus
+  td: 16
+  e: 0.0017
+  i: 0
+  p: 0
+  a: 3
 Darwin:
-  parent: Hyperion
-  path: Planets/Darwin.yml
-  period: 1.8000e05
-  eccentricity: 0.0075
+  type: Moon
+  path: Planets/Darwin/properties.yml
+  par: Hyperion
+  ref: Tantalus
+  td: 8
+  e: 0.0075
+  i: 0
+  p: 0
+  a: 237
 Fyto:
-  parent: Hyperion
-  path: Planets/Fyto.yml
-  period: 3.2000e05
-  eccentricity: 0.0052
+  type: Moon
+  path: Planets/Fyto/properties.yml
+  par: Hyperion
+  ref: Tantalus
+  tf: 2
+  td: 9
+  e: 0.0052
+  i: 0
+  p: 0
+  a: 51
 Selene:
-  parent: Hyperion
-  path: Planets/Selene.yml
-  period: 6.5455e05
-  eccentricity: 0.0005
+  type: Moon
+  path: Planets/Selene/properties.yml
+  par: Hyperion
+  ref: Tantalus
+  tf: 5
+  td: 11
+  e: 0.0005
+  i: 0
+  p: 0
+  a: 277
 Niobe:
-  parent: Hyperion
-  path: Planets/Niobe.yml
-  period: 9.6000e05
-  eccentricity: 0.0
+  type: Moon
+  path: Planets/Niobe/properties.yml
+  par: Hyperion
+  ref: Tantalus
+  tf: 2
+  td: 3
+  e: 0.0
+  i: 0
+  p: 0
+  a: 196
 Hyperion-1:
-  parent: Hyperion
-  path: Planets/Hyperion_1.yml
-  period: 9.6000e05
-  eccentricity: 0.0
+  type: DwarfMoon
+  path: Asteroids/Hyperion1.yml
+  par: Hyperion
+  ref: Niobe
+  trojan: L4
 Hyperion-2:
-  parent: Hyperion
-  path: Planets/Hyperion_2.yml
-  period: 9.6000e05
-  eccentricity: 0.0
+  type: DwarfMoon
+  path: Asteroids/Hyperion2.yml
+  par: Hyperion
+  ref: Niobe
+  trojan: L5
 Tantalus:
-  parent: Hyperion
-  path: Planets/Tantalus.yml
-  period: 1.4400e06
-  eccentricity: 0.0
+  type: Moon
+  path: Planets/Tantalus/properties.yml
+  par: Hyperion
+  t: 1.44e+6
+  e: 0
+  i: 0
+  p: 0
+  a: 45
 Pelops:
-  parent: Hyperion
-  path: Planets/Pelops.yml
-  period: 1.4400e06
-  eccentricity: 0.0
+  type: Moon
+  path: Planets/Pelops/properties.yml
+  par: Hyperion
+  ref: Tantalus
+  trojan: L4
 Hyperion-3:
-  parent: Hyperion
-  path: Planets/Hyperion_3.yml
-  period: 1.4400e06
-  eccentricity: 0.0
+  type: DwarfMoon
+  path: Asteroids/Hyperion3.yml
+  par: Hyperion
+  ref: Tantalus
+  trojan: L5
 Arctos:
-  parent: Hyperion
-  path: Planets/Arctos.yml
-  period: 2.0160e06
-  eccentricity: 0.02
+  type: Moon
+  path: Planets/Arctos/properties.yml
+  par: Hyperion
+  ref: Tantalus
+  tf: 7
+  td: 5
+  e: 0.0002
+  i: 0
+  p: 0
+  a: 184
 Junos:
-  parent: Hyperion
-  path: Planets/Junos.yml
-  period: 2.3040e06
-  eccentricity: 0.0002
+  type: Moon
+  path: Planets/Junos/properties.yml
+  par: Hyperion
+  ref: Tantalus
+  tf: 8
+  td: 5
+  e: 0.0002
+  i: 0
+  p: 0
+  a: 325
 Elios:
-  parent: Hyperion
-  path: Planets/Elios.yml
-  period: 2.5920e06
-  eccentricity: 0.0002
+  type: Moon
+  path: Planets/Elios/properties.yml
+  par: Hyperion
+  ref: Tantalus
+  tf: 9
+  td: 5
+  e: 0.0002
+  i: 0
+  p: 0
+  a: 67
 Lotos:
-  parent: Hyperion
-  path: Planets/Lotos.yml
-  period: 2.8800e06
-  eccentricity: 0.0002
+  type: Moon
+  path: Planets/Lotos/properties.yml
+  par: Hyperion
+  ref: Tantalus
+  tf: 2
+  e: 0.0002
+  i: 0
+  p: 0
+  a: 220
 Hyperion-4:
-  parent: Hyperion
-  path: Planets/Hyperion_4.yml
-  period: 3.1680e06
-  eccentricity: 0.0002
+  type: DwarfMoon
+  path: Asteroids/Hyperion4.yml
+  par: Hyperion
+  ref: Tantalus
+  tf: 11
+  td: 5
+  e: 0.0002
+  i: 0
+  p: 0
+  a: 145
 Hyperion-5:
-  parent: Hyperion
-  path: Planets/Hyperion_5.yml
-  period: 3.4560e06
-  eccentricity: 0.0002
+  type: DwarfMoon
+  path: Asteroids/Hyperion5.yml
+  par: Hyperion
+  ref: Tantalus
+  tf: 12
+  td: 5
+  e: 0.0002
+  i: 0
+  p: 0
+  a: 302
 Tros:
-  parent: Hyperion
-  path: Planets/Tros.yml
-  period: 1.0080e07
-  eccentricity: 0.1044
+  type: Moon
+  path: Planets/Tros/properties.yml
+  par: Hyperion
+  ref: Tantalus
+  tf: 4
+  e: 0.0744
+  i: 7.59
+  n: 84
+  p: 198
+  a: 280
+Pantheon:
+  type: Planet
+  path: GasGiants/Pantheon/properties.yml
+  par: Trinity B
+  ref: Hyperion
+  tf: 4
+  e: 0.0059
+  i: 0.08
+  n: 252
+  p: 112
+  a: 136
+Medusa:
+  type: Moon
+  path: Planets/Medusa/properties.yml
+  par: Pantheon
+  ref: Galatea
+  td: 12
+  e: 0.0042
+  i: 0.04
+  n: 157
+  p: 125
+  a: 191
+Xenia:
+  type: Moon
+  path: Planets/Xenia/properties.yml
+  par: Pantheon
+  ref: Galatea
+  td: 4
+  e: 0.0101
+  i: 0.17
+  n: 277
+  p: 75
+  a: 154
+Achillea:
+  type: Moon
+  path: Planets/Achillea/properties.yml
+  par: Pantheon
+  ref: Galatea
+  td: 2
+  e: 0.0002
+  i: 0.21
+  n: 140
+  p: 258
+  a: 87
+Galatea:
+  type: Moon
+  path: Planets/Galatea/properties.yml
+  par: Pantheon
+  t: 7.02e+5
+  e: 0
+  i: 0.01
+  n: 98
+  a: 235
+Callinara:
+  type: Moon
+  path: Planets/Callinara/properties.yml
+  par: Pantheon
+  ref: Galatea
+  tf: 7
+  td: 3
+  e: 0.0007
+  i: 0.53
+  n: 164
+  p: 124
+  a: 32
+Maia:
+  type: Moon
+  path: Planets/Maia/properties.yml
+  par: Pantheon
+  ref: Galatea
+  tf: 4
+  e: 0.0013
+  i: 0.61
+  n: 10
+  p: 46
+  a: 283
+(B-2) Eunomia:
+  type: Asteroid
+  path: Asteroids/B2_Eunomia.yml
+  par: Trinity B
+  ref: Hyperion
+  tf: 6
+  e: 0.0384
+  i: 1.5
+  n: 5
+  p: 355
+  a: 72
+(B-3) Philotes:
+  type: DwarfPlanet
+  path: Planets/Philotes/properties.yml
+  par: Trinity B
+  ref: Hyperion
+  tf: 8
+  e: 0.0682
+  i: 0.08
+  n: 176
+  p: 103
+  a: 44
+(B-4) Miseria:
+  type: DwarfPlanet
+  path: Planets/Miseria/properties.yml
+  par: Trinity B
+  ref: Hyperion
+  tf: 10
+  e: 0.0501
+  i: 0.08
+  n: 306
+  p: 116
+  a: 234
+(B-5) Hygeia:
+  type: Asteroid
+  path: Asteroids/B5_Hygeia.yml
+  par: Trinity B
+  ref: Hyperion
+  tf: 11
+  e: 0.1544
+  i: 5.7
+  n: 138
+  p: 87
+  a: 260
+(B-6) Aeon:
+  type: DwarfPlanet
+  path: Planets/Aeon/properties.yml
+  par: Trinity B
+  ref: Hyperion
+  tf: 12
+  e: 0.0023
+  i: 0.08
+  n: 345
+  p: 159
+  a: 286
+(B-6) Aeon-1:
+  type: DwarfMoon
+  path: Asteroids/B6_Aeon1.yml
+  par: (B-6) Aeon
+  ref: (B-6) Puck
+  tf: 5
+  td: 22
+  e: 0
+  i: 0
+  a: 270
+(B-6) Aeon-2:
+  type: DwarfMoon
+  path: Asteroids/B6_Aeon2.yml
+  par: (B-6) Aeon
+  ref: (B-6) Puck
+  tf: 5
+  td: 21
+  e: 0
+  i: 0
+  a: 86
+(B-6) Aeon-3:
+  type: DwarfMoon
+  path: Asteroids/B6_Aeon3.yml
+  par: (B-6) Aeon
+  ref: (B-6) Puck
+  td: 4
+  e: 0
+  i: 0
+  a: 246
+(B-6) Aeon-4:
+  type: DwarfMoon
+  path: Asteroids/B6_Aeon4.yml
+  par: (B-6) Aeon
+  ref: (B-6) Puck
+  tf: 5
+  td: 18
+  e: 0
+  i: 0
+  a: 90
+(B-6) Aeon-5:
+  type: DwarfMoon
+  path: Asteroids/B6_Aeon5.yml
+  par: (B-6) Aeon
+  ref: (B-6) Puck
+  tf: 5
+  td: 17
+  e: 0
+  i: 0
+  a: 302
+(B-6) Aeon-6:
+  type: DwarfMoon
+  path: Asteroids/B6_Aeon6.yml
+  par: (B-6) Aeon
+  ref: (B-6) Puck
+  tf: 10
+  td: 33
+  e: 0
+  i: 0
+  a: 159
+(B-6) Aeon-7:
+  type: DwarfMoon
+  path: Asteroids/B6_Aeon7.yml
+  par: (B-6) Aeon
+  ref: (B-6) Puck
+  td: 3
+  e: 0
+  i: 0
+  a: 137
+(B-6) Puck:
+  type: Moon
+  path: Planets/Puck/properties.yml
+  par: (B-6) Aeon
+  t: 9.1764e+4
+  e: 0
+  i: 0
+  a: 2
+Algor:
+  type: Planet
+  path: Planets/Algor/properties.yml
+  par: Trinity B
+  ref: Hyperion
+  tf: 20
+  e: 0.062
+  i: 2.45
+  n: 175
+  p: 290
+  a: 249
+Algor-1:
+  type: DwarfMoon
+  path: Asteroids/Algor1.yml
+  par: Algor
+  ref: Cryos
+  td: 18
+  e: 0
+  i: 0
+  a: 113
+Algor-2:
+  type: DwarfMoon
+  path: Asteroids/Algor2.yml
+  par: Algor
+  ref: Cryos
+  td: 14
+  e: 0
+  i: 0
+  a: 170
+Algor-3:
+  type: DwarfMoon
+  path: Asteroids/Algor3.yml
+  par: Algor
+  ref: Cryos
+  td: 10
+  e: 0
+  i: 0
+  a: 0
+Algor-4:
+  type: DwarfMoon
+  path: Asteroids/Algor4.yml
+  par: Algor
+  ref: Cryos
+  td: 8
+  e: 0
+  i: 0
+  a: 350
+Gelu:
+  type: Moon
+  path: Planets/Gelu/properties.yml
+  par: Algor
+  ref: Cryos
+  td: 5
+  e: 0.0001
+  i: 0
+  p: 281
+  a: 184
+Rigor:
+  type: Moon
+  path: Planets/Rigor/properties.yml
+  par: Algor
+  ref: Cryos
+  td: 2
+  e: 0.0003
+  i: 0
+  p: 166
+  a: 299
+Cryos:
+  type: Moon
+  path: Planets/Cryos/properties.yml
+  par: Algor
+  t: 2.376e+5
+  e: 0.0004
+  i: 0
+  p: 87
+  a: 229
+Frigus:
+  type: Moon
+  path: Planets/Frigus/properties.yml
+  par: Algor
+  ref: Cryos
+  tf: 2
+  e: 0.0002
+  i: 0
+  p: 103
+  a: 318
+Algor-5:
+  type: DwarfMoon
+  path: Asteroids/Algor5.yml
+  par: Algor
+  ref: Cryos
+  tf: 3
+  e: 0
+  i: 0.8
+  n: 79
+  a: 65
+Algor-6:
+  type: DwarfMoon
+  path: Asteroids/Algor6.yml
+  par: Algor
+  ref: Cryos
+  tf: 7
+  td: 2
+  e: 0
+  i: 0.8
+  n: 79
+  a: 115
+Algor-7:
+  type: DwarfMoon
+  path: Asteroids/Algor7.yml
+  par: Algor
+  ref: Cryos
+  tf: 4
+  e: 0
+  i: 0.8
+  n: 79
+  a: 326
+Algor-8:
+  type: DwarfMoon
+  path: Asteroids/Algor8.yml
+  par: Algor
+  ref: Cryos
+  tf: 5
+  e: 0.0005
+  i: 1.53
+  n: 88
+  p: 132
+  a: 298
+Algor-9:
+  type: DwarfMoon
+  path: Asteroids/Algor9.yml
+  par: Algor
+  ref: Cryos
+  tf: 6
+  e: 0.0005
+  i: 1.49
+  n: 88
+  p: 130
+  a: 346
+Algor-10:
+  type: DwarfMoon
+  path: Asteroids/Algor10.yml
+  par: Algor
+  ref: Cryos
+  tf: 7
+  e: 0.0005
+  i: 1.42
+  n: 88
+  p: 125
+  a: 186
+Algor-11:
+  type: DwarfMoon
+  path: Asteroids/Algor11.yml
+  par: Algor
+  ref: Cryos
+  tf: 8
+  e: 0.0005
+  i: 1.38
+  n: 88
+  p: 128
+  a: 318
+Karimoon-Keobar:
+  type: Barycenter
+  comps: ["Keobar", "Karimoon"]
+  par: Trinity B
+  ref: Hyperion
+  tf: 36
+  e: 0.067
+  i: 5.01
+  n: 180
+  p: 53
+  a: 208
+Keobar:
+  type: Planet
+  path: Planets/Keobar/properties.yml
+  par: Karimoon-Keobar
+  t: 4.2336e+5
+  e: 0.0443
+  i: 35.2
+  n: 37
+  p: 75
+  a: 267
+Karimoon:
+  type: Planet
+  path: Planets/Karimoon/properties.yml
+  par: Karimoon-Keobar
+Xerxes:
+  type: Moon
+  path: Planets/Xerxes/properties.yml
+  par: Karimoon-Keobar
+  ref: Keobar
+  tf: 7
+  e: 0.0077
+  i: 0
+  p: 112
+  a: 244
+Karimoon-Keobar-1:
+  type: DwarfMoon
+  path: Asteroids/KarimKeob1.yml
+  par: Karimoon-Keobar
+  ref: Keobar
+  tf: 35
+  td: 3
+  e: 0.005
+  i: 0.3
+  n: 282
+  p: 112
+  a: 195
+Karimoon-Keobar-2:
+  type: DwarfMoon
+  path: Asteroids/KarimKeob2.yml
+  par: Karimoon-Keobar
+  ref: Keobar
+  tf: 14
+  e: 0.005
+  i: 0.55
+  n: 282
+  p: 112
+  a: 81
+Karimoon-Keobar-3:
+  type: DwarfMoon
+  path: Asteroids/KarimKeob3.yml
+  par: Karimoon-Keobar
+  ref: Keobar
+  tf: 49
+  td: 3
+  e: 0.005
+  i: 0.49
+  n: 282
+  p: 112
+  a: 344
+Karimoon-Keobar-4:
+  type: DwarfMoon
+  path: Asteroids/KarimKeob4.yml
+  par: Karimoon-Keobar
+  ref: Keobar
+  tf: 56
+  td: 3
+  e: 0.005
+  i: 1.2
+  n: 282
+  p: 112
+  a: 174
+(AB-3) Somnus:
+  type: Comet
+  path: Comets/AB3_Somnus.yml
+  par: Trinity AB
+  ref: Trinity A
+  tf: 10
+  e: 0.145
+  i: 3.03
+  n: 0
+  p: 100
+  a: 45
