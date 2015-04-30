@@ -1,3 +1,4 @@
+// Tonemapping operators at http://filmicgames.com/archives/75
 // Uniforms
 uniform sampler2D unTex;
 uniform float unExposure;
@@ -115,9 +116,11 @@ void main() {
 
   color = colorSum / totalContribution;
 #endif
-  color = (1.0 - exp(color * -(unExposure * 2.0))); // Add exposure
-  
+  // Reinhard tonemapping
+  color *= unExposure;
+  color = color / (1.0 + color);
+  // Gamma correction
   color = pow(color, vec3(unGamma));
-  
+
   pColor = vec4(color, 1.0);
 }
