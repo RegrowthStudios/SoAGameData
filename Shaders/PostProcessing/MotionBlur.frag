@@ -3,6 +3,7 @@
 uniform sampler2D unTex;
 uniform float unExposure;
 uniform float unGamma;
+uniform float unLumKey = 0.5;
 
 #ifdef MOTION_BLUR
 uniform sampler2D unTexDepth;
@@ -116,9 +117,11 @@ void main() {
 
   color = colorSum / totalContribution;
 #endif
+
   // Reinhard tonemapping
-  color *= unExposure;
+  color *= unLumKey / (0.0001 + clamp(unExposure, 0.3, 0.7));
   color = color / (1.0 + color);
+
   // Gamma correction
   color = pow(color, vec3(unGamma));
 
