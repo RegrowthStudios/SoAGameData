@@ -4,6 +4,9 @@ uniform sampler2D unTex;
 uniform float unExposure;
 uniform float unGamma;
 uniform float unLumKey = 0.5;
+uniform float unSatPow = 0.5;
+
+#include "Shaders/Utils/HSV.glsl"
 
 #ifdef MOTION_BLUR
 uniform sampler2D unTexDepth;
@@ -117,6 +120,11 @@ void main() {
 
   color = colorSum / totalContribution;
 #endif
+
+  // Saturation
+  vec3 hsv = rgbToHsv(color);
+  hsv.g = pow(hsv.g, unSatPow);
+  color = hsvToRgb(hsv);
 
   // Reinhard tonemapping
   color *= unLumKey / (0.0001 + clamp(unExposure, 0.3, 0.7));
