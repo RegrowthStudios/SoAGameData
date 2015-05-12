@@ -122,9 +122,9 @@ void main() {
 #endif
 
   // Saturation
-  vec3 hsv = rgbToHsv(color);
-  hsv.g = pow(hsv.g, unSatPow);
-  color = hsvToRgb(hsv);
+ // vec3 hsv = rgbToHsv(color);
+ // hsv.g = pow(hsv.g, unSatPow);
+ // color = hsvToRgb(hsv);
 
   // Reinhard tonemapping
   color *= unLumKey / (0.0001 + clamp(unExposure, 0.3, 0.7));
