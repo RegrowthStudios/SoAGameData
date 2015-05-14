@@ -1,28 +1,34 @@
 ButtonStyle = require "Data/UI/button_style"
 
+ControlsForm = {}
+
 function onControlsClick()
-  makeForm("ControlsMenu", "Data/UI/Forms/controls.form.lua")
+  changeForm("ControlsForm")
 end
 
 function init()
 
-  bw = 600 -- button width
+  -- Make other forms
+  ControlsForm = makeForm("ControlsForm", "Data/UI/Forms/controls.form.lua");
+  Form.disable(ControlsForm)
+  
+  bw = 800 -- button width
   bh = 40 -- button height
   bx = 60 -- button X
   bsy = 300 -- start Y
   yinc = bh + 1 -- Y increment
    
   -- All buttons
-  controlsButton = Form.makeButton("ControlsButton", bx, bsy, bw, bh)
+  controlsButton = Form.makeButton(this, "ControlsButton", bx, bsy, bw, bh)
   ButtonStyle.set(controlsButton, "Controls")
   bsy = bsy + yinc
-  Button.setCallback(controlsButton, EventType.MOUSE_CLICK, "onControlsClick");
+  Button.addCallback(controlsButton, EventType.MOUSE_CLICK, "onControlsClick");
   
-  optionsButton = Form.makeButton("OptionsButton", bx, bsy, bw, bh)
+  optionsButton = Form.makeButton(this, "OptionsButton", bx, bsy, bw, bh)
   ButtonStyle.set(optionsButton, "Options")
   bsy = bsy + yinc
   
-  exitButton = Form.makeButton("ExitButton", bx, bsy, bw, bh)
+  exitButton = Form.makeButton(this, "ExitButton", bx, bsy, bw, bh)
   ButtonStyle.set(exitButton, "Exit")
   bsy = bsy + yinc
   

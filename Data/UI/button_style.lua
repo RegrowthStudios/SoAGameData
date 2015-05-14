@@ -1,10 +1,19 @@
 local ButtonStyle = {}
 
--- Button vars
-br = 0
-bg = 0
-bb = 0
-ba = 64
+-- Background
+blr = 16
+blg = 190
+blb = 239
+bla = 166
+brr = 0
+brg = 0
+brb = 0
+bra = 0
+bhlr = 255
+bhlg = 255
+bhlb = 255
+grad = GradientType.HORIZONTAL
+-- Text
 tr = 255
 tg = 255
 tb = 255
@@ -18,8 +27,8 @@ ts = 0.8 -- text scale
 function ButtonStyle.set(b, text)
   Button.setTextColor(b, tr, tg, tb, ta)
   Button.setTextHoverColor(b, thr, thg, thb, tha)
-  Button.setBackColor(b, br, bg, bb, ba);
-  Button.setBackHoverColor(b, br, bg, bb, ba);
+  Button.setBackColorGrad(b, blr, blg, blb, bla, brr, brg, brb, bra, grad);
+  Button.setBackHoverColorGrad(b, bhlr, bhlg, bhlb, bla, brr, brg, brb, bra, grad);
   Button.setText(b, text)
   Button.setTextScale(b, ts, ts)
   Button.setTextAlign(b, TextAlign.LEFT)
