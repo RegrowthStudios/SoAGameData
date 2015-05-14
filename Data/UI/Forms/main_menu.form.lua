@@ -5,6 +5,13 @@ ControlsForm = {}
 function onControlsClick()
   changeForm("ControlsForm")
 end
+Vorb.register("onControlsClick", onControlsClick)
+
+function onOptionsClick()
+  Options.beginContext();
+  Options.save();
+end
+Vorb.register("onOptionsClick", onOptionsClick)
 
 function init()
 
@@ -21,18 +28,18 @@ function init()
   -- All buttons
   controlsButton = Form.makeButton(this, "ControlsButton", bx, bsy, bw, bh)
   ButtonStyle.set(controlsButton, "Controls")
-  bsy = bsy + yinc
   Button.addCallback(controlsButton, EventType.MOUSE_CLICK, "onControlsClick");
+  bsy = bsy + yinc
   
   optionsButton = Form.makeButton(this, "OptionsButton", bx, bsy, bw, bh)
   ButtonStyle.set(optionsButton, "Options")
+  Button.addCallback(optionsButton, EventType.MOUSE_CLICK, "onOptionsClick");
   bsy = bsy + yinc
+  
   
   exitButton = Form.makeButton(this, "ExitButton", bx, bsy, bw, bh)
   ButtonStyle.set(exitButton, "Exit")
   bsy = bsy + yinc
   
 end
-
 Vorb.register("init", init)
-Vorb.register("onControlsClick", onControlsClick)
