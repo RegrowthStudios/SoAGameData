@@ -8,16 +8,18 @@ end
 Vorb.register("onControlsClick", onControlsClick)
 
 function onOptionsClick()
-  Options.beginContext();
-  Options.save();
+  Options.beginContext()
+  changeForm("OptionsForm")
 end
 Vorb.register("onOptionsClick", onOptionsClick)
 
 function init()
 
   -- Make other forms
-  ControlsForm = makeForm("ControlsForm", "Data/UI/Forms/controls.form.lua");
+  ControlsForm = makeForm("ControlsForm", "Data/UI/Forms/controls.form.lua")
   Form.disable(ControlsForm)
+  OptionsForm = makeForm("OptionsForm", "Data/UI/Forms/options.form.lua")
+  Form.disable(OptionsForm)
   
   bw = 800 -- button width
   bh = 40 -- button height
@@ -28,12 +30,12 @@ function init()
   -- All buttons
   controlsButton = Form.makeButton(this, "ControlsButton", bx, bsy, bw, bh)
   ButtonStyle.set(controlsButton, "Controls")
-  Button.addCallback(controlsButton, EventType.MOUSE_CLICK, "onControlsClick");
+  Button.addCallback(controlsButton, EventType.MOUSE_CLICK, "onControlsClick")
   bsy = bsy + yinc
   
   optionsButton = Form.makeButton(this, "OptionsButton", bx, bsy, bw, bh)
   ButtonStyle.set(optionsButton, "Options")
-  Button.addCallback(optionsButton, EventType.MOUSE_CLICK, "onOptionsClick");
+  Button.addCallback(optionsButton, EventType.MOUSE_CLICK, "onOptionsClick")
   bsy = bsy + yinc
   
   
