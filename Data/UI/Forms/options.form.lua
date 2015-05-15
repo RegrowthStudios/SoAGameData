@@ -1,5 +1,6 @@
 ButtonStyle = require "Data/UI/button_style"
 SliderStyle = require "Data/UI/slider_style"
+CheckBoxStyle = require "Data/UI/check_box_style"
 
 -- Controls objects -- Is this optional????
 gammaSlider = {}
@@ -94,12 +95,11 @@ function init()
   
   -- Borderless
   borderlessCheckBox = Form.makeCheckBox(this, "BorderlessCheckBox", 800, 50, 30, 30)
-  CheckBox.setText(borderlessCheckBox, "Borderless Window")
-  CheckBox.setTextColor(borderlessCheckBox, 255, 255, 255, 255)
-  CheckBox.setBoxColor(borderlessCheckBox, 16, 190, 239, 60)
-  CheckBox.setBoxHoverColor(borderlessCheckBox, 16, 190, 239, 100)
-  CheckBox.setBoxCheckedColor(borderlessCheckBox, 16, 190, 239, 200)
-  CheckBox.setBoxCheckedHoverColor(borderlessCheckBox, 16, 190, 239, 250)
+  CheckBoxStyle.set(borderlessCheckBox, "Borderless Window")
+  
+  -- Fullscreen
+  fullscreenCheckBox = Form.makeCheckBox(this, "FullscreenCheckBox", 800, 90, 30, 30)
+  CheckBoxStyle.set(fullscreenCheckBox, "Fullscreen")
   
   setValues()
 end
