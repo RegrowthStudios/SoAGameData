@@ -32,7 +32,7 @@ Vorb.register("onRestoreClick", onRestoreClick)
 function onGammaChange(i)
   gamma = i / 1000.0
   Options.setOptionFloat("Gamma", gamma)
-  Button.setText(gammaLabel, "Gamma: " .. round(gamma, 2))
+  Label.setText(gammaLabel, "Gamma: " .. round(gamma, 2))
   Options.save();
 end
 Vorb.register("onGammaChange", onGammaChange)
@@ -78,20 +78,23 @@ function init()
   Button.addCallback(restoreButton, EventType.MOUSE_CLICK, "onRestoreClick")
   bsy = bsy + yinc
   
+  -- Test Panel
+  testPanel = Form.makePanel(this, "TestPanel", 0, 0, 2000, 2000)
+  
   -- Gamma
   gamma = Options.getOptionFloat("Gamma")
   gammaSlider = Form.makeSlider(this, "GammaSlider", 50, 50, 500, 15)
+  Slider.setParent(gammaSlider, testPanel)
   SliderStyle.set(gammaSlider)
   Slider.setRange(gammaSlider, 100, 2500)
   Slider.addCallback(gammaSlider, EventType.VALUE_CHANGE, "onGammaChange")
+ 
   
-  gammaLabel = Form.makeButton(this, "GammaLabel", 560, 40, 300, 50)
-  Button.setText(gammaLabel, "Gamma: " .. round(gamma, 2))
-  Button.setTextScale(gammaLabel, 0.8, 0.8)
-  Button.setBackColor(gammaLabel, 0, 0, 0, 0)
-  Button.setBackHoverColor(gammaLabel, 0, 0, 0, 0)
-  Button.setTextColor(gammaLabel, 255, 255, 255, 255)
-  Button.setTextHoverColor(gammaLabel, 255, 255, 255, 255)
+  gammaLabel = Form.makeLabel(this, "GammaLabel", 560, 40, 300, 50)
+  Label.setText(gammaLabel, "Gamma: " .. round(gamma, 2))
+  Label.setTextScale(gammaLabel, 0.8, 0.8)
+  Label.setTextColor(gammaLabel, 255, 255, 255, 255)
+  Label.setParent(gammaLabel, testPanel)
   
   -- Borderless
   borderlessCheckBox = Form.makeCheckBox(this, "BorderlessCheckBox", 800, 50, 30, 30)
