@@ -5,6 +5,7 @@ CheckBoxStyle = require "Data/UI/check_box_style"
 -- Controls objects -- Is this optional????
 gammaSlider = {}
 gammaLabel = {}
+fullscreenCheckBox = {}
 borderlessCheckBox = {}
 
 function onBackClick()
@@ -29,13 +30,28 @@ function onRestoreClick()
 end
 Vorb.register("onRestoreClick", onRestoreClick)
 
+-- Options Changes
 function onGammaChange(i)
   gamma = i / 1000.0
-  Options.setOptionFloat("Gamma", gamma)
+  Options.setFloat("Gamma", gamma)
   Label.setText(gammaLabel, "Gamma: " .. round(gamma, 2))
-  Options.save();
+  Options.save()
 end
 Vorb.register("onGammaChange", onGammaChange)
+
+function onFullscreenChange(b)
+  Options.setBool("Fullscreen", b)
+  CheckBox.setChecked(fullscreenCheckBox, b)
+  Options.save()
+end
+Vorb.register("onFullscreenChange", onFullscreenChange)
+
+function onBorderlessChange(b)
+  Options.setBool("Borderless Window", b)
+  CheckBox.setChecked(borderlessCheckBox, b)
+  Options.save()
+end
+Vorb.register("onBorderlessChange", onBorderlessChange)
 
 -- Rounds to a given number of decimal places
 function round(num, idp)
@@ -45,12 +61,14 @@ end
 
 function setValues()
   -- Gamma
-  gamma = Options.getOptionFloat("Gamma")
+  gamma = Options.getFloat("Gamma")
   Slider.setValue(gammaSlider, gamma * 1000.0)
+  CheckBox.setChecked(fullscreenCheckBox, Options.getBool("Fullscreen"))
+  CheckBox.setChecked(borderlessCheckBox, Options.getBool("Borderless Window"))
 end
 
 function init()
-  
+  Options.beginContext();
   bw = 600 -- button width
   bh = 40 -- button height
   bx = 60 -- button X
@@ -79,16 +97,17 @@ function init()
   bsy = bsy + yinc
   
   -- Test Panel
-  testPanel = Form.makePanel(this, "TestPanel", 0, 0, 2000, 2000)
+  testPanel = Form.makePanel(this, "TestPanel", 50, 50, 300, 300)
+  Panel.setColor(testPanel, 128, 128, 128, 128)
+  Panel.setHoverColor(testPanel, 128, 128, 128, 128)
   
   -- Gamma
-  gamma = Options.getOptionFloat("Gamma")
+  gamma = Options.getFloat("Gamma")
   gammaSlider = Form.makeSlider(this, "GammaSlider", 50, 50, 500, 15)
   Slider.setParent(gammaSlider, testPanel)
   SliderStyle.set(gammaSlider)
   Slider.setRange(gammaSlider, 100, 2500)
   Slider.addCallback(gammaSlider, EventType.VALUE_CHANGE, "onGammaChange")
- 
   
   gammaLabel = Form.makeLabel(this, "GammaLabel", 560, 40, 300, 50)
   Label.setText(gammaLabel, "Gamma: " .. round(gamma, 2))
@@ -99,10 +118,11 @@ function init()
   -- Borderless
   borderlessCheckBox = Form.makeCheckBox(this, "BorderlessCheckBox", 800, 50, 30, 30)
   CheckBoxStyle.set(borderlessCheckBox, "Borderless Window")
-  
+  CheckBox.addCallback(borderlessCheckBox, EventType.VALUE_CHANGE, "onBorderlessChange")
   -- Fullscreen
   fullscreenCheckBox = Form.makeCheckBox(this, "FullscreenCheckBox", 800, 90, 30, 30)
   CheckBoxStyle.set(fullscreenCheckBox, "Fullscreen")
+  CheckBox.addCallback(fullscreenCheckBox, EventType.VALUE_CHANGE, "onFullscreenChange")
   
   setValues()
 end

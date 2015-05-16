@@ -38,7 +38,6 @@ function init()
   Button.addCallback(optionsButton, EventType.MOUSE_CLICK, "onOptionsClick")
   bsy = bsy + yinc
   
-  
   exitButton = Form.makeButton(this, "ExitButton", bx, bsy, bw, bh)
   ButtonStyle.set(exitButton, "Exit")
   bsy = bsy + yinc
