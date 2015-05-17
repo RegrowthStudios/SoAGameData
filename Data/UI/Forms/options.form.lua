@@ -96,15 +96,9 @@ function init()
   Button.addCallback(restoreButton, EventType.MOUSE_CLICK, "onRestoreClick")
   bsy = bsy + yinc
   
-  -- Test Panel
-  testPanel = Form.makePanel(this, "TestPanel", 50, 50, 300, 300)
-  Panel.setColor(testPanel, 128, 128, 128, 128)
-  Panel.setHoverColor(testPanel, 128, 128, 128, 128)
-  
   -- Gamma
   gamma = Options.getFloat("Gamma")
   gammaSlider = Form.makeSlider(this, "GammaSlider", 50, 50, 500, 15)
-  Slider.setParent(gammaSlider, testPanel)
   SliderStyle.set(gammaSlider)
   Slider.setRange(gammaSlider, 100, 2500)
   Slider.addCallback(gammaSlider, EventType.VALUE_CHANGE, "onGammaChange")
@@ -113,7 +107,6 @@ function init()
   Label.setText(gammaLabel, "Gamma: " .. round(gamma, 2))
   Label.setTextScale(gammaLabel, 0.8, 0.8)
   Label.setTextColor(gammaLabel, 255, 255, 255, 255)
-  Label.setParent(gammaLabel, testPanel)
   
   -- Borderless
   borderlessCheckBox = Form.makeCheckBox(this, "BorderlessCheckBox", 800, 50, 30, 30)
@@ -123,6 +116,18 @@ function init()
   fullscreenCheckBox = Form.makeCheckBox(this, "FullscreenCheckBox", 800, 90, 30, 30)
   CheckBoxStyle.set(fullscreenCheckBox, "Fullscreen")
   CheckBox.addCallback(fullscreenCheckBox, EventType.VALUE_CHANGE, "onFullscreenChange")
+  -- Resolution
+  resComboBox = Form.makeComboBox(this, "ResComboBox", 400, 300, 200, 40)
+  ComboBox.setTextColor(resComboBox, 0, 0, 0, 255)
+  ComboBox.setBackColor(resComboBox, 128, 128, 128, 128)
+  ComboBox.setBackHoverColor(resComboBox, 128, 128, 128, 255)
+  numRes = getNumSupportedResolutions(0)
+  i = 0
+  while i < numRes do
+    x,y = getSupportedResolution(0, i)
+    ComboBox.addItem(resComboBox, x .. " x " .. y)
+    i = i + 1
+  end
   
   setValues()
 end
