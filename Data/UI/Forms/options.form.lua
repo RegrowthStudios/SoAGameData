@@ -117,18 +117,22 @@ function init()
   CheckBoxStyle.set(fullscreenCheckBox, "Fullscreen")
   CheckBox.addCallback(fullscreenCheckBox, EventType.VALUE_CHANGE, "onFullscreenChange")
   -- Resolution
-  resComboBox = Form.makeComboBox(this, "ResComboBox", 400, 300, 200, 40)
-  ComboBox.setTextColor(resComboBox, 0, 0, 0, 255)
+  resComboBox = Form.makeComboBox(this, "ResComboBox", 1300, 50, 200, 40)
+
+  ComboBox.setMaxDropHeight(resComboBox, 200.0)
+  ComboBox.setTextColor(resComboBox, 255, 255, 255, 255)
+  ComboBox.setTextScale(resComboBox, 0.6, 0.6)
+  ComboBox.setTextAlign(resComboBox, TextAlign.LEFT)
   ComboBox.setBackColor(resComboBox, 128, 128, 128, 128)
   ComboBox.setBackHoverColor(resComboBox, 128, 128, 128, 255)
-  numRes = getNumSupportedResolutions(0)
+  numRes = Window.getNumSupportedResolutions()
   i = 0
   while i < numRes do
-    x,y = getSupportedResolution(0, i)
+    x,y = Window.getSupportedResolution(i)
     ComboBox.addItem(resComboBox, x .. " x " .. y)
     i = i + 1
   end
-  
+ 
   setValues()
 end
 
