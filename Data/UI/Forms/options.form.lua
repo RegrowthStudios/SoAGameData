@@ -1,28 +1,20 @@
 ButtonStyle = require "Data/UI/button_style"
 SliderStyle = require "Data/UI/slider_style"
 CheckBoxStyle = require "Data/UI/check_box_style"
+ComboBoxStyle = require "Data/UI/combo_box_style"
 
 -- Controls objects -- Is this optional????
 gammaSlider = {}
 gammaLabel = {}
 fullscreenCheckBox = {}
 borderlessCheckBox = {}
+widgetList = {}
 
 function onBackClick()
   Options.save(); -- TODO Prompt for save
   changeForm("main")
 end
 Vorb.register("onBackClick", onBackClick)
-
-function onCancelClick()
-  changeForm("main")
-end
-Vorb.register("onCancelClick", onCancelClick)
-
-function onSaveClick()
-  Options.save();
-end
-Vorb.register("onSaveClick", onSaveClick)
 
 function onRestoreClick()
   Options.restoreDefault()
@@ -53,6 +45,14 @@ function onBorderlessChange(b)
 end
 Vorb.register("onBorderlessChange", onBorderlessChange)
 
+function onResolutionChange(s)
+  x, y = string.match(s, "(%d+) x (%d+)")
+  Options.setInt("Screen Width", x)
+  Options.setInt("Screen Height", y)
+  Options.save()
+end
+Vorb.register("onResolutionChange", onResolutionChange)
+
 -- Rounds to a given number of decimal places
 function round(num, idp)
   local mult = 10^(idp or 0)
@@ -65,6 +65,22 @@ function setValues()
   Slider.setValue(gammaSlider, gamma * 1000.0)
   CheckBox.setChecked(fullscreenCheckBox, Options.getBool("Fullscreen"))
   CheckBox.setChecked(borderlessCheckBox, Options.getBool("Borderless Window"))
+  -- Resolution
+  x, y = Window.getCurrentResolution()
+  ComboBox.setText(resComboBox, x .. " x " .. y)
+end
+
+function addWidgetToList(w)
+  WidgetList.addItem(widgetList, w)
+end
+
+panelCounter = 0
+function getNewListPanel()
+  p = Form.makePanel(this, "Panel" .. panelCounter, 0, 0, 10, 10)
+  panelCounter = panelCounter + 1
+  Panel.setDimensionsPercentage(p, 1.0, 0.1)
+  addWidgetToList(p)
+  return p
 end
 
 function init()
@@ -75,18 +91,13 @@ function init()
   bsy = 700 -- start Y
   yinc = bh + 1 -- Y increment
   
+  widgetList = Form.makeWidgetList(this, "WidgetList", 0, 0, 1000, 1000)
+  WidgetList.setBackColor(widgetList, 128, 128, 128, 128)
+  WidgetList.setPositionPercentage(widgetList, 0.1, 0.1)
+  WidgetList.setDimensionsPercentage(widgetList, 0.5, 0.85)
+  
   -- Bottom buttons
-  saveButton = Form.makeButton(this, "saveButton", bx, bsy, bw, bh)
-  ButtonStyle.set(saveButton, "Save")
-  Button.addCallback(saveButton, EventType.MOUSE_CLICK, "onSaveClick")
-  bsy = bsy + yinc
-  
-  cancelButton = Form.makeButton(this, "CancelButton", bx, bsy, bw, bh)
-  ButtonStyle.set(cancelButton, "Cancel")
-  Button.addCallback(cancelButton, EventType.MOUSE_CLICK, "onCancelClick")
-  bsy = bsy + yinc
-  
-  backButton = Form.makeButton(this, "BackButton", bx, bsy, bw, bh)
+  backButton = Form.makeButton(this, "BackButton", 0, 200, bw, bh)
   ButtonStyle.set(backButton, "Back")
   Button.addCallback(backButton, EventType.MOUSE_CLICK, "onBackClick")
   bsy = bsy + yinc
@@ -97,16 +108,27 @@ function init()
   bsy = bsy + yinc
   
   -- Gamma
+  gammaPanel = getNewListPanel()
+  Panel.setColor(gammaPanel, 255, 0, 0, 255)
   gamma = Options.getFloat("Gamma")
-  gammaSlider = Form.makeSlider(this, "GammaSlider", 50, 50, 500, 15)
+  gammaSlider = Form.makeSlider(this, "GammaSlider", 0, 0, 500, 15)
   SliderStyle.set(gammaSlider)
   Slider.setRange(gammaSlider, 100, 2500)
   Slider.addCallback(gammaSlider, EventType.VALUE_CHANGE, "onGammaChange")
+  Slider.setSlideDimensions(gammaSlider, 30, 15)
+  Slider.setWidthPercentage(gammaSlider, 0.49)
+  Slider.setPositionPercentage(gammaSlider, 0.5, 0.5)
+  Slider.setWidgetAlign(gammaSlider, WidgetAlign.LEFT)
+  Slider.setParent(gammaSlider, gammaPanel)
   
-  gammaLabel = Form.makeLabel(this, "GammaLabel", 560, 40, 300, 50)
+  gammaLabel = Form.makeLabel(this, "GammaLabel", 0, 0, 200, 20)
   Label.setText(gammaLabel, "Gamma: " .. round(gamma, 2))
   Label.setTextScale(gammaLabel, 0.8, 0.8)
   Label.setTextColor(gammaLabel, 255, 255, 255, 255)
+  Label.setPositionPercentage(gammaLabel, 0.1, 0.5)
+  Label.setParent(gammaLabel, gammaPanel)
+  Label.setWidgetAlign(gammaLabel, WidgetAlign.LEFT)
+  Label.setTextAlign(gammaLabel, TextAlign.LEFT)
   
   -- Borderless
   borderlessCheckBox = Form.makeCheckBox(this, "BorderlessCheckBox", 800, 50, 30, 30)
@@ -118,13 +140,9 @@ function init()
   CheckBox.addCallback(fullscreenCheckBox, EventType.VALUE_CHANGE, "onFullscreenChange")
   -- Resolution
   resComboBox = Form.makeComboBox(this, "ResComboBox", 1300, 50, 200, 40)
-
+  ComboBoxStyle.set(resComboBox)
   ComboBox.setMaxDropHeight(resComboBox, 200.0)
-  ComboBox.setTextColor(resComboBox, 255, 255, 255, 255)
-  ComboBox.setTextScale(resComboBox, 0.6, 0.6)
-  ComboBox.setTextAlign(resComboBox, TextAlign.LEFT)
-  ComboBox.setBackColor(resComboBox, 128, 128, 128, 128)
-  ComboBox.setBackHoverColor(resComboBox, 128, 128, 128, 255)
+  ComboBox.addCallback(resComboBox, EventType.VALUE_CHANGE, "onResolutionChange")
   numRes = Window.getNumSupportedResolutions()
   i = 0
   while i < numRes do
