@@ -7,4 +7,14 @@ function SliderStyle.set(s)
   Slider.setHeight(s, 15)
 end
 
+function SliderStyle.make(name, rMin, rMax, callback)
+  s = Form.makeSlider(this, name, 0, 0, 100, 15)
+  SliderStyle.set(s)
+  Slider.setRange(s, rMin, rMax)
+  if string.len(callback) > 0 then
+    Slider.addCallback(s, EventType.VALUE_CHANGE, callback)
+  end
+  return s
+end
+
 return SliderStyle

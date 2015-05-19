@@ -1,4 +1,4 @@
-ButtonStyle = require "Data/UI/button_style"
+ButtonStyle1 = require "Data/UI/button_style_1"
 SliderStyle = require "Data/UI/slider_style"
 CheckBoxStyle = require "Data/UI/check_box_style"
 ComboBoxStyle = require "Data/UI/combo_box_style"
@@ -11,8 +11,12 @@ fullscreenCheckBox = {}
 borderlessCheckBox = {}
 widgetList = {}
 
+function onGameOptionsClick()
+  changeForm("GameOptionsForm")
+end
+Vorb.register("onGameOptionsClick", onGameOptionsClick)
+
 function onBackClick()
-  Options.save(); -- TODO Prompt for save
   changeForm("main")
 end
 Vorb.register("onBackClick", onBackClick)
@@ -84,60 +88,52 @@ function getNewListPanel()
   return p
 end
 
+function alignSlider(s, p)
+  Slider.setWidthPercentage(s, 0.49)
+  Slider.setPositionPercentage(s, 0.5, 0.5)
+  Slider.setWidgetAlign(s, WidgetAlign.LEFT)
+  Slider.setParent(s, p)
+end
+
 function init()
   Options.beginContext();
-  bw = 600 -- button width
-  bh = 40 -- button height
-  bx = 60 -- button X
-  bsy = 700 -- start Y
-  yinc = bh + 1 -- Y increment
   
+  -- Top buttons
+  tbyp = 0.02 --Top button y percentage
+  graphicsButton = ButtonStyle1.make("graphicsButton", "Graphics Options", "")
+  Button.setTextHoverColor(graphicsButton, 255, 255, 255, 255)
+  Button.setTextScale(graphicsButton, 0.9, 0.9)
+  Button.setBackHoverColorGrad(graphicsButton, 16, 190, 239, 166, 0, 0, 0, 0, GradientType.HORIZONTAL);
+  Button.setPositionPercentage(graphicsButton, 0.2, tbyp)
+ 
+  gameButton = ButtonStyle1.make("gameButton", "Game Options", "onGameOptionsClick")
+  Button.setBackColorGrad(gameButton, 255, 255, 255, 166, 0, 0, 0, 0, GradientType.HORIZONTAL);
+  Button.setPositionPercentage(gameButton, 0.5, tbyp)
+  
+  -- Widget list
   widgetList = Form.makeWidgetList(this, "WidgetList", 0, 0, 1000, 1000)
   WidgetList.setBackColor(widgetList, 128, 128, 128, 128)
   WidgetList.setPositionPercentage(widgetList, 0.1, 0.1)
   WidgetList.setDimensionsPercentage(widgetList, 0.5, 0.85)
   
-  -- Bottom buttons
-  backButton = Form.makeButton(this, "BackButton", 0, 200, bw, bh)
-  ButtonStyle.set(backButton, "Back")
-  Button.addCallback(backButton, EventType.MOUSE_CLICK, "onBackClick")
-  bsy = bsy + yinc
-  
-  restoreButton = Form.makeButton(this, "RestoreButton", bx, bsy, bw, bh)
-  ButtonStyle.set(restoreButton, "Restore Defaults")
-  Button.addCallback(restoreButton, EventType.MOUSE_CLICK, "onRestoreClick")
-  bsy = bsy + yinc
-  
   -- Gamma
   gammaPanel = getNewListPanel()
-  gamma = Options.getFloat("Gamma")
-  gammaSlider = Form.makeSlider(this, "GammaSlider", 0, 0, 500, 15)
-  SliderStyle.set(gammaSlider)
-  Slider.setRange(gammaSlider, 100, 2500)
-  Slider.addCallback(gammaSlider, EventType.VALUE_CHANGE, "onGammaChange")
-  Slider.setWidthPercentage(gammaSlider, 0.49)
-  Slider.setPositionPercentage(gammaSlider, 0.5, 0.5)
-  Slider.setWidgetAlign(gammaSlider, WidgetAlign.LEFT)
-  Slider.setParent(gammaSlider, gammaPanel)
-  
-  gammaLabel = Form.makeLabel(this, "GammaLabel", 0, 0, 200, 20)
-  LabelStyle.set(gammaLabel, "Gamma: " .. round(gamma, 2))
+  gammaSlider = SliderStyle.make("gammaSlider", 100, 2500, "onGammaChange")
+  alignSlider(gammaSlider, gammaPanel)
+
+  gammaLabel = LabelStyle.make("GammaLabel", "Gamma: " .. round(Options.getFloat("Gamma"), 2))
   Label.setPositionPercentage(gammaLabel, 0.1, 0.5) 
   Label.setParent(gammaLabel, gammaPanel)
   
   -- Borderless
-  borderlessCheckBox = Form.makeCheckBox(this, "BorderlessCheckBox", 800, 50, 30, 30)
-  CheckBoxStyle.set(borderlessCheckBox, "Borderless Window")
-  CheckBox.addCallback(borderlessCheckBox, EventType.VALUE_CHANGE, "onBorderlessChange")
+  borderlessCheckBox = CheckBoxStyle.make("BorderlessCheckBox", "Borderless Window", "onBorderlessChange")
+
   -- Fullscreen
-  fullscreenCheckBox = Form.makeCheckBox(this, "FullscreenCheckBox", 800, 90, 30, 30)
-  CheckBoxStyle.set(fullscreenCheckBox, "Fullscreen")
-  CheckBox.addCallback(fullscreenCheckBox, EventType.VALUE_CHANGE, "onFullscreenChange")
+  fullscreenCheckBox = CheckBoxStyle.make("FullscreenCheckBox", "Fullscreen", "onFullscreenChange")
+
   -- Resolution
-  resComboBox = Form.makeComboBox(this, "ResComboBox", 1300, 50, 200, 40)
-  ComboBoxStyle.set(resComboBox)
+  resComboBox = ComboBoxStyle.make("ResComboBox", "", "onResolutionChange")
   ComboBox.setMaxDropHeight(resComboBox, 200.0)
-  ComboBox.addCallback(resComboBox, EventType.VALUE_CHANGE, "onResolutionChange")
   numRes = Window.getNumSupportedResolutions()
   i = 0
   while i < numRes do
@@ -145,6 +141,11 @@ function init()
     ComboBox.addItem(resComboBox, x .. " x " .. y)
     i = i + 1
   end
+ 
+   -- Bottom buttons
+  backButton = ButtonStyle1.make("backButton", "Back", "onBackClick")
+  
+  restoreButton = ButtonStyle1.make("restoreButton", "Restore Defaults", "onRestoreClick")
  
   setValues()
 end

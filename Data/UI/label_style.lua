@@ -8,4 +8,10 @@ function LabelStyle.set(l, text)
   Label.setTextAlign(l, TextAlign.LEFT)
 end
 
+function LabelStyle.make(name, text)
+  l = Form.makeLabel(this, name, 0, 0, 200, 50)
+  LabelStyle.set(l, text)
+  return l
+end
+
 return LabelStyle

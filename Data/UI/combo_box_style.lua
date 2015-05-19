@@ -8,4 +8,13 @@ function ComboBoxStyle.set(c)
   ComboBox.setBackHoverColor(c, 128, 128, 128, 255)
 end
 
+function ComboBoxStyle.set(name, text, callback)
+  c = Form.makeComboBox(this, name, 0, 0, 100, 40)
+  ComboBoxStyle.set(c, text)
+  if string.len(callback) > 0 then
+     ComboBox.addCallback(c, EventType.VALUE_CHANGE, callback)
+  end
+  return c
+end
+
 return ComboBoxStyle
