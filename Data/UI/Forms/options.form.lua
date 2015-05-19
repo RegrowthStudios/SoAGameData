@@ -2,6 +2,7 @@ ButtonStyle = require "Data/UI/button_style"
 SliderStyle = require "Data/UI/slider_style"
 CheckBoxStyle = require "Data/UI/check_box_style"
 ComboBoxStyle = require "Data/UI/combo_box_style"
+LabelStyle = require "Data/UI/label_style"
 
 -- Controls objects -- Is this optional????
 gammaSlider = {}
@@ -109,26 +110,20 @@ function init()
   
   -- Gamma
   gammaPanel = getNewListPanel()
-  Panel.setColor(gammaPanel, 255, 0, 0, 255)
   gamma = Options.getFloat("Gamma")
   gammaSlider = Form.makeSlider(this, "GammaSlider", 0, 0, 500, 15)
   SliderStyle.set(gammaSlider)
   Slider.setRange(gammaSlider, 100, 2500)
   Slider.addCallback(gammaSlider, EventType.VALUE_CHANGE, "onGammaChange")
-  Slider.setSlideDimensions(gammaSlider, 30, 15)
   Slider.setWidthPercentage(gammaSlider, 0.49)
   Slider.setPositionPercentage(gammaSlider, 0.5, 0.5)
   Slider.setWidgetAlign(gammaSlider, WidgetAlign.LEFT)
   Slider.setParent(gammaSlider, gammaPanel)
   
   gammaLabel = Form.makeLabel(this, "GammaLabel", 0, 0, 200, 20)
-  Label.setText(gammaLabel, "Gamma: " .. round(gamma, 2))
-  Label.setTextScale(gammaLabel, 0.8, 0.8)
-  Label.setTextColor(gammaLabel, 255, 255, 255, 255)
-  Label.setPositionPercentage(gammaLabel, 0.1, 0.5)
+  LabelStyle.set(gammaLabel, "Gamma: " .. round(gamma, 2))
+  Label.setPositionPercentage(gammaLabel, 0.1, 0.5) 
   Label.setParent(gammaLabel, gammaPanel)
-  Label.setWidgetAlign(gammaLabel, WidgetAlign.LEFT)
-  Label.setTextAlign(gammaLabel, TextAlign.LEFT)
   
   -- Borderless
   borderlessCheckBox = Form.makeCheckBox(this, "BorderlessCheckBox", 800, 50, 30, 30)
