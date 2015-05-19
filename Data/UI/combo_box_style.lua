@@ -6,6 +6,17 @@ function ComboBoxStyle.set(c)
   ComboBox.setTextAlign(c, TextAlign.LEFT)
   ComboBox.setBackColor(c, 128, 128, 128, 128)
   ComboBox.setBackHoverColor(c, 128, 128, 128, 255)
+  ComboBox.enable(c)
+end
+
+function ComboBoxStyle.setDisabled(c)
+  ComboBox.setTextColor(c, 128, 128, 128, 255)
+  ComboBox.setTextHoverColor(c, 128, 128, 128, 255)
+  ComboBox.setTextScale(c, 0.6, 0.6)
+  ComboBox.setTextAlign(c, TextAlign.LEFT)
+  ComboBox.setBackColor(c, 128, 128, 128, 128)
+  ComboBox.setBackHoverColor(c, 128, 128, 128, 128)
+  ComboBox.disable(c)
 end
 
 function ComboBoxStyle.make(name, text, callback)

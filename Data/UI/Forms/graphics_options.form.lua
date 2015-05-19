@@ -53,10 +53,25 @@ Vorb.register("onFovChange", onFovChange)
 
 function onFullscreenChange(b)
   Options.setBool("Fullscreen", b)
-  CheckBox.setChecked(fullscreenCheckBox, b) 
+  CheckBox.setChecked(fullscreenCheckBox, b)
+  
+  checkGreyControls()
+  
   Options.save()
 end
 Vorb.register("onFullscreenChange", onFullscreenChange)
+
+function checkGreyControls()
+  local fs = Options.getBool("Fullscreen")
+  -- Need to grey out some controls when in fullscreen
+  if fs == true then
+    CheckBoxStyle.setDisabled(borderlessCheckBox, "")
+	ComboBoxStyle.setDisabled(resComboBox)
+  else
+    CheckBoxStyle.set(borderlessCheckBox, "")
+	ComboBoxStyle.set(resComboBox)
+  end
+end
 
 function onBorderlessChange(b)
   Options.setBool("Borderless Window", b)
@@ -117,6 +132,8 @@ function setValues()
   -- Resolution
   local x, y = Window.getCurrentResolution()
   ComboBox.setText(resComboBox, x .. " x " .. y)
+  
+  checkGreyControls()
 end
 
 function addWidgetToList(w)
@@ -234,7 +251,7 @@ function init()
  
   -- Resolution
   resPanel = getNewListPanel()
-  resComboBox = ComboBoxStyle.make("ResComboBox", "", "onResolutionChange")
+  resComboBox = ComboBoxStyle.make("resComboBox", "", "onResolutionChange")
   ComboBox.setMaxDropHeight(resComboBox, 200.0)
   numRes = Window.getNumSupportedResolutions()
   i = 0
