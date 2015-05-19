@@ -9,7 +9,7 @@ function LabelStyle.set(l, text)
 end
 
 function LabelStyle.make(name, text)
-  local l = Form.makeLabel(this, name, 0, 0, 300, 50)
+  local l = Form.makeLabel(this, name, 0, 0, 300, 30)
   LabelStyle.set(l, text)
   return l
 end

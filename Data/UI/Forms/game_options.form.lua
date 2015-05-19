@@ -50,14 +50,16 @@ function init()
   -- Top buttons
   tbyp = 0.02 --Top button y percentage
   graphicsButton = ButtonStyle1.make("graphicsButton", "Graphics Options", "onGraphicsOptionsClick")
-  Button.setPositionPercentage(graphicsButton, 0.2, tbyp) 
+  Button.setPositionPercentage(graphicsButton, 0.49, tbyp) 
   Button.setBackColorGrad(graphicsButton, 255, 255, 255, 166, 0, 0, 0, 0, GradientType.HORIZONTAL);
+  Button.setWidgetAlign(graphicsButton, WidgetAlign.TOP_RIGHT)
   
   gameButton = ButtonStyle1.make("gameButton", "Game Options", "")
   Button.setTextHoverColor(gameButton, 255, 255, 255, 255)
   Button.setTextScale(gameButton, 0.9, 0.9)
   Button.setBackHoverColorGrad(gameButton, 16, 190, 239, 166, 0, 0, 0, 0, GradientType.HORIZONTAL);
-  Button.setPositionPercentage(gameButton, 0.5, tbyp)
+  Button.setPositionPercentage(gameButton, 0.51, tbyp)
+  Button.setWidgetAlign(gameButton, WidgetAlign.TOP_LEFT)
  
   setValues()
 end

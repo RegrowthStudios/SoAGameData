@@ -9,7 +9,7 @@ function ComboBoxStyle.set(c)
 end
 
 function ComboBoxStyle.make(name, text, callback)
-  local c = Form.makeComboBox(this, name, 0, 0, 150, 40)
+  local c = Form.makeComboBox(this, name, 0, 0, 170, 40)
   ComboBoxStyle.set(c)
   ComboBox.setText(c, text)
   if string.len(callback) > 0 then
