@@ -27,8 +27,8 @@ local ts = 0.8 -- text scale
 function ButtonStyle.set(b, text)
   Button.setTextColor(b, tr, tg, tb, ta)
   Button.setTextHoverColor(b, thr, thg, thb, tha)
-  Button.setBackColorGrad(b, blr, blg, blb, bla, brr, brg, brb, bra, grad);
-  Button.setBackHoverColorGrad(b, bhlr, bhlg, bhlb, bla, brr, brg, brb, bra, grad);
+  Button.setBackColor(b, blr, blg, blb, bla);
+  Button.setBackHoverColor(b, bhlr, bhlg, bhlb, bla);
   Button.setText(b, text)
   Button.setTextScale(b, ts, ts)
   Button.setTextAlign(b, TextAlign.LEFT)

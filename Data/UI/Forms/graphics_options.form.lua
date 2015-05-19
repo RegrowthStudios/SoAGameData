@@ -142,7 +142,7 @@ end
 
 panelCounter = 0
 function getNewListPanel()
-  p = Form.makePanel(this, "Panel" .. panelCounter, 0, 0, 10, 10)
+  local p = Form.makePanel(this, "Panel" .. panelCounter, 0, 0, 10, 10)
   panelCounter = panelCounter + 1
   Panel.setDimensionsPercentage(p, 1.0, 0.1)
   Panel.setClippingEnabled(p, false)
@@ -178,7 +178,7 @@ function init()
   Options.beginContext();
   
   -- Top buttons
-  tbyp = 0.02 --Top button y percentage
+  local tbyp = 0.02 --Top button y percentage
   graphicsButton = ButtonStyle1.make("graphicsButton", "Graphics Options", "")
   Button.setTextHoverColor(graphicsButton, 255, 255, 255, 255)
   Button.setTextScale(graphicsButton, 0.9, 0.9)
@@ -267,6 +267,7 @@ function init()
  
   -- Bottom buttons
   bottomPanel = getNewListPanel()
+  Panel.setMinSize(bottomPanel, 100.0, 100.0)
   backButton = ButtonStyle1.make("backButton", "Back", "onBackClick")
   Button.setPositionPercentage(backButton, 0.03, 0.0) 
   Button.setParent(backButton, bottomPanel)
@@ -275,7 +276,7 @@ function init()
   Button.setPositionPercentage(restoreButton, 0.03, 0.5) 
   Button.setParent(restoreButton, bottomPanel)
   
-  Panel.setMinSize(bottomPanel, 100.0, 100.0)
+
   
   setValues()
 end
