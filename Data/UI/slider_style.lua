@@ -8,7 +8,7 @@ function SliderStyle.set(s)
 end
 
 function SliderStyle.make(name, rMin, rMax, callback)
-  s = Form.makeSlider(this, name, 0, 0, 100, 15)
+  local s = Form.makeSlider(this, name, 0, 0, 100, 15)
   SliderStyle.set(s)
   Slider.setRange(s, rMin, rMax)
   if string.len(callback) > 0 then

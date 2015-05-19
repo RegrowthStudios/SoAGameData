@@ -10,10 +10,10 @@ function CheckboxStyle.set(c, text)
 end
 
 function CheckboxStyle.make(name, text, callback)
-  c = Form.makeCheckBox(this, name, 0, 0, 30, 30)
+  local c = Form.makeCheckBox(this, name, 0, 0, 30, 30)
   CheckboxStyle.set(c, text)
   if string.len(callback) > 0 then
-    CheckBox.addCallback(c, EventType.MOUSE_CLICK, callback)
+    CheckBox.addCallback(c, EventType.VALUE_CHANGE, callback)
   end
   return c
 end

@@ -35,7 +35,7 @@ function ButtonStyle.set(b, text)
 end
 
 function ButtonStyle.make(name, text, callback)
-  b = Form.makeButton(this, name, 0, 0, 300, 50)
+  local b = Form.makeButton(this, name, 0, 0, 300, 50)
   ButtonStyle.set(b, text)
   if string.len(callback) > 0 then
     Button.addCallback(b, EventType.MOUSE_CLICK, callback)
