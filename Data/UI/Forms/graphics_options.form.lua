@@ -6,8 +6,7 @@ LabelStyle = require "Data/UI/label_style"
 
 local gammaSlider = {}
 local gammaLabel = {}
-local fullscreenCheckBox = {}
-local borderlessCheckBox = {}
+local windowModeComboBox = {}
 local widgetList = {}
 
 function onGameOptionsClick()
@@ -51,34 +50,33 @@ function onFovChange(i)
 end
 Vorb.register("onFovChange", onFovChange)
 
-function onFullscreenChange(b)
-  Options.setBool("Fullscreen", b)
-  CheckBox.setChecked(fullscreenCheckBox, b)
+function onWindowModeChange(s)
+  if s == "Fullscreen" then
+    Options.setBool("Fullscreen", true)
+	Options.setBool("Borderless Window", false)
+  elseif s == "Borderless" then
+    Options.setBool("Fullscreen", false)
+	Options.setBool("Borderless Window", true)
+  else
+    Options.setBool("Fullscreen", false)
+	Options.setBool("Borderless Window", false)
+  end
   
   checkGreyControls()
   
   Options.save()
 end
-Vorb.register("onFullscreenChange", onFullscreenChange)
+Vorb.register("onWindowModeChange", onWindowModeChange)
 
 function checkGreyControls()
   local fs = Options.getBool("Fullscreen")
   -- Need to grey out some controls when in fullscreen
   if fs == true then
-    CheckBoxStyle.setDisabled(borderlessCheckBox, "")
 	ComboBoxStyle.setDisabled(resComboBox)
   else
-    CheckBoxStyle.set(borderlessCheckBox, "")
 	ComboBoxStyle.set(resComboBox)
   end
 end
-
-function onBorderlessChange(b)
-  Options.setBool("Borderless Window", b)
-  CheckBox.setChecked(borderlessCheckBox, b)
-  Options.save()
-end
-Vorb.register("onBorderlessChange", onBorderlessChange)
 
 function onVsyncChange(b)
   Options.setBool("VSYNC", b)
@@ -123,11 +121,14 @@ function setValues()
   Slider.setValue(fovSlider, fov)
   Label.setText(fovLabel, "FOV: " .. fov)
   
-  -- Fullscreen
-  CheckBox.setChecked(fullscreenCheckBox, Options.getBool("Fullscreen"))
-  
-  -- Borderless
-  CheckBox.setChecked(borderlessCheckBox, Options.getBool("Borderless Window"))
+  -- Window Mode
+  if Options.getBool("Fullscreen") == true then
+    ComboBox.setText(windowModeComboBox, "Fullscreen")
+  elseif Options.getBool("Borderless Window") == true then
+    ComboBox.setText(windowModeComboBox, "Borderless")
+  else
+    ComboBox.setText(windowModeComboBox, "Windowed")
+  end
   
   -- Resolution
   local x, y = Window.getCurrentResolution()
@@ -144,7 +145,7 @@ panelCounter = 0
 function getNewListPanel()
   local p = Form.makePanel(this, "Panel" .. panelCounter, 0, 0, 10, 10)
   panelCounter = panelCounter + 1
-  Panel.setDimensionsPercentage(p, 1.0, 0.1)
+  Panel.setDimensionsPercentage(p, 1.0, 0.13)
   Panel.setClippingEnabled(p, false)
   addWidgetToList(p)
   return p
@@ -226,21 +227,17 @@ function init()
   alignLabel(fovLabel, fovPanel)
   
    -- Fullscreen
-  fullscreenPanel = getNewListPanel()
-  fullscreenCheckBox = CheckBoxStyle.make("fullscreenCheckBox", "", "onFullscreenChange")
-  alignCheckBox(fullscreenCheckBox, fullscreenPanel)
-  
-  fullscreenLabel = LabelStyle.make("fullscreenLabel", "Fullscreen")
-  alignLabel(fullscreenLabel, fullscreenPanel)
-  
-  -- Borderless
-  borderlessPanel = getNewListPanel()
-  borderlessCheckBox = CheckBoxStyle.make("borderlessCheckBox", "", "onBorderlessChange")
-  alignCheckBox(borderlessCheckBox, borderlessPanel)
-  
-  borderlessLabel = LabelStyle.make("borderlessLabel", "Borderless Window")
-  alignLabel(borderlessLabel, borderlessPanel)
-  
+  windowModePanel = getNewListPanel()
+  windowModeComboBox = ComboBoxStyle.make("windowModeComboBox", "", "onWindowModeChange")
+  ComboBox.addItem(windowModeComboBox, "Fullscreen")
+  ComboBox.addItem(windowModeComboBox, "Borderless")
+  ComboBox.addItem(windowModeComboBox, "Windowed")
+  ComboBox.setMaxDropHeight(windowModeComboBox, 200.0)
+  alignComboBox(windowModeComboBox, windowModePanel)
+ 
+  windowModeLabel = LabelStyle.make("windowModeLabel", "Window Mode")
+  alignLabel(windowModeLabel, windowModePanel)
+ 
   -- VSYNC
   vsyncPanel = getNewListPanel()
   vsyncCheckBox = CheckBoxStyle.make("vsyncCheckBox", "", "onVsyncChange")
@@ -275,8 +272,6 @@ function init()
   restoreButton = ButtonStyle1.make("restoreButton", "Restore Defaults", "onRestoreClick")
   Button.setPositionPercentage(restoreButton, 0.03, 0.5) 
   Button.setParent(restoreButton, bottomPanel)
-  
-
   
   setValues()
 end
