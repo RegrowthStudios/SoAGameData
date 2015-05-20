@@ -1,25 +1,31 @@
 ButtonStyle = require "Data/UI/button_style"
 
-ControlsForm = {}
-
 function onControlsClick()
+  Options.beginContext()
   changeForm("ControlsForm")
 end
 Vorb.register("onControlsClick", onControlsClick)
 
 function onOptionsClick()
   Options.beginContext()
-  changeForm("OptionsForm")
+  changeForm("GraphicsOptionsForm")
 end
 Vorb.register("onOptionsClick", onOptionsClick)
 
-function init()
+function onExitClick()
+  Game.exit(0);
+end
+Vorb.register("onExitClick", onExitClick)
 
+function init()
+  Options.beginContext()
   -- Make other forms
+  GraphicsOptionsForm = makeForm("GraphicsOptionsForm", "Data/UI/Forms/graphics_options.form.lua")
+  Form.disable(GraphicsOptionsForm)
   ControlsForm = makeForm("ControlsForm", "Data/UI/Forms/controls.form.lua")
   Form.disable(ControlsForm)
-  OptionsForm = makeForm("OptionsForm", "Data/UI/Forms/options.form.lua")
-  Form.disable(OptionsForm)
+  GameOptionsForm = makeForm("GameOptionsForm", "Data/UI/Forms/game_options.form.lua")
+  Form.disable(GameOptionsForm)
   
   bw = 800 -- button width
   bh = 40 -- button height
@@ -38,10 +44,9 @@ function init()
   Button.addCallback(optionsButton, EventType.MOUSE_CLICK, "onOptionsClick")
   bsy = bsy + yinc
   
-  
   exitButton = Form.makeButton(this, "ExitButton", bx, bsy, bw, bh)
   ButtonStyle.set(exitButton, "Exit")
+  Button.addCallback(exitButton, EventType.MOUSE_CLICK, "onExitClick")
   bsy = bsy + yinc
-  
 end
 Vorb.register("init", init)
