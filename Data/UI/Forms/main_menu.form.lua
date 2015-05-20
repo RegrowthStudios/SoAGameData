@@ -12,6 +12,11 @@ function onOptionsClick()
 end
 Vorb.register("onOptionsClick", onOptionsClick)
 
+function onExitClick()
+  Game.exit(0);
+end
+Vorb.register("onExitClick", onExitClick)
+
 function init()
   Options.beginContext()
   -- Make other forms
@@ -41,6 +46,7 @@ function init()
   
   exitButton = Form.makeButton(this, "ExitButton", bx, bsy, bw, bh)
   ButtonStyle.set(exitButton, "Exit")
+  Button.addCallback(exitButton, EventType.MOUSE_CLICK, "onExitClick")
   bsy = bsy + yinc
 end
 Vorb.register("init", init)
