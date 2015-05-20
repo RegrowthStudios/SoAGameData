@@ -1,6 +1,7 @@
 ButtonStyle = require "Data/UI/button_style"
 
 function onControlsClick()
+  Options.beginContext()
   changeForm("ControlsForm")
 end
 Vorb.register("onControlsClick", onControlsClick)
@@ -12,12 +13,12 @@ end
 Vorb.register("onOptionsClick", onOptionsClick)
 
 function init()
-
+  Options.beginContext()
   -- Make other forms
-  ControlsForm = makeForm("ControlsForm", "Data/UI/Forms/controls.form.lua")
-  Form.disable(ControlsForm)
   GraphicsOptionsForm = makeForm("GraphicsOptionsForm", "Data/UI/Forms/graphics_options.form.lua")
   Form.disable(GraphicsOptionsForm)
+  ControlsForm = makeForm("ControlsForm", "Data/UI/Forms/controls.form.lua")
+  Form.disable(ControlsForm)
   GameOptionsForm = makeForm("GameOptionsForm", "Data/UI/Forms/game_options.form.lua")
   Form.disable(GameOptionsForm)
   
