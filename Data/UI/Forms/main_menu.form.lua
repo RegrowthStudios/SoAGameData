@@ -1,4 +1,4 @@
-ButtonStyle = require "Data/UI/button_style"
+ButtonStyle1 = require "Data/UI/button_style_1"
 
 function onControlsClick()
   Options.beginContext()
@@ -35,17 +35,17 @@ function init()
    
   -- All buttons
   controlsButton = Form.makeButton(this, "ControlsButton", bx, bsy, bw, bh)
-  ButtonStyle.set(controlsButton, "Controls")
+  ButtonStyle1.set(controlsButton, "Controls")
   Button.addCallback(controlsButton, EventType.MOUSE_CLICK, "onControlsClick")
   bsy = bsy + yinc
   
   optionsButton = Form.makeButton(this, "OptionsButton", bx, bsy, bw, bh)
-  ButtonStyle.set(optionsButton, "Options")
+  ButtonStyle1.set(optionsButton, "Options")
   Button.addCallback(optionsButton, EventType.MOUSE_CLICK, "onOptionsClick")
   bsy = bsy + yinc
   
   exitButton = Form.makeButton(this, "ExitButton", bx, bsy, bw, bh)
-  ButtonStyle.set(exitButton, "Exit")
+  ButtonStyle1.set(exitButton, "Exit")
   Button.addCallback(exitButton, EventType.MOUSE_CLICK, "onExitClick")
   bsy = bsy + yinc
 end
