@@ -1,4 +1,4 @@
-##########  SystemProperties.yml  -  specification / property explanations - last updated: 30.04.2015
+##########  SystemProperties.yml  -  specification / property explanations - last updated: 22.05.2015
 
 (Object Name):
   # type: Basic object type determining the appearance of the orbits, object markers and selectors. The color values can be modified in PathColors.yml
@@ -25,7 +25,7 @@
   # p: Longitude of the periapsis in °
   # i: Inclination in °
   # n:  Longitude of the ascending node in °
-  # a: True anomaly (starting position) in °
+  # a: Mean anomaly (starting position) in °
   # trojan: Position of co-orbital objects, uses the same period and orbital parameters than its orbital reference body, only modifies the anomaly
     # L4 - Trojan occupying lagrangian point 4 of the reference bodies orbit (a+60°)
     # L5 - Trojan occupying lagrangian point 5 of the reference bodies orbit (a-60°)
