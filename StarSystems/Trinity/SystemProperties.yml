@@ -168,7 +168,7 @@ Hyperion:
   path: GasGiants/Hyperion/properties.yml
   par: Trinity B
   t: 6.14928e+7
-  e: 0.5006
+  e: 0.0006
   i: 0
   p: 99
   a: 221

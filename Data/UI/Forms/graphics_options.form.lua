@@ -212,7 +212,7 @@ function init()
   
   -- Planet Detail
   detailPanel = getNewListPanel()
-  planetDetailSlider = SliderStyle.make("planetDetailSlider", 0, 6, "onPlanetDetailChange")
+  planetDetailSlider = SliderStyle.make("planetDetailSlider", 1, 6, "onPlanetDetailChange")
   alignSlider(planetDetailSlider, detailPanel)
   
   planetDetailLabel = LabelStyle.make("planetDetailLabel", "")
