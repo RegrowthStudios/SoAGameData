@@ -26,7 +26,7 @@ void main() {
 	vec3 normal = normalize(fPosition);
 	float light = dot(normal, unLightDirWorld);
 	
-	vec4 noisePosition = vec4(fPosition * unNoiseScale * 0.0004, unTime * 0.0005);
+	vec4 noisePosition = vec4(fPosition * unNoiseScale * 0.0004, unTime * 0.5);
 	float noise = noise(noisePosition, 3, 8.0, 0.5);
 	float rnoise = ridgedNoise(noisePosition, 3, 1.0, 0.5);
 	rnoise = abs(rnoise) - (1.0 - unDensity);
