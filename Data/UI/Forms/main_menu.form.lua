@@ -27,6 +27,9 @@ function init()
   GameOptionsForm = makeForm("GameOptionsForm", "Data/UI/Forms/game_options.form.lua")
   Form.disable(GameOptionsForm)
   
+  -- Overlay
+  overlayForm = makeForm("PlanetOverlay", "Data/UI/Forms/planet_overlay.form.lua")
+  
   bw = 800 -- button width
   bh = 40 -- button height
   bx = 60 -- button X
