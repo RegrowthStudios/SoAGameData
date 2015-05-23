@@ -12,3 +12,9 @@ gasGiant:
     km: 0.002
     g: -0.99
     waveLength: [0.65, 0.57, 0.475]
+  rings:
+    - innerRadius: 86095.0
+      outerRadius: 122095.0
+      aTilt: 15.0
+      lNorth: 0.0
+      colorLookup: GasGiants/Hyperion/ring.png
