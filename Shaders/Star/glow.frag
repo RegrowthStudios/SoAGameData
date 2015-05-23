@@ -1,5 +1,4 @@
 // Uniforms
-uniform sampler2D unTextureOverlay;
 uniform sampler2D unColorMap;
 uniform float unNoiseZ;
 uniform float unColorMapU;
@@ -34,16 +33,19 @@ void main() {
     float spikeBrightness = brightness * spikeMult2 * clamp(spikeVal, 0.0, 1.0);
     
     vec3 ovCol = vec3(pow(1.0 - dist, 2.5) * (dist) * 3.0) * (unColorMapU + spikeNoise * spikeMult2);
-
+    float centerglow = 1.0 / pow(dist + 0.96, 40.0);
+    
 	// Calculate color
     vec3 temperatureColor = texture(unColorMap, vec2(unColorMapU, 1.0 - (brightness + ovCol.r) + 0.125)).rgb;
 
     vec3 color = temperatureColor * unColorMult;
 
     vec2 ap = abs(fPosition);
-    float hRay = ((0.0002 - ap.y * ap.y) * 400.0 - max(ap.x * 0.2 - 0.1, 0.0));
-    hRay = max(hRay, 0.0);
-    pColor = vec4(color * (brightness + spikeBrightness + hRay + ovCol.r), 1.0);
+
+    float hRay = (1.0 - (1.0 / (1.0 + exp(-((ap.y * 30.0 + 0.2) * 4 * 3.1415926) + 2 * 3.1415926))) - max(ap.x - 0.1, 0.0));
+    hRay = max(hRay * 0.2, 0.0);
+
+    pColor = vec4(color * (brightness + centerglow + spikeBrightness + hRay + ovCol.r), 1.0);
     
     // Reverse the gamma
     pColor.rgb *= pColor.rgb;
