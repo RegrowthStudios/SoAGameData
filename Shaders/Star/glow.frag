@@ -32,11 +32,12 @@ void main() {
     brightness = max(brightness, 0.0);
     float spikeBrightness = brightness * spikeMult2 * clamp(spikeVal, 0.0, 1.0);
     
-    vec3 ovCol = vec3(pow(1.0 - dist, 2.5) * (dist) * 3.0) * (unColorMapU + spikeNoise * spikeMult2);
+    float ovCol = (pow(1.0 - dist, 2.5) * (dist) * 3.0) * (unColorMapU + spikeNoise * spikeMult2);
+    ovCol = max(ovCol, 0.0);
     float centerglow = 1.0 / pow(dist + 0.96, 40.0);
     
 	// Calculate color
-    vec3 temperatureColor = texture(unColorMap, vec2(unColorMapU, 1.0 - (brightness + ovCol.r) + 0.125)).rgb;
+    vec3 temperatureColor = texture(unColorMap, vec2(unColorMapU, 1.0 - (brightness + ovCol) + 0.125)).rgb;
 
     vec3 color = temperatureColor * unColorMult;
 
@@ -45,7 +46,7 @@ void main() {
     float hRay = (1.0 - (1.0 / (1.0 + exp(-((ap.y * 30.0 + 0.2) * 4 * 3.1415926) + 2 * 3.1415926))) - max(ap.x - 0.1, 0.0));
     hRay = max(hRay * 0.2, 0.0);
 
-    pColor = vec4(color * (brightness + centerglow + spikeBrightness + hRay + ovCol.r), 1.0);
+    pColor = vec4(color * (brightness + centerglow + spikeBrightness + hRay + ovCol), 1.0);
     
     // Reverse the gamma
     pColor.rgb *= pColor.rgb;

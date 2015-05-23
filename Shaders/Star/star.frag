@@ -7,17 +7,17 @@ in vec3 fPosition;
 
 out vec4 pColor;
 
-#include "Shaders/Noise/snoise4.glsl"
+#include "Shaders/Noise/snoise3.glsl"
 
 void main() {
-    vec4 position = vec4(fPosition, unDT);
+    vec3 position = fPosition + unDT * 10.0;
     float n = (noise(position, 4, 40.0, 0.7) + 1.0) * 0.5;
 
     // Get worldspace position
-    vec4 sPosition = position * unRadius;
+    vec3 sPosition = position * unRadius;
     
     // Sunspots
-    float s = 0.2;
+    float s = 0.36;
     float frequency = 0.00001;
     float t1 = snoise(sPosition * frequency) - s;
     float t2 = snoise((sPosition + unRadius) * frequency) - s;
@@ -27,5 +27,5 @@ void main() {
 	
 	float theta = 1.0 - dot(unCenterDir, fPosition);
 	
-    pColor = vec4(unColor + total - theta, 1.0);
+    pColor = vec4(unColor + (total - 0.5) - theta, 1.0);
 }
