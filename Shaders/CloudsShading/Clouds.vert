@@ -1,5 +1,6 @@
 // Uniforms
 uniform mat4 unWVP;
+uniform float unOuterRadius;
 
 // Input
 in vec4 vPosition; // Position on unit icosphere
@@ -8,6 +9,6 @@ in vec4 vPosition; // Position on unit icosphere
 out vec3 fPosition;
 
 void main() {
-  gl_Position =  unWVP * vPosition;
-  fPosition = vPosition.xyz;
+  gl_Position = unWVP * vPosition;
+  fPosition = vPosition.xyz * unOuterRadius;
 }

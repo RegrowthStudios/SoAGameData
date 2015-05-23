@@ -19,14 +19,14 @@ out vec4 pColor;
 
 void main() {
 	scatter(fPosition);
-	float theta = dot(unLightDirWorld, unCameraPos);
+	float theta = dot(unLightDirWorld, sRay);
     float miePhase = ((1.0 - unG2) / (2.0 + unG2)) * (1.0 + theta * theta) / pow(1.0 + unG2 - 2.0 * unG * theta, 1.5);
     vec3 scatterColor = sPrimaryColor + miePhase * sSecondaryColor;
     
 	vec3 normal = normalize(fPosition);
 	float light = dot(normal, unLightDirWorld);
 	
-	vec4 noisePosition = vec4(fPosition * unNoiseScale, unTime * 0.0005);
+	vec4 noisePosition = vec4(fPosition * unNoiseScale * 0.0004, unTime * 0.0005);
 	float noise = noise(noisePosition, 3, 8.0, 0.5);
 	float rnoise = ridgedNoise(noisePosition, 3, 1.0, 0.5);
 	rnoise = abs(rnoise) - (1.0 - unDensity);
