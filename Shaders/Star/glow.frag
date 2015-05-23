@@ -18,21 +18,22 @@ void main() {
     // ========== Change These =========
     const float spikeFrequency = 15.5;
     const float spikeShift = 0.2;
-    const float spikeMult2 = 0.04;
+    const float spikeMult2 = 0.02;
     // =================================
 
     vec2 fTex = (vec2(fPosition.x, fPosition.y) + 1.0) / 2.0;
     
     vec2 nDistVec = normalize(fPosition);
-    float spikeVal = snoise(vec3(nDistVec, unNoiseZ) * spikeFrequency) + spikeShift;
+    float spikeNoise = snoise(vec3(nDistVec, unNoiseZ) * spikeFrequency);
+    float spikeVal = spikeNoise + spikeShift;
     
     float dist = length(fPosition);
     // Calculate brightness based on distance
     float brightness = (1.0 / (dist + 0.08)) * 0.17 - 0.18;
     brightness = max(brightness, 0.0);
     float spikeBrightness = brightness * spikeMult2 * clamp(spikeVal, 0.0, 1.0);
-
-    vec3 ovCol = texture(unTextureOverlay, fTex).rgb * unColorMapU;
+    
+    vec3 ovCol = vec3(pow(1.0 - dist, 2.5) * (dist) * 3.0) * (unColorMapU + spikeNoise * spikeMult2);
 
 	// Calculate color
     vec3 temperatureColor = texture(unColorMap, vec2(unColorMapU, 1.0 - (brightness + ovCol.r) + 0.125)).rgb;
@@ -40,7 +41,7 @@ void main() {
     vec3 color = temperatureColor * unColorMult;
 
     vec2 ap = abs(fPosition);
-    float hRay = (0.0002 - ap.y * ap.y) * 400.0 - max(ap.x * 0.2 - 0.1, 0.0);
+    float hRay = ((0.0002 - ap.y * ap.y) * 400.0 - max(ap.x * 0.2 - 0.1, 0.0));
     hRay = max(hRay, 0.0);
     pColor = vec4(color * (brightness + spikeBrightness + hRay + ovCol.r), 1.0);
     
