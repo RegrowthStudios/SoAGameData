@@ -24,7 +24,7 @@ out vec4 pColor;
 
 void main() {
 	vec3 normal = normalize(fPosition);
-	float light = dot(normal, unLightDirWorld);
+	float light = dot(normal, unLightDirWorld) + 0.08;
 	
 	vec4 noisePosition = vec4(fPosition * unNoiseScale * 0.0004, unTime * 0.05);
 	float noise = noise(noisePosition, 3, 8.0, 0.5);
@@ -40,5 +40,5 @@ void main() {
     float miePhase = ((1.0 - unG2) / (2.0 + unG2)) * (1.0 + theta * theta) / pow(1.0 + unG2 - 2.0 * unG * theta, 1.5);
     vec3 scatterColor = fPrimaryColor + miePhase * fSecondaryColor;
 
-	pColor = vec4(max(unColor * ((thickness + 0.5) * light), 0.0) * 2.0 + scatterColor * 1.5, clamp(thickness, 0.0, 1.0) * minViewDistance);
+	pColor = vec4(max(unColor * ((thickness + 0.5) * light), 0.0) * 2.0 + scatterColor * 3.5, clamp(thickness, 0.0, 1.0) * minViewDistance);
 }
