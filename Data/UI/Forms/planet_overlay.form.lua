@@ -10,9 +10,9 @@ panelCounter = 0
 function getNewListPanel()
   local p = Form.makePanel(this, "Panel" .. panelCounter, 0, 0, 10, 10)
   panelCounter = panelCounter + 1
-  Panel.setDimensionsPercentage(p, 1.0, 0.05)
+  Panel.setWidthPercentage(p, 1.0)
   Panel.setClippingEnabled(p, false)
-  Panel.setMinSize(p, 300, 50)
+  Panel.setMinSize(p, 300, 30)
   addWidgetToList(p)
   return p
 end
@@ -46,8 +46,6 @@ function init()
   
   -- Widget list
   widgetList = Form.makeWidgetList(this, "widgetList", 0, 0, 1000, 1000)
- -- WidgetList.setBackColor(widgetList, 64, 64, 64, 128)
-  WidgetList.setBackHoverColor(widgetList, 64, 64, 64, 128)
   WidgetList.setPositionPercentage(widgetList, 0.7, 0.03)
   WidgetList.setDimensionsPercentage(widgetList, 0.3, 0.9)
   WidgetList.setMinSize(widgetList, 300, 100)
