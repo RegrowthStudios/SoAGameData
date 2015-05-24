@@ -2,7 +2,7 @@ gasGiant:
   diameter: 154190.0
   mass: 9.1375e+27
   aTilt: 2.15
-  lNorth: 0.0
+  lNorth: 27
   rotationalPeriod: 8.33333333333333333
   oblateness: 0.05
   colorMap: GasGiants/Hyperion/color.png
@@ -15,6 +15,6 @@ gasGiant:
   rings:
     - innerRadius: 86095.0
       outerRadius: 122095.0
-      aTilt: 5.0
-      lNorth: 90.0
+      aTilt: 0.0
+      lNorth: 0.0
       colorLookup: GasGiants/Hyperion/ring.png
