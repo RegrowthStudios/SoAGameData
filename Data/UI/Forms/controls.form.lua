@@ -1,9 +1,10 @@
-ButtonStyle1 = require "Data/UI/button_style_1"
-ButtonStyle2 = require "Data/UI/button_style_2"
-LabelStyle = require "Data/UI/label_style"
+local ButtonStyle1 = require "Data/UI/button_style_1"
+local ButtonStyle2 = require "Data/UI/button_style_2"
+local LabelStyle = require "Data/UI/label_style"
 
 function onBackClick()
-  changeFormString("main")
+  Form.disable(this)
+  enableForm("main")
 end
 
 function onRestoreClick()

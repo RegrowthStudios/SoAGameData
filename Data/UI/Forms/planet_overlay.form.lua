@@ -1,4 +1,4 @@
-LabelStyle = require "Data/UI/label_style"
+local LabelStyle = require "Data/UI/label_style"
 
 local nameLabel = {}
 
@@ -26,14 +26,14 @@ end
 
 function updateUI(t) 
   if t == 0 then
-    disableForm(this)
+    Form.disable(this)
   else
-    enableForm(this)
+    Form.enable(this)
     Label.setText(nameLabel, Space.getBodyName(t))
-    Label.setText(massLabel, Space.getBodyMass(t))
-    Label.setText(diameterLabel, "Diameter (KM): " .. Space.getBodyDiameter(t))
-    Label.setText(rotPeriodLabel, "Rotational Period (s): " .. Space.getBodyRotPeriod(t))
-    Label.setText(tiltLabel, "Axial Tilt: " .. Space.getBodyAxialTilt(t))
+    Label.setText(massLabel, string.format("Mass : %.2e", Space.getBodyMass(t)))
+    Label.setText(diameterLabel, string.format("Diameter (KM): %.2f", Space.getBodyDiameter(t)))
+    Label.setText(rotPeriodLabel, string.format("Day (Hours): %.2f", Space.getBodyRotPeriod(t) / 3600.0))
+    Label.setText(tiltLabel, string.format("Axial Tilt: %.2f", Space.getBodyAxialTilt(t)))
   end
 end
 
@@ -46,16 +46,15 @@ function init()
   
   -- Widget list
   widgetList = Form.makeWidgetList(this, "widgetList", 0, 0, 1000, 1000)
-  WidgetList.setBackColor(widgetList, 64, 64, 64, 128)
+ -- WidgetList.setBackColor(widgetList, 64, 64, 64, 128)
   WidgetList.setBackHoverColor(widgetList, 64, 64, 64, 128)
   WidgetList.setPositionPercentage(widgetList, 0.7, 0.03)
-  WidgetList.setDimensionsPercentage(widgetList, 0.3, 0.8)
-  --WidgetList.setMinSize(widgetList, 100, 100)
-  --WidgetList.setMaxSize(widgetList, 1200, 1200)
+  WidgetList.setDimensionsPercentage(widgetList, 0.3, 0.9)
+  WidgetList.setMinSize(widgetList, 300, 100)
   WidgetList.setAutoScroll(widgetList, true)
   
   namePanel = getNewListPanel()
-  nameLabel = LabelStyle.make("nameLabel", "Name Goes Here")
+  nameLabel = LabelStyle.make("nameLabel", "")
   alignLabel(nameLabel, namePanel)
   Label.setXPercentage(nameLabel, 0.5)
   Label.setWidgetAlign(nameLabel, WidgetAlign.CENTER)
@@ -63,19 +62,19 @@ function init()
   Label.setTextScale(nameLabel, 0.8, 0.8)
   
   diameterPanel = getNewListPanel()
-  diameterLabel = LabelStyle.make("diameterLabel", "Diameter (KM): ")
+  diameterLabel = LabelStyle.make("diameterLabel", "")
   alignLabel(diameterLabel, diameterPanel)
   
   massPanel = getNewListPanel()
-  massLabel = LabelStyle.make("massLabel", "Mass (KG): ")
+  massLabel = LabelStyle.make("massLabel", "")
   alignLabel(massLabel, massPanel)
   
   rotPeriodPanel = getNewListPanel()
-  rotPeriodLabel = LabelStyle.make("rotPeriodLabel", "Rotational Period (s): ")
+  rotPeriodLabel = LabelStyle.make("rotPeriodLabel", "")
   alignLabel(rotPeriodLabel, rotPeriodPanel)
   
   tiltPanel = getNewListPanel()
-  tiltLabel = LabelStyle.make("tiltLabel", "Axial Tilt: ")
+  tiltLabel = LabelStyle.make("tiltLabel", "")
   alignLabel(tiltLabel, tiltPanel)
   
   updateUI(Space.getTargetBody())

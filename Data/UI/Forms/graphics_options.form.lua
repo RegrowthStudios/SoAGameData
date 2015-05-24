@@ -1,8 +1,8 @@
-ButtonStyle1 = require "Data/UI/button_style_1"
-SliderStyle = require "Data/UI/slider_style"
-CheckBoxStyle = require "Data/UI/check_box_style"
-ComboBoxStyle = require "Data/UI/combo_box_style"
-LabelStyle = require "Data/UI/label_style"
+local ButtonStyle1 = require "Data/UI/button_style_1"
+local SliderStyle = require "Data/UI/slider_style"
+local CheckBoxStyle = require "Data/UI/check_box_style"
+local ComboBoxStyle = require "Data/UI/combo_box_style"
+local LabelStyle = require "Data/UI/label_style"
 
 local gammaSlider = {}
 local gammaLabel = {}
@@ -10,12 +10,14 @@ local windowModeComboBox = {}
 local widgetList = {}
 
 function onGameOptionsClick()
-  changeFormString("GameOptionsForm")
+  Form.disable(this)
+  enableForm("GameOptionsForm")
 end
 Vorb.register("onGameOptionsClick", onGameOptionsClick)
 
 function onBackClick()
-  changeFormString("main")
+  Form.disable(this)
+  enableForm("main")
 end
 Vorb.register("onBackClick", onBackClick)
 
@@ -29,7 +31,7 @@ Vorb.register("onRestoreClick", onRestoreClick)
 function onGammaChange(i)
   gamma = i / 1000.0
   Options.setFloat("Gamma", gamma)
-  Label.setText(gammaLabel, "Gamma: " .. round(gamma, 2))
+  Label.setText(gammaLabel, string.format("Gamma: %.2f", gamma))
   Options.save()
 end
 Vorb.register("onGammaChange", onGammaChange)
@@ -93,12 +95,6 @@ function onResolutionChange(s)
 end
 Vorb.register("onResolutionChange", onResolutionChange)
 
--- Rounds to a given number of decimal places
-function round(num, idp)
-  local mult = 10^(idp or 0)
-  return math.floor(num * mult + 0.5) / mult
-end
-
 -- Called if Options are changed on the C++ side.
 function onOptionsChanged()
   setValues()
@@ -109,7 +105,7 @@ function setValues()
   -- Gamma
   local gamma = Options.getFloat("Gamma")
   Slider.setValue(gammaSlider, gamma * 1000.0)
-  Label.setText(gammaLabel, "Gamma: " .. round(gamma, 2))
+  Label.setText(gammaLabel, string.format("Gamma: %.2f", gamma))
   
   -- Planet Detail
   local planetDetail = Options.getInt("Planet Detail")

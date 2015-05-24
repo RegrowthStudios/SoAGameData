@@ -1,17 +1,19 @@
-ButtonStyle1 = require "Data/UI/button_style_1"
-SliderStyle = require "Data/UI/slider_style"
-CheckBoxStyle = require "Data/UI/check_box_style"
-ComboBoxStyle = require "Data/UI/combo_box_style"
-LabelStyle = require "Data/UI/label_style"
+local ButtonStyle1 = require "Data/UI/button_style_1"
+local SliderStyle = require "Data/UI/slider_style"
+local CheckBoxStyle = require "Data/UI/check_box_style"
+local ComboBoxStyle = require "Data/UI/combo_box_style"
+local LabelStyle = require "Data/UI/label_style"
 
 function onGraphicsOptionsClick()
-  changeFormString("GraphicsOptionsForm")
+  Form.disable(this)
+  enableForm("GraphicsOptionsForm")
 end
 Vorb.register("onGraphicsOptionsClick", onGraphicsOptionsClick)
 
 function onBackClick()
-  Options.save(); -- TODO Prompt for save
-  changeFormString("main")
+  Options.save(); -- TODO Prompt for save?
+  Form.disable(this)
+  enableForm("main")
 end
 Vorb.register("onBackClick", onBackClick)
 
