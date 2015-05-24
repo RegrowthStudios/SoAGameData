@@ -7,14 +7,16 @@ function addWidgetToList(w)
 end
 
 panelCounter = 0
-function getNewListPanel()
+function newPanel()
   local p = Form.makePanel(this, "Panel" .. panelCounter, 0, 0, 10, 10)
-  panelCounter = panelCounter + 1
   Panel.setWidthPercentage(p, 1.0)
   Panel.setClippingEnabled(p, false)
   Panel.setMinSize(p, 300, 30)
   addWidgetToList(p)
-  return p
+  local l = LabelStyle.make("Label" .. panelCounter, "")
+  panelCounter = panelCounter + 1
+  alignLabel(l, p)
+  return {panel = p, label = l}
 end
 
 function alignLabel(l, p)
@@ -29,11 +31,11 @@ function updateUI(t)
     Form.disable(this)
   else
     Form.enable(this)
-    Label.setText(nameLabel, Space.getBodyName(t))
-    Label.setText(massLabel, string.format("Mass : %.2e", Space.getBodyMass(t)))
-    Label.setText(diameterLabel, string.format("Diameter (KM): %.2f", Space.getBodyDiameter(t)))
-    Label.setText(rotPeriodLabel, string.format("Day (Hours): %.2f", Space.getBodyRotPeriod(t) / 3600.0))
-    Label.setText(tiltLabel, string.format("Axial Tilt: %.2f", Space.getBodyAxialTilt(t)))
+    Label.setText(namePanel.label, Space.getBodyName(t))
+    Label.setText(massPanel.label, string.format("Mass : %.2e", Space.getBodyMass(t)))
+    Label.setText(diameterPanel.label, string.format("Diameter (KM): %.2f", Space.getBodyDiameter(t)))
+    Label.setText(rotPeriodPanel.label, string.format("Day (Hours): %.2f", Space.getBodyRotPeriod(t) / 3600.0))
+    Label.setText(tiltPanel.label, string.format("Axial Tilt: %.2f", Space.getBodyAxialTilt(t)))
   end
 end
 
@@ -51,30 +53,16 @@ function init()
   WidgetList.setMinSize(widgetList, 300, 100)
   WidgetList.setAutoScroll(widgetList, true)
   
-  namePanel = getNewListPanel()
-  nameLabel = LabelStyle.make("nameLabel", "")
-  alignLabel(nameLabel, namePanel)
-  Label.setXPercentage(nameLabel, 0.5)
-  Label.setWidgetAlign(nameLabel, WidgetAlign.CENTER)
-  Label.setTextAlign(nameLabel, TextAlign.CENTER)
-  Label.setTextScale(nameLabel, 0.8, 0.8)
+  namePanel = newPanel();
+  Label.setXPercentage(namePanel.label, 0.5)
+  Label.setWidgetAlign(namePanel.label, WidgetAlign.CENTER)
+  Label.setTextAlign(namePanel.label, TextAlign.CENTER)
+  Label.setTextScale(namePanel.label, 0.8, 0.8)
   
-  diameterPanel = getNewListPanel()
-  diameterLabel = LabelStyle.make("diameterLabel", "")
-  alignLabel(diameterLabel, diameterPanel)
-  
-  massPanel = getNewListPanel()
-  massLabel = LabelStyle.make("massLabel", "")
-  alignLabel(massLabel, massPanel)
-  
-  rotPeriodPanel = getNewListPanel()
-  rotPeriodLabel = LabelStyle.make("rotPeriodLabel", "")
-  alignLabel(rotPeriodLabel, rotPeriodPanel)
-  
-  tiltPanel = getNewListPanel()
-  tiltLabel = LabelStyle.make("tiltLabel", "")
-  alignLabel(tiltLabel, tiltPanel)
-  
+  diameterPanel = newPanel()
+  massPanel = newPanel()
+  rotPeriodPanel = newPanel()
+  tiltPanel = newPanel()
   updateUI(Space.getTargetBody())
 end
 
