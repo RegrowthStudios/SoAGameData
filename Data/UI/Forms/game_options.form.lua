@@ -5,13 +5,13 @@ ComboBoxStyle = require "Data/UI/combo_box_style"
 LabelStyle = require "Data/UI/label_style"
 
 function onGraphicsOptionsClick()
-  changeForm("GraphicsOptionsForm")
+  changeFormString("GraphicsOptionsForm")
 end
 Vorb.register("onGraphicsOptionsClick", onGraphicsOptionsClick)
 
 function onBackClick()
   Options.save(); -- TODO Prompt for save
-  changeForm("main")
+  changeFormString("main")
 end
 Vorb.register("onBackClick", onBackClick)
 

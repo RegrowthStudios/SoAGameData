@@ -3,7 +3,7 @@ ButtonStyle2 = require "Data/UI/button_style_2"
 LabelStyle = require "Data/UI/label_style"
 
 function onBackClick()
-  changeForm("main")
+  changeFormString("main")
 end
 
 function onRestoreClick()

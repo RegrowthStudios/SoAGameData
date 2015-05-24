@@ -2,13 +2,13 @@ ButtonStyle1 = require "Data/UI/button_style_1"
 
 function onControlsClick()
   Options.beginContext()
-  changeForm("ControlsForm")
+  changeForm(ControlsForm)
 end
 Vorb.register("onControlsClick", onControlsClick)
 
 function onOptionsClick()
   Options.beginContext()
-  changeForm("GraphicsOptionsForm")
+  changeForm(GraphicsOptionsForm)
 end
 Vorb.register("onOptionsClick", onOptionsClick)
 
@@ -21,11 +21,8 @@ function init()
   Options.beginContext()
   -- Make other forms
   GraphicsOptionsForm = makeForm("GraphicsOptionsForm", "Data/UI/Forms/graphics_options.form.lua")
-  Form.disable(GraphicsOptionsForm)
   ControlsForm = makeForm("ControlsForm", "Data/UI/Forms/controls.form.lua")
-  Form.disable(ControlsForm)
   GameOptionsForm = makeForm("GameOptionsForm", "Data/UI/Forms/game_options.form.lua")
-  Form.disable(GameOptionsForm)
   
   -- Overlay
   overlayForm = makeForm("PlanetOverlay", "Data/UI/Forms/planet_overlay.form.lua")
@@ -51,5 +48,7 @@ function init()
   ButtonStyle1.set(exitButton, "Exit")
   Button.addCallback(exitButton, EventType.MOUSE_CLICK, "onExitClick")
   bsy = bsy + yinc
+  
+  enableForm(this) -- TODO(Ben): Potential bug here
 end
 Vorb.register("init", init)

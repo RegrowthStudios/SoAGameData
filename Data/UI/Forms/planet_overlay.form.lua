@@ -20,22 +20,27 @@ end
 function alignLabel(l, p)
   Label.setPositionPercentage(l, 0.03, 0.5) 
   Label.setWidthPercentage(l, 0.65) 
-  Label.setTextScale(l, 0.6, 0.6)
+  Label.setTextScale(l, 0.55, 0.55)
   Label.setParent(l, p)
 end
 
 function updateUI(t) 
   if t == 0 then
-    Form.disable(this)
+    disableForm(this)
   else
-    Form.enable(this)
+    enableForm(this)
+    Label.setText(nameLabel, Space.getBodyName(t))
+    Label.setText(massLabel, Space.getBodyMass(t))
+    Label.setText(diameterLabel, "Diameter (KM): " .. Space.getBodyDiameter(t))
+    Label.setText(rotPeriodLabel, "Rotational Period (s): " .. Space.getBodyRotPeriod(t))
+    Label.setText(tiltLabel, "Axial Tilt: " .. Space.getBodyAxialTilt(t))
   end
 end
 
 function onTargetChange(t)
-  
   updateUI(t)
 end
+Vorb.register("onTargetChange", onTargetChange)
 
 function init()
   
@@ -70,10 +75,10 @@ function init()
   alignLabel(rotPeriodLabel, rotPeriodPanel)
   
   tiltPanel = getNewListPanel()
-  tiltLabel = LabelStyle.make("tiltLabel", "Axial Tilt:")
+  tiltLabel = LabelStyle.make("tiltLabel", "Axial Tilt: ")
   alignLabel(tiltLabel, tiltPanel)
   
-  updateUI(0)
+  updateUI(Space.getTargetBody())
 end
 
 Vorb.register("init", init)

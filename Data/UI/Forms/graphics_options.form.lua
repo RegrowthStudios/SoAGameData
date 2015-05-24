@@ -10,12 +10,12 @@ local windowModeComboBox = {}
 local widgetList = {}
 
 function onGameOptionsClick()
-  changeForm("GameOptionsForm")
+  changeFormString("GameOptionsForm")
 end
 Vorb.register("onGameOptionsClick", onGameOptionsClick)
 
 function onBackClick()
-  changeForm("main")
+  changeFormString("main")
 end
 Vorb.register("onBackClick", onBackClick)
 
