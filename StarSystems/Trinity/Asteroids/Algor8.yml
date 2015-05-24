@@ -1,3 +1,5 @@
 planet:
   diameter: 20.0
   mass: 2.9861e+15
+  aTilt: 1.72
+  lNorth: 308

@@ -1,5 +1,8 @@
 star:
   surfaceTemperature: 5813
+  lumClass: V
   diameter: 1697000.0
   mass: 2.18724e+30
-  axis: [0.0, 1.0, 0.0]
+  aTilt: 2.27
+  lNorth: 0
+  rotationalPeriod: 912
