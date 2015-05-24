@@ -14,10 +14,10 @@ out vec3 fEyeDir;
 #include "Shaders/AtmosphereShading/scatter.glsl"
 
 void main() {
-  gl_Position = unWVP * vPosition;
-  fPosition = vPosition.xyz * unCloudsRadius;
-  scatter(fPosition);
-  fPrimaryColor = sPrimaryColor;
-  fSecondaryColor = sSecondaryColor;
-  fEyeDir = normalize(-sRay);
+    gl_Position = unWVP * vPosition;
+    fPosition = vPosition.xyz * unCloudsRadius;
+    scatter(fPosition);
+    fPrimaryColor = sPrimaryColor;
+    fSecondaryColor = sSecondaryColor;
+    fEyeDir = normalize(-sRay);
 }
