@@ -17,9 +17,9 @@ void main() {
   float u = (len - unInnerRadius) / (unOuterRadius - unInnerRadius);
   vec4 ringColor = texture(unColorLookup, vec2(u, 0.0)).rgba;
   
-  if (sphereIntersect(normalize(unLightPos - fWorldPosition), fWorldPosition, unPlanetPos, unPlanetRadius) > 3.0) {
-    ringColor.rgb *= 0.01;
-  }
-
+  const float smoothingAmount = 100.0;
+  float shadow = clamp(-sphereIntersectAmount(normalize(fWorldPosition - unLightPos), fWorldPosition, unPlanetPos, unPlanetRadius) / smoothingAmount, 0.0, 1.0);
+  ringColor.rgb *= 1.0 - shadow;
+  
   pColor = ringColor;
 }

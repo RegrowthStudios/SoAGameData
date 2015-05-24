@@ -29,3 +29,11 @@ float sphereIntersect(vec3 raydir, vec3 rayorig, vec3 pos, float rad) {
     }
     return 4.0;
 }
+
+float sphereIntersectAmount(vec3 raydir, vec3 rayorig, vec3 pos, float rad) {
+    float sphereDistance = dot(raydir, pos) - dot(raydir, rayorig);
+	if (sphereDistance > 0.0) return 0.0;
+	vec3 closestPoint = sphereDistance * raydir + rayorig;
+	float distanceToSphere = length(closestPoint - pos);
+	return distanceToSphere - rad;
+}
