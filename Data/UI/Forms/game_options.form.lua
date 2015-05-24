@@ -8,7 +8,7 @@ local volumeLabel = {}
 function onVolumeChange(i)
   volume = i / 100.0
   Options.setFloat("Music Volume", volume)
-  Label.setText(volumeLabel, string.format("Music Volume: %f", i))
+  Label.setText(volumeLabel, string.format("Music Volume: %.0f", i))
   Options.save()
 end
 Vorb.register("onVolumeChange", onVolumeChange)
@@ -23,6 +23,7 @@ function onBackClick()
   Options.save(); -- TODO Prompt for save?
   Form.disable(this)
   enableForm("main")
+  enableForm("PlanetOverlay")
 end
 Vorb.register("onBackClick", onBackClick)
 
@@ -42,7 +43,7 @@ function setValues()
 -- Gamma
   local volume = Options.getFloat("Music Volume")
   Slider.setValue(volumeSlider, volume * 100.0)
-  Label.setText(volumeLabel, string.format("Music Volume: %f", volume * 100.0))
+  Label.setText(volumeLabel, string.format("Volume: %.0f", volume * 100.0))
 end
 
 function addWidgetToList(w)
@@ -105,6 +106,17 @@ function init()
 
   volumeLabel = LabelStyle.make("volumeLabel", "")
   alignLabel(volumeLabel, volumePanel)
+  
+   -- Bottom buttons
+  bottomPanel = getNewListPanel()
+  Panel.setMinSize(bottomPanel, 100.0, 100.0)
+  backButton = ButtonStyle1.make("backButton", "Back", "onBackClick")
+  Button.setPositionPercentage(backButton, 0.03, 0.0) 
+  Button.setParent(backButton, bottomPanel)
+  
+  restoreButton = ButtonStyle1.make("restoreButton", "Restore Defaults", "onRestoreClick")
+  Button.setPositionPercentage(restoreButton, 0.03, 0.5) 
+  Button.setParent(restoreButton, bottomPanel)
  
   setValues()
 end

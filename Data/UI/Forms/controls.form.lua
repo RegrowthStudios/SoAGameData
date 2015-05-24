@@ -5,6 +5,7 @@ local LabelStyle = require "Data/UI/label_style"
 function onBackClick()
   Form.disable(this)
   enableForm("main")
+  enableForm("PlanetOverlay")
 end
 
 function onRestoreClick()
@@ -81,6 +82,12 @@ function init()
   WidgetList.setMaxSize(widgetList, 1200, 1200)
   WidgetList.setWidgetAlign(widgetList, WidgetAlign.TOP)
   WidgetList.setAutoScroll(widgetList, true)
+  
+  local p = getNewListPanel()
+  Panel.setMinSize(p, 300, 60)
+  local sorryLabel = LabelStyle.make("sorryLabel", "* You can't rebind controls yet, sorry! *")
+  alignLabel(sorryLabel, p)
+  Label.setWidthPercentage(sorryLabel, 1.0)
   
   initControls()
   

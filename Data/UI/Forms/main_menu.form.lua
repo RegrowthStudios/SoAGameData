@@ -3,6 +3,7 @@ local ButtonStyle1 = require "Data/UI/button_style_1"
 function onControlsClick()
   Options.beginContext()
   Form.disable(this)
+  Form.disable(overlayForm)
   Form.enable(ControlsForm)
 end
 Vorb.register("onControlsClick", onControlsClick)
@@ -10,6 +11,7 @@ Vorb.register("onControlsClick", onControlsClick)
 function onOptionsClick()
   Options.beginContext()
   Form.disable(this)
+  Form.disable(overlayForm)
   Form.enable(GraphicsOptionsForm)
 end
 Vorb.register("onOptionsClick", onOptionsClick)

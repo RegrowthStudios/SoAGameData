@@ -18,6 +18,7 @@ Vorb.register("onGameOptionsClick", onGameOptionsClick)
 function onBackClick()
   Form.disable(this)
   enableForm("main")
+  enableForm("PlanetOverlay")
 end
 Vorb.register("onBackClick", onBackClick)
 
