@@ -4,7 +4,6 @@ planet:
   aTilt: 0.0
   lNorth: 0.0
   generation: "Planets/Aldrin/terrain_gen.yml"
-  rotationalPeriod: 25.0
   atmosphere:
     scaleDepth: 0.25
     kr: 0.0025

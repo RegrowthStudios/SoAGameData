@@ -1,4 +1,7 @@
-##########  SystemProperties.yml  -  specification / property explanations - last updated: 22.05.2015
+##########  SystemProperties.yml  -  specification / property explanations - last updated: 24.05.2015
+
+# description: Short description/info text about the system
+# age: The system age in years ("age: 0" is equivalent to "zero-age main sequence" for the stars in the system)
 
 (Object Name):
   # type: Basic object type determining the appearance of the orbits, object markers and selectors. The color values can be modified in PathColors.yml
