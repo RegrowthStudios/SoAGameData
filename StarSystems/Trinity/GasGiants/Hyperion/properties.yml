@@ -15,6 +15,6 @@ gasGiant:
   rings:
     - innerRadius: 86095.0
       outerRadius: 122095.0
-      aTilt: 0.0
-      lNorth: 0.0
+      aTilt: 2.15
+      lNorth: 27
       colorLookup: GasGiants/Hyperion/ring.png

@@ -32,10 +32,16 @@ function updateUI(t)
   else
     Form.enable(this)
     Label.setText(namePanel.label, Space.getBodyName(t))
-    Label.setText(massPanel.label, string.format("Mass : %.2e", Space.getBodyMass(t)))
-    Label.setText(diameterPanel.label, string.format("Diameter (KM): %.2f", Space.getBodyDiameter(t)))
-    Label.setText(rotPeriodPanel.label, string.format("Day (Hours): %.2f", Space.getBodyRotPeriod(t) / 3600.0))
-    Label.setText(tiltPanel.label, string.format("Axial Tilt: %.2f", Space.getBodyAxialTilt(t)))
+    Label.setText(typePanel.label, "Type: " .. Space.getBodyTypeName(t))
+    Label.setText(massPanel.label, string.format("Mass: %.2e kg", Space.getBodyMass(t)))
+    Label.setText(diameterPanel.label, string.format("Diameter: %.1f km", Space.getBodyDiameter(t)))
+    Label.setText(rotPeriodPanel.label, string.format("Rotational Period: %.1f hours", Space.getBodyRotPeriod(t) / 3600.0))
+    Label.setText(orbPeriodPanel.label, string.format("Orbital Period: %.2f days", Space.getBodyOrbPeriod(t) / 86400.0))
+    Label.setText(tiltPanel.label, string.format("Axial Tilt: %.1f deg", Space.getBodyAxialTilt(t)))
+    Label.setText(eccentricityPanel.label, string.format("Eccentricity: %.2f", Space.getBodyEccentricity(t)))
+    Label.setText(inclinationPanel.label, string.format("Inclination: %.1f deg", Space.getBodyInclination(t)))
+    Label.setText(semiMajorPanel.label, string.format("Semi-Major axis: %.1f KM", Space.getBodySemiMajor(t)))
+    Label.setText(parentPanel.label, "Parent: " .. Space.getBodyParentName(t))
   end
 end
 
@@ -59,10 +65,16 @@ function init()
   Label.setTextAlign(namePanel.label, TextAlign.CENTER)
   Label.setTextScale(namePanel.label, 0.8, 0.8)
   
+  typePanel = newPanel()
   diameterPanel = newPanel()
   massPanel = newPanel()
   rotPeriodPanel = newPanel()
+  orbPeriodPanel = newPanel();
   tiltPanel = newPanel()
+  eccentricityPanel = newPanel()
+  inclinationPanel = newPanel()
+  semiMajorPanel = newPanel()
+  parentPanel = newPanel()
   updateUI(Space.getTargetBody())
 end
 
