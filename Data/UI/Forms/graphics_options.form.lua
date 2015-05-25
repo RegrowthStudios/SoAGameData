@@ -1,4 +1,5 @@
 local ButtonStyle1 = require "Data/UI/button_style_1"
+local ButtonStyle2 = require "Data/UI/button_style_2"
 local SliderStyle = require "Data/UI/slider_style"
 local CheckBoxStyle = require "Data/UI/check_box_style"
 local ComboBoxStyle = require "Data/UI/combo_box_style"
@@ -50,34 +51,54 @@ function onFovChange(i)
   Slider.setValue(fovSlider, i)
   Label.setText(fovLabel, "FOV: " .. i)
   Options.save()
+  checkGreyControls()
 end
 Vorb.register("onFovChange", onFovChange)
 
-function onWindowModeChange(s)
-  if s == "Fullscreen" then
-    Options.setBool("Fullscreen", true)
-	Options.setBool("Borderless Window", false)
-  elseif s == "Borderless" then
-    Options.setBool("Fullscreen", false)
-	Options.setBool("Borderless Window", true)
-  else
-    Options.setBool("Fullscreen", false)
-	Options.setBool("Borderless Window", false)
-  end
-  
-  checkGreyControls()
-  
+function onWindowedClick()
+  Options.setBool("Fullscreen", false)
+  Options.setBool("Borderless Window", false)
   Options.save()
+  checkGreyControls()
 end
-Vorb.register("onWindowModeChange", onWindowModeChange)
+Vorb.register("onWindowedClick", onWindowedClick)
+
+function onFullscreenClick()
+  Options.setBool("Fullscreen", true)
+  Options.setBool("Borderless Window", false)
+  Options.save()
+  checkGreyControls()
+end
+Vorb.register("onFullscreenClick", onFullscreenClick)
+
+function onBorderlessClick()
+  Options.setBool("Fullscreen", false)
+  Options.setBool("Borderless Window", true)
+  Options.save()
+  checkGreyControls()
+end
+Vorb.register("onBorderlessClick", onBorderlessClick)
 
 function checkGreyControls()
   local fs = Options.getBool("Fullscreen")
+  local br = Options.getBool("Borderless Window")
+  local c = 200
+  local r = 16
+  local g = 190
+  local b = 239
   -- Need to grey out some controls when in fullscreen
   if fs == true then
-	ComboBoxStyle.setDisabled(resComboBox)
+	Button.setBackColor(fullscreenButton, c, c, c, 255)
+    Button.setBackColor(borderlessButton, r, g, b, 255)
+    Button.setBackColor(windowedButton, r, g, b, 255)
+  elseif br == true then
+    Button.setBackColor(borderlessButton, c, c, c, 255)
+    Button.setBackColor(windowedButton, r, g, b, 255)
+    Button.setBackColor(fullscreenButton, r, g, b, 255)
   else
-	ComboBoxStyle.set(resComboBox)
+    Button.setBackColor(windowedButton, c, c, c, 255)
+    Button.setBackColor(borderlessButton, r, g, b, 255)
+    Button.setBackColor(fullscreenButton, r, g, b, 255)
   end
 end
 
@@ -117,15 +138,6 @@ function setValues()
   local fov = Options.getFloat("FOV")
   Slider.setValue(fovSlider, fov)
   Label.setText(fovLabel, "FOV: " .. fov)
-  
-  -- Window Mode
-  if Options.getBool("Fullscreen") == true then
-    ComboBox.setText(windowModeComboBox, "Fullscreen")
-  elseif Options.getBool("Borderless Window") == true then
-    ComboBox.setText(windowModeComboBox, "Borderless")
-  else
-    ComboBox.setText(windowModeComboBox, "Windowed")
-  end
   
   -- Resolution
   local x, y = Window.getCurrentResolution()
@@ -223,18 +235,36 @@ function init()
   fovLabel = LabelStyle.make("fovLabel", "")
   alignLabel(fovLabel, fovPanel)
   
-   -- Fullscreen
+  -- Window Mode
+  local w = 0.16
+  local xp = 0.735
+  local ts = 0.5
   windowModePanel = getNewListPanel()
-  windowModeComboBox = ComboBoxStyle.make("windowModeComboBox", "", "onWindowModeChange")
-  ComboBox.addItem(windowModeComboBox, "Fullscreen")
-  ComboBox.addItem(windowModeComboBox, "Borderless")
-  ComboBox.addItem(windowModeComboBox, "Windowed")
-  ComboBox.setMaxDropHeight(windowModeComboBox, 200.0)
-  alignComboBox(windowModeComboBox, windowModePanel)
- 
+  windowedButton = ButtonStyle2.make("windowedButton", "Windowed", "onWindowedClick")
+  Button.setWidthPercentage(windowedButton, w)
+  Button.setPositionPercentage(windowedButton, xp - w, 0.5)
+  Button.setWidgetAlign(windowedButton, WidgetAlign.CENTER)
+  Button.setTextAlign(windowedButton, TextAlign.CENTER)
+  Button.setTextScale(windowedButton, ts, ts)
+  Button.setParent(windowedButton, windowModePanel)
+  fullscreenButton = ButtonStyle2.make("fullscreenButton", "Fullscreen", "onFullscreenClick")
+  Button.setWidthPercentage(fullscreenButton, w)
+  Button.setPositionPercentage(fullscreenButton, xp, 0.5)
+  Button.setWidgetAlign(fullscreenButton, WidgetAlign.CENTER)
+  Button.setTextAlign(fullscreenButton, TextAlign.CENTER)
+  Button.setTextScale(fullscreenButton, ts, ts)
+  Button.setParent(fullscreenButton, windowModePanel)
+  borderlessButton = ButtonStyle2.make("borderlessButton", "Borderless", "onBorderlessClick")
+  Button.setWidthPercentage(borderlessButton, w)
+  Button.setPositionPercentage(borderlessButton, xp + w, 0.5)
+  Button.setWidgetAlign(borderlessButton, WidgetAlign.CENTER)
+  Button.setTextAlign(borderlessButton, TextAlign.CENTER)
+  Button.setTextScale(borderlessButton, ts, ts)
+  Button.setParent(borderlessButton, windowModePanel)
+  
   windowModeLabel = LabelStyle.make("windowModeLabel", "Window Mode")
   alignLabel(windowModeLabel, windowModePanel)
- 
+
   -- VSYNC
   vsyncPanel = getNewListPanel()
   vsyncCheckBox = CheckBoxStyle.make("vsyncCheckBox", "", "onVsyncChange")
