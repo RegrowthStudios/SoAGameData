@@ -10,7 +10,7 @@ out vec4 pColor;
 #include "Shaders/Noise/snoise3.glsl"
 
 void main() {
-    vec3 position = fPosition + unDT * 10.0;
+    vec3 position = fPosition + unDT;
     float n = (noise(position, 4, 40.0, 0.7) + 1.0) * 0.5;
 
     // Get worldspace position
