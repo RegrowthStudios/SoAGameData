@@ -1,14 +1,18 @@
-ButtonStyle1 = require "Data/UI/button_style_1"
+local ButtonStyle1 = require "Data/UI/button_style_1"
 
 function onControlsClick()
   Options.beginContext()
-  changeForm("ControlsForm")
+  Form.disable(this)
+  Form.disable(overlayForm)
+  Form.enable(ControlsForm)
 end
 Vorb.register("onControlsClick", onControlsClick)
 
 function onOptionsClick()
   Options.beginContext()
-  changeForm("GraphicsOptionsForm")
+  Form.disable(this)
+  Form.disable(overlayForm)
+  Form.enable(GraphicsOptionsForm)
 end
 Vorb.register("onOptionsClick", onOptionsClick)
 
@@ -21,13 +25,13 @@ function init()
   Options.beginContext()
   -- Make other forms
   GraphicsOptionsForm = makeForm("GraphicsOptionsForm", "Data/UI/Forms/graphics_options.form.lua")
-  Form.disable(GraphicsOptionsForm)
   ControlsForm = makeForm("ControlsForm", "Data/UI/Forms/controls.form.lua")
-  Form.disable(ControlsForm)
   GameOptionsForm = makeForm("GameOptionsForm", "Data/UI/Forms/game_options.form.lua")
-  Form.disable(GameOptionsForm)
   
-  bw = 800 -- button width
+  -- Overlay
+  overlayForm = makeForm("PlanetOverlay", "Data/UI/Forms/planet_overlay.form.lua")
+  
+  bw = 600 -- button width
   bh = 40 -- button height
   bx = 60 -- button X
   bsy = 300 -- start Y
@@ -48,5 +52,7 @@ function init()
   ButtonStyle1.set(exitButton, "Exit")
   Button.addCallback(exitButton, EventType.MOUSE_CLICK, "onExitClick")
   bsy = bsy + yinc
+  
+  Form.enable(this)
 end
 Vorb.register("init", init)
