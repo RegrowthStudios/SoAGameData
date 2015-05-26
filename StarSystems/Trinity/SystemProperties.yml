@@ -51,6 +51,121 @@ Demoleon:
   n: 333
   p: 75
   a: 200
+Palamedes:
+  type: Planet
+  path: Planets/Palamedes/properties.yml
+  par: Trinity A
+  ref: Elysion
+  td: 15
+  e: 0.0061
+  i: 0.76
+  n: 11
+  p: 189
+  a: 210
+Palamedes-1:
+  type: DwarfMoon
+  path: Asteroids/Palamedes1.yml
+  par: Palamedes
+  ref: Himerus
+  td: 44
+  e: 0.0
+  i: 1.9
+  n: 232
+  a: 190
+Palamedes-2:
+  type: DwarfMoon
+  path: Asteroids/Palamedes2.yml
+  par: Palamedes
+  ref: Himerus
+  td: 22
+  e: 0.0
+  i: 1.8
+  n: 229
+  a: 121
+Helenus:
+  type: Moon
+  path: Planets/Helenus/properties.yml
+  par: Palamedes
+  ref: Himerus
+  td: 5
+  e: 0.0175
+  i: 0
+  p: 35
+  a: 193
+Hesperus:
+  type: Moon
+  path: Planets/Hesperus/properties.yml
+  par: Palamedes
+  ref: Himerus
+  td: 2
+  e: 0.0640
+  i: 0
+  p: 317
+  a: 232
+Himerus:
+  type: Moon
+  path: Planets/Himerus/properties.yml
+  par: Palamedes
+  t: 1.368e+6
+  e: 0.0008
+  i: 0
+  p: 7
+  a: 336
+Horribilis:
+  type: Moon
+  path: Planets/Horribilis/properties.yml
+  par: Palamedes
+  ref: Himerus
+  tf: 2
+  e: 0.0269
+  i: 0
+  p: 99
+  a: 75
+Aquarius:
+  type: Planet
+  path: Planets/Aquarius/properties.yml
+  par: Trinity A
+  ref: Elysion
+  tf: 2
+  td: 15
+  e: 0.016
+  i: 1.34
+  n: 163
+  p: 43
+  a: 57
+Oedipus:
+  type: Moon
+  path: Planets/Oedipus/properties.yml
+  par: Aquarius
+  ref: Narcissus
+  tf: 2
+  td: 5
+  e: 0.0555
+  i: 8.23
+  n: 198
+  p: 289
+  a: 121
+Narcissus:
+  type: Moon
+  path: Planets/Narcissus/properties.yml
+  par: Aquarius
+  t: 2.3688e+6
+  e: 0.0088
+  i: 10.44
+  n: 195
+  p: 292
+  a: 224
+Thoas:
+  type: Planet
+  path: Planets/Thoas/properties.yml
+  par: Trinity A
+  ref: Elysion
+  td: 3
+  e: 0.0097
+  i: 1.82
+  n: 119
+  p: 342
+  a: 175
 Elysion:
   type: Planet
   path: GasGiants/Elysion/properties.yml
