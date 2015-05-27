@@ -54,8 +54,8 @@ void main() {
     vec3 blending = abs(normalize(fPosition));
     blending = normalize(max(blending, 0.00001)); // Force weights to sum to 1.0
     vec3 xPlane = normalize(texture(unNormalMap, fPosition.yz - unDt).rbg * 2.0 - 1.0);
-    vec3 yPlane = normalize(texture(unNormalMap, fPosition.xz - unDt).rbg * 2.0 - 1.0);
-    vec3 zPlane = normalize(texture(unNormalMap, fPosition.xy - unDt).rbg * 2.0 - 1.0);
+    vec3 yPlane = normalize(texture(unNormalMap, fPosition.xz + unDt).rbg * 2.0 - 1.0);
+    vec3 zPlane = normalize(texture(unNormalMap, fPosition.xy + unDt).rbg * 2.0 - 1.0);
     vec3 normal = fTbn * normalize(xPlane * blending.x + yPlane * blending.y + zPlane * blending.z);
     
     vec2 colorUV = vec2(fTemp, fDepth / unDepthScale);
@@ -64,6 +64,6 @@ void main() {
     
     float diffuse = computeDiffuse(normal); 
     float specular = computeSpecular(normal);
-    pColor = vec4(color * diffuse + 0.00001 * scatterColor * 1.5 + vec3(1.0) * specular, unAlpha);
+    pColor = vec4(color * diffuse + scatterColor * 1.5 + vec3(1.0) * specular, unAlpha);
   }
 }
