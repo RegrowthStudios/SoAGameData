@@ -11,7 +11,7 @@ uniform float unG2;
 
 // Input
 in vec3 fColor;
-in vec2 fUV;
+in vec3 fPosition;
 in float fTemp;
 in float fDepth;
 in float frozen;
@@ -43,16 +43,20 @@ void main() {
   vec3 scatterColor = fPrimaryColor + miePhase * fSecondaryColor;
   
   if (frozen > 0.5) {
-    vec3 normal = fTbn * vec3(0.0, 1.0, 0.0);
+    vec3 normal = normalize(fPosition);
     // Diffuse lighting
     float diffuse = computeDiffuse(normal);
     float specular = computeSpecular(normal);
     pColor = vec4(fColor.rgb * diffuse + scatterColor + vec3(1.0) * specular, 1.0);
   } else {
     // Overlay same water normal map multiple times for illusion of complexity
-    vec3 normal = fTbn * normalize(((texture(unNormalMap, 4.0 * (fUV + unDt)).rbg * 2.0) - 1.0) * 0.6 +
-        ((texture(unNormalMap, 2.0 * (fUV - unDt)).rbg * 2.0) - 1.0) * 0.2 + 
-        ((texture(unNormalMap, (fUV - unDt)).rbg * 2.0) - 1.0) * 0.2);
+    // Triplanar texture mapping
+    vec3 blending = abs(normalize(fPosition));
+    blending = normalize(max(blending, 0.00001)); // Force weights to sum to 1.0
+    vec3 xPlane = normalize(texture(unNormalMap, fPosition.yz - unDt).rbg * 2.0 - 1.0);
+    vec3 yPlane = normalize(texture(unNormalMap, fPosition.xz - unDt).rbg * 2.0 - 1.0);
+    vec3 zPlane = normalize(texture(unNormalMap, fPosition.xy - unDt).rbg * 2.0 - 1.0);
+    vec3 normal = fTbn * normalize(xPlane * blending.x + yPlane * blending.y + zPlane * blending.z);
     
     vec2 colorUV = vec2(fTemp, fDepth / unDepthScale);
     
@@ -60,6 +64,6 @@ void main() {
     
     float diffuse = computeDiffuse(normal); 
     float specular = computeSpecular(normal);
-    pColor = vec4(color * diffuse + scatterColor * 1.5 + vec3(1.0) * specular, unAlpha);
+    pColor = vec4(color * diffuse + 0.00001 * scatterColor * 1.5 + vec3(1.0) * specular, unAlpha);
   }
 }
