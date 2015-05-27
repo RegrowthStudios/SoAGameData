@@ -34,7 +34,7 @@ function init()
   bw = 600 -- button width
   bh = 40 -- button height
   bx = 60 -- button X
-  bsy = 300 -- start Y
+  bsy = 60 -- start Y
   yinc = bh + 1 -- Y increment
    
   -- All buttons

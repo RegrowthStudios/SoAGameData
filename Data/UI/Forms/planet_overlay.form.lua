@@ -41,6 +41,11 @@ function updateUI(t)
     Label.setText(eccentricityPanel.label, string.format("Eccentricity: %.4f", Space.getBodyEccentricity(t)))
     Label.setText(inclinationPanel.label, string.format("Inclination: %.2f deg", Space.getBodyInclination(t)))
     Label.setText(semiMajorPanel.label, string.format("Semi-major axis: %.0f km", Space.getBodySemiMajor(t)))
+    local grav = Space.getGravityAccel(t);
+    Label.setText(gravityPanel.label, string.format("Gravity: %.2f G", grav / 9.81))
+    Label.setText(accelPanel.label, string.format("Rate of acceleration: %.2f m/s/s", grav))
+    Label.setText(volumePanel.label, string.format("Volume: %.2e m3", Space.getVolume(t)))
+    Label.setText(densityPanel.label, string.format("Avg Density: %.0f kg/m3", Space.getAverageDensity(t)))
     Label.setText(parentPanel.label, "Parent: " .. Space.getBodyParentName(t))
   end
 end
@@ -75,6 +80,10 @@ function init()
   eccentricityPanel = newPanel()
   inclinationPanel = newPanel()
   parentPanel = newPanel()
+  gravityPanel = newPanel()
+  accelPanel = newPanel()
+  volumePanel = newPanel()
+  densityPanel = newPanel()
   updateUI(Space.getTargetBody())
 end
 
