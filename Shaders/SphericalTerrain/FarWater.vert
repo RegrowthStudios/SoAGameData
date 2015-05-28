@@ -9,12 +9,11 @@ uniform float unRadius;
 in vec4 vPosition; // Position in object space
 in vec3 vTangent;
 in vec4 vColor_Temp;
-in vec2 vUV;
 in float vDepth;
 
 // Output
 out vec3 fColor;
-out vec2 fUV;
+out vec3 fPosition;
 out float fTemp;
 out float fDepth;
 out float frozen; // Needed to prevent shader precision issues
@@ -67,6 +66,6 @@ void main() {
   
   fColor = vColor_Temp.rgb;
   fTemp = vColor_Temp.a;
-  fUV = vUV;
+  fPosition = vPosition.xyz;
   fDepth = vDepth;
 }

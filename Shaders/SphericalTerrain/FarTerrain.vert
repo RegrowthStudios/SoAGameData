@@ -9,7 +9,6 @@ uniform float unRadius;
 // Input
 in vec4 vPosition; // Position in object space
 in vec3 vTangent;
-in vec2 vUV;
 in vec3 vColor;
 in vec2 vNormUV;
 in vec2 vTemp_Hum;
@@ -17,7 +16,7 @@ in vec2 vTemp_Hum;
 // Output
 out vec3 fColor;
 out vec2 fNormUV;
-out vec2 fUV;
+out vec3 fPosition;
 out vec2 fTemp_Hum;
 out mat3 fTbn;
 out vec3 fEyeDir;
@@ -61,7 +60,7 @@ void main() {
   gl_Position = unVP * vec4(vpos, 1.0);
   
   fColor = vColor;
-  fUV = vUV;
+  fPosition = vPosition.xyz;
   // Move normal map UV in by 1 texel in each direction
   fNormUV = vNormUV * unNormalmapWidth + 1.1 * unTexelWidth;
   
