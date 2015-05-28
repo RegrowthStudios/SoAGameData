@@ -1,10 +1,17 @@
 local ButtonStyle1 = require "Data/UI/button_style_1"
 
+function onNewGameClick()
+  Options.beginContext()
+  Form.disable(this)
+  Form.enable(newGameForm)
+end
+Vorb.register("onNewGameClick", onNewGameClick)
+
 function onControlsClick()
   Options.beginContext()
   Form.disable(this)
   Form.disable(overlayForm)
-  Form.enable(ControlsForm)
+  Form.enable(controlsForm)
 end
 Vorb.register("onControlsClick", onControlsClick)
 
@@ -12,7 +19,7 @@ function onOptionsClick()
   Options.beginContext()
   Form.disable(this)
   Form.disable(overlayForm)
-  Form.enable(GraphicsOptionsForm)
+  Form.enable(graphicsOptionsForm)
 end
 Vorb.register("onOptionsClick", onOptionsClick)
 
@@ -24,9 +31,10 @@ Vorb.register("onExitClick", onExitClick)
 function init()
   Options.beginContext()
   -- Make other forms
-  GraphicsOptionsForm = makeForm("GraphicsOptionsForm", "Data/UI/Forms/graphics_options.form.lua")
-  ControlsForm = makeForm("ControlsForm", "Data/UI/Forms/controls.form.lua")
-  GameOptionsForm = makeForm("GameOptionsForm", "Data/UI/Forms/game_options.form.lua")
+  newGameForm = makeForm("newGameForm",  "Data/UI/Forms/new_game.form.lua")
+  graphicsOptionsForm = makeForm("graphicsOptionsForm", "Data/UI/Forms/graphics_options.form.lua")
+  controlsForm = makeForm("controlsForm", "Data/UI/Forms/controls.form.lua")
+  gameOptionsForm = makeForm("gameOptionsForm", "Data/UI/Forms/game_options.form.lua")
   
   -- Overlay
   overlayForm = makeForm("PlanetOverlay", "Data/UI/Forms/planet_overlay.form.lua")
@@ -38,6 +46,11 @@ function init()
   yinc = bh + 1 -- Y increment
    
   -- All buttons
+  newGameButton = Form.makeButton(this, "newGameButton", bx, bsy, bw, bh)
+  ButtonStyle1.set(newGameButton, "New Game")
+  Button.addCallback(newGameButton, EventType.MOUSE_CLICK, "onNewGameClick")
+  bsy = bsy + yinc
+  
   controlsButton = Form.makeButton(this, "ControlsButton", bx, bsy, bw, bh)
   ButtonStyle1.set(controlsButton, "Controls")
   Button.addCallback(controlsButton, EventType.MOUSE_CLICK, "onControlsClick")
