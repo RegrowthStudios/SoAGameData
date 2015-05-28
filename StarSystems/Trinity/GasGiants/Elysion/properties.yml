@@ -15,6 +15,6 @@ gasGiant:
   rings:
     - innerRadius: 68400.0
       outerRadius: 145085.0
-      aTilt: 21.3
-      lNorth: 75
+      aTilt: 0.0
+      lNorth: 0.0
       colorLookup: GasGiants/Elysion/ring.png

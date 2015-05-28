@@ -25,20 +25,21 @@ out vec4 pColor;
 void main() {
     vec3 normal = normalize(fPosition);
     float light = dot(normal, unLightDirWorld) + 0.08;
+	const float nScale = 1.4; // Uniform?
     
     vec4 noisePosition = vec4(fPosition * unNoiseScale * 0.0004, unTime * 0.05);
-    float noise = noise(noisePosition, 3, 8.0, 0.5);
-    float rnoise = ridgedNoise(noisePosition, 3, 1.0, 0.5);
-    rnoise = abs(rnoise) - (1.0 - unDensity);
+    float noise = noise(noisePosition, 4, 8.0, 0.5) * nScale;
+    float rnoise = ridgedNoise(noisePosition, 2, 1.0, 0.5) * nScale;
+    rnoise -= (1.0 - unDensity);
     
     float minViewDistance = clamp((length(fPosition - unCameraPos) - 20.0) / 100.0, 0.0, 1.0);
     
     float thickness = max(rnoise * 2.0 + noise, 0.0);
-    thickness *= thickness * 2.0;
+    thickness *= thickness;
 
     float theta = dot(unLightDirWorld, fEyeDir);
     float miePhase = ((1.0 - unG2) / (2.0 + unG2)) * (1.0 + theta * theta) / pow(1.0 + unG2 - 2.0 * unG * theta, 1.5);
     vec3 scatterColor = fPrimaryColor + miePhase * fSecondaryColor;
 
-    pColor = vec4(max(unColor * ((thickness + 0.5) * light), 0.0) * 2.0 + scatterColor * 3.5, clamp(thickness, 0.0, 1.0) * minViewDistance);
+    pColor = vec4(max(unColor * thickness * light, 0.0) * 2.0 + scatterColor * 2.0, clamp(thickness, 0.0, 1.0) * minViewDistance);
 }
