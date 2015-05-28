@@ -1,6 +1,7 @@
 // Uniforms
 uniform mat4 unVP;
 uniform vec3 unTranslation;
+uniform vec3 unPosition;
 uniform float unHeightOffset;
 uniform float unTexelWidth;
 uniform float unNormalmapWidth;
@@ -60,7 +61,7 @@ void main() {
   gl_Position = unVP * vec4(vpos, 1.0);
   
   fColor = vColor;
-  fPosition = vPosition.xyz;
+  fPosition = vPosition.xyz + unPosition;
   // Move normal map UV in by 1 texel in each direction
   fNormUV = vNormUV * unNormalmapWidth + 1.1 * unTexelWidth;
   

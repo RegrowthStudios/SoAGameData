@@ -1,6 +1,7 @@
 // Uniforms
 uniform mat4 unVP;
 uniform vec3 unTranslation;
+uniform vec3 unPosition;
 uniform float unHeightOffset;
 uniform float unFreezeTemp;
 uniform float unRadius;
@@ -66,6 +67,6 @@ void main() {
   
   fColor = vColor_Temp.rgb;
   fTemp = vColor_Temp.a;
-  fPosition = vPosition.xyz;
+  fPosition = vPosition.xyz + unPosition;
   fDepth = vDepth;
 }
