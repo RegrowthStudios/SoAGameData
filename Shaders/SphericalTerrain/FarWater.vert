@@ -25,6 +25,7 @@ out vec3 fPrimaryColor;
 out vec3 fSecondaryColor;
 
 #include "Shaders/AtmosphereShading/scatter.glsl"
+#include "Shaders/Utils/logz.glsl"
 
 vec3 computeTangent(vec3 wPosition, vec3 nPosition) {
     vec3 tangent = wPosition;
@@ -64,6 +65,7 @@ void main() {
   }
  
   gl_Position = unVP * vec4(vpos, 1.0);
+  applyLogZ();
   
   fColor = vColor_Temp.rgb;
   fTemp = vColor_Temp.a;
