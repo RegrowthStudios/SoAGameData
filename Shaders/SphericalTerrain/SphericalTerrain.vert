@@ -23,6 +23,7 @@ out vec3 fPrimaryColor;
 out vec3 fSecondaryColor;
 
 #include "Shaders/AtmosphereShading/scatter.glsl"
+#include "Shaders/Utils/logz.glsl"
 
 void main() {
   vec3 normal = normalize(vPosition.xyz);
@@ -42,6 +43,7 @@ void main() {
   //mult = clamp( 1.0 - angle * 3.0, 0.0, 1.0);
   
   gl_Position = unWVP * vPosition;
+  applyLogZ();
   fColor = vColor;
   fPosition = vPosition.xyz;
   // Move normal map UV in by 1 texel in each direction
