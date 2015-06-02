@@ -36,6 +36,10 @@ uniform float fogStart;
 uniform float dt;
 uniform vec3 lightPosition_worldspace;
 
+#include "Shaders/Utils/logz.glsl"
+
+const float KM_PER_VOXEL = 0.0005;
+
 void main(){
     
     vec3 vertexPosition = position_TextureType.xyz / 7.0;
@@ -49,13 +53,14 @@ void main(){
     specMod = dot(lightPosition_worldspace, vec3(0.0, 1.0, 0.0))*6;
     specMod = clamp(specMod, 0.0, 1.0);
     
-	vec3 vpm = vec3(vertexPosition.x + cosdt*0.035, vertexPosition.y, vertexPosition.z + cosdt*0.025);
+	vec3 vpm = vec3(vertexPosition.x + cosdt*0.035, vertexPosition.y, vertexPosition.z + cosdt*0.025) * KM_PER_VOXEL;
 	distVec = vec3(M * vec4(vpm, 1));
 
     eyeDirection_worldspace = -distVec;
     
 	// Output position of the vertex, in clip space : MVP * (position)
-	gl_Position =  MVP * vec4( vpm ,1);
+	gl_Position =  MVP * vec4(vpm, 1.0);
+    applyLogZ();
     
 	fogFactor = clamp(((fogEnd - length(distVec) + fogStart)/fogEnd), 0.0, 1.0);
 	
