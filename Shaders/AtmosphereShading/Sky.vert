@@ -14,11 +14,13 @@ in vec4 vPosition; // Position on unit icosphere
 
 // Output
 out vec3 fPosition;
+out float fLogZ;
 
 #include "Shaders/Utils/logz.glsl"
 
 void main() {
   gl_Position =  unWVP * vPosition;
   applyLogZ();
+  fLogZ = 1.0 + gl_Position.w;
   fPosition = vPosition.xyz;
 }

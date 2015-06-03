@@ -27,6 +27,7 @@ uniform float unScaleOverScaleDepth; // unScale / unScaleDepth
 uniform int unNumSamples; // Number of integration samples
 uniform float unNumSamplesF; // (float)unNumSamples
 
+uniform float unZCoef;
 
 float scale(float theta) {
   float x = 1.0 - theta;
@@ -39,12 +40,14 @@ vec3 fSecondaryColor;
 
 // Input
 in vec3 fPosition;
+in float fLogZ;
 
 // Output
 out vec4 pColor;
 
 void scatter() {
-     // Calculate the farthest intersection of the ray with the outer atmosphere
+  gl_FragDepth = log2(fLogZ) * unZCoef * 0.5;
+  // Calculate the farthest intersection of the ray with the outer atmosphere
   vec3 worldPos = fPosition.xyz * unOuterRadius;
   vec3 ray = worldPos - unCameraPos;
   fRayDirection = -ray; // TODO: Normalize here instead of in frag?
