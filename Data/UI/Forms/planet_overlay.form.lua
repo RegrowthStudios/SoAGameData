@@ -21,7 +21,7 @@ end
 
 function alignLabel(l, p)
   Label.setPositionPercentage(l, 0.03, 0.5) 
-  Label.setWidthPercentage(l, 0.65) 
+  Label.setWidthPercentage(l, 1.0) 
   Label.setTextScale(l, 0.55, 0.55)
   Label.setParent(l, p)
 end

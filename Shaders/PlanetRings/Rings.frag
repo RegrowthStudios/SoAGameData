@@ -4,15 +4,18 @@ uniform float unOuterRadius;
 uniform vec3 unLightPos;
 uniform vec3 unPlanetPos;
 uniform float unPlanetRadius;
+uniform float unZCoef;
 
 in vec3 fPosition;
 in vec3 fWorldPosition;
+in float fLogZ;
 
 out vec4 pColor;
 
 #include "Shaders/Utils/Intersection.glsl"
 
 void main() {
+  gl_FragDepth = log2(fLogZ) * unZCoef * 0.5;
   float len = length(fPosition);
   float u = (len - unInnerRadius) / (unOuterRadius - unInnerRadius);
 
