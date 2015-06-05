@@ -175,6 +175,223 @@ Elysion:
   i: 0
   p: 105
   a: 199
+Elysion-1:
+  type: DwarfMoon
+  path: Asteroids/Elysion1.yml
+  par: Elysion
+  ref: Eridanus
+  td: 99
+  e: 0.0
+  i: 0.0
+  a: 213
+Elysion-2:
+  type: DwarfMoon
+  path: Asteroids/Elysion2.yml
+  par: Elysion
+  ref: Eridanus
+  td: 77
+  e: 0.0
+  i: 0.0
+  a: 312
+Elysion-3:
+  type: DwarfMoon
+  path: Asteroids/Elysion3.yml
+  par: Elysion
+  ref: Eridanus
+  td: 66
+  e: 0.0
+  i: 0.0
+  a: 108
+Elysion-4:
+  type: DwarfMoon
+  path: Asteroids/Elysion4.yml
+  par: Elysion
+  ref: Eridanus
+  td: 55
+  e: 0.0
+  i: 0.0
+  a: 19
+Mikro:
+  type: Moon
+  path: Planets/Mikro/properties.yml
+  par: Elysion
+  ref: Eridanus
+  td: 33
+  e: 0.0047
+  i: 0.0
+  p: 254
+  a: 223
+Galantus:
+  type: Moon
+  path: Planets/Galantus/properties.yml
+  par: Elysion
+  ref: Eridanus
+  td: 22
+  e: 0.001
+  i: 0.0
+  p: 327
+  a: 97
+Callonia:
+  type: Moon
+  path: Planets/Callonia/properties.yml
+  par: Elysion
+  ref: Eridanus
+  tf: 2
+  td: 33
+  e: 0.0002
+  i: 0.0
+  p: 225
+  a: 39
+Elysion-5:
+  type: DwarfMoon
+  path: Asteroids/Elysion5.yml
+  par: Elysion
+  ref: Callonia
+  trojan: L4
+Elysion-6:
+  type: DwarfMoon
+  path: Asteroids/Elysion6.yml
+  par: Elysion
+  ref: Callonia
+  trojan: L5
+Dominia:
+  type: Moon
+  path: Planets/Dominia/properties.yml
+  par: Elysion
+  ref: Eridanus
+  td: 11
+  e: 0.0
+  i: 0.0
+  a: 296
+Elysion-7:
+  type: DwarfMoon
+  path: Asteroids/Elysion7.yml
+  par: Elysion
+  ref: Dominia
+  trojan: L4
+Elysion-8:
+  type: DwarfMoon
+  path: Asteroids/Elysion8.yml
+  par: Elysion
+  ref: Dominia
+  trojan: L5
+Aegis:
+  type: Moon
+  path: Planets/Aegis/properties.yml
+  par: Elysion
+  ref: Eridanus
+  td: 8
+  e: 0.0
+  i: 0.0
+  a: 140
+Adoris:
+  type: Moon
+  path: Planets/Adoris/properties.yml
+  par: Elysion
+  ref: Eridanus
+  td: 5
+  e: 0.0001
+  i: 0.03
+  n: 199
+  p: 203
+  a: 46
+Peleus:
+  type: Moon
+  path: Planets/Peleus/properties.yml
+  par: Elysion
+  ref: Eridanus
+  td: 2
+  e: 0.0032
+  i: 1.6
+  n: 329
+  p: 69
+  a: 155
+Eridanus:
+  type: Moon
+  path: Planets/Eridanus/properties.yml
+  par: Elysion
+  t: 2.52e+6
+  e: 0.015
+  i: 0.88
+  n: 175
+  p: 24
+  a: 268
+Elysion-9:
+  type: DwarfMoon
+  path: Asteroids/Elysion9yml
+  par: Elysion
+  ref: Eridanus
+  trojan: L4
+Flox:
+  type: Moon
+  path: Planets/Flox/properties.yml
+  par: Elysion
+  ref: Eridanus
+  tf: 2
+  e: 0.028
+  i: 3.99
+  n: 342
+  p: 129
+  a: 24
+Elysion-10:
+  type: DwarfMoon
+  path: Asteroids/Elysion10.yml
+  par: Elysion
+  ref: Eridanus
+  tf: 5
+  td: 2
+  e: 0.018
+  i: 2.27
+  n: 219
+  p: 321
+  a: 52
+Elysion-11:
+  type: DwarfMoon
+  path: Asteroids/Elysion11.yml
+  par: Elysion
+  ref: Eridanus
+  tf: 14
+  td: 5
+  e: 0.015
+  i: 2.13
+  n: 255
+  p: 338
+  a: 206
+Elysion-12:
+  type: DwarfMoon
+  path: Asteroids/Elysion12.yml
+  par: Elysion
+  ref: Eridanus
+  tf: 16
+  td: 5
+  e: 0.017
+  i: 0.6
+  n: 53
+  p: 76
+  a: 101
+Elysion-13:
+  type: DwarfMoon
+  path: Asteroids/Elysion13.yml
+  par: Elysion
+  ref: Eridanus
+  tf: 18
+  td: 5
+  e: 0.023
+  i: 1.4
+  n: 295
+  p: 324
+  a: 311
+Elysion-14:
+  type: DwarfMoon
+  path: Asteroids/Elysion14.yml
+  par: Elysion
+  ref: Eridanus
+  tf: 4
+  e: 0.002
+  i: 1.16
+  n: 158
+  p: 116
+  a: 23
 Trinity B:
   type: Star
   path: Stars/TrinityB.yml

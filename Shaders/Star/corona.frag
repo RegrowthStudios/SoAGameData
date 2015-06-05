@@ -17,8 +17,8 @@ void main() {
     /* Edit these */
 	const float brightnessMultiplier = 0.9;   // The higher the number, the brighter the corona will be.
 	const float smootheningMultiplier = 0.15; // How smooth the irregular effect is, the higher the smoother.
-	const float ringIntesityMultiplier = 1.5; // The higher the number, the smaller the ring.
-	const float coronaSizeMultiplier = 2.55;  // The higher the number, the smaller the corona.
+	const float ringIntesityMultiplier = 2.8; // The higher the number, the smaller the ring.
+	const float coronaSizeMultiplier = 2.0;  // The higher the number, the smaller the corona.
 	const float frequency = 1.5;              // The frequency of the irregularities.
 	const float fDetail = 0.7;                // The higher the number, the more detail the corona will have. (Might be more GPU intensive when higher, 0.7 seems fine for the normal PC)
 	const int iDetail = 10;                   // The higher the number, the more detail the corona will have.
