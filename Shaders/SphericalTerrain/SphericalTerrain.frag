@@ -13,7 +13,7 @@ uniform vec3 rockColor = vec3(0.1, 0.1, 0.1);
 // Input
 in vec3 fColor;
 in vec2 fNormUV;
-in vec2 fUV;
+in vec3 fPosition;
 in vec2 fTemp_Hum;
 in mat3 fTbn;
 in vec3 fEyeDir;
@@ -38,7 +38,7 @@ float computeSpecular(vec3 normal) {
 
 void main() {
   
-  vec3 normal = fTbn * normalize((texture(unNormalMap, fNormUV).rgb * 2.0) - 1.0);
+  vec3 normal = fTbn * normalize(((texture(unNormalMap, fNormUV).rgb * 2.0) - 1.0));
   float steepness = min((1.0 - dot(normal, fNormal)) * 4.0, 1.0);
   
   float diffuse = computeDiffuse(normal);
@@ -49,6 +49,14 @@ void main() {
   
   vec3 scatterColor = fPrimaryColor + miePhase * fSecondaryColor;
   //vec3 color = mix(fColor.rgb, rockColor, steepness);
-  vec3 color = fColor.rgb * texture(unColorMap, fTemp_Hum).rgb * ((texture(unTexture, fUV).rgb + texture(unTexture, -0.007 * fUV).rgb) * 0.5);
+  
+  // Triplanar texture mapping
+  vec3 blending = abs(normal);
+  blending = normalize(max(blending, 0.00001)); // Force weights to sum to 1.0
+  vec3 textureColor = texture(unTexture, fPosition.yz).rgb * blending.x +
+    texture(unTexture, fPosition.xz).rgb * blending.y +
+    texture(unTexture, fPosition.xy).rgb * blending.z;
+  
+  vec3 color = fColor.rgb * textureColor * texture(unColorMap, fTemp_Hum).rgb;
   pColor = vec4(color * diffuse + scatterColor * 1.5 + vec3(1.0) * specular, unAlpha);
 }

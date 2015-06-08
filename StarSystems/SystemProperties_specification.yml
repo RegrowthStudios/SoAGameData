@@ -1,15 +1,18 @@
-##########  SystemProperties.yml  -  specification / property explanations - last updated: 18.04.2015
+##########  SystemProperties.yml  -  specification / property explanations - last updated: 24.05.2015
+
+# description: Short description/info text about the system
+# age: The system age in years ("age: 0" is equivalent to "zero-age main sequence" for the stars in the system)
 
 (Object Name):
-  # type: Basic object type determining the appearance of orbits, object markers and selectors. All selected objects use RGB(255, 0, 0)
+  # type: Basic object type determining the appearance of the orbits, object markers and selectors. The color values can be modified in PathColors.yml
     # Barycenter - The colors are taken from its binary component A type and used for the barycenter marker cross, selector and orbit
-    # Star - color RGB(160, 160, 0) / color hover RGB(255, 255, 0) - used for all kinds of stellar and substellar objects
-    # Planet - color RGB(0, 160, 0) / color hover RGB(0, 255, 0)
-    # DwarfPlanet - color RGB(0, 80, 0) / color hover RGB(0, 128, 0)
-    # Moon - color RGB(60, 80, 160) / color hover RGB(96, 128, 255)
-    # DwarfMoon - color RGB(30, 40, 64) / color hover RGB(48, 64, 128)
-    # Asteroid - not visible / color hover RGB(80, 80, 80)
-    # Comet - not visible / color hover RGB(80, 104, 128)
+    # Star - used for all kinds of stellar and substellar objects
+    # Planet - used for planetary-mass satellites of stars
+    # DwarfPlanet - used for not-mass-dominating spherical satellites of stars, usually located within asteroid belts (masses of <2e+22 kg)
+    # Moon - used for larger, spherical satellites of planets
+    # DwarfMoon - used for smaller, irregular satellites of planets
+    # Asteroid - used for irregular satellites of stars, with densities >0.5 g/cm³. Orbits and name labels are only shown on mouse hover or when selected.
+    # Comet - used for irregular satellites of stars, with densities <0.5 g/cm³. Orbits and name labels are only shown on mouse hover or when selected.
   # comps: Binary components [compNameA, compNameB]
   # path: Path of the object properties yaml file within the star system folder
   # par: parent object
@@ -25,7 +28,7 @@
   # p: Longitude of the periapsis in °
   # i: Inclination in °
   # n:  Longitude of the ascending node in °
-  # a: True anomaly (starting position) in °
+  # a: Mean anomaly (starting position) in °
   # trojan: Position of co-orbital objects, uses the same period and orbital parameters than its orbital reference body, only modifies the anomaly
     # L4 - Trojan occupying lagrangian point 4 of the reference bodies orbit (a+60°)
     # L5 - Trojan occupying lagrangian point 5 of the reference bodies orbit (a-60°)

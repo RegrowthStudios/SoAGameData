@@ -1,7 +1,8 @@
 gasGiant:
   diameter: 132570.0
   mass: 1.4930e+27
-  axis: [0.0, 1.0, 0.0]
+  aTilt: 9.66
+  lNorth: 134
   rotationalPeriod: 9.716
   oblateness: 0.07
   colorMap: GasGiants/Pantheon/color.png
@@ -11,3 +12,9 @@ gasGiant:
     km: 0.002
     g: -0.99
     waveLength: [0.70, 0.70, 0.70]
+  rings:
+    - innerRadius: 94600.0
+      outerRadius: 152000.0
+      aTilt: 0.0
+      lNorth: 0.0
+      colorLookup: GasGiants/Pantheon/ring.png

@@ -1,23 +1,23 @@
 # Colors for orbit paths
 Selected:
-  base: [255, 0, 0]
-  hover: [255, 0, 0]
+  base: [255, 0, 0, 128]
+  hover: [255, 0, 0, 175]
 Star:
-  base: [160, 160, 0]
-  hover: [255, 255, 0]
+  base: [160, 160, 0, 128]
+  hover: [255, 255, 0, 175]
 Planet:
-  base: [0, 160, 0]
-  hover: [0, 255, 0]
+  base: [0, 160, 0, 128]
+  hover: [0, 255, 0, 175]
 DwarfPlanet:
-  base: [0, 80, 0]
-  hover: [0, 128, 0]
+  base: [0, 80, 0, 128]
+  hover: [0, 128, 0, 175]
 Moon:
-  base: [60, 80, 160]
-  hover: [96, 128, 255]
+  base: [60, 80, 160, 128]
+  hover: [96, 128, 255, 175]
 DwarfMoon:
-  base: [30, 40, 64]
-  hover: [48, 64, 128]
+  base: [30, 40, 64, 128]
+  hover: [48, 64, 128, 175]
 Asteroid:
-  hover: [80, 80, 80]
+  hover: [80, 80, 80, 175]
 Comet:
-  hover: [80, 104, 128]
+  hover: [80, 104, 128, 175]

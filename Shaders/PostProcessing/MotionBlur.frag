@@ -1,7 +1,12 @@
+// Tonemapping operators at http://filmicgames.com/archives/75
 // Uniforms
 uniform sampler2D unTex;
 uniform float unExposure;
 uniform float unGamma;
+uniform float unLumKey = 0.5;
+uniform float unSatPow = 0.5;
+
+#include "Shaders/Utils/HSV.glsl"
 
 #ifdef MOTION_BLUR
 uniform sampler2D unTexDepth;
@@ -115,9 +120,18 @@ void main() {
 
   color = colorSum / totalContribution;
 #endif
-  color = (1.0 - exp(color * -unExposure)); // Add exposure
-  
+
+  // Saturation
+ // vec3 hsv = rgbToHsv(color);
+ // hsv.g = pow(hsv.g, unSatPow);
+ // color = hsvToRgb(hsv);
+
+  // Reinhard tonemapping
+  color *= unLumKey / (0.0001 + clamp(unExposure, 0.3, 0.7));
+  color = color / (1.0 + color);
+
+  // Gamma correction
   color = pow(color, vec3(unGamma));
-  
+
   pColor = vec4(color, 1.0);
 }

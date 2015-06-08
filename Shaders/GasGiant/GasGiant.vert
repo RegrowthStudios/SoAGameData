@@ -14,6 +14,7 @@ out vec3 fSecondaryColor;
 out vec3 fEyeDir;
 
 #include "Shaders/AtmosphereShading/scatter.glsl"
+#include "Shaders/Utils/logz.glsl"
 
 void main() {
     fTexCoord = vTexCoord;
@@ -25,4 +26,5 @@ void main() {
     fEyeDir = normalize(-sRay);
     
     gl_Position = unWVP * vPosition;
+	applyLogZ();
 }
