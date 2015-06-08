@@ -16,6 +16,8 @@ in vec2 fUV;
 // Output
 out vec3 pColor;
 
+#include "Shaders/Deferred/LightModels.glsl"
+
 void main() {
   vec2 screenPos = fPosition.xy / fPosition.w;
   vec2 uv = ((screenPos + 1.0) * 0.5);

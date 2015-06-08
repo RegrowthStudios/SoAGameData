@@ -55,7 +55,7 @@ void main(){
     eyeDirection_worldspace = -distVec;
     
 	// Output position of the vertex, in clip space : MVP * (position)
-	gl_Position =  MVP * vec4( vpm ,1);
+	gl_Position =  MVP * vec4(vpm, 1.0);
     
 	fogFactor = clamp(((fogEnd - length(distVec) + fogStart)/fogEnd), 0.0, 1.0);
 	
@@ -83,7 +83,7 @@ void main(){
     
 	lampLight = light_sunlight.xyz * 1.6;
     
-    sunlight = light_sunlight.w * 1.05263;
+    sunlight = light_sunlight.w;
 	
     //diffuse
     diffuseMult = clamp( dot( normal_worldspace, lightPosition_worldspace ), 0,1 );

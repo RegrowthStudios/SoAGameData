@@ -12,9 +12,12 @@ in vec2 vPosition;
 // Output
 out vec3 fPosition;
 
+#include "Shaders/Utils/logz.glsl"
+
 void main() {
     fPosition = (unCameraRight * vPosition.x + unCameraUp * vPosition.y);
     vec3 vpw = fPosition * unMaxSize;
     vpw = unCenter + vpw * unStarRadius;
     gl_Position = unWVP * vec4(vpw, 1.0);
+    applyLogZ();
 }
