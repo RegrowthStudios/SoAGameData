@@ -51,6 +51,17 @@ Demoleon:
   n: 333
   p: 75
   a: 200
+(A-7) Ferros:
+  type: Asteroid
+  path: Asteroids/A7_Ferros.yml
+  par: Trinity A
+  ref: Elysion
+  td: 27
+  e: 0.1550
+  i: 7.3
+  n: 244
+  p: 77
+  a: 333
 Palamedes:
   type: Planet
   path: Planets/Palamedes/properties.yml
@@ -392,6 +403,54 @@ Elysion-14:
   n: 158
   p: 116
   a: 23
+(A-3) Themis:
+  type: Asteroid
+  path: Asteroids/A3_Themis.yml
+  par: Trinity A
+  ref: Elysion
+  tf: 4
+  td: 3
+  e: 0.0333
+  i: 1.11
+  n: 10
+  p: 340
+  a: 77
+(A-4) Opis:
+  type: Asteroid
+  path: Asteroids/A4_Opis.yml
+  par: Trinity A
+  ref: Elysion
+  tf: 7
+  td: 5
+  e: 0.0505
+  i: 1.27
+  n: 236
+  p: 61
+  a: 293
+(A-1) Atropos:
+  type: Asteroid
+  path: Asteroids/A1_Atropos.yml
+  par: Trinity A
+  ref: Elysion
+  tf: 3
+  td: 2
+  e: 0.0909
+  i: 2.3
+  n: 135
+  p: 288
+  a: 357
+(A-2) Lameia:
+  type: Asteroid
+  path: Asteroids/A2_Lameia.yml
+  par: Trinity A
+  ref: Elysion
+  tf: 5
+  td: 2
+  e: 0.37
+  i: 19.46
+  n: 300
+  p: 10
+  a: 23
 Trinity B:
   type: Star
   path: Stars/TrinityB.yml
@@ -485,12 +544,10 @@ Baros:
   p: 306
   a: 351
 Endor-1:
-  type: DwarfMoon
+  type: IrregularDwarfMoon
   path: Asteroids/Endor1.yml
   par: Endor
-  ref: Baros
-  tf: 19
-  td: 8
+  t: 3.42e+6
   e: 0.0192
   i: 158.1
   n: 65

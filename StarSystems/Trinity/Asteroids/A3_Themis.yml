@@ -1,0 +1,6 @@
+planet:
+  diameter: 125.0
+  mass: 1.98e+18
+  aTilt: 45.3
+  lNorth: 270
+  rotationalPeriod: 19.92
