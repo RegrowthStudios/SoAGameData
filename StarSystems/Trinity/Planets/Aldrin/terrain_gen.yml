@@ -37,9 +37,9 @@ baseHeight:
     # Large mountains
     - type: noise_cubed
       op: mul
-      octaves: 8
-      persistence: 0.5
-      frequency: 0.005
+      octaves: 7
+      persistence: 0.7
+      frequency: 0.002
       low: -13.0
       high: 13.0
       clamp: [0.0, 1.0]
