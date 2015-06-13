@@ -18,38 +18,44 @@ baseHeight:
   funcs:
     # Tiny detail
     - octaves: 9
-      persistence: 0.9
+      persistence: 0.8
       frequency: 0.15
       low: 0.0
       high: 50.0
     # Small detail
     - octaves: 6
-      persistence: 0.9
+      persistence: 0.8
       frequency: 0.05
       low: 0.0
       high: 100.0
     # Large detail
-    - octaves: 6
-      persistence: 0.9
+    - octaves: 8
+      persistence: 0.8
       frequency: 0.003
       low: -2000.0
       high: 3000.0
     # Large mountains
-    - type: noise
+    - type: noise_cubed
       op: mul
-      octaves: 5
-      persistence: 0.8
-      frequency: 0.0005
-      low: -6.0
-      high: 5.0
+      octaves: 7
+      persistence: 0.7
+      frequency: 0.002
+      low: -13.0
+      high: 13.0
       clamp: [0.0, 1.0]
       children:
-        - type: ridged
-          octaves: 6
-          persistence: 0.9
-          frequency: 0.0008
+        - type: noise_cellular_cubed
+          octaves: 3
+          persistence: 0.6
+          frequency: 0.05
+          low: -25000.0
+          high: 25000.0
+        - type: noise_ridged
+          octaves: 12
+          persistence: 0.5
+          frequency: 0.03
           low:  0.0
-          high: 20000.0
+          high: 7500.0
     # Oceans
     - type: noise
       op: mul
@@ -77,7 +83,7 @@ baseHeight:
       high: 11.0
       clamp: [0.0, 1.0]
       children:
-        - type: cubed
+        - type: noise_cubed
           op: add
           octaves: 5
           persistence: 0.9
@@ -85,7 +91,7 @@ baseHeight:
           low: -20000.0
           high: 20000.0
           clamp: [0.0, 5000.0]
-        - type: cubed
+        - type: noise_cubed
           op: add
           octaves: 5
           persistence: 0.9
@@ -93,7 +99,7 @@ baseHeight:
           low: -5000.0
           high: 5000.0
           clamp: [0.0, 1000.0]
-        - type: cubed
+        - type: noise_cubed
           op: add
           octaves: 5
           persistence: 0.9

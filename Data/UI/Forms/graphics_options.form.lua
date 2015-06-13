@@ -10,27 +10,27 @@ local gammaLabel = {}
 local windowModeComboBox = {}
 local widgetList = {}
 
-function onGameOptionsClick()
+local function onGameOptionsClick()
   Form.disable(this)
   enableForm("GameOptionsForm")
 end
 Vorb.register("onGameOptionsClick", onGameOptionsClick)
 
-function onBackClick()
+local function onBackClick()
   Form.disable(this)
   enableForm("main")
   enableForm("PlanetOverlay")
 end
 Vorb.register("onBackClick", onBackClick)
 
-function onRestoreClick()
+local function onRestoreClick()
   Options.restoreDefault()
   setValues()
 end
 Vorb.register("onRestoreClick", onRestoreClick)
 
 -- Options Changes
-function onGammaChange(i)
+local function onGammaChange(i)
   gamma = i / 1000.0
   Options.setFloat("Gamma", gamma)
   Label.setText(gammaLabel, string.format("Gamma: %.2f", gamma))
@@ -38,7 +38,7 @@ function onGammaChange(i)
 end
 Vorb.register("onGammaChange", onGammaChange)
 
-function onPlanetDetailChange(i)
+local function onPlanetDetailChange(i)
   Options.setInt("Planet Detail", i)
   Slider.setValue(planetDetailSlider, i)
   Label.setText(planetDetailLabel, "Planet Detail: " .. i)
@@ -46,7 +46,7 @@ function onPlanetDetailChange(i)
 end
 Vorb.register("onPlanetDetailChange", onPlanetDetailChange)
 
-function onFovChange(i)
+local function onFovChange(i)
   Options.setFloat("FOV", i)
   Slider.setValue(fovSlider, i)
   Label.setText(fovLabel, "FOV: " .. i)
@@ -55,7 +55,7 @@ function onFovChange(i)
 end
 Vorb.register("onFovChange", onFovChange)
 
-function onWindowedClick()
+local function onWindowedClick()
   Options.setBool("Fullscreen", false)
   Options.setBool("Borderless Window", false)
   Options.save()
@@ -63,7 +63,7 @@ function onWindowedClick()
 end
 Vorb.register("onWindowedClick", onWindowedClick)
 
-function onFullscreenClick()
+local function onFullscreenClick()
   Options.setBool("Fullscreen", true)
   Options.setBool("Borderless Window", false)
   Options.save()
@@ -71,7 +71,7 @@ function onFullscreenClick()
 end
 Vorb.register("onFullscreenClick", onFullscreenClick)
 
-function onBorderlessClick()
+local function onBorderlessClick()
   Options.setBool("Fullscreen", false)
   Options.setBool("Borderless Window", true)
   Options.save()
@@ -79,7 +79,7 @@ function onBorderlessClick()
 end
 Vorb.register("onBorderlessClick", onBorderlessClick)
 
-function checkGreyControls()
+local function checkGreyControls()
   local fs = Options.getBool("Fullscreen")
   local br = Options.getBool("Borderless Window")
   local c = 200
@@ -102,14 +102,14 @@ function checkGreyControls()
   end
 end
 
-function onVsyncChange(b)
+local function onVsyncChange(b)
   Options.setBool("VSYNC", b)
   CheckBox.setChecked(vsyncCheckBox, b)
   Options.save()
 end
 Vorb.register("onVsyncChange", onVsyncChange)
 
-function onResolutionChange(s)
+local function onResolutionChange(s)
   local x, y = string.match(s, "(%d+) x (%d+)")
   Options.setInt("Screen Width", x)
   Options.setInt("Screen Height", y)
@@ -118,12 +118,12 @@ end
 Vorb.register("onResolutionChange", onResolutionChange)
 
 -- Called if Options are changed on the C++ side.
-function onOptionsChanged()
+local function onOptionsChanged()
   setValues()
 end
 Vorb.register("onOptionsChanged", onOptionsChanged)
 
-function setValues()
+local function setValues()
   -- Gamma
   local gamma = Options.getFloat("Gamma")
   Slider.setValue(gammaSlider, gamma * 1000.0)
@@ -146,12 +146,12 @@ function setValues()
   checkGreyControls()
 end
 
-function addWidgetToList(w)
+local function addWidgetToList(w)
   WidgetList.addItem(widgetList, w)
 end
 
 panelCounter = 0
-function getNewListPanel()
+local function getNewListPanel()
   local p = Form.makePanel(this, "Panel" .. panelCounter, 0, 0, 10, 10)
   panelCounter = panelCounter + 1
   Panel.setDimensionsPercentage(p, 1.0, 0.13)
@@ -160,26 +160,26 @@ function getNewListPanel()
   return p
 end
 
-function alignSlider(s, p)
+local function alignSlider(s, p)
   Slider.setWidthPercentage(s, 0.47)
   Slider.setPositionPercentage(s, 0.5, 0.5)
   Slider.setWidgetAlign(s, WidgetAlign.LEFT)
   Slider.setParent(s, p)
 end
 
-function alignCheckBox(c, p)
+local function alignCheckBox(c, p)
   CheckBox.setPositionPercentage(c, 0.73, 0.5)
   CheckBox.setWidgetAlign(c, WidgetAlign.CENTER)
   CheckBox.setParent(c, p)
 end
 
-function alignComboBox(c, p)
+local function alignComboBox(c, p)
   ComboBox.setPositionPercentage(c, 0.73, 0.5)
   ComboBox.setWidgetAlign(c, WidgetAlign.CENTER)
   ComboBox.setParent(c, p)
 end
 
-function alignLabel(l, p)
+local function alignLabel(l, p)
   Label.setPositionPercentage(l, 0.03, 0.5) 
   Label.setParent(l, p)
 end
@@ -281,7 +281,7 @@ function init()
   i = 0
   while i < numRes do
     x,y = Window.getSupportedResolution(i)
-    ComboBox.addItem(resComboBox, x .. " x " .. y)
+   -- ComboBox.addItem(resComboBox, x .. " x " .. y)
     i = i + 1
   end
   alignComboBox(resComboBox, resPanel)

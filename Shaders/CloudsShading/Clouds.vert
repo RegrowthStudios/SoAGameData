@@ -12,9 +12,11 @@ out vec3 fSecondaryColor;
 out vec3 fEyeDir;
 
 #include "Shaders/AtmosphereShading/scatter.glsl"
+#include "Shaders/Utils/logz.glsl"
 
 void main() {
     gl_Position = unWVP * vPosition;
+    applyLogZ();
     fPosition = vPosition.xyz * unCloudsRadius;
     scatter(fPosition);
     fPrimaryColor = sPrimaryColor;
