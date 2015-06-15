@@ -754,6 +754,76 @@ Tros:
   n: 84
   p: 198
   a: 280
+Hyperion-6:
+  type: IrregularDwarfMoon
+  path: Asteroids/Hyperion6.yml
+  par: Hyperion
+  t: 5.4431e+6
+  e: 0.1142
+  i: 9.0
+  n: 149
+  p: 37
+  a: 118
+Hyperion-7:
+  type: IrregularDwarfMoon
+  path: Asteroids/Hyperion7.yml
+  par: Hyperion
+  t: 6.5433e+6
+  e: 0.1554
+  i: 75.49
+  n: 359
+  p: 324
+  a: 87
+Hyperion-8:
+  type: IrregularDwarfMoon
+  path: Asteroids/Hyperion8.yml
+  par: Hyperion
+  t: 7.1234e+6
+  e: 0.2187
+  i: 138.76
+  n: 334
+  p: 277
+  a: 62
+Hyperion-9:
+  type: IrregularDwarfMoon
+  path: Asteroids/Hyperion9.yml
+  par: Hyperion
+  t: 6.2531e+6
+  e: 0.0544
+  i: 18.1
+  n: 259
+  p: 237
+  a: 298
+Hyperion-10:
+  type: IrregularDwarfMoon
+  path: Asteroids/Hyperion10.yml
+  par: Hyperion
+  t: 5.3452e+6
+  e: 0.0748
+  i: 96.28
+  n: 23
+  p: 234
+  a: 206
+Hyperion-11:
+  type: IrregularDwarfMoon
+  path: Asteroids/Hyperion11.yml
+  par: Hyperion
+  t: 4.9453e+6
+  e: 0.1065
+  i: 60.78
+  n: 36
+  p: 271
+  a: 5
+Hyperion-12:
+  type: IrregularDwarfMoon
+  path: Asteroids/Hyperion12.yml
+  par: Hyperion
+  t: 6.5545e+6
+  e: 0.0382
+  i: 22.92
+  n: 150
+  p: 271
+  a: 302
 Pantheon:
   type: Planet
   path: GasGiants/Pantheon/properties.yml
