@@ -1274,6 +1274,93 @@ Karimoon-Keobar-4:
   n: 282
   p: 112
   a: 174
+Nemesis:
+  type: Planet
+  path: IceGiants/Nemesis/properties.yml
+  par: Trinity AB
+  ref: Trinity A
+  tf: 8
+  e: 0.08
+  i: 0.86
+  n: 35
+  p: 117
+  a: 254
+Nemesis-1:
+  type: DwarfMoon
+  path: Asteroids/Nemesis1.yml
+  par: Nemesis
+  ref: Erebos
+  td: 5
+  e: 0
+  i: 0
+  a: 250
+Nemesis-2:
+  type: DwarfMoon
+  path: Asteroids/Nemesis2.yml
+  par: Nemesis
+  ref: Erebos
+  td: 4
+  e: 0
+  i: 0
+  a: 32
+Nemesis-3:
+  type: DwarfMoon
+  path: Asteroids/Nemesis3.yml
+  par: Nemesis
+  ref: Erebos
+  tf: 2
+  td: 5
+  e: 0
+  i: 0
+  a: 330
+Erebos:
+  type: Moon
+  path: Planets/Erebos/properties.yml
+  par: Nemesis
+  t: 1.116e+5
+  e: 0
+  i: 0
+  a: 95
+Caligo:
+  type: Moon
+  path: Planets/Caligo/properties.yml
+  par: Nemesis
+  ref: Erebos
+  tf: 2
+  e: 0.0001
+  i: 0
+  p: 354
+  a: 175
+Tenebrio:
+  type: Moon
+  path: Planets/Tenebrio/properties.yml
+  par: Nemesis
+  ref: Erebos
+  tf: 3
+  e: 0.0045
+  i: 0
+  p: 32
+  a: 93
+Obscurio:
+  type: Moon
+  path: Planets/Obscurio/properties.yml
+  par: Nemesis
+  ref: Erebos
+  tf: 5
+  e: 0.013
+  i: 0
+  p: 72
+  a: 163
+Minos:
+  type: Moon
+  path: Planets/Minos/properties.yml
+  par: Nemesis
+  t: 3.013e+6
+  e: 0.17
+  i: 11.4
+  p: 20
+  n: 325
+  a: 80
 (AB-3) Somnus:
   type: Comet
   path: Comets/AB3_Somnus.yml
