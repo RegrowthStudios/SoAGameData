@@ -1,4 +1,4 @@
-﻿##########  BlockTextures.yml  -  specification and internal format/structure - last updated: 05.11.2014
+﻿##########  BlockTextures.yml  -  specification and internal format/structure - last updated: 16.06.2015
 
   #  BlockTextures.yml contains a list of all blocks a texture pack should modify, sorted by block ID, the file path must be "Blocks/BlockTextures.yml"
   #  This file contains any information about the textures, texture handling methods, color and transparency properties a block should use
@@ -7,7 +7,7 @@
 
 ####  Internal structure of BlockTextures.yml
   #  All parts are optional, the file is required to use valid YAML syntax!
-  #  All textire paths must be relative to the texture pack and therefore show the folder+subfolders where the texture is located!
+  #  All texture paths must be relative to the texture pack and therefore show the folder+subfolders where the texture is located!
 
   
 - ID: (Block ID)
@@ -45,7 +45,7 @@
   #  Optional. If not specified, then the texture pack will apply no texture to this block (will display magenta color instead)
   # When different textureXXX properties link to the same block face, more precise ones will override more general ones (single faces > opposing faces > all faces)
   #  texture: Used for mesh flora or when all block faces should show the same texture
-  #  textureOpX: Applies the texture to the opposite front and back faces (+/-X non-rotated blocks)
+  #  textureOpX: Applies the texture to the opposite front and back faces (+/-X for non-rotated blocks)
   #  textureOpY: Applies the texture to the opposite top and bottom faces (+/-Y for non-rotated blocks)
   #  textureOpZ: Applies the texture to the opposite left and right faces (+/-Z for non-rotated blocks)
   #  textureTop: Applies the texture to the top face (+Y for non-rotated blocks)
@@ -72,6 +72,8 @@
       #  As an alternative, a path to a custom color map inside the texture pack or a single RGB color can be defined
       normalMap: (path of normal map file)
       #  Optional. If missing, then no normal map is applied to the base texture.
+      dispMap: (path of displacement map file)
+      #  Optional. If missing, then no displacement map is applied to the base texture.
       specularMap: (path of specular map file)
       #  Optional. If missing, then no specular map is applied to the base texture.
     overlay: (path of overlay texture)
@@ -92,6 +94,8 @@
       #  As an alternative, a path to a custom color map inside the texture pack or a single RGB color can be defined
       normalMap: (path of normal map file)
       #  Optional. If missing, then no normal map is applied to the overlay texture.
+      dispMap: (path of displacement map file)
+      #  Optional. If missing, then no displacement map is applied to the overlay texture.
       specularMap: (path of specular map file)
       #  Optional. If missing, then no specular map is applied to the overlay texture.
     blendMode: <alpha | add | subtract | multiply>
@@ -199,11 +203,11 @@
   ###  Texture atlasses:
   #  All block texture tiles are automatically stitched to texture atlasses showing 16x16 tiles when starting the game (can be viewed in the texture pack menu)
   #  The maximum number of block texture tiles per texture pack is currently limited to 65536 tiles (256 texture atlasses with 256 tiles each)
-  #  Every overlay, normal map and specular map tile counts as an extra tile in this case, even when they're combined to one final texture tile in-game
+  #  Every overlay, normal map, displacement map and specular map tile counts as an extra tile in this case, even when they're combined to one final texture tile in-game
 
   ###  Block mesh types:
   #  All mesh types support the use of base and overlay textures as well as any form of color multiplication (color or useMapcolor properties)
-  #  Support for block transparency (base texture using transparent pixels), normal maps and specular maps is limited to mesh type "cube" (standard blocks)
+  #  Support for block transparency (base texture using transparent pixels), normal, displacement and specular maps is limited to mesh type "cube" (standard blocks)
   #  The texture handling methods for blocks using mesh type "cube" are restricted to: connect, horizontal, vertical, grass, repeat, random
   #  The texture handling methods for blocks using mesh type "flat" are restricted to: connect, horizontal, vertical, repeat, random
   #  The texture handling methods for blocks using mesh types "cross" and "triangle" are restricted to: vertical, random, flora
