@@ -1,93 +1,66 @@
-in vec4 position_TextureType;
-in vec4 uvs_animation_blendMode;
-in vec4 textureAtlas_textureIndex;
-in vec4 textureDimensions;
-in vec4 color_waveEffect;
-in vec3 overlayColor;
-in vec4 light_sunlight;
-in vec3 normal;
+// Uniforms
+uniform mat4 unWVP;
+uniform mat4 unW;
 
-// Output data ; will be interpolated for each fragment.
-out vec4 UV;
-out vec2 overlayUV;
-flat out vec2 OUV;
-flat out vec2 overlayOUV;
-out vec3 fragmentColor;
-out vec3 overlayFragmentColor;
-flat out vec2 textureAtlas;
-out float fogFactor;
-out vec3 lampLight;
-out float sunlight;
-out vec3 distVec;
-out vec3 normal_worldspace;
-out vec3 eyeDirection_worldspace;
-out float specMod;
-flat out float diffuseMult;
-flat out vec4 texDimensions;
-flat out float multiplicativeBlendFactor;
-flat out float additiveBlendFactor;
-flat out float alphaBlendFactor;
+// Inputs
+in vec4 vPosition_TextureType;
+in vec4 vTex_Animation_BlendMode;
+in vec4 vTextureAtlas_TextureIndex;
+in vec4 vTexDims;
+in vec3 vColor;
+in vec3 vOverlayColor;
+in vec4 vLight_Sunlight;
+in vec3 vNormal;
 
-// Values that stay constant for the whole mesh.
-uniform mat4 MVP;
-uniform mat4 M;
-uniform float fogEnd;
-uniform float fogStart;
-uniform float dt;
-uniform vec3 lightPosition_worldspace;
+// Outputs
+out vec4 fTex;
+flat out vec2 fOUV;
+flat out vec2 fOverlayOUV;
+out vec3 fColor;
+out vec3 fOverlayColor;
+flat out vec2 fTextureAtlas;
+out vec3 fLamp;
+out float fSun;
+out vec3 fDist;
+out vec3 fNormal;
+flat out vec4 fTexDims;
+flat out float fMultBlendFactor;
+flat out float fAddBlendFactor;
+flat out float fAlphaBlendFactor;
 
 void main(){
     
-    vec3 vertexPosition = position_TextureType.xyz / 7.0;
-	float cosdt;
-	if (color_waveEffect[3] != 0.0){
-		cosdt = cos(dt*1.5 + vertexPosition.x*.392699 + vertexPosition.z*.392699 + vertexPosition.y*.392699) - cos(-dt*2.0 - vertexPosition.x*.392699 + vertexPosition.z*.392699 - vertexPosition.y*.392699);	
-	}else{
-		cosdt = 0;
-	}
-    
-    specMod = dot(lightPosition_worldspace, vec3(0.0, 1.0, 0.0))*6;
-    specMod = clamp(specMod, 0.0, 1.0);
-    
-	vec3 vpm = vec3(vertexPosition.x + cosdt*0.035, vertexPosition.y, vertexPosition.z + cosdt*0.025);
-	distVec = vec3(M * vec4(vpm, 1));
+    vec3 vertexPosition = vPosition_TextureType.xyz / 7.0;
 
-    eyeDirection_worldspace = -distVec;
+    fDist = -vec3(unW * vec4(vertexPosition, 1));
     
-	// Output position of the vertex, in clip space : MVP * (position)
-	gl_Position =  MVP * vec4(vpm, 1.0);
-    
-	fogFactor = clamp(((fogEnd - length(distVec) + fogStart)/fogEnd), 0.0, 1.0);
+	gl_Position =  unWVP * vec4(vertexPosition, 1.0);
 	
     //base OUV
-	OUV[0] = mod((textureAtlas_textureIndex[2]), 16.0)/16.0;
-	OUV[1] = ((floor((textureAtlas_textureIndex[2])/16.0))/16.0);
+	fOUV[0] = mod((vTextureAtlas_TextureIndex[2]), 16.0)/16.0;
+	fOUV[1] = ((floor((vTextureAtlas_TextureIndex[2])/16.0))/16.0);
     
     //overlay OUV
-    overlayOUV[0] = mod((textureAtlas_textureIndex[3]), 16.0)/16.0;
-	overlayOUV[1] = ((floor((textureAtlas_textureIndex[3])/16.0))/16.0);
+    fOverlayOUV[0] = mod((vTextureAtlas_TextureIndex[3]), 16.0)/16.0;
+	fOverlayOUV[1] = ((floor((vTextureAtlas_TextureIndex[3])/16.0))/16.0);
     
-	UV = uvs_animation_blendMode.xyxy / textureDimensions;
+	fTex = vTex_Animation_BlendMode.xyxy / vTexDims;
     
-    texDimensions = textureDimensions;
+    fTexDims = vTexDims;
     
-    normal_worldspace = normalize(normal);
+    fNormal = normalize(vNormal); // TODO(Ben): Don't think we need to normalize
     
-	textureAtlas = textureAtlas_textureIndex.xy;
+	fTextureAtlas = vTextureAtlas_TextureIndex.xy;
 	
     //add 0.1 in case we lose precision
-    int blendMode = int(uvs_animation_blendMode[3] + 0.1);
-    alphaBlendFactor = float(blendMode & 0x3);
-    additiveBlendFactor = float(((blendMode & 0xc) >> 2) - 1);
-    multiplicativeBlendFactor = float(blendMode >> 4);
+    int blendMode = int(vTex_Animation_BlendMode[3] + 0.1);
+    fAlphaBlendFactor = float(blendMode & 0x3);
+    fAddBlendFactor = float(((blendMode & 0xc) >> 2) - 1);
+    fMultBlendFactor = float(blendMode >> 4);
     
-	lampLight = light_sunlight.xyz * 1.6;
-    
-    sunlight = light_sunlight.w;
-	
-    //diffuse
-    diffuseMult = clamp( dot( normal_worldspace, lightPosition_worldspace ), 0,1 );
-    
-	fragmentColor = color_waveEffect.rgb;
-    overlayFragmentColor = overlayColor;
+	fLamp = vLight_Sunlight.xyz;
+    fSun = vLight_Sunlight.w;
+
+	fColor = vColor;
+    fOverlayColor = vOverlayColor;
 }

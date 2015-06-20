@@ -1,108 +1,76 @@
-// Interpolated values from the vertex shaders
-in vec4 UV;
-in vec2 overlayUV;
-flat in vec2 OUV;
-flat in vec2 overlayOUV;
-in vec3 fragmentColor;
-in vec3 overlayFragmentColor;
-flat in vec2 textureAtlas;
-in float fogFactor;
-in vec3 lampLight;
-in float sunlight;
-in vec3 distVec;
-in vec3 normal_worldspace;
-in vec3 eyeDirection_worldspace;
-in float specMod;
-flat in float diffuseMult;
-flat in vec4 texDimensions;
-flat in float multiplicativeBlendFactor;
-flat in float additiveBlendFactor;
-flat in float alphaBlendFactor;
+// Uniforms
+uniform sampler2DArray unTextures;
+uniform vec3 unAmbientLight;
+uniform vec3 unSunColor;
+uniform float unSunVal;
+uniform vec3 unLightDirWorld;
+uniform float unSpecularExponent;
+uniform float unSpecularIntensity;
+uniform float unFadeDist;
 
-// Ouput data
-out vec4 color;
+// Inputs
+in vec4 fTex;
+flat in vec2 fOUV;
+flat in vec2 fOverlayOUV;
+in vec3 fColor;
+in vec3 fOverlayColor;
+flat in vec2 fTextureAtlas;
+in vec3 fLamp;
+in float fSun;
+in vec3 fDist;
+in vec3 fNormal;
+flat in vec4 fTexDims;
+flat in float fMultBlendFactor;
+flat in float fAddBlendFactor;
+flat in float fAlphaBlendFactor;
 
-// Values that stay constant for the whole mesh.
-
-uniform sampler2DArray textures;
-uniform vec3 ambientLight;
-uniform vec3 lightColor;
-uniform vec3 fogColor;
-uniform float sunVal;
-uniform float lightType;
-uniform vec3 eyeNormalWorldspace;
-uniform vec3 lightPosition_worldspace;
-uniform float specularExponent;
-uniform float specularIntensity;
-uniform float alphaMult;
-uniform float fadeDistance;
+// Ouputs
+out vec4 pColor;
 
 void main(){
 
 	// Material properties
-	vec3 colr;
 	vec4 materialDiffuseColor;
 	vec3 baseUV;
     vec3 overlayUV;
 	vec4 tUV;
 
-    vec3 flashLight = vec3(0.0);
-	
-	float dist = length(distVec);
+	float dist = length(fDist);
     
-    vec4 frac = fract(UV);
+    vec4 frac = fract(fTex);
     frac.yw = vec2(1.0) - frac.yw;
-	tUV = frac * texDimensions / 16.0;
+	tUV = frac * fTexDims / 16.0;
 	
-    baseUV = vec3(tUV.xy + OUV.xy, textureAtlas.x);
-    overlayUV = vec3(tUV.zw + overlayOUV.xy, textureAtlas.y);
+    baseUV = vec3(tUV.xy + fOUV.xy, fTextureAtlas.x);
+    overlayUV = vec3(tUV.zw + fOverlayOUV.xy, fTextureAtlas.y);
 
-    vec4 dUV = UV * texDimensions;
+    vec4 dUV = fTex * fTexDims;
 	
-    materialDiffuseColor = textureGrad(textures, baseUV, dFdx(dUV.xy/16.0), dFdy(dUV.xy/16.0));
+    vec4 color = textureGrad(unTextures, baseUV, dFdx(dUV.xy/16.0), dFdy(dUV.xy/16.0));
+    color.rgb *= fColor;
     
-	vec4 overlayColor = textureGrad(textures, overlayUV, dFdx(dUV.zw/16.0), dFdy(dUV.zw/16.0));
-    overlayColor.rgb *= overlayFragmentColor;
+	vec4 overlayColor = textureGrad(unTextures, overlayUV, dFdx(dUV.zw/16.0), dFdy(dUV.zw/16.0));
+    overlayColor.rgb *= fOverlayColor;
     
-    vec3 multColor = max(vec3(multiplicativeBlendFactor), overlayColor.rgb);
+    vec3 multColor = max(vec3(fMultBlendFactor), overlayColor.rgb);
     
-    materialDiffuseColor.rgb *= multColor * fragmentColor.rgb;
-    materialDiffuseColor.rgb = mix(materialDiffuseColor.rgb, overlayColor.rgb, min(alphaBlendFactor, overlayColor.a));
-    materialDiffuseColor.rgb += additiveBlendFactor * overlayColor.rgb;
-    
-    vec3 fragColor = materialDiffuseColor.rgb;
-	vec3 materialAmbiantColor = ambientLight * fragColor;
-
-	if (lightType == 1.0){
-		float cosTheta = clamp( dot( eyeNormalWorldspace, normalize(distVec) ), 0,1 );
-		cosTheta = 1.0 - (1.0-cosTheta)*(1.0/(0.2)) - dist*0.007;
-		if (cosTheta < 0.1) cosTheta = 0.1-cosTheta/4;
-		if (cosTheta < 0) cosTheta = 0;
-		cosTheta *= 0.5;
-		flashLight = vec3(cosTheta);
-	}else if (lightType == 2.0){
-		float lightv = 0.5 - dist*0.03 + lightType;
-		if (lightv < 0) lightv = 0;
-		flashLight = vec3(lightv);
-	}
+    color.rgb *= multColor;
+    color.rgb = mix(color.rgb, overlayColor.rgb, min(fAlphaBlendFactor, overlayColor.a));
+    color.rgb += fAddBlendFactor * overlayColor.rgb;
     
     //specular
-    vec3 H = normalize(lightPosition_worldspace + normalize(eyeDirection_worldspace));
-    float NdotH = dot(normal_worldspace, H);
+    vec3 H = normalize(unLightDirWorld + fDist / dist);
+    float NdotH = dot(fNormal, H);
 	NdotH = clamp(NdotH, 0.0, 1.0);
-	
-    vec3 materialSpecularColor = vec3(specularIntensity * specMod);
-	colr =	
-		// Ambiant : simulates indirect lighting
-		materialAmbiantColor +
-		// Diffuse : "color" of the object
-		fragColor * (flashLight + sunlight * sunVal) +
-        fragColor * lampLight +
-        lightColor * sunlight * (fragColor * diffuseMult + 
-        materialSpecularColor * pow(NdotH, specularExponent));
+
+	color.rgb =	unAmbientLight * color.rgb + // Ambiant
+                color.rgb * (fSun * unSunVal) + // Diffuse
+                color.rgb * fLamp + // Lamp
+                unSunColor * fSun * (color.rgb + 
+                vec3(unSpecularIntensity) * pow(NdotH, unSpecularExponent));
         
     // Calculate fade
-	float fadeAlpha = clamp(1.0 - (dist - fadeDistance) * 0.03, 0.0, 1.0);
+	float fadeAlpha = clamp(1.0 - (dist - unFadeDist) * 0.03, 0.0, 1.0);
     
-    color = vec4(mix(fogColor, colr, fogFactor), fadeAlpha * alphaMult * materialDiffuseColor.a); //apply fog and transparency
+    pColor = vec4(1.0, 0.0, 0.0, 1.0) + 0.00001 * vec4(color.rgb, fadeAlpha * color.a); //apply fog and transparency
 }
