@@ -47,4 +47,5 @@ void main() {
   fPosition = vPosition.xyz;
   fTemp = vColor_Temp.a;
   fDepth = vDepth;
+  fEyeDir = -normalize(fPosition);
 }
