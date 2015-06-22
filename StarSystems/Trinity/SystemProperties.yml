@@ -1361,6 +1361,54 @@ Minos:
   p: 20
   n: 325
   a: 80
+(AB-1) Moros:
+  type: DwarfPlanet
+  path: Planets/Moros/properties.yml
+  par: Trinity AB
+  ref: Nemesis
+  trojan: L4
+(AB-2) Ker:
+  type: Asteroid
+  path: Asteroids/AB2_Ker.yml
+  par: Trinity AB
+  ref: Nemesis
+  trojan: L5
+(AB-14) Horkos-Aite:
+  type: Barycenter
+  comps: ["(AB-14) Horkos", "(AB-14) Aite"]
+  par: Trinity AB
+  ref: Trinity A
+  tf: 9
+  e: 0.181
+  i: 4.75
+  n: 226
+  p: 5
+  a: 202
+(AB-14) Horkos:
+  type: Asteroid
+  path: Asteroids/AB14_Horkos.yml
+  par: (AB-14) Horkos-Aite
+  t: 2.09952e+5
+  e: 0.1469
+  i: 17.08
+  n: 27
+  p: 331
+  a: 71
+(AB-14) Aite:
+  type: Asteroid
+  path: Asteroids/AB14_Aite.yml
+  par: (AB-14) Horkos-Aite
+(AB-15) Argos:
+  type: DwarfPlanet
+  path: Planets/Argos/properties.yml
+  par: Trinity AB
+  ref: Trinity A
+  tf: 9
+  e: 0.09
+  i: 2.87
+  n: 204
+  p: 287
+  a: 206
 (AB-3) Somnus:
   type: Comet
   path: Comets/AB3_Somnus.yml
