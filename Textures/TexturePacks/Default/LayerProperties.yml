@@ -765,6 +765,8 @@ rubber:
   path: Blocks/Products/rubber.png
 ruby:
   path: Blocks/Minerals/ruby.png
+  normalPath: Blocks/Minerals/ruby_NRM.png
+  dispPath: Blocks/Minerals/ruby_DISP.png
   method: repeat
 rutile:
   path: Blocks/Minerals/rutile.png
@@ -879,6 +881,8 @@ steel_tungsten_overlay:
   method: connect
 stone:
   path: Blocks/Terrain/stone.png
+  normalPath: Blocks/Terrain/stone_NRM.png
+  dispPath: Blocks/Terrain/stone_DISP.png
   method: repeat
 stone_bricks:
   path: Blocks/Building/stone_bricks.png
