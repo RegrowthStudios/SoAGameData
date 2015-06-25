@@ -9,8 +9,7 @@ in vec4 vTextureAtlas_TextureIndex;
 in vec4 vTexDims;
 in vec3 vColor;
 in vec3 vOverlayColor;
-in vec4 vLight_Sunlight;
-in vec3 vNormal;
+in int vFace;
 
 // Outputs
 out vec4 fTex;
@@ -19,14 +18,21 @@ flat out vec2 fOverlayOUV;
 out vec3 fColor;
 out vec3 fOverlayColor;
 flat out vec2 fTextureAtlas;
-out vec3 fLamp;
-out float fSun;
 out vec3 fDist;
 out vec3 fNormal;
 flat out vec4 fTexDims;
 flat out float fMultBlendFactor;
 flat out float fAddBlendFactor;
 flat out float fAlphaBlendFactor;
+
+vec3 NORM_LOOKUP[6] = vec3[6](
+	vec3(-1.0, 0.0, 0.0),
+	vec3(1.0, 0.0, 0.0),
+	vec3(0.0, -1.0, 0.0),
+	vec3(0.0, 1.0, 0.0),
+    vec3(0.0, 0.0, -1.0),
+    vec3(0.0, 0.0, 1.0)
+);
 
 void main(){
     
@@ -48,7 +54,7 @@ void main(){
     
     fTexDims = vTexDims;
     
-    fNormal = normalize(vNormal); // TODO(Ben): Don't think we need to normalize
+    fNormal = NORM_LOOKUP[vFace];
     
 	fTextureAtlas = vTextureAtlas_TextureIndex.xy;
 	
@@ -57,9 +63,6 @@ void main(){
     fAlphaBlendFactor = float(blendMode & 0x3);
     fAddBlendFactor = float(((blendMode & 0xc) >> 2) - 1);
     fMultBlendFactor = float(blendMode >> 4);
-    
-	fLamp = vLight_Sunlight.xyz;
-    fSun = vLight_Sunlight.w;
 
 	fColor = vColor;
     fOverlayColor = vOverlayColor;

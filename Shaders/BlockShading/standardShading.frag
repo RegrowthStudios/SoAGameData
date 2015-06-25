@@ -15,8 +15,6 @@ flat in vec2 fOverlayOUV;
 in vec3 fColor;
 in vec3 fOverlayColor;
 flat in vec2 fTextureAtlas;
-in vec3 fLamp;
-in float fSun;
 in vec3 fDist;
 in vec3 fNormal;
 flat in vec4 fTexDims;
@@ -26,6 +24,17 @@ flat in float fAlphaBlendFactor;
 
 // Ouputs
 out vec4 pColor;
+
+float computeDiffuse(vec3 normal) {
+    return clamp( dot( normal, unLightDirWorld ), 0,1 );
+}
+
+float computeSpecular(vec3 normal, vec3 eyeDir) {
+    //specular
+    vec3 H = normalize(unLightDirWorld + eyeDir);
+    float nDotH = clamp(dot(normal, H), 0.0, 1.0);
+    return pow(nDotH, unSpecularExponent) * 0.03;
+}
 
 void main(){
 
@@ -59,18 +68,14 @@ void main(){
     color.rgb += fAddBlendFactor * overlayColor.rgb;
     
     //specular
-    vec3 H = normalize(unLightDirWorld + fDist / dist);
-    float NdotH = dot(fNormal, H);
-	NdotH = clamp(NdotH, 0.0, 1.0);
-
-	color.rgb =	unAmbientLight * color.rgb + // Ambiant
-                color.rgb * (fSun * unSunVal) + // Diffuse
-                color.rgb * fLamp + // Lamp
-                unSunColor * fSun * (color.rgb + 
-                vec3(unSpecularIntensity) * pow(NdotH, unSpecularExponent));
+    float spec = computeSpecular(fNormal, fDist / dist);
+    float diff = computeDiffuse(fNormal);
+    
+	color.rgb =	color.rgb * (unAmbientLight + diff) + // Ambiant and diffuse
+                unSunColor * (vec3(unSpecularIntensity) * spec); // Specular
         
     // Calculate fade
 	float fadeAlpha = clamp(1.0 - (dist - unFadeDist) * 0.03, 0.0, 1.0);
     
-    pColor = vec4(1.0, 0.0, 0.0, 1.0) + 0.00001 * vec4(color.rgb, fadeAlpha * color.a); //apply fog and transparency
+    pColor = vec4(color.rgb, 1.0 + 0.00001 * fadeAlpha * color.a); //apply fog and transparency
 }
