@@ -1,10 +1,9 @@
-﻿##########  anim-file format specifications - last updated: 27.09.2014
+﻿##########  anim-file format specifications - last updated: 27.06.2015
 
-  #  The anim-file uses the same filename as the animated texture
+  #  Each anim-file uses the same filename and path as the animated texture
 
 
 ###  Internal structure of anim files:
-  #  The file is required to use valid YAML syntax!
 
 duration: (duration of one animation cycle in milliseconds)
 fadeOutBegin: (passed time in milliseconds when fading out should start)    # this feature is optional
@@ -14,8 +13,8 @@ yFrames: (number of frames the sprite sheet should be divided in y direction)
 
 
 
-####  Behavior of multi-tile block textures:
+####  Behavior of multi-tile textures:
   #  Every frame should show the whole tile set, e.g. 12x4 tiles for the classic 8-way connection method
 
-####  Behavior of base textures and overlays:
+####  Behavior of base and overlay texture layers:
   #  Both can show independent animations and therefore use their own anim file
