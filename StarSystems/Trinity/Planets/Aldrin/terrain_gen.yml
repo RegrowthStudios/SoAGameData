@@ -2,7 +2,8 @@ biomes: "Planets/Aldrin/biome_gen.yml"
 terrainColor: 
   tint: [255, 255, 255]
   colorPath: Planets/Aldrin/TerrainColor.png
-  texturePath: _shared/terrain_b.png
+  grassTexturePath: _shared/terrain_b.png
+  rockTexturePath: _shared/terrain_a.png
 liquidColor: 
   depthScale: 30000.0
   tint: [255, 255, 255]
@@ -14,7 +15,7 @@ tempHeightFalloff: 5.0
 humLatitudeFalloff: 30.0
 humHeightFalloff: 1.0
 baseHeight:
-  base: 100
+  base: 10
   funcs:
     # Tiny detail
     - octaves: 9
@@ -34,7 +35,7 @@ baseHeight:
       frequency: 0.003
       low: -2000.0
       high: 3000.0
-    # Large mountains
+    # Mountains
     - type: noise_cubed
       op: mul
       octaves: 7
@@ -44,18 +45,44 @@ baseHeight:
       high: 13.0
       clamp: [0.0, 1.0]
       children:
-        - type: noise_cellular_cubed
+        - type: noise_cellular_squared
           octaves: 3
           persistence: 0.6
           frequency: 0.05
           low: -25000.0
           high: 25000.0
         - type: noise_ridged
-          octaves: 12
+          octaves: 11
           persistence: 0.5
           frequency: 0.03
           low:  0.0
           high: 7500.0
+    # Plateaus
+    - type: noise_cubed
+      op: mul
+      octaves: 6
+      persistence: 0.6
+      frequency: 0.003
+      low: -25.0
+      high: 25.0
+      clamp: [0.0, 1.0]
+      children:
+        # Tall plateaus
+        - type: noise
+          octaves: 5
+          persistence: 0.55
+          frequency: 0.08
+          low: -13000.0
+          high: 8000.0
+          clamp: [0.0, 1500.0]
+        # Short plateaus
+        - type: noise
+          octaves: 5
+          persistence: 0.6
+          frequency: 0.1
+          low: -7000.0
+          high: 5000.0
+          clamp: [0.0, 750.0]
     # Oceans
     - type: noise
       op: mul
@@ -73,60 +100,36 @@ baseHeight:
           frequency: 0.002
           low: 10000.0
           high: 20000.0
-    # Plateaus
-    - type: noise
-      op: mul
-      octaves: 6
-      persistence: 0.75
-      frequency: 0.0002
-      low: -13.0
-      high: 11.0
-      clamp: [0.0, 1.0]
-      children:
-        - type: noise_cubed
-          op: add
-          octaves: 5
-          persistence: 0.9
-          frequency: 0.002
-          low: -20000.0
-          high: 20000.0
-          clamp: [0.0, 5000.0]
-        - type: noise_cubed
-          op: add
-          octaves: 5
-          persistence: 0.9
-          frequency: 0.008
-          low: -5000.0
-          high: 5000.0
-          clamp: [0.0, 1000.0]
-        - type: noise_cubed
-          op: add
-          octaves: 5
-          persistence: 0.9
-          frequency: 0.008
-          low: -2000.0
-          high: 2000.0
-          clamp: [0.0, 500.0]
-    # Supervolcano
-    - type: noise
-      op: mul
-      octaves: 2
-      persistence: 1.0
-      frequency: 0.0002
-      low: -5.5
+    # Rivers
+    - type: noise_ridged
+      octaves: 1
+      persistence: 0.1
+      frequency: 0.015
+      low: -185.0
       high: 1.0
       clamp: [0.0, 1.0]
       children:
+      - type: cubed
+        op: sub
+        children:
         - type: constant
-          val: 310000.0
-        - type: passthrough
-          op: sub
-          val: 0.228
+          low: 1.0
           children:
-          - type: constant
+          - type: cubed
             op: sub
-            val: 2650000.0
-            clamp: [0.0, 350000.0]
+            children:
+            - type: constant
+              low: 1.0
+              op: mul
+              children:
+              - type: noise
+                op: sub
+                octaves: 8
+                persistence: 0.6
+                frequency: 0.1
+                low: -200.0
+                high: 800.0
+                clamp: [0.0, 1000.0]
 temperature:
   base: 172.0
   funcs:

@@ -139,29 +139,11 @@ float ridgedNoise(vec3 position, int octaves, float frequency, float persistence
 }
 
 float squaredNoise(vec3 position, int octaves, float frequency, float persistence) {
-	float total = 0.0;
-	float maxAmplitude = 0.0;
-    float amplitude = 1.0;
-	for (int i = 0; i < octaves; i++) {
-		float tmp = snoise(position * frequency);
-        total += tmp * tmp * amplitude;
-		frequency *= 2.0;
-		maxAmplitude += amplitude;
-		amplitude *= persistence;
-	}
-	return total / maxAmplitude;
+	float n = noise(position, octaves, frequency, persistence);
+    return n * n;
 }
 
 float cubedNoise(vec3 position, int octaves, float frequency, float persistence) {
-	float total = 0.0;
-	float maxAmplitude = 0.0;
-    float amplitude = 1.0;
-	for (int i = 0; i < octaves; i++) {
-		float tmp = snoise(position * frequency);
-        total += tmp * tmp * tmp * amplitude;
-		frequency *= 2.0;
-		maxAmplitude += amplitude;
-		amplitude *= persistence;
-	}
-	return total / maxAmplitude;
+	float n = noise(position, octaves, frequency, persistence);
+    return n * n * n;
 }

@@ -87,6 +87,11 @@ brass_patinated_overlay:
   path: Blocks/Metals/brass_patinated_overlay.png
   innerSeams: true
   method: connect
+bricks:
+  path: Blocks/Building/bricks.jpg
+  normalPath: Blocks/Building/bricks_NRM.jpg
+  dispPath: Blocks/Building/bricks_DISP.jpg
+  method: repeat
 bricks_light_side:
   path: Blocks/Building/bricks_light_side.png
   method: random
@@ -976,6 +981,8 @@ stone_cut_sand_red:
   method: random
 stone_mossy:
   path: Blocks/Terrain/stone_mossy.png
+  normalPath: Blocks/Terrain/stone_NRM.png
+  dispPath: Blocks/Terrain/stone_DISP.png
   method: repeat
 stone_mycelia_icecaps_side:
   path: Blocks/Terrain/stone_mycelia_icecaps_side.png

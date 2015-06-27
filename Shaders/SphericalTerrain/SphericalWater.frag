@@ -64,6 +64,6 @@ void main() {
     
     float diffuse = computeDiffuse(normal); 
     float specular = computeSpecular(normal);
-    pColor = vec4(color * diffuse + scatterColor * 1.5 + vec3(1.0) * specular, unAlpha);
+    pColor = vec4(color * diffuse * 0.0001 + texture(unColorMap, colorUV).rgb + scatterColor * 1.5 + vec3(1.0) * specular * 0.00001, unAlpha);
   }
 }

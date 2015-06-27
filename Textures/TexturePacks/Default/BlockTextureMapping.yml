@@ -87,7 +87,7 @@ Quartz:
 Diamond:
   texture: diamond
 Ruby:
-  texture: ruby
+  texture: bricks
 Emerald:
   texture: emerald
 Sapphire:

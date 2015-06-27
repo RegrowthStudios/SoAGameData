@@ -41,7 +41,7 @@ float computeSpecular(vec3 normal, vec3 eyeDir) {
 
 vec2 calculateOffset(float disp, vec3 eyeDir, float scale, float bias)
 {
-    return (eyeDir * fTBN).xy * (disp * scale + bias);
+    return -(eyeDir * fTBN).xy * (disp * scale + bias);
 }
 
 void main(){
@@ -66,8 +66,8 @@ void main(){
     vec3 baseDispUV = vec3(tileUV.xy + fDispUVStart.xy, fDispTextureAtlas.x);
     float baseDisp = textureGrad(unTextures, baseDispUV, baseDf.xy, baseDf.zw).r;
     
-    float unDispScale = 0.08;
-    float bias = -unDispScale / 2.0;
+    float unDispScale = 0.04;
+    float bias = -unDispScale * 0.75;
     frac.xy = fract(fTex.xy + calculateOffset(baseDisp, eyeDir, unDispScale, bias));
     frac.y = 1.0 - frac.y;
 	tileUV.xy = frac.xy * fTexDims.xy / 16.0;
@@ -114,5 +114,7 @@ void main(){
     
     vec3 debugColor = baseNorm * 0.0001 + overlayNorm * 0.000001 + vec3(baseDisp) * 0.0001 + vec3(overlayDisp) * 0.00001;
     
-    pColor = vec4(debugColor + color.rgb, 1.0 + 0.00001 * fadeAlpha * color.a); //apply fog and transparency
+    float ambientOcclusion = (baseDisp + 1.0) * 0.5;
+    
+    pColor = vec4(debugColor + color.rgb * 2.0 * ambientOcclusion, 1.0 + 0.00001 * fadeAlpha * color.a); //apply fog and transparency
 }
