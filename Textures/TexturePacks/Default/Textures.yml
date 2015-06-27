@@ -12,6 +12,8 @@ bricks_side:
   base: bricks_side
 bricks_top:
   base: bricks_top
+bricks_test:
+  base: bricks_test
 cloth:
   base: cloth
   overlay: cloth_overlay

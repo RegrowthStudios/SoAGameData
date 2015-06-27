@@ -87,7 +87,7 @@ Quartz:
 Diamond:
   texture: diamond
 Ruby:
-  texture: bricks
+  texture: bricks_test
 Emerald:
   texture: emerald
 Sapphire:

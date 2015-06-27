@@ -87,7 +87,7 @@ brass_patinated_overlay:
   path: Blocks/Metals/brass_patinated_overlay.png
   innerSeams: true
   method: connect
-bricks:
+bricks_test:
   path: Blocks/Building/bricks.jpg
   normalPath: Blocks/Building/bricks_NRM.jpg
   dispPath: Blocks/Building/bricks_DISP.jpg
