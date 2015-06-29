@@ -17,6 +17,8 @@ Moon:
 DwarfMoon:
   base: [30, 40, 64, 128]
   hover: [48, 64, 128, 175]
+IrregularDwarfMoon:
+  hover: [48, 64, 128, 175]
 Asteroid:
   hover: [80, 80, 80, 175]
 Comet:

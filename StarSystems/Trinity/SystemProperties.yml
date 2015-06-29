@@ -51,6 +51,17 @@ Demoleon:
   n: 333
   p: 75
   a: 200
+(A-7) Ferros:
+  type: Asteroid
+  path: Asteroids/A7_Ferros.yml
+  par: Trinity A
+  ref: Elysion
+  td: 27
+  e: 0.1550
+  i: 7.3
+  n: 244
+  p: 77
+  a: 333
 Palamedes:
   type: Planet
   path: Planets/Palamedes/properties.yml
@@ -175,6 +186,271 @@ Elysion:
   i: 0
   p: 105
   a: 199
+Elysion-1:
+  type: DwarfMoon
+  path: Asteroids/Elysion1.yml
+  par: Elysion
+  ref: Eridanus
+  td: 99
+  e: 0.0
+  i: 0.0
+  a: 213
+Elysion-2:
+  type: DwarfMoon
+  path: Asteroids/Elysion2.yml
+  par: Elysion
+  ref: Eridanus
+  td: 77
+  e: 0.0
+  i: 0.0
+  a: 312
+Elysion-3:
+  type: DwarfMoon
+  path: Asteroids/Elysion3.yml
+  par: Elysion
+  ref: Eridanus
+  td: 66
+  e: 0.0
+  i: 0.0
+  a: 108
+Elysion-4:
+  type: DwarfMoon
+  path: Asteroids/Elysion4.yml
+  par: Elysion
+  ref: Eridanus
+  td: 55
+  e: 0.0
+  i: 0.0
+  a: 19
+Mikro:
+  type: Moon
+  path: Planets/Mikro/properties.yml
+  par: Elysion
+  ref: Eridanus
+  td: 33
+  e: 0.0047
+  i: 0.0
+  p: 254
+  a: 223
+Galantus:
+  type: Moon
+  path: Planets/Galantus/properties.yml
+  par: Elysion
+  ref: Eridanus
+  td: 22
+  e: 0.001
+  i: 0.0
+  p: 327
+  a: 97
+Callonia:
+  type: Moon
+  path: Planets/Callonia/properties.yml
+  par: Elysion
+  ref: Eridanus
+  tf: 2
+  td: 33
+  e: 0.0002
+  i: 0.0
+  p: 225
+  a: 39
+Elysion-5:
+  type: DwarfMoon
+  path: Asteroids/Elysion5.yml
+  par: Elysion
+  ref: Callonia
+  trojan: L4
+Elysion-6:
+  type: DwarfMoon
+  path: Asteroids/Elysion6.yml
+  par: Elysion
+  ref: Callonia
+  trojan: L5
+Dominia:
+  type: Moon
+  path: Planets/Dominia/properties.yml
+  par: Elysion
+  ref: Eridanus
+  td: 11
+  e: 0.0
+  i: 0.0
+  a: 296
+Elysion-7:
+  type: DwarfMoon
+  path: Asteroids/Elysion7.yml
+  par: Elysion
+  ref: Dominia
+  trojan: L4
+Elysion-8:
+  type: DwarfMoon
+  path: Asteroids/Elysion8.yml
+  par: Elysion
+  ref: Dominia
+  trojan: L5
+Aegis:
+  type: Moon
+  path: Planets/Aegis/properties.yml
+  par: Elysion
+  ref: Eridanus
+  td: 8
+  e: 0.0
+  i: 0.0
+  a: 140
+Adoris:
+  type: Moon
+  path: Planets/Adoris/properties.yml
+  par: Elysion
+  ref: Eridanus
+  td: 5
+  e: 0.0001
+  i: 0.03
+  n: 199
+  p: 203
+  a: 46
+Peleus:
+  type: Moon
+  path: Planets/Peleus/properties.yml
+  par: Elysion
+  ref: Eridanus
+  td: 2
+  e: 0.0032
+  i: 1.6
+  n: 329
+  p: 69
+  a: 155
+Eridanus:
+  type: Moon
+  path: Planets/Eridanus/properties.yml
+  par: Elysion
+  t: 2.52e+6
+  e: 0.015
+  i: 0.88
+  n: 175
+  p: 24
+  a: 268
+Elysion-9:
+  type: DwarfMoon
+  path: Asteroids/Elysion9yml
+  par: Elysion
+  ref: Eridanus
+  trojan: L4
+Flox:
+  type: Moon
+  path: Planets/Flox/properties.yml
+  par: Elysion
+  ref: Eridanus
+  tf: 2
+  e: 0.028
+  i: 3.99
+  n: 342
+  p: 129
+  a: 24
+Elysion-10:
+  type: DwarfMoon
+  path: Asteroids/Elysion10.yml
+  par: Elysion
+  ref: Eridanus
+  tf: 5
+  td: 2
+  e: 0.018
+  i: 2.27
+  n: 219
+  p: 321
+  a: 52
+Elysion-11:
+  type: DwarfMoon
+  path: Asteroids/Elysion11.yml
+  par: Elysion
+  ref: Eridanus
+  tf: 14
+  td: 5
+  e: 0.015
+  i: 2.13
+  n: 255
+  p: 338
+  a: 206
+Elysion-12:
+  type: DwarfMoon
+  path: Asteroids/Elysion12.yml
+  par: Elysion
+  ref: Eridanus
+  tf: 16
+  td: 5
+  e: 0.017
+  i: 0.6
+  n: 53
+  p: 76
+  a: 101
+Elysion-13:
+  type: DwarfMoon
+  path: Asteroids/Elysion13.yml
+  par: Elysion
+  ref: Eridanus
+  tf: 18
+  td: 5
+  e: 0.023
+  i: 1.4
+  n: 295
+  p: 324
+  a: 311
+Elysion-14:
+  type: DwarfMoon
+  path: Asteroids/Elysion14.yml
+  par: Elysion
+  ref: Eridanus
+  tf: 4
+  e: 0.002
+  i: 1.16
+  n: 158
+  p: 116
+  a: 23
+(A-3) Themis:
+  type: Asteroid
+  path: Asteroids/A3_Themis.yml
+  par: Trinity A
+  ref: Elysion
+  tf: 4
+  td: 3
+  e: 0.0333
+  i: 1.11
+  n: 10
+  p: 340
+  a: 77
+(A-4) Opis:
+  type: Asteroid
+  path: Asteroids/A4_Opis.yml
+  par: Trinity A
+  ref: Elysion
+  tf: 7
+  td: 5
+  e: 0.0505
+  i: 1.27
+  n: 236
+  p: 61
+  a: 293
+(A-1) Atropos:
+  type: Asteroid
+  path: Asteroids/A1_Atropos.yml
+  par: Trinity A
+  ref: Elysion
+  tf: 3
+  td: 2
+  e: 0.0909
+  i: 2.3
+  n: 135
+  p: 288
+  a: 357
+(A-2) Lameia:
+  type: Asteroid
+  path: Asteroids/A2_Lameia.yml
+  par: Trinity A
+  ref: Elysion
+  tf: 5
+  td: 2
+  e: 0.37
+  i: 19.46
+  n: 300
+  p: 10
+  a: 23
 Trinity B:
   type: Star
   path: Stars/TrinityB.yml
@@ -268,12 +544,10 @@ Baros:
   p: 306
   a: 351
 Endor-1:
-  type: DwarfMoon
+  type: IrregularDwarfMoon
   path: Asteroids/Endor1.yml
   par: Endor
-  ref: Baros
-  tf: 19
-  td: 8
+  t: 3.42e+6
   e: 0.0192
   i: 158.1
   n: 65
@@ -480,6 +754,76 @@ Tros:
   n: 84
   p: 198
   a: 280
+Hyperion-6:
+  type: IrregularDwarfMoon
+  path: Asteroids/Hyperion6.yml
+  par: Hyperion
+  t: 5.4431e+6
+  e: 0.1142
+  i: 9.0
+  n: 149
+  p: 37
+  a: 118
+Hyperion-7:
+  type: IrregularDwarfMoon
+  path: Asteroids/Hyperion7.yml
+  par: Hyperion
+  t: 6.5433e+6
+  e: 0.1554
+  i: 75.49
+  n: 359
+  p: 324
+  a: 87
+Hyperion-8:
+  type: IrregularDwarfMoon
+  path: Asteroids/Hyperion8.yml
+  par: Hyperion
+  t: 7.1234e+6
+  e: 0.2187
+  i: 138.76
+  n: 334
+  p: 277
+  a: 62
+Hyperion-9:
+  type: IrregularDwarfMoon
+  path: Asteroids/Hyperion9.yml
+  par: Hyperion
+  t: 6.2531e+6
+  e: 0.0544
+  i: 18.1
+  n: 259
+  p: 237
+  a: 298
+Hyperion-10:
+  type: IrregularDwarfMoon
+  path: Asteroids/Hyperion10.yml
+  par: Hyperion
+  t: 5.3452e+6
+  e: 0.0748
+  i: 96.28
+  n: 23
+  p: 234
+  a: 206
+Hyperion-11:
+  type: IrregularDwarfMoon
+  path: Asteroids/Hyperion11.yml
+  par: Hyperion
+  t: 4.9453e+6
+  e: 0.1065
+  i: 60.78
+  n: 36
+  p: 271
+  a: 5
+Hyperion-12:
+  type: IrregularDwarfMoon
+  path: Asteroids/Hyperion12.yml
+  par: Hyperion
+  t: 6.5545e+6
+  e: 0.0382
+  i: 22.92
+  n: 150
+  p: 271
+  a: 302
 Pantheon:
   type: Planet
   path: GasGiants/Pantheon/properties.yml
@@ -930,6 +1274,141 @@ Karimoon-Keobar-4:
   n: 282
   p: 112
   a: 174
+Nemesis:
+  type: Planet
+  path: IceGiants/Nemesis/properties.yml
+  par: Trinity AB
+  ref: Trinity A
+  tf: 8
+  e: 0.08
+  i: 0.86
+  n: 35
+  p: 117
+  a: 254
+Nemesis-1:
+  type: DwarfMoon
+  path: Asteroids/Nemesis1.yml
+  par: Nemesis
+  ref: Erebos
+  td: 5
+  e: 0
+  i: 0
+  a: 250
+Nemesis-2:
+  type: DwarfMoon
+  path: Asteroids/Nemesis2.yml
+  par: Nemesis
+  ref: Erebos
+  td: 4
+  e: 0
+  i: 0
+  a: 32
+Nemesis-3:
+  type: DwarfMoon
+  path: Asteroids/Nemesis3.yml
+  par: Nemesis
+  ref: Erebos
+  tf: 2
+  td: 5
+  e: 0
+  i: 0
+  a: 330
+Erebos:
+  type: Moon
+  path: Planets/Erebos/properties.yml
+  par: Nemesis
+  t: 1.116e+5
+  e: 0
+  i: 0
+  a: 95
+Caligo:
+  type: Moon
+  path: Planets/Caligo/properties.yml
+  par: Nemesis
+  ref: Erebos
+  tf: 2
+  e: 0.0001
+  i: 0
+  p: 354
+  a: 175
+Tenebrio:
+  type: Moon
+  path: Planets/Tenebrio/properties.yml
+  par: Nemesis
+  ref: Erebos
+  tf: 3
+  e: 0.0045
+  i: 0
+  p: 32
+  a: 93
+Obscurio:
+  type: Moon
+  path: Planets/Obscurio/properties.yml
+  par: Nemesis
+  ref: Erebos
+  tf: 5
+  e: 0.013
+  i: 0
+  p: 72
+  a: 163
+Minos:
+  type: Moon
+  path: Planets/Minos/properties.yml
+  par: Nemesis
+  t: 3.013e+6
+  e: 0.17
+  i: 11.4
+  p: 20
+  n: 325
+  a: 80
+(AB-1) Moros:
+  type: DwarfPlanet
+  path: Planets/Moros/properties.yml
+  par: Trinity AB
+  ref: Nemesis
+  trojan: L4
+(AB-2) Ker:
+  type: Asteroid
+  path: Asteroids/AB2_Ker.yml
+  par: Trinity AB
+  ref: Nemesis
+  trojan: L5
+(AB-14) Horkos-Aite:
+  type: Barycenter
+  comps: ["(AB-14) Horkos", "(AB-14) Aite"]
+  par: Trinity AB
+  ref: Trinity A
+  tf: 9
+  e: 0.181
+  i: 4.75
+  n: 226
+  p: 5
+  a: 202
+(AB-14) Horkos:
+  type: Asteroid
+  path: Asteroids/AB14_Horkos.yml
+  par: (AB-14) Horkos-Aite
+  t: 2.09952e+5
+  e: 0.1469
+  i: 17.08
+  n: 27
+  p: 331
+  a: 71
+(AB-14) Aite:
+  type: Asteroid
+  path: Asteroids/AB14_Aite.yml
+  par: (AB-14) Horkos-Aite
+(AB-15) Argos:
+  type: DwarfPlanet
+  path: Planets/Argos/properties.yml
+  par: Trinity AB
+  ref: Trinity A
+  tf: 9
+  e: 0.09
+  i: 2.87
+  n: 204
+  p: 287
+  a: 206
 (AB-3) Somnus:
   type: Comet
   path: Comets/AB3_Somnus.yml

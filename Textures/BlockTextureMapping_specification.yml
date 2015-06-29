@@ -1,0 +1,37 @@
+﻿##########  BlockTextureMapping.yml  -  specification and internal format/structure - last updated: 27.06.2015
+
+  #  BlockTextureMapping.yml contains a list of all blocks a texture pack should modify, sorted by block ID, the file path must be "Blocks/BlockTextureMapping.yml"
+  #  This file contains information about the textures each block and block face should use as well as the transparency properties of a block
+  #  For a complete list of available block IDs and other block-related properties, see BlockData.yml
+
+
+####  Internal structure of BlockTextureMapping.yml
+  
+(Block ID):
+  transparency: <true | false>
+  #  Optional. If not specified, then "false" is used as the default setting.
+  #  true: More performance heavy, but allows the base texture layer to use transparent pixels
+  #  false: Only supports fully opaque textures. Pixels with alpha values <1 will be underlayed with magenta color.
+  #  Transparent base textures support alpha values ≥ 0.05, pixels with alpha values <0.05 will be ignored and don't show up in-game
+  <texture | textureOpX | textureOpY | textureOpZ | textureTop | textureBottom | textureFront | textureBack | textureLeft | textureRight>: (optional Texture Name)
+  #  Optional. If not specified, then the texture pack will apply no texture to this block (will display magenta color instead)
+  #  If an optional texture name is specified, the game will look up the texture and its texture layers in Textures.yml for the respective block faces
+  #  When different texture properties link to the same block faces, more precise ones will override more general ones (single faces > opposing faces > all faces)
+  #  texture: Used for mesh flora or when all block faces should show the same texture
+  #  textureOpX: Applies the texture to the opposite front and back faces (+/-X for non-rotated blocks)
+  #  textureOpY: Applies the texture to the opposite top and bottom faces (+/-Y for non-rotated blocks)
+  #  textureOpZ: Applies the texture to the opposite left and right faces (+/-Z for non-rotated blocks)
+  #  textureTop: Applies the texture to the top face (+Y for non-rotated blocks)
+  #  textureBottom: Applies the texture to the bottom face (-Y for non-rotated blocks)
+  #  textureFront: Applies the texture to the front face (+X for non-rotated blocks)
+  #  textureBack: Applies the texture to the back face (-X for non-rotated blocks)
+  #  textureLeft: Applies the texture to the left face (+Z for non-rotated blocks)
+  #  textureRight: Applies the texture to the right face (-Z for non-rotated blocks)
+    base: (Layer Name)
+    #  Base texture layer, required if no texture name is specified above!
+    overlay: (Layer Name)
+    #  Optional overlay texture layer, only used if no texture name is specified above.
+    blendMode: <alpha | add | subtract | multiply>
+    #  Optional. If not specified in the file, then "alpha" is used as the default setting.
+    #  alpha: Standard alpha blending is used to overlay the base texture
+    #  add/subtract/multiply: The colors of the overlay texture are added/subtracted/multiplied to the base texture

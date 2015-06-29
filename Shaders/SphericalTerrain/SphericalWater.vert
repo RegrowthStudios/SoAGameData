@@ -21,6 +21,7 @@ out vec3 fPrimaryColor;
 out vec3 fSecondaryColor;
 
 #include "Shaders/AtmosphereShading/scatter.glsl"
+#include "Shaders/Utils/logz.glsl"
 
 void main() {
   vec3 normal = normalize(vPosition.xyz);
@@ -41,8 +42,10 @@ void main() {
   }
   
   gl_Position = unWVP * vPosition;
+  applyLogZ();
   fColor = vColor_Temp.rgb;
   fPosition = vPosition.xyz;
   fTemp = vColor_Temp.a;
   fDepth = vDepth;
+  fEyeDir = -normalize(fPosition);
 }
