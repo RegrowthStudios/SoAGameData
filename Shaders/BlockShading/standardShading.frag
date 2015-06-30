@@ -27,6 +27,7 @@ flat in float fAlphaBlendFactor;
 
 // Ouputs
 out vec4 pColor;
+out vec4 pNormal;
 
 float computeDiffuse(vec3 normal) {
     return clamp( dot( normal, unLightDirWorld ), 0,1 );
@@ -117,4 +118,5 @@ void main(){
     float ambientOcclusion = (baseDisp + 1.0) * 0.5;
     
     pColor = vec4(debugColor + color.rgb * 2.0 * ambientOcclusion, 1.0 + 0.00001 * fadeAlpha * color.a); //apply fog and transparency
+	pNormal = vec4(normal, 1.0);
 }
