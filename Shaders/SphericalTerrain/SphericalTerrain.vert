@@ -4,18 +4,16 @@ uniform float unTexelWidth;
 uniform float unNormalmapWidth;
 
 // Input
-in vec4 vPosition; // Position in object space
-in vec3 vTangent;
+in vec4 vPosition;
+in vec3 vNormal;
 in vec3 vColor;
-in vec2 vNormUV;
 in vec2 vTemp_Hum;
 
 // Output
 out vec3 fColor;
-out vec2 fNormUV;
 out vec3 fPosition;
+out vec3 fWorldNormal;
 out vec2 fTemp_Hum;
-out mat3 fTbn;
 out vec3 fEyeDir;
 out vec3 fNormal;
 // Scattering
@@ -26,16 +24,12 @@ out vec3 fSecondaryColor;
 #include "Shaders/Utils/logz.glsl"
 
 void main() {
-  vec3 normal = normalize(vPosition.xyz);
-  
+
   scatter(vPosition.xyz);
   fPrimaryColor = sPrimaryColor;
   fSecondaryColor = sSecondaryColor;
   fEyeDir = normalize(-sRay);
   
-  // Compute TBN for converting to world space
-  vec3 b = cross(normal, vTangent);
-  fTbn = mat3(vTangent, normal, b);
   
   /// Code for darkening terrain over horizon
   //float mult = 1.0;
@@ -44,10 +38,10 @@ void main() {
   
   gl_Position = unWVP * vPosition;
   applyLogZ();
+  
   fColor = vColor;
   fPosition = vPosition.xyz;
-  // Move normal map UV in by 1 texel in each direction
-  fNormUV = vNormUV * unNormalmapWidth + 1.1 * unTexelWidth;
-  fNormal = normal;
+  fWorldNormal = normalize(vPosition.xyz);
+  fNormal = vNormal;
   fTemp_Hum = vTemp_Hum;
 }

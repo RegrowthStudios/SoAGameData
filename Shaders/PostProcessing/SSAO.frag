@@ -10,5 +10,5 @@ in vec2 fUV;
 out float pColor;
 
 void main() {
-    pColor = 0.2;
+    pColor = 1.0;
 }

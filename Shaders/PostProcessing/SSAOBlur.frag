@@ -19,5 +19,5 @@ void main() {
 	}
 	blurSSAO /= (unBlurAmount * 2.0 + 1.0) * (unBlurAmount * 2.0 + 1.0);
 	
-    pColor = vec4(texture(unTexColor, fUV).rgb * blurSSAO, 1.0);
+    pColor = vec4(texture(unTexColor, fUV).rgb * blurSSAO, 0.0);
 }
