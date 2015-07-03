@@ -1,5 +1,4 @@
 // Uniforms
-uniform sampler2D unNormalMap;
 uniform sampler2D unGrassTexture;
 uniform sampler2D unRockTexture;
 uniform sampler2D unColorMap;
@@ -13,10 +12,9 @@ uniform vec3 rockColor = vec3(0.1, 0.1, 0.1);
 
 // Input
 in vec3 fColor;
-in vec2 fNormUV;
 in vec3 fPosition;
+in vec3 fWorldNormal;
 in vec2 fTemp_Hum;
-in mat3 fTbn;
 in vec3 fEyeDir;
 in vec3 fNormal;
 // Scattering
@@ -39,12 +37,11 @@ float computeSpecular(vec3 normal) {
 }
 
 void main() {
+
+  float angle = min(dot(fNormal, fWorldNormal), 1.0);
   
-  vec3 normal = fTbn * normalize(((texture(unNormalMap, fNormUV).rgb * 2.0) - 1.0));
-  float angle = min(dot(normal, fNormal), 1.0);
-  
-  float diffuse = computeDiffuse(normal);
-  float specular = computeSpecular(normal);
+  float diffuse = computeDiffuse(fNormal);
+  float specular = computeSpecular(fNormal);
 
   float theta = dot(unLightDirWorld, fEyeDir);
   float miePhase = ((1.0 - unG2) / (2.0 + unG2)) * (1.0 + theta * theta) / pow(1.0 + unG2 - 2.0 * unG * theta, 1.5);
@@ -52,7 +49,7 @@ void main() {
   vec3 scatterColor = fPrimaryColor + miePhase * fSecondaryColor;
   
   // Triplanar texture mapping
-  vec3 blending = abs(normal);
+  vec3 blending = abs(fNormal);
   blending = normalize(max(blending, 0.00001)); // Force weights to sum to 1.0
   // Grass texture
   vec3 grassColor = texture(unGrassTexture, fPosition.yz).rgb * blending.x +
