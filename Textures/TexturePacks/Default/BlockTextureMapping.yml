@@ -1,936 +1,1548 @@
-None:
+cloth_cyan:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+cloth_grey:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+flower_fringed_tiny:
+  texture:
+    base: flower_fringed_tiny
+    overlay: flower_fringed_tiny_overlay
+emerald:
+  texture:
+    base: emerald
+fire:
   {}
-Sodium Carbonate (Soda):
-  texture: soda
-Sand:
-  texture: sand
-Grass Block:
-  texture: grass_side
-  textureBottom: dirt
-  textureTop: grass_top
-Ice:
-  texture: ice
-Dry Ice:
-  texture: ice_dry
-Mud Sink:
-  texture: mud
-Mud Spawner:
-  texture: mud
-Methane Hydrate:
-  texture: ice_methane_hydrate
-Bone Block:
-  texture: bone
-Red Sand:
-  texture: sand_red
-Red Sand Sink:
-  texture: sand_red
-Silicon:
-  texture: silicon
-Lithium Carbonate:
-  texture: soda
-Mycelium Block:
-  texture: mycelium_side
-  textureBottom: dirt
-  textureTop: mycelium_top
-Mud:
-  texture: mud
-Lamp:
-  texture: lamp_off
-Clay:
-  texture: clay
-Red Sand Spawner:
-  texture: sand_red
-Snow:
-  texture: snow
-Lamp (on):
-  texture: lamp_on
-Stone:
-  texture: stone
-Wood (Deciduous Tree):
-  texture: wood_deciduous
-Dirt:
-  texture: dirt
-Gravel Spawner:
-  texture: gravel
-Sand Spawner:
-  texture: sand
-Snow Spawner:
-  texture: snow
-Water Sink:
+flower_fringed_red:
+  texture:
+    base: flower_fringed_red
+    overlay: flower_fringed_red_overlay
+cloth_white:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+cloth_blue_dark:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+diatomite:
+  texture:
+    base: diatomite
+    overlay: diatomite_overlay
+dirt:
+  texture:
+    base: dirt
+    overlay: dirt_overlay
+cloth_black:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+flower_red_jungle:
+  texture:
+    base: flower_red_jungle
+    overlay: flower_red_jungle_overlay
+flower_red_large:
+  texture:
+    base: flower_red_large
+    overlay: flower_red_large_overlay
+fire_gas:
   {}
-Gravel Sink:
-  texture: gravel
-Coal:
-  texture: coal
-Water Spawner:
+cloth_purple:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+alienplant_desert_chalice:
+  texture:
+    base: desert_chalice
+bargonite_green:
+  texture:
+    base: bargonite
+    blendMode: add
+alienplant_salpeter_light:
+  texture:
+    base: salpeterplant_light
+anfo:
+  texture:
+    base: anfo
+alienplant_cave_cap:
+  texture:
+    base: caveplant_cap
+aluminium:
+  texture:
+    base: aluminium
+    overlay: aluminium_overlay
+amatol:
+  texture:
+    base: amatol
+bargonite_blue:
+  texture:
+    base: bargonite
+    blendMode: add
+copper_patinated:
+  texture:
+    base: copper_patinated
+    overlay: copper_patinated_overlay
+diamond:
+  texture:
+    base: diamond
+bomb_shrapnel:
+  texture:
+    base: shrapnel_bomb
+blackpowder_crate_20kg:
+  texture:
+    base: black_powder_20kg
+galena:
+  texture:
+    base: galena
+gas_ammonia:
   {}
-Sand Sink:
-  texture: sand
-Snow Sink:
-  texture: snow
-Iron:
-  texture: iron
-Gold:
-  texture: gold
-Silver:
-  texture: silver
-Copper:
-  texture: copper
-Tin:
-  texture: tin
-Lead:
-  texture: lead
-Platinum:
-  texture: platinum
-Quartz:
-  texture: quartz
-Diamond:
-  texture: diamond
-Ruby:
-  texture: bricks_test
-Emerald:
-  texture: emerald
-Sapphire:
-  texture: sapphire
-Bauxite:
-  texture: bauxite
-Magnetite:
-  texture: magnetite
-Malachite:
-  texture: malachite
-Aluminium:
-  texture: aluminium
-Sulfur:
-  texture: sulfur
-Rutile:
-  texture: rutile
-Seamorphite:
-  texture: seamorphite
-Thornmite:
-  texture: thornmite
-Cassiterite:
-  texture: cassiterite
-Galena:
-  texture: galena
-Pitchblende:
-  texture: pitchblende
-Scheelite:
-  texture: scheelite
-Submarium:
-  texture: submarium
-Titanium:
-  texture: titanium
-Uranium:
-  texture: uranium
-Tungsten:
-  texture: tungsten
-Brass:
-  texture: brass
-Zinc:
-  texture: zinc
-Bronze:
-  texture: bronze
-Dolomite:
-  texture: dolomite
-Sandstone:
-  texture: sandstone
-Limestone:
-  texture: limestone
-Gravel:
-  texture: gravel
-Basalt:
-  texture: basalt
-Slate:
-  texture: slate_side
-  textureBottom: slate_top
-  textureTop: slate_top
-Gneiss:
-  texture: gneiss_side
-  textureBottom: gneiss_top
-  textureTop: gneiss_top
-Granite:
-  texture: granite
-Marble:
-  texture: marble
-Zincblende:
-  texture: zincblende
-Steel:
-  texture: steel
-Red Sandstone:
-  texture: sandstone_red
-Tungsten Steel:
-  texture: steel_tungsten
-Semisolid Basalt:
-  texture: basalt_semisolid
-Mossy Stone:
-  texture: stone_mossy
-Plutonium:
-  texture: plutonium
-Lithium:
-  texture: lithium
-Coke:
-  texture: coke
-Aluminium-Lithium Alloy:
-  texture: aluminium_lithium
-White Lamp (on):
-  texture: lamp_colored
-White Lamp:
-  texture: lamp_colored
-Red Lamp (on):
-  texture: lamp_colored
-Red Lamp:
-  texture: lamp_colored
-Green Lamp (on):
-  texture: lamp_colored
-Green Lamp:
-  texture: lamp_colored
-Blue Lamp (on):
-  texture: lamp_colored
-Blue Lamp:
-  texture: lamp_colored
-Wambronium:
-  texture: wambronium
-Red Bargonite Crystal:
-  texture: bargonite
-Blue Bargonite Crystal:
-  texture: bargonite
-Green Bargonite Crystal:
-  texture: bargonite
-White Bargonite Crystal:
-  texture: bargonite
-Blue Mushroom Block:
-  texture: mushroom_cap_spotted
-Purple Mushroom Block:
-  texture: mushroom_cap_spotted
-Lamella Block:
-  texture: mushroom_lamella
-Mushroom Stem Block:
-  texture: mushroom_stem
-Grey Mushroom Block:
-  texture: mushroom_cap_spotted
-Dark Purple Mushroom Block:
-  texture: mushroom_cap_smooth
-Dark Blue Mushroom Block:
-  texture: mushroom_cap_smooth
-Cyan Mushroom Block:
-  texture: mushroom_cap_smooth
-Pink Mushroom Block:
-  texture: mushroom_cap_spotted
-Green Mushroom Block:
-  texture: mushroom_cap_smooth
-Dark Green Mushroom Block:
-  texture: mushroom_cap_spotted
-Red Mushroom Block:
-  texture: mushroom_cap_spotted
-Dark Red Mushroom Block:
-  texture: mushroom_cap_smooth
-Brown Mushroom Block:
-  texture: mushroom_cap_smooth
-LED Lamp (on):
-  texture: lamp_LED_on
-LED Lamp:
-  texture: lamp_LED_off
-Trinitrotoluene (TNT):
-  texture: tnt_side
-  textureBottom: tnt_bottom
-  textureTop: tnt_top
-Nitroglycerin:
-  texture: nitro_side
-  textureBottom: nitro_bottom
-  textureTop: nitro_top
-Dynamite:
-  texture: dynamite_side
-  textureBottom: dynamite_bottom
-  textureTop: dynamite_top
-Black Powder Crate 10kg:
-  texture: black_powder_10kg
-Black Powder Crate 20kg:
-  texture: black_powder_20kg
-Black Powder Box 1kg:
-  texture: black_powder_1kg
-Black Powder Box 100g:
-  texture: black_powder_100g
-Black Powder:
-  texture: black_powder
-ANFO 25kg:
-  texture: anfo
-Shrapnel Bomb (1kg Amatol):
-  texture: shrapnel_bomb
-Amatol 25kg:
-  texture: amatol
-Ammonium Nitrate:
-  texture: ammon_nitrate
-Salpeter:
-  texture: salpeter
-Diatomite (Kieselguhr):
-  texture: diatomite
-Nitrocellulose:
-  texture: nitrocellulose
-Blasting Gelatin:
-  texture: gelignite_side
-  textureBottom: gelignite_top
-  textureTop: gelignite_top
-Firebomb:
-  texture: firebomb
-Octanitrocubane (ONC):
-  texture: onc_side
-  textureBottom: onc_bottom
-  textureTop: onc_top
-Alien Plantoid Mine:
-  texture: mine_plantoid_side
-  textureBottom: mine_plantoid_bottom
-  textureTop: mine_plantoid_top
-Atomic Bomb (Mark I):
-  texture: nuke_mark1_side
-  textureBottom: nuke_mark1_bottom
-  textureTop: nuke_mark1_top
-Thermonuclear Bomb (Mark II):
-  texture: nuke_mark2_side
-  textureBottom: nuke_mark2_bottom
-  textureTop: nuke_mark2_top
-Three-Stage Bomb (Mark III):
-  texture: nuke_mark3_side
-  textureBottom: nuke_mark3_bottom
-  textureTop: nuke_mark3_top
-Xenon Lamp (on):
-  texture: lamp_xenon_on
-Xenon Lamp:
-  texture: lamp_xenon_off
-Red Bargonite Glass:
-  texture: glass_bargonite
-Green Bargonite Glass:
-  texture: glass_bargonite
-Blue Bargonite Glass:
-  texture: glass_bargonite
-Light Metal Plating:
-  texture: plating_lightmetal
-Pitch:
-  texture: pitch
-White Bargonite Glass:
-  texture: glass_bargonite
-Rubber:
-  texture: rubber
-Thornmite Glass:
-  texture: glass_thornmite
-Alumina Ceramic:
-  texture: ceramic_alumina
-Ceramic Plating:
-  texture: plating_ceramic
-Tungsten Carbide:
-  texture: ceramic_tungsten_carbide
-Sandstone Bricks:
-  texture: stone_bricks_sand
-Red Sandstone Bricks:
-  texture: stone_bricks_sand_red
-Stone Bricks:
-  texture: stone_bricks
-Granite Bricks:
-  texture: stone_bricks_granite
-Limestone Bricks:
-  texture: stone_bricks_lime
-Marble Bricks:
-  texture: stone_bricks_marble
-Aluminium Plating:
-  texture: plating_aluminium
-Steel Plating:
-  texture: plating_steel
-Tungsten Steel Plating:
-  texture: plating_steel_tungsten
-Titanium Plating:
-  texture: plating_titanium
-Thornmite Plating:
-  texture: plating_thornmite
-Gypsum:
-  texture: gypsum
-Lightweight Bricks:
-  texture: bricks_light_side
-  textureBottom: bricks_light_top
-  textureTop: bricks_light_top
-Glass:
-  texture: glass
-Concrete:
-  texture: concrete_side
-  textureBottom: concrete_top
-  textureTop: concrete_top
-Bricks:
-  texture: bricks_side
-  textureBottom: bricks_top
-  textureTop: bricks_top
-Hardwood Planks:
-  texture: wooden_planks_deciduous
-Cobblestone:
-  texture: cobblestone
-Junglewood Planks:
-  texture: wooden_planks_jungle
-Savannawood Planks:
-  texture: wooden_planks_savanna
-Palmwood Planks:
-  texture: wooden_planks_palm_side
-  textureBottom: wooden_planks_palm_top
-  textureTop: wooden_planks_palm_top
-Swampwood Planks:
-  texture: wooden_planks_swamp
-Softwood Planks:
-  texture: wooden_planks_coniferous_side
-  textureBottom: wooden_planks_coniferous_top
-  textureTop: wooden_planks_coniferous_top
-Deadwood Planks:
-  texture: wooden_planks_dead
-Darkwood Planks:
-  texture: wooden_planks_fruit
-Ruberwood Planks:
-  texture: wooden_planks_rubber
-Sugarwood Planks:
-  texture: wooden_planks_sugar
-White Cloth Block:
-  texture: cloth
-Black Cloth Block:
-  texture: cloth
-Grey Cloth Block:
-  texture: cloth
-Brown Cloth Block:
-  texture: cloth
-Light Yellow Cloth Block:
-  texture: cloth
-Orange Cloth Block:
-  texture: cloth
-Yellow Cloth Block:
-  texture: cloth
-Red Cloth Block:
-  texture: cloth
-Dark Red Cloth Block:
-  texture: cloth
-Magenta Cloth Block:
-  texture: cloth
-Pink Cloth Block:
-  texture: cloth
-Lime Cloth Block:
-  texture: cloth
-Green Cloth Block:
-  texture: cloth
-Dark Green Cloth Block:
-  texture: cloth
-Cyan Cloth Block:
-  texture: cloth
-Light Blue Cloth Block:
-  texture: cloth
-Blue Cloth Block:
-  texture: cloth
-Dark Blue Cloth Block:
-  texture: cloth
-Purple Cloth Block:
-  texture: cloth
-Dark Purple Cloth Block:
-  texture: cloth
-Lapis Lazuli:
-  texture: lapis_lazuli
-Black Gypsum:
-  texture: gypsum
-Grey Gypsum:
-  texture: gypsum
-Brown Gypsum:
-  texture: gypsum
-Light Yellow Gypsum:
-  texture: gypsum
-Red Gypsum:
-  texture: gypsum
-Yellow Gypsum:
-  texture: gypsum
-Orange Gypsum:
-  texture: gypsum
-Dark Red Gypsum:
-  texture: gypsum
-Pink Gypsum:
-  texture: gypsum
-Magenta Gypsum:
-  texture: gypsum
-Green Gypsum:
-  texture: gypsum
-Lime Gypsum:
-  texture: gypsum
-Dark Green Gypsum:
-  texture: gypsum
-Cyan Gypsum:
-  texture: gypsum
-Light Blue Gypsum:
-  texture: gypsum
-Blue Gypsum:
-  texture: gypsum
-Purple Gypsum:
-  texture: gypsum
-Dark Blue Gypsum:
-  texture: gypsum
-Dark Purple Gypsum:
-  texture: gypsum
-Charred Wood (Deciduous Tree):
-  texture: wood_deciduous
-Charred Wood (Dead Tree):
-  texture: wood_dead
-Charred Wood (Coniferous Tree):
-  texture: wood_coniferous
-Charred Wood (Palm Tree):
-  texture: wood_palm
-Charred Wood (Jungle Tree):
-  texture: wood_jungle
-Charred Wood (Swamp Tree):
-  texture: wood_swamp
-Charred Wood (Sugar Tree):
-  texture: wood_sugar
-Charred Wood (Rubber Tree):
-  texture: wood_rubber
-Charred Wood (Savanna Tree):
-  texture: wood_savanna
-Charred Wood (Fruit Tree):
-  texture: wood_fruit
-Charred Hardwood Planks:
-  texture: wooden_planks_deciduous
-Charred Softwood Planks:
-  texture: wooden_planks_coniferous_side
-  textureBottom: wooden_planks_coniferous_top
-  textureTop: wooden_planks_coniferous_top
-Charred Junglewood Planks:
-  texture: wooden_planks_jungle
-Charred Savannawood Planks:
-  texture: wooden_planks_savanna
-Charred Deadwood Planks:
-  texture: wooden_planks_dead
-Charred Palmwood Planks:
-  texture: wooden_planks_palm_side
-  textureBottom: wooden_planks_palm_top
-  textureTop: wooden_planks_palm_top
-Charred Darkwood Planks:
-  texture: wooden_planks_fruit
-Charred Sugarwood Planks:
-  texture: wooden_planks_sugar
-Charred Rubberwood Planks:
-  texture: wooden_planks_rubber
-Charred Swampwood Planks:
-  texture: wooden_planks_swamp
-Charred Smooth Mushroom Block:
-  texture: mushroom_cap_smooth
-Charred Spotted Mushroom Block:
-  texture: mushroom_cap_spotted
-Charred Mushroom Stem Block:
-  texture: mushroom_stem
-Charred Lamella Block:
-  texture: mushroom_lamella
-Charred Rubber:
-  texture: rubber
-Rusty Iron:
-  texture: iron_rusty
-Rusty Steel:
-  texture: steel_rusty
-Patinated Copper:
-  texture: copper_patinated
-Rusty Steel Plating:
-  texture: plating_steel_rusty
-Small Red Cactus (Bud):
-  texture: cactus_small_red_side
-  textureBottom: cactus_small_red_bottom
-  textureTop: cactus_small_red_top
-Small Red Cactus (Stem):
-  texture: cactus_small_red_side
-  textureBottom: cactus_small_red_bottom
-  textureTop: cactus_small_red_bottom
-Small Yellow Cactus (Bud):
-  texture: cactus_small_yellow_side
-  textureBottom: cactus_small_yellow_bottom
-  textureTop: cactus_small_yellow_top
-Small Yellow Cactus (Stem):
-  texture: cactus_small_yellow_side
-  textureBottom: cactus_small_yellow_bottom
-  textureTop: cactus_small_yellow_bottom
-Small Green Cactus (Bud):
-  texture: cactus_small_green_side
-  textureBottom: cactus_small_green_bottom
-  textureTop: cactus_small_green_top
-Small Green Cactus (Stem):
-  texture: cactus_small_green_side
-  textureBottom: cactus_small_green_bottom
-  textureTop: cactus_small_green_bottom
-Death Cactus:
-  texture: cactus_death
-Mutated Death Cactus:
-  texture: cactus_mutated
-Poison Cactus:
-  texture: cactus_poison
-Starch Cactus:
-  texture: cactus_starch
-Cactus Fruit:
-  texture: cactus_fruit
-Alien Crop Plant (Bud):
-  texture: aliencrop_side
-  textureBottom: aliencrop_bottom
-  textureTop: aliencrop_top
-Ammonia Plant:
-  texture: ammoniaplant
-  textureBottom: ammoniaplant_bottom
-  textureTop: ammoniaplant
-Common White Flowers:
-  texture: flower_white
-Tall Grass:
-  texture: grass_tall
-Fern:
-  texture: plant_fern
-Dryland Grass:
-  texture: grass_dry
-Yellow Grass:
-  texture: grass_yellow
-Red Flower Grass:
-  texture: grass_red_flower
-Light Tall Grass:
-  texture: grass_tall_light
-Small Yellow Flower:
-  texture: flower_yellow_small
-Red Bush:
-  texture: plant_red_bush
-Dark Tall Grass:
-  texture: grass_tall_dark
-Jungle Plant 1:
-  texture: plant_jungle1
-Large Purple Flower:
-  texture: flower_purple_large
-Large Yellow Flower:
-  texture: flower_yellow_large
-Pink Fringed Flower:
-  texture: flower_fringed_pink
-Red Fringed Flower:
-  texture: flower_fringed_red
-Tiny Fringed Flower:
-  texture: flower_fringed_tiny
-White Fringed Flower:
-  texture: flower_fringed_white
-Yellow Fringed Flower:
-  texture: flower_fringed_yellow
-Large Red Flower:
-  texture: flower_red_large
-Green Mushroom:
-  texture: mushroom_small_green
-Dark Green Mushroom:
-  texture: mushroom_small_green_dark
-Brown Mushroom:
-  texture: mushroom_small_brown
-Red Mushroom:
-  texture: mushroom_small_red
-Dark Red Mushroom:
-  texture: mushroom_small_red_dark
-Grey Mushroom:
-  texture: mushroom_small_grey
-Wood (Fruit Tree):
-  texture: wood_fruit
-Wood (Jungle Tree):
-  texture: wood_jungle
-Wood (Savanna Tree):
-  texture: wood_savanna
-Wood (Palm Tree):
-  texture: wood_palm
-Wood (Swamp Tree):
-  texture: wood_swamp
-Wood (Coniferous Tree):
-  texture: wood_coniferous
-Wood (Dead Tree):
-  texture: wood_dead
-Leaves (Deciduous Tree):
-  texture: leaves_opaque_deciduous
-Leaves (Savanna Tree):
-  texture: leaves_opaque_savanna
-Leaves (Jungle Tree):
-  texture: leaves_opaque_jungle
-Leaves (Palm Tree):
-  texture: leaves_opaque_palm
-Leaves (Swamp Tree):
-  texture: leaves_opaque_swamp
-Leaves (Coniferous Tree):
-  texture: leaves_opaque_coniferous
-Leaves (Fruit Tree):
-  texture: leaves_opaque_fruit
-Leaves (Blooming Fruit Tree):
-  texture: leaves_opaque_blossom
-Blue Mushroom:
-  texture: mushroom_small_blue
-Purple Mushroom:
-  texture: mushroom_small_purple
-Dark Blue Mushroom:
-  texture: mushroom_small_blue_dark
-Dark Purple Mushroom:
-  texture: mushroom_small_purple_dark
-Wood (Rubber Tree):
-  texture: wood_rubber
-Leaves (Rubber Tree):
-  texture: leaves_opaque_rubber
-Wood (Sugar Tree):
-  texture: wood_sugar
-Leaves (Sugar Tree):
-  texture: leaves_opaque_sugar
-Nitrogen:
+gas_argon:
   {}
-Oxygen:
+flower_fringed_yellow:
+  texture:
+    base: flower_fringed_yellow
+    overlay: flower_fringed_yellow_overlay
+cloth_brown:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+cloth_yellow:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+carbonate_lithium:
+  texture:
+    base: soda
+coke:
+  texture:
+    base: coke
+fire_lithium:
   {}
-Carbon Dioxide:
+cloth_blue:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+cloth_lime:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+cloth_yellow_light:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+gas_methane:
   {}
-Nitrogen Dioxide:
+gas_nitrogen:
   {}
-Sulfur Dioxide:
+gas_nitrogen_dioxide:
   {}
-Helium:
+gas_oxygen:
   {}
-Argon:
+concrete:
+  texture:
+    base: concrete_side
+    overlay: concrete_side_overlay
+    blendMode: subtract
+  textureBottom:
+    base: concrete_top
+    blendMode: subtract
+  textureTop:
+    base: concrete_side
+    overlay: concrete_side_overlay
+    blendMode: subtract
+copper:
+  texture:
+    base: copper
+    overlay: copper_overlay
+flower_purple_large:
+  texture:
+    base: flower_purple_large
+    overlay: flower_purple_large_overlay
+fungus_icecaps:
+  texture:
+    base: fungus_icecaps
+bronze_patinated:
+  texture:
+    base: bronze_patinated
+    overlay: bronze_patinated_overlay
+fungus_sorrowthorn:
+  texture:
+    base: fungus_sorrowthorn
+fungus_terrorlichen:
+  texture:
+    base: fungus_terrorlichen
+flower_white:
+  texture:
+    base: flower_white
+    overlay: flower_white_overlay
+cloth_purple_dark:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+gypsum_blue_light:
+  texture:
+    base: gypsum
+gypsum_brown:
+  texture:
+    base: gypsum
+gypsum_cyan:
+  texture:
+    base: gypsum
+gypsum_green:
+  texture:
+    base: gypsum
+gypsum_green_dark:
+  texture:
+    base: gypsum
+gypsum_grey:
+  texture:
+    base: gypsum
+gypsum_lime:
+  texture:
+    base: gypsum
+gypsum_magenta:
+  texture:
+    base: gypsum
+gypsum_orange:
+  texture:
+    base: gypsum
+gypsum_pink:
+  texture:
+    base: gypsum
+gypsum_purple:
+  texture:
+    base: gypsum
+gypsum_purple_dark:
+  texture:
+    base: gypsum
+gypsum_red:
+  texture:
+    base: gypsum
+gypsum_red_dark:
+  texture:
+    base: gypsum
+gypsum_yellow:
+  texture:
+    base: gypsum
+gypsum_yellow_light:
+  texture:
+    base: gypsum
+ice:
+  texture:
+    base: ice
+    overlay: add_overlay
+    blendMode: add
+glass_thornmite:
+  texture:
+    base: glass_thornmite
+    overlay: glass_thornmite_overlay
+gneiss:
+  texture:
+    base: gneiss_side
+    overlay: gneiss_overlay
+  textureBottom:
+    base: gneiss_top
+    overlay: gneiss_overlay
+  textureTop:
+    base: gneiss_side
+    overlay: gneiss_overlay
+gold:
+  texture:
+    base: gold
+    overlay: gold_overlay
+granite:
+  texture:
+    base: granite
+    overlay: granite_overlay
+granite_bricks:
+  texture:
+    base: stone_bricks_granite
+granite_cut:
+  texture:
+    base: stone_cut_granite
+grass:
+  texture:
+    base: dirt
+    overlay: grass_side
+grass_charred:
+  texture:
+    base: dirt
+    overlay: grass_side
+  textureBottom:
+    base: dirt
+    overlay: dirt_overlay
+  textureTop:
+    base: grass_top
+gravel:
+  texture:
+    base: gravel
+gypsum:
+  texture:
+    base: gypsum
+gypsum_black:
+  texture:
+    base: gypsum
+gypsum_blue:
+  texture:
+    base: gypsum
+gypsum_blue_dark:
+  texture:
+    base: gypsum
+alienplant_ammonia:
+  texture:
+    base: ammoniaplant
+bricks_lightweight:
+  texture:
+    base: bricks_light_side
+    overlay: bricks_light_side_overlay
+  textureBottom:
+    base: bricks_light_top
+    overlay: bricks_light_top_overlay
+  textureTop:
+    base: bricks_light_top
+    overlay: bricks_light_top_overlay
+fire_sulfur:
   {}
-Xenon:
+bargonite_red:
+  texture:
+    base: bargonite
+    blendMode: add
+bauxite:
+  texture:
+    base: bauxite
+    overlay: bauxite_overlay
+basalt_semisolid:
+  texture:
+    base: basalt_semisolid
+    overlay: basalt_overlay
+cactus_death_poison:
+  texture:
+    base: cactus_poison
+bargonite_magenta:
+  texture:
+    base: bargonite
+    blendMode: add
+bargonite_white:
+  texture:
+    base: bargonite
+    blendMode: add
+cactus_small_green_stem:
+  texture:
+    base: cactus_small_green_side
+  textureBottom:
+    base: cactus_small_green_side
+  textureTop:
+    base: cactus_small_green_bottom
+flower_yellow_large:
+  texture:
+    base: flower_yellow_large
+    overlay: flower_yellow_large_overlay
+flower_yellow_small:
+  texture:
+    base: flower_yellow_small
+    overlay: flower_yellow_small_overlay
+flower_fringed_pink:
+  texture:
+    base: flower_fringed_pink
+    overlay: flower_fringed_pink_overlay
+flower_skeleton:
+  texture:
+    base: flower_skeleton
+fire_light_metal:
   {}
-Hydrogen:
+ceramic:
+  texture:
+    base: ceramic_alumina
+glass:
+  texture:
+    base: glass
+    overlay: glass_overlay
+glass_bargonite_blue:
+  texture:
+    base: glass_bargonite
+    overlay: glass_overlay
+glass_bargonite_cyan:
+  texture:
+    base: glass_bargonite
+    overlay: glass_overlay
+glass_bargonite_green:
+  texture:
+    base: glass_bargonite
+    overlay: glass_overlay
+glass_bargonite_magenta:
+  texture:
+    base: glass_bargonite
+    overlay: glass_overlay
+dolomite:
+  texture:
+    base: dolomite
+    overlay: dolomite_overlay
+dynamite:
+  texture:
+    base: dynamite_side
+  textureBottom:
+    base: dynamite_bottom
+  textureTop:
+    base: dynamite_top
+coal:
+  texture:
+    base: coal
+    overlay: sub_overlay
+    blendMode: subtract
+cobblestone:
+  texture:
+    base: cobblestone
+    overlay: cobblestone_overlay
+cloth_orange:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+ceramic_tiling:
+  texture:
+    base: tiling
+cloth_green:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+cloth_blue_light:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+gas_sulfur_dioxide:
   {}
-Ammonia:
+gas_water:
   {}
-Methane:
+gas_xenon:
   {}
-Deuterium:
+gelignite:
+  texture:
+    base: gelignite_side
+  textureBottom:
+    base: gelignite_top
+  textureTop:
+    base: gelignite_side
+lamp_xenon_on:
+  texture:
+    base: lamp_xenon_on
+lamp_yellow_off:
+  texture:
+    base: lamp_colored
+lamp_yellow_on:
+  texture:
+    base: lamp_colored
+lapis_lazuli:
+  texture:
+    base: lapis_lazuli
+lead:
+  texture:
+    base: lead
+    overlay: lead_overlay
+leaves_coniferous:
+  texture:
+    base: leaves_opaque_coniferous
+leaves_deciduous:
+  texture:
+    base: leaves_opaque_deciduous
+leaves_fruit:
+  texture:
+    base: leaves_opaque_fruit
+leaves_fruit_blossom:
+  texture:
+    base: leaves_opaque_blossom
+leaves_jungle:
+  texture:
+    base: leaves_opaque_jungle
+leaves_mangrove:
+  texture:
+    base: leaves_opaque_mangrove
+leaves_palm:
+  texture:
+    base: leaves_opaque_palm
+cloth_red:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+cloth_red_dark:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+gas_carbon_dioxide:
   {}
-Water (Steam):
+gas_deuterium:
   {}
-Rubber Sapling:
-  texture: sapling_rubber
-Stone Succulent (Bud):
-  texture: succulent_stone_side
-  textureBottom: succulent_stone_bottom
-  textureTop: succulent_stone_top
-Blue Succulent (Bud):
-  texture: succulent_blue_side
-  textureBottom: succulent_blue_bottom
-  textureTop: succulent_blue_top
-Purple Succulent (Bud):
-  texture: succulent_purple_side
-  textureBottom: succulent_purple_bottom
-  textureTop: succulent_purple_top
-Stone Succulent (Stem):
-  texture: succulent_stone_side
-  textureBottom: succulent_stone_bottom
-  textureTop: succulent_stone_bottom
-Blue Succulent (Stem):
-  texture: succulent_blue_side
-  textureBottom: succulent_blue_bottom
-  textureTop: succulent_blue_bottom
-Purple Succulent (Stem):
-  texture: succulent_purple_side
-  textureBottom: succulent_purple_bottom
-  textureTop: succulent_purple_bottom
-Alien Crop Plant (Stem):
-  texture: aliencrop_side
-  textureBottom: aliencrop_bottom
-  textureTop: aliencrop_bottom
-Charred Grass Block:
-  texture: grass_side
-  textureBottom: dirt
-  textureTop: grass_top
-Cave Plant (Stem):
-  texture: caveplant_stem_side
-  textureBottom: caveplant_stem_top
-  textureTop: caveplant_stem_top
-Cave Plant (Cap):
-  texture: caveplant_cap
-Frozen Nitrogen:
-  texture: ice_nitrogen
-Desert Chalice Block:
-  texture: desert_chalice
-Salpeter Plant Light Block:
-  texture: salpeterplant_light
-Patinated Brass:
-  texture: brass_patinated
-Salpeter Plant Trap Block:
-  texture: salpeterplant_trap
-Patinated Bronze:
-  texture: bronze_patinated
-Metal Framed Glass:
-  texture: glass_metal_frame
-  textureBottom: glass_metal_frame
-  textureTop: glass_metal_frame_top
-Ceramic Tiling:
-  texture: tiling
-Small Fern:
-  texture: plant_fern_small
-Tall Fern:
-  texture: plant_fern_tall
-Jungle Plant 2:
-  texture: plant_jungle2
-Jungle Plant 3:
-  texture: plant_jungle3
-Jungle Plant 4:
-  texture: plant_jungle4
-Jungle Plant 5:
-  texture: plant_jungle5
-Jungle Plant 6:
-  texture: plant_jungle6
-Jungle Plant 7:
-  texture: plant_jungle7
-Deciduous Sapling:
-  texture: sapling_deciduous
-Conifer Sapling:
-  texture: sapling_coniferous
-Swamp Sapling:
-  texture: sapling_swamp
-Savanna Sapling:
-  texture: sapling_savanna
-Dead Sapling:
-  texture: sapling_dead
-Fruit Tree Sapling:
+gas_helium:
   {}
-Jungle Sapling:
-  texture: sapling_jungle
-Sugar Tree Sapling:
-  texture: sapling_sugar
-Palm Sapling:
-  texture: sapling_palm
-Sandbags:
-  texture: sandbags_side
-  textureBottom: sandbags_top
-  textureTop: sandbags_top
-Yellow Bargonite Crystal:
-  texture: bargonite
-Orange Bargonite Crystal:
-  texture: bargonite
-Cyan Bargonite Crystal:
-  texture: bargonite
-Magenta Bargonite Crystal:
-  texture: bargonite
-Yellow Bargonite Glass:
-  texture: glass_bargonite
-Orange Bargonite Glass:
-  texture: glass_bargonite
-Magenta Bargonite Glass:
-  texture: glass_bargonite
-Cyan Bargonite Glass:
-  texture: glass_bargonite
-Yellow Lamp (on):
-  texture: lamp_colored
-Yellow Lamp:
-  texture: lamp_colored
-Orange Lamp (on):
-  texture: lamp_colored
-Orange Lamp:
-  texture: lamp_colored
-Magenta Lamp (on):
-  texture: lamp_colored
-Magenta Lamp:
-  texture: lamp_colored
-Cyan Lamp (on):
-  texture: lamp_colored
-Cyan Lamp:
-  texture: lamp_colored
-Cut Stone Block:
-  texture: stone_cut
-Cut Granite Block:
-  texture: stone_cut_granite
-Cut Limestone Block:
-  texture: stone_cut_lime
-Cut Marble Block:
-  texture: stone_cut_marble
-Cut Sandstone Block:
-  texture: stone_cut_sand
-Cut Red Sandstone Block:
-  texture: stone_cut_sand_red
-Chiseled Marble Block:
-  texture: stone_chiseled_marble_side
-  textureBottom: stone_chiseled_marble_top
-  textureTop: stone_chiseled_marble_top
-Chiseled Sandstone Block:
-  texture: stone_chiseled_sand_side
-  textureBottom: stone_chiseled_sand_top
-  textureTop: stone_chiseled_sand_top
-Chiseled Red Sandstone Block:
-  texture: stone_chiseled_sand_red_side
-  textureBottom: stone_chiseled_sand_red_top
-  textureTop: stone_chiseled_sand_red_top
-Chiseled Marble Ornament Block:
-  texture: stone_chiseled_marble_ornament_side
-  textureBottom: stone_chiseled_marble_ornament_top
-  textureTop: stone_chiseled_marble_ornament_top
-Marble Column:
-  texture: stone_column_marble
-Twisted Marble Column:
-  texture: stone_column_marble_twisted_side
-  textureBottom: stone_column_marble_twisted_top
-  textureTop: stone_column_marble_twisted_top
-Chiseled Sandstone Ornament Block:
-  texture: stone_chiseled_sand_ornament_side
-  textureBottom: stone_chiseled_sand_ornament_top
-  textureTop: stone_chiseled_sand_ornament_top
-Chiseled Red Sandstone Ornament Block:
-  texture: stone_chiseled_sand_red_ornament_side
-  textureBottom: stone_chiseled_sand_red_ornament_top
-  textureTop: stone_chiseled_sand_red_ornament_top
-Dry Mud:
-  texture: mud_dry
-Half-Dry Mud:
-  texture: mud_dry_half
-Tholin Dust:
-  texture: tholin
-Little Icecaps:
-  texture: fungus_icecaps
-Frozen Methane:
-  texture: ice_methane
-Sorrowthorn:
-  texture: fungus_sorrowthorn
-Terror Lichen:
-  texture: fungus_terrorlichen
-Skeleton Flower:
-  texture: flower_skeleton
-Methane Ball Plant:
-  texture: plant_methane_ball
-Sanguine Sacs:
-  texture: fungus_sacs_sanguine
-Triton Sacs:
-  texture: fungus_sacs_triton
-Dreamweed:
-  texture: plant_dreamweed
-Light Blue Dreamweed:
-  texture: plant_dreamweed_blue_light
-Sticky Dreamweed:
-  texture: plant_dreamweed_sticky
-Striped Dreamweed:
-  texture: plant_dreamweed_striped
-Mycelia Overgrown Stone (Little Icecaps):
-  texture: stone_mycelia_icecaps_side
-  textureBottom: stone
-  textureTop: stone_mycelia_icecaps_top
-Wood (Mangrove Tree):
-  texture: wood_mangrove
-Charred Wood (Mangrove Tree):
-  texture: wood_mangrove
-Mangrovewood Planks:
-  texture: wooden_planks_mangrove
-Charred Mangrovewood Planks:
-  texture: wooden_planks_mangrove
-Leaves (Mangrove Tree):
-  texture: leaves_opaque_mangrove
-Mangrove Sapling:
-  texture: sapling_mangrove
-Garas Vine:
-  texture: vine_garas
-Loam Bricks:
-  texture: bricks_loam_side
-  textureBottom: bricks_loam_top
-  textureTop: bricks_loam_top
-Pink Mushroom:
-  texture: mushroom_small_pink
-Cyan Mushroom:
-  texture: mushroom_small_cyan
-Semisolid Tarmac:
-  texture: tarmac
-Tarmac:
-  texture: tarmac
-Red Jungle Flower:
-  texture: flower_red_jungle
-Volcanic Ash:
-  texture: ash_volcanic
-Fire:
+gas_hydrogen:
   {}
-Fire (Sulfur):
+alienplant_cave_stem:
+  texture:
+    base: caveplant_stem_side
+  textureBottom:
+    base: caveplant_stem_top
+  textureTop:
+    base: caveplant_stem_top
+alienplant_crop_stem:
+  texture:
+    base: aliencrop_side
+  textureBottom:
+    base: aliencrop_bottom
+  textureTop:
+    base: aliencrop_bottom
+bargonite_cyan:
+  texture:
+    base: bargonite
+    blendMode: add
+cloth_pink:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+lamp_magenta_on:
+  texture:
+    base: lamp_colored
+lamp_off:
+  texture:
+    base: lamp_off
+lamp_on:
+  texture:
+    base: lamp_on
+lamp_orange_off:
+  texture:
+    base: lamp_colored
+lamp_orange_on:
+  texture:
+    base: lamp_colored
+lamp_red_off:
+  texture:
+    base: lamp_colored
+lamp_red_on:
+  texture:
+    base: lamp_colored
+lamp_white_off:
+  texture:
+    base: lamp_colored
+lamp_white_on:
+  texture:
+    base: lamp_colored
+lamp_xenon_off:
+  texture:
+    base: lamp_xenon_off
+lamp_blue_on:
+  texture:
+    base: lamp_colored
+lamp_cyan_off:
+  texture:
+    base: lamp_colored
+cactus_small_green_bud:
+  texture:
+    base: cactus_small_green_side
+cactus_death_starch:
+  texture:
+    base: cactus_starch
+bargonite_orange:
+  texture:
+    base: bargonite
+    blendMode: add
+blackpowder:
+  texture:
+    base: black_powder
+alienplant_salpeter_trap:
+  texture:
+    base: salpeterplant_trap
+ice_dry:
+  texture:
+    base: ice_dry
+    overlay: add_overlay_soft
+    blendMode: add
+iron:
+  texture:
+    base: iron
+    overlay: iron_overlay
+iron_rusty:
+  texture:
+    base: iron_rusty
+    overlay: iron_rusty_overlay
+lamp_blue_off:
+  texture:
+    base: lamp_colored
+ice_methane_hydrate:
+  texture:
+    base: ice_methane_hydrate
+    overlay: add_overlay_soft
+    blendMode: add
+ice_nitrogen:
+  texture:
+    base: ice_nitrogen
+    overlay: add_overlay_soft
+    blendMode: add
+ice_methane:
+  texture:
+    base: ice_methane
+    overlay: add_overlay_soft
+    blendMode: add
+lamp_cyan_on:
+  texture:
+    base: lamp_colored
+lamp_green_off:
+  texture:
+    base: lamp_colored
+lamp_green_on:
+  texture:
+    base: lamp_colored
+lamp_led_off:
+  texture:
+    base: lamp_LED_off
+lamp_led_on:
+  texture:
+    base: lamp_LED_on
+lamp_magenta_off:
+  texture:
+    base: lamp_colored
+cassiterite:
+  texture:
+    base: cassiterite
+flower_fringed_white:
+  texture:
+    base: flower_fringed_white
+    overlay: flower_fringed_white_overlay
+fungus_sacs_sanguine:
+  texture:
+    base: fungus_sacs_sanguine
+fungus_sacs_triton:
+  texture:
+    base: fungus_sacs_triton
+glass_bargonite_orange:
+  texture:
+    base: glass_bargonite
+    overlay: glass_overlay
+glass_bargonite_red:
+  texture:
+    base: glass_bargonite
+    overlay: glass_overlay
+glass_bargonite_white:
+  texture:
+    base: glass_bargonite
+    overlay: glass_overlay
+glass_bargonite_yellow:
+  texture:
+    base: glass_bargonite
+    overlay: glass_overlay
+glass_metal_frame:
+  texture:
+    base: glass
+    overlay: glass_metal_frame
+  textureBottom:
+    base: glass
+    overlay: glass_metal_frame
+  textureTop:
+    base: glass
+    overlay: glass_metal_frame_top
+cloth_magenta:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+carbonate_sodium:
+  texture:
+    base: soda
+ceramic_plating:
+  texture:
+    base: plating_ceramic
+    overlay: plating_ceramic_overlay
+clay:
+  texture:
+    base: clay
+    overlay: clay_overlay
+cloth_green_dark:
+  texture:
+    base: cloth
+    overlay: cloth_overlay
+ash_volcanic:
+  texture:
+    base: ash_volcanic
+alienplant_crop_bud:
+  texture:
+    base: aliencrop_side
+leaves_rubber:
+  texture:
+    base: leaves_opaque_rubber
+leaves_savanna:
+  texture:
+    base: leaves_opaque_savanna
+leaves_sugar:
+  texture:
+    base: leaves_opaque_sugar
+leaves_swamp:
+  texture:
+    base: leaves_opaque_swamp
+light_metal:
+  texture:
+    base: aluminium_lithium
+    overlay: aluminium_lithium_overlay
+light_metal_plating:
+  texture:
+    base: plating_lightmetal
+    overlay: plating_lightmetal_overlay
+limestone:
+  texture:
+    base: limestone
+    overlay: limestone_overlay
+limestone_bricks:
+  texture:
+    base: stone_bricks_lime
+limestone_cut:
+  texture:
+    base: stone_cut_lime
+liquid_water:
   {}
-Fire (Light Metal):
+lithium:
+  texture:
+    base: lithium
+    overlay: lithium_overlay
+magnetite:
+  texture:
+    base: magnetite
+malachite:
+  texture:
+    base: malachite
+    overlay: malachite_overlay
+marble:
+  texture:
+    base: marble
+    overlay: marble_overlay
+marble_bricks:
+  texture:
+    base: stone_bricks_marble
+    overlay: stone_bricks_marble_overlay
+marble_chiseled:
+  texture:
+    base: stone_chiseled_marble_side
+  textureBottom:
+    base: stone_chiseled_marble_top
+  textureTop:
+    base: stone_chiseled_marble_top
+marble_chiseled_ornament:
+  texture:
+    base: stone_chiseled_marble_ornament_side
+marble_column:
+  texture:
+    base: stone_column_marble
+marble_column_twisted:
+  texture:
+    base: stone_column_marble_twisted_side
+  textureBottom:
+    base: stone_column_marble_twisted_top
+  textureTop:
+    base: stone_column_marble_twisted_side
+marble_cut:
+  texture:
+    base: stone_cut_marble
+mine_plantoid:
+  texture:
+    base: mine_plantoid_side
+    overlay: mine_plantoid_side_overlay
+  textureBottom:
+    base: mine_plantoid_bottom
+  textureTop:
+    base: mine_plantoid_top
+    overlay: mine_plantoid_top_overlay
+mud:
+  texture:
+    base: mud
+mud_dry:
+  texture:
+    base: mud_dry
+mud_dry_half:
+  texture:
+    base: mud_dry_half
+mushroom_giant_cap_blue:
+  texture:
+    base: mushroom_cap_spotted
+mushroom_giant_cap_blue_dark:
+  texture:
+    base: mushroom_cap_smooth
+mushroom_giant_cap_brown:
+  texture:
+    base: mushroom_cap_smooth
+mushroom_giant_cap_cyan:
+  texture:
+    base: mushroom_cap_smooth
+mushroom_giant_cap_green:
+  texture:
+    base: mushroom_cap_smooth
+mushroom_giant_cap_green_dark:
+  texture:
+    base: mushroom_cap_spotted
+mushroom_giant_cap_grey:
+  texture:
+    base: mushroom_cap_spotted
+mushroom_giant_cap_pink:
+  texture:
+    base: mushroom_cap_spotted
+cactus_death_fruit:
+  texture:
+    base: cactus_fruit
+bronze:
+  texture:
+    base: bronze
+    overlay: bronze_overlay
+cactus_small_red_bud:
+  texture:
+    base: cactus_small_red_side
+  textureBottom:
+    base: cactus_small_red_bottom
+  textureTop:
+    base: cactus_small_red_top
+brass:
+  texture:
+    base: brass
+    overlay: brass_overlay
+cactus_small_red_stem:
+  texture:
+    base: cactus_small_red_side
+  textureBottom:
+    base: cactus_small_red_bottom
+  textureTop:
+    base: cactus_small_red_side
+cactus_death_mutated:
+  texture:
+    base: cactus_mutated
+blackpowder_crate_10kg:
+  texture:
+    base: black_powder_10kg
+basalt:
+  texture:
+    base: basalt
+    overlay: basalt_overlay
+blackpowder_box_1kg:
+  texture:
+    base: black_powder_1kg
+cactus_small_yellow_bud:
+  texture:
+    base: cactus_small_yellow_side
+  textureBottom:
+    base: cactus_small_yellow_bottom
+  textureTop:
+    base: cactus_small_yellow_top
+bargonite_yellow:
+  texture:
+    base: bargonite
+    blendMode: add
+bomb_fire:
+  texture:
+    base: firebomb
+cactus_death:
+  texture:
+    base: cactus_death
+bone:
+  texture:
+    base: bone
+    overlay: bone_overlay
+aluminium_plating:
+  texture:
+    base: plating_aluminium
+    overlay: plating_aluminium_overlay
+cactus_small_yellow_stem:
+  texture:
+    base: cactus_small_yellow_side
+  textureBottom:
+    base: cactus_small_yellow_bottom
+  textureTop:
+    base: cactus_small_yellow_bottom
+bricks_loam:
+  texture:
+    base: bricks_loam_side
+  textureBottom:
+    base: bricks_loam_top
+  textureTop:
+    base: bricks_loam_top
+brass_patinated:
+  texture:
+    base: brass_patinated
+    overlay: brass_patinated_overlay
+bricks:
+  texture:
+    base: bricks_side
+blackpowder_box_100g:
+  texture:
+    base: black_powder_100g
+mushroom_giant_cap_purple:
+  texture:
+    base: mushroom_cap_spotted
+mushroom_giant_cap_purple_dark:
+  texture:
+    base: mushroom_cap_smooth
+mushroom_giant_cap_red:
+  texture:
+    base: mushroom_cap_spotted
+mushroom_giant_cap_red_dark:
+  texture:
+    base: mushroom_cap_smooth
+mushroom_giant_cap_smooth_charred:
+  texture:
+    base: mushroom_cap_smooth
+mushroom_giant_cap_spotted_charred:
+  texture:
+    base: mushroom_cap_spotted
+mushroom_giant_lamella:
+  texture:
+    base: mushroom_lamella
+    blendMode: subtract
+mushroom_giant_lamella_charred:
+  texture:
+    base: mushroom_lamella
+    blendMode: subtract
+mushroom_giant_stem:
+  texture:
+    base: mushroom_stem
+mushroom_giant_stem_charred:
+  texture:
+    base: mushroom_stem
+mushroom_small_blue:
+  texture:
+    base: mushroom_small_blue
+mushroom_small_blue_dark:
+  texture:
+    base: mushroom_small_blue_dark
+mushroom_small_brown:
+  texture:
+    base: mushroom_small_brown
+mushroom_small_cyan:
+  texture:
+    base: mushroom_small_cyan
+mushroom_small_green:
+  texture:
+    base: mushroom_small_green
+mushroom_small_green_dark:
+  texture:
+    base: mushroom_small_green_dark
+mushroom_small_grey:
+  texture:
+    base: mushroom_small_grey
+mushroom_small_pink:
+  texture:
+    base: mushroom_small_pink
+mushroom_small_purple:
+  texture:
+    base: mushroom_small_purple
+mushroom_small_purple_dark:
+  texture:
+    base: mushroom_small_purple_dark
+mushroom_small_red:
+  texture:
+    base: mushroom_small_red
+mushroom_small_red_dark:
+  texture:
+    base: mushroom_small_red_dark
+mycelium:
+  texture:
+    base: dirt
+    overlay: mycelium_side
+  textureBottom:
+    base: dirt
+    overlay: dirt_overlay
+  textureTop:
+    base: dirt
+    overlay: mycelium_side
+nitrate_ammonium:
+  texture:
+    base: ammon_nitrate
+nitrocellulose:
+  texture:
+    base: nitrocellulose
+nitroglycerin:
+  texture:
+    base: nitro_side
+  textureBottom:
+    base: nitro_bottom
+  textureTop:
+    base: nitro_top
+none:
   {}
-Fire (Lithium):
+nuke_mark1:
+  texture:
+    base: nuke_mark1_side
+  textureBottom:
+    base: nuke_mark1_bottom
+  textureTop:
+    base: nuke_mark1_top
+nuke_mark2:
+  texture:
+    base: nuke_mark2_side
+  textureBottom:
+    base: nuke_mark2_bottom
+  textureTop:
+    base: nuke_mark2_top
+nuke_mark3:
+  texture:
+    base: nuke_mark3_side
+  textureBottom:
+    base: nuke_mark3_bottom
+  textureTop:
+    base: nuke_mark3_top
+onc:
+  texture:
+    base: onc_side
+  textureBottom:
+    base: onc_bottom
+  textureTop:
+    base: onc_top
+pitch:
+  texture:
+    base: pitch
+pitchblende:
+  texture:
+    base: pitchblende
+plant_bush_red:
+  texture:
+    base: plant_red_bush
+plant_dreamweed:
+  texture:
+    base: plant_dreamweed
+plant_dreamweed_blue_light:
+  texture:
+    base: plant_dreamweed_blue_light
+plant_dreamweed_sticky:
+  texture:
+    base: plant_dreamweed_sticky
+plant_dreamweed_striped:
+  texture:
+    base: plant_dreamweed_striped
+plant_fern:
+  texture:
+    base: plant_fern
+plant_fern_small:
+  texture:
+    base: plant_fern_small
+plant_fern_tall:
+  texture:
+    base: plant_fern_tall
+plant_grass_dryland:
+  texture:
+    base: grass_dry
+plant_grass_redflower:
+  texture:
+    base: grass_red_flower
+    overlay: grass_red_flower_overlay
+plant_grass_tall:
+  texture:
+    base: grass_tall
+plant_grass_tall_dark:
+  texture:
+    base: grass_tall_dark
+plant_grass_tall_light:
+  texture:
+    base: grass_tall_light
+plant_grass_yellow:
+  texture:
+    base: grass_yellow
+plant_jungle1:
+  texture:
+    base: plant_jungle1
+plant_jungle2:
+  texture:
+    base: plant_jungle2
+plant_jungle3:
+  texture:
+    base: plant_jungle3
+plant_jungle4:
+  texture:
+    base: plant_jungle4
+plant_jungle5:
+  texture:
+    base: plant_jungle5
+plant_jungle6:
+  texture:
+    base: plant_jungle6
+plant_jungle7:
+  texture:
+    base: plant_jungle7
+plant_methane_ball:
+  texture:
+    base: plant_methane_ball
+platinum:
+  texture:
+    base: platinum
+    overlay: silver_platinum_overlay
+plutonium:
+  texture:
+    base: plutonium
+    overlay: plutonium_overlay
+    blendMode: add
+quartz:
+  texture:
+    base: quartz
+    overlay: add_overlay_soft
+    blendMode: add
+rubber:
+  texture:
+    base: rubber
+rubber_charred:
+  texture:
+    base: rubber
+ruby:
+  texture:
+    base: ruby
+rutile:
+  texture:
+    base: rutile
+salpeter:
+  texture:
+    base: salpeter
+sand:
+  texture:
+    base: sand
+sand_red:
+  texture:
+    base: sand_red
+sandbags:
+  texture:
+    base: sandbags_side
+  textureBottom:
+    base: sandbags_top
+  textureTop:
+    base: sandbags_top
+sandstone:
+  texture:
+    base: sandstone
+    overlay: sandstone_overlay
+sandstone_bricks:
+  texture:
+    base: stone_bricks_sand
+    overlay: stone_bricks_sand_overlay
+sandstone_chiseled:
+  texture:
+    base: stone_chiseled_sand_side
+  textureBottom:
+    base: stone_chiseled_sand_top
+  textureTop:
+    base: stone_chiseled_sand_top
+sandstone_chiseled_ornament:
+  texture:
+    base: stone_chiseled_sand_ornament_side
+  textureBottom:
+    base: stone_chiseled_sand_ornament_top
+  textureTop:
+    base: stone_chiseled_sand_ornament_top
+sandstone_cut:
+  texture:
+    base: stone_cut_sand
+sandstone_red:
+  texture:
+    base: sandstone_red
+    overlay: sandstone_red_overlay
+sandstone_red_bricks:
+  texture:
+    base: stone_bricks_sand_red
+    overlay: stone_bricks_sand_red_overlay
+sandstone_red_chiseled:
+  texture:
+    base: stone_chiseled_sand_red_side
+  textureBottom:
+    base: stone_chiseled_sand_red_top
+  textureTop:
+    base: stone_chiseled_sand_red_top
+sandstone_red_chiseled_ornament:
+  texture:
+    base: stone_chiseled_sand_red_ornament_side
+  textureBottom:
+    base: stone_chiseled_sand_red_ornament_top
+  textureTop:
+    base: stone_chiseled_sand_red_ornament_top
+sandstone_red_cut:
+  texture:
+    base: stone_cut_sand_red
+sapling_coniferous:
+  texture:
+    base: sapling_coniferous
+sapling_dead:
+  texture:
+    base: sapling_dead
+sapling_deciduous:
+  texture:
+    base: sapling_deciduous
+sapling_fruit:
   {}
-Fire (Gas):
+sapling_jungle:
+  texture:
+    base: sapling_jungle
+sapling_mangrove:
+  texture:
+    base: sapling_mangrove
+sapling_palm:
+  texture:
+    base: sapling_palm
+sapling_rubber:
+  texture:
+    base: sapling_rubber
+sapling_savanna:
+  texture:
+    base: sapling_savanna
+sapling_sugar:
+  texture:
+    base: sapling_sugar
+sapling_swamp:
+  texture:
+    base: sapling_swamp
+sapphire:
+  texture:
+    base: sapphire
+scheelite:
+  texture:
+    base: scheelite
+seamorphite:
+  texture:
+    base: seamorphite
+    overlay: seamorphite_overlay
+silicon:
+  texture:
+    base: silicon
+silver:
+  texture:
+    base: silver
+    overlay: silver_platinum_overlay
+sink_gravel:
+  texture:
+    base: gravel
+sink_mud:
+  texture:
+    base: mud
+sink_sand:
+  texture:
+    base: sand
+sink_sand_red:
+  texture:
+    base: sand_red
+sink_snow:
+  texture:
+    base: snow
+sink_water:
   {}
-Water:
+slate:
+  texture:
+    base: slate_side
+    overlay: slate_overlay
+snow:
+  texture:
+    base: snow
+spawner_gravel:
+  texture:
+    base: gravel
+spawner_mud:
+  texture:
+    base: mud
+spawner_sand:
+  texture:
+    base: sand
+spawner_sand_red:
+  texture:
+    base: sand_red
+spawner_snow:
+  texture:
+    base: snow
+spawner_water:
   {}
+steel:
+  texture:
+    base: steel
+    overlay: steel_overlay
+steel_plating:
+  texture:
+    base: steel
+    overlay: plating_steel
+steel_plating_rusty:
+  texture:
+    base: steel_rusty
+    overlay: plating_steel_rusty
+steel_rusty:
+  texture:
+    base: steel_rusty
+    overlay: steel_rusty_overlay
+steel_tungsten:
+  texture:
+    base: steel_tungsten
+    overlay: steel_tungsten_overlay
+steel_tungsten_plating:
+  texture:
+    base: plating_steel_tungsten
+    overlay: plating_steel_tungsten_overlay
+stone:
+  texture:
+    base: stone
+    overlay: stone_overlay
+stone_bricks:
+  texture:
+    base: stone_bricks
+stone_cut:
+  texture:
+    base: stone_cut
+stone_mossy:
+  texture:
+    base: stone_mossy
+    overlay: stone_overlay
+stone_mycelia_icecaps:
+  texture:
+    base: stone
+    overlay: stone_mycelia_icecaps_side
+  textureBottom:
+    base: stone
+    overlay: stone_overlay
+  textureTop:
+    base: stone
+    overlay: stone_mycelia_icecaps_top
+submarium:
+  texture:
+    base: submarium
+    overlay: submarium_overlay
+succulent_blue_bud:
+  texture:
+    base: succulent_blue_side
+  textureBottom:
+    base: succulent_blue_bottom
+  textureTop:
+    base: succulent_blue_top
+succulent_blue_stem:
+  texture:
+    base: succulent_blue_side
+  textureBottom:
+    base: succulent_blue_bottom
+  textureTop:
+    base: succulent_blue_bottom
+succulent_purple_bud:
+  texture:
+    base: succulent_purple_side
+  textureBottom:
+    base: succulent_purple_bottom
+  textureTop:
+    base: succulent_purple_top
+succulent_purple_stem:
+  texture:
+    base: succulent_purple_side
+  textureBottom:
+    base: succulent_purple_bottom
+  textureTop:
+    base: succulent_purple_bottom
+succulent_stone_bud:
+  texture:
+    base: succulent_stone_side
+  textureBottom:
+    base: succulent_stone_bottom
+  textureTop:
+    base: succulent_stone_top
+succulent_stone_stem:
+  texture:
+    base: succulent_stone_side
+  textureBottom:
+    base: succulent_stone_bottom
+  textureTop:
+    base: succulent_stone_bottom
+sulfur:
+  texture:
+    base: sulfur
+    overlay: sulfur_overlay
+tarmac:
+  texture:
+    base: tarmac
+tarmac_semisolid:
+  texture:
+    base: tarmac
+tholin:
+  texture:
+    base: tholin
+thornmite:
+  texture:
+    base: thornmite
+    overlay: thornmite_overlay
+thornmite_plating:
+  texture:
+    base: plating_thornmite
+    overlay: plating_thornmite_overlay
+tin:
+  texture:
+    base: tin
+    overlay: tin_overlay
+titanium:
+  texture:
+    base: titanium
+    overlay: titanium_overlay
+titanium_plating:
+  texture:
+    base: plating_titanium
+    overlay: plating_titanium_overlay
+tnt:
+  texture:
+    base: tnt_side
+  textureBottom:
+    base: tnt_bottom
+  textureTop:
+    base: tnt_top
+tungsten:
+  texture:
+    base: tungsten
+    overlay: tungsten_overlay
+tungsten_carbide:
+  texture:
+    base: ceramic_tungsten_carbide
+uranium:
+  texture:
+    base: uranium
+    overlay: uranium_overlay
+    blendMode: add
+vine_garas:
+  texture:
+    base: vine_garas
+wambronium:
+  texture:
+    base: wambronium
+    overlay: wambronium_overlay
+wood_coniferous:
+  texture:
+    base: wood_coniferous
+wood_coniferous_charred:
+  texture:
+    base: wood_coniferous
+wood_coniferous_planks:
+  texture:
+    base: wooden_planks_coniferous_side
+  textureBottom:
+    base: wooden_planks_coniferous_top
+  textureTop:
+    base: wooden_planks_coniferous_top
+wood_coniferous_planks_charred:
+  texture:
+    base: wooden_planks_coniferous_side
+  textureBottom:
+    base: wooden_planks_coniferous_top
+  textureTop:
+    base: wooden_planks_coniferous_top
+wood_dead:
+  texture:
+    base: wood_dead
+wood_dead_charred:
+  texture:
+    base: wood_dead
+wood_dead_planks:
+  texture:
+    base: wooden_planks_dead
+wood_dead_planks_charred:
+  texture:
+    base: wooden_planks_dead
+wood_deciduous:
+  texture:
+    base: wood_deciduous
+wood_deciduous_charred:
+  texture:
+    base: wood_deciduous
+wood_deciduous_planks:
+  texture:
+    base: wooden_planks_deciduous
+wood_deciduous_planks_charred:
+  texture:
+    base: wooden_planks_deciduous
+wood_fruit:
+  texture:
+    base: wood_fruit
+wood_fruit_charred:
+  texture:
+    base: wood_fruit
+wood_fruit_planks:
+  texture:
+    base: wooden_planks_fruit
+wood_fruit_planks_charred:
+  texture:
+    base: wooden_planks_fruit
+wood_jungle:
+  texture:
+    base: wood_jungle
+wood_jungle_charred:
+  texture:
+    base: wood_jungle
+wood_jungle_planks:
+  texture:
+    base: wooden_planks_jungle
+wood_jungle_planks_charred:
+  texture:
+    base: wooden_planks_jungle
+wood_mangrove:
+  texture:
+    base: wood_mangrove
+wood_mangrove_charred:
+  texture:
+    base: wood_mangrove
+wood_mangrove_planks:
+  texture:
+    base: wooden_planks_mangrove
+wood_mangrove_planks_charred:
+  texture:
+    base: wooden_planks_mangrove
+wood_palm:
+  texture:
+    base: wood_palm
+wood_palm_charred:
+  texture:
+    base: wood_palm
+wood_palm_planks:
+  texture:
+    base: wooden_planks_palm_side
+wood_palm_planks_charred:
+  texture:
+    base: wooden_planks_palm_side
+  textureBottom:
+    base: wooden_planks_palm_top
+  textureTop:
+    base: wooden_planks_palm_top
+wood_rubber:
+  texture:
+    base: wood_rubber
+wood_rubber_charred:
+  texture:
+    base: wood_rubber
+wood_rubber_planks:
+  texture:
+    base: wooden_planks_rubber
+wood_rubber_planks_charred:
+  texture:
+    base: wooden_planks_rubber
+wood_savanna:
+  texture:
+    base: wood_savanna
+wood_savanna_charred:
+  texture:
+    base: wood_savanna
+wood_savanna_planks:
+  texture:
+    base: wooden_planks_savanna
+wood_savanna_planks_charred:
+  texture:
+    base: wooden_planks_savanna
+wood_sugar:
+  texture:
+    base: wood_sugar
+wood_sugar_charred:
+  texture:
+    base: wood_sugar
+wood_sugar_planks:
+  texture:
+    base: wooden_planks_sugar
+wood_sugar_planks_charred:
+  texture:
+    base: wooden_planks_sugar
+wood_swamp:
+  texture:
+    base: wood_swamp
+wood_swamp_charred:
+  texture:
+    base: wood_swamp
+wood_swamp_planks:
+  texture:
+    base: wooden_planks_swamp
+wood_swamp_planks_charred:
+  texture:
+    base: wooden_planks_swamp
+zinc:
+  texture:
+    base: zinc
+    overlay: zinc_overlay
+zincblende:
+  texture:
+    base: zincblende
