@@ -1,280 +1,280 @@
 alienplant_ammonia:
-  name: alienplant_ammonia
+  name: Ammonia Plant
 alienplant_cave_cap:
-  name: alienplant_cave_cap
+  name: Cave Plant (Cap)
 alienplant_cave_stem:
-  name: alienplant_cave_stem
+  name: Cave Plant (Stem)
 alienplant_crop_bud:
-  name: alienplant_crop_bud
+  name: Alien Crop Plant (Bud)
 alienplant_crop_stem:
-  name: alienplant_crop_stem
+  name: Alien Crop Plant (Stem)
 alienplant_desert_chalice:
-  name: alienplant_desert_chalice
+  name: Desert Chalice Block
 alienplant_salpeter_light:
-  name: alienplant_salpeter_light
+  name: Salpeter Plant Light Block
 alienplant_salpeter_trap:
   moveMod: 0.001
-  name: alienplant_salpeter_trap
+  name: Salpeter Plant Trap Block
 aluminium:
-  name: aluminium
+  name: Aluminium
 aluminium_plating:
-  name: aluminium_plating
+  name: Aluminium Plating
 amatol:
   explosionPower: 0.8
   explosionPowerLoss: 0.0001
   explosionRays: 700
   explosionResistance: 5
   flammability: 1e+007
-  name: amatol
+  name: Amatol 25kg
 anfo:
   explosionPower: 2
   explosionPowerLoss: 0.00015
   explosionRays: 2000
   explosionResistance: 20
   flammability: 1e+007
-  name: anfo
+  name: ANFO 25kg
 ash_volcanic:
   moveMod: 0.75
-  name: ash_volcanic
+  name: Volcanic Ash
 bargonite_blue:
   allowsLight: true
   lightColorFilter: [0, 0, 1]
-  name: bargonite_blue
+  name: Blue Bargonite Crystal
   occlusion: self
 bargonite_cyan:
   allowsLight: true
   lightColorFilter: [0, 1, 1]
-  name: bargonite_cyan
+  name: Cyan Bargonite Crystal
   occlusion: self
 bargonite_green:
   allowsLight: true
   lightColorFilter: [0, 1, 0]
-  name: bargonite_green
+  name: Green Bargonite Crystal
   occlusion: self
 bargonite_magenta:
   allowsLight: true
   lightColorFilter: [1, 0, 1]
-  name: bargonite_magenta
+  name: Magenta Bargonite Crystal
   occlusion: self
 bargonite_orange:
   allowsLight: true
   lightColorFilter: [1, 0.6, 1]
-  name: bargonite_orange
+  name: Orange Bargonite Crystal
   occlusion: self
 bargonite_red:
   allowsLight: true
   lightColorFilter: [1, 0, 0]
-  name: bargonite_red
+  name: Red Bargonite Crystal
   occlusion: self
 bargonite_white:
   allowsLight: true
-  name: bargonite_white
+  name: White Bargonite Crystal
   occlusion: self
 bargonite_yellow:
   allowsLight: true
   lightColorFilter: [1, 1, 0]
-  name: bargonite_yellow
+  name: Yellow Bargonite Crystal
   occlusion: self
 basalt:
-  name: basalt
+  name: Basalt
 basalt_semisolid:
   moveMod: 0.7
-  name: basalt_semisolid
+  name: Semisolid Basalt
 bauxite:
-  name: bauxite
+  name: Bauxite
 blackpowder:
   flammability: 1e+007
   moveMod: 0.8
-  name: blackpowder
+  name: Black Powder
 blackpowder_box_100g:
   explosionPower: 0.01
   explosionPowerLoss: 0.0001
   explosionRays: 300
-  name: blackpowder_box_100g
+  name: Black Powder Box 100g
 blackpowder_box_1kg:
   explosionPower: 0.1
   explosionPowerLoss: 0.00018
   explosionRays: 600
-  name: blackpowder_box_1kg
+  name: Black Powder Box 1kg
 blackpowder_crate_10kg:
   explosionPower: 1
   explosionPowerLoss: 0.00023
   explosionRays: 1300
-  name: blackpowder_crate_10kg
+  name: Black Powder Crate 10kg
 blackpowder_crate_20kg:
   explosionPower: 2
   explosionPowerLoss: 0.00025
   explosionRays: 1500
-  name: blackpowder_crate_20kg
+  name: Black Powder Crate 20kg
 bomb_fire:
   explosionPower: 2
   explosionRays: 10
-  name: bomb_fire
+  name: Firebomb
 bomb_shrapnel:
   explosionPower: 0.001
   explosionPowerLoss: 1e-007
   explosionRays: 500
   explosionResistance: 10
-  name: bomb_shrapnel
+  name: Shrapnel Bomb (1kg Amatol)
 bone:
   explosionResistance: 0.2
-  name: bone
+  name: Bone Block
 brass:
-  name: brass
+  name: Brass
 brass_patinated:
-  name: brass_patinated
+  name: Patinated Brass
 bricks:
-  name: bricks
+  name: Bricks
 bricks_lightweight:
-  name: bricks_lightweight
+  name: Lightweight Bricks
 bricks_loam:
-  name: bricks_loam
+  name: Loam Bricks
 bronze:
-  name: bronze
+  name: Bronze
 bronze_patinated:
-  name: bronze_patinated
+  name: Patinated Bronze
 cactus_death:
   moveMod: 0.4
-  name: cactus_death
+  name: Death Cactus
 cactus_death_fruit:
   moveMod: 0.6
-  name: cactus_death_fruit
+  name: Cactus Fruit
 cactus_death_mutated:
   moveMod: 0.4
-  name: cactus_death_mutated
+  name: Mutated Death Cactus
 cactus_death_poison:
   moveMod: 0.4
-  name: cactus_death_poison
+  name: Poison Cactus
 cactus_death_starch:
   moveMod: 0.4
-  name: cactus_death_starch
+  name: Starch Cactus
 cactus_small_green_bud:
   moveMod: 0.4
-  name: cactus_small_green_bud
+  name: Small Green Cactus (Bud)
 cactus_small_green_stem:
   moveMod: 0.4
-  name: cactus_small_green_stem
+  name: Small Green Cactus (Stem)
 cactus_small_red_bud:
   moveMod: 0.4
-  name: cactus_small_red_bud
+  name: Small Red Cactus (Bud)
 cactus_small_red_stem:
   moveMod: 0.4
-  name: cactus_small_red_stem
+  name: Small Red Cactus (Stem)
 cactus_small_yellow_bud:
   moveMod: 0.4
-  name: cactus_small_yellow_bud
+  name: Small Yellow Cactus (Bud)
 cactus_small_yellow_stem:
   moveMod: 0.4
-  name: cactus_small_yellow_stem
+  name: Small Yellow Cactus (Stem)
 carbonate_lithium:
   explosionResistance: 0.2
-  name: carbonate_lithium
+  name: Lithium Carbonate
 carbonate_sodium:
   explosionResistance: 0.2
-  name: carbonate_sodium
+  name: Sodium Carbonate (Soda)
 cassiterite:
-  name: cassiterite
+  name: Cassiterite
 ceramic:
-  name: ceramic
+  name: Alumina Ceramic
 ceramic_plating:
-  name: ceramic_plating
+  name: Ceramic Plating
 ceramic_tiling:
-  name: ceramic_tiling
+  name: Ceramic Tiling
 clay:
-  name: clay
+  name: Clay
 cloth_black:
   flammability: 2
-  name: cloth_black
+  name: Black Cloth Block
 cloth_blue:
   flammability: 2
-  name: cloth_blue
+  name: Blue Cloth Block
 cloth_blue_dark:
   flammability: 2
-  name: cloth_blue_dark
+  name: Dark Blue Cloth Block
 cloth_blue_light:
   flammability: 2
-  name: cloth_blue_light
+  name: Light Blue Cloth Block
 cloth_brown:
   flammability: 2
-  name: cloth_brown
+  name: Brown Cloth Block
 cloth_cyan:
   flammability: 2
-  name: cloth_cyan
+  name: Cyan Cloth Block
 cloth_green:
   flammability: 2
-  name: cloth_green
+  name: Green Cloth Block
 cloth_green_dark:
   flammability: 2
-  name: cloth_green_dark
+  name: Dark Green Cloth Block
 cloth_grey:
   flammability: 2
-  name: cloth_grey
+  name: Grey Cloth Block
 cloth_lime:
   flammability: 2
-  name: cloth_lime
+  name: Lime Cloth Block
 cloth_magenta:
   flammability: 2
-  name: cloth_magenta
+  name: Magenta Cloth Block
 cloth_orange:
   flammability: 2
-  name: cloth_orange
+  name: Orange Cloth Block
 cloth_pink:
   flammability: 2
-  name: cloth_pink
+  name: Pink Cloth Block
 cloth_purple:
   flammability: 2
-  name: cloth_purple
+  name: Purple Cloth Block
 cloth_purple_dark:
   flammability: 2
-  name: cloth_purple_dark
+  name: Dark Purple Cloth Block
 cloth_red:
   flammability: 2
-  name: cloth_red
+  name: Red Cloth Block
 cloth_red_dark:
   flammability: 2
-  name: cloth_red_dark
+  name: Dark Red Cloth Block
 cloth_white:
   flammability: 2
-  name: cloth_white
+  name: White Cloth Block
 cloth_yellow:
   flammability: 2
-  name: cloth_yellow
+  name: Yellow Cloth Block
 cloth_yellow_light:
   flammability: 2
-  name: cloth_yellow_light
+  name: Light Yellow Cloth Block
 coal:
   flammability: 1
-  name: coal
+  name: Coal
 cobblestone:
-  name: cobblestone
+  name: Cobblestone
 coke:
   flammability: 1.2
   moveMod: 0.7
-  name: coke
+  name: Coke
 concrete:
-  name: concrete
+  name: Concrete
 copper:
-  name: copper
+  name: Copper
 copper_patinated:
-  name: copper_patinated
+  name: Patinated Copper
 diamond:
   flammability: 0.8
-  name: diamond
+  name: Diamond
 diatomite:
-  name: diatomite
+  name: Diatomite (Kieselguhr)
 dirt:
   explosionResistance: 0.2
-  name: dirt
+  name: Dirt
 dolomite:
-  name: dolomite
+  name: Dolomite
 dynamite:
   explosionPower: 1.8
   explosionPowerLoss: 0.0002
   explosionRays: 1500
   flammability: 1e+007
-  name: dynamite
+  name: Dynamite
 emerald:
-  name: emerald
+  name: Emerald
 fire:
   allowsLight: true
   collide: false
@@ -282,7 +282,7 @@ fire:
   explosionResistance: 0
   floatingAction: 2
   meshType: none
-  name: fire
+  name: Fire
   occlusion: none
   supportive: false
   waterBreak: true
@@ -293,7 +293,7 @@ fire_gas:
   explosionResistance: 0
   floatingAction: 2
   meshType: none
-  name: fire_gas
+  name: Fire (Gas)
   occlusion: none
   supportive: false
   waterBreak: true
@@ -304,7 +304,7 @@ fire_light_metal:
   explosionResistance: 0
   floatingAction: 2
   meshType: none
-  name: fire_light_metal
+  name: Fire (Light Metal)
   occlusion: none
   supportive: false
   waterBreak: true
@@ -315,7 +315,7 @@ fire_lithium:
   explosionResistance: 0
   floatingAction: 2
   meshType: none
-  name: fire_lithium
+  name: Fire (Lithium)
   occlusion: none
   supportive: false
   waterBreak: true
@@ -326,7 +326,7 @@ fire_sulfur:
   explosionResistance: 0
   floatingAction: 2
   meshType: none
-  name: fire_sulfur
+  name: Fire (Sulfur)
   occlusion: none
   supportive: false
   waterBreak: true
@@ -338,7 +338,7 @@ flower_fringed_pink:
   flammability: 3
   floatingAction: 2
   meshType: cross
-  name: flower_fringed_pink
+  name: Pink Fringed Flower
   occlusion: none
   supportive: false
   waterBreak: true
@@ -350,7 +350,7 @@ flower_fringed_red:
   flammability: 3
   floatingAction: 2
   meshType: cross
-  name: flower_fringed_red
+  name: Red Fringed Flower
   occlusion: none
   supportive: false
   waterBreak: true
@@ -362,7 +362,7 @@ flower_fringed_tiny:
   flammability: 3
   floatingAction: 2
   meshType: cross
-  name: flower_fringed_tiny
+  name: Tiny Fringed Flower
   occlusion: none
   supportive: false
   waterBreak: true
@@ -374,7 +374,7 @@ flower_fringed_white:
   flammability: 3
   floatingAction: 2
   meshType: cross
-  name: flower_fringed_white
+  name: White Fringed Flower
   occlusion: none
   supportive: false
   waterBreak: true
@@ -386,7 +386,7 @@ flower_fringed_yellow:
   flammability: 3
   floatingAction: 2
   meshType: cross
-  name: flower_fringed_yellow
+  name: Yellow Fringed Flower
   occlusion: none
   supportive: false
   waterBreak: true
@@ -398,7 +398,7 @@ flower_purple_large:
   flammability: 3
   floatingAction: 2
   meshType: cross
-  name: flower_purple_large
+  name: Large Purple Flower
   occlusion: none
   supportive: false
   waterBreak: true
@@ -410,7 +410,7 @@ flower_red_jungle:
   flammability: 3
   floatingAction: 2
   meshType: cross
-  name: flower_red_jungle
+  name: Red Jungle Flower
   occlusion: none
   supportive: false
   waterBreak: true
@@ -422,7 +422,7 @@ flower_red_large:
   flammability: 3
   floatingAction: 2
   meshType: cross
-  name: flower_red_large
+  name: Large Red Flower
   occlusion: none
   supportive: false
   waterBreak: true
@@ -434,7 +434,7 @@ flower_skeleton:
   flammability: 3
   floatingAction: 2
   meshType: cross
-  name: flower_skeleton
+  name: Skeleton Flower
   occlusion: none
   supportive: false
   waterBreak: true
@@ -446,7 +446,7 @@ flower_white:
   flammability: 3
   floatingAction: 2
   meshType: cross
-  name: flower_white
+  name: Common White Flowers
   occlusion: none
   supportive: false
   waterBreak: true
@@ -458,7 +458,7 @@ flower_yellow_large:
   flammability: 3
   floatingAction: 2
   meshType: cross
-  name: flower_yellow_large
+  name: Large Yellow Flower
   occlusion: none
   supportive: false
   waterBreak: true
@@ -470,7 +470,7 @@ flower_yellow_small:
   flammability: 3
   floatingAction: 2
   meshType: cross
-  name: flower_yellow_small
+  name: Small Yellow Flower
   occlusion: none
   supportive: false
   waterBreak: true
@@ -482,7 +482,7 @@ fungus_icecaps:
   flammability: 1
   floatingAction: 2
   meshType: cross
-  name: fungus_icecaps
+  name: Little Icecaps
   occlusion: none
   supportive: false
   waterBreak: true
@@ -494,7 +494,7 @@ fungus_sacs_sanguine:
   flammability: 1
   floatingAction: 2
   meshType: cross
-  name: fungus_sacs_sanguine
+  name: Sanguine Sacs
   occlusion: none
   supportive: false
   waterBreak: true
@@ -506,7 +506,7 @@ fungus_sacs_triton:
   flammability: 1
   floatingAction: 2
   meshType: cross
-  name: fungus_sacs_triton
+  name: Triton Sacs
   occlusion: none
   supportive: false
   waterBreak: true
@@ -518,7 +518,7 @@ fungus_sorrowthorn:
   flammability: 1
   floatingAction: 2
   meshType: cross
-  name: fungus_sorrowthorn
+  name: Sorrowthorn
   occlusion: none
   supportive: false
   waterBreak: true
@@ -530,101 +530,101 @@ fungus_terrorlichen:
   flammability: 1
   floatingAction: 2
   meshType: cross
-  name: fungus_terrorlichen
+  name: Terror Lichen
   occlusion: none
   supportive: false
   waterBreak: true
 galena:
-  name: galena
+  name: Galena
 gas_ammonia:
   allowsLight: true
   collide: false
   floatingAction: 0
-  name: gas_ammonia
+  name: Ammonia
   occlusion: none
   supportive: false
 gas_argon:
   allowsLight: true
   collide: false
   floatingAction: 0
-  name: gas_argon
+  name: Argon
   occlusion: none
   supportive: false
 gas_carbon_dioxide:
   allowsLight: true
   collide: false
   floatingAction: 0
-  name: gas_carbon_dioxide
+  name: Carbon Dioxide
   occlusion: none
   supportive: false
 gas_deuterium:
   allowsLight: true
   collide: false
   floatingAction: 0
-  name: gas_deuterium
+  name: Deuterium
   occlusion: none
   supportive: false
 gas_helium:
   allowsLight: true
   collide: false
   floatingAction: 0
-  name: gas_helium
+  name: Helium
   occlusion: none
   supportive: false
 gas_hydrogen:
   allowsLight: true
   collide: false
   floatingAction: 0
-  name: gas_hydrogen
+  name: Hydrogen
   occlusion: none
   supportive: false
 gas_methane:
   allowsLight: true
   collide: false
   floatingAction: 0
-  name: gas_methane
+  name: Methane
   occlusion: none
   supportive: false
 gas_nitrogen:
   allowsLight: true
   collide: false
   floatingAction: 0
-  name: gas_nitrogen
+  name: Nitrogen
   occlusion: none
   supportive: false
 gas_nitrogen_dioxide:
   allowsLight: true
   collide: false
   floatingAction: 0
-  name: gas_nitrogen_dioxide
+  name: Nitrogen Dioxide
   occlusion: none
   supportive: false
 gas_oxygen:
   allowsLight: true
   collide: false
   floatingAction: 0
-  name: gas_oxygen
+  name: Oxygen
   occlusion: none
   supportive: false
 gas_sulfur_dioxide:
   allowsLight: true
   collide: false
   floatingAction: 0
-  name: gas_sulfur_dioxide
+  name: Sulfur Dioxide
   occlusion: none
   supportive: false
 gas_water:
   allowsLight: true
   collide: false
   floatingAction: 0
-  name: gas_water
+  name: Water (Steam)
   occlusion: none
   supportive: false
 gas_xenon:
   allowsLight: true
   collide: false
   floatingAction: 0
-  name: gas_xenon
+  name: Xenon
   occlusion: none
   supportive: false
 gelignite:
@@ -632,210 +632,210 @@ gelignite:
   explosionPowerLoss: 1e-005
   explosionRays: 2600
   flammability: 1e+007
-  name: gelignite
+  name: Blasting Gelatin
 glass:
   allowsLight: true
-  name: glass
+  name: Glass
   occlusion: self
 glass_bargonite_blue:
   allowsLight: true
   lightColorFilter: [0, 0, 1]
-  name: glass_bargonite_blue
+  name: Blue Bargonite Glass
   occlusion: self
 glass_bargonite_cyan:
   allowsLight: true
   lightColorFilter: [0, 1, 1]
-  name: glass_bargonite_cyan
+  name: Cyan Bargonite Glass
   occlusion: self
 glass_bargonite_green:
   allowsLight: true
   lightColorFilter: [0, 1, 0]
-  name: glass_bargonite_green
+  name: Green Bargonite Glass
   occlusion: self
 glass_bargonite_magenta:
   allowsLight: true
   lightColorFilter: [1, 0, 1]
-  name: glass_bargonite_magenta
+  name: Magenta Bargonite Glass
   occlusion: self
 glass_bargonite_orange:
   allowsLight: true
   lightColorFilter: [1, 0.6, 0]
-  name: glass_bargonite_orange
+  name: Orange Bargonite Glass
   occlusion: self
 glass_bargonite_red:
   allowsLight: true
   lightColorFilter: [1, 0, 0]
-  name: glass_bargonite_red
+  name: Red Bargonite Glass
   occlusion: self
 glass_bargonite_white:
   allowsLight: true
-  name: glass_bargonite_white
+  name: White Bargonite Glass
   occlusion: self
 glass_bargonite_yellow:
   allowsLight: true
   lightColorFilter: [1, 1, 0]
-  name: glass_bargonite_yellow
+  name: Yellow Bargonite Glass
   occlusion: self
 glass_metal_frame:
   allowsLight: true
-  name: glass_metal_frame
+  name: Metal Framed Glass
   occlusion: self
 glass_thornmite:
   allowsLight: true
-  name: glass_thornmite
+  name: Thornmite Glass
   occlusion: self
 gneiss:
-  name: gneiss
+  name: Gneiss
 gold:
-  name: gold
+  name: Gold
 granite:
-  name: granite
+  name: Granite
 granite_bricks:
-  name: granite_bricks
+  name: Granite Bricks
 granite_cut:
-  name: granite_cut
+  name: Cut Granite Block
 grass:
   explosionResistance: 0.2
   flammability: 1
-  name: grass
+  name: Grass Block
 grass_charred:
   flammability: 0.05
-  name: grass_charred
+  name: Charred Grass Block
 gravel:
   moveMod: 0.8
-  name: gravel
+  name: Gravel
 gypsum:
-  name: gypsum
+  name: Gypsum
 gypsum_black:
-  name: gypsum_black
+  name: Black Gypsum
 gypsum_blue:
-  name: gypsum_blue
+  name: Blue Gypsum
 gypsum_blue_dark:
-  name: gypsum_blue_dark
+  name: Dark Blue Gypsum
 gypsum_blue_light:
-  name: gypsum_blue_light
+  name: Light Blue Gypsum
 gypsum_brown:
-  name: gypsum_brown
+  name: Brown Gypsum
 gypsum_cyan:
-  name: gypsum_cyan
+  name: Cyan Gypsum
 gypsum_green:
-  name: gypsum_green
+  name: Green Gypsum
 gypsum_green_dark:
-  name: gypsum_green_dark
+  name: Dark Green Gypsum
 gypsum_grey:
-  name: gypsum_grey
+  name: Grey Gypsum
 gypsum_lime:
-  name: gypsum_lime
+  name: Lime Gypsum
 gypsum_magenta:
-  name: gypsum_magenta
+  name: Magenta Gypsum
 gypsum_orange:
-  name: gypsum_orange
+  name: Orange Gypsum
 gypsum_pink:
-  name: gypsum_pink
+  name: Pink Gypsum
 gypsum_purple:
-  name: gypsum_purple
+  name: Purple Gypsum
 gypsum_purple_dark:
-  name: gypsum_purple_dark
+  name: Dark Purple Gypsum
 gypsum_red:
-  name: gypsum_red
+  name: Red Gypsum
 gypsum_red_dark:
-  name: gypsum_red_dark
+  name: Dark Red Gypsum
 gypsum_yellow:
-  name: gypsum_yellow
+  name: Yellow Gypsum
 gypsum_yellow_light:
-  name: gypsum_yellow_light
+  name: Light Yellow Gypsum
 ice:
   allowsLight: true
   moveMod: 7
-  name: ice
+  name: Ice
   occlusion: self
 ice_dry:
   explosionResistance: 0.2
-  name: ice_dry
+  name: Dry Ice
 ice_methane:
   flammability: 3
   moveMod: 0.8
-  name: ice_methane
+  name: Frozen Methane
 ice_methane_hydrate:
   explosionResistance: 0.2
   flammability: 2
-  name: ice_methane_hydrate
+  name: Methane Hydrate
 ice_nitrogen:
-  name: ice_nitrogen
+  name: Frozen Nitrogen
 iron:
-  name: iron
+  name: Iron
 iron_rusty:
-  name: iron_rusty
+  name: Rusty Iron
 lamp_blue_off:
   explosionResistance: 0.9
-  name: lamp_blue_off
+  name: Blue Lamp
 lamp_blue_on:
   explosionResistance: 0.9
-  name: lamp_blue_on
+  name: Blue Lamp (on)
 lamp_cyan_off:
   explosionResistance: 0.9
-  name: lamp_cyan_off
+  name: Cyan Lamp
 lamp_cyan_on:
   explosionResistance: 0.9
-  name: lamp_cyan_on
+  name: Cyan Lamp (on)
 lamp_green_off:
   explosionResistance: 0.9
-  name: lamp_green_off
+  name: Green Lamp
 lamp_green_on:
   explosionResistance: 0.9
-  name: lamp_green_on
+  name: Green Lamp (on)
 lamp_led_off:
   explosionResistance: 0.9
-  name: lamp_led_off
+  name: LED Lamp
 lamp_led_on:
   explosionResistance: 0.9
-  name: lamp_led_on
+  name: LED Lamp (on)
 lamp_magenta_off:
   explosionResistance: 0.9
-  name: lamp_magenta_off
+  name: Magenta Lamp
 lamp_magenta_on:
   explosionResistance: 0.9
-  name: lamp_magenta_on
+  name: Magenta Lamp (on)
 lamp_off:
   explosionResistance: 0.9
-  name: lamp_off
+  name: Lamp
 lamp_on:
   explosionResistance: 0.9
-  name: lamp_on
+  name: Lamp (on)
 lamp_orange_off:
   explosionResistance: 0.9
-  name: lamp_orange_off
+  name: Orange Lamp
 lamp_orange_on:
   explosionResistance: 0.9
-  name: lamp_orange_on
+  name: Orange Lamp (on)
 lamp_red_off:
   explosionResistance: 0.9
-  name: lamp_red_off
+  name: Red Lamp
 lamp_red_on:
   explosionResistance: 0.9
-  name: lamp_red_on
+  name: Red Lamp (on)
 lamp_white_off:
   explosionResistance: 0.9
-  name: lamp_white_off
+  name: White Lamp
 lamp_white_on:
   explosionResistance: 0.9
-  name: lamp_white_on
+  name: White Lamp (on)
 lamp_xenon_off:
   explosionResistance: 0.9
-  name: lamp_xenon_off
+  name: Xenon Lamp
 lamp_xenon_on:
   explosionResistance: 0.9
-  name: lamp_xenon_on
+  name: Xenon Lamp (on)
 lamp_yellow_off:
   explosionResistance: 0.9
-  name: lamp_yellow_off
+  name: Yellow Lamp
 lamp_yellow_on:
   explosionResistance: 0.9
-  name: lamp_yellow_on
+  name: Yellow Lamp (on)
 lapis_lazuli:
-  name: lapis_lazuli
+  name: Lapis Lazuli
 lead:
-  name: lead
+  name: Lead
 leaves_coniferous:
   allowsLight: true
   collide: false
@@ -843,7 +843,7 @@ leaves_coniferous:
   explosionResistance: 0.06
   flammability: 3
   moveMod: 0.7
-  name: leaves_coniferous
+  name: Leaves (Coniferous Tree)
   occlusion: selfOnly
   supportive: false
 leaves_deciduous:
@@ -853,7 +853,7 @@ leaves_deciduous:
   explosionResistance: 0.06
   flammability: 2
   moveMod: 0.7
-  name: leaves_deciduous
+  name: Leaves (Deciduous Tree)
   occlusion: selfOnly
   supportive: false
 leaves_fruit:
@@ -863,7 +863,7 @@ leaves_fruit:
   explosionResistance: 0.06
   flammability: 2
   moveMod: 0.7
-  name: leaves_fruit
+  name: Leaves (Fruit Tree)
   occlusion: selfOnly
   supportive: false
 leaves_fruit_blossom:
@@ -873,7 +873,7 @@ leaves_fruit_blossom:
   explosionResistance: 0.06
   flammability: 2
   moveMod: 0.7
-  name: leaves_fruit_blossom
+  name: Leaves (Blooming Fruit Tree)
   occlusion: selfOnly
   supportive: false
 leaves_jungle:
@@ -883,7 +883,7 @@ leaves_jungle:
   explosionResistance: 0.06
   flammability: 2
   moveMod: 0.7
-  name: leaves_jungle
+  name: Leaves (Jungle Tree)
   occlusion: selfOnly
   supportive: false
 leaves_mangrove:
@@ -893,7 +893,7 @@ leaves_mangrove:
   explosionResistance: 0.06
   flammability: 2
   moveMod: 0.7
-  name: leaves_mangrove
+  name: Leaves (Mangrove Tree)
   occlusion: selfOnly
   supportive: false
 leaves_palm:
@@ -903,7 +903,7 @@ leaves_palm:
   explosionResistance: 0.06
   flammability: 2
   moveMod: 0.7
-  name: leaves_palm
+  name: Leaves (Palm Tree)
   occlusion: selfOnly
   supportive: false
 leaves_rubber:
@@ -913,7 +913,7 @@ leaves_rubber:
   explosionResistance: 0.06
   flammability: 2
   moveMod: 0.7
-  name: leaves_rubber
+  name: Leaves (Rubber Tree)
   occlusion: selfOnly
   supportive: false
 leaves_savanna:
@@ -923,7 +923,7 @@ leaves_savanna:
   explosionResistance: 0.06
   flammability: 2
   moveMod: 0.7
-  name: leaves_savanna
+  name: Leaves (Savanna Tree)
   occlusion: selfOnly
   supportive: false
 leaves_sugar:
@@ -933,7 +933,7 @@ leaves_sugar:
   explosionResistance: 0.06
   flammability: 2
   moveMod: 0.7
-  name: leaves_sugar
+  name: Leaves (Sugar Tree)
   occlusion: selfOnly
   supportive: false
 leaves_swamp:
@@ -943,119 +943,119 @@ leaves_swamp:
   explosionResistance: 0.06
   flammability: 2
   moveMod: 0.7
-  name: leaves_swamp
+  name: Leaves (Swamp Tree)
   occlusion: selfOnly
   supportive: false
 light_metal:
   flammability: 1.5
-  name: light_metal
+  name: Aluminium-Lithium Alloy
 light_metal_plating:
   flammability: 1.5
-  name: light_metal_plating
+  name: Light Metal Plating
 limestone:
-  name: limestone
+  name: Limestone
 limestone_bricks:
-  name: limestone_bricks
+  name: Limestone Bricks
 limestone_cut:
-  name: limestone_cut
+  name: Cut Limestone Block
 liquid_water:
   allowsLight: true
   collide: false
   explosionResistance: 0.9
   flammability: -5.5
   floatingAction: 0
-  name: liquid_water
+  name: Water
   occlusion: none
   supportive: false
 lithium:
   flammability: 2.5
-  name: lithium
+  name: Lithium
 magnetite:
-  name: magnetite
+  name: Magnetite
 malachite:
-  name: malachite
+  name: Malachite
 marble:
-  name: marble
+  name: Marble
 marble_bricks:
-  name: marble_bricks
+  name: Marble Bricks
 marble_chiseled:
-  name: marble_chiseled
+  name: Chiseled Marble Block
 marble_chiseled_ornament:
-  name: marble_chiseled_ornament
+  name: Chiseled Marble Ornament Block
 marble_column:
-  name: marble_column
+  name: Marble Column
 marble_column_twisted:
-  name: marble_column_twisted
+  name: Twisted Marble Column
 marble_cut:
-  name: marble_cut
+  name: Cut Marble Block
 mine_plantoid:
   explosionPower: 3
   explosionPowerLoss: 1e-005
   explosionRays: 3200
-  name: mine_plantoid
+  name: Alien Plantoid Mine
 mud:
   moveMod: 0.4
-  name: mud
+  name: Mud
 mud_dry:
   explosionResistance: 0.2
-  name: mud_dry
+  name: Dry Mud
 mud_dry_half:
   moveMod: 0.7
-  name: mud_dry_half
+  name: Half-Dry Mud
 mushroom_giant_cap_blue:
   flammability: 0.5
-  name: mushroom_giant_cap_blue
+  name: Blue Mushroom Block
 mushroom_giant_cap_blue_dark:
   flammability: 0.5
-  name: mushroom_giant_cap_blue_dark
+  name: Dark Blue Mushroom Block
 mushroom_giant_cap_brown:
   flammability: 0.5
-  name: mushroom_giant_cap_brown
+  name: Brown Mushroom Block
 mushroom_giant_cap_cyan:
   flammability: 0.5
-  name: mushroom_giant_cap_cyan
+  name: Cyan Mushroom Block
 mushroom_giant_cap_green:
   flammability: 0.5
-  name: mushroom_giant_cap_green
+  name: Green Mushroom Block
 mushroom_giant_cap_green_dark:
   flammability: 0.5
-  name: mushroom_giant_cap_green_dark
+  name: Dark Green Mushroom Block
 mushroom_giant_cap_grey:
   flammability: 0.5
-  name: mushroom_giant_cap_grey
+  name: Grey Mushroom Block
 mushroom_giant_cap_pink:
   flammability: 0.5
-  name: mushroom_giant_cap_pink
+  name: Pink Mushroom Block
 mushroom_giant_cap_purple:
   flammability: 0.5
-  name: mushroom_giant_cap_purple
+  name: Purple Mushroom Block
 mushroom_giant_cap_purple_dark:
   flammability: 0.5
-  name: mushroom_giant_cap_purple_dark
+  name: Dark Purple Mushroom Block
 mushroom_giant_cap_red:
   flammability: 0.5
-  name: mushroom_giant_cap_red
+  name: Red Mushroom Block
 mushroom_giant_cap_red_dark:
   flammability: 0.5
-  name: mushroom_giant_cap_red_dark
+  name: Dark Red Mushroom Block
 mushroom_giant_cap_smooth_charred:
   flammability: 0.05
-  name: mushroom_giant_cap_smooth_charred
+  name: Charred Smooth Mushroom Block
 mushroom_giant_cap_spotted_charred:
   flammability: 0.05
-  name: mushroom_giant_cap_spotted_charred
+  name: Charred Spotted Mushroom Block
 mushroom_giant_lamella:
   flammability: 0.5
-  name: mushroom_giant_lamella
+  name: Lamella Block
 mushroom_giant_lamella_charred:
   flammability: 0.05
-  name: mushroom_giant_lamella_charred
+  name: Charred Lamella Block
 mushroom_giant_stem:
   flammability: 0.5
-  name: mushroom_giant_stem
+  name: Mushroom Stem Block
 mushroom_giant_stem_charred:
   flammability: 0.05
-  name: mushroom_giant_stem_charred
+  name: Charred Mushroom Stem Block
 mushroom_small_blue:
   allowsLight: true
   collide: false
@@ -1064,7 +1064,7 @@ mushroom_small_blue:
   flammability: 1
   floatingAction: 2
   meshType: cross
-  name: mushroom_small_blue
+  name: Blue Mushroom
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1076,7 +1076,7 @@ mushroom_small_blue_dark:
   flammability: 1
   floatingAction: 2
   meshType: cross
-  name: mushroom_small_blue_dark
+  name: Dark Blue Mushroom
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1088,7 +1088,7 @@ mushroom_small_brown:
   flammability: 1
   floatingAction: 2
   meshType: cross
-  name: mushroom_small_brown
+  name: Brown Mushroom
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1100,7 +1100,7 @@ mushroom_small_cyan:
   flammability: 1
   floatingAction: 2
   meshType: cross
-  name: mushroom_small_cyan
+  name: Cyan Mushroom
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1112,7 +1112,7 @@ mushroom_small_green:
   flammability: 1
   floatingAction: 2
   meshType: cross
-  name: mushroom_small_green
+  name: Green Mushroom
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1124,7 +1124,7 @@ mushroom_small_green_dark:
   flammability: 1
   floatingAction: 2
   meshType: cross
-  name: mushroom_small_green_dark
+  name: Dark Green Mushroom
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1136,7 +1136,7 @@ mushroom_small_grey:
   flammability: 1
   floatingAction: 2
   meshType: cross
-  name: mushroom_small_grey
+  name: Grey Mushroom
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1148,7 +1148,7 @@ mushroom_small_pink:
   flammability: 1
   floatingAction: 2
   meshType: cross
-  name: mushroom_small_pink
+  name: Pink Mushroom
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1160,7 +1160,7 @@ mushroom_small_purple:
   flammability: 1
   floatingAction: 2
   meshType: cross
-  name: mushroom_small_purple
+  name: Purple Mushroom
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1172,7 +1172,7 @@ mushroom_small_purple_dark:
   flammability: 1
   floatingAction: 2
   meshType: cross
-  name: mushroom_small_purple_dark
+  name: Dark Purple Mushroom
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1184,7 +1184,7 @@ mushroom_small_red:
   flammability: 1
   floatingAction: 2
   meshType: cross
-  name: mushroom_small_red
+  name: Red Mushroom
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1196,61 +1196,61 @@ mushroom_small_red_dark:
   flammability: 1
   floatingAction: 2
   meshType: cross
-  name: mushroom_small_red_dark
+  name: Dark Red Mushroom
   occlusion: none
   supportive: false
   waterBreak: true
 mycelium:
   explosionResistance: 0.2
   flammability: 1
-  name: mycelium
+  name: Mycelium Block
 nitrate_ammonium:
   explosionPower: 0.5
   explosionPowerLoss: 1e-005
   explosionRays: 100
   moveMod: 0.7
-  name: nitrate_ammonium
+  name: Ammonium Nitrate
 nitrocellulose:
   explosionPower: 1.8
   explosionPowerLoss: 1e-005
   explosionRays: 500
   moveMod: 0.7
-  name: nitrocellulose
+  name: Nitrocellulose
 nitroglycerin:
   explosionPower: 2
   explosionPowerLoss: 0.00019
   explosionRays: 2200
   flammability: 1e+007
-  name: nitroglycerin
+  name: Nitroglycerin
 none:
   allowsLight: true
   collide: false
   floatingAction: 0
   meshType: none
-  name: none
+  name: None
   occlusion: none
   supportive: false
 nuke_mark1:
   explosionPower: 1000
-  name: nuke_mark1
+  name: Atomic Bomb (Mark I)
 nuke_mark2:
   explosionPower: 10000
-  name: nuke_mark2
+  name: Thermonuclear Bomb (Mark II)
 nuke_mark3:
   explosionPower: 25000
-  name: nuke_mark3
+  name: Three-Stage Bomb (Mark III)
 onc:
   explosionPower: 3
   explosionPowerLoss: 1e-005
   explosionRays: 3200
   flammability: 1e+007
-  name: onc
+  name: Octanitrocubane (ONC)
 pitch:
   flammability: 1
   moveMod: 0.05
-  name: pitch
+  name: Pitch
 pitchblende:
-  name: pitchblende
+  name: Pitchblende
 plant_bush_red:
   allowsLight: true
   collide: false
@@ -1259,7 +1259,7 @@ plant_bush_red:
   flammability: 3
   floatingAction: 2
   meshType: cross
-  name: plant_bush_red
+  name: Red Bush
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1272,7 +1272,7 @@ plant_dreamweed:
   floatingAction: 2
   meshType: cross
   moveMod: 0.6
-  name: plant_dreamweed
+  name: Dreamweed
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1285,7 +1285,7 @@ plant_dreamweed_blue_light:
   floatingAction: 2
   meshType: cross
   moveMod: 0.8
-  name: plant_dreamweed_blue_light
+  name: Light Blue Dreamweed
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1298,7 +1298,7 @@ plant_dreamweed_sticky:
   floatingAction: 2
   meshType: cross
   moveMod: 0.1
-  name: plant_dreamweed_sticky
+  name: Sticky Dreamweed
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1311,7 +1311,7 @@ plant_dreamweed_striped:
   floatingAction: 2
   meshType: cross
   moveMod: 0.8
-  name: plant_dreamweed_striped
+  name: Striped Dreamweed
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1323,7 +1323,7 @@ plant_fern:
   flammability: 3
   floatingAction: 2
   meshType: triangle
-  name: plant_fern
+  name: Fern
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1335,7 +1335,7 @@ plant_fern_small:
   flammability: 3
   floatingAction: 2
   meshType: triangle
-  name: plant_fern_small
+  name: Small Fern
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1347,7 +1347,7 @@ plant_fern_tall:
   flammability: 3
   floatingAction: 2
   meshType: cross
-  name: plant_fern_tall
+  name: Tall Fern
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1359,7 +1359,7 @@ plant_grass_dryland:
   flammability: 3
   floatingAction: 2
   meshType: triangle
-  name: plant_grass_dryland
+  name: Dryland Grass
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1371,7 +1371,7 @@ plant_grass_redflower:
   flammability: 3
   floatingAction: 2
   meshType: triangle
-  name: plant_grass_redflower
+  name: Red Flower Grass
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1383,7 +1383,7 @@ plant_grass_tall:
   flammability: 3
   floatingAction: 2
   meshType: triangle
-  name: plant_grass_tall
+  name: Tall Grass
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1395,7 +1395,7 @@ plant_grass_tall_dark:
   flammability: 3
   floatingAction: 2
   meshType: triangle
-  name: plant_grass_tall_dark
+  name: Dark Tall Grass
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1407,7 +1407,7 @@ plant_grass_tall_light:
   flammability: 3
   floatingAction: 2
   meshType: triangle
-  name: plant_grass_tall_light
+  name: Light Tall Grass
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1419,7 +1419,7 @@ plant_grass_yellow:
   flammability: 3
   floatingAction: 2
   meshType: triangle
-  name: plant_grass_yellow
+  name: Yellow Grass
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1431,7 +1431,7 @@ plant_jungle1:
   flammability: 3
   floatingAction: 2
   meshType: cross
-  name: plant_jungle1
+  name: Jungle Plant 1
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1443,7 +1443,7 @@ plant_jungle2:
   flammability: 3
   floatingAction: 2
   meshType: cross
-  name: plant_jungle2
+  name: Jungle Plant 2
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1455,7 +1455,7 @@ plant_jungle3:
   flammability: 3
   floatingAction: 2
   meshType: triangle
-  name: plant_jungle3
+  name: Jungle Plant 3
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1467,7 +1467,7 @@ plant_jungle4:
   flammability: 3
   floatingAction: 2
   meshType: triangle
-  name: plant_jungle4
+  name: Jungle Plant 4
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1479,7 +1479,7 @@ plant_jungle5:
   flammability: 3
   floatingAction: 2
   meshType: cross
-  name: plant_jungle5
+  name: Jungle Plant 5
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1491,7 +1491,7 @@ plant_jungle6:
   flammability: 3
   floatingAction: 2
   meshType: triangle
-  name: plant_jungle6
+  name: Jungle Plant 6
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1503,7 +1503,7 @@ plant_jungle7:
   flammability: 3
   floatingAction: 2
   meshType: cross
-  name: plant_jungle7
+  name: Jungle Plant 7
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1517,58 +1517,58 @@ plant_methane_ball:
   flammability: 5
   floatingAction: 2
   meshType: cross
-  name: plant_methane_ball
+  name: Methane Ball Plant
   occlusion: none
   supportive: false
   waterBreak: true
 platinum:
-  name: platinum
+  name: Platinum
 plutonium:
-  name: plutonium
+  name: Plutonium
 quartz:
-  name: quartz
+  name: Quartz
 rubber:
   flammability: 1
-  name: rubber
+  name: Rubber
 rubber_charred:
   flammability: 0.1
-  name: rubber_charred
+  name: Charred Rubber
 ruby:
-  name: ruby
+  name: Ruby
 rutile:
-  name: rutile
+  name: Rutile
 salpeter:
-  name: salpeter
+  name: Salpeter
 sand:
   moveMod: 0.9
-  name: sand
+  name: Sand
 sand_red:
   moveMod: 0.9
-  name: sand_red
+  name: Red Sand
 sandbags:
   flammability: 1.5
   moveMod: 0.8
-  name: sandbags
+  name: Sandbags
 sandstone:
-  name: sandstone
+  name: Sandstone
 sandstone_bricks:
-  name: sandstone_bricks
+  name: Sandstone Bricks
 sandstone_chiseled:
-  name: sandstone_chiseled
+  name: Chiseled Sandstone Block
 sandstone_chiseled_ornament:
-  name: sandstone_chiseled_ornament
+  name: Chiseled Sandstone Ornament Block
 sandstone_cut:
-  name: sandstone_cut
+  name: Cut Sandstone Block
 sandstone_red:
-  name: sandstone_red
+  name: Red Sandstone
 sandstone_red_bricks:
-  name: sandstone_red_bricks
+  name: Red Sandstone Bricks
 sandstone_red_chiseled:
-  name: sandstone_red_chiseled
+  name: Chiseled Red Sandstone Block
 sandstone_red_chiseled_ornament:
-  name: sandstone_red_chiseled_ornament
+  name: Chiseled Red Sandstone Ornament Block
 sandstone_red_cut:
-  name: sandstone_red_cut
+  name: Cut Red Sandstone Block
 sapling_coniferous:
   allowsLight: true
   collide: false
@@ -1577,7 +1577,7 @@ sapling_coniferous:
   flammability: 3
   floatingAction: 2
   meshType: cross
-  name: sapling_coniferous
+  name: Conifer Sapling
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1589,7 +1589,7 @@ sapling_dead:
   flammability: 2
   floatingAction: 2
   meshType: cross
-  name: sapling_dead
+  name: Dead Sapling
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1601,7 +1601,7 @@ sapling_deciduous:
   flammability: 2
   floatingAction: 2
   meshType: cross
-  name: sapling_deciduous
+  name: Deciduous Sapling
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1613,7 +1613,7 @@ sapling_fruit:
   flammability: 2
   floatingAction: 2
   meshType: cross
-  name: sapling_fruit
+  name: Fruit Tree Sapling
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1625,7 +1625,7 @@ sapling_jungle:
   flammability: 2
   floatingAction: 2
   meshType: cross
-  name: sapling_jungle
+  name: Jungle Sapling
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1637,7 +1637,7 @@ sapling_mangrove:
   flammability: 2
   floatingAction: 2
   meshType: cross
-  name: sapling_mangrove
+  name: Mangrove Sapling
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1649,7 +1649,7 @@ sapling_palm:
   flammability: 2
   floatingAction: 2
   meshType: cross
-  name: sapling_palm
+  name: Palm Sapling
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1661,7 +1661,7 @@ sapling_rubber:
   flammability: 2
   floatingAction: 2
   meshType: cross
-  name: sapling_rubber
+  name: Rubber Sapling
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1673,7 +1673,7 @@ sapling_savanna:
   flammability: 2
   floatingAction: 2
   meshType: cross
-  name: sapling_savanna
+  name: Savanna Sapling
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1685,7 +1685,7 @@ sapling_sugar:
   flammability: 2
   floatingAction: 2
   meshType: cross
-  name: sapling_sugar
+  name: Sugar Tree Sapling
   occlusion: none
   supportive: false
   waterBreak: true
@@ -1697,138 +1697,138 @@ sapling_swamp:
   flammability: 2
   floatingAction: 2
   meshType: cross
-  name: sapling_swamp
+  name: Swamp Sapling
   occlusion: none
   supportive: false
   waterBreak: true
 sapphire:
-  name: sapphire
+  name: Sapphire
 scheelite:
-  name: scheelite
+  name: Scheelite
 seamorphite:
-  name: seamorphite
+  name: Seamorphite
 silicon:
-  name: silicon
+  name: Silicon
 silver:
-  name: silver
+  name: Silver
 sink_gravel:
-  name: sink_gravel
+  name: Gravel Sink
   sinkVal: 67
 sink_mud:
   explosionResistance: 0.2
-  name: sink_mud
+  name: Mud Sink
   sinkVal: 18
 sink_sand:
   explosionResistance: 0.2
-  name: sink_sand
+  name: Sand Sink
   sinkVal: 5
 sink_sand_red:
   explosionResistance: 0.2
-  name: sink_sand_red
+  name: Red Sand Sink
   sinkVal: 21
 sink_snow:
-  name: sink_snow
+  name: Snow Sink
   sinkVal: 12
 sink_water:
-  name: sink_water
+  name: Water Sink
   sinkVal: 4045
 slate:
-  name: slate
+  name: Slate
 snow:
   moveMod: 0.7
-  name: snow
+  name: Snow
 spawner_gravel:
-  name: spawner_gravel
+  name: Gravel Spawner
   spawnerVal: 67
 spawner_mud:
   explosionResistance: 0.2
-  name: spawner_mud
+  name: Mud Spawner
   spawnerVal: 18
 spawner_sand:
   explosionResistance: 0.2
-  name: spawner_sand
+  name: Sand Spawner
   spawnerVal: 5
 spawner_sand_red:
   explosionResistance: 0.2
-  name: spawner_sand_red
+  name: Red Sand Spawner
   spawnerVal: 21
 spawner_snow:
-  name: spawner_snow
+  name: Snow Spawner
   spawnerVal: 12
 spawner_water:
-  name: spawner_water
+  name: Water Spawner
   spawnerVal: 4045
 steel:
-  name: steel
+  name: Steel
 steel_plating:
-  name: steel_plating
+  name: Steel Plating
 steel_plating_rusty:
-  name: steel_plating_rusty
+  name: Rusty Steel Plating
 steel_rusty:
-  name: steel_rusty
+  name: Rusty Steel
 steel_tungsten:
-  name: steel_tungsten
+  name: Tungsten Steel
 steel_tungsten_plating:
-  name: steel_tungsten_plating
+  name: Tungsten Steel Plating
 stone:
-  name: stone
+  name: Stone
 stone_bricks:
-  name: stone_bricks
+  name: Stone Bricks
 stone_cut:
-  name: stone_cut
+  name: Cut Stone Block
 stone_mossy:
-  name: stone_mossy
+  name: Mossy Stone
 stone_mycelia_icecaps:
-  name: stone_mycelia_icecaps
+  name: Mycelia Overgrown Stone (Little Icecaps)
 submarium:
-  name: submarium
+  name: Submarium
 succulent_blue_bud:
-  name: succulent_blue_bud
+  name: Blue Succulent (Bud)
 succulent_blue_stem:
-  name: succulent_blue_stem
+  name: Blue Succulent (Stem)
 succulent_purple_bud:
-  name: succulent_purple_bud
+  name: Purple Succulent (Bud)
 succulent_purple_stem:
-  name: succulent_purple_stem
+  name: Purple Succulent (Stem)
 succulent_stone_bud:
-  name: succulent_stone_bud
+  name: Stone Succulent (Bud)
 succulent_stone_stem:
-  name: succulent_stone_stem
+  name: Stone Succulent (Stem)
 sulfur:
   flammability: 1.2
-  name: sulfur
+  name: Sulfur
 tarmac:
-  name: tarmac
+  name: Tarmac
 tarmac_semisolid:
   flammability: 1
   moveMod: 0.4
-  name: tarmac_semisolid
+  name: Semisolid Tarmac
 tholin:
   flammability: 2
   moveMod: 0.9
-  name: tholin
+  name: Tholin Dust
 thornmite:
-  name: thornmite
+  name: Thornmite
 thornmite_plating:
-  name: thornmite_plating
+  name: Thornmite Plating
 tin:
-  name: tin
+  name: Tin
 titanium:
-  name: titanium
+  name: Titanium
 titanium_plating:
-  name: titanium_plating
+  name: Titanium Plating
 tnt:
   explosionPower: 1
   explosionPowerLoss: 0.0002
   explosionRays: 1000
   flammability: 1e+007
-  name: tnt
+  name: Trinitrotoluene (TNT)
 tungsten:
-  name: tungsten
+  name: Tungsten
 tungsten_carbide:
-  name: tungsten_carbide
+  name: Tungsten Carbide
 uranium:
-  name: uranium
+  name: Uranium
 vine_garas:
   allowsLight: true
   collide: false
@@ -1837,145 +1837,145 @@ vine_garas:
   flammability: 3
   floatingAction: 2
   meshType: flat
-  name: vine_garas
+  name: Garas Vine
   occlusion: none
   supportive: false
   waterBreak: true
 wambronium:
-  name: wambronium
+  name: Wambronium
 wood_coniferous:
   flammability: 1
-  name: wood_coniferous
+  name: Wood (Coniferous Tree)
 wood_coniferous_charred:
   flammability: 0.1
-  name: wood_coniferous_charred
+  name: Charred Wood (Coniferous Tree)
 wood_coniferous_planks:
   flammability: 2
-  name: wood_coniferous_planks
+  name: Softwood Planks
 wood_coniferous_planks_charred:
   flammability: 0.2
-  name: wood_coniferous_planks_charred
+  name: Charred Softwood Planks
 wood_dead:
   flammability: 1
-  name: wood_dead
+  name: Wood (Dead Tree)
 wood_dead_charred:
   flammability: 0.1
-  name: wood_dead_charred
+  name: Charred Wood (Dead Tree)
 wood_dead_planks:
   flammability: 2
-  name: wood_dead_planks
+  name: Deadwood Planks
 wood_dead_planks_charred:
   flammability: 0.2
-  name: wood_dead_planks_charred
+  name: Charred Deadwood Planks
 wood_deciduous:
   flammability: 1
-  name: wood_deciduous
+  name: Wood (Deciduous Tree)
 wood_deciduous_charred:
   flammability: 0.1
-  name: wood_deciduous_charred
+  name: Charred Wood (Deciduous Tree)
 wood_deciduous_planks:
   flammability: 2
-  name: wood_deciduous_planks
+  name: Hardwood Planks
 wood_deciduous_planks_charred:
   flammability: 0.2
-  name: wood_deciduous_planks_charred
+  name: Charred Hardwood Planks
 wood_fruit:
   flammability: 1
-  name: wood_fruit
+  name: Wood (Fruit Tree)
 wood_fruit_charred:
   flammability: 0.1
-  name: wood_fruit_charred
+  name: Charred Wood (Fruit Tree)
 wood_fruit_planks:
   flammability: 2
-  name: wood_fruit_planks
+  name: Darkwood Planks
 wood_fruit_planks_charred:
   flammability: 0.2
-  name: wood_fruit_planks_charred
+  name: Charred Darkwood Planks
 wood_jungle:
   flammability: 1
-  name: wood_jungle
+  name: Wood (Jungle Tree)
 wood_jungle_charred:
   flammability: 0.1
-  name: wood_jungle_charred
+  name: Charred Wood (Jungle Tree)
 wood_jungle_planks:
   flammability: 2
-  name: wood_jungle_planks
+  name: Junglewood Planks
 wood_jungle_planks_charred:
   flammability: 0.2
-  name: wood_jungle_planks_charred
+  name: Charred Junglewood Planks
 wood_mangrove:
   flammability: 1
-  name: wood_mangrove
+  name: Wood (Mangrove Tree)
 wood_mangrove_charred:
   flammability: 0.1
-  name: wood_mangrove_charred
+  name: Charred Wood (Mangrove Tree)
 wood_mangrove_planks:
   flammability: 2
-  name: wood_mangrove_planks
+  name: Mangrovewood Planks
 wood_mangrove_planks_charred:
   flammability: 0.2
-  name: wood_mangrove_planks_charred
+  name: Charred Mangrovewood Planks
 wood_palm:
   flammability: 1
-  name: wood_palm
+  name: Wood (Palm Tree)
 wood_palm_charred:
   flammability: 0.1
-  name: wood_palm_charred
+  name: Charred Wood (Palm Tree)
 wood_palm_planks:
   flammability: 2
-  name: wood_palm_planks
+  name: Palmwood Planks
 wood_palm_planks_charred:
   flammability: 0.2
-  name: wood_palm_planks_charred
+  name: Charred Palmwood Planks
 wood_rubber:
   flammability: 1
-  name: wood_rubber
+  name: Wood (Rubber Tree)
 wood_rubber_charred:
   flammability: 0.1
-  name: wood_rubber_charred
+  name: Charred Wood (Rubber Tree)
 wood_rubber_planks:
   flammability: 2
-  name: wood_rubber_planks
+  name: Ruberwood Planks
 wood_rubber_planks_charred:
   flammability: 0.2
-  name: wood_rubber_planks_charred
+  name: Charred Rubberwood Planks
 wood_savanna:
   flammability: 1
-  name: wood_savanna
+  name: Wood (Savanna Tree)
 wood_savanna_charred:
   flammability: 0.1
-  name: wood_savanna_charred
+  name: Charred Wood (Savanna Tree)
 wood_savanna_planks:
   flammability: 2
-  name: wood_savanna_planks
+  name: Savannawood Planks
 wood_savanna_planks_charred:
   flammability: 0.2
-  name: wood_savanna_planks_charred
+  name: Charred Savannawood Planks
 wood_sugar:
   flammability: 1
-  name: wood_sugar
+  name: Wood (Sugar Tree)
 wood_sugar_charred:
   flammability: 0.1
-  name: wood_sugar_charred
+  name: Charred Wood (Sugar Tree)
 wood_sugar_planks:
   flammability: 2
-  name: wood_sugar_planks
+  name: Sugarwood Planks
 wood_sugar_planks_charred:
   flammability: 0.2
-  name: wood_sugar_planks_charred
+  name: Charred Sugarwood Planks
 wood_swamp:
   flammability: 1
-  name: wood_swamp
+  name: Wood (Swamp Tree)
 wood_swamp_charred:
   flammability: 0.1
-  name: wood_swamp_charred
+  name: Charred Wood (Swamp Tree)
 wood_swamp_planks:
   flammability: 2
-  name: wood_swamp_planks
+  name: Swampwood Planks
 wood_swamp_planks_charred:
   flammability: 0.2
-  name: wood_swamp_planks_charred
+  name: Charred Swampwood Planks
 zinc:
-  name: zinc
+  name: Zinc
 zincblende:
-  name: zincblende
+  name: Zincblende
