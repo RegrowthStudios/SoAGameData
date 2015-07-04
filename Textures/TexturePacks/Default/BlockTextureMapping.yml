@@ -266,6 +266,10 @@ grass:
   texture:
     base: dirt
     overlay: grass_side
+  textureTop:
+    base: grass_top
+  textureBottom:
+    base: dirt
 grass_charred:
   texture:
     base: dirt

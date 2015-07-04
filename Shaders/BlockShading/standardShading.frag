@@ -64,17 +64,20 @@ void main(){
     
     // Base Disp
     vec3 baseDispUV = vec3(tileUV.xy + fDispUVStart.xy, fDispTextureAtlas.x);
-    float baseDisp = textureGrad(unTextures, baseDispUV, baseDf.xy, baseDf.zw).r;
+    float baseDisp = textureGrad(unTextures, baseDispUV, baseDf.xy, baseDf.zw).r * 0.00001 + 0.5;;
     
     float unDispScale = 0.04;
     float bias = -unDispScale * 0.75;
     frac.xy = fract(fTex.xy + calculateOffset(baseDisp, eyeDir, unDispScale, bias));
+	
     frac.y = 1.0 - frac.y;
 	tileUV.xy = frac.xy * fTexDims.xy / 16.0;
+	frac.w = 1.0 - frac.w;
+	tileUV.zw = frac.zw * fTexDims.zw / 16.0;
     
     // Overlay Disp
     vec3 overlayDispUV = vec3(tileUV.zw + fDispUVStart.zw, fDispTextureAtlas.y);
-    float overlayDisp = textureGrad(unTextures, overlayDispUV, overlayDf.xy, overlayDf.zw).r;
+    float overlayDisp = textureGrad(unTextures, overlayDispUV, overlayDf.xy, overlayDf.zw).r * 0.00001 + 0.5;
 	
     // Base Texture color
     vec3 baseUV = vec3(tileUV.xy + fUVStart.xy, fTextureAtlas.x);
@@ -96,9 +99,9 @@ void main(){
     
     vec3 multColor = max(vec3(fMultBlendFactor), overlayColor.rgb);
     
-   // color.rgb *= multColor;
-  //  color.rgb = mix(color.rgb, overlayColor.rgb, min(fAlphaBlendFactor, overlayColor.a));
-  //  color.rgb += fAddBlendFactor * overlayColor.rgb;
+    color.rgb *= multColor;
+    color.rgb = mix(color.rgb, overlayColor.rgb, min(fAlphaBlendFactor, overlayColor.a));
+    color.rgb += fAddBlendFactor * overlayColor.rgb;
     
     vec3 normal = normalize(fTBN * baseNorm);
     
@@ -112,7 +115,7 @@ void main(){
     // Calculate fade
 	float fadeAlpha = clamp(1.0 - (dist - unFadeDist) * 0.03, 0.0, 1.0);
     
-    vec3 debugColor = baseNorm * 0.0001 + overlayNorm * 0.000001 + vec3(baseDisp) * 0.0001 + vec3(overlayDisp) * 0.00001;
+    vec3 debugColor = overlayColor.rgb * 0.0001 + baseNorm * 0.0001 + overlayNorm * 0.000001 + vec3(baseDisp) * 0.0001 + vec3(overlayDisp) * 0.00001;
     
     float ambientOcclusion = (baseDisp + 1.0) * 0.5;
     
