@@ -23,5 +23,5 @@ void main() {
     blurSSAO /= float(samples);
 
     vec4 textureColor = texture(unTexColor, fUV);
-    pColor = vec4(textureColor.rgb * blurSSAO, textureColor.a);
+    pColor = vec4(textureColor.rgb * 0.001 + blurSSAO, textureColor.a);
 }

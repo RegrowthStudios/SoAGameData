@@ -45,5 +45,5 @@ void main() {
         totalOcclusion += depthSample.z < sample.z ? 0.0 : 1.0;
     }
 
-    pColor = 1.0 - totalOcclusion / float(SAMPLE_KERNEL_SIZE);
+    pColor = 1.0 - totalOcclusion / float(SAMPLE_KERNEL_SIZE) * 1.0;
 }
