@@ -2,7 +2,7 @@
 uniform sampler2D unTexDepth;
 uniform sampler2D unTexNormal;
 uniform sampler2D unTexNoise;
-const int SAMPLE_KERNEL_SIZE = 64;
+const int SAMPLE_KERNEL_SIZE = 16;
 uniform vec3 unSampleKernel[SAMPLE_KERNEL_SIZE];
 uniform vec2 unSSAOTextureSize;
 
@@ -45,5 +45,5 @@ void main() {
         totalOcclusion += depthSample.z < sample.z ? 0.0 : 1.0;
     }
 
-    pColor = 1.0 - totalOcclusion / float(SAMPLE_KERNEL_SIZE) * 1.0;
+    pColor = 1.0 - totalOcclusion / float(SAMPLE_KERNEL_SIZE);
 }
