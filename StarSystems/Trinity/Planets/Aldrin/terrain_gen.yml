@@ -149,8 +149,10 @@ humidity:
 surfaceBlock: "Grass Block"
 liquidBlock: "Water (100)"
 blockLayers:
-  Dirt:
+  grass:
+    width: 1
+  dirt:
     width: 10
-  Stone:
+  stone:
     width: 10
      

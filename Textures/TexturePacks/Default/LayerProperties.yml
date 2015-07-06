@@ -431,6 +431,8 @@ grass_tall_light:
   color: biome
 grass_top:
   path: Blocks/Terrain/grass_top.png
+  normalPath: Blocks/Terrain/grass_top_NRM.png
+  dispPath: Blocks/Terrain/grass_top_DISP.png
   method: repeat
   color: biome
 grass_yellow:

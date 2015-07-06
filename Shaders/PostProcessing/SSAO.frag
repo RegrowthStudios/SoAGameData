@@ -47,3 +47,4 @@ void main() {
 
     pColor = 1.0 - totalOcclusion / float(SAMPLE_KERNEL_SIZE);
 }
+

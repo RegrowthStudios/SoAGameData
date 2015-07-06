@@ -60,8 +60,8 @@ void main(){
 	fNormUVStart.w = ((floor((vNDTextureIndex[1])/16.0))/16.0);
     fDispUVStart.z = mod((vNDTextureIndex[3]), 16.0)/16.0;
 	fDispUVStart.w = ((floor((vNDTextureIndex[3])/16.0))/16.0);
-
-	fTex = vTex_Animation_BlendMode.xyxy / vTexDims;
+    
+	fTex = (vTex_Animation_BlendMode.xyxy) / vTexDims;
 
     fTexDims = vTexDims;
 
