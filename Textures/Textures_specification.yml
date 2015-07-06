@@ -1,6 +1,6 @@
-﻿##########  Textures.yml  -  specification and internal format/structure - last updated: 27.06.2015
+﻿##########  Textures.yml  -  specification and internal format/structure - last updated: 06.07.2015
 
-  #  Textures.yml contains an optional list of textures, sorted by texture name, the file path must be "Blocks/Textures.yml"
+  #  Textures.yml contains an optional list of textures, sorted by texture name
   #  This file contains all textures and their texture layers that are re-used for several blocks and block faces within the texture pack
   #  This file can be used to reduce the size of BlockTextureMapping.yml if many blocks and block faces share the same texture
 

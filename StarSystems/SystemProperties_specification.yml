@@ -1,10 +1,10 @@
-##########  SystemProperties.yml  -  specification / property explanations - last updated: 24.05.2015
+##########  SystemProperties.yml  -  specification / property explanations - last updated: 06.07.2015
 
-# description: Short description/info text about the system
-# age: The system age in years ("age: 0" is equivalent to "zero-age main sequence" for the stars in the system)
+description: Short description/info text about the system
+age: The system age in years. "age: 0" is equivalent to "zero-age main sequence" for the stars in the system.
 
 (Object Name):
-  # type: Basic object type determining the appearance of the orbits, object markers and selectors. The color values can be modified in PathColors.yml
+  type: Basic object type determining the appearance of the orbits, object markers and selectors. The color values can be modified in PathColors.yml.
     # Barycenter - The colors are taken from its binary component A type and used for the barycenter marker cross, selector and orbit
     # Star - used for all kinds of stellar and substellar objects
     # Planet - used for planetary-mass satellites of stars
@@ -13,22 +13,22 @@
     # DwarfMoon - used for smaller, irregular satellites of planets
     # Asteroid - used for irregular satellites of stars, with densities >0.5 g/cm³. Orbits and name labels are only shown on mouse hover or when selected.
     # Comet - used for irregular satellites of stars, with densities <0.5 g/cm³. Orbits and name labels are only shown on mouse hover or when selected.
-  # comps: Binary components [compNameA, compNameB]
-  # path: Path of the object properties yaml file within the star system folder
-  # par: parent object
+  comps: [compNameA, compNameB] - Binary components
+  path: Path of the object properties yaml file within the star system folder
+  par: parent object
     # static - Fixed objects in space with no orbit use this as parent
-  # RA: Position of static objects relative to our sun, right ascension in °
-  # Dec: Position of static objects relative to our sun, declination in °
-  # dist:  Distance of static objects from our sun in ly
-  # t: Orbital period in s
-  # ref: Orbital period reference body
-  # tf: Reference body period factor
-  # td: Reference body period divisor
-  # e: Eccentricity
-  # p: Longitude of the periapsis in °
-  # i: Inclination in °
-  # n:  Longitude of the ascending node in °
-  # a: Mean anomaly (starting position) in °
-  # trojan: Position of co-orbital objects, uses the same period and orbital parameters than its orbital reference body, only modifies the anomaly
+  RA: Position of static objects relative to our sun, right ascension in °
+  Dec: Position of static objects relative to our sun, declination in °
+  dist:  Distance of static objects from our sun in ly
+  t: Orbital period in s
+  ref: Orbital period reference body
+  tf: Reference body period factor
+  td: Reference body period divisor
+  e: Eccentricity
+  p: Longitude of the periapsis in °
+  i: Inclination in °
+  n:  Longitude of the ascending node in °
+  a: Mean anomaly (starting position) in °
+  trojan: Position of co-orbital objects, uses the same period and orbital parameters than its orbital reference body, only modifies the anomaly
     # L4 - Trojan occupying lagrangian point 4 of the reference bodies orbit (a+60°)
     # L5 - Trojan occupying lagrangian point 5 of the reference bodies orbit (a-60°)

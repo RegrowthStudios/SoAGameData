@@ -1,6 +1,6 @@
-﻿##########  BlockTextureMapping.yml  -  specification and internal format/structure - last updated: 27.06.2015
+﻿##########  BlockTextureMapping.yml  -  specification and internal format/structure - last updated: 06.07.2015
 
-  #  BlockTextureMapping.yml contains a list of all blocks a texture pack should modify, sorted by block ID, the file path must be "Blocks/BlockTextureMapping.yml"
+  #  BlockTextureMapping.yml contains a list of all blocks a texture pack should modify, sorted by block ID
   #  This file contains information about the textures each block and block face should use as well as the transparency properties of a block
   #  For a complete list of available block IDs and other block-related properties, see BlockData.yml
 
