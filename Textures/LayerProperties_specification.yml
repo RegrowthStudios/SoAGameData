@@ -16,10 +16,10 @@
   #  Optional. If missing, then no displacement map is applied to the layer.
   specularMap: (path of specular map file)
   #  Optional. If missing, then no specular map is applied to the layer.
-  color: <biome | water | (path of custom color map) | [R, G, B]>
+  color: <biome | liquid | (path of custom color map) | [R, G, B]>
   #  Optional. If not specified, then "[255, 255, 255]" is used as the default setting.
   #  biome: Colors from the biome color map of the loaded planet are multiplied with the texture colors of the layer
-  #  water: Colors from the water color map of the loaded planet are multiplied with the texture colors of the layer
+  #  liquid: Colors from the liquid color map of the loaded planet are multiplied with the texture colors of the layer
   #  As an alternative, a path to a custom color map inside the texture pack or a single RGB color can be defined
   altColors:
   #  Optional. If not specified, then there are no alternate colors applied to this layer.

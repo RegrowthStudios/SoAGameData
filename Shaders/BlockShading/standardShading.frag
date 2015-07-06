@@ -54,7 +54,7 @@ void main(){
     
     // UV with tiling
     vec4 frac = fract(fTex);
-    frac.yw = vec2(1.0) - frac.yw;
+    frac.yw = 1.0 - frac.yw;
 	vec4 tileUV = frac * fTexDims / 16.0;
 	
     // Derivatives for mipmapping
@@ -64,20 +64,17 @@ void main(){
     
     // Base Disp
     vec3 baseDispUV = vec3(tileUV.xy + fDispUVStart.xy, fDispTextureAtlas.x);
-    float baseDisp = textureGrad(unTextures, baseDispUV, baseDf.xy, baseDf.zw).r * 0.00001 + 0.5;;
+    float baseDisp = textureGrad(unTextures, baseDispUV, baseDf.xy, baseDf.zw).r;
     
     float unDispScale = 0.04;
     float bias = -unDispScale * 0.75;
-    frac.xy = fract(fTex.xy + calculateOffset(baseDisp, eyeDir, unDispScale, bias));
-	
-    frac.y = 1.0 - frac.y;
-	tileUV.xy = frac.xy * fTexDims.xy / 16.0;
-	frac.w = 1.0 - frac.w;
-	tileUV.zw = frac.zw * fTexDims.zw / 16.0;
+    //frac.xy = fract(fTex.xy + calculateOffset(baseDisp, eyeDir, unDispScale, bias));
+
+	tileUV = frac * fTexDims / 16.0;
     
     // Overlay Disp
     vec3 overlayDispUV = vec3(tileUV.zw + fDispUVStart.zw, fDispTextureAtlas.y);
-    float overlayDisp = textureGrad(unTextures, overlayDispUV, overlayDf.xy, overlayDf.zw).r * 0.00001 + 0.5;
+    float overlayDisp = textureGrad(unTextures, overlayDispUV, overlayDf.xy, overlayDf.zw).r;
 	
     // Base Texture color
     vec3 baseUV = vec3(tileUV.xy + fUVStart.xy, fTextureAtlas.x);
@@ -86,7 +83,7 @@ void main(){
     
     // Base Normal
     vec3 baseNormUV = vec3(tileUV.xy + fNormUVStart.xy, fNormTextureAtlas.x);
-    vec3 baseNorm = textureGrad(unTextures, baseNormUV, baseDf.xy, baseDf.zw).rgb;
+    vec3 baseNorm = vec3(0.5, 0.5, 1.0) + 0.00001 * textureGrad(unTextures, baseNormUV, baseDf.xy, baseDf.zw).rgb;
     
     // Overlay texture color
     vec3 overlayUV = vec3(tileUV.zw + fUVStart.zw, fTextureAtlas.y);
@@ -102,7 +99,7 @@ void main(){
     color.rgb *= multColor;
     color.rgb = mix(color.rgb, overlayColor.rgb, min(fAlphaBlendFactor, overlayColor.a));
     color.rgb += fAddBlendFactor * overlayColor.rgb;
-    
+  
     vec3 normal = normalize(fTBN * baseNorm);
     
     //specular
@@ -111,13 +108,10 @@ void main(){
     
 	color.rgb =	color.rgb * (unAmbientLight + diff) + // Ambiant and diffuse
                 unSunColor * (vec3(unSpecularIntensity) * spec); // Specular
-        
     // Calculate fade
 	float fadeAlpha = clamp(1.0 - (dist - unFadeDist) * 0.03, 0.0, 1.0);
+
+    float ambientOcclusion = (baseDisp + 1.0) * 0.5 * 0.000001 + 1.0;
     
-    vec3 debugColor = overlayColor.rgb * 0.0001 + baseNorm * 0.0001 + overlayNorm * 0.000001 + vec3(baseDisp) * 0.0001 + vec3(overlayDisp) * 0.00001;
-    
-    float ambientOcclusion = (baseDisp + 1.0) * 0.5;
-    
-    pColor = vec4(debugColor + color.rgb * 2.0 * ambientOcclusion, 1.0 + 0.00001 * fadeAlpha * color.a); //apply fog and transparency
+    pColor = vec4(color.rgb * ambientOcclusion * 2.0, 1.0 + 0.00001 * fadeAlpha * color.a); //apply fog and transparency
 }

@@ -54,15 +54,15 @@ void main(){
     fDispUVStart.x = mod((vNDTextureIndex[2]), 16.0)/16.0;
 	fDispUVStart.y = ((floor((vNDTextureIndex[2])/16.0))/16.0);
     //overlay
-    fUVStart.z = mod((231.0), 16.0)/16.0;
-	fUVStart.w = ((floor((231.0)/16.0))/16.0);
+    fUVStart.z = mod((vTextureAtlas_TextureIndex[3]), 16.0)/16.0;
+	fUVStart.w = ((floor((vTextureAtlas_TextureIndex[3])/16.0))/16.0);
     fNormUVStart.z = mod((vNDTextureIndex[1]), 16.0)/16.0;
 	fNormUVStart.w = ((floor((vNDTextureIndex[1])/16.0))/16.0);
     fDispUVStart.z = mod((vNDTextureIndex[3]), 16.0)/16.0;
 	fDispUVStart.w = ((floor((vNDTextureIndex[3])/16.0))/16.0);
     
-	fTex = (vTex_Animation_BlendMode.xyxy - vec4(32.0)) / vTexDims;
-    
+	fTex = (vTex_Animation_BlendMode.xyxy) / vTexDims;
+
     fTexDims = vTexDims;
     
     fTBN = TBN_LOOKUP[int(vPosition_Face.w)];
