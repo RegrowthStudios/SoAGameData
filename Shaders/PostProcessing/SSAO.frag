@@ -39,10 +39,10 @@ void main() {
         vec4 screenSpaceSample = unProjectionMatrix * vec4(sample, 1.0);
         screenSpaceSample.xy /= screenSpaceSample.w;
         screenSpaceSample.xy = screenSpaceSample.xy * 0.5 + 0.5;
-        //float sampleDepth = texture(unTexDepth, screenSpaceSample.xy).r;
+        float sampleDepth = texture(unTexDepth, screenSpaceSample.xy).r;
         vec3 depthSample = viewSpaceCoordinate(screenSpaceSample.xy);
 
-        totalOcclusion += depthSample.z < sample.z ? 0.0 : 1.0;
+        totalOcclusion += sampleDepth > depth ? 0.0 : 1.0;
     }
 
     pColor = 1.0 - totalOcclusion / float(SAMPLE_KERNEL_SIZE);
