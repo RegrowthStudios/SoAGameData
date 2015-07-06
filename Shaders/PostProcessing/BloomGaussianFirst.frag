@@ -9,7 +9,7 @@ uniform sampler2D unTexLuma;
 
 //uniform float PixOffset[20] =
 //	float[](0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12);
-uniform float Weight[20];
+uniform float Weight[20]; 
 //	float[](0.075, 0.0739, 0.071, 0.06615, 0.06, 0.053, 0.0455, 0.038, 0.031, 0.0243);
 
 void main() {
@@ -22,8 +22,8 @@ void main() {
 		sum += texture( unTexLuma, fUV  -
 						vec2(0.0, float(i)) * dy) * Weight[i];
 	}
-	//pColor = sum;
-	//pColor = min(vec4(pColor.rgb, 1.0), 1.0);
-	pColor = vec4(0.0, 1.0, 0.0, 1.0);
+	pColor = sum;
+	pColor = vec4(pColor.rgb, 1.0);
+	//pColor = pColor*0.00000001 + vec4(Weight[3], Weight[5], Weight[1], 1.0);
 
 }

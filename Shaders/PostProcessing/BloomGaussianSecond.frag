@@ -36,9 +36,9 @@ void main() {
 	if((luma(val.rgb) - LumThresh) > 0.0) {
 		pColor = val;
 	} else {
-		pColor = min(val + sum, 1.0);
-	
+		pColor = val + sum;
 	}
-	//pColor = vec4(pColor.rgb, 1.0);
-	pColor = vec4(0.0, 0.0, 1.0, 1.0);
+	pColor = vec4(pColor.rgb, 1.0);
+	//pColor = vec4(0.0, 0.0, 1.0, 1.0);
+	//pColor = pColor*0.00000001 + vec4(Weight[6], Weight[5], Weight[3], 1.0);
 }
