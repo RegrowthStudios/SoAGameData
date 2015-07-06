@@ -51,18 +51,19 @@ void main() {
   // Triplanar texture mapping
   vec3 blending = abs(fNormal);
   blending = normalize(max(blending, 0.00001)); // Force weights to sum to 1.0
+  vec3 texPosition = fPosition * 64.0;
   // Grass texture
-  vec3 grassColor = texture(unGrassTexture, fPosition.yz).rgb * blending.x +
-    texture(unGrassTexture, fPosition.xz).rgb * blending.y +
-    texture(unGrassTexture, fPosition.xy).rgb * blending.z;
+  vec3 grassColor = texture(unGrassTexture, texPosition.yz).rgb * blending.x +
+    texture(unGrassTexture, texPosition.xz).rgb * blending.y +
+    texture(unGrassTexture, texPosition.xy).rgb * blending.z;
   // Rock texture
-  vec3 rockColor = texture(unRockTexture, fPosition.yz).rgb * blending.x +
-    texture(unRockTexture, fPosition.xz).rgb * blending.y +
-    texture(unRockTexture, fPosition.xy).rgb * blending.z;
+  vec3 rockColor = texture(unRockTexture, texPosition.yz).rgb * blending.x +
+    texture(unRockTexture, texPosition.xz).rgb * blending.y +
+    texture(unRockTexture, texPosition.xy).rgb * blending.z;
   rockColor = rockColor * vec3(51.0 / 255.0, 47.0 / 255.0, 49.0 / 255.0);
   
   vec3 textureColor = grassColor * texture(unColorMap, fTemp_Hum).rgb * angle + rockColor * (1.0 - angle);
   
   vec3 color = fColor.rgb * textureColor;
-  pColor = vec4(color * diffuse + scatterColor * 1.5 + vec3(1.0) * specular, unAlpha);
+  pColor = vec4(color + 0.00001 * color * diffuse + scatterColor * 1.5 + vec3(1.0) * specular, unAlpha);
 }

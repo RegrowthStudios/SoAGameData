@@ -61,8 +61,8 @@ void main(){
     fDispUVStart.z = mod((vNDTextureIndex[3]), 16.0)/16.0;
 	fDispUVStart.w = ((floor((vNDTextureIndex[3])/16.0))/16.0);
     
-	fTex = vTex_Animation_BlendMode.xyxy / vTexDims;
-    
+	fTex = (vTex_Animation_BlendMode.xyxy) / vTexDims;
+
     fTexDims = vTexDims;
     
     fTBN = TBN_LOOKUP[int(vPosition_Face.w)];
