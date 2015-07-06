@@ -109,7 +109,7 @@ Hesperus:
   par: Palamedes
   ref: Himerus
   td: 2
-  e: 0.0640
+  e: 0.0045
   i: 0
   p: 317
   a: 232
@@ -238,7 +238,7 @@ Galantus:
   par: Elysion
   ref: Eridanus
   td: 22
-  e: 0.001
+  e: 0.0035
   i: 0.0
   p: 327
   a: 97
@@ -312,7 +312,7 @@ Peleus:
   par: Elysion
   ref: Eridanus
   td: 2
-  e: 0.0032
+  e: 0.0082
   i: 1.6
   n: 329
   p: 69
@@ -322,7 +322,7 @@ Eridanus:
   path: Planets/Eridanus/properties.yml
   par: Elysion
   t: 2.52e+6
-  e: 0.015
+  e: 0.025
   i: 0.88
   n: 175
   p: 24
@@ -505,7 +505,7 @@ Abyssos:
   par: Endor
   ref: Baros
   td: 30
-  e: 0.0009
+  e: 0.00017
   i: 0.6
   n: 62
   p: 290
@@ -517,7 +517,7 @@ Vandor:
   ref: Baros
   tf: 2
   td: 15
-  e: 0.007
+  e: 0.00042
   i: 0.4
   n: 64
   p: 288
@@ -529,7 +529,7 @@ Ares:
   ref: Baros
   tf: 2
   td: 5
-  e: 0.011
+  e: 0.003
   i: 0.05
   n: 68
   p: 286
@@ -568,7 +568,7 @@ Kolasi:
   par: Hyperion
   ref: Tantalus
   td: 96
-  e: 0.0123
+  e: 0.001305
   i: 0
   p: 0
   a: 90
@@ -578,7 +578,7 @@ Apollo:
   par: Hyperion
   ref: Tantalus
   td: 48
-  e: 0.0095
+  e: 0.000036
   i: 0
   p: 0
   a: 177
@@ -588,7 +588,7 @@ Gemini:
   path: Planets/Gemini/properties.yml
   ref: Tantalus
   td: 32
-  e: 0.0088
+  e: 0.00006
   i: 0
   p: 0
   a: 110
@@ -598,7 +598,7 @@ Aldrin:
   par: Hyperion
   ref: Tantalus
   td: 16
-  e: 0.0017
+  e: 0.00089
   i: 0
   p: 0
   a: 3
@@ -608,7 +608,7 @@ Darwin:
   par: Hyperion
   ref: Tantalus
   td: 8
-  e: 0.0075
+  e: 0.0032
   i: 0
   p: 0
   a: 237
@@ -619,7 +619,7 @@ Fyto:
   ref: Tantalus
   tf: 2
   td: 9
-  e: 0.0052
+  e: 0.00068
   i: 0
   p: 0
   a: 51
@@ -630,7 +630,7 @@ Selene:
   ref: Tantalus
   tf: 5
   td: 11
-  e: 0.0005
+  e: 0.00058
   i: 0
   p: 0
   a: 277
@@ -685,7 +685,7 @@ Arctos:
   ref: Tantalus
   tf: 7
   td: 5
-  e: 0.0002
+  e: 0.00015
   i: 0
   p: 0
   a: 184
@@ -696,7 +696,7 @@ Junos:
   ref: Tantalus
   tf: 8
   td: 5
-  e: 0.0002
+  e: 0.00018
   i: 0
   p: 0
   a: 325
@@ -717,7 +717,7 @@ Lotos:
   par: Hyperion
   ref: Tantalus
   tf: 2
-  e: 0.0002
+  e: 0.00022
   i: 0
   p: 0
   a: 220
@@ -728,7 +728,7 @@ Hyperion-4:
   ref: Tantalus
   tf: 11
   td: 5
-  e: 0.0002
+  e: 0.00012
   i: 0
   p: 0
   a: 145
@@ -739,7 +739,7 @@ Hyperion-5:
   ref: Tantalus
   tf: 12
   td: 5
-  e: 0.0002
+  e: 0.00016
   i: 0
   p: 0
   a: 302
@@ -841,7 +841,7 @@ Medusa:
   par: Pantheon
   ref: Galatea
   td: 12
-  e: 0.0042
+  e: 0.00052
   i: 0.04
   n: 157
   p: 125
@@ -852,7 +852,7 @@ Xenia:
   par: Pantheon
   ref: Galatea
   td: 4
-  e: 0.0101
+  e: 0.0011
   i: 0.17
   n: 277
   p: 75
@@ -1318,8 +1318,9 @@ Erebos:
   path: Planets/Erebos/properties.yml
   par: Nemesis
   t: 1.116e+5
-  e: 0
+  e: 0.0027
   i: 0
+  p: 315
   a: 95
 Caligo:
   type: Moon
@@ -1327,7 +1328,7 @@ Caligo:
   par: Nemesis
   ref: Erebos
   tf: 2
-  e: 0.0001
+  e: 0.001
   i: 0
   p: 354
   a: 175
@@ -1337,7 +1338,7 @@ Tenebrio:
   par: Nemesis
   ref: Erebos
   tf: 3
-  e: 0.0045
+  e: 0.0031
   i: 0
   p: 32
   a: 93
