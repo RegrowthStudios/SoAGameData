@@ -22,5 +22,6 @@ void main() {
 	vec4 val = texture(unTexColor, fUV);
 	pColor = val * clamp( luma(val.rgb) - LumThresh, 0.0, 1.0 ) * (1.0 / (1.0 - LumThresh));
 	// outputing red just to test if shader output is working
-	pColor = vec4(pColor.rgb, 1.0)*0.000000001 + val;
+	//pColor = vec4(pColor.rgb, 1.0);
+	pColor = vec4(1.0, 0.0, 0.0, 1.0);
 }
