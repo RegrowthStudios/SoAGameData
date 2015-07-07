@@ -7,7 +7,7 @@ out vec4 pColor;
 
 // uniforms
 uniform sampler2D unTexColor;
-float LumThresh = 0.70;
+uniform float unLumaThresh;
 
 // returns the average brightness of a pixel
 
@@ -20,6 +20,6 @@ float luma(vec3 color) {
 void main() {
 
 	vec4 val = texture(unTexColor, fUV);
-	pColor = val * clamp( luma(val.rgb) - LumThresh, 0.0, 1.0 ) * (1.0 / (1.0 - LumThresh));
+	pColor = val * clamp( luma(val.rgb) - unLumaThresh, 0.0, 1.0 ) * (1.0 / (1.0 - unLumaThresh));
 	pColor = vec4(pColor.rgb, 1.0);
 }
