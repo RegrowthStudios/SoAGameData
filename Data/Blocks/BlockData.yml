@@ -77,6 +77,9 @@ bargonite_yellow:
   occlusion: self
 basalt:
   name: Basalt
+basalt_lava:
+  name: Solidifying Lava
+  moveMod: 0.4
 basalt_semisolid:
   name: Semisolid Basalt
   moveMod: 0.7
@@ -247,6 +250,8 @@ coal:
   flammability: 1
 cobblestone:
   name: Cobblestone
+cobblestone_mossy:
+  name: Mossy Cobblestone
 coke:
   name: Coke
   flammability: 1.2
@@ -744,6 +749,8 @@ gypsum_yellow:
   name: Yellow Gypsum
 gypsum_yellow_light:
   name: Light Yellow Gypsum
+hematite:
+  naame: Hematite
 ice:
   name: Ice
   allowsLight: true
