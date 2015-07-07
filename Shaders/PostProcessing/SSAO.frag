@@ -24,25 +24,25 @@ vec3 viewSpaceCoordinate(float depth)
     return screenSpaceCoordinate.xyz / screenSpaceCoordinate.w;
 }
 
+// From this http://john-chapman-graphics.blogspot.de/2013/01/ssao-tutorial.html
+
 void main() {
     float depth = texture(unTexDepth, fUV).r;
     vec3 origin = viewSpaceCoordinate(depth);
 
     vec3 normal = (unViewMatrix * vec4(normalize(texture(unTexNormal, fUV).xyz), 1.0)).xyz;
-	//normal = 0.00001 * normal + normalize(texture(unTexNormal, fUV).xyz);
+    
 	// Random sample kernel rotation
     vec3 rotationVector = normalize(vec3(texture(unTexNoise, fUV * unNoiseScale).xy, 0.0));
     vec3 tangent = normalize(rotationVector - normal * dot(rotationVector, normal));
     vec3 bitangent = cross(normal, tangent);
     mat3 tbn = mat3(tangent, bitangent, normal);
+    
     float totalOcclusion = 0.0;
-    vec3 dbg;
     for (int i = 0; i < SAMPLE_KERNEL_SIZE; ++i) {
         // Get sample position
-        vec3 kernel = unSampleKernel[i];
+        vec3 sample = (tbn * unSampleKernel[i]) * unRadius + origin;
         
-        vec3 sample = (tbn * kernel) * unRadius + origin;
-        dbg = (tbn * kernel);
         // Project sample position
         vec4 screenSpaceSample = unProjectionMatrix * vec4(sample, 1.0);
         screenSpaceSample.xy /= screenSpaceSample.w;
@@ -52,7 +52,6 @@ void main() {
         // Range check and accumulate
         // TODO(Ben): No branching?
         float rangeCheck = abs(depth - sampleDepth) < unRadius ? 1.0 : 0.0;
-        rangeCheck = 1.0;
         totalOcclusion += (sampleDepth < depth ? 1.0 : 0.0) * rangeCheck;
     }
     
