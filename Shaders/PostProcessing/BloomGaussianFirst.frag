@@ -24,6 +24,5 @@ void main() {
 	}
 	pColor = sum;
 	pColor = vec4(pColor.rgb, 1.0);
-	//pColor = pColor*0.00000001 + vec4(Weight[3], Weight[5], Weight[1], 1.0);
 
 }
