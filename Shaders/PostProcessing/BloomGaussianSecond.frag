@@ -33,12 +33,7 @@ void main() {
 		sum += texture( unTexBlur, fUV -
 						vec2(float(i), 0.0) * dx) * Weight[i];
 	}
-	if((luma(val.rgb) - LumThresh) > 0.0) {
-		pColor = val;
-	} else {
-		pColor = val + sum;
-	}
+
+	pColor = val + sum;
 	pColor = vec4(pColor.rgb, 1.0);
-	//pColor = vec4(0.0, 0.0, 1.0, 1.0);
-	//pColor = pColor*0.00000001 + vec4(Weight[6], Weight[5], Weight[3], 1.0);
 }
