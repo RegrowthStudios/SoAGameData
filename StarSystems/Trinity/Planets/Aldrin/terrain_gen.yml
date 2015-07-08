@@ -18,23 +18,17 @@ baseHeight:
   base: 10
   funcs:
     # Tiny detail
-    - octaves: 9
+    - octaves: 8
       persistence: 0.8
       frequency: 0.15
       low: 0.0
       high: 50.0
-    # Small detail
-    - octaves: 6
-      persistence: 0.8
-      frequency: 0.05
-      low: 0.0
-      high: 100.0
-    # Large detail
-    - octaves: 8
-      persistence: 0.8
-      frequency: 0.003
-      low: -2000.0
-      high: 3000.0
+    # Large hills and lakes
+    - octaves: 7
+      persistence: 0.7
+      frequency: 0.012
+      low: -1000.0
+      high: 2000.0
     # Mountains
     - type: noise_cubed
       op: mul
@@ -52,7 +46,7 @@ baseHeight:
           low: -25000.0
           high: 25000.0
         - type: noise_ridged
-          octaves: 11
+          octaves: 12
           persistence: 0.5
           frequency: 0.03
           low:  0.0
@@ -86,7 +80,7 @@ baseHeight:
     # Oceans
     - type: noise
       op: mul
-      octaves: 6
+      octaves: 7
       persistence: 0.75
       frequency: 0.00015
       low: -5.0
@@ -100,36 +94,6 @@ baseHeight:
           frequency: 0.002
           low: 10000.0
           high: 20000.0
-    # Rivers
-    - type: noise_ridged
-      octaves: 1
-      persistence: 0.1
-      frequency: 0.015
-      low: -185.0
-      high: 1.0
-      clamp: [0.0, 1.0]
-      children:
-      - type: cubed
-        op: sub
-        children:
-        - type: constant
-          low: 1.0
-          children:
-          - type: cubed
-            op: sub
-            children:
-            - type: constant
-              low: 1.0
-              op: mul
-              children:
-              - type: noise
-                op: sub
-                octaves: 8
-                persistence: 0.6
-                frequency: 0.1
-                low: -200.0
-                high: 800.0
-                clamp: [0.0, 1000.0]
 temperature:
   base: 172.0
   funcs:
