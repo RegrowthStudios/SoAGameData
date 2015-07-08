@@ -1,17 +1,21 @@
 alienplant_ammonia:
   name: Ammonia Plant
+  lightColor: [0, 16, 0]
 alienplant_cave_cap:
   name: Cave Plant (Cap)
 alienplant_cave_stem:
   name: Cave Plant (Stem)
 alienplant_crop_bud:
   name: Alien Crop Plant (Bud)
+  lightColor: [0, 0, 16]
 alienplant_crop_stem:
   name: Alien Crop Plant (Stem)
+  lightColor: [0, 0, 16]
 alienplant_desert_chalice:
   name: Desert Chalice Block
 alienplant_salpeter_light:
   name: Salpeter Plant Light Block
+  lightColor: [0, 0, 16]
 alienplant_salpeter_trap:
   name: Salpeter Plant Trap Block
   moveMod: 0.001
@@ -39,49 +43,59 @@ ash_volcanic:
 bargonite_blue:
   name: Blue Bargonite Crystal
   allowsLight: true
+  lightColor: [0, 0, 15]
   lightColorFilter: [0, 0, 1]
   occlusion: self
 bargonite_cyan:
   name: Cyan Bargonite Crystal
   allowsLight: true
+  lightColor: [0, 15, 15]
   lightColorFilter: [0, 1, 1]
   occlusion: self
 bargonite_green:
   name: Green Bargonite Crystal
   allowsLight: true
+  lightColor: [0, 15, 0]
   lightColorFilter: [0, 1, 0]
   occlusion: self
 bargonite_magenta:
   name: Magenta Bargonite Crystal
   allowsLight: true
+  lightColor: [15, 0, 15]
   lightColorFilter: [1, 0, 1]
   occlusion: self
 bargonite_orange:
   name: Orange Bargonite Crystal
   allowsLight: true
+  lightColor: [15, 9, 0]
   lightColorFilter: [1, 0.6, 1]
   occlusion: self
 bargonite_red:
   name: Red Bargonite Crystal
   allowsLight: true
+  lightColor: [15, 0, 0]
   lightColorFilter: [1, 0, 0]
   occlusion: self
 bargonite_white:
   name: White Bargonite Crystal
   allowsLight: true
+  lightColor: [15, 15, 15]
   occlusion: self
 bargonite_yellow:
   name: Yellow Bargonite Crystal
   allowsLight: true
+  lightColor: [15, 15, 0]
   lightColorFilter: [1, 1, 0]
   occlusion: self
 basalt:
   name: Basalt
 basalt_lava:
   name: Solidifying Lava
+  lightColor: [20, 10, 8]
   moveMod: 0.4
 basalt_semisolid:
   name: Semisolid Basalt
+  lightColor: [20, 10, 8]
   moveMod: 0.7
 bauxite:
   name: Bauxite
@@ -287,6 +301,7 @@ fire:
   crushable: true
   explosionResistance: 0
   floatingAction: 2
+  lightColor: [24, 18, 11]
   meshType: none
   occlusion: none
   supportive: false
@@ -298,6 +313,7 @@ fire_gas:
   crushable: true
   explosionResistance: 0
   floatingAction: 2
+  lightColor: [11, 11, 20]
   meshType: none
   occlusion: none
   supportive: false
@@ -309,6 +325,7 @@ fire_light_metal:
   crushable: true
   explosionResistance: 0
   floatingAction: 2
+  lightColor: [31, 31, 31]
   meshType: none
   occlusion: none
   supportive: false
@@ -320,6 +337,7 @@ fire_lithium:
   crushable: true
   explosionResistance: 0
   floatingAction: 2
+  lightColor: [31, 0, 5]
   meshType: none
   occlusion: none
   supportive: false
@@ -331,6 +349,7 @@ fire_sulfur:
   crushable: true
   explosionResistance: 0
   floatingAction: 2
+  lightColor: [0, 0, 24]
   meshType: none
   occlusion: none
   supportive: false
@@ -487,6 +506,7 @@ fungus_icecaps:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
+  lightColor: [0, 6, 8]
   meshType: cross
   occlusion: none
   supportive: false
@@ -645,40 +665,48 @@ glass:
 glass_bargonite_blue:
   name: Blue Bargonite Glass
   allowsLight: true
+  lightColor: [0, 0, 6]
   lightColorFilter: [0, 0, 1]
   occlusion: self
 glass_bargonite_cyan:
   name: Cyan Bargonite Glass
   allowsLight: true
+  lightColor: [0, 6, 6]
   lightColorFilter: [0, 1, 1]
   occlusion: self
 glass_bargonite_green:
   name: Green Bargonite Glass
   allowsLight: true
+  lightColor: [0, 6, 0]
   lightColorFilter: [0, 1, 0]
   occlusion: self
 glass_bargonite_magenta:
   name: Magenta Bargonite Glass
   allowsLight: true
+  lightColor: [6, 0, 6]
   lightColorFilter: [1, 0, 1]
   occlusion: self
 glass_bargonite_orange:
   name: Orange Bargonite Glass
   allowsLight: true
+  lightColor: [6, 4, 0]
   lightColorFilter: [1, 0.6, 0]
   occlusion: self
 glass_bargonite_red:
   name: Red Bargonite Glass
   allowsLight: true
+  lightColor: [6, 0, 0]
   lightColorFilter: [1, 0, 0]
   occlusion: self
 glass_bargonite_white:
   name: White Bargonite Glass
   allowsLight: true
+  lightColor: [6, 6, 6]
   occlusion: self
 glass_bargonite_yellow:
   name: Yellow Bargonite Glass
   allowsLight: true
+  lightColor: [6, 6, 0]
   lightColorFilter: [1, 1, 0]
   occlusion: self
 glass_metal_frame:
@@ -779,66 +807,77 @@ lamp_blue_off:
 lamp_blue_on:
   name: Blue Lamp (on)
   explosionResistance: 0.9
+  lightColor: [0, 0, 24]
 lamp_cyan_off:
   name: Cyan Lamp
   explosionResistance: 0.9
 lamp_cyan_on:
   name: Cyan Lamp (on)
   explosionResistance: 0.9
+  lightColor: [0, 24, 24]
 lamp_green_off:
   name: Green Lamp
   explosionResistance: 0.9
 lamp_green_on:
   name: Green Lamp (on)
   explosionResistance: 0.9
+  lightColor: [0, 24, 0]
 lamp_led_off:
   name: LED Lamp
   explosionResistance: 0.9
 lamp_led_on:
   name: LED Lamp (on)
   explosionResistance: 0.9
+  lightColor: [24, 24, 24]
 lamp_magenta_off:
   name: Magenta Lamp
   explosionResistance: 0.9
 lamp_magenta_on:
   name: Magenta Lamp (on)
   explosionResistance: 0.9
+  lightColor: [24, 0, 24]
 lamp_off:
   name: Lamp
   explosionResistance: 0.9
 lamp_on:
   name: Lamp (on)
   explosionResistance: 0.9
+  lightColor: [18, 18, 18]
 lamp_orange_off:
   name: Orange Lamp
   explosionResistance: 0.9
 lamp_orange_on:
   name: Orange Lamp (on)
   explosionResistance: 0.9
+  lightColor: [24, 14, 0]
 lamp_red_off:
   name: Red Lamp
   explosionResistance: 0.9
 lamp_red_on:
   name: Red Lamp (on)
   explosionResistance: 0.9
+  lightColor: [24, 0, 0]
 lamp_white_off:
   name: White Lamp
   explosionResistance: 0.9
 lamp_white_on:
   name: White Lamp (on)
   explosionResistance: 0.9
+  lightColor: [24, 24, 24]
 lamp_xenon_off:
   name: Xenon Lamp
   explosionResistance: 0.9
 lamp_xenon_on:
   name: Xenon Lamp (on)
   explosionResistance: 0.9
+  lightColor: [27, 27, 31]
 lamp_yellow_off:
   name: Yellow Lamp
   explosionResistance: 0.9
 lamp_yellow_on:
   name: Yellow Lamp (on)
   explosionResistance: 0.9
+  lightColor: [24, 24, 0]
 lapis_lazuli:
   name: Lapis Lazuli
 lead:
@@ -940,6 +979,7 @@ leaves_sugar:
   crushable: true
   explosionResistance: 0.06
   flammability: 2
+  lightColor: [16, 0, 0]
   moveMod: 0.7
   occlusion: selfOnly
   supportive: false
@@ -1054,6 +1094,7 @@ mushroom_giant_cap_spotted_charred:
 mushroom_giant_lamella:
   name: Lamella Block
   flammability: 0.5
+  lightColor: [10, 10, 10]
 mushroom_giant_lamella_charred:
   name: Charred Lamella Block
   flammability: 0.05
@@ -1071,6 +1112,7 @@ mushroom_small_blue:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
+  lightColor: [5, 5, 5]
   meshType: cross
   occlusion: none
   supportive: false
@@ -1083,6 +1125,7 @@ mushroom_small_blue_dark:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
+  lightColor: [5, 5, 5]
   meshType: cross
   occlusion: none
   supportive: false
@@ -1095,6 +1138,7 @@ mushroom_small_brown:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
+  lightColor: [5, 5, 5]
   meshType: cross
   occlusion: none
   supportive: false
@@ -1107,6 +1151,7 @@ mushroom_small_cyan:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
+  lightColor: [5, 5, 5]
   meshType: cross
   occlusion: none
   supportive: false
@@ -1119,6 +1164,7 @@ mushroom_small_green:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
+  lightColor: [5, 5, 5]
   meshType: cross
   occlusion: none
   supportive: false
@@ -1131,6 +1177,7 @@ mushroom_small_green_dark:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
+  lightColor: [5, 5, 5]
   meshType: cross
   occlusion: none
   supportive: false
@@ -1143,6 +1190,7 @@ mushroom_small_grey:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
+  lightColor: [5, 5, 5]
   meshType: cross
   occlusion: none
   supportive: false
@@ -1155,6 +1203,7 @@ mushroom_small_pink:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
+  lightColor: [5, 5, 5]
   meshType: cross
   occlusion: none
   supportive: false
@@ -1167,6 +1216,7 @@ mushroom_small_purple:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
+  lightColor: [5, 5, 5]
   meshType: cross
   occlusion: none
   supportive: false
@@ -1179,6 +1229,7 @@ mushroom_small_purple_dark:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
+  lightColor: [5, 5, 5]
   meshType: cross
   occlusion: none
   supportive: false
@@ -1191,6 +1242,7 @@ mushroom_small_red:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
+  lightColor: [5, 5, 5]
   meshType: cross
   occlusion: none
   supportive: false
@@ -1203,6 +1255,7 @@ mushroom_small_red_dark:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
+  lightColor: [5, 5, 5]
   meshType: cross
   occlusion: none
   supportive: false
@@ -1278,6 +1331,7 @@ plant_dreamweed:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
+  lightColor: [0, 8, 6]
   meshType: cross
   moveMod: 0.6
   occlusion: none
@@ -1291,6 +1345,7 @@ plant_dreamweed_blue_light:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
+  lightColor: [0, 6, 8]
   meshType: cross
   moveMod: 0.8
   occlusion: none
@@ -1304,6 +1359,7 @@ plant_dreamweed_sticky:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
+  lightColor: [6, 8, 0]
   meshType: cross
   moveMod: 0.1
   occlusion: none
@@ -1317,6 +1373,7 @@ plant_dreamweed_striped:
   explosionResistance: 0.05
   flammability: 1
   floatingAction: 2
+  lightColor: [6, 0, 8]
   meshType: cross
   moveMod: 0.8
   occlusion: none
@@ -1532,6 +1589,7 @@ platinum:
   name: Platinum
 plutonium:
   name: Plutonium
+  lightColor: [0, 4, 0]
 quartz:
   name: Quartz
 rubber:
@@ -1692,6 +1750,7 @@ sapling_sugar:
   explosionResistance: 0.05
   flammability: 2
   floatingAction: 2
+  lightColor: [8, 0, 0]
   meshType: cross
   occlusion: none
   supportive: false
@@ -1781,6 +1840,7 @@ stone_mossy:
   name: Mossy Stone
 stone_mycelia_icecaps:
   name: Mycelia Overgrown Stone (Little Icecaps)
+  lightColor: [0, 4, 5]
 submarium:
   name: Submarium
 succulent_blue_bud:
@@ -1830,6 +1890,7 @@ tungsten_carbide:
   name: Tungsten Carbide
 uranium:
   name: Uranium
+  lightColor: [0, 6, 0]
 vine_garas:
   name: Garas Vine
   allowsLight: true
