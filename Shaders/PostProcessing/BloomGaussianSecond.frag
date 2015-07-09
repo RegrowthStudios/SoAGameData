@@ -22,6 +22,7 @@ uniform sampler2D unTexColor;   // Original color texture from pass before bloom
 uniform sampler2D unTexBlur;    // Blur texture from first blur pass
 uniform int unGaussianN;        // Radius for gaussian blur
 uniform float unWeight[50];     // Gaussian weights
+uniform float unFinalWeight;    // Ratio to apply for Bloom in order to quick change it
 
 // Blurs image on x-axis and sums into the original image
 void main() {
@@ -35,6 +36,6 @@ void main() {
                         vec2(float(i), 0.0) * dx) * unWeight[i];
     }
 
-    pColor = val + sum;
+    pColor = val + sum * unFinalWeight;
     pColor = vec4(pColor.rgb, 1.0);
 }
