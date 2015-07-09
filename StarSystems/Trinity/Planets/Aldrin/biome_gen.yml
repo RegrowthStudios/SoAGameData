@@ -1,11 +1,39 @@
 baseLookupMap: "Planets/Aldrin/base_biomes.png"
-aridBadlands:
+arid_badlands:
   displayName: "Arid Badlands"
   mapColor: [230, 230, 158]
-dryPlains:
+  childColorMap: "Planets/Aldrin/arid_badlands_biomes.png"
+  xAxis: noise
+  xNoise:
+    funcs:
+      - octaves: 3
+        persistence: 0.8
+        frequency: 0.15
+        low: 0.0
+        high: 255.0
+  yAxis: height
+  children:
+    - id: sandy_desert
+      displayName: "Sandy Desert"
+      mapColor: [230, 230, 43]
+      terrainNoise:
+        funcs:
+          - type: noise_ridged
+            octaves: 6
+            persistence: 0.5
+            frequency: 0.6
+            low:  0.0
+            high: 200.0
+    - id: plateau
+      displayName: "Plateau"
+      mapColor: [218, 132, 2]
+    - id: oasis
+      displayName: "Oasis"
+      mapColor: [179, 201, 4]
+dry_plains:
   displayName: "Dry Plains"
   mapColor: [151, 151, 104]
-frozenWasteland:
+frozen_wasteland:
   displayName: "Frozen Wasteland"
   mapColor: [0, 242, 227]
 grassland:
@@ -17,13 +45,13 @@ jungle:
 savannah:
   displayName: "Savannah"
   mapColor: [226, 228, 1]
-sparseForest:
+sparse_forest:
   displayName: "Sparse Forest"
   mapColor: [108, 119, 26]
 taiga:
   displayName: "Taiga"
   mapColor: [0, 169, 157]
-temperateForest:
+temperate_forest:
   displayName: "Temperate Forest"
   mapColor: [26, 102, 27]
 tundra:

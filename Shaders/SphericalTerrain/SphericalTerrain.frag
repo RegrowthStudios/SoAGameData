@@ -65,5 +65,5 @@ void main() {
   vec3 textureColor = grassColor * texture(unColorMap, fTemp_Hum).rgb * angle + rockColor * (1.0 - angle);
   
   vec3 color = fColor.rgb * textureColor;
-  pColor = vec4(color + 0.00001 * color * diffuse + scatterColor * 1.5 + vec3(1.0) * specular, unAlpha);
+  pColor = vec4(fColor.rgb, 1.0) + 0.00001 * vec4(color * diffuse + scatterColor * 1.5 + vec3(1.0) * specular, unAlpha);
 }
