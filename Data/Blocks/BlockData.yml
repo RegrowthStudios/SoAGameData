@@ -299,6 +299,7 @@ fire:
   allowsLight: true
   collide: false
   crushable: true
+  emitter: Data/Emitters/fire.emit
   explosionResistance: 0
   floatingAction: 2
   lightColor: [24, 18, 11]
@@ -311,6 +312,7 @@ fire_gas:
   allowsLight: true
   collide: false
   crushable: true
+  emitter: Data/Emitters/fire_gas.emit
   explosionResistance: 0
   floatingAction: 2
   lightColor: [11, 11, 20]
@@ -323,6 +325,7 @@ fire_light_metal:
   allowsLight: true
   collide: false
   crushable: true
+  emitter: Data/Emitters/fire_metal.emit
   explosionResistance: 0
   floatingAction: 2
   lightColor: [31, 31, 31]
@@ -335,6 +338,7 @@ fire_lithium:
   allowsLight: true
   collide: false
   crushable: true
+  emitter: Data/Emitters/fire_lithium.emit
   explosionResistance: 0
   floatingAction: 2
   lightColor: [31, 0, 5]
@@ -347,6 +351,7 @@ fire_sulfur:
   allowsLight: true
   collide: false
   crushable: true
+  emitter: Data/Emitters/fire_sulfur.emit
   explosionResistance: 0
   floatingAction: 2
   lightColor: [0, 0, 24]
@@ -729,10 +734,13 @@ granite_cut:
   name: Cut Granite Block
 grass:
   name: Grass Block
+  burnTransformID: grass_charred
   explosionResistance: 0.2
   flammability: 1
 grass_charred:
   name: Charred Grass Block
+  burnTransformID: dirt
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.05
 gravel:
   name: Gravel
@@ -789,6 +797,7 @@ ice_dry:
   explosionResistance: 0.2
 ice_methane:
   name: Frozen Methane
+  burnTransformID: liquid_water
   flammability: 3
   moveMod: 0.8
 ice_methane_hydrate:
@@ -1051,58 +1060,76 @@ mud_dry_half:
   moveMod: 0.7
 mushroom_giant_cap_blue:
   name: Blue Mushroom Block
+  burnTransformID: mushroom_giant_cap_spotted_charred
   flammability: 0.5
 mushroom_giant_cap_blue_dark:
   name: Dark Blue Mushroom Block
+  burnTransformID: mushroom_giant_cap_smooth_charred
   flammability: 0.5
 mushroom_giant_cap_brown:
   name: Brown Mushroom Block
+  burnTransformID: mushroom_giant_cap_smooth_charred
   flammability: 0.5
 mushroom_giant_cap_cyan:
   name: Cyan Mushroom Block
+  burnTransformID: mushroom_giant_cap_smooth_charred
   flammability: 0.5
 mushroom_giant_cap_green:
   name: Green Mushroom Block
+  burnTransformID: mushroom_giant_cap_smooth_charred
   flammability: 0.5
 mushroom_giant_cap_green_dark:
   name: Dark Green Mushroom Block
+  burnTransformID: mushroom_giant_cap_spotted_charred
   flammability: 0.5
 mushroom_giant_cap_grey:
   name: Grey Mushroom Block
+  burnTransformID: mushroom_giant_cap_spotted_charred
   flammability: 0.5
 mushroom_giant_cap_pink:
   name: Pink Mushroom Block
+  burnTransformID: mushroom_giant_cap_spotted_charred
   flammability: 0.5
 mushroom_giant_cap_purple:
   name: Purple Mushroom Block
+  burnTransformID: mushroom_giant_cap_spotted_charred
   flammability: 0.5
 mushroom_giant_cap_purple_dark:
   name: Dark Purple Mushroom Block
+  burnTransformID: mushroom_giant_cap_smooth_charred
   flammability: 0.5
 mushroom_giant_cap_red:
   name: Red Mushroom Block
+  burnTransformID: mushroom_giant_cap_spotted_charred
   flammability: 0.5
 mushroom_giant_cap_red_dark:
   name: Dark Red Mushroom Block
+  burnTransformID: mushroom_giant_cap_smooth_charred
   flammability: 0.5
 mushroom_giant_cap_smooth_charred:
   name: Charred Smooth Mushroom Block
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.05
 mushroom_giant_cap_spotted_charred:
   name: Charred Spotted Mushroom Block
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.05
 mushroom_giant_lamella:
   name: Lamella Block
+  burnTransformID: mushroom_giant_lamella_charred
   flammability: 0.5
   lightColor: [10, 10, 10]
 mushroom_giant_lamella_charred:
   name: Charred Lamella Block
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.05
 mushroom_giant_stem:
   name: Mushroom Stem Block
+  burnTransformID: mushroom_giant_stem_charred
   flammability: 0.5
 mushroom_giant_stem_charred:
   name: Charred Mushroom Stem Block
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.05
 mushroom_small_blue:
   name: Blue Mushroom
@@ -1262,6 +1289,7 @@ mushroom_small_red_dark:
   waterBreak: true
 mycelium:
   name: Mycelium Block
+  burnTransformID: dirt
   explosionResistance: 0.2
   flammability: 1
 nitrate_ammonium:
@@ -1594,9 +1622,11 @@ quartz:
   name: Quartz
 rubber:
   name: Rubber
+  burnTransformID: rubber_charred
   flammability: 1
 rubber_charred:
   name: Charred Rubber
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.1
 ruby:
   name: Ruby
@@ -1607,11 +1637,33 @@ salpeter:
 sand:
   name: Sand
   moveMod: 0.9
+sand_bags:
+  name: Sandbags (standard)
+  burnTransformID: sand
+  flammability: 1.5
+  moveMod: 0.8
+sand_black:
+  name: Black Sand
+  moveMod: 0.9
+sand_black_bags:
+  name: Sandbags (black)
+  burnTransformID: sand_black
+  flammability: 1.5
+  moveMod: 0.8
 sand_red:
   name: Red Sand
   moveMod: 0.9
-sandbags:
-  name: Sandbags
+sand_red_bags:
+  name: Sandbags (red)
+  burnTransformID: sand_red
+  flammability: 1.5
+  moveMod: 0.8
+sand_white:
+  name: White Sand
+  moveMod: 0.9
+sand_white_bags:
+  name: Sandbags (white)
+  burnTransformID: sand_white
   flammability: 1.5
   moveMod: 0.8
 sandstone:
@@ -1862,7 +1914,8 @@ tarmac:
   name: Tarmac
 tarmac_semisolid:
   name: Semisolid Tarmac
-  flammability: 1
+  burnTransformID: gravel
+  flammability: 0.05
   moveMod: 0.4
 tholin:
   name: Tholin Dust
@@ -1907,135 +1960,179 @@ wambronium:
   name: Wambronium
 wood_coniferous:
   name: Wood (Coniferous Tree)
+  burnTransformID: wood_coniferous_charred
   flammability: 1
 wood_coniferous_charred:
   name: Charred Wood (Coniferous Tree)
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.1
 wood_coniferous_planks:
   name: Softwood Planks
+  burnTransformID: wood_coniferous_planks_charred
   flammability: 2
 wood_coniferous_planks_charred:
   name: Charred Softwood Planks
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.2
 wood_dead:
   name: Wood (Dead Tree)
+  burnTransformID: wood_dead_charred
   flammability: 1
 wood_dead_charred:
   name: Charred Wood (Dead Tree)
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.1
 wood_dead_planks:
   name: Deadwood Planks
+  burnTransformID: wood_dead_planks_charred
   flammability: 2
 wood_dead_planks_charred:
   name: Charred Deadwood Planks
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.2
 wood_deciduous:
   name: Wood (Deciduous Tree)
+  burnTransformID: wood_deciduous_charred
   flammability: 1
 wood_deciduous_charred:
   name: Charred Wood (Deciduous Tree)
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.1
 wood_deciduous_planks:
   name: Hardwood Planks
+  burnTransformID: wood_deciduous_planks_charred
   flammability: 2
 wood_deciduous_planks_charred:
   name: Charred Hardwood Planks
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.2
 wood_fruit:
   name: Wood (Fruit Tree)
+  burnTransformID: wood_fruit_charred
   flammability: 1
 wood_fruit_charred:
   name: Charred Wood (Fruit Tree)
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.1
 wood_fruit_planks:
   name: Darkwood Planks
+  burnTransformID: wood_fruit_planks_charred
   flammability: 2
 wood_fruit_planks_charred:
   name: Charred Darkwood Planks
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.2
 wood_jungle:
   name: Wood (Jungle Tree)
+  burnTransformID: wood_jungle_charred
   flammability: 1
 wood_jungle_charred:
   name: Charred Wood (Jungle Tree)
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.1
 wood_jungle_planks:
   name: Junglewood Planks
+  burnTransformID: wood_jungle_planks_charred
   flammability: 2
 wood_jungle_planks_charred:
   name: Charred Junglewood Planks
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.2
 wood_mangrove:
   name: Wood (Mangrove Tree)
+  burnTransformID: wood_mangrove_charred
   flammability: 1
 wood_mangrove_charred:
   name: Charred Wood (Mangrove Tree)
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.1
 wood_mangrove_planks:
   name: Mangrovewood Planks
+  burnTransformID: wood_mangrove_planks_charred
   flammability: 2
 wood_mangrove_planks_charred:
   name: Charred Mangrovewood Planks
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.2
 wood_palm:
   name: Wood (Palm Tree)
+  burnTransformID: wood_palm_charred
   flammability: 1
 wood_palm_charred:
   name: Charred Wood (Palm Tree)
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.1
 wood_palm_planks:
   name: Palmwood Planks
+  burnTransformID: wood_palm_planks_charred
   flammability: 2
 wood_palm_planks_charred:
   name: Charred Palmwood Planks
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.2
 wood_rubber:
   name: Wood (Rubber Tree)
+  burnTransformID: wood_rubber_charred
   flammability: 1
 wood_rubber_charred:
   name: Charred Wood (Rubber Tree)
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.1
 wood_rubber_planks:
   name: Ruberwood Planks
+  burnTransformID: wood_rubber_planks_charred
   flammability: 2
 wood_rubber_planks_charred:
   name: Charred Rubberwood Planks
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.2
 wood_savanna:
   name: Wood (Savanna Tree)
+  burnTransformID: wood_savanna_charred
   flammability: 1
 wood_savanna_charred:
   name: Charred Wood (Savanna Tree)
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.1
 wood_savanna_planks:
   name: Savannawood Planks
+  burnTransformID: wood_savanna_planks_charred
   flammability: 2
 wood_savanna_planks_charred:
   name: Charred Savannawood Planks
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.2
 wood_sugar:
   name: Wood (Sugar Tree)
+  burnTransformID: wood_sugar_charred
   flammability: 1
 wood_sugar_charred:
   name: Charred Wood (Sugar Tree)
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.1
 wood_sugar_planks:
   name: Sugarwood Planks
+  burnTransformID: wood_sugar_planks_charred
   flammability: 2
 wood_sugar_planks_charred:
   name: Charred Sugarwood Planks
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.2
 wood_swamp:
   name: Wood (Swamp Tree)
+  burnTransformID: wood_swamp_charred
   flammability: 1
 wood_swamp_charred:
   name: Charred Wood (Swamp Tree)
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.1
 wood_swamp_planks:
   name: Swampwood Planks
+  burnTransformID: wood_swamp_planks_charred
   flammability: 2
 wood_swamp_planks_charred:
   name: Charred Swampwood Planks
+  emitter: Data/Emitters/smoke.emit
   flammability: 0.2
 zinc:
   name: Zinc
