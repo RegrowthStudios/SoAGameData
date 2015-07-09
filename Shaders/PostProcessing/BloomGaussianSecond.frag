@@ -23,12 +23,17 @@ uniform sampler2D unTexBlur;    // Blur texture from first blur pass
 uniform int unGaussianN;        // Radius for gaussian blur
 uniform float unWeight[50];     // Gaussian weights
 
+// returns the average brightness of a pixel
+float luma(vec3 color) {
+    return 0.2126 * color.r + 0.7152 * color.g + 0.0722 * color.b;
+}
+
 // Blurs image on x-axis and sums into the original image
 void main() {
     float dx = 1.0 / float(unWidth);
     vec4 val = texture(unTexColor, fUV);
     vec4 sum = texture(unTexBlur, fUV) * unWeight[0];
-    for(int i=0; i<unGaussianN; i++) {
+    for(int i=1; i<unGaussianN; i++) {
         sum += texture( unTexBlur, fUV +
                         vec2(float(i), 0.0) * dx) * unWeight[i];
         sum += texture( unTexBlur, fUV -
