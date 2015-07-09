@@ -2,6 +2,34 @@ baseLookupMap: "Planets/Aldrin/base_biomes.png"
 arid_badlands:
   displayName: "Arid Badlands"
   mapColor: [230, 230, 158]
+  childColorMap: "Planets/Aldrin/arid_badlands_biomes.png"
+  xAxis: noise
+  xNoise:
+    funcs:
+      - octaves: 3
+        persistence: 0.8
+        frequency: 0.15
+        low: 0.0
+        high: 255.0
+  yAxis: height
+  children:
+    - id: sandy_desert
+      displayName: "Sandy Desert"
+      mapColor: [230, 230, 43]
+      terrainNoise:
+        funcs:
+          - type: noise_ridged
+            octaves: 6
+            persistence: 0.5
+            frequency: 0.6
+            low:  0.0
+            high: 200.0
+    - id: plateau
+      displayName: "Plateau"
+      mapColor: [218, 132, 2]
+    - id: oasis
+      displayName: "Oasis"
+      mapColor: [179, 201, 4]
 dry_plains:
   displayName: "Dry Plains"
   mapColor: [151, 151, 104]
