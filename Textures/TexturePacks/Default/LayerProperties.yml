@@ -40,9 +40,11 @@ ash_volcanic:
 bargonite:
   path: Blocks/Minerals/bargonite.png
   method: repeat
-  transparency: true
 basalt:
   path: Blocks/Terrain/basalt.png
+  method: repeat
+basalt_lava:
+  path: Blocks/Terrain/basalt_lava.png
   method: repeat
 basalt_overlay:
   path: Blocks/Terrain/basalt_overlay.png
@@ -87,11 +89,12 @@ brass_patinated_overlay:
   path: Blocks/Metals/brass_patinated_overlay.png
   innerSeams: true
   method: connect
-bricks_test:
-  path: Blocks/Building/bricks.jpg
-  normalPath: Blocks/Building/bricks_NRM.jpg
-  dispPath: Blocks/Building/bricks_DISP.jpg
-  method: repeat
+bricks_side:
+  path: Blocks/Building/bricks_side.png
+  method: random
+bricks_top:
+  path: Blocks/Building/bricks_top.png
+  method: random
 bricks_light_side:
   path: Blocks/Building/bricks_light_side.png
   method: random
@@ -188,6 +191,9 @@ coal:
   method: repeat
 cobblestone:
   path: Blocks/Building/cobblestone.png
+  method: repeat
+cobblestone_mossy:
+  path: Blocks/Building/cobblestone_mossy.png
   method: repeat
 cobblestone_overlay:
   path: Blocks/Building/cobblestone_overlay.png
@@ -357,11 +363,9 @@ gelignite_top:
 glass:
   path: Blocks/Building/glass.png
   method: repeat
-  transparency: true
 glass_bargonite:
   path: Blocks/Building/glass_bargonite.png
   method: repeat
-  transparency: true
 glass_metal_frame:
   path: Blocks/Building/glass_metal_frame.png
   innerSeams: true
@@ -375,7 +379,6 @@ glass_overlay:
 glass_thornmite:
   path: Blocks/Building/glass_thornmite.png
   method: repeat
-  transparency: true
 glass_thornmite_overlay:
   path: Blocks/Building/glass_thornmite_overlay.png
   innerSeams: true
@@ -445,10 +448,12 @@ gravel:
 gypsum:
   path: Blocks/Building/gypsum.png
   method: repeat
+hematite:
+  path: Blocks/Minerals/hematite.png
+  method: repeat
 ice:
   path: Blocks/Terrain/ice.png
   method: repeat
-  transparency: true
 ice_dry:
   path: Blocks/Terrain/ice_dry.png
   method: repeat
@@ -813,6 +818,8 @@ sapling_dead:
   path: Blocks/Flora_mesh/sapling_dead.png
 sapling_deciduous:
   path: Blocks/Flora_mesh/sapling_deciduous.png
+sapling_fruit:
+  path: Blocks/Flora_mesh/sapling_fruit.png
 sapling_jungle:
   path: Blocks/Flora_mesh/sapling_jungle.png
 sapling_mangrove:

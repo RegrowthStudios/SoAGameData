@@ -1,6 +1,6 @@
-﻿##########  LayerProperties.yml  -  specification and internal format/structure - last updated: 27.06.2015
+﻿##########  LayerProperties.yml  -  specification and internal format/structure - last updated: 06.07.2015
 
-  #  LayerProperties.yml contains a list of all texture layers, sorted by their layer names, the file path must be "Blocks/LayerProperties.yml"
+  #  LayerProperties.yml contains a list of all texture layers, sorted by their layer names
   #  This file contains information about the texture file paths, texture handling methods and color properties for each texture layer
   #  All texture paths specified in this file must be relative to the texture pack and therefore show the folder+subfolders where the texture is located!
 
@@ -10,11 +10,11 @@
 (Layer Name):
   path: (path of texture file)
   #  Required. Every texture layer needs at least a texture path specified.
-  normalMap: (path of normal map file)
+  normalPath: (path of normal map file)
   #  Optional. If missing, then no normal map is applied to the layer.
-  dispMap: (path of displacement map file)
+  dispPath: (path of displacement map file)
   #  Optional. If missing, then no displacement map is applied to the layer.
-  specularMap: (path of specular map file)
+  specularPath: (path of specular map file)
   #  Optional. If missing, then no specular map is applied to the layer.
   color: <biome | liquid | (path of custom color map) | [R, G, B]>
   #  Optional. If not specified, then "[255, 255, 255]" is used as the default setting.

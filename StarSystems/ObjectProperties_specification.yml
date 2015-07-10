@@ -1,0 +1,69 @@
+##########  Specifications for the object properties files - last updated: 06.07.2015
+
+
+### General properties used for all objects:
+(ObjectClass):
+  type: (Type Name) - Optional, overrides the auto-detected planet type names (can be used for exotic types like carbon planets, helium planets, gas dwarfs, ...)
+  diameter: The mean equatorial diameter in km, required for asteroids and planets, optional for stars, not used for brown dwarfs and stellar remants
+  mass: Required, the mass in kg
+  aTilt: Required, the axial tilt in °
+  lNorth: Longitude of the north in °, not required if aTilt=0°
+  rotationalPeriod: The rotation period in h, required for asteroids and planets, optional for stars, not used for tidal-locked objects
+  rings: - Optional, array for planet rings
+    - innerRadius: Radius of the inner ring edge in km
+      outerRadius: Radius of the outer ring edge in km
+       rTilt: Ring tilt in ° relative to the planet equator
+       lNorth: Longitude of the north in °, not required if rTilt=0°
+       colorLookup:(path of ring color map)
+
+
+
+### Properties specific to object classes:
+
+asteroid:
+  # Uses the general properties listed above, the irregular body shape and craters are procedurally generated, the composition is approximated from the density
+
+planet:
+  # Used for solid, spherical planets with procedural terrain generation and biome support
+  generation: (path of planet gen file)
+  atmosphere: - Optional, planet atmosphere properties
+    scaleDepth: ?
+    kr: ?
+    km: ?
+    g: ?
+    waveLength: [R, G, B] - light scattering color of the atmosphere
+  clouds: - Optional, can only be used if an atmosphere is present
+    color: ?
+    scale: ?
+    density: ?
+
+gasGiant:
+  # Used for gas planets like gas giants or ice giants
+  oblateness: Required, the oblateness (polar flattening) of the gas planet, polar diameter = equatorial diameter * (1 - oblateness) 
+  colorMap: (path of gas planet color map)
+  atmosphere: - Required, gas planets without atmospheres are not possible!
+    scaleDepth: ?
+    kr: ?
+    km: ?
+    g: ?
+    waveLength: [R, G, B] - light scattering color of the atmosphere
+
+star:
+  # Used for all kinds of stellar and substellar objects
+  # If optional data data (diameter, temperature, rot. period, class) are missing, the game generates a random star based on the data given in StarData.tsv
+  surfaceTemperature: Optional, photosphere temperature in K (not used for stellar remants)
+  lumClass: Optional, stellar class
+    # 0 - Hypergiant, uses the supergiant rendering type (extremely large, protruding convection bubbles)
+    # Ia - Luminous Supergiant, uses the supergiant rendering type
+    # Ib - Supergiant, uses the supergiant rendering type
+    # II - Bright Giant, uses the giant rendering type (huge, protruding convection bubbles)
+    # III - Gaint, uses the giant rendering type
+    # IV - Subgiant, uses the subgiant rendering type (large convection zones, no star spots)
+    # V - Main Sequence, uses the main sequence rendering type (small convection zones and star spots)
+    # Vb - Brown Dwarf, uses the brown dwarf rendering type with random, dark cloud patches
+    # Vc - Cool Brown Dwarf, uses the brown dwarf rendering type with dark cloud bands (similar to gas giants)
+    # Vd - Ultracool Brown Dwarf, uses a random bluish or brown variant of the gas giant rendering type, no glow
+    # VI - Subdwarf, uses the main sequence rendering type
+    # VIIa - Stellar remant (White Dwarf), uses a structureless sphere with temperature-based color, shows weak gravitational lensing 
+    # VIIb - Stellar remant (Neutron Star), uses a structureless sphere with temperature-based color, shows strong gravitational lensing 
+    # VIIc - Stellar remant (Black Hole), uses a structureless, pitch-black sphere, shows very strong gravitational lensing

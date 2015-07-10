@@ -30,22 +30,22 @@ flat out float fAddBlendFactor;
 flat out float fAlphaBlendFactor;
 
 mat3 TBN_LOOKUP[6] = mat3[6](
-	mat3(vec3(0.0, 0.0, 1.0), vec3(0.0, 1.0, 0.0), vec3(-1.0, 0.0, 0.0)),
-	mat3(vec3(0.0, 0.0, -1.0), vec3(0.0, 1.0, 0.0), vec3(1.0, 0.0, 0.0)),
-	mat3(vec3(1.0, 0.0, 0.0), vec3(0.0, 0.0, 1.0), vec3(0.0, -1.0, 0.0)),
-	mat3(vec3(1.0, 0.0, 0.0), vec3(0.0, 0.0, -1.0), vec3(0.0, 1.0, 0.0)),
+    mat3(vec3(0.0, 0.0, 1.0), vec3(0.0, 1.0, 0.0), vec3(-1.0, 0.0, 0.0)),
+    mat3(vec3(0.0, 0.0, -1.0), vec3(0.0, 1.0, 0.0), vec3(1.0, 0.0, 0.0)),
+    mat3(vec3(1.0, 0.0, 0.0), vec3(0.0, 0.0, 1.0), vec3(0.0, -1.0, 0.0)),
+    mat3(vec3(1.0, 0.0, 0.0), vec3(0.0, 0.0, -1.0), vec3(0.0, 1.0, 0.0)),
     mat3(vec3(-1.0, 0.0, 0.0), vec3(0.0, 1.0, 0.0), vec3(0.0, 0.0, -1.0)),
     mat3(vec3(1.0, 0.0, 0.0), vec3(0.0, 1.0, 0.0), vec3(0.0, 0.0, 1.0))
 );
 
 void main(){
-    
+
     vec3 vertexPosition = vPosition_Face.xyz / 7.0;
 
     fDist = -vec3(unW * vec4(vertexPosition, 1));
-    
+
 	gl_Position =  unWVP * vec4(vertexPosition, 1.0);
-	
+
     //base OUV
 	fUVStart.x = mod((vTextureAtlas_TextureIndex[2]), 16.0)/16.0;
 	fUVStart.y = ((floor((vTextureAtlas_TextureIndex[2])/16.0))/16.0);
@@ -64,13 +64,13 @@ void main(){
 	fTex = (vTex_Animation_BlendMode.xyxy) / vTexDims;
 
     fTexDims = vTexDims;
-    
+
     fTBN = TBN_LOOKUP[int(vPosition_Face.w)];
-    
+
 	fTextureAtlas = vTextureAtlas_TextureIndex.xy;
     fNormTextureAtlas = vNDTextureAtlas.xy;
     fDispTextureAtlas = vNDTextureAtlas.zw;
-	
+
     //add 0.1 in case we lose precision
     int blendMode = int(vTex_Animation_BlendMode[3] + 0.1);
     fAlphaBlendFactor = float(blendMode & 0x3);
