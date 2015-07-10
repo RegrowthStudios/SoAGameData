@@ -6,12 +6,13 @@ arid_badlands:
   xAxis: noise
   xNoise:
     funcs:
-      - octaves: 3
+      - octaves: 4
         persistence: 0.8
-        frequency: 0.15
-        low: 0.0
-        high: 255.0
+        frequency: 0.02
+        low: -50.0
+        high: 300.0
   yAxis: height
+  heightScale: [0.0, 256.0]
   children:
     - id: sandy_desert
       displayName: "Sandy Desert"
@@ -20,16 +21,34 @@ arid_badlands:
         funcs:
           - type: noise_ridged
             octaves: 6
-            persistence: 0.5
-            frequency: 0.6
-            low:  0.0
-            high: 200.0
-    - id: plateau
-      displayName: "Plateau"
-      mapColor: [218, 132, 2]
+            persistence: 0.75
+            frequency: 0.2
+            low:  -100.0
+            high: 500.0
     - id: oasis
       displayName: "Oasis"
       mapColor: [179, 201, 4]
+    - id: plateau
+      displayName: "Plateau"
+      mapColor: [218, 132, 2]
+      terrainNoise:
+        funcs:
+          # Tall plateaus
+          - type: noise
+            octaves: 5
+            persistence: 0.55
+            frequency: 0.08
+            low: -13000.0
+            high: 8000.0
+            clamp: [0.0, 1500.0]
+          # Short plateaus
+          - type: noise
+            octaves: 5
+            persistence: 0.6
+            frequency: 0.1
+            low: -7000.0
+            high: 5000.0
+            clamp: [0.0, 750.0]
 dry_plains:
   displayName: "Dry Plains"
   mapColor: [151, 151, 104]
