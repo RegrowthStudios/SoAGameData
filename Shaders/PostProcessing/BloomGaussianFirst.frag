@@ -27,7 +27,7 @@ void main() {
     float dy = 1.0 / float(unHeight);
     
     vec4 sum = texture(unTexLuma, fUV) * unWeight[0];
-    for(int i=0; i<unGaussianN; i++) {
+    for(int i=1; i<unGaussianN; i++) {
         sum += texture( unTexLuma, fUV  +
                         vec2(0.0, float(i)) * dy) * unWeight[i];
         sum += texture( unTexLuma, fUV  -
