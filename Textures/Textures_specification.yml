@@ -1,0 +1,18 @@
+﻿##########  Textures.yml  -  specification and internal format/structure - last updated: 27.06.2015
+
+  #  Textures.yml contains an optional list of textures, sorted by texture name, the file path must be "Blocks/Textures.yml"
+  #  This file contains all textures and their texture layers that are re-used for several blocks and block faces within the texture pack
+  #  This file can be used to reduce the size of BlockTextureMapping.yml if many blocks and block faces share the same texture
+
+
+####  Internal structure of Textures.yml
+  
+(Texture Name):
+  base: (Layer Name)
+  #  Base texture layer
+  overlay: (Layer Name)
+  #  Optional overlay texture layer
+  blendMode: <alpha | add | subtract | multiply>
+  #  Optional. If not specified in the file, then "alpha" is used as the default setting.
+  #  alpha: Standard alpha blending is used to overlay the base texture
+  #  add/subtract/multiply: The colors of the overlay texture are added/subtracted/multiplied to the base texture

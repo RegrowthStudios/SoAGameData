@@ -1,0 +1,1176 @@
+add_overlay:
+  path: Blocks/Misc/add_overlay.png
+  method: connect
+add_overlay_soft:
+  path: Blocks/Misc/add_overlay_soft.png
+  method: connect
+aliencrop_bottom:
+  path: Blocks/Flora_block/aliencrop_bottom.png
+aliencrop_side:
+  path: Blocks/Flora_block/aliencrop_side.png
+aliencrop_top:
+  path: Blocks/Flora_block/aliencrop_top.png
+aluminium:
+  path: Blocks/Metals/aluminium.png
+  method: repeat
+aluminium_lithium:
+  path: Blocks/Metals/aluminium_lithium.png
+  method: repeat
+aluminium_lithium_overlay:
+  path: Blocks/Metals/aluminium_lithium_overlay.png
+  innerSeams: true
+  method: connect
+aluminium_overlay:
+  path: Blocks/Metals/aluminium_overlay.png
+  innerSeams: true
+  method: connect
+amatol:
+  path: Blocks/Explosives/amatol.png
+ammon_nitrate:
+  path: Blocks/Explosives/ammon_nitrate.png
+ammoniaplant:
+  path: Blocks/Flora_block/ammoniaplant.png
+ammoniaplant_bottom:
+  path: Blocks/Flora_block/ammoniaplant_bottom.png
+anfo:
+  path: Blocks/Explosives/anfo.png
+ash_volcanic:
+  path: Blocks/Terrain/ash_volcanic.png
+  method: repeat
+bargonite:
+  path: Blocks/Minerals/bargonite.png
+  method: repeat
+  transparency: true
+basalt:
+  path: Blocks/Terrain/basalt.png
+  method: repeat
+basalt_overlay:
+  path: Blocks/Terrain/basalt_overlay.png
+  method: connect
+basalt_semisolid:
+  path: Blocks/Terrain/basalt_semisolid.png
+  method: repeat
+bauxite:
+  path: Blocks/Minerals/bauxite.png
+  method: repeat
+bauxite_overlay:
+  path: Blocks/Minerals/bauxite_overlay.png
+  innerSeams: true
+  method: connect
+black_powder:
+  path: Blocks/Explosives/black_powder.png
+black_powder_100g:
+  path: Blocks/Explosives/black_powder_100g.png
+black_powder_10kg:
+  path: Blocks/Explosives/black_powder_10kg.png
+black_powder_1kg:
+  path: Blocks/Explosives/black_powder_1kg.png
+black_powder_20kg:
+  path: Blocks/Explosives/black_powder_20kg.png
+bone:
+  path: Blocks/Terrain/bone.png
+  method: repeat
+bone_overlay:
+  path: Blocks/Terrain/bone_overlay.png
+  method: connect
+brass:
+  path: Blocks/Metals/brass.png
+  method: repeat
+brass_overlay:
+  path: Blocks/Metals/brass_overlay.png
+  innerSeams: true
+  method: connect
+brass_patinated:
+  path: Blocks/Metals/brass_patinated.png
+  method: repeat
+brass_patinated_overlay:
+  path: Blocks/Metals/brass_patinated_overlay.png
+  innerSeams: true
+  method: connect
+bricks_test:
+  path: Blocks/Building/bricks.jpg
+  normalPath: Blocks/Building/bricks_NRM.jpg
+  dispPath: Blocks/Building/bricks_DISP.jpg
+  method: repeat
+bricks_light_side:
+  path: Blocks/Building/bricks_light_side.png
+  method: random
+bricks_light_side_overlay:
+  path: Blocks/Building/bricks_light_side_overlay.png
+  method: random
+bricks_light_top:
+  path: Blocks/Building/bricks_light_top.png
+  method: random
+bricks_light_top_overlay:
+  path: Blocks/Building/bricks_light_top_overlay.png
+  method: random
+bricks_loam_side:
+  path: Blocks/Building/bricks_loam_side.png
+  method: random
+bricks_loam_top:
+  path: Blocks/Building/bricks_loam_top.png
+  method: random
+bricks_side:
+  path: Blocks/Building/bricks_side.png
+  method: random
+bricks_top:
+  path: Blocks/Building/bricks_top.png
+  method: random
+bronze:
+  path: Blocks/Metals/bronze.png
+  method: repeat
+bronze_overlay:
+  path: Blocks/Metals/bronze_overlay.png
+  innerSeams: true
+  method: connect
+bronze_patinated:
+  path: Blocks/Metals/bronze_patinated.png
+  method: repeat
+bronze_patinated_overlay:
+  path: Blocks/Metals/bronze_patinated_overlay.png
+  innerSeams: true
+  method: connect
+cactus_death:
+  path: Blocks/Flora_block/cactus_death.png
+cactus_fruit:
+  path: Blocks/Flora_block/cactus_fruit.png
+cactus_mutated:
+  path: Blocks/Flora_block/cactus_mutated.png
+cactus_poison:
+  path: Blocks/Flora_block/cactus_poison.png
+cactus_small_green_bottom:
+  path: Blocks/Flora_block/cactus_small_green_bottom.png
+cactus_small_green_side:
+  path: Blocks/Flora_block/cactus_small_green_side.png
+cactus_small_green_top:
+  path: Blocks/Flora_block/cactus_small_green_top.png
+cactus_small_red_bottom:
+  path: Blocks/Flora_block/cactus_small_red_bottom.png
+cactus_small_red_side:
+  path: Blocks/Flora_block/cactus_small_red_side.png
+cactus_small_red_top:
+  path: Blocks/Flora_block/cactus_small_red_top.png
+cactus_small_yellow_bottom:
+  path: Blocks/Flora_block/cactus_small_yellow_bottom.png
+cactus_small_yellow_side:
+  path: Blocks/Flora_block/cactus_small_yellow_side.png
+cactus_small_yellow_top:
+  path: Blocks/Flora_block/cactus_small_yellow_top.png
+cactus_starch:
+  path: Blocks/Flora_block/cactus_starch.png
+cassiterite:
+  path: Blocks/Minerals/cassiterite.png
+  method: repeat
+caveplant_cap:
+  path: Blocks/Flora_block/caveplant_cap.png
+caveplant_stem_side:
+  path: Blocks/Flora_block/caveplant_stem_side.png
+caveplant_stem_top:
+  path: Blocks/Flora_block/caveplant_stem_top.png
+ceramic_alumina:
+  path: Blocks/Products/ceramic_alumina.png
+ceramic_tungsten_carbide:
+  path: Blocks/Products/ceramic_tungsten_carbide.png
+clay:
+  path: Blocks/Terrain/clay.png
+  method: repeat
+clay_overlay:
+  path: Blocks/Terrain/clay_overlay.png
+  method: connect
+cloth:
+  path: Blocks/Building/cloth.png
+  method: repeat
+cloth_overlay:
+  path: Blocks/Building/cloth_overlay.png
+  method: connect
+coal:
+  path: Blocks/Minerals/coal.png
+  method: repeat
+cobblestone:
+  path: Blocks/Building/cobblestone.png
+  method: repeat
+cobblestone_overlay:
+  path: Blocks/Building/cobblestone_overlay.png
+  method: connect
+coke:
+  path: Blocks/Products/coke.png
+concrete_side:
+  path: Blocks/Building/concrete_side.png
+  method: repeat
+concrete_side_overlay:
+  path: Blocks/Building/concrete_side_overlay.png
+  method: connect
+concrete_top:
+  path: Blocks/Building/concrete_top.png
+  method: repeat
+copper:
+  path: Blocks/Metals/copper.png
+  method: repeat
+copper_overlay:
+  path: Blocks/Metals/copper_overlay.png
+  innerSeams: true
+  method: connect
+copper_patinated:
+  path: Blocks/Metals/copper_patinated.png
+  method: repeat
+copper_patinated_overlay:
+  path: Blocks/Metals/copper_patinated_overlay.png
+  innerSeams: true
+  method: connect
+desert_chalice:
+  path: Blocks/Flora_block/desert_chalice.png
+diamond:
+  path: Blocks/Minerals/diamond.png
+  method: repeat
+diatomite:
+  path: Blocks/Minerals/diatomite.png
+  method: repeat
+diatomite_overlay:
+  path: Blocks/Minerals/diatomite_overlay.png
+  innerSeams: true
+  method: connect
+dirt:
+  path: Blocks/Terrain/dirt.png
+  method: repeat
+dirt_overlay:
+  path: Blocks/Terrain/dirt_overlay.png
+  method: random
+dolomite:
+  path: Blocks/Terrain/dolomite.png
+  method: repeat
+dolomite_overlay:
+  path: Blocks/Terrain/dolomite_overlay.png
+  method: connect
+dynamite_bottom:
+  path: Blocks/Explosives/dynamite_bottom.png
+dynamite_side:
+  path: Blocks/Explosives/dynamite_side.png
+dynamite_top:
+  path: Blocks/Explosives/dynamite_top.png
+emerald:
+  path: Blocks/Minerals/emerald.png
+  method: repeat
+firebomb:
+  path: Blocks/Explosives/firebomb.png
+flower_fringed_pink:
+  path: Blocks/Flora_mesh/flower_fringed_pink.png
+  method: random
+  color: biome
+flower_fringed_pink_overlay:
+  path: Blocks/Flora_mesh/flower_fringed_pink_overlay.png
+  method: random
+flower_fringed_red:
+  path: Blocks/Flora_mesh/flower_fringed_red.png
+  method: random
+  color: biome
+flower_fringed_red_overlay:
+  path: Blocks/Flora_mesh/flower_fringed_red_overlay.png
+  method: random
+flower_fringed_tiny:
+  path: Blocks/Flora_mesh/flower_fringed_tiny.png
+  method: random
+  color: biome
+flower_fringed_tiny_overlay:
+  path: Blocks/Flora_mesh/flower_fringed_tiny_overlay.png
+  method: random
+flower_fringed_white:
+  path: Blocks/Flora_mesh/flower_fringed_white.png
+  method: random
+  color: biome
+flower_fringed_white_overlay:
+  path: Blocks/Flora_mesh/flower_fringed_white_overlay.png
+  method: random
+flower_fringed_yellow:
+  path: Blocks/Flora_mesh/flower_fringed_yellow.png
+  method: random
+  color: biome
+flower_fringed_yellow_overlay:
+  path: Blocks/Flora_mesh/flower_fringed_yellow_overlay.png
+  method: random
+flower_purple_large:
+  path: Blocks/Flora_mesh/flower_purple_large.png
+  method: random
+  color: biome
+flower_purple_large_overlay:
+  path: Blocks/Flora_mesh/flower_purple_large_overlay.png
+  method: random
+flower_red_jungle:
+  path: Blocks/Flora_mesh/flower_red_jungle.png
+  method: random
+  color: biome
+flower_red_jungle_overlay:
+  path: Blocks/Flora_mesh/flower_red_jungle_overlay.png
+  method: random
+flower_red_large:
+  path: Blocks/Flora_mesh/flower_red_large.png
+  method: random
+  color: biome
+flower_red_large_overlay:
+  path: Blocks/Flora_mesh/flower_red_large_overlay.png
+  method: random
+flower_skeleton:
+  path: Blocks/Flora_mesh/flower_skeleton.png
+  method: flora
+flower_white:
+  path: Blocks/Flora_mesh/flower_white.png
+  method: random
+  color: biome
+flower_white_overlay:
+  path: Blocks/Flora_mesh/flower_white_overlay.png
+  method: random
+flower_yellow_large:
+  path: Blocks/Flora_mesh/flower_yellow_large.png
+  method: random
+  color: biome
+flower_yellow_large_overlay:
+  path: Blocks/Flora_mesh/flower_yellow_large_overlay.png
+  method: random
+flower_yellow_small:
+  path: Blocks/Flora_mesh/flower_yellow_small.png
+  method: random
+  color: biome
+flower_yellow_small_overlay:
+  path: Blocks/Flora_mesh/flower_yellow_small_overlay.png
+  method: random
+fungus_icecaps:
+  path: Blocks/Flora_mesh/fungus_icecaps.png
+  method: random
+fungus_sacs_sanguine:
+  path: Blocks/Flora_mesh/fungus_sacs_sanguine.png
+  method: flora
+fungus_sacs_triton:
+  path: Blocks/Flora_mesh/fungus_sacs_triton.png
+  method: random
+fungus_sorrowthorn:
+  path: Blocks/Flora_mesh/fungus_sorrowthorn.png
+  method: random
+fungus_terrorlichen:
+  path: Blocks/Flora_mesh/fungus_terrorlichen.png
+  method: random
+galena:
+  path: Blocks/Minerals/galena.png
+  method: repeat
+gelignite_side:
+  path: Blocks/Explosives/gelignite_side.png
+gelignite_top:
+  path: Blocks/Explosives/gelignite_top.png
+glass:
+  path: Blocks/Building/glass.png
+  method: repeat
+  transparency: true
+glass_bargonite:
+  path: Blocks/Building/glass_bargonite.png
+  method: repeat
+  transparency: true
+glass_metal_frame:
+  path: Blocks/Building/glass_metal_frame.png
+  innerSeams: true
+  method: connect
+glass_metal_frame_top:
+  path: Blocks/Building/glass_metal_frame_top.png
+glass_overlay:
+  path: Blocks/Building/glass_overlay.png
+  innerSeams: true
+  method: connect
+glass_thornmite:
+  path: Blocks/Building/glass_thornmite.png
+  method: repeat
+  transparency: true
+glass_thornmite_overlay:
+  path: Blocks/Building/glass_thornmite_overlay.png
+  innerSeams: true
+  method: connect
+gneiss_overlay:
+  path: Blocks/Terrain/gneiss_overlay.png
+  method: connect
+gneiss_side:
+  path: Blocks/Terrain/gneiss_side.png
+  method: repeat
+gneiss_top:
+  path: Blocks/Terrain/gneiss_top.png
+  method: repeat
+gold:
+  path: Blocks/Metals/gold.png
+  method: repeat
+gold_overlay:
+  path: Blocks/Metals/gold_overlay.png
+  innerSeams: true
+  method: connect
+granite:
+  path: Blocks/Terrain/granite.png
+  method: repeat
+granite_overlay:
+  path: Blocks/Terrain/granite_overlay.png
+  method: connect
+grass_dry:
+  path: Blocks/Flora_mesh/grass_dry.png
+  method: random
+  color: biome
+grass_red_flower:
+  path: Blocks/Flora_mesh/grass_red_flower.png
+  method: random
+  color: biome
+grass_red_flower_overlay:
+  path: Blocks/Flora_mesh/grass_red_flower_overlay.png
+  method: random
+grass_side:
+  path: Blocks/Terrain/grass_side.png
+  method: grass
+  color: biome
+grass_tall:
+  path: Blocks/Flora_mesh/grass_tall.png
+  method: flora
+  color: biome
+grass_tall_dark:
+  path: Blocks/Flora_mesh/grass_tall_dark.png
+  method: flora
+  color: biome
+grass_tall_light:
+  path: Blocks/Flora_mesh/grass_tall_light.png
+  method: flora
+  color: biome
+grass_top:
+  path: Blocks/Terrain/grass_top.png
+  normalPath: Blocks/Terrain/grass_top_NRM.png
+  dispPath: Blocks/Terrain/grass_top_DISP.png
+  method: repeat
+  color: biome
+grass_yellow:
+  path: Blocks/Flora_mesh/grass_yellow.png
+  method: random
+  color: biome
+gravel:
+  path: Blocks/Terrain/gravel.png
+  method: repeat
+gypsum:
+  path: Blocks/Building/gypsum.png
+  method: repeat
+ice:
+  path: Blocks/Terrain/ice.png
+  method: repeat
+  transparency: true
+ice_dry:
+  path: Blocks/Terrain/ice_dry.png
+  method: repeat
+ice_methane:
+  path: Blocks/Terrain/ice_methane.png
+  method: repeat
+ice_methane_hydrate:
+  path: Blocks/Terrain/ice_methane_hydrate.png
+  method: repeat
+ice_nitrogen:
+  path: Blocks/Terrain/ice_nitrogen.png
+  method: repeat
+iron:
+  path: Blocks/Metals/iron.png
+  method: repeat
+iron_overlay:
+  path: Blocks/Metals/iron_overlay.png
+  innerSeams: true
+  method: connect
+iron_rusty:
+  path: Blocks/Metals/iron_rusty.png
+  method: repeat
+iron_rusty_overlay:
+  path: Blocks/Metals/iron_rusty_overlay.png
+  innerSeams: true
+  method: connect
+lamp_LED_off:
+  path: Blocks/Electronics/lamp_LED_off.png
+lamp_LED_on:
+  path: Blocks/Electronics/lamp_LED_on.png
+lamp_colored:
+  path: Blocks/Electronics/lamp_colored.png
+lamp_off:
+  path: Blocks/Electronics/lamp_off.png
+lamp_on:
+  path: Blocks/Electronics/lamp_on.png
+lamp_xenon_off:
+  path: Blocks/Electronics/lamp_xenon_off.png
+lamp_xenon_on:
+  path: Blocks/Electronics/lamp_xenon_on.png
+lapis_lazuli:
+  path: Blocks/Minerals/lapis_lazuli.png
+  method: repeat
+lead:
+  path: Blocks/Metals/lead.png
+  method: repeat
+lead_overlay:
+  path: Blocks/Metals/lead_overlay.png
+  innerSeams: true
+  method: connect
+leaves_opaque_blossom:
+  path: Blocks/Flora_block/leaves_opaque_blossom.png
+  method: repeat
+leaves_opaque_coniferous:
+  path: Blocks/Flora_block/leaves_opaque_coniferous.png
+  method: repeat
+leaves_opaque_deciduous:
+  path: Blocks/Flora_block/leaves_opaque_deciduous.png
+  method: repeat
+leaves_opaque_fruit:
+  path: Blocks/Flora_block/leaves_opaque_fruit.png
+leaves_opaque_jungle:
+  path: Blocks/Flora_block/leaves_opaque_jungle.png
+  method: repeat
+leaves_opaque_mangrove:
+  path: Blocks/Flora_block/leaves_opaque_mangrove.png
+  method: repeat
+leaves_opaque_palm:
+  path: Blocks/Flora_block/leaves_opaque_palm.png
+  method: repeat
+leaves_opaque_rubber:
+  path: Blocks/Flora_block/leaves_opaque_rubber.png
+  method: repeat
+leaves_opaque_savanna:
+  path: Blocks/Flora_block/leaves_opaque_savanna.png
+  method: repeat
+leaves_opaque_sugar:
+  path: Blocks/Flora_block/leaves_opaque_sugar.png
+  method: repeat
+leaves_opaque_swamp:
+  path: Blocks/Flora_block/leaves_opaque_swamp.png
+  method: repeat
+limestone:
+  path: Blocks/Terrain/limestone.png
+  method: repeat
+limestone_overlay:
+  path: Blocks/Terrain/limestone_overlay.png
+  method: connect
+lithium:
+  path: Blocks/Metals/lithium.png
+  method: repeat
+lithium_overlay:
+  path: Blocks/Metals/lithium_overlay.png
+  innerSeams: true
+  method: connect
+magnetite:
+  path: Blocks/Minerals/magnetite.png
+  method: repeat
+malachite:
+  path: Blocks/Minerals/malachite.png
+  method: repeat
+malachite_overlay:
+  path: Blocks/Minerals/malachite_overlay.png
+  innerSeams: true
+  method: connect
+marble:
+  path: Blocks/Terrain/marble.png
+  method: repeat
+marble_overlay:
+  path: Blocks/Terrain/marble_overlay.png
+  method: connect
+mine_plantoid_bottom:
+  path: Blocks/Explosives/mine_plantoid_bottom.png
+mine_plantoid_side:
+  path: Blocks/Explosives/mine_plantoid_side.png
+  method: random
+  color: biome
+mine_plantoid_side_overlay:
+  path: Blocks/Explosives/mine_plantoid_side_overlay.png
+  method: random
+mine_plantoid_top:
+  path: Blocks/Explosives/mine_plantoid_top.png
+  color: biome
+mine_plantoid_top_overlay:
+  path: Blocks/Explosives/mine_plantoid_top_overlay.png
+mud:
+  path: Blocks/Terrain/mud.png
+  method: repeat
+mud_dry:
+  path: Blocks/Terrain/mud_dry.png
+  method: repeat
+mud_dry_half:
+  path: Blocks/Terrain/mud_dry_half.png
+  method: repeat
+mushroom_cap_smooth:
+  path: Blocks/Flora_block/mushroom_cap_smooth.png
+  method: repeat
+mushroom_cap_spotted:
+  path: Blocks/Flora_block/mushroom_cap_spotted.png
+  method: repeat
+mushroom_lamella:
+  path: Blocks/Flora_block/mushroom_lamella.png
+mushroom_small_blue:
+  path: Blocks/Flora_mesh/mushroom_small_blue.png
+mushroom_small_blue_dark:
+  path: Blocks/Flora_mesh/mushroom_small_blue_dark.png
+mushroom_small_brown:
+  path: Blocks/Flora_mesh/mushroom_small_brown.png
+mushroom_small_cyan:
+  path: Blocks/Flora_mesh/mushroom_small_cyan.png
+mushroom_small_green:
+  path: Blocks/Flora_mesh/mushroom_small_green.png
+mushroom_small_green_dark:
+  path: Blocks/Flora_mesh/mushroom_small_green_dark.png
+mushroom_small_grey:
+  path: Blocks/Flora_mesh/mushroom_small_grey.png
+mushroom_small_pink:
+  path: Blocks/Flora_mesh/mushroom_small_pink.png
+mushroom_small_purple:
+  path: Blocks/Flora_mesh/mushroom_small_purple.png
+mushroom_small_purple_dark:
+  path: Blocks/Flora_mesh/mushroom_small_purple_dark.png
+mushroom_small_red:
+  path: Blocks/Flora_mesh/mushroom_small_red.png
+mushroom_small_red_dark:
+  path: Blocks/Flora_mesh/mushroom_small_red_dark.png
+mushroom_stem:
+  path: Blocks/Flora_block/mushroom_stem.png
+  method: repeat
+mycelium_side:
+  path: Blocks/Terrain/mycelium_side.png
+  method: grass
+mycelium_top:
+  path: Blocks/Terrain/mycelium_top.png
+  method: repeat
+nitro_bottom:
+  path: Blocks/Explosives/nitro_bottom.png
+nitro_side:
+  path: Blocks/Explosives/nitro_side.png
+nitro_top:
+  path: Blocks/Explosives/nitro_top.png
+nitrocellulose:
+  path: Blocks/Explosives/nitrocellulose.png
+nuke_mark1_bottom:
+  path: Blocks/Explosives/nuke_mark1_bottom.png
+nuke_mark1_side:
+  path: Blocks/Explosives/nuke_mark1_side.png
+nuke_mark1_top:
+  path: Blocks/Explosives/nuke_mark1_top.png
+nuke_mark2_bottom:
+  path: Blocks/Explosives/nuke_mark2_bottom.png
+nuke_mark2_side:
+  path: Blocks/Explosives/nuke_mark2_side.png
+nuke_mark2_top:
+  path: Blocks/Explosives/nuke_mark2_top.png
+nuke_mark3_bottom:
+  path: Blocks/Explosives/nuke_mark3_bottom.png
+nuke_mark3_side:
+  path: Blocks/Explosives/nuke_mark3_side.png
+nuke_mark3_top:
+  path: Blocks/Explosives/nuke_mark3_top.png
+onc_bottom:
+  path: Blocks/Explosives/onc_bottom.png
+onc_side:
+  path: Blocks/Explosives/onc_side.png
+onc_top:
+  path: Blocks/Explosives/onc_top.png
+pitch:
+  path: Blocks/Products/pitch.png
+pitchblende:
+  path: Blocks/Minerals/pitchblende.png
+  method: repeat
+plant_dreamweed:
+  path: Blocks/Flora_mesh/plant_dreamweed.png
+  method: flora
+plant_dreamweed_blue_light:
+  path: Blocks/Flora_mesh/plant_dreamweed_blue_light.png
+  method: random
+plant_dreamweed_sticky:
+  path: Blocks/Flora_mesh/plant_dreamweed_sticky.png
+  method: flora
+plant_dreamweed_striped:
+  path: Blocks/Flora_mesh/plant_dreamweed_striped.png
+  method: random
+plant_fern:
+  path: Blocks/Flora_mesh/plant_fern.png
+  method: random
+  color: biome
+plant_fern_small:
+  path: Blocks/Flora_mesh/plant_fern_small.png
+  color: biome
+plant_fern_tall:
+  path: Blocks/Flora_mesh/plant_fern_tall.png
+  color: biome
+plant_jungle1:
+  path: Blocks/Flora_mesh/plant_jungle1.png
+  method: random
+  color: biome
+plant_jungle2:
+  path: Blocks/Flora_mesh/plant_jungle2.png
+plant_jungle3:
+  path: Blocks/Flora_mesh/plant_jungle3.png
+  color: biome
+plant_jungle4:
+  path: Blocks/Flora_mesh/plant_jungle4.png
+  color: biome
+plant_jungle5:
+  path: Blocks/Flora_mesh/plant_jungle5.png
+plant_jungle6:
+  path: Blocks/Flora_mesh/plant_jungle6.png
+plant_jungle7:
+  path: Blocks/Flora_mesh/plant_jungle7.png
+  color: biome
+plant_methane_ball:
+  path: Blocks/Flora_mesh/plant_methane_ball.png
+  method: flora
+plant_red_bush:
+  path: Blocks/Flora_mesh/plant_red_bush.png
+  method: random
+plating_aluminium:
+  path: Blocks/Building/plating_aluminium.png
+  method: connect
+plating_aluminium_overlay:
+  path: Blocks/Building/plating_aluminium_overlay.png
+  method: connect
+plating_ceramic:
+  path: Blocks/Building/plating_ceramic.png
+  method: repeat
+plating_ceramic_overlay:
+  path: Blocks/Building/plating_ceramic_overlay.png
+  method: connect
+plating_lightmetal:
+  path: Blocks/Building/plating_lightmetal.png
+  method: connect
+plating_lightmetal_overlay:
+  path: Blocks/Building/plating_lightmetal_overlay.png
+  method: connect
+plating_steel:
+  path: Blocks/Building/plating_steel.png
+  innerSeams: true
+  method: connect
+plating_steel_rusty:
+  path: Blocks/Building/plating_steel_rusty.png
+  innerSeams: true
+  method: connect
+plating_steel_tungsten:
+  path: Blocks/Building/plating_steel_tungsten.png
+  method: repeat
+plating_steel_tungsten_overlay:
+  path: Blocks/Building/plating_steel_tungsten_overlay.png
+  innerSeams: true
+  method: connect
+plating_thornmite:
+  path: Blocks/Building/plating_thornmite.png
+  method: repeat
+plating_thornmite_overlay:
+  path: Blocks/Building/plating_thornmite_overlay.png
+  innerSeams: true
+  method: connect
+plating_titanium:
+  path: Blocks/Building/plating_titanium.png
+  method: repeat
+plating_titanium_overlay:
+  path: Blocks/Building/plating_titanium_overlay.png
+  innerSeams: true
+  method: connect
+platinum:
+  path: Blocks/Metals/platinum.png
+  method: repeat
+plutonium:
+  path: Blocks/Metals/plutonium.png
+  method: repeat
+plutonium_overlay:
+  path: Blocks/Metals/plutonium_overlay.png
+  innerSeams: true
+  method: connect
+quartz:
+  path: Blocks/Minerals/quartz.png
+  method: repeat
+rubber:
+  path: Blocks/Products/rubber.png
+ruby:
+  path: Blocks/Minerals/ruby.png
+  normalPath: Blocks/Minerals/ruby_NRM.png
+  dispPath: Blocks/Minerals/ruby_DISP.png
+  method: repeat
+rutile:
+  path: Blocks/Minerals/rutile.png
+  method: repeat
+salpeter:
+  path: Blocks/Minerals/salpeter.png
+salpeterplant_light:
+  path: Blocks/Flora_block/salpeterplant_light.png
+salpeterplant_trap:
+  path: Blocks/Flora_block/salpeterplant_trap.png
+  method: repeat
+sand:
+  path: Blocks/Terrain/sand.png
+  method: repeat
+sand_red:
+  path: Blocks/Terrain/sand_red.png
+  method: repeat
+sandbags_side:
+  path: Blocks/Building/sandbags_side.png
+sandbags_top:
+  path: Blocks/Building/sandbags_top.png
+sandstone:
+  path: Blocks/Terrain/sandstone.png
+  method: repeat
+sandstone_overlay:
+  path: Blocks/Terrain/sandstone_overlay.png
+  method: connect
+sandstone_red:
+  path: Blocks/Terrain/sandstone_red.png
+  method: repeat
+sandstone_red_overlay:
+  path: Blocks/Terrain/sandstone_red_overlay.png
+  method: connect
+sapling_coniferous:
+  path: Blocks/Flora_mesh/sapling_coniferous.png
+sapling_dead:
+  path: Blocks/Flora_mesh/sapling_dead.png
+sapling_deciduous:
+  path: Blocks/Flora_mesh/sapling_deciduous.png
+sapling_jungle:
+  path: Blocks/Flora_mesh/sapling_jungle.png
+sapling_mangrove:
+  path: Blocks/Flora_mesh/sapling_mangrove.png
+sapling_palm:
+  path: Blocks/Flora_mesh/sapling_palm.png
+sapling_rubber:
+  path: Blocks/Flora_mesh/sapling_rubber.png
+sapling_savanna:
+  path: Blocks/Flora_mesh/sapling_savanna.png
+sapling_sugar:
+  path: Blocks/Flora_mesh/sapling_sugar.png
+sapling_swamp:
+  path: Blocks/Flora_mesh/sapling_swamp.png
+sapphire:
+  path: Blocks/Minerals/sapphire.png
+  method: repeat
+scheelite:
+  path: Blocks/Minerals/scheelite.png
+  method: repeat
+seamorphite:
+  path: Blocks/Minerals/seamorphite.png
+  method: repeat
+seamorphite_overlay:
+  path: Blocks/Minerals/seamorphite_overlay.png
+  innerSeams: true
+  method: connect
+shrapnel_bomb:
+  path: Blocks/Explosives/shrapnel_bomb.png
+silicon:
+  path: Blocks/Products/silicon.png
+silver:
+  path: Blocks/Metals/silver.png
+  method: repeat
+silver_platinum_overlay:
+  path: Blocks/Metals/silver_platinum_overlay.png
+  innerSeams: true
+  method: connect
+slate_overlay:
+  path: Blocks/Terrain/slate_overlay.png
+  method: connect
+slate_side:
+  path: Blocks/Terrain/slate_side.png
+  method: repeat
+slate_top:
+  path: Blocks/Terrain/slate_top.png
+  method: repeat
+snow:
+  path: Blocks/Terrain/snow.png
+  method: repeat
+soda:
+  path: Blocks/Minerals/soda.png
+steel:
+  path: Blocks/Metals/steel.png
+  method: repeat
+steel_overlay:
+  path: Blocks/Metals/steel_overlay.png
+  innerSeams: true
+  method: connect
+steel_rusty:
+  path: Blocks/Metals/steel_rusty.png
+  method: repeat
+steel_rusty_overlay:
+  path: Blocks/Metals/steel_rusty_overlay.png
+  innerSeams: true
+  method: connect
+steel_tungsten:
+  path: Blocks/Metals/steel_tungsten.png
+  method: repeat
+steel_tungsten_overlay:
+  path: Blocks/Metals/steel_tungsten_overlay.png
+  innerSeams: true
+  method: connect
+stone:
+  path: Blocks/Terrain/stone.png
+  normalPath: Blocks/Terrain/stone_NRM.png
+  dispPath: Blocks/Terrain/stone_DISP.png
+  method: repeat
+stone_bricks:
+  path: Blocks/Building/stone_bricks.png
+  method: random
+stone_bricks_granite:
+  path: Blocks/Building/stone_bricks_granite.png
+  method: random
+stone_bricks_lime:
+  path: Blocks/Building/stone_bricks_lime.png
+  method: random
+stone_bricks_marble:
+  path: Blocks/Building/stone_bricks_marble.png
+  method: repeat
+stone_bricks_marble_overlay:
+  path: Blocks/Building/stone_bricks_marble_overlay.png
+  method: random
+stone_bricks_sand:
+  path: Blocks/Building/stone_bricks_sand.png
+  method: repeat
+stone_bricks_sand_overlay:
+  path: Blocks/Building/stone_bricks_sand_overlay.png
+  method: connect
+stone_bricks_sand_red:
+  path: Blocks/Building/stone_bricks_sand_red.png
+  method: repeat
+stone_bricks_sand_red_overlay:
+  path: Blocks/Building/stone_bricks_sand_red_overlay.png
+  method: connect
+stone_chiseled_marble_ornament_side:
+  path: Blocks/Building/stone_chiseled_marble_ornament_side.png
+  method: horizontal
+stone_chiseled_marble_ornament_top:
+  path: Blocks/Building/stone_chiseled_marble_ornament_top.png
+  method: random
+stone_chiseled_marble_side:
+  path: Blocks/Building/stone_chiseled_marble_side.png
+  method: horizontal
+stone_chiseled_marble_top:
+  path: Blocks/Building/stone_chiseled_marble_top.png
+  method: random
+stone_chiseled_sand_ornament_side:
+  path: Blocks/Building/stone_chiseled_sand_ornament_side.png
+  method: horizontal
+stone_chiseled_sand_ornament_top:
+  path: Blocks/Building/stone_chiseled_sand_ornament_top.png
+  method: random
+stone_chiseled_sand_red_ornament_side:
+  path: Blocks/Building/stone_chiseled_sand_red_ornament_side.png
+  method: horizontal
+stone_chiseled_sand_red_ornament_top:
+  path: Blocks/Building/stone_chiseled_sand_red_ornament_top.png
+  method: random
+stone_chiseled_sand_red_side:
+  path: Blocks/Building/stone_chiseled_sand_red_side.png
+  method: horizontal
+stone_chiseled_sand_red_top:
+  path: Blocks/Building/stone_chiseled_sand_red_top.png
+  method: random
+stone_chiseled_sand_side:
+  path: Blocks/Building/stone_chiseled_sand_side.png
+  method: horizontal
+stone_chiseled_sand_top:
+  path: Blocks/Building/stone_chiseled_sand_top.png
+  method: random
+stone_column_marble:
+  path: Blocks/Building/stone_column_marble.png
+  method: connect
+stone_column_marble_twisted_side:
+  path: Blocks/Building/stone_column_marble_twisted_side.png
+  method: vertical
+stone_column_marble_twisted_top:
+  path: Blocks/Building/stone_column_marble_twisted_top.png
+  method: random
+stone_cut:
+  path: Blocks/Building/stone_cut.png
+  method: random
+stone_cut_granite:
+  path: Blocks/Building/stone_cut_granite.png
+  method: random
+stone_cut_lime:
+  path: Blocks/Building/stone_cut_lime.png
+  method: random
+stone_cut_marble:
+  path: Blocks/Building/stone_cut_marble.png
+  method: random
+stone_cut_sand:
+  path: Blocks/Building/stone_cut_sand.png
+  method: random
+stone_cut_sand_red:
+  path: Blocks/Building/stone_cut_sand_red.png
+  method: random
+stone_mossy:
+  path: Blocks/Terrain/stone_mossy.png
+  normalPath: Blocks/Terrain/stone_NRM.png
+  dispPath: Blocks/Terrain/stone_DISP.png
+  method: repeat
+stone_mycelia_icecaps_side:
+  path: Blocks/Terrain/stone_mycelia_icecaps_side.png
+  method: grass
+stone_mycelia_icecaps_top:
+  path: Blocks/Terrain/stone_mycelia_icecaps_top.png
+  method: connect
+stone_overlay:
+  path: Blocks/Terrain/stone_overlay.png
+  method: connect
+sub_overlay:
+  path: Blocks/Misc/sub_overlay.png
+  innerSeams: true
+  method: connect
+submarium:
+  path: Blocks/Minerals/submarium.png
+  method: repeat
+submarium_overlay:
+  path: Blocks/Minerals/submarium_overlay.png
+  innerSeams: true
+  method: connect
+succulent_blue_bottom:
+  path: Blocks/Flora_block/succulent_blue_bottom.png
+succulent_blue_side:
+  path: Blocks/Flora_block/succulent_blue_side.png
+succulent_blue_top:
+  path: Blocks/Flora_block/succulent_blue_top.png
+succulent_purple_bottom:
+  path: Blocks/Flora_block/succulent_purple_bottom.png
+succulent_purple_side:
+  path: Blocks/Flora_block/succulent_purple_side.png
+succulent_purple_top:
+  path: Blocks/Flora_block/succulent_purple_top.png
+succulent_stone_bottom:
+  path: Blocks/Flora_block/succulent_stone_bottom.png
+succulent_stone_side:
+  path: Blocks/Flora_block/succulent_stone_side.png
+succulent_stone_top:
+  path: Blocks/Flora_block/succulent_stone_top.png
+sulfur:
+  path: Blocks/Minerals/sulfur.png
+  method: repeat
+sulfur_overlay:
+  path: Blocks/Minerals/sulfur_overlay.png
+  innerSeams: true
+  method: connect
+tarmac:
+  path: Blocks/Building/tarmac.png
+  method: repeat
+tholin:
+  path: Blocks/Terrain/tholin.png
+  method: repeat
+thornmite:
+  path: Blocks/Minerals/thornmite.png
+  method: repeat
+thornmite_overlay:
+  path: Blocks/Minerals/thornmite_overlay.png
+  innerSeams: true
+  method: connect
+tiling:
+  path: Blocks/Building/tiling.png
+  method: random
+tin:
+  path: Blocks/Metals/tin.png
+  method: repeat
+tin_overlay:
+  path: Blocks/Metals/tin_overlay.png
+  innerSeams: true
+  method: connect
+titanium:
+  path: Blocks/Metals/titanium.png
+  method: repeat
+titanium_overlay:
+  path: Blocks/Metals/titanium_overlay.png
+  innerSeams: true
+  method: connect
+tnt_bottom:
+  path: Blocks/Explosives/tnt_bottom.png
+tnt_side:
+  path: Blocks/Explosives/tnt_side.png
+tnt_top:
+  path: Blocks/Explosives/tnt_top.png
+tungsten:
+  path: Blocks/Metals/tungsten.png
+  method: repeat
+tungsten_overlay:
+  path: Blocks/Metals/tungsten_overlay.png
+  innerSeams: true
+  method: connect
+uranium:
+  path: Blocks/Metals/uranium.png
+  method: repeat
+uranium_overlay:
+  path: Blocks/Metals/uranium_overlay.png
+  innerSeams: true
+  method: connect
+vine_garas:
+  path: Blocks/Flora_mesh/vine_garas.png
+  method: connect
+  color: biome
+wambronium:
+  path: Blocks/Minerals/wambronium.png
+  method: repeat
+wambronium_overlay:
+  path: Blocks/Minerals/wambronium_overlay.png
+  innerSeams: true
+  method: connect
+wood_coniferous:
+  path: Blocks/Flora_block/wood_coniferous.png
+  method: repeat
+wood_dead:
+  path: Blocks/Flora_block/wood_dead.png
+  method: repeat
+wood_deciduous:
+  path: Blocks/Flora_block/wood_deciduous.png
+  method: repeat
+wood_fruit:
+  path: Blocks/Flora_block/wood_fruit.png
+  method: repeat
+wood_jungle:
+  path: Blocks/Flora_block/wood_jungle.png
+  method: repeat
+wood_mangrove:
+  path: Blocks/Flora_block/wood_mangrove.png
+  method: repeat
+wood_palm:
+  path: Blocks/Flora_block/wood_palm.png
+  method: repeat
+wood_rubber:
+  path: Blocks/Flora_block/wood_rubber.png
+  method: repeat
+wood_savanna:
+  path: Blocks/Flora_block/wood_savanna.png
+  method: repeat
+wood_sugar:
+  path: Blocks/Flora_block/wood_sugar.png
+  method: repeat
+wood_swamp:
+  path: Blocks/Flora_block/wood_swamp.png
+  method: repeat
+wooden_planks_coniferous_side:
+  path: Blocks/Building/wooden_planks_coniferous_side.png
+  method: random
+wooden_planks_coniferous_top:
+  path: Blocks/Building/wooden_planks_coniferous_top.png
+  method: random
+wooden_planks_dead:
+  path: Blocks/Building/wooden_planks_dead.png
+  method: random
+wooden_planks_deciduous:
+  path: Blocks/Building/wooden_planks_deciduous.png
+  method: random
+wooden_planks_fruit:
+  path: Blocks/Building/wooden_planks_fruit.png
+  method: random
+wooden_planks_jungle:
+  path: Blocks/Building/wooden_planks_jungle.png
+  method: random
+wooden_planks_mangrove:
+  path: Blocks/Building/wooden_planks_mangrove.png
+  method: random
+wooden_planks_palm_side:
+  path: Blocks/Building/wooden_planks_palm_side.png
+  method: random
+wooden_planks_palm_top:
+  path: Blocks/Building/wooden_planks_palm_top.png
+  method: random
+wooden_planks_rubber:
+  path: Blocks/Building/wooden_planks_rubber.png
+  method: random
+wooden_planks_savanna:
+  path: Blocks/Building/wooden_planks_savanna.png
+  method: random
+wooden_planks_sugar:
+  path: Blocks/Building/wooden_planks_sugar.png
+  method: random
+wooden_planks_swamp:
+  path: Blocks/Building/wooden_planks_swamp.png
+  method: random
+zinc:
+  path: Blocks/Metals/zinc.png
+  method: repeat
+zinc_overlay:
+  path: Blocks/Metals/zinc_overlay.png
+  innerSeams: true
+  method: connect
+zincblende:
+  path: Blocks/Minerals/zincblende.png
+  method: repeat

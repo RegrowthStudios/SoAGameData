@@ -172,3 +172,49 @@ vec2 cellular(vec3 P) {
 	return sqrt(d11.xy); // F1, F2
 #endif
 }
+
+float cellularFractal(vec3 position, int octaves, float frequency, float persistence) {
+	float total = 0.0;
+	float maxAmplitude = 0.0;
+    float amplitude = 1.0;
+	for (int i = 0; i < octaves; i++) {
+		vec2 ff = cellular(position * frequency);
+        total += (ff.y - ff.x) * amplitude;
+		frequency *= 2.0;
+		maxAmplitude += amplitude;
+		amplitude *= persistence;
+	}
+	return total / maxAmplitude;
+}
+
+float cellularSquared(vec3 position, int octaves, float frequency, float persistence) {
+	float total = 0.0;
+	float maxAmplitude = 0.0;
+    float amplitude = 1.0;
+    float tmp;
+	for (int i = 0; i < octaves; i++) {
+		vec2 ff = cellular(position * frequency);
+        tmp = ff.y - ff.x;
+        total += tmp * tmp * amplitude;
+		frequency *= 2.0;
+		maxAmplitude += amplitude;
+		amplitude *= persistence;
+	}
+	return total / maxAmplitude;
+}
+
+float cellularCubed(vec3 position, int octaves, float frequency, float persistence) {
+	float total = 0.0;
+	float maxAmplitude = 0.0;
+    float amplitude = 1.0;
+    float tmp;
+	for (int i = 0; i < octaves; i++) {
+		vec2 ff = cellular(position * frequency);
+        tmp = ff.y - ff.x;
+        total += tmp * tmp * tmp * amplitude;
+		frequency *= 2.0;
+		maxAmplitude += amplitude;
+		amplitude *= persistence;
+	}
+	return total / maxAmplitude;
+}
