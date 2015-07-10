@@ -17,5 +17,5 @@ void main() {
     // View normals
     //pColor = vec4((fNormal + 1.0) * 0.5, 1.0) + 0.0001 * vec4(fColor * min(ambient + theta * 0.7, 1.0), 1.0);
     // Regular view
-    pColor = vec4(fColor * min(ambient + theta, 1.0), 1.0);
+    pColor = vec4(fColor * max(1.0, min(ambient + theta, 1.0)), 1.0);
 }
