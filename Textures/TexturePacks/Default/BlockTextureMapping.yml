@@ -1201,9 +1201,15 @@ sink_mud:
 sink_sand:
   texture:
     base: sand
+sink_sand_black:
+  texture:
+    base: sand_black
 sink_sand_red:
   texture:
     base: sand_red
+sink_sand_white:
+  texture:
+    base: sand_white
 sink_snow:
   texture:
     base: snow
