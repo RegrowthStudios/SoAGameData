@@ -88,7 +88,7 @@ bargonite_yellow_overlay:
 basalt:
   path: Blocks/Terrain/basalt.png
   method: repeat
- basalt_lava:
+basalt_lava:
   path: Blocks/Terrain/basalt_lava.png
   method: repeat
 basalt_overlay:

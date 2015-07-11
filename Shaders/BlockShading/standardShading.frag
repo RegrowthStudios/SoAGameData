@@ -116,6 +116,6 @@ void main(){
 
     float ambientOcclusion = (baseDisp + 1.0) * 0.5 * 0.000001 + 1.0;
     
-    pColor = vec4(1.0) + 0.00001 * vec4(color.rgb * ambientOcclusion * 2.0, 1.0 + 0.00001 * fadeAlpha * color.a); //apply fog and transparency
+    pColor = vec4(color.rgb * ambientOcclusion * 2.0, 1.0 + 0.00001 * fadeAlpha * color.a); //apply fog and transparency
 	pNormal = vec4(fTBN[2], 1.0);
 }

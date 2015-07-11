@@ -806,7 +806,7 @@ gypsum_yellow:
 gypsum_yellow_light:
   name: Light Yellow Gypsum
 hematite:
-  naame: Hematite
+  name: Hematite
 ice:
   name: Ice
   allowsLight: true
