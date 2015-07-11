@@ -13,19 +13,19 @@ alienplant_cave_cap:
 alienplant_cave_stem:
   texture:
     base: caveplant_stem_side
-  textureBottom:
-    base: caveplant_stem_top
-  textureTop:
+  textureOpY:
     base: caveplant_stem_top
 alienplant_crop_bud:
   texture:
     base: aliencrop_side
+  textureTop:
+    base: aliencrop_top
+  textureBottom:
+    base: aliencrop_bottom
 alienplant_crop_stem:
   texture:
     base: aliencrop_side
-  textureBottom:
-    base: aliencrop_bottom
-  textureTop:
+  textureOpY:
     base: aliencrop_bottom
 alienplant_desert_chalice:
   texture:
@@ -47,6 +47,18 @@ aluminium_plating:
 ash_volcanic:
   texture:
     base: ash_volcanic
+bags_sand:
+  texture: sandbags_side
+  textureOpY: sandbags_top
+bags_sand_black:
+  texture: sandbags_side
+  textureOpY: sandbags_top
+bags_sand_red:
+  texture: sandbags_side
+  textureOpY: sandbags_top
+bags_sand_white:
+  texture: sandbags_side
+  textureOpY: sandbags_top
 basalt:
   texture:
     base: basalt
@@ -62,42 +74,50 @@ basalt_semisolid:
 bargonite_blue:
   transparency: true
   texture:
-    base: bargonite
+    base: bargonite_blue
+    overlay: bargonite_blue_overlay
     blendMode: add
 bargonite_cyan:
   transparency: true
   texture:
-    base: bargonite
+    base: bargonite_cyan
+    overlay: bargonite_cyan_overlay
     blendMode: add
 bargonite_green:
   transparency: true
   texture:
-    base: bargonite
+    base: bargonite_green
+    overlay: bargonite_green_overlay
     blendMode: add
 bargonite_magenta:
   transparency: true
   texture:
-    base: bargonite
+    base: bargonite_magenta
+    overlay: bargonite_magenta_overlay
     blendMode: add
 bargonite_orange:
   transparency: true
   texture:
-    base: bargonite
+    base: bargonite_orange
+    overlay: bargonite_orange_overlay
     blendMode: add
 bargonite_red:
   transparency: true
   texture:
-    base: bargonite
+    base: bargonite_red
+    overlay: bargonite_red_overlay
     blendMode: add
 bargonite_white:
   transparency: true
   texture:
-    base: bargonite
+    base: bargonite_white
+    overlay: bargonite_white_overlay
     blendMode: add
 bargonite_yellow:
   transparency: true
   texture:
-    base: bargonite
+    base: bargonite_yellow
+    overlay: bargonite_yellow_overlay
     blendMode: add
 bauxite:
   texture:
@@ -139,26 +159,19 @@ brass_patinated:
 bricks:
   texture:
     base: bricks_side
-  textureBottom:
-    base: bricks_top
-  textureTop:
+  textureOpY:
     base: bricks_top
 bricks_lightweight:
   texture:
     base: bricks_light_side
     overlay: bricks_light_side_overlay
-  textureBottom:
-    base: bricks_light_top
-    overlay: bricks_light_top_overlay
-  textureTop:
+  textureOpY:
     base: bricks_light_top
     overlay: bricks_light_top_overlay
 bricks_loam:
   texture:
     base: bricks_loam_side
-  textureBottom:
-    base: bricks_loam_top
-  textureTop:
+  textureOpY:
     base: bricks_loam_top
 bronze:
   texture:
@@ -193,9 +206,7 @@ cactus_small_green_bud:
 cactus_small_green_stem:
   texture:
     base: cactus_small_green_side
-  textureBottom:
-    base: cactus_small_green_side
-  textureTop:
+  textureOpY:
     base: cactus_small_green_bottom
 cactus_small_red_bud:
   texture:
@@ -207,10 +218,8 @@ cactus_small_red_bud:
 cactus_small_red_stem:
   texture:
     base: cactus_small_red_side
-  textureBottom:
+  textureOpY:
     base: cactus_small_red_bottom
-  textureTop:
-    base: cactus_small_red_side
 cactus_small_yellow_bud:
   texture:
     base: cactus_small_yellow_side
@@ -221,9 +230,7 @@ cactus_small_yellow_bud:
 cactus_small_yellow_stem:
   texture:
     base: cactus_small_yellow_side
-  textureBottom:
-    base: cactus_small_yellow_bottom
-  textureTop:
+  textureOpY:
     base: cactus_small_yellow_bottom
 carbonate_lithium:
   texture:
@@ -250,84 +257,84 @@ clay:
     overlay: clay_overlay
 cloth_black:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_black
+    overlay: cloth_black_overlay
 cloth_blue:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_blue
+    overlay: cloth_blue_overlay
 cloth_blue_dark:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_blue_dark
+    overlay: cloth_blue_dark_overlay
 cloth_blue_light:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_blue_light
+    overlay: cloth_blue_light_overlay
 cloth_brown:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_brown
+    overlay: cloth_brown_overlay
 cloth_cyan:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_cyan
+    overlay: cloth_cyan_overlay
 cloth_green:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_green
+    overlay: cloth_green_overlay
 cloth_green_dark:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_green_dark
+    overlay: cloth_green_dark_overlay
 cloth_grey:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_grey
+    overlay: cloth_grey_overlay
 cloth_lime:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_lime
+    overlay: cloth_lime_overlay
 cloth_magenta:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_magenta
+    overlay: cloth_magenta_overlay
 cloth_orange:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_orange
+    overlay: cloth_orange_overlay
 cloth_pink:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_pink
+    overlay: cloth_pink_overlay
 cloth_purple:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_purple
+    overlay: cloth_purple_overlay
 cloth_purple_dark:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_purple_dark
+    overlay: cloth_purple_dark_overlay
 cloth_red:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_red
+    overlay: cloth_red_overlay
 cloth_red_dark:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_red_dark
+    overlay: cloth_red_dark_overlay
 cloth_white:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_white
+    overlay: cloth_white_overlay
 cloth_yellow:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_yellow
+    overlay: cloth_yellow_overlay
 cloth_yellow_light:
   texture:
-    base: cloth
-    overlay: cloth_overlay
+    base: cloth_yellow_light
+    overlay: cloth_yellow_light_overlay
 coal:
   texture:
     base: coal
@@ -349,12 +356,8 @@ concrete:
     base: concrete_side
     overlay: concrete_side_overlay
     blendMode: subtract
-  textureBottom:
+  textureOpY:
     base: concrete_top
-    blendMode: subtract
-  textureTop:
-    base: concrete_side
-    overlay: concrete_side_overlay
     blendMode: subtract
 copper:
   texture:
@@ -372,9 +375,7 @@ diatomite:
     base: diatomite
     overlay: diatomite_overlay
 dirt:
-  texture:
-    base: dirt
-    overlay: dirt_overlay
+  texture: dirt
 dolomite:
   texture:
     base: dolomite
@@ -457,55 +458,53 @@ galena:
 gelignite:
   texture:
     base: gelignite_side
-  textureBottom:
+  textureOpY:
     base: gelignite_top
-  textureTop:
-    base: gelignite_side
 glass:
   transparency: true
   texture:
     base: glass
-    overlay: glass_overlay
+    overlay: glass_overlay_white
 glass_bargonite_blue:
   transparency: true
   texture:
-    base: glass_bargonite
-    overlay: glass_overlay
+    base: glass_bargonite_blue
+    overlay: glass_overlay_blue
 glass_bargonite_cyan:
   transparency: true
   texture:
-    base: glass_bargonite
-    overlay: glass_overlay
+    base: glass_bargonite_cyan
+    overlay: glass_overlay_cyan
 glass_bargonite_green:
   transparency: true
   texture:
-    base: glass_bargonite
-    overlay: glass_overlay
+    base: glass_bargonite_green
+    overlay: glass_overlay_green
 glass_bargonite_magenta:
   transparency: true
   texture:
-    base: glass_bargonite
-    overlay: glass_overlay
+    base: glass_bargonite_magenta
+    overlay: glass_overlay_magenta
 glass_bargonite_orange:
   transparency: true
   texture:
-    base: glass_bargonite
-    overlay: glass_overlay
+    base: glass_bargonite_orange
+    overlay: glass_overlay_orange
 glass_bargonite_red:
   transparency: true
   texture:
-    base: glass_bargonite
-    overlay: glass_overlay
+    base: glass_bargonite_red
+    overlay: glass_overlay_red
 glass_bargonite_white:
   transparency: true
   texture:
-    base: glass_bargonite
-    overlay: glass_overlay
+    base: glass_bargonite_white
+    overlay: glass_overlay_white
 glass_bargonite_yellow:
   transparency: true
   texture:
-    base: glass_bargonite
-    overlay: glass_overlay
+    base: glass_bargonite_yellow
+    overlay: glass_overlay_yellow
 glass_metal_frame:
   transparency: true
   texture:
@@ -526,11 +525,8 @@ gneiss:
   texture:
     base: gneiss_side
     overlay: gneiss_overlay
-  textureBottom:
+  textureOpY:
     base: gneiss_top
-    overlay: gneiss_overlay
-  textureTop:
-    base: gneiss_side
     overlay: gneiss_overlay
 gold:
   texture:
@@ -552,17 +548,14 @@ grass:
     overlay: grass_side
   textureTop:
     base: grass_top
-  textureBottom:
-    base: dirt
+  textureBottom: dirt
 grass_charred:
   texture:
     base: dirt
-    overlay: grass_side
-  textureBottom:
-    base: dirt
-    overlay: dirt_overlay
+    overlay: grass_charred_side
   textureTop:
-    base: grass_top
+    base: grass_charred_top
+  textureBottom: dirt
 gravel:
   texture:
     base: gravel
@@ -571,61 +564,61 @@ gypsum:
     base: gypsum
 gypsum_black:
   texture:
-    base: gypsum
+    base: gypsum_black
 gypsum_blue:
   texture:
-    base: gypsum
+    base: gypsum_blue
 gypsum_blue_dark:
   texture:
-    base: gypsum
+    base: gypsum_blue_dark
 gypsum_blue_light:
   texture:
-    base: gypsum
+    base: gypsum_blue_light
 gypsum_brown:
   texture:
-    base: gypsum
+    base: gypsum_brown
 gypsum_cyan:
   texture:
-    base: gypsum
+    base: gypsum_cyan
 gypsum_green:
   texture:
-    base: gypsum
+    base: gypsum_green
 gypsum_green_dark:
   texture:
-    base: gypsum
+    base: gypsum_green_dark
 gypsum_grey:
   texture:
-    base: gypsum
+    base: gypsum_grey
 gypsum_lime:
   texture:
-    base: gypsum
+    base: gypsum_lime
 gypsum_magenta:
   texture:
-    base: gypsum
+    base: gypsum_magenta
 gypsum_orange:
   texture:
-    base: gypsum
+    base: gypsum_orange
 gypsum_pink:
   texture:
-    base: gypsum
+    base: gypsum_pink
 gypsum_purple:
   texture:
-    base: gypsum
+    base: gypsum_purple
 gypsum_purple_dark:
   texture:
-    base: gypsum
+    base: gypsum_purple_dark
 gypsum_red:
   texture:
-    base: gypsum
+    base: gypsum_red
 gypsum_red_dark:
   texture:
-    base: gypsum
+    base: gypsum_red_dark
 gypsum_yellow:
   texture:
-    base: gypsum
+    base: gypsum_yellow
 gypsum_yellow_light:
   texture:
-    base: gypsum
+    base: gypsum_yellow_light
 hematite:
   texture:
     base: hematite
@@ -665,22 +658,22 @@ iron_rusty:
     overlay: iron_rusty_overlay
 lamp_blue_off:
   texture:
-    base: lamp_colored
+    base: lamp_colored_blue_off
 lamp_blue_on:
   texture:
-    base: lamp_colored
+    base: lamp_colored_blue_on
 lamp_cyan_off:
   texture:
-    base: lamp_colored
+    base: lamp_colored_cyan_off
 lamp_cyan_on:
   texture:
-    base: lamp_colored
+    base: lamp_colored_cyan_on
 lamp_green_off:
   texture:
-    base: lamp_colored
+    base: lamp_colored_green_off
 lamp_green_on:
   texture:
-    base: lamp_colored
+    base: lamp_colored_green_on
 lamp_led_off:
   texture:
     base: lamp_LED_off
@@ -689,10 +682,10 @@ lamp_led_on:
     base: lamp_LED_on
 lamp_magenta_off:
   texture:
-    base: lamp_colored
+    base: lamp_colored_magenta_off
 lamp_magenta_on:
   texture:
-    base: lamp_colored
+    base: lamp_colored_magenta_on
 lamp_off:
   texture:
     base: lamp_off
@@ -701,22 +694,22 @@ lamp_on:
     base: lamp_on
 lamp_orange_off:
   texture:
-    base: lamp_colored
+    base: lamp_colored_orange_off
 lamp_orange_on:
   texture:
-    base: lamp_colored
+    base: lamp_colored_orange_on
 lamp_red_off:
   texture:
-    base: lamp_colored
+    base: lamp_colored_red_off
 lamp_red_on:
   texture:
-    base: lamp_colored
+    base: lamp_colored_red_on
 lamp_white_off:
   texture:
-    base: lamp_colored
+    base: lamp_colored_white_off
 lamp_white_on:
   texture:
-    base: lamp_colored
+    base: lamp_colored_white_on
 lamp_xenon_off:
   texture:
     base: lamp_xenon_off
@@ -725,10 +718,10 @@ lamp_xenon_on:
     base: lamp_xenon_on
 lamp_yellow_off:
   texture:
-    base: lamp_colored
+    base: lamp_colored_off
 lamp_yellow_on:
   texture:
-    base: lamp_colored
+    base: lamp_colored_on
 lapis_lazuli:
   texture:
     base: lapis_lazuli
@@ -849,60 +842,62 @@ mud_dry_half:
     base: mud_dry_half
 mushroom_giant_cap_blue:
   texture:
-    base: mushroom_cap_spotted
+    base: mushroom_cap_blue
 mushroom_giant_cap_blue_dark:
   texture:
-    base: mushroom_cap_smooth
+    base: mushroom_cap_blue_dark
 mushroom_giant_cap_brown:
   texture:
-    base: mushroom_cap_smooth
+    base: mushroom_cap_brown
 mushroom_giant_cap_cyan:
   texture:
-    base: mushroom_cap_smooth
+    base: mushroom_cap_cyan
 mushroom_giant_cap_green:
   texture:
-    base: mushroom_cap_smooth
+    base: mushroom_cap_green
 mushroom_giant_cap_green_dark:
   texture:
-    base: mushroom_cap_spotted
+    base: mushroom_cap_green_dark
 mushroom_giant_cap_grey:
   texture:
-    base: mushroom_cap_spotted
+    base: mushroom_cap_grey
 mushroom_giant_cap_pink:
   texture:
-    base: mushroom_cap_spotted
+    base: mushroom_cap_pink
 mushroom_giant_cap_purple:
   texture:
-    base: mushroom_cap_spotted
+    base: mushroom_cap_purple
 mushroom_giant_cap_purple_dark:
   texture:
-    base: mushroom_cap_smooth
+    base: mushroom_cap_purple_dark
 mushroom_giant_cap_red:
   texture:
-    base: mushroom_cap_spotted
+    base: mushroom_cap_red
 mushroom_giant_cap_red_dark:
   texture:
-    base: mushroom_cap_smooth
+    base: mushroom_cap_red_dark
 mushroom_giant_cap_smooth_charred:
   texture:
-    base: mushroom_cap_smooth
+    base: mushroom_cap_smooth_charred
 mushroom_giant_cap_spotted_charred:
   texture:
-    base: mushroom_cap_spotted
+    base: mushroom_cap_spotted_charred
 mushroom_giant_lamella:
   texture:
     base: mushroom_lamella
+    overlay: sub_overlay
     blendMode: subtract
 mushroom_giant_lamella_charred:
   texture:
-    base: mushroom_lamella
+    base: mushroom_lamella_charred
+    overlay: sub_overlay
     blendMode: subtract
 mushroom_giant_stem:
   texture:
     base: mushroom_stem
 mushroom_giant_stem_charred:
   texture:
-    base: mushroom_stem
+    base: mushroom_stem_charred
 mushroom_small_blue:
   texture:
     base: mushroom_small_blue
@@ -943,9 +938,7 @@ mycelium:
   texture:
     base: dirt
     overlay: mycelium_side
-  textureBottom:
-    base: dirt
-    overlay: dirt_overlay
+  textureBottom: dirt
   textureTop:
     base: dirt
     overlay: mycelium_side
@@ -1082,7 +1075,7 @@ rubber:
     base: rubber
 rubber_charred:
   texture:
-    base: rubber
+    base: rubber_charred
 ruby:
   texture:
     base: ruby
@@ -1095,16 +1088,15 @@ salpeter:
 sand:
   texture:
     base: sand
+sand_black:
+  texture:
+    base: sand_black
 sand_red:
   texture:
     base: sand_red
-sandbags:
+sand_white:
   texture:
-    base: sandbags_side
-  textureBottom:
-    base: sandbags_top
-  textureTop:
-    base: sandbags_top
+    base: sand_white
 sandstone:
   texture:
     base: sandstone
@@ -1116,16 +1108,12 @@ sandstone_bricks:
 sandstone_chiseled:
   texture:
     base: stone_chiseled_sand_side
-  textureBottom:
-    base: stone_chiseled_sand_top
-  textureTop:
+  textureOpY:
     base: stone_chiseled_sand_top
 sandstone_chiseled_ornament:
   texture:
     base: stone_chiseled_sand_ornament_side
-  textureBottom:
-    base: stone_chiseled_sand_ornament_top
-  textureTop:
+  textureOpY:
     base: stone_chiseled_sand_ornament_top
 sandstone_cut:
   texture:
@@ -1141,16 +1129,12 @@ sandstone_red_bricks:
 sandstone_red_chiseled:
   texture:
     base: stone_chiseled_sand_red_side
-  textureBottom:
-    base: stone_chiseled_sand_red_top
-  textureTop:
+  textureOpY:
     base: stone_chiseled_sand_red_top
 sandstone_red_chiseled_ornament:
   texture:
     base: stone_chiseled_sand_red_ornament_side
-  textureBottom:
-    base: stone_chiseled_sand_red_ornament_top
-  textureTop:
+  textureOpY:
     base: stone_chiseled_sand_red_ornament_top
 sandstone_red_cut:
   texture:
@@ -1267,9 +1251,7 @@ steel_tungsten_plating:
     base: plating_steel_tungsten
     overlay: plating_steel_tungsten_overlay
 stone:
-  texture:
-    base: stone
-    overlay: stone_overlay
+  texture: stone
 stone_bricks:
   texture:
     base: stone_bricks
@@ -1284,9 +1266,7 @@ stone_mycelia_icecaps:
   texture:
     base: stone
     overlay: stone_mycelia_icecaps_side
-  textureBottom:
-    base: stone
-    overlay: stone_overlay
+  textureBottom: stone
   textureTop:
     base: stone
     overlay: stone_mycelia_icecaps_top
@@ -1304,9 +1284,7 @@ succulent_blue_bud:
 succulent_blue_stem:
   texture:
     base: succulent_blue_side
-  textureBottom:
-    base: succulent_blue_bottom
-  textureTop:
+  textureOpY:
     base: succulent_blue_bottom
 succulent_purple_bud:
   texture:
@@ -1318,9 +1296,7 @@ succulent_purple_bud:
 succulent_purple_stem:
   texture:
     base: succulent_purple_side
-  textureBottom:
-    base: succulent_purple_bottom
-  textureTop:
+  textureOpY:
     base: succulent_purple_bottom
 succulent_stone_bud:
   texture:
@@ -1332,9 +1308,7 @@ succulent_stone_bud:
 succulent_stone_stem:
   texture:
     base: succulent_stone_side
-  textureBottom:
-    base: succulent_stone_bottom
-  textureTop:
+  textureOpY:
     base: succulent_stone_bottom
 sulfur:
   texture:
@@ -1345,7 +1319,7 @@ tarmac:
     base: tarmac
 tarmac_semisolid:
   texture:
-    base: tarmac
+    base: tarmac_semisolid
 tholin:
   texture:
     base: tholin
@@ -1400,145 +1374,141 @@ wood_coniferous:
     base: wood_coniferous
 wood_coniferous_charred:
   texture:
-    base: wood_coniferous
+    base: wood_coniferous_charred
 wood_coniferous_planks:
   texture:
     base: wooden_planks_coniferous_side
-  textureBottom:
-    base: wooden_planks_coniferous_top
-  textureTop:
+  textureOpY:
     base: wooden_planks_coniferous_top
 wood_coniferous_planks_charred:
   texture:
-    base: wooden_planks_coniferous_side
-  textureBottom:
-    base: wooden_planks_coniferous_top
-  textureTop:
-    base: wooden_planks_coniferous_top
+    base: wooden_planks_coniferous_side_charred
+  textureOpY:
+    base: wooden_planks_coniferous_top_charred
 wood_dead:
   texture:
     base: wood_dead
 wood_dead_charred:
   texture:
-    base: wood_dead
+    base: wood_dead_charred
 wood_dead_planks:
   texture:
     base: wooden_planks_dead
 wood_dead_planks_charred:
   texture:
-    base: wooden_planks_dead
+    base: wooden_planks_dead_charred
 wood_deciduous:
   texture:
     base: wood_deciduous
 wood_deciduous_charred:
   texture:
-    base: wood_deciduous
+    base: wood_deciduous_charred
 wood_deciduous_planks:
   texture:
     base: wooden_planks_deciduous
 wood_deciduous_planks_charred:
   texture:
-    base: wooden_planks_deciduous
+    base: wooden_planks_deciduous_charred
 wood_fruit:
   texture:
     base: wood_fruit
 wood_fruit_charred:
   texture:
-    base: wood_fruit
+    base: wood_fruit_charred
 wood_fruit_planks:
   texture:
     base: wooden_planks_fruit
 wood_fruit_planks_charred:
   texture:
-    base: wooden_planks_fruit
+    base: wooden_planks_fruit_charred
 wood_jungle:
   texture:
     base: wood_jungle
 wood_jungle_charred:
   texture:
-    base: wood_jungle
+    base: wood_jungle_charred
 wood_jungle_planks:
   texture:
     base: wooden_planks_jungle
 wood_jungle_planks_charred:
   texture:
-    base: wooden_planks_jungle
+    base: wooden_planks_jungle_charred
 wood_mangrove:
   texture:
     base: wood_mangrove
 wood_mangrove_charred:
   texture:
-    base: wood_mangrove
+    base: wood_mangrove_charred
 wood_mangrove_planks:
   texture:
     base: wooden_planks_mangrove
 wood_mangrove_planks_charred:
   texture:
-    base: wooden_planks_mangrove
+    base: wooden_planks_mangrove_charred
 wood_palm:
   texture:
     base: wood_palm
 wood_palm_charred:
   texture:
-    base: wood_palm
+    base: wood_palm_charred
 wood_palm_planks:
   texture:
     base: wooden_planks_palm_side
+  textureOpY:
+    base: wooden_planks_palm_top
 wood_palm_planks_charred:
   texture:
-    base: wooden_planks_palm_side
-  textureBottom:
-    base: wooden_planks_palm_top
-  textureTop:
-    base: wooden_planks_palm_top
+    base: wooden_planks_palm_side_charred
+  textureOpY:
+    base: wooden_planks_palm_top_charred
 wood_rubber:
   texture:
     base: wood_rubber
 wood_rubber_charred:
   texture:
-    base: wood_rubber
+    base: wood_rubber_charred
 wood_rubber_planks:
   texture:
     base: wooden_planks_rubber
 wood_rubber_planks_charred:
   texture:
-    base: wooden_planks_rubber
+    base: wooden_planks_rubber_charred
 wood_savanna:
   texture:
     base: wood_savanna
 wood_savanna_charred:
   texture:
-    base: wood_savanna
+    base: wood_savanna_charred
 wood_savanna_planks:
   texture:
     base: wooden_planks_savanna
 wood_savanna_planks_charred:
   texture:
-    base: wooden_planks_savanna
+    base: wooden_planks_savanna_charred
 wood_sugar:
   texture:
     base: wood_sugar
 wood_sugar_charred:
   texture:
-    base: wood_sugar
+    base: wood_sugar_charred
 wood_sugar_planks:
   texture:
     base: wooden_planks_sugar
 wood_sugar_planks_charred:
   texture:
-    base: wooden_planks_sugar
+    base: wooden_planks_sugar_charred
 wood_swamp:
   texture:
     base: wood_swamp
 wood_swamp_charred:
   texture:
-    base: wood_swamp
+    base: wood_swamp_charred
 wood_swamp_planks:
   texture:
     base: wooden_planks_swamp
 wood_swamp_planks_charred:
   texture:
-    base: wooden_planks_swamp
+    base: wooden_planks_swamp_charred
 zinc:
   texture:
     base: zinc
