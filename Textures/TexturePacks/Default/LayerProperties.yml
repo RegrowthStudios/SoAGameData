@@ -39,51 +39,67 @@ ash_volcanic:
   method: repeat
 bargonite_blue:
   path: Blocks/Minerals/bargonite.png
+  color: [37, 37, 214]
   method: repeat
 bargonite_blue_overlay:
   path: Blocks/Misc/add_overlay.png
+  color: [37, 37, 214]
   method: connect
 bargonite_cyan:
   path: Blocks/Minerals/bargonite.png
+  color: [37, 214, 214]
   method: repeat
 bargonite_cyan_overlay:
   path: Blocks/Misc/add_overlay.png
+  color: [37, 214, 214]
   method: connect
 bargonite_green:
   path: Blocks/Minerals/bargonite.png
+  color: [37, 214, 37]
   method: repeat
 bargonite_green_overlay:
   path: Blocks/Misc/add_overlay.png
+  color: [37, 214, 37]
   method: connect
 bargonite_magenta:
   path: Blocks/Minerals/bargonite.png
+  color: [214, 37, 214]
   method: repeat
 bargonite_magenta_overlay:
   path: Blocks/Misc/add_overlay.png
+  color: [214, 37, 214]
   method: connect
 bargonite_orange:
   path: Blocks/Minerals/bargonite.png
+  color: [214, 126, 37]
   method: repeat
 bargonite_orange_overlay:
   path: Blocks/Misc/add_overlay.png
+  color: [214, 126, 37]
   method: connect
 bargonite_red:
   path: Blocks/Minerals/bargonite.png
+  color: [214, 37, 37]
   method: repeat
 bargonite_red_overlay:
   path: Blocks/Misc/add_overlay.png
+  color: [214, 37, 37]
   method: connect
 bargonite_white:
   path: Blocks/Minerals/bargonite.png
+  color: [214, 214, 214]
   method: repeat
 bargonite_white_overlay:
   path: Blocks/Misc/add_overlay.png
+  color: [214, 214, 214]
   method: connect
 bargonite_yellow:
   path: Blocks/Minerals/bargonite.png
+  color: [214, 214, 37]
   method: repeat
 bargonite_yellow_overlay:
   path: Blocks/Misc/add_overlay.png
+  color: [214, 214, 37]
   method: connect
 basalt:
   path: Blocks/Terrain/basalt.png
@@ -225,107 +241,141 @@ clay:
 clay_overlay:
   path: Blocks/Terrain/clay_overlay.png
   method: connect
-cloth_brown:
+cloth_black:
   path: Blocks/Building/cloth.png
+  color: [32, 32, 32]
   method: repeat
-cloth_brown_overlay:
+cloth_black_overlay:
   path: Blocks/Building/cloth_overlay.png
+  color: [32, 32, 32]
   method: connect
 cloth_blue:
   path: Blocks/Building/cloth.png
+  color: [0, 0, 255]
   method: repeat
 cloth_blue_overlay:
   path: Blocks/Building/cloth_overlay.png
+  color: [0, 0, 255]
   method: connect
 cloth_blue_dark:
   path: Blocks/Building/cloth.png
+  color: [0, 0, 150]
   method: repeat
 cloth_blue_dark_overlay:
   path: Blocks/Building/cloth_overlay.png
+  color: [0, 0, 150]
   method: connect
 cloth_blue_light:
   path: Blocks/Building/cloth.png
+  color: [128, 200, 255]
   method: repeat
 cloth_blue_light_overlay:
   path: Blocks/Building/cloth_overlay.png
+  color: [128, 200, 255]
   method: connect
 cloth_brown:
   path: Blocks/Building/cloth.png
+  color: [128, 80, 0]
   method: repeat
 cloth_brown_overlay:
   path: Blocks/Building/cloth_overlay.png
+  color: [128, 80, 0]
   method: connect
 cloth_cyan:
   path: Blocks/Building/cloth.png
+  color: [0, 200, 200]
   method: repeat
 cloth_cyan_overlay:
   path: Blocks/Building/cloth_overlay.png
+  color: [0, 200, 200]
   method: connect
 cloth_green:
   path: Blocks/Building/cloth.png
+  color: [0, 128, 0]
   method: repeat
 cloth_green_overlay:
   path: Blocks/Building/cloth_overlay.png
+  color: [0, 128, 0]
   method: connect
 cloth_green_dark:
   path: Blocks/Building/cloth.png
+  color: [0, 80, 0]
   method: repeat
 cloth_green_dark_overlay:
   path: Blocks/Building/cloth_overlay.png
+  color: [0, 80, 0]
   method: connect
 cloth_grey:
   path: Blocks/Building/cloth.png
+  color: [128, 128, 128]
   method: repeat
 cloth_grey_overlay:
   path: Blocks/Building/cloth_overlay.png
+  color: [128, 128, 128]
   method: connect
 cloth_lime:
   path: Blocks/Building/cloth.png
+  color: [0, 255, 0]
   method: repeat
 cloth_lime_overlay:
   path: Blocks/Building/cloth_overlay.png
+  color: [0, 255, 0]
   method: connect
 cloth_magenta:
   path: Blocks/Building/cloth.png
+  color: [255, 0, 255]
   method: repeat
 cloth_magenta_overlay:
   path: Blocks/Building/cloth_overlay.png
+  color: [255, 0, 255]
   method: connect
 cloth_orange:
   path: Blocks/Building/cloth.png
+  color: [255, 180, 0]
   method: repeat
 cloth_orange_overlay:
   path: Blocks/Building/cloth_overlay.png
+  color: [255, 180, 0]
   method: connect
 cloth_pink:
   path: Blocks/Building/cloth.png
+  color: [255, 200, 200]
   method: repeat
 cloth_pink_overlay:
   path: Blocks/Building/cloth_overlay.png
+  color: [255, 200, 200]
   method: connect
 cloth_purple:
   path: Blocks/Building/cloth.png
+  color: [150, 0, 255]
   method: repeat
 cloth_purple_overlay:
   path: Blocks/Building/cloth_overlay.png
+  color: [150, 0, 255]
   method: connect
 cloth_purple_dark:
   path: Blocks/Building/cloth.png
+  color: [75, 0, 128]
   method: repeat
 cloth_purple_dark_overlay:
   path: Blocks/Building/cloth_overlay.png
+  color: [75, 0, 128]
   method: connect
 cloth_red:
   path: Blocks/Building/cloth.png
+  color: [255, 0, 0]
   method: repeat
 cloth_red_overlay:
   path: Blocks/Building/cloth_overlay.png
+  color: [255, 0, 0]
   method: connect
 cloth_red_dark:
   path: Blocks/Building/cloth.png
+  color: [150, 0, 0]
   method: repeat
 cloth_red_dark_overlay:
   path: Blocks/Building/cloth_overlay.png
+  color: [150, 0, 0]
   method: connect
 cloth_white:
   path: Blocks/Building/cloth.png
@@ -335,15 +385,19 @@ cloth_white_overlay:
   method: connect
 cloth_yellow:
   path: Blocks/Building/cloth.png
+  color: [255, 255, 0]
   method: repeat
 cloth_yellow_overlay:
   path: Blocks/Building/cloth_overlay.png
+  color: [255, 255, 0]
   method: connect
 cloth_yellow_light:
   path: Blocks/Building/cloth.png
+  color: [255, 255, 180]
   method: repeat
 cloth_yellow_light_overlay:
   path: Blocks/Building/cloth_overlay.png
+  color: [255, 255, 180]
   method: connect
 coal:
   path: Blocks/Minerals/coal.png
@@ -524,27 +578,34 @@ glass:
   method: repeat
 glass_bargonite_blue:
   path: Blocks/Building/glass_bargonite.png
+  color: [0, 0, 255]
   method: repeat
 glass_bargonite_cyan:
   path: Blocks/Building/glass_bargonite.png
+  color: [0, 200, 200]
   method: repeat
 glass_bargonite_green:
   path: Blocks/Building/glass_bargonite.png
+  color: [0, 255, 0]
   method: repeat
 glass_bargonite_magenta:
   path: Blocks/Building/glass_bargonite.png
+  color: [255, 0, 255]
   method: repeat
 glass_bargonite_orange:
   path: Blocks/Building/glass_bargonite.png
+  color: [255, 150, 0]
   method: repeat
 glass_bargonite_red:
   path: Blocks/Building/glass_bargonite.png
+  color: [255, 0, 0]
   method: repeat
 glass_bargonite_white:
   path: Blocks/Building/glass_bargonite.png
   method: repeat
 glass_bargonite_yellow:
   path: Blocks/Building/glass_bargonite.png
+  color: [255, 255, 0]
   method: repeat
 glass_metal_frame:
   path: Blocks/Building/glass_metal_frame.png
@@ -554,26 +615,32 @@ glass_metal_frame_top:
   path: Blocks/Building/glass_metal_frame_top.png
 glass_overlay_blue:
   path: Blocks/Building/glass_overlay.png
+  color: [0, 0, 255]
   method: connect
   innerSeams: true
 glass_overlay_cyan:
   path: Blocks/Building/glass_overlay.png
+  color: [0, 200, 200]
   method: connect
   innerSeams: true
 glass_overlay_green:
   path: Blocks/Building/glass_overlay.png
+  color: [0, 255, 0]
   method: connect
   innerSeams: true
 glass_overlay_magenta:
   path: Blocks/Building/glass_overlay.png
+  color: [255, 0, 255]
   method: connect
   innerSeams: true
 glass_overlay_orange:
   path: Blocks/Building/glass_overlay.png
+  color: [255, 150, 0]
   method: connect
   innerSeams: true
 glass_overlay_red:
   path: Blocks/Building/glass_overlay.png
+  color: [255, 0, 0]
   method: connect
   innerSeams: true
 glass_overlay_white:
@@ -582,6 +649,7 @@ glass_overlay_white:
   innerSeams: true
 glass_overlay_yellow:
   path: Blocks/Building/glass_overlay.png
+  color: [255, 255, 0]
   method: connect
   innerSeams: true
 glass_thornmite:
@@ -663,63 +731,82 @@ gravel:
   method: repeat
 gypsum_black:
   path: Blocks/Building/gypsum.png
+  color: [45, 45, 45]
   method: repeat
 gypsum_blue:
   path: Blocks/Building/gypsum.png
+  color: [40, 65, 200]
   method: repeat
 gypsum_blue_dark:
   path: Blocks/Building/gypsum.png
+  color: [50, 50, 160]
   method: repeat
 gypsum_blue_light:
   path: Blocks/Building/gypsum.png
+  color: [160, 200, 255]
   method: repeat
 gypsum_brown:
   path: Blocks/Building/gypsum.png
+  color: [150, 100, 0]
   method: repeat
 gypsum_cyan:
   path: Blocks/Building/gypsum.png
+  color: [100, 200, 200]
   method: repeat
 gypsum_green:
   path: Blocks/Building/gypsum.png
+  color: [60, 128, 60]
   method: repeat
 gypsum_green_dark:
   path: Blocks/Building/gypsum.png
+  color: [40, 80, 40]
   method: repeat
 gypsum_grey:
   path: Blocks/Building/gypsum.png
+  color: [150, 150, 150]
   method: repeat
 gypsum_lime:
   path: Blocks/Building/gypsum.png
+  color: [60, 222, 60]
   method: repeat
 gypsum_magenta:
   path: Blocks/Building/gypsum.png
+  color: [222, 100, 222]
   method: repeat
 gypsum_orange:
   path: Blocks/Building/gypsum.png
+  color: [245, 160, 0]
   method: repeat
 gypsum_pink:
   path: Blocks/Building/gypsum.png
+  color: [250, 200, 200]
   method: repeat
 gypsum_purple:
   path: Blocks/Building/gypsum.png
+  color: [150, 75, 255]
   method: repeat
 gypsum_purple_dark:
   path: Blocks/Building/gypsum.png
+  color: [85, 50, 140]
   method: repeat
 gypsum_red:
   path: Blocks/Building/gypsum.png
+  color: [222, 50, 50]
   method: repeat
 gypsum_red_dark:
   path: Blocks/Building/gypsum.png
+  color: [140, 40, 40]
   method: repeat
 gypsum_white:
   path: Blocks/Building/gypsum.png
   method: repeat
 gypsum_yellow:
   path: Blocks/Building/gypsum.png
+  color: [255, 230, 0]
   method: repeat
 gypsum_yellow_light:
   path: Blocks/Building/gypsum.png
+  color: [255, 148, 80]
   method: repeat
 hematite:
   path: Blocks/Minerals/hematite.png
@@ -755,36 +842,51 @@ iron_rusty_overlay:
   innerSeams: true
 lamp_colored_blue_off:
   path: Blocks/Electronics/lamp_colored.png
+  color: [0, 0, 30]
 lamp_colored_blue_on:
   path: Blocks/Electronics/lamp_colored.png
+  color: [0, 0, 255]
 lamp_colored_cyan_off:
   path: Blocks/Electronics/lamp_colored.png
+  color: [0, 24, 24]
 lamp_colored_cyan_on:
   path: Blocks/Electronics/lamp_colored.png
+  color: [0, 200, 200]
 lamp_colored_green_off:
   path: Blocks/Electronics/lamp_colored.png
+  color: [0, 30, 0]
 lamp_colored_green_on:
   path: Blocks/Electronics/lamp_colored.png
+  color: [0, 255, 0]
 lamp_colored_magenta_off:
   path: Blocks/Electronics/lamp_colored.png
+  color: [30, 0, 30]
 lamp_colored_magenta_on:
   path: Blocks/Electronics/lamp_colored.png
+  color: [255, 0, 255]
 lamp_colored_orange_off:
   path: Blocks/Electronics/lamp_colored.png
+  color: [30, 18, 0]
 lamp_colored_orange_on:
   path: Blocks/Electronics/lamp_colored.png
+  color: [255, 150, 0]
 lamp_colored_red_off:
   path: Blocks/Electronics/lamp_colored.png
+  color: [30, 0, 0]
 lamp_colored_red_on:
   path: Blocks/Electronics/lamp_colored.png
+  color: [255, 0, 0]
 lamp_colored_white_off:
   path: Blocks/Electronics/lamp_colored.png
+  color: [30, 30, 30]
 lamp_colored_white_on:
   path: Blocks/Electronics/lamp_colored.png
 lamp_colored_yellow_off:
   path: Blocks/Electronics/lamp_colored.png
+  color: [30, 30, 0]
 lamp_colored_yellow_on:
   path: Blocks/Electronics/lamp_colored.png
+  color: [255, 255, 0]
 lamp_LED_off:
   path: Blocks/Electronics/lamp_LED_off.png
 lamp_LED_on:
@@ -891,55 +993,73 @@ mud_dry:
 mud_dry_half:
   path: Blocks/Terrain/mud_dry_half.png
   method: repeat
+mushroom_cap_brown:
+  path: Blocks/Flora_block/mushroom_cap_smooth.png
+  color: [160, 100, 30]
+  method: repeat
 mushroom_cap_blue:
   path: Blocks/Flora_block/mushroom_cap_spotted.png
+  color: [0, 10, 162]
   method: repeat
-mushroom_cap_blue_blue:
+mushroom_cap_blue_dark:
   path: Blocks/Flora_block/mushroom_cap_smooth.png
+  color: [0, 5, 88]
   method: repeat
 mushroom_cap_cyan:
   path: Blocks/Flora_block/mushroom_cap_smooth.png
+  color: [0, 200, 200]
   method: repeat
 mushroom_cap_green:
   path: Blocks/Flora_block/mushroom_cap_smooth.png
+  color: [120, 160, 40]
   method: repeat
 mushroom_cap_green_dark:
   path: Blocks/Flora_block/mushroom_cap_spotted.png
+  color: [70, 90, 0]
   method: repeat
 mushroom_cap_grey:
   path: Blocks/Flora_block/mushroom_cap_spotted.png
+  color: [100, 100, 100]
   method: repeat
 mushroom_cap_pink:
   path: Blocks/Flora_block/mushroom_cap_spotted.png
+  color: [255, 90, 200]
   method: repeat
 mushroom_cap_purple:
   path: Blocks/Flora_block/mushroom_cap_spotted.png
+  color: [150, 40, 200]
   method: repeat
 mushroom_cap_purple_dark:
   path: Blocks/Flora_block/mushroom_cap_smooth.png
+  color: [80, 25, 95]
   method: repeat
 mushroom_cap__red:
   path: Blocks/Flora_block/mushroom_cap_spotted.png
+  color: [200, 0, 0]
   method: repeat
 mushroom_cap_red_dark:
   path: Blocks/Flora_block/mushroom_cap_smooth.png
+  color: [125, 0, 0]
   method: repeat
 mushroom_cap_smooth:
   path: Blocks/Flora_block/mushroom_cap_smooth.png
   method: repeat
 mushroom_cap_smooth_charred:
   path: Blocks/Flora_block/mushroom_cap_smooth.png
+  color: [48, 48, 48]
   method: repeat
 mushroom_cap_spotted:
   path: Blocks/Flora_block/mushroom_cap_spotted.png
   method: repeat
 mushroom_cap_spotted_charred:
   path: Blocks/Flora_block/mushroom_cap_spotted.png
+  color: [48, 48, 48]
   method: repeat
 mushroom_lamella:
   path: Blocks/Flora_block/mushroom_lamella.png
 mushroom_lamella_charred:
   path: Blocks/Flora_block/mushroom_lamella.png
+  color: [48, 48, 48]
 mushroom_small_blue:
   path: Blocks/Flora_mesh/mushroom_small_blue.png
 mushroom_small_blue_dark:
@@ -969,6 +1089,7 @@ mushroom_stem:
   method: repeat
 mushroom_stem_charred:
   path: Blocks/Flora_block/mushroom_stem.png
+  color: [48, 48, 48]
   method: repeat
 mycelium_side:
   path: Blocks/Terrain/mycelium_side.png
@@ -1124,6 +1245,7 @@ rubber:
   path: Blocks/Products/rubber.png
 rubber_charred:
   path: Blocks/Products/rubber.png
+  color: [64, 64, 64]
 ruby:
   path: Blocks/Minerals/ruby.png
   normalPath: Blocks/Minerals/ruby_NRM.png
@@ -1221,6 +1343,9 @@ snow:
   method: repeat
 soda:
   path: Blocks/Minerals/soda.png
+soda_lithium:
+  path: Blocks/Minerals/soda.png
+  color: [235, 235, 235]
 steel:
   path: Blocks/Metals/steel.png
   method: repeat
@@ -1392,6 +1517,7 @@ tarmac:
   method: repeat
 tarmac_semisolid:
   path: Blocks/Building/tarmac.png
+  color: [170, 170, 170]
   method: repeat
 tholin:
   path: Blocks/Terrain/tholin.png
@@ -1456,75 +1582,88 @@ wood_coniferous:
   method: repeat
 wood_coniferous_charred:
   path: Blocks/Flora_block/wood_coniferous.png
+  color: [64, 64, 64]
   method: repeat
 wood_dead:
   path: Blocks/Flora_block/wood_dead.png
   method: repeat
 wood_dead_charred:
   path: Blocks/Flora_block/wood_dead.png
+  color: [64, 64, 64]
   method: repeat
 wood_deciduous:
   path: Blocks/Flora_block/wood_deciduous.png
   method: repeat
 wood_deciduous_charred:
   path: Blocks/Flora_block/wood_deciduous.png
+  color: [64, 64, 64]
   method: repeat
 wood_fruit:
   path: Blocks/Flora_block/wood_fruit.png
   method: repeat
 wood_fruit_charred:
   path: Blocks/Flora_block/wood_fruit.png
+  color: [64, 64, 64]
   method: repeat
 wood_jungle:
   path: Blocks/Flora_block/wood_jungle.png
   method: repeat
 wood_jungle_charred:
   path: Blocks/Flora_block/wood_jungle.png
+  color: [64, 64, 64]
   method: repeat
 wood_mangrove:
   path: Blocks/Flora_block/wood_mangrove.png
   method: repeat
 wood_mangrove_charred:
   path: Blocks/Flora_block/wood_mangrove.png
+  color: [64, 64, 64]
   method: repeat
 wood_palm:
   path: Blocks/Flora_block/wood_palm.png
   method: repeat
 wood_palm_charred:
   path: Blocks/Flora_block/wood_palm.png
+  color: [64, 64, 64]
   method: repeat
 wood_rubber:
   path: Blocks/Flora_block/wood_rubber.png
   method: repeat
 wood_rubber_charred:
   path: Blocks/Flora_block/wood_rubber.png
+  color: [64, 64, 64]
   method: repeat
 wood_savanna:
   path: Blocks/Flora_block/wood_savanna.png
   method: repeat
 wood_savanna_charred:
   path: Blocks/Flora_block/wood_savanna.png
+  color: [64, 64, 64]
   method: repeat
 wood_sugar:
   path: Blocks/Flora_block/wood_sugar.png
   method: repeat
 wood_sugar_charred:
   path: Blocks/Flora_block/wood_sugar.png
+  color: [64, 64, 64]
   method: repeat
 wood_swamp:
   path: Blocks/Flora_block/wood_swamp.png
   method: repeat
 wood_swamp_charred:
   path: Blocks/Flora_block/wood_swamp.png
+  color: [64, 64, 64]
   method: repeat
 wooden_planks_coniferous_side:
   path: Blocks/Building/wooden_planks_coniferous_side.png
   method: random
 wooden_planks_coniferous_side_charred:
   path: Blocks/Building/wooden_planks_coniferous_side.png
+  color: [48, 48, 48]
   method: random
 wooden_planks_coniferous_top:
   path: Blocks/Building/wooden_planks_coniferous_top.png
+  color: [48, 48, 48]
   method: random
 wooden_planks_coniferous_top_charred:
   path: Blocks/Building/wooden_planks_coniferous_top.png
@@ -1534,65 +1673,77 @@ wooden_planks_dead:
   method: random
 wooden_planks_dead_charred:
   path: Blocks/Building/wooden_planks_dead.png
+  color: [48, 48, 48]
   method: random
 wooden_planks_deciduous:
   path: Blocks/Building/wooden_planks_deciduous.png
+  method: random
 wooden_planks_deciduous_charred:
   path: Blocks/Building/wooden_planks_deciduous.png
+  color: [64, 64, 64]
   method: random
 wooden_planks_fruit:
   path: Blocks/Building/wooden_planks_fruit.png
   method: random
 wooden_planks_fruit_charred:
   path: Blocks/Building/wooden_planks_fruit.png
+  color: [64, 64, 64]
   method: random
 wooden_planks_jungle:
   path: Blocks/Building/wooden_planks_jungle.png
   method: random
 wooden_planks_jungle_charred:
   path: Blocks/Building/wooden_planks_jungle.png
+  color: [64, 64, 64]
   method: random
 wooden_planks_mangrove:
   path: Blocks/Building/wooden_planks_mangrove.png
   method: random
 wooden_planks_mangrove_charred:
   path: Blocks/Building/wooden_planks_mangrove.png
+  color: [64, 64, 64]
   method: random
 wooden_planks_palm_side:
   path: Blocks/Building/wooden_planks_palm_side.png
   method: random
 wooden_planks_palm_side_charred:
   path: Blocks/Building/wooden_planks_palm_side.png
+  color: [48, 48, 48]
   method: random
 wooden_planks_palm_top:
   path: Blocks/Building/wooden_planks_palm_top.png
   method: random
 wooden_planks_palm_top_charred:
   path: Blocks/Building/wooden_planks_palm_top.png
+  color: [48, 48, 48]
   method: random
 wooden_planks_rubber:
   path: Blocks/Building/wooden_planks_rubber.png
   method: random
 wooden_planks_rubber_charred:
   path: Blocks/Building/wooden_planks_rubber.png
+  color: [48, 48, 48]
   method: random
 wooden_planks_savanna:
   path: Blocks/Building/wooden_planks_savanna.png
   method: random
 wooden_planks_savanna_charred:
   path: Blocks/Building/wooden_planks_savanna.png
+  color: [64, 64, 64]
   method: random
 wooden_planks_sugar:
   path: Blocks/Building/wooden_planks_sugar.png
   method: random
 wooden_planks_sugar_charred:
   path: Blocks/Building/wooden_planks_sugar.png
+  color: [48, 48, 48]
   method: random
 wooden_planks_swamp:
   path: Blocks/Building/wooden_planks_swamp.png
   method: random
 wooden_planks_swamp_charred:
   path: Blocks/Building/wooden_planks_swamp.png
+  color: [64, 64, 64]
   method: random
 zinc:
   path: Blocks/Metals/zinc.png

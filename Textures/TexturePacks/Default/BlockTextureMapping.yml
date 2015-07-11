@@ -234,7 +234,7 @@ cactus_small_yellow_stem:
     base: cactus_small_yellow_bottom
 carbonate_lithium:
   texture:
-    base: soda
+    base: soda_lithium
 carbonate_sodium:
   texture:
     base: soda
@@ -840,6 +840,9 @@ mud_dry:
 mud_dry_half:
   texture:
     base: mud_dry_half
+mushroom_giant_cap_brown:
+  texture:
+    base: mushroom_cap_brown
 mushroom_giant_cap_blue:
   texture:
     base: mushroom_cap_blue
