@@ -143,6 +143,7 @@ brass_overlay:
   path: Blocks/Metals/brass_overlay.png
   method: connect
   innerSeams: true
+  coupling: [brass_overlay]
 brass_patinated:
   path: Blocks/Metals/brass_patinated.png
   method: repeat
@@ -150,6 +151,7 @@ brass_patinated_overlay:
   path: Blocks/Metals/brass_patinated_overlay.png
   method: connect
   innerSeams: true
+  coupling: [brass_overlay]
 bricks_side:
   path: Blocks/Building/bricks_side.png
   method: random
@@ -187,6 +189,7 @@ bronze_overlay:
   path: Blocks/Metals/bronze_overlay.png
   method: connect
   innerSeams: true
+  coupling: [bronze_overlay]
 bronze_patinated:
   path: Blocks/Metals/bronze_patinated.png
   method: repeat
@@ -194,6 +197,7 @@ bronze_patinated_overlay:
   path: Blocks/Metals/bronze_patinated_overlay.png
   method: connect
   innerSeams: true
+  coupling: [bronze_overlay]
 cactus_death:
   path: Blocks/Flora_block/cactus_death.png
 cactus_fruit:
@@ -429,6 +433,7 @@ copper_overlay:
   path: Blocks/Metals/copper_overlay.png
   method: connect
   innerSeams: true
+  coupling: [copper_overlay]
 copper_patinated:
   path: Blocks/Metals/copper_patinated.png
   method: repeat
@@ -436,6 +441,7 @@ copper_patinated_overlay:
   path: Blocks/Metals/copper_patinated_overlay.png
   method: connect
   innerSeams: true
+  coupling: [copper_overlay]
 desert_chalice:
   path: Blocks/Flora_block/desert_chalice.png
 diamond:
@@ -454,6 +460,7 @@ dirt:
 dirt_overlay:
   path: Blocks/Terrain/dirt_overlay.png
   method: random
+  weights: [400,4,3,5,2,6,8,5]
 dolomite:
   path: Blocks/Terrain/dolomite.png
   method: repeat
@@ -696,6 +703,7 @@ grass_side:
   path: Blocks/Terrain/grass_side.png
   color: biome
   method: grass
+  coupling: [grass]
 grass_charred_side:
   path: Blocks/Terrain/grass_side.png
   method: grass
@@ -833,6 +841,7 @@ iron_overlay:
   path: Blocks/Metals/iron_overlay.png
   method: connect
   innerSeams: true
+  coupling: [iron_overlay]
 iron_rusty:
   path: Blocks/Metals/iron_rusty.png
   method: repeat
@@ -840,6 +849,7 @@ iron_rusty_overlay:
   path: Blocks/Metals/iron_rusty_overlay.png
   method: connect
   innerSeams: true
+  coupling: [iron_overlay]
 lamp_colored_blue_off:
   path: Blocks/Electronics/lamp_colored.png
   color: [0, 0, 30]
@@ -1094,6 +1104,7 @@ mushroom_stem_charred:
 mycelium_side:
   path: Blocks/Terrain/mycelium_side.png
   method: grass
+  coupling: [grass]
 mycelium_top:
   path: Blocks/Terrain/mycelium_top.png
   method: repeat
@@ -1203,10 +1214,12 @@ plating_steel:
   path: Blocks/Building/plating_steel.png
   method: connect
   innerSeams: true
+  coupling: [steel_plating]
 plating_steel_rusty:
   path: Blocks/Building/plating_steel_rusty.png
   method: connect
   innerSeams: true
+  coupling: [steel_plating]
 plating_steel_tungsten:
   path: Blocks/Building/plating_steel_tungsten.png
   method: repeat
@@ -1349,17 +1362,21 @@ soda_lithium:
 steel:
   path: Blocks/Metals/steel.png
   method: repeat
+  coupling: [steel]
 steel_overlay:
   path: Blocks/Metals/steel_overlay.png
   method: connect
   innerSeams: true
+  coupling: [steel_overlay]
 steel_rusty:
   path: Blocks/Metals/steel_rusty.png
   method: repeat
+  coupling: [steel]
 steel_rusty_overlay:
   path: Blocks/Metals/steel_rusty_overlay.png
   method: connect
   innerSeams: true
+  coupling: [steel_overlay]
 steel_tungsten:
   path: Blocks/Metals/steel_tungsten.png
   method: repeat
@@ -1378,6 +1395,7 @@ stone_bricks:
 stone_bricks_granite:
   path: Blocks/Building/stone_bricks_granite.png
   method: random
+  weights: [10,10,10,3,3,2,4,2]
 stone_bricks_lime:
   path: Blocks/Building/stone_bricks_lime.png
   method: random
@@ -1387,6 +1405,7 @@ stone_bricks_marble:
 stone_bricks_marble_overlay:
   path: Blocks/Building/stone_bricks_marble_overlay.png
   method: random
+  weights: [2,2,2,5,1,3,2,2]
 stone_bricks_sand:
   path: Blocks/Building/stone_bricks_sand.png
   method: repeat
@@ -1476,6 +1495,7 @@ stone_mycelia_icecaps_top:
 stone_overlay:
   path: Blocks/Terrain/stone_overlay.png
   method: connect
+  coupling: texture
 sub_overlay:
   path: Blocks/Misc/sub_overlay.png
   method: connect
@@ -1657,10 +1677,12 @@ wood_swamp_charred:
 wooden_planks_coniferous_side:
   path: Blocks/Building/wooden_planks_coniferous_side.png
   method: random
+  weights: [5,5,5,10,10,3,3]
 wooden_planks_coniferous_side_charred:
   path: Blocks/Building/wooden_planks_coniferous_side.png
   color: [48, 48, 48]
   method: random
+  weights: [5,5,5,10,10,3,3]
 wooden_planks_coniferous_top:
   path: Blocks/Building/wooden_planks_coniferous_top.png
   color: [48, 48, 48]
@@ -1671,45 +1693,57 @@ wooden_planks_coniferous_top_charred:
 wooden_planks_dead:
   path: Blocks/Building/wooden_planks_dead.png
   method: random
+  weights: [10,3,3,3,3,4,4,4,4,5,5,5,5,6]
 wooden_planks_dead_charred:
   path: Blocks/Building/wooden_planks_dead.png
   color: [48, 48, 48]
   method: random
+  weights: [10,3,3,3,3,4,4,4,4,5,5,5,5,6]
 wooden_planks_deciduous:
   path: Blocks/Building/wooden_planks_deciduous.png
   method: random
+  weights: [10,3,3,3,3,4,4,4,4,5,5,5,5,6]
 wooden_planks_deciduous_charred:
   path: Blocks/Building/wooden_planks_deciduous.png
   color: [64, 64, 64]
   method: random
+  weights: [10,3,3,3,3,4,4,4,4,5,5,5,5,6]
 wooden_planks_fruit:
   path: Blocks/Building/wooden_planks_fruit.png
   method: random
+  weights: [10,3,3,3,3,4,4,4,4,5,5,5,5,6]
 wooden_planks_fruit_charred:
   path: Blocks/Building/wooden_planks_fruit.png
   color: [64, 64, 64]
   method: random
+  weights: [10,3,3,3,3,4,4,4,4,5,5,5,5,6]
 wooden_planks_jungle:
   path: Blocks/Building/wooden_planks_jungle.png
   method: random
+  weights: [10,3,3,3,3,4,4,4,4,5,5,5,5,6]
 wooden_planks_jungle_charred:
   path: Blocks/Building/wooden_planks_jungle.png
   color: [64, 64, 64]
   method: random
+  weights: [10,3,3,3,3,4,4,4,4,5,5,5,5,6]
 wooden_planks_mangrove:
   path: Blocks/Building/wooden_planks_mangrove.png
   method: random
+  weights: [8,8,4,4,5,5,5,3,3,2,1,2,1,1]
 wooden_planks_mangrove_charred:
   path: Blocks/Building/wooden_planks_mangrove.png
   color: [64, 64, 64]
   method: random
+  weights: [8,8,4,4,5,5,5,3,3,2,1,2,1,1]
 wooden_planks_palm_side:
   path: Blocks/Building/wooden_planks_palm_side.png
   method: random
+  weights: [10,3,3,3,3,4,4,4,4,5,5,5,5,6]
 wooden_planks_palm_side_charred:
   path: Blocks/Building/wooden_planks_palm_side.png
   color: [48, 48, 48]
   method: random
+  weights: [10,3,3,3,3,4,4,4,4,5,5,5,5,6]
 wooden_planks_palm_top:
   path: Blocks/Building/wooden_planks_palm_top.png
   method: random
@@ -1720,31 +1754,39 @@ wooden_planks_palm_top_charred:
 wooden_planks_rubber:
   path: Blocks/Building/wooden_planks_rubber.png
   method: random
+  weights: [6,5,5,3,3,3,3,3,3,2,2,4,4,4]
 wooden_planks_rubber_charred:
   path: Blocks/Building/wooden_planks_rubber.png
   color: [48, 48, 48]
   method: random
+  weights: [6,5,5,3,3,3,3,3,3,2,2,4,4,4]
 wooden_planks_savanna:
   path: Blocks/Building/wooden_planks_savanna.png
   method: random
+  weights: [50,15,15,15,25,25,25,20,5,1,40,15,15,5]
 wooden_planks_savanna_charred:
   path: Blocks/Building/wooden_planks_savanna.png
   color: [64, 64, 64]
   method: random
+  weights: [50,15,15,15,25,25,25,20,5,1,40,15,15,5]
 wooden_planks_sugar:
   path: Blocks/Building/wooden_planks_sugar.png
   method: random
+  weights: [10,3,3,3,3,4,4,4,4,5,5,5,5,6]
 wooden_planks_sugar_charred:
   path: Blocks/Building/wooden_planks_sugar.png
   color: [48, 48, 48]
   method: random
+  weights: [10,3,3,3,3,4,4,4,4,5,5,5,5,6]
 wooden_planks_swamp:
   path: Blocks/Building/wooden_planks_swamp.png
   method: random
+  weights: [8,4,4,4,4,4,5,5,4,2,5,5,6,2]
 wooden_planks_swamp_charred:
   path: Blocks/Building/wooden_planks_swamp.png
   color: [64, 64, 64]
   method: random
+  weights: [8,4,4,4,4,4,5,5,4,2,5,5,6,2]
 zinc:
   path: Blocks/Metals/zinc.png
   method: repeat
