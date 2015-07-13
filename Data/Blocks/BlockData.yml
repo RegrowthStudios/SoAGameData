@@ -40,6 +40,26 @@ anfo:
 ash_volcanic:
   name: Volcanic Ash
   moveMod: 0.75
+bags_sand:
+  name: Sandbags
+  burnTransformID: sand
+  flammability: 1.5
+  moveMod: 0.8
+bags_sand_black:
+  name: Sandbags
+  burnTransformID: sand_black
+  flammability: 1.5
+  moveMod: 0.8
+bags_sand_red:
+  name: Sandbags
+  burnTransformID: sand_red
+  flammability: 1.5
+  moveMod: 0.8
+bags_sand_white:
+  name: Sandbags
+  burnTransformID: sand_white
+  flammability: 1.5
+  moveMod: 0.8
 bargonite_blue:
   name: Blue Bargonite Crystal
   allowsLight: true
@@ -1637,35 +1657,15 @@ salpeter:
 sand:
   name: Sand
   moveMod: 0.9
-sand_bags:
-  name: Sandbags (standard)
-  burnTransformID: sand
-  flammability: 1.5
-  moveMod: 0.8
 sand_black:
   name: Black Sand
   moveMod: 0.9
-sand_black_bags:
-  name: Sandbags (black)
-  burnTransformID: sand_black
-  flammability: 1.5
-  moveMod: 0.8
 sand_red:
   name: Red Sand
   moveMod: 0.9
-sand_red_bags:
-  name: Sandbags (red)
-  burnTransformID: sand_red
-  flammability: 1.5
-  moveMod: 0.8
 sand_white:
   name: White Sand
   moveMod: 0.9
-sand_white_bags:
-  name: Sandbags (white)
-  burnTransformID: sand_white
-  flammability: 1.5
-  moveMod: 0.8
 sandstone:
   name: Sandstone
 sandstone_bricks:
@@ -1838,9 +1838,15 @@ sink_mud:
 sink_sand:
   name: Sand Sink
   sinkID: sand
+sink_sand_black:
+  name: Black Sand Sink
+  sinkID: sand_black
 sink_sand_red:
   name: Red Sand Sink
   sinkID: sand_red
+sink_sand_white:
+  name: White Sand Sink
+  sinkID: sand_white
 sink_snow:
   name: Snow Sink
   sinkID: snow
@@ -1861,9 +1867,15 @@ spawner_mud:
 spawner_sand:
   name: Sand Spawner
   spawnID: sand
+spawner_sand_black:
+  name: Black Sand Spawner
+  spawnID: sand_black
 spawner_sand_red:
   name: Red Sand Spawner
   spawnID: sand_red
+spawner_sand_white:
+  name: White Sand Spawner
+  spawnID: sand_white
 spawner_snow:
   name: Snow Spawner
   spawnID: snow

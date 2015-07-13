@@ -10,7 +10,7 @@ liquidColor:
   freezeTemp: 88.0
   colorPath: _shared/water_color.png
   texturePath: _shared/water_a.png
-tempLatitudeFalloff: 190.0
+tempLatitudeFalloff: 350.0
 tempHeightFalloff: 5.0
 humLatitudeFalloff: 30.0
 humHeightFalloff: 1.0
@@ -66,10 +66,10 @@ baseHeight:
           octaves: 6
           persistence: 0.9
           frequency: 0.002
-          low: 10000.0
-          high: 20000.0
+  #        low: 10000.0
+  #        high: 20000.0
 temperature:
-  base: 172.0
+  base: 220.0
   funcs:
     - octaves: 6
       persistence: 0.75
@@ -82,8 +82,8 @@ humidity:
     - octaves: 6
       persistence: 0.75
       frequency: 0.0007
-      low: -128.0
-      high: 128.0
+      low: -178.0
+      high: 178.0
 surfaceBlock: "Grass Block"
 liquidBlock: "Water (100)"
 blockLayers:

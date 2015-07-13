@@ -3,34 +3,17 @@ arid_badlands:
   displayName: "Arid Badlands"
   mapColor: [230, 230, 158]
   childColorMap: "Planets/Aldrin/arid_badlands_biomes.png"
-  xAxis: noise
-  xNoise:
+  childNoise:
     funcs:
       - octaves: 4
         persistence: 0.8
-        frequency: 0.02
-        low: -50.0
-        high: 300.0
-  yAxis: height
-  heightScale: [0.0, 256.0]
+        frequency: 0.005
+  heightRange: [0.0, 256.0]
   children:
-    - id: sandy_desert
-      displayName: "Sandy Desert"
-      mapColor: [230, 230, 43]
-      terrainNoise:
-        funcs:
-          - type: noise_ridged
-            octaves: 6
-            persistence: 0.75
-            frequency: 0.2
-            low:  -100.0
-            high: 500.0
-    - id: oasis
-      displayName: "Oasis"
-      mapColor: [179, 201, 4]
     - id: plateau
       displayName: "Plateau"
       mapColor: [218, 132, 2]
+      noiseRange: [0.25, 2.0]
       terrainNoise:
         funcs:
           # Tall plateaus
@@ -49,6 +32,43 @@ arid_badlands:
             low: -7000.0
             high: 5000.0
             clamp: [0.0, 750.0]
+desert:
+  displayName: "Desert"
+  mapColor: [226, 228, 1]
+  noiseRange: [-2.0, -0.05]
+  childNoise:
+    funcs:
+    - octaves: 3
+      persistence: 0.8
+      frequency: 0.03
+  terrainNoise:
+    funcs:
+      - type: noise_ridged
+        octaves: 6
+        persistence: 0.75
+        frequency: 0.2
+        low: -100.0
+        high: 300.0
+  children:
+    - id: oasis
+      displayName: "Oasis"
+      mapColor: [0, 255, 0]
+      noiseRange: [-1.0, -0.545]
+      noiseScale: [9.0, 9.0]
+      heightRange: [-1000.0, 700.0]
+      terrainNoise:
+        funcs:
+          # Lower parent contribution
+          - type: constant
+            low: 0.1
+            op: mul
+          # Add noise
+          - type: noise
+            octaves: 3
+            persistence: 0.75
+            frequency: 1.2
+            low: -100.0
+            high: -1.0
 dry_plains:
   displayName: "Dry Plains"
   mapColor: [151, 151, 104]
@@ -63,16 +83,41 @@ jungle:
   mapColor: [26, 149, 64]
 savannah:
   displayName: "Savannah"
-  mapColor: [226, 228, 1]
+  mapColor: [128, 128, 0]
 sparse_forest:
   displayName: "Sparse Forest"
-  mapColor: [108, 119, 26]
+  mapColor: [54, 59, 10]
 taiga:
   displayName: "Taiga"
   mapColor: [0, 169, 157]
 temperate_forest:
   displayName: "Temperate Forest"
   mapColor: [26, 102, 27]
+  childNoise:
+    funcs:
+    - octaves: 3
+      persistence: 0.8
+      frequency: 0.03
+  children:
+    - id: swamp
+      displayName: "Swamp"
+      mapColor: [0, 255, 255]
+      noiseRange: [-1.0, -0.3]
+      noiseScale: [9.0, 9.0]
+      heightRange: [-1000.0, 200.0]
+      terrainNoise:
+        funcs:
+          # Lower parent contribution
+          - type: constant
+            low: 0.0
+            op: mul
+          # Add noise
+          - type: noise
+            octaves: 4
+            persistence: 0.75
+            frequency: 1.2
+            low: -12.0
+            high: 10.0
 tundra:
   displayName: "Tundra"
   mapColor: [0, 169, 227]
