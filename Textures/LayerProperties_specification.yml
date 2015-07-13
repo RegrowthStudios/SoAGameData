@@ -1,4 +1,4 @@
-﻿##########  LayerProperties.yml  -  specification and internal format/structure - last updated: 06.07.2015
+﻿##########  LayerProperties.yml  -  specification and internal format/structure - last updated: 12.07.2015
 
   #  LayerProperties.yml contains a list of all texture layers, sorted by their layer names
   #  This file contains information about the texture file paths, texture handling methods and color properties for each texture layer
@@ -44,12 +44,12 @@
   method: <connect | horizontal | vertical | grass | repeat | random | flora>
   #  Optional. If missing, then there's no texture handling method applied to the layer.
   #  For further explanations, additional properties, templates and restrictions for the texture handling methods, see below.
-  coupling: <id | texture | [list of layer names]>
+  coupling: <id | texture | [list of coupling groups]>
   #  Optional. If not specified in the file, the default setting should be "id".
-  #  id: Only blocks having the same block ID are coupled and will connect, blocks using the same layer but a different block ID do not connect to them
-  #  texture: All blocks using the same texture layer are coupled and will connect, independent of block ID
-  #  As an alternative, a list of layer names can be defined, separated by commas. The layers will connect to each other, independent of block IDs.
-  #  The layer name list only works when the coupled layers use the same connection method, otherwise they give an error
+  #  id: Only blocks with the same block ID are coupled and will connect, blocks using the same layer but a different block ID do not connect to them
+  #  texture: All blocks using this texture layer are coupled and the layer will connect, independent of block ID
+  #  As an alternative, a list of coupling groups can be defined, separated by commas. All layers within the same coupling group will connect to each other, independent of block IDs.
+  #  The coupling groups only work when the coupled layers use the same connection method, otherwise they give an error
 
 
 
@@ -124,10 +124,9 @@
 
   ###  Random multiblock flora method:
   method: flora
-  height: (n)
   #  Source texture can contain any number of tile columns, the number of rows of the tile sheet is calculated as following: y=(n²+n)/2
   #  n: Maximum growth height in blocks (equal to number of texture tiles for the tallest growth stage and number of possible growth stages)
-  #  The growth height must be defined, be at least 2 and must not be higher than 32, otherwise this method gives an error
+  #  The growth height must at least be 2 and must not be higher than 32, otherwise this method gives an error
   #  This method allows multiblock flora to use a separate texture for every growth stage as well as adding any number optional random variants
   #  Template for n=4 and 5 random variants: www.seedofandromeda.com/assets/images/modding/texture/method_flora.png
   #  The textures of all stages per random variant are arranged vertically in columns, with the smallest (1 block tall) at the top, and the tallest at the bottom
