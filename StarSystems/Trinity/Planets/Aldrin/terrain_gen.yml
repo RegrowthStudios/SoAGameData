@@ -1,4 +1,6 @@
 biomes: "Planets/Aldrin/biome_gen.yml"
+flora: "Planets/Aldrin/flora.yml"
+trees: "Planets/Aldrin/trees.yml"
 terrainColor: 
   tint: [255, 255, 255]
   colorPath: Planets/Aldrin/TerrainColor.png

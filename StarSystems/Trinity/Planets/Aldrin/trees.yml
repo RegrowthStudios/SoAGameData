@@ -1,0 +1,59 @@
+blossom:
+  height: [6, 70]
+  trunk:
+    # Bottom
+    - loc: 0.0
+      coreWidth: [1, 5]
+      barkWidth: [1, 2]
+      branchChance: [0.0, 0.0]
+      slope: 
+        min: [0, 0]
+        max: [1, 1]
+      coreBlock: "hardwood"
+      barkBlock: "hardbark"
+    # Middle
+    - loc: 0.5
+      coreWidth: [1, 3]
+      barkWidth: [1, 2]
+      branchChance: [0.1, 0.2]
+      slope: 
+        min: [0, 0]
+        max: [1, 1]
+      coreBlock: "hardwood"
+      barkBlock: "hardbark"
+      fruit:
+        id: "hanging_acorn"
+        chance: [0.005, 0.02]
+      branches:
+        coreWidth: [1, 2]
+        barkWidth: [1, 2]
+        branchChance: [0.05, 0.1]
+        coreBlock: "hardwood"
+        barkBlock: "hardbark"
+        fruit:
+          id: "hanging_acorn"
+          chance: 0.01
+        leaves:
+          type: cluster
+          width: [3, 4]
+          height: 2
+          block: "leaves"
+    # Top
+    - loc: 1.0
+      coreWidth: [1, 4]
+      barkWidth: [1, 2]
+      branchChance: [0.2, 0.3]
+      slope: 
+        min: [0, 0]
+        max: [1, 2]
+      coreBlock: "hardwood"
+      barkBlock: "hardbark"
+      fruit:
+        id: "hanging_acorn"
+        chance: [0.01, 0.3]
+      leaves:
+        type: cluster
+        width: [3, 5]
+        height: [2, 3]
+        block: "leaves"
+
