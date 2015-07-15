@@ -49,9 +49,6 @@ vec2 calculateOffset(float disp, vec3 eyeDir, float scale, float bias)
 
 void main(){
 
-	// Material properties
-	vec4 materialDiffuseColor;
-
 	float dist = length(fDist);
     vec3 eyeDir = fDist / dist;
 

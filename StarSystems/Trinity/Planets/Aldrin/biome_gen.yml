@@ -93,6 +93,14 @@ taiga:
 temperate_forest:
   displayName: "Temperate Forest"
   mapColor: [26, 102, 27]
+  flora:
+    - id: plant_grass_dryland
+      chance:
+        base: 0.0
+        funcs:
+          - octaves: 4
+            persistence: 0.8
+            frequency: 1.0
   childNoise:
     funcs:
     - octaves: 3
