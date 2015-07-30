@@ -921,35 +921,46 @@ lead_overlay:
   innerSeams: true
 leaves_opaque_blossom:
   path: Blocks/Flora_block/leaves_opaque_blossom.png
+  color: biome
   method: repeat
 leaves_opaque_coniferous:
   path: Blocks/Flora_block/leaves_opaque_coniferous.png
+  color: biome
   method: repeat
 leaves_opaque_deciduous:
   path: Blocks/Flora_block/leaves_opaque_deciduous.png
+  color: biome
   method: repeat
 leaves_opaque_fruit:
   path: Blocks/Flora_block/leaves_opaque_fruit.png
+  color: biome
 leaves_opaque_jungle:
   path: Blocks/Flora_block/leaves_opaque_jungle.png
+  color: biome
   method: repeat
 leaves_opaque_mangrove:
   path: Blocks/Flora_block/leaves_opaque_mangrove.png
+  color: biome
   method: repeat
 leaves_opaque_palm:
   path: Blocks/Flora_block/leaves_opaque_palm.png
+  color: biome
   method: repeat
 leaves_opaque_rubber:
   path: Blocks/Flora_block/leaves_opaque_rubber.png
+  color: biome
   method: repeat
 leaves_opaque_savanna:
   path: Blocks/Flora_block/leaves_opaque_savanna.png
+  color: biome
   method: repeat
 leaves_opaque_sugar:
   path: Blocks/Flora_block/leaves_opaque_sugar.png
+  color: biome
   method: repeat
 leaves_opaque_swamp:
   path: Blocks/Flora_block/leaves_opaque_swamp.png
+  color: biome
   method: repeat
 limestone:
   path: Blocks/Terrain/limestone.png
@@ -1043,7 +1054,7 @@ mushroom_cap_purple_dark:
   path: Blocks/Flora_block/mushroom_cap_smooth.png
   color: [80, 25, 95]
   method: repeat
-mushroom_cap__red:
+mushroom_cap_red:
   path: Blocks/Flora_block/mushroom_cap_spotted.png
   color: [200, 0, 0]
   method: repeat

@@ -96,11 +96,26 @@ temperate_forest:
   flora:
     - id: plant_grass_dryland
       chance:
-        base: 0.0
-        funcs:
-          - octaves: 4
-            persistence: 0.8
-            frequency: 1.0
+        base: 0.3
+    - id: cactus_death
+      chance:
+        base: 0.01
+    - id: plant_grass_redflower
+      chance:
+        base: 0.2
+    - id: flower_fringed_pink
+      chance:
+        base: 0.2
+    - id: flower_purple_large
+      chance:
+        base: 0.2
+  trees:
+    - id: home_tree
+      chance:
+        base: 0.000005
+    - id: bargonite_cyan
+      chance:
+        base: 0.0000
   childNoise:
     funcs:
     - octaves: 3

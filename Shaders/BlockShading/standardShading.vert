@@ -5,9 +5,9 @@ uniform mat4 unW;
 // Inputs
 in vec4 vPosition_Face;
 in vec4 vTex_Animation_BlendMode;
-in vec4 vTextureAtlas_TextureIndex;
-in vec4 vNDTextureAtlas;
-in vec4 vNDTextureIndex;
+in vec4 vTexturePos;
+in vec4 vNormTexturePos;
+in vec4 vDispTexturePos;
 in vec4 vTexDims;
 in vec3 vColor;
 in vec3 vOverlayColor;
@@ -46,20 +46,21 @@ void main(){
 
 	gl_Position =  unWVP * vec4(vertexPosition, 1.0);
 
+    // TODO(Ben): Swizzlezzz
     //base OUV
-	fUVStart.x = mod((vTextureAtlas_TextureIndex[2]), 16.0)/16.0;
-	fUVStart.y = ((floor((vTextureAtlas_TextureIndex[2])/16.0))/16.0);
-    fNormUVStart.x = mod((vNDTextureIndex[0]), 16.0)/16.0;
-	fNormUVStart.y = ((floor((vNDTextureIndex[0])/16.0))/16.0);
-    fDispUVStart.x = mod((vNDTextureIndex[2]), 16.0)/16.0;
-	fDispUVStart.y = ((floor((vNDTextureIndex[2])/16.0))/16.0);
+	fUVStart.x = mod((vTexturePos.y), 16.0)/16.0;
+	fUVStart.y = ((floor((vTexturePos.y)/16.0))/16.0);
+    fNormUVStart.x = mod((vNormTexturePos.y), 16.0)/16.0;
+	fNormUVStart.y = ((floor((vNormTexturePos.y)/16.0))/16.0);
+    fDispUVStart.x = mod((vDispTexturePos.y), 16.0)/16.0;
+	fDispUVStart.y = ((floor((vDispTexturePos.y)/16.0))/16.0);
     //overlay
-    fUVStart.z = mod((vTextureAtlas_TextureIndex[3]), 16.0)/16.0;
-	fUVStart.w = ((floor((vTextureAtlas_TextureIndex[3])/16.0))/16.0);
-    fNormUVStart.z = mod((vNDTextureIndex[1]), 16.0)/16.0;
-	fNormUVStart.w = ((floor((vNDTextureIndex[1])/16.0))/16.0);
-    fDispUVStart.z = mod((vNDTextureIndex[3]), 16.0)/16.0;
-	fDispUVStart.w = ((floor((vNDTextureIndex[3])/16.0))/16.0);
+    fUVStart.z = mod((vTexturePos.w), 16.0)/16.0;
+	fUVStart.w = ((floor((vTexturePos.w)/16.0))/16.0);
+    fNormUVStart.z = mod((vNormTexturePos.w), 16.0)/16.0;
+	fNormUVStart.w = ((floor((vNormTexturePos.w)/16.0))/16.0);
+    fDispUVStart.z = mod((vDispTexturePos.w), 16.0)/16.0;
+	fDispUVStart.w = ((floor((vDispTexturePos.w)/16.0))/16.0);
     
 	fTex = (vTex_Animation_BlendMode.xyxy) / vTexDims;
 
@@ -67,9 +68,9 @@ void main(){
 
     fTBN = TBN_LOOKUP[int(vPosition_Face.w)];
 
-	fTextureAtlas = vTextureAtlas_TextureIndex.xy;
-    fNormTextureAtlas = vNDTextureAtlas.xy;
-    fDispTextureAtlas = vNDTextureAtlas.zw;
+	fTextureAtlas = vTexturePos.xz;
+    fNormTextureAtlas = vNormTexturePos.xz;
+    fDispTextureAtlas = vDispTexturePos.xz;
 
     //add 0.1 in case we lose precision
     int blendMode = int(vTex_Animation_BlendMode[3] + 0.1);

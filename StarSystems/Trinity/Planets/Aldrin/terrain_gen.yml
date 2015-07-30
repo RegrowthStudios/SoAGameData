@@ -86,13 +86,10 @@ humidity:
       frequency: 0.0007
       low: -178.0
       high: 178.0
-surfaceBlock: "Grass Block"
-liquidBlock: "Water (100)"
 blockLayers:
-  grass:
-    width: 1
   dirt:
     width: 10
+    surface: grass
   stone:
     width: 10
      
