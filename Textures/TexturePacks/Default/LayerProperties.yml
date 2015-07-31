@@ -921,7 +921,6 @@ lead_overlay:
   innerSeams: true
 leaves_opaque_blossom:
   path: Blocks/Flora_block/leaves_opaque_blossom.png
-  color: biome
   method: repeat
 leaves_opaque_coniferous:
   path: Blocks/Flora_block/leaves_opaque_coniferous.png
@@ -933,7 +932,6 @@ leaves_opaque_deciduous:
   method: repeat
 leaves_opaque_fruit:
   path: Blocks/Flora_block/leaves_opaque_fruit.png
-  color: biome
 leaves_opaque_jungle:
   path: Blocks/Flora_block/leaves_opaque_jungle.png
   color: biome
@@ -956,7 +954,6 @@ leaves_opaque_savanna:
   method: repeat
 leaves_opaque_sugar:
   path: Blocks/Flora_block/leaves_opaque_sugar.png
-  color: biome
   method: repeat
 leaves_opaque_swamp:
   path: Blocks/Flora_block/leaves_opaque_swamp.png
