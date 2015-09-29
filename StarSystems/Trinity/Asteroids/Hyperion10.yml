@@ -1,6 +1,6 @@
 planet:
-  diameter: 0.57
-  mass: 1.6053e+11
-  aTilt: 9.5
+  diameter: 2.6
+  mass: 1.92e+13
+  aTilt: 35
   lNorth: 106
-  rotationalPeriod: 3.45
+  rotationalPeriod: 12.45

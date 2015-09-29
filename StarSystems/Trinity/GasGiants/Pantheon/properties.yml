@@ -12,9 +12,3 @@ gasGiant:
     km: 0.002
     g: -0.99
     waveLength: [0.70, 0.70, 0.70]
-  rings:
-    - innerRadius: 94600.0
-      outerRadius: 152000.0
-      aTilt: 0.0
-      lNorth: 0.0
-      colorLookup: GasGiants/Pantheon/ring.png

@@ -1,6 +1,6 @@
 planet:
-  diameter: 16
-  mass: 4.4948e+15
-  aTilt: 76
+  diameter: 20
+  mass: 9.7201e+15
+  aTilt: 25
   lNorth: 249
-  rotationalPeriod: 14.1
+  rotationalPeriod: 14.06
