@@ -921,7 +921,6 @@ lead_overlay:
   innerSeams: true
 leaves_opaque_blossom:
   path: Blocks/Flora_block/leaves_opaque_blossom.png
-  color: biome
   method: repeat
 leaves_opaque_coniferous:
   path: Blocks/Flora_block/leaves_opaque_coniferous.png
@@ -933,7 +932,6 @@ leaves_opaque_deciduous:
   method: repeat
 leaves_opaque_fruit:
   path: Blocks/Flora_block/leaves_opaque_fruit.png
-  color: biome
 leaves_opaque_jungle:
   path: Blocks/Flora_block/leaves_opaque_jungle.png
   color: biome
@@ -956,7 +954,6 @@ leaves_opaque_savanna:
   method: repeat
 leaves_opaque_sugar:
   path: Blocks/Flora_block/leaves_opaque_sugar.png
-  color: biome
   method: repeat
 leaves_opaque_swamp:
   path: Blocks/Flora_block/leaves_opaque_swamp.png
@@ -1611,6 +1608,13 @@ wambronium_overlay:
 wood_coniferous:
   path: Blocks/Flora_block/wood_coniferous.png
   method: repeat
+wood_coniferous_bark:
+  path: Blocks/Flora_block/wood_coniferous_bark.png
+  method: repeat
+wood_coniferous_bark_charred:
+  path: Blocks/Flora_block/wood_coniferous_bark.png
+  color: [64, 64, 64]
+  method: repeat
 wood_coniferous_charred:
   path: Blocks/Flora_block/wood_coniferous.png
   color: [64, 64, 64]
@@ -1625,12 +1629,26 @@ wood_dead_charred:
 wood_deciduous:
   path: Blocks/Flora_block/wood_deciduous.png
   method: repeat
+wood_deciduous_bark:
+  path: Blocks/Flora_block/wood_deciduous_bark.png
+  method: repeat
+wood_deciduous_bark_charred:
+  path: Blocks/Flora_block/wood_deciduous_bark.png
+  color: [64, 64, 64]
+  method: repeat
 wood_deciduous_charred:
   path: Blocks/Flora_block/wood_deciduous.png
   color: [64, 64, 64]
   method: repeat
 wood_fruit:
   path: Blocks/Flora_block/wood_fruit.png
+  method: repeat
+wood_fruit_bark:
+  path: Blocks/Flora_block/wood_fruit_bark.png
+  method: repeat
+wood_fruit_bark_charred:
+  path: Blocks/Flora_block/wood_fruit_bark.png
+  color: [64, 64, 64]
   method: repeat
 wood_fruit_charred:
   path: Blocks/Flora_block/wood_fruit.png
@@ -1639,12 +1657,26 @@ wood_fruit_charred:
 wood_jungle:
   path: Blocks/Flora_block/wood_jungle.png
   method: repeat
+wood_jungle_bark:
+  path: Blocks/Flora_block/wood_jungle_bark.png
+  method: repeat
+wood_jungle_bark_charred:
+  path: Blocks/Flora_block/wood_jungle_bark.png
+  color: [64, 64, 64]
+  method: repeat
 wood_jungle_charred:
   path: Blocks/Flora_block/wood_jungle.png
   color: [64, 64, 64]
   method: repeat
 wood_mangrove:
   path: Blocks/Flora_block/wood_mangrove.png
+  method: repeat
+wood_mangrove_bark:
+  path: Blocks/Flora_block/wood_mangrove_bark.png
+  method: repeat
+wood_mangrove_bark_charred:
+  path: Blocks/Flora_block/wood_mangrove_bark.png
+  color: [64, 64, 64]
   method: repeat
 wood_mangrove_charred:
   path: Blocks/Flora_block/wood_mangrove.png
@@ -1653,12 +1685,26 @@ wood_mangrove_charred:
 wood_palm:
   path: Blocks/Flora_block/wood_palm.png
   method: repeat
+wood_palm_bark:
+  path: Blocks/Flora_block/wood_palm_bark.png
+  method: repeat
+wood_palm_bark_charred:
+  path: Blocks/Flora_block/wood_palm_bark.png
+  color: [64, 64, 64]
+  method: repeat
 wood_palm_charred:
   path: Blocks/Flora_block/wood_palm.png
   color: [64, 64, 64]
   method: repeat
 wood_rubber:
   path: Blocks/Flora_block/wood_rubber.png
+  method: repeat
+wood_rubber_bark:
+  path: Blocks/Flora_block/wood_rubber_bark.png
+  method: repeat
+wood_rubber_bark_charred:
+  path: Blocks/Flora_block/wood_rubber_bark.png
+  color: [64, 64, 64]
   method: repeat
 wood_rubber_charred:
   path: Blocks/Flora_block/wood_rubber.png
@@ -1667,6 +1713,13 @@ wood_rubber_charred:
 wood_savanna:
   path: Blocks/Flora_block/wood_savanna.png
   method: repeat
+wood_savanna_bark:
+  path: Blocks/Flora_block/wood_savanna_bark.png
+  method: repeat
+wood_savanna_bark_charred:
+  path: Blocks/Flora_block/wood_savanna_bark.png
+  color: [64, 64, 64]
+  method: repeat
 wood_savanna_charred:
   path: Blocks/Flora_block/wood_savanna.png
   color: [64, 64, 64]
@@ -1674,12 +1727,26 @@ wood_savanna_charred:
 wood_sugar:
   path: Blocks/Flora_block/wood_sugar.png
   method: repeat
+wood_sugar_bark:
+  path: Blocks/Flora_block/wood_sugar_bark.png
+  method: repeat
+wood_sugar_bark_charred:
+  path: Blocks/Flora_block/wood_sugar_bark.png
+  color: [64, 64, 64]
+  method: repeat
 wood_sugar_charred:
   path: Blocks/Flora_block/wood_sugar.png
   color: [64, 64, 64]
   method: repeat
 wood_swamp:
   path: Blocks/Flora_block/wood_swamp.png
+  method: repeat
+wood_swamp_bark:
+  path: Blocks/Flora_block/wood_swamp_bark.png
+  method: repeat
+wood_swamp_bark_charred:
+  path: Blocks/Flora_block/wood_swamp_bark.png
+  color: [64, 64, 64]
   method: repeat
 wood_swamp_charred:
   path: Blocks/Flora_block/wood_swamp.png

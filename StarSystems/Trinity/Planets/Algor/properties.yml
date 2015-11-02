@@ -3,10 +3,10 @@ planet:
   mass: 1.0451e+25
   aTilt: 12.22
   lNorth: 345
-  rotationalPeriod: 81.6
+  rotationalPeriod: 40.32
   rings:
-    - innerRadius: 14750.0
-      outerRadius: 17000.0
+    - innerRadius: 14000.0
+      outerRadius: 16250.0
       aTilt: 0.0
       lNorth: 0.0
       colorLookup: Planets/Algor/ring1.png
