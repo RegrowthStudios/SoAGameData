@@ -1970,14 +1970,22 @@ vine_garas:
   waterBreak: true
 wambronium:
   name: Wambronium
-wood_coniferous:
-  name: Wood (Coniferous Tree)
-  burnTransformID: wood_coniferous_charred
+wood_coniferous_bark:
+  name: Bark (Coniferous Tree)
+  burnTransformID: wood_coniferous_bark_charred
   flammability: 1
-wood_coniferous_charred:
-  name: Charred Wood (Coniferous Tree)
+wood_coniferous_bark_charred:
+  name: Charred Bark (Coniferous Tree)
   emitter: Data/Emitters/smoke.emit
   flammability: 0.1
+wood_coniferous_log:
+  name: Softwood
+  burnTransformID: wood_coniferous_log_charred
+  flammability: 2
+wood_coniferous_log_charred:
+  name: Charred Softwood
+  emitter: Data/Emitters/smoke.emit
+  flammability: 0.2
 wood_coniferous_planks:
   name: Softwood Planks
   burnTransformID: wood_coniferous_planks_charred
@@ -1986,14 +1994,14 @@ wood_coniferous_planks_charred:
   name: Charred Softwood Planks
   emitter: Data/Emitters/smoke.emit
   flammability: 0.2
-wood_dead:
-  name: Wood (Dead Tree)
-  burnTransformID: wood_dead_charred
-  flammability: 1
-wood_dead_charred:
-  name: Charred Wood (Dead Tree)
+wood_dead_log:
+  name: Deadwood
+  burnTransformID: wood_dead_log_charred
+  flammability: 2
+wood_dead_log_charred:
+  name: Charred Deadwood
   emitter: Data/Emitters/smoke.emit
-  flammability: 0.1
+  flammability: 0.2
 wood_dead_planks:
   name: Deadwood Planks
   burnTransformID: wood_dead_planks_charred
@@ -2002,14 +2010,22 @@ wood_dead_planks_charred:
   name: Charred Deadwood Planks
   emitter: Data/Emitters/smoke.emit
   flammability: 0.2
-wood_deciduous:
-  name: Wood (Deciduous Tree)
-  burnTransformID: wood_deciduous_charred
+wood_deciduous_bark:
+  name: Bark (Deciduous Tree)
+  burnTransformID: wood_deciduous_bark_charred
   flammability: 1
-wood_deciduous_charred:
-  name: Charred Wood (Deciduous Tree)
+wood_deciduous_bark_charred:
+  name: Charred Bark (Deciduous Tree)
   emitter: Data/Emitters/smoke.emit
   flammability: 0.1
+wood_deciduous_log:
+  name: Hardwood
+  burnTransformID: wood_deciduous_log_charred
+  flammability: 2
+wood_deciduous_log_charred:
+  name: Charred Hardwood
+  emitter: Data/Emitters/smoke.emit
+  flammability: 0.2
 wood_deciduous_planks:
   name: Hardwood Planks
   burnTransformID: wood_deciduous_planks_charred
@@ -2018,14 +2034,22 @@ wood_deciduous_planks_charred:
   name: Charred Hardwood Planks
   emitter: Data/Emitters/smoke.emit
   flammability: 0.2
-wood_fruit:
-  name: Wood (Fruit Tree)
-  burnTransformID: wood_fruit_charred
+wood_fruit_bark:
+  name: Bark (Fruit Tree)
+  burnTransformID: wood_fruit_bark_charred
   flammability: 1
-wood_fruit_charred:
-  name: Charred Wood (Fruit Tree)
+wood_fruit_bark_charred:
+  name: Charred Bark (Fruit Tree)
   emitter: Data/Emitters/smoke.emit
   flammability: 0.1
+wood_fruit_log:
+  name: Darkwood
+  burnTransformID: wood_fruit_log_charred
+  flammability: 2
+wood_fruit_log_charred:
+  name: Charred Darkwood
+  emitter: Data/Emitters/smoke.emit
+  flammability: 0.2
 wood_fruit_planks:
   name: Darkwood Planks
   burnTransformID: wood_fruit_planks_charred
@@ -2034,14 +2058,22 @@ wood_fruit_planks_charred:
   name: Charred Darkwood Planks
   emitter: Data/Emitters/smoke.emit
   flammability: 0.2
-wood_jungle:
-  name: Wood (Jungle Tree)
-  burnTransformID: wood_jungle_charred
+wood_jungle_bark:
+  name: Bark (Jungle Tree)
+  burnTransformID: wood_jungle_bark_charred
   flammability: 1
-wood_jungle_charred:
-  name: Charred Wood (Jungle Tree)
+wood_jungle_bark_charred:
+  name: Charred Bark (Jungle Tree)
   emitter: Data/Emitters/smoke.emit
   flammability: 0.1
+wood_jungle_log:
+  name: Junglewood
+  burnTransformID: wood_jungle_log_charred
+  flammability: 2
+wood_jungle_log_charred:
+  name: Charred Junglewood
+  emitter: Data/Emitters/smoke.emit
+  flammability: 0.2
 wood_jungle_planks:
   name: Junglewood Planks
   burnTransformID: wood_jungle_planks_charred
@@ -2050,14 +2082,22 @@ wood_jungle_planks_charred:
   name: Charred Junglewood Planks
   emitter: Data/Emitters/smoke.emit
   flammability: 0.2
-wood_mangrove:
-  name: Wood (Mangrove Tree)
-  burnTransformID: wood_mangrove_charred
+wood_mangrove_bark:
+  name: Bark (Mangrove Tree)
+  burnTransformID: wood_mangrove_bark_charred
   flammability: 1
-wood_mangrove_charred:
-  name: Charred Wood (Mangrove Tree)
+wood_mangrove_bark_charred:
+  name: Charred Bark (Mangrove Tree)
   emitter: Data/Emitters/smoke.emit
   flammability: 0.1
+wood_mangrove_log:
+  name: Mangrovewood
+  burnTransformID: wood_mangrove_log_charred
+  flammability: 2
+wood_mangrove_log_charred:
+  name: Charred Mangrovewood
+  emitter: Data/Emitters/smoke.emit
+  flammability: 0.2
 wood_mangrove_planks:
   name: Mangrovewood Planks
   burnTransformID: wood_mangrove_planks_charred
@@ -2066,14 +2106,22 @@ wood_mangrove_planks_charred:
   name: Charred Mangrovewood Planks
   emitter: Data/Emitters/smoke.emit
   flammability: 0.2
-wood_palm:
-  name: Wood (Palm Tree)
-  burnTransformID: wood_palm_charred
+wood_palm_bark:
+  name: Bark (Palm Tree)
+  burnTransformID: wood_palm_bark_charred
   flammability: 1
-wood_palm_charred:
-  name: Charred Wood (Palm Tree)
+wood_palm_bark_charred:
+  name: Charred Bark (Palm Tree)
   emitter: Data/Emitters/smoke.emit
   flammability: 0.1
+wood_palm_log:
+  name: Palmwood
+  burnTransformID: wood_palm_log_charred
+  flammability: 2
+wood_palm_log_charred:
+  name: Charred Palmwood
+  emitter: Data/Emitters/smoke.emit
+  flammability: 0.2
 wood_palm_planks:
   name: Palmwood Planks
   burnTransformID: wood_palm_planks_charred
@@ -2082,14 +2130,22 @@ wood_palm_planks_charred:
   name: Charred Palmwood Planks
   emitter: Data/Emitters/smoke.emit
   flammability: 0.2
-wood_rubber:
-  name: Wood (Rubber Tree)
-  burnTransformID: wood_rubber_charred
+wood_rubber_bark:
+  name: Bark (Rubber Tree)
+  burnTransformID: wood_rubber_bark_charred
   flammability: 1
-wood_rubber_charred:
-  name: Charred Wood (Rubber Tree)
+wood_rubber_bark_charred:
+  name: Charred Bark (Rubber Tree)
   emitter: Data/Emitters/smoke.emit
   flammability: 0.1
+wood_rubber_log:
+  name: Ruberwood
+  burnTransformID: wood_rubber_log_charred
+  flammability: 2
+wood_rubber_log_charred:
+  name: Charred Rubberwood
+  emitter: Data/Emitters/smoke.emit
+  flammability: 0.2
 wood_rubber_planks:
   name: Ruberwood Planks
   burnTransformID: wood_rubber_planks_charred
@@ -2098,14 +2154,22 @@ wood_rubber_planks_charred:
   name: Charred Rubberwood Planks
   emitter: Data/Emitters/smoke.emit
   flammability: 0.2
-wood_savanna:
-  name: Wood (Savanna Tree)
-  burnTransformID: wood_savanna_charred
+wood_savanna_bark:
+  name: Bark (Savanna Tree)
+  burnTransformID: wood_savanna_bark_charred
   flammability: 1
-wood_savanna_charred:
-  name: Charred Wood (Savanna Tree)
+wood_savanna_bark_charred:
+  name: Charred Bark (Savanna Tree)
   emitter: Data/Emitters/smoke.emit
   flammability: 0.1
+wood_savanna_log:
+  name: Savannawood
+  burnTransformID: wood_savanna_log_charred
+  flammability: 2
+wood_savanna_log_charred:
+  name: Charred Savannawood
+  emitter: Data/Emitters/smoke.emit
+  flammability: 0.2
 wood_savanna_planks:
   name: Savannawood Planks
   burnTransformID: wood_savanna_planks_charred
@@ -2114,14 +2178,22 @@ wood_savanna_planks_charred:
   name: Charred Savannawood Planks
   emitter: Data/Emitters/smoke.emit
   flammability: 0.2
-wood_sugar:
-  name: Wood (Sugar Tree)
-  burnTransformID: wood_sugar_charred
+wood_sugar_bark:
+  name: Bark (Sugar Tree)
+  burnTransformID: wood_sugar_bark_charred
   flammability: 1
-wood_sugar_charred:
-  name: Charred Wood (Sugar Tree)
+wood_sugar_bark_charred:
+  name: Charred Bark (Sugar Tree)
   emitter: Data/Emitters/smoke.emit
   flammability: 0.1
+wood_sugar_log:
+  name: Sugarwood
+  burnTransformID: wood_sugar_log_charred
+  flammability: 2
+wood_sugar_log_charred:
+  name: Charred Sugarwood
+  emitter: Data/Emitters/smoke.emit
+  flammability: 0.2
 wood_sugar_planks:
   name: Sugarwood Planks
   burnTransformID: wood_sugar_planks_charred
@@ -2130,14 +2202,22 @@ wood_sugar_planks_charred:
   name: Charred Sugarwood Planks
   emitter: Data/Emitters/smoke.emit
   flammability: 0.2
-wood_swamp:
-  name: Wood (Swamp Tree)
-  burnTransformID: wood_swamp_charred
+wood_swamp_bark:
+  name: Bark (Swamp Tree)
+  burnTransformID: wood_swamp_bark_charred
   flammability: 1
-wood_swamp_charred:
-  name: Charred Wood (Swamp Tree)
+wood_swamp_bark_charred:
+  name: Charred Bark (Swamp Tree)
   emitter: Data/Emitters/smoke.emit
   flammability: 0.1
+wood_swamp_log:
+  name: Swampwood
+  burnTransformID: wood_swamp_log_charred
+  flammability: 2
+wood_swamp_log_charred:
+  name: Charred Swampwood
+  emitter: Data/Emitters/smoke.emit
+  flammability: 0.2
 wood_swamp_planks:
   name: Swampwood Planks
   burnTransformID: wood_swamp_planks_charred

@@ -1,59 +1,129 @@
-blossom:
-  height: [6, 70]
+home_tree:
+  height: [150, 300]
+  branchPoints: [20, 40]
+  branchStep: 10
+  infRadius: [75, 150]
+  killMult: 2
+  branchVolumes:
+    - height: [150, 300]
+      hRadius: [150, 300]
+      vRadius: [50, 150]
+      points: 500
+    - height: [0, 0]
+      hRadius: [45, 75]
+      vRadius: [50, 100]
+      points: 300
   trunk:
     # Bottom
     - loc: 0.0
-      coreWidth: [1, 5]
-      barkWidth: [1, 2]
-      branchChance: [0.0, 0.0]
-      slope: 
-        min: [0, 0]
-        max: [1, 1]
-      coreBlock: "hardwood"
-      barkBlock: "hardbark"
-    # Middle
-    - loc: 0.5
-      coreWidth: [1, 3]
-      barkWidth: [1, 2]
-      branchChance: [0.1, 0.2]
-      slope: 
-        min: [0, 0]
-        max: [1, 1]
-      coreBlock: "hardwood"
-      barkBlock: "hardbark"
-      fruit:
-        id: "hanging_acorn"
-        chance: [0.005, 0.02]
+      coreWidth: [20, 20]
+      barkWidth: [2, 2]
+      changeDirChance: [0.01, 0.03]
       branches:
-        coreWidth: [1, 2]
-        barkWidth: [1, 2]
-        branchChance: [0.05, 0.1]
-        coreBlock: "hardwood"
-        barkBlock: "hardbark"
-        fruit:
-          id: "hanging_acorn"
-          chance: 0.01
+        angle: [20.0, 70.0]
+        coreWidth: [20, 20]
+        barkWidth: [2, 2]
+        branchChance: [0.0005, 0.0005]
+        changeDirChance: 0.05
+        coreBlock: "wood_deciduous"
+        barkBlock: "wood_deciduous"
+      slope:
+        min: [0, 6]
+        max: [0, 6]
+      block: wood_deciduous
+    # Middle
+    - loc: 0.7
+      coreWidth: [25, 25]
+      barkWidth: [2, 2]
+      changeDirChance: [0.05, 0.05]
+      branches:
+        angle: [20.0, 70.0]
+        subBranchAngle: [30.0, 90.0]
+        coreWidth: [20, 20]
+        barkWidth: [2, 2]
+        branchChance: [0.5, 0.5]
+        changeDirChance: 0.05
+        coreBlock: "wood_deciduous"
+        barkBlock: "wood_deciduous"
         leaves:
-          type: cluster
-          width: [3, 4]
-          height: 2
-          block: "leaves"
+          type: round
+          hRadius: [15, 30]
+          vRadius: [10, 20]
+          block: leaves_deciduous
+        fruit:
+          id: "vine_garas"
+          chance: 0.01
+      slope:
+        min: [0, 6]
+        max: [0, 6]
+      block: wood_deciduous
     # Top
     - loc: 1.0
-      coreWidth: [1, 4]
-      barkWidth: [1, 2]
-      branchChance: [0.2, 0.3]
+      coreWidth: [12, 12]
+      barkWidth: [2, 2]
       slope: 
-        min: [0, 0]
-        max: [1, 2]
-      coreBlock: "hardwood"
-      barkBlock: "hardbark"
-      fruit:
-        id: "hanging_acorn"
-        chance: [0.01, 0.3]
-      leaves:
-        type: cluster
-        width: [3, 5]
-        height: [2, 3]
-        block: "leaves"
-
+        min: [1, 3]
+        max: [1, 3]
+      block: wood_deciduous
+      interp: cos
+      branches:
+        angle: [20.0, 70.0]
+        subBranchAngle: [30.0, 90.0]
+        coreWidth: [12, 12]
+        barkWidth: [2, 2]
+        branchChance: [0.5, 0.5]
+        changeDirChance: 0.05
+        coreBlock: "wood_deciduous"
+        barkBlock: "wood_deciduous"
+        leaves:
+          type: round
+          hRadius: [15, 30]
+          vRadius: [10, 20]
+          block: leaves_deciduous
+        fruit:
+          id: "vine_garas"
+          chance: 0.01
+bargonite_cyan:
+  height: [4, 40]
+  branchPoints: [1, 10]
+  branchStep: 4
+  infRadius: [20, 40]
+  killMult: 2
+  trunk:
+    - loc: 0.0
+      coreWidth: [2, 6]
+      barkWidth: [0, 0]
+      changeDirChance: [0.1, 0.3]
+      branchChance: 0.1
+      branches:
+        angle: [20.0, 70.0]
+        coreWidth: [2, 6]
+        barkWidth: [0, 0]
+        widthFalloff: 0.2
+        subBranchChance: 0.2
+        changeDirChance: [0.01, 0.03]
+        subBranchAngle: [20.0, 70.0]
+        block: bargonite_cyan
+      slope:
+        min: [0, 6]
+        max: [0, 6]
+      block: bargonite_cyan
+      interp: linear
+    - loc: 1.0
+      coreWidth: [0, 0]
+      barkWidth: [0, 0]
+      changeDirChance: [0.1, 0.3]
+      branchChance: 0.1
+      branches:
+        angle: [20.0, 70.0]
+        coreWidth: [2, 6]
+        barkWidth: [0, 0]
+        widthFalloff: 0.2
+        block: bargonite_cyan
+        subBranchChance: 0.2
+        changeDirChance: [0.01, 0.03]
+        subBranchAngle: [20.0, 70.0]
+      slope:
+        min: [0, 6]
+        max: [0, 6]
+      block: bargonite_cyan

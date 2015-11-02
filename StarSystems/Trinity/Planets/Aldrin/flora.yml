@@ -1,2 +1,18 @@
 plant_grass_dryland: 
   block: plant_grass_dryland
+cactus_death:
+  block: cactus_death
+  height: [1, 5]
+  child: cactus_death_fruit
+cactus_death_fruit:
+  block: cactus_death_fruit
+plant_grass_redflower:
+  block: plant_grass_redflower
+flower_fringed_pink:
+  block: flower_fringed_pink
+flower_purple_large:
+  block: flower_purple_large
+vine_garas:
+  block: leaves_deciduous
+  dir: down
+  height: [1, 300]

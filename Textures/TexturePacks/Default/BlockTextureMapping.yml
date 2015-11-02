@@ -1378,10 +1378,16 @@ wambronium:
   texture:
     base: wambronium
     overlay: wambronium_overlay
-wood_coniferous:
+wood_coniferous_bark:
+  texture:
+    base: wood_coniferous_bark
+wood_coniferous_bark_charred:
+  texture:
+    base: wood_coniferous_bark_charred
+wood_coniferous_log:
   texture:
     base: wood_coniferous
-wood_coniferous_charred:
+wood_coniferous_log_charred:
   texture:
     base: wood_coniferous_charred
 wood_coniferous_planks:
@@ -1394,10 +1400,10 @@ wood_coniferous_planks_charred:
     base: wooden_planks_coniferous_side_charred
   textureOpY:
     base: wooden_planks_coniferous_top_charred
-wood_dead:
+wood_dead_log:
   texture:
     base: wood_dead
-wood_dead_charred:
+wood_dead_log_charred:
   texture:
     base: wood_dead_charred
 wood_dead_planks:
@@ -1406,10 +1412,16 @@ wood_dead_planks:
 wood_dead_planks_charred:
   texture:
     base: wooden_planks_dead_charred
-wood_deciduous:
+wood_deciduous_bark:
+  texture:
+    base: wood_deciduous_bark
+wood_deciduous_bark_charred:
+  texture:
+    base: wood_deciduous_bark_charred
+wood_deciduous_log:
   texture:
     base: wood_deciduous
-wood_deciduous_charred:
+wood_deciduous_log_charred:
   texture:
     base: wood_deciduous_charred
 wood_deciduous_planks:
@@ -1418,10 +1430,16 @@ wood_deciduous_planks:
 wood_deciduous_planks_charred:
   texture:
     base: wooden_planks_deciduous_charred
-wood_fruit:
+wood_fruit_bark:
+  texture:
+    base: wood_fruit_bark
+wood_fruit_bark_charred:
+  texture:
+    base: wood_fruit_bark_charred
+wood_fruit_log:
   texture:
     base: wood_fruit
-wood_fruit_charred:
+wood_fruit_log_charred:
   texture:
     base: wood_fruit_charred
 wood_fruit_planks:
@@ -1430,10 +1448,16 @@ wood_fruit_planks:
 wood_fruit_planks_charred:
   texture:
     base: wooden_planks_fruit_charred
-wood_jungle:
+wood_jungle_bark:
+  texture:
+    base: wood_jungle_bark
+wood_jungle_bark_charred:
+  texture:
+    base: wood_jungle_bark_charred
+wood_jungle_log:
   texture:
     base: wood_jungle
-wood_jungle_charred:
+wood_jungle_log_charred:
   texture:
     base: wood_jungle_charred
 wood_jungle_planks:
@@ -1442,10 +1466,16 @@ wood_jungle_planks:
 wood_jungle_planks_charred:
   texture:
     base: wooden_planks_jungle_charred
-wood_mangrove:
+wood_mangrove_bark:
+  texture:
+    base: wood_mangrove_bark
+wood_mangrove_bark_charred:
+  texture:
+    base: wood_mangrove_bark_charred
+wood_mangrove_log:
   texture:
     base: wood_mangrove
-wood_mangrove_charred:
+wood_mangrove_log_charred:
   texture:
     base: wood_mangrove_charred
 wood_mangrove_planks:
@@ -1454,10 +1484,16 @@ wood_mangrove_planks:
 wood_mangrove_planks_charred:
   texture:
     base: wooden_planks_mangrove_charred
-wood_palm:
+wood_palm_bark:
+  texture:
+    base: wood_palm_bark
+wood_palm_bark_charred:
+  texture:
+    base: wood_palm_bark_charred
+wood_palm_log:
   texture:
     base: wood_palm
-wood_palm_charred:
+wood_palm_log_charred:
   texture:
     base: wood_palm_charred
 wood_palm_planks:
@@ -1470,10 +1506,16 @@ wood_palm_planks_charred:
     base: wooden_planks_palm_side_charred
   textureOpY:
     base: wooden_planks_palm_top_charred
-wood_rubber:
+wood_rubber_bark:
+  texture:
+    base: wood_rubber_bark
+wood_rubber_bark_charred:
+  texture:
+    base: wood_rubber_bark_charred
+wood_rubber_log:
   texture:
     base: wood_rubber
-wood_rubber_charred:
+wood_rubber_log_charred:
   texture:
     base: wood_rubber_charred
 wood_rubber_planks:
@@ -1482,10 +1524,16 @@ wood_rubber_planks:
 wood_rubber_planks_charred:
   texture:
     base: wooden_planks_rubber_charred
-wood_savanna:
+wood_savanna_bark:
+  texture:
+    base: wood_savanna_bark
+wood_savanna_bark_charred:
+  texture:
+    base: wood_savanna_bark_charred
+wood_savanna_log:
   texture:
     base: wood_savanna
-wood_savanna_charred:
+wood_savanna_log_charred:
   texture:
     base: wood_savanna_charred
 wood_savanna_planks:
@@ -1494,10 +1542,16 @@ wood_savanna_planks:
 wood_savanna_planks_charred:
   texture:
     base: wooden_planks_savanna_charred
-wood_sugar:
+wood_sugar_bark:
+  texture:
+    base: wood_sugar_bark
+wood_sugar_bark_charred:
+  texture:
+    base: wood_sugar_bark_charred
+wood_sugar_log:
   texture:
     base: wood_sugar
-wood_sugar_charred:
+wood_sugar_log_charred:
   texture:
     base: wood_sugar_charred
 wood_sugar_planks:
@@ -1506,10 +1560,16 @@ wood_sugar_planks:
 wood_sugar_planks_charred:
   texture:
     base: wooden_planks_sugar_charred
-wood_swamp:
+wood_swamp_bark:
+  texture:
+    base: wood_swamp_bark
+wood_swamp_bark_charred:
+  texture:
+    base: wood_swamp_bark_charred
+wood_swamp_log:
   texture:
     base: wood_swamp
-wood_swamp_charred:
+wood_swamp_log_charred:
   texture:
     base: wood_swamp_charred
 wood_swamp_planks:

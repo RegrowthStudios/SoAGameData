@@ -1,0 +1,26 @@
+AABBCollidable:
+  box: [1.1, 4.0, 1.1]
+  offset: [0.0, -2.0, 0.0]
+SpacePosition:
+Physics:
+  velocity: [0.0, 0.0, 0.0]
+  mass: 63.0
+Frustum:
+  fov: 70
+  aspectRatio: 1.0
+  zNear: 0.02
+  zFar: 10000.0
+Head:
+  relOrientation: [0.0, 0.0, 0.0, 1.0]
+  relPosition: [0.0, 3.7, 0.0]
+  neckLength: 0.3;
+Parkour:
+Attributes:
+  strength: 50.0
+  perception: 50.0
+  endurance: 50.0
+  charisma: 50.0
+  intelligence: 50.0
+  agility: 50.0
+  height: 4.0
+Inventory:
