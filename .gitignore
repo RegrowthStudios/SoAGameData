@@ -8,9 +8,11 @@ atlas*.bmp
 *.pak
 *vcxproj*
 errorlog.txt
+SFont_Orbitron_Bold_32.png
 
 # Saves And User Files
 Data/options.ini
+Data/Blocks/BlockMapping.ini
 Saves/
 
 #OS junk files
