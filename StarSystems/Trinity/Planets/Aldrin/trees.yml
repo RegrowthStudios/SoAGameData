@@ -25,12 +25,12 @@ home_tree:
         barkWidth: [2, 2]
         branchChance: [0.0005, 0.0005]
         changeDirChance: 0.05
-        coreBlock: "wood_deciduous"
-        barkBlock: "wood_deciduous"
+        coreBlock: "wood_deciduous_log"
+        barkBlock: "wood_deciduous_bark"
       slope:
         min: [0, 6]
         max: [0, 6]
-      block: wood_deciduous
+      block: wood_deciduous_log
     # Middle
     - loc: 0.7
       coreWidth: [25, 25]
@@ -43,8 +43,8 @@ home_tree:
         barkWidth: [2, 2]
         branchChance: [0.5, 0.5]
         changeDirChance: 0.05
-        coreBlock: "wood_deciduous"
-        barkBlock: "wood_deciduous"
+        coreBlock: "wood_deciduous_log"
+        barkBlock: "wood_deciduous_bark"
         leaves:
           type: round
           hRadius: [15, 30]
@@ -56,7 +56,7 @@ home_tree:
       slope:
         min: [0, 6]
         max: [0, 6]
-      block: wood_deciduous
+      block: wood_deciduous_log
     # Top
     - loc: 1.0
       coreWidth: [12, 12]
@@ -64,7 +64,7 @@ home_tree:
       slope: 
         min: [1, 3]
         max: [1, 3]
-      block: wood_deciduous
+      block: wood_deciduous_log
       interp: cos
       branches:
         angle: [20.0, 70.0]
@@ -73,8 +73,8 @@ home_tree:
         barkWidth: [2, 2]
         branchChance: [0.5, 0.5]
         changeDirChance: 0.05
-        coreBlock: "wood_deciduous"
-        barkBlock: "wood_deciduous"
+        coreBlock: "wood_deciduous_log"
+        barkBlock: "wood_deciduous_bark"
         leaves:
           type: round
           hRadius: [15, 30]
