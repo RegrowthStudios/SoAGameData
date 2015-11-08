@@ -13,6 +13,7 @@ SFont_Orbitron_Bold_32.png
 # Saves And User Files
 Data/options.ini
 Data/Blocks/BlockMapping.ini
+Data/Blocks/SavedBlockData.yml
 Saves/
 
 #OS junk files
