@@ -24,3 +24,4 @@ Attributes:
   agility: 50.0
   height: 4.0
 Inventory:
+  path: Data/ECS/PlayerInv.dat
