@@ -626,8 +626,8 @@ Selene:
   path: Planets/Selene/properties.yml
   par: Hyperion
   ref: Tantalus
-  tf: 5
-  td: 11
+  tf: 4
+  td: 9
   e: 0.00058
   i: 0
   p: 0
@@ -639,7 +639,7 @@ Niobe:
   ref: Tantalus
   tf: 2
   td: 3
-  e: 0.0
+  e: 0.00004
   i: 0
   p: 0
   a: 196
