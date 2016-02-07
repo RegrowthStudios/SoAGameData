@@ -1,30 +1,49 @@
-##########  Specifications for the object properties files - last updated: 06.07.2015
+﻿##########  Specifications for the object properties files - last updated: 07.02.2016
 
+### The object type name displayed in-game is (by default) auto-detected based on following conditions:
+    # Stars use StarTypeNames.tsv as an expandable reference table for their various names (supported colors / spectral classes: T, L, M, K, G, F, A, B, O)
+    # Gas Giant:    OrbitPathType = "Planet", ObjectType = "gasGiant", mass = 50 mE - 25 mJ
+    # Ice Giant:    OrbitPathType = "Planet", ObjectType = "gasGiant", mass <50 mE
+    # Ice Planet:    OrbitPathType = "Planet", ObjectType = "planet", density <2.5 g/cm³
+    # Silicate Planet:    OrbitPathType = "Planet", ObjectType = "planet", density ≥2.5 and <5.0 g/cm³
+    # Terrestrial Planet:    OrbitPathType = "Planet", ObjectType = "planet", density ≥5.0 and <7.5 g/cm³
+    # Iron Planet:    OrbitPathType = "Planet", ObjectType = "planet", density ≥7.5 g/cm³
+    # Giant Gas Moon:    OrbitPathType = "Moon", ObjectType = "gasGiant", mass = 50 mE - 200 mE
+    # Giant Ice Moon:    OrbitPathType = "Moon", ObjectType = "gasGiant", mass <50 mE
+    # Ice Moon:    OrbitPathType = "Moon", ObjectType = "planet", density <2.5 g/cm³
+    # Silicate Moon:    OrbitPathType = "Moon", ObjectType = "planet", density ≥2.5 and <5.0 g/cm³
+    # Terrestrial Moon:    OrbitPathType = "Moon", ObjectType = "planet", density ≥5.0 and <7.5 g/cm³
+    # Iron Moon:    OrbitPathType = "Moon", ObjectType = "planet", density ≥7.5 g/cm³
+    # Dwarf Planet:    OrbitPathType = "DwarfPlanet"
+    # Dwarf Moon:    OrbitPathType = "DwarfMoon"
+    # Irregular Dwarf Moon:    OrbitPathType = "IrregularDwarfMoon"
+    # Asteroid:    OrbitPathType = "Asteroid", density ≥0.5 g/cm³
+    # Comet:    OrbitPathType = "Asteroid", density <0.5 g/cm³
 
 ### General properties used for all objects:
-(ObjectClass):
-  type: (Type Name) - Optional, overrides the auto-detected planet type names (can be used for exotic types like carbon planets, helium planets, gas dwarfs, ...)
-  diameter: The mean equatorial diameter in km, required for asteroids and planets, optional for stars, not used for brown dwarfs and stellar remants
+(ObjectType):
+  type: (Type Name) - Optional, overrides the auto-detected object type names (can be used for exotic types like carbon planets, helium planets, gas dwarfs, ...)
+  diameter: The mean equatorial diameter in km, required for asteroids and planets, optional for stars and brown dwarfs
   mass: Required, the mass in kg
-  aTilt: Required, the axial tilt in �
-  lNorth: Longitude of the north in �, not required if aTilt=0�
-  rotationalPeriod: The rotation period in h, required for asteroids and planets, optional for stars, not used for tidal-locked objects
+  aTilt: Required, the axial tilt in °
+  lNorth: Longitude of the north in °, not required if aTilt=0°
+  rotationalPeriod: The rotation period in h, required for asteroids and planets, optional for stars and brown dwarfs, not used for tidal-locked objects
   rings: - Optional, array for planet rings
     - innerRadius: Radius of the inner ring edge in km
       outerRadius: Radius of the outer ring edge in km
-       rTilt: Ring tilt in � relative to the planet equator
-       lNorth: Longitude of the north in �, not required if rTilt=0�
+       rTilt: Ring tilt in ° relative to the planet equator
+       lNorth: Longitude of the north in °, not required if rTilt=0°
        colorLookup:(path of ring color map)
 
 
 
-### Properties specific to object classes:
+### Properties specific to object types:
 
 asteroid:
   # Uses the general properties listed above, the irregular body shape and craters are procedurally generated, the composition is approximated from the density
 
 planet:
-  # Used for solid, spherical planets with procedural terrain generation and biome support
+  # Used for solid, spherical planets with procedural voxel terrain generation and biome support
   generation: (path of planet gen file)
   atmosphere: - Optional, planet atmosphere properties
     scaleDepth: ?
@@ -49,21 +68,10 @@ gasGiant:
     waveLength: [R, G, B] - light scattering color of the atmosphere
 
 star:
-  # Used for all kinds of stellar and substellar objects
-  # If optional data data (diameter, temperature, rot. period, class) are missing, the game generates a random star based on the data given in StarData.tsv
-  surfaceTemperature: Optional, photosphere temperature in K (not used for stellar remants)
-  lumClass: Optional, stellar class
-    # 0 - Hypergiant, uses the supergiant rendering type (extremely large, protruding convection bubbles)
-    # Ia - Luminous Supergiant, uses the supergiant rendering type
-    # Ib - Supergiant, uses the supergiant rendering type
-    # II - Bright Giant, uses the giant rendering type (huge, protruding convection bubbles)
-    # III - Gaint, uses the giant rendering type
-    # IV - Subgiant, uses the subgiant rendering type (large convection zones, no star spots)
-    # V - Main Sequence, uses the main sequence rendering type (small convection zones and star spots)
-    # Vb - Brown Dwarf, uses the brown dwarf rendering type with random, dark cloud patches
-    # Vc - Cool Brown Dwarf, uses the brown dwarf rendering type with dark cloud bands (similar to gas giants)
-    # Vd - Ultracool Brown Dwarf, uses a random bluish or brown variant of the gas giant rendering type, no glow
-    # VI - Subdwarf, uses the main sequence rendering type
-    # VIIa - Stellar remant (White Dwarf), uses a structureless sphere with temperature-based color, shows weak gravitational lensing 
-    # VIIb - Stellar remant (Neutron Star), uses a structureless sphere with temperature-based color, shows strong gravitational lensing 
-    # VIIc - Stellar remant (Black Hole), uses a structureless, pitch-black sphere, shows very strong gravitational lensing
+  # Used for stellar and substellar objects
+  # If optional data (diameter, temperature, rot. period) are missing, the game generates a random star based on its mass and the respective data given in StarData.tsv
+  # Supported luminosity / spectral classes and subclasses (auto-detected based on the object mass):
+    # V (L0, M, K, G, F, A, B, O) - Main Sequence, automatically uses the main sequence rendering type (small convection zones and star spots)
+    # Vb (L) - Brown Dwarf, automatically uses the brown dwarf rendering type (random, dark cloud patches and large convection zones)
+    # Vc (T) - Cool Brown Dwarf, uses the cool brown dwarf rendering type (dark cloud bands, similar to gas giants)
+  surfaceTemperature: Optional, photosphere temperature in K

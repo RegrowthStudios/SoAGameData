@@ -1,0 +1,56 @@
+L	S	StarTypeName
+VI	M	Red Subdwarf
+VI	K	Orange Subdwarf
+VI	G	Yellow Subdwarf
+VI	F	White Subdwarf
+Vc	T	Cool Brown Dwarf
+Vb	L	Brown Dwarf
+V	L	Red Main Sequence Dwarf
+V	M	Red Main Sequence Dwarf
+V	K	Orange Main Sequence Dwarf
+V	G	Yellow Main Sequence Dwarf
+V	F	White Main Sequence Dwarf
+V	A	White Main Sequence Star
+V	B	Blue Main Sequence Star
+V	O	Blue Main Sequence Star
+IV	K	Orange Subgiant
+IV	G	Yellow Subgiant
+IV	F	White Subgiant
+IV	A	White Subgiant
+IV	B	Blue Subgiant
+IV	O	Blue Subgiant
+III	M	Red Giant
+III	K	Orange Giant
+III	G	Yellow Giant
+III	F	White Giant
+III	A	White Giant
+III	B	Blue Giant
+III	O	Blue Giant
+II	M	Red Bright Giant
+II	K	Orange Bright Giant
+II	G	Yellow Bright Giant
+II	F	White Bright Giant
+II	A	White Bright Giant
+II	B	Blue Bright Giant
+II	O	Blue Bright Giant
+Ib	M	Red Supergiant
+Ib	K	Orange Supergiant
+Ib	G	Yellow Supergiant
+Ib	F	White Supergiant
+Ib	A	White Supergiant
+Ib	B	Blue Supergiant
+Ib	O	Blue Supergiant
+Ia	M	Red Luminous Supergiant
+Ia	K	Orange Luminous Supergiant
+Ia	G	Yellow Luminous Supergiant
+Ia	F	White Luminous Supergiant
+Ia	A	White Luminous Supergiant
+Ia	B	Blue Luminous Supergiant
+Ia	O	Blue Luminous Supergiant
+0	M	Red Hypergiant
+0	K	Orange Hypergiant
+0	G	Yellow Hypergiant
+0	F	White Hypergiant
+0	A	White Hypergiant
+0	B	Blue Hypergiant
+0	O	Blue Hypergiant
