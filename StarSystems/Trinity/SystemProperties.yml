@@ -1,13 +1,9 @@
 description: "The Trinity system is so cool"
-age: 3.87e+9
 
 Trinity:
   type: Barycenter
   comps: ["Trinity AB", "Trinity C"]
   par: static
-  RA: 0.0
-  dec: 0.0
-  dist: 425.0
 Trinity C:
   type: Star
   path: Stars/TrinityC.yml
@@ -415,7 +411,7 @@ Elysion-12:
   p: 288
   a: 357
 (A-6) Rivus:
-  type: Comet
+  type: Asteroid
   path: Comets/A6_Rivus.yml
   par: Trinity A
   ref: Elysion
@@ -1274,7 +1270,7 @@ Nox:
   p: 287
   a: 206
 (AB-3) Somnus:
-  type: Comet
+  type: Asteroid
   path: Comets/AB3_Somnus.yml
   par: Trinity AB
   ref: Trinity A

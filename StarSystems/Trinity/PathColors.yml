@@ -21,5 +21,3 @@ IrregularDwarfMoon:
   hover: [48, 64, 128, 175]
 Asteroid:
   hover: [80, 80, 80, 175]
-Comet:
-  hover: [80, 104, 128, 175]
