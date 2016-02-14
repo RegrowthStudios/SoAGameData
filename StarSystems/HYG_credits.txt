@@ -1,4 +1,4 @@
-Raw star catalog data extracted from HYG Database v3.0
+Star catalog data for real stars extracted from HYG Database v3.0
 
 © 2014 David Nash
 -  http://www.astronexus.com/hyg
@@ -7,4 +7,4 @@ Raw star catalog data extracted from HYG Database v3.0
 Licensed under the Creative Commons Attribution-ShareAlike 2.5 Generic License - 
 http://creativecommons.org/licenses/by-sa/2.5/
 
-NOTE: The SoA star catalog may contain changes, corrections, updates and deviations from the raw data. Absolute magnitudes were converted to luminosities (in solar units), distances are given in ly instead parsec.
+NOTE: The SoA star catalog may contain changes, corrections, updates and deviations from the raw HYG data. Absolute magnitudes were converted to luminosities (in solar units), distances are given in ly instead parsec.
