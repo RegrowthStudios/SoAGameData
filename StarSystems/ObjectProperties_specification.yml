@@ -1,4 +1,4 @@
-﻿##########  Specifications for the object properties files - last updated: 07.02.2016
+﻿##########  Specifications for the object properties files - last updated: 21.02.2016
 
 ### The object type name displayed in-game is (by default) auto-detected based on following conditions:
     # Stars use StarTypeNames.tsv as an expandable reference table for their various names (supported colors / spectral classes: T, L, M, K, G, F, A, B, O)
@@ -22,12 +22,13 @@
 
 ### General properties used for all objects:
 (ObjectType):
-  type: (Type Name) - Optional, overrides the auto-detected object type names (can be used for exotic types like carbon planets, helium planets, gas dwarfs, ...)
-  diameter: The mean equatorial diameter in km, required for asteroids and planets, optional for stars and brown dwarfs
+  type: (Type Name) - Optional, overrides the auto-detected object type names
+  # "type" can be used to add exotic types of planets like carbon planets, helium planets, gas dwarfs, etc or to add non-main sequence stars that don't fit into StarData.tsv
+  diameter: The mean equatorial diameter in km, required for asteroids and planets, optional for stars and brown dwarfs (unless a custom type is used)
   mass: Required, the mass in kg
   aTilt: Required, the axial tilt in °
   lNorth: Longitude of the north in °, not required if aTilt=0°
-  rotationalPeriod: The rotation period in h, required for asteroids and planets, optional for stars and brown dwarfs, not used for tidal-locked objects
+  rotationalPeriod: The rotation period in h, required for asteroids and planets, optional for stars and brown dwarfs (unless a custom type is used), not used for tidal-locked objects
   rings: - Optional, array for planet rings
     - innerRadius: Radius of the inner ring edge in km
       outerRadius: Radius of the outer ring edge in km
@@ -75,3 +76,4 @@ star:
     # Vb (L) - Brown Dwarf, automatically uses the brown dwarf rendering type (random, dark cloud patches and large convection zones)
     # Vc (T) - Cool Brown Dwarf, uses the cool brown dwarf rendering type (dark cloud bands, similar to gas giants)
   surfaceTemperature: Optional, photosphere temperature in K
+  starSpots: <true | false> Optional, enables/disables star spots (true by default)
