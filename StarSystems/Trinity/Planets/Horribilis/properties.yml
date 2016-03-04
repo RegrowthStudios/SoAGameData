@@ -1,5 +1,5 @@
 planet:
   diameter: 800
-  mass: 7.1666+20
+  mass: 7.1666e20
   aTilt: 0.7
   lNorth: 321
