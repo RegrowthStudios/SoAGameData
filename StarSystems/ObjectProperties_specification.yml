@@ -1,4 +1,4 @@
-﻿##########  Specifications for the object properties files - last updated: 21.02.2016
+﻿##########  Specifications for the object property files - last updated: 21.02.2016
 
 ### The object type name displayed in-game is (by default) auto-detected based on following conditions:
     # Stars use StarTypeNames.tsv as an expandable reference table for their various names (supported colors / spectral classes: T, L, M, K, G, F, A, B, O)
