@@ -1,9 +1,4 @@
 gasGiant:
-  diameter: 122080.0
-  mass: 7.1666e+26
-  aTilt: 21.3
-  lNorth: 75
-  rotationalPeriod: 10.117
   oblateness: 0.09
   colorMap: GasGiants/Elysion/color.png
   atmosphere:

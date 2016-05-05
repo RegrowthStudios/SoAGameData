@@ -1,9 +1,4 @@
 gasGiant:
-  diameter: 132570.0
-  mass: 1.4930e+27
-  aTilt: 9.66
-  lNorth: 134
-  rotationalPeriod: 9.716
   oblateness: 0.07
   colorMap: GasGiants/Pantheon/color.png
   atmosphere:

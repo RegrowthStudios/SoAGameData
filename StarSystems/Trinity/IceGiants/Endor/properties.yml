@@ -1,9 +1,4 @@
 gasGiant:
-  diameter: 54000.0
-  mass: 1.6125e+26
-  aTilt: 29.51
-  lNorth: 265
-  rotationalPeriod: 17.76
   oblateness: 0.0
   colorMap: IceGiants/Endor/color.png
   atmosphere:
