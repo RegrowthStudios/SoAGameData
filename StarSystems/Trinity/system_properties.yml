@@ -6,8 +6,13 @@ Trinity:
   par: static
 Trinity C:
   type: Star
-  path: Stars/TrinityC.yml
   par: Trinity
+  mass: 6.56172e+29
+  diameter: 404000.0
+  aTilt: 24.65
+  lNorth: 150
+  rotationalPeriod: 144
+  surfaceTemperature: 3525
 Trinity AB:
   type: Barycenter
   comps: ["Trinity A", "Trinity B"]
@@ -18,16 +23,21 @@ Trinity AB:
   a: 180.0
 Trinity A:
   type: Star
-  path: Stars/TrinityA.yml
   par: Trinity AB
+  mass: 2.18724e+30
   t: 1.02469311556389e+10
   e: 0.0
   i: 2.2
   n: 136
   a: 45
+  diameter: 1697000.0
+  aTilt: 2.27
+  lNorth: 0
+  rotationalPeriod: 912
+  surfaceTemperature: 5813
 Delphius:
   type: Planet
-  path: Planets/Delphius/properties.yml
+  path: Planets/Delphius/
   par: Trinity A
   ref: Elysion
   td: 82
@@ -36,9 +46,14 @@ Delphius:
   n: 327
   p: 81
   a: 56
+  diameter: 13650.0
+  mass: 9.2569e24
+  aTilt: 0
+  lNorth: 0
+  rotationalPeriod: 844.08S
 Demoleon:
   type: Planet
-  path: Planets/Demoleon/properties.yml
+  path: Planets/Demoleon/
   par: Trinity A
   ref: Elysion
   td: 41
@@ -47,9 +62,13 @@ Demoleon:
   n: 333
   p: 75
   a: 200
+  diameter: 14100.0
+  mass: 1.0153e+25
+  aTilt: 0.05
+  lNorth: 41
+  rotationalPeriod: 1495.2
 (A-7) Ferros:
   type: Asteroid
-  path: Asteroids/A7_Ferros.yml
   par: Trinity A
   ref: Elysion
   td: 27
@@ -58,9 +77,14 @@ Demoleon:
   n: 244
   p: 77
   a: 333
+  diameter: 452
+  mass: 3.75e+20
+  aTilt: 0
+  lNorth: 0
+  rotationalPeriod: 1093.2
 Palamedes:
   type: Planet
-  path: Planets/Palamedes/properties.yml
+  path: Planets/Palamedes/
   par: Trinity A
   ref: Elysion
   td: 15
@@ -69,9 +93,13 @@ Palamedes:
   n: 11
   p: 189
   a: 210
+  diameter: 23500.0
+  mass: 4.7778e+25
+  aTilt: 5.6
+  lNorth: 252
+  rotationalPeriod: 18.96
 Palamedes-1:
   type: DwarfMoon
-  path: Asteroids/Palamedes1.yml
   par: Palamedes
   ref: Himerus
   td: 20
@@ -79,9 +107,12 @@ Palamedes-1:
   i: 1.9
   n: 232
   a: 190
+  diameter: 111
+  mass: 2.4486e+18
+  aTilt: 0
+  lNorth: 0
 Palamedes-2:
   type: DwarfMoon
-  path: Asteroids/Palamedes2.yml
   par: Palamedes
   ref: Himerus
   td: 15
@@ -89,9 +120,13 @@ Palamedes-2:
   i: 1.8
   n: 229
   a: 121
+  diameter: 247
+  mass: 2.3292e+19
+  aTilt: 0
+  lNorth: 0
 Helenus:
   type: Moon
-  path: Planets/Helenus/properties.yml
+  path: Planets/Helenus/
   par: Palamedes
   ref: Himerus
   td: 5
@@ -99,9 +134,13 @@ Helenus:
   i: 0
   p: 35
   a: 193
+  diameter: 1000
+  mass: 1.4930e+21
+  aTilt: 1.5
+  lNorth: 131
 Hesperus:
   type: Moon
-  path: Planets/Hesperus/properties.yml
+  path: Planets/Hesperus/
   par: Palamedes
   ref: Himerus
   td: 2
@@ -109,18 +148,26 @@ Hesperus:
   i: 0
   p: 317
   a: 232
+  diameter: 3400
+  mass: 7.1666e+22
+  aTilt: 1.3
+  lNorth: 96
 Himerus:
   type: Moon
-  path: Planets/Himerus/properties.yml
+  path: Planets/Himerus/
   par: Palamedes
   t: 1.368e+6
   e: 0.0008
   i: 0
   p: 7
   a: 336
+  diameter: 4200
+  mass: 1.3736e+23
+  aTilt: 0.0
+  lNorth: 0.0S
 Horribilis:
   type: Moon
-  path: Planets/Horribilis/properties.yml
+  path: Planets/Horribilis/
   par: Palamedes
   ref: Himerus
   tf: 2
@@ -128,9 +175,13 @@ Horribilis:
   i: 0
   p: 99
   a: 75
+  diameter: 800
+  mass: 7.1666e20
+  aTilt: 0.7
+  lNorth: 321
 Aquarius:
   type: Planet
-  path: Planets/Aquarius/properties.yml
+  path: Planets/Aquarius/
   par: Trinity A
   ref: Elysion
   tf: 2
@@ -140,9 +191,14 @@ Aquarius:
   n: 163
   p: 43
   a: 57
+  diameter: 12040.0
+  mass: 5.3750e+24
+  aTilt: 20.13
+  lNorth: 184
+  rotationalPeriod: 31.056S
 Oedipus:
   type: Moon
-  path: Planets/Oedipus/properties.yml
+  path: Planets/Oedipus/
   par: Aquarius
   ref: Narcissus
   tf: 2
@@ -152,9 +208,13 @@ Oedipus:
   n: 198
   p: 289
   a: 121
+  diameter: 1100
+  mass: 2.3889e+21
+  aTilt: 3
+  lNorth: 254
 Narcissus:
   type: Moon
-  path: Planets/Narcissus/properties.yml
+  path: Planets/Narcissus/
   par: Aquarius
   t: 2.3688e+6
   e: 0.0088
@@ -162,9 +222,13 @@ Narcissus:
   n: 195
   p: 292
   a: 224
+  diameter: 2500
+  mass: 2.8069e+22
+  aTilt: 2
+  lNorth: 98
 Thoas:
   type: Planet
-  path: Planets/Thoas/properties.yml
+  path: Planets/Thoas/
   par: Trinity A
   ref: Elysion
   td: 3
@@ -173,9 +237,14 @@ Thoas:
   n: 119
   p: 342
   a: 175
+  diameter: 9900.0
+  mass: 2.3889e+24
+  aTilt: 24.25
+  lNorth: 201
+  rotationalPeriod: 26.808
 Elysion:
   type: Planet
-  path: GasGiants/Elysion/properties.yml
+  path: GasGiants/Elysion/
   par: Trinity A
   t: 3.15792e+8
   e: 0.0082
@@ -184,43 +253,60 @@ Elysion:
   a: 199
 Elysion-1:
   type: DwarfMoon
-  path: Asteroids/Elysion1.yml
   par: Elysion
   ref: Eridanus
   td: 99
   e: 0.0
   i: 0.0
   a: 213
+  diameter: 122080.0
+  mass: 7.1666e+26
+  aTilt: 21.3
+  lNorth: 75
+  rotationalPeriod: 10.117
+  diameter: 0.6
+  mass: 6.5694e+10
+  aTilt: 0
+  lNorth: 0
 Elysion-2:
   type: DwarfMoon
-  path: Asteroids/Elysion2.yml
   par: Elysion
   ref: Eridanus
   td: 77
   e: 0.0
   i: 0.0
   a: 312
+  diameter: 0.7
+  mass: 8.9583e+10
+  aTilt: 0
+  lNorth: 0
 Elysion-3:
   type: DwarfMoon
-  path: Asteroids/Elysion3.yml
   par: Elysion
   ref: Eridanus
   td: 66
   e: 0.0
   i: 0.0
   a: 108
+  diameter: 3.4
+  mass: 1.8514e+13
+  aTilt: 0
+  lNorth: 0
 Elysion-4:
   type: DwarfMoon
-  path: Asteroids/Elysion4.yml
   par: Elysion
   ref: Eridanus
   td: 55
   e: 0.0
   i: 0.0
   a: 19
+  diameter: 12
+  mass: 1.0153e+15
+  aTilt: 0
+  lNorth: 0
 Mikro:
   type: Moon
-  path: Planets/Mikro/properties.yml
+  path: Planets/Mikro/
   par: Elysion
   ref: Eridanus
   td: 33
@@ -228,9 +314,13 @@ Mikro:
   i: 0.0
   p: 254
   a: 223
+  diameter: 500.0
+  mass: 7.7638e+19
+  aTilt: 0
+  lNorth: 0
 Galantus:
   type: Moon
-  path: Planets/Galantus/properties.yml
+  path: Planets/Galantus/
   par: Elysion
   ref: Eridanus
   td: 22
@@ -238,9 +328,13 @@ Galantus:
   i: 0.0
   p: 327
   a: 97
+  diameter: 850.0
+  mass: 5.1361e+20
+  aTilt: 0
+  lNorth: 0
 Callonia:
   type: Moon
-  path: Planets/Callonia/properties.yml
+  path: Planets/Callonia/
   par: Elysion
   ref: Eridanus
   tf: 2
@@ -249,52 +343,76 @@ Callonia:
   i: 0.0
   p: 225
   a: 39
+  diameter: 1200.0
+  mass: 9.0180e+20
+  aTilt: 0
+  lNorth: 0
 Elysion-5:
   type: DwarfMoon
-  path: Asteroids/Elysion5.yml
   par: Elysion
   ref: Callonia
   trojan: L4
+  diameter: 24
+  mass: 4.1805e+15
+  aTilt: 0
+  lNorth: 0
 Elysion-6:
   type: DwarfMoon
-  path: Asteroids/Elysion6.yml
   par: Elysion
   ref: Callonia
   trojan: L5
+  diameter: 19
+  mass: 2.0305e+15
+  aTilt: 0
+  lNorth: 0
 Dominia:
   type: Moon
-  path: Planets/Dominia/properties.yml
+  path: Planets/Dominia/
   par: Elysion
   ref: Eridanus
   td: 11
   e: 0.0
   i: 0.0
   a: 296
+  diameter: 1300.0
+  mass: 1.2542e+21
+  aTilt: 0
+  lNorth: 0
 Elysion-7:
   type: DwarfMoon
-  path: Asteroids/Elysion7.yml
   par: Elysion
   ref: Dominia
   trojan: L4
+  diameter: 37
+  mass: 1.4333e+16
+  aTilt: 0
+  lNorth: 0
 Elysion-8:
   type: DwarfMoon
-  path: Asteroids/Elysion8.yml
   par: Elysion
   ref: Dominia
   trojan: L5
+  diameter: 4
+  mass: 1.7917e+13
+  aTilt: 0
+  lNorth: 0
 Aegis:
   type: Moon
-  path: Planets/Aegis/properties.yml
   par: Elysion
+  path: Planets/Aegis/
   ref: Eridanus
   td: 8
   e: 0.0
   i: 0.0
   a: 140
+  diameter: 1600.0
+  mass: 2.6875e+21
+  aTilt: 0.02
+  lNorth: 183
 Adoris:
   type: Moon
-  path: Planets/Adoris/properties.yml
   par: Elysion
+  path: Planets/Adoris/
   ref: Eridanus
   td: 5
   e: 0.0001
@@ -302,9 +420,13 @@ Adoris:
   n: 199
   p: 203
   a: 46
+  diameter: 2200.0
+  mass: 8.9583e+21
+  aTilt: 0.03
+  lNorth: 106
 Peleus:
   type: Moon
-  path: Planets/Peleus/properties.yml
+  path: Planets/Peleus/
   par: Elysion
   ref: Eridanus
   td: 2
@@ -313,9 +435,13 @@ Peleus:
   n: 329
   p: 69
   a: 155
+  diameter: 5600.0
+  mass: 1.7917e+23
+  aTilt: 1.92
+  lNorth: 85
 Eridanus:
   type: Moon
-  path: Planets/Eridanus/properties.yml
+  path: Planets/Eridanus/
   par: Elysion
   t: 2.52e+6
   e: 0.025
@@ -323,15 +449,22 @@ Eridanus:
   n: 175
   p: 24
   a: 268
+  diameter: 8100.0
+  mass: 6.5694e+23
+  aTilt: 0.83
+  lNorth: 179
 Elysion-9:
   type: DwarfMoon
-  path: Asteroids/Elysion9yml
   par: Elysion
   ref: Eridanus
   trojan: L4
+  diameter: 59
+  mass: 8.9583e+16
+  aTilt: 0
+  lNorth: 0
 Flox:
   type: Moon
-  path: Planets/Flox/properties.yml
+  path: Planets/Flox/
   par: Elysion
   ref: Eridanus
   tf: 2
@@ -340,9 +473,12 @@ Flox:
   n: 342
   p: 129
   a: 24
+  diameter: 1800.0
+  mass: 5.7333e+21
+  aTilt: 0.0
+  lNorth: 0.0
 Elysion-10:
   type: DwarfMoon
-  path: Asteroids/Elysion10.yml
   par: Elysion
   ref: Eridanus
   tf: 8
@@ -352,9 +488,12 @@ Elysion-10:
   n: 219
   p: 321
   a: 52
+  diameter: 246
+  mass: 7.7638e+18
+  aTilt: 0
+  lNorth: 0
 Elysion-11:
   type: DwarfMoon
-  path: Asteroids/Elysion11.yml
   par: Elysion
   ref: Eridanus
   tf: 3
@@ -363,9 +502,13 @@ Elysion-11:
   n: 255
   p: 338
   a: 206
+  diameter: 230
+  mass: 6.5694e+18
+  aTilt: 0
+  lNorth: 0
+  rotationalPeriod: 48.81
 Elysion-12:
   type: DwarfMoon
-  path: Asteroids/Elysion12.yml
   par: Elysion
   ref: Eridanus
   tf: 4
@@ -374,9 +517,13 @@ Elysion-12:
   n: 53
   p: 76
   a: 101
+  diameter: 178
+  mass: 2.9562e+18
+  aTilt: 0
+  lNorth: 0
+  rotationalPeriod: 21.49
 (A-3) Themis:
   type: Asteroid
-  path: Asteroids/A3_Themis.yml
   par: Trinity A
   ref: Elysion
   tf: 4
@@ -386,9 +533,13 @@ Elysion-12:
   n: 10
   p: 340
   a: 77
+  diameter: 125.0
+  mass: 1.98e+18
+  aTilt: 45.3
+  lNorth: 270
+  rotationalPeriod: 19.92
 (A-4) Opis:
   type: Asteroid
-  path: Asteroids/A4_Opis.yml
   par: Trinity A
   ref: Elysion
   tf: 7
@@ -398,9 +549,13 @@ Elysion-12:
   n: 236
   p: 61
   a: 293
+  diameter: 91.0
+  mass: 1.03e+18
+  aTilt: 12
+  lNorth: 55
+  rotationalPeriod: 5.28
 (A-1) Atropos:
   type: Asteroid
-  path: Asteroids/A1_Atropos.yml
   par: Trinity A
   ref: Elysion
   tf: 3
@@ -410,9 +565,13 @@ Elysion-12:
   n: 135
   p: 288
   a: 357
+  diameter: 255.0
+  mass: 1.6e+19
+  aTilt: 34
+  lNorth: 145
+  rotationalPeriod: 13.2
 (A-6) Rivus:
   type: Asteroid
-  path: Comets/A6_Rivus.yml
   par: Trinity A
   ref: Elysion
   tf: 2
@@ -421,9 +580,13 @@ Elysion-12:
   n: 34
   p: 264
   a: 166
+  diameter: 6.9
+  mass: 7.6e+13
+  aTilt: 178.0
+  lNorth: 205
+  rotationalPeriod: 9.84
 (A-2) Lameia:
   type: Asteroid
-  path: Asteroids/A2_Lameia.yml
   par: Trinity A
   ref: Elysion
   tf: 5
@@ -433,9 +596,14 @@ Elysion-12:
   n: 300
   p: 10
   a: 23
+  diameter: 303.0
+  mass: 1.55e+19
+  aTilt: 27
+  lNorth: 312
+  rotationalPeriod: 17.28
 (A-5) Xerxes:
   type: DwarfPlanet
-  path: Planets/Xerxes/properties.yml
+  path: Planets/Xerxes/
   par: Trinity A
   ref: Elysion
   tf: 5
@@ -445,13 +613,23 @@ Elysion-12:
   n: 20
   p: 11
   a: 35
+  diameter: 2300.0
+  mass: 1.3139e+22
+  aTilt: 55.09
+  lNorth: 9
+  rotationalPeriod: 22.56
 Trinity B:
   type: Star
-  path: Stars/TrinityB.yml
   par: Trinity AB
+  mass: 1.9884e+30
+  diameter: 1392000.0
+  aTilt: 0.81
+  lNorth: 0
+  rotationalPeriod: 600
+  surfaceTemperature: 5780
 Hermes:
   type: Planet
-  path: Planets/Hermes/properties.yml
+  path: Planets/Hermes/
   par: Trinity B
   ref: Hyperion
   td: 54
@@ -460,9 +638,13 @@ Hermes:
   n: 161
   p: 238
   a: 5
+  diameter: 5250.0
+  mass: 4.1805e+23
+  aTilt: 0
+  lNorth: 0
 Minerva:
   type: Planet
-  path: Planets/Minerva/properties.yml
+  path: Planets/Minerva/
   par: Trinity B
   ref: Hyperion
   td: 18
@@ -471,9 +653,12 @@ Minerva:
   n: 157
   p: 242
   a: 38
+  diameter: 14660.0
+  mass: 8.9583e+24
+  aTilt: 0.3
+  lNorth: 334
 (B-1) Phidias:
   type: Asteroid
-  path: Asteroids/B1_Phidias.yml
   par: Trinity B
   ref: Hyperion
   td: 6
@@ -482,9 +667,14 @@ Minerva:
   n: 351
   p: 24
   a: 186
+  diameter: 480.0
+  mass: 1.99e+20
+  aTilt: 6
+  lNorth: 10
+  rotationalPeriod: 53.28
 Endor:
   type: Planet
-  path: IceGiants/Endor/properties.yml
+  path: IceGiants/Endor/
   par: Trinity B
   ref: Hyperion
   td: 3
@@ -492,11 +682,15 @@ Endor:
   i: 0.5
   n: 55
   p: 278
-  a: 184
+  diameter: 54000.0
+  mass: 1.6125e+26
+  aTilt: 29.51
+  lNorth: 265
+  rotationalPeriod: 17.76
 Abyssos:
   type: Moon
-  path: Planets/Abyssos/properties.yml
   par: Endor
+  path: Planets/Abyssos/
   ref: Baros
   td: 25
   e: 0.00017
@@ -504,9 +698,13 @@ Abyssos:
   n: 62
   p: 290
   a: 90
+  diameter: 2300.0
+  mass: 2.2097e+22
+  aTilt: 1.41
+  lNorth: 284
 Vandor:
   type: Moon
-  path: Planets/Vandor/properties.yml
+  path: Planets/Vandor/
   par: Endor
   ref: Baros
   tf: 2
@@ -516,9 +714,13 @@ Vandor:
   n: 64
   p: 288
   a: 270
+  diameter: 3900.0
+  mass: 1.1944e+23
+  aTilt: 1.22
+  lNorth: 0
 Ares:
   type: Moon
-  path: Planets/Ares/properties.yml
+  path: Planets/Ares/
   par: Endor
   ref: Baros
   tf: 2
@@ -528,18 +730,25 @@ Ares:
   n: 68
   p: 286
   a: 23
+  diameter: 5200.0
+  mass: 3.3444e+23
+  aTilt: 0
+  lNorth: 0
 Baros:
   type: Moon
-  path: Planets/Baros/properties.yml
+  path: Planets/Baros/
   par: Endor
   t: 1.656e+6
   e: 0.0163
   i: 0
   p: 306
   a: 351
+  diameter: 5600.0
+  mass: 5.9722e+23
+  aTilt: 0
+  lNorth: 0
 Endor-1:
   type: IrregularDwarfMoon
-  path: Asteroids/Endor1.yml
   par: Endor
   t: 3.42e+6
   e: 0.0192
@@ -547,18 +756,27 @@ Endor-1:
   n: 65
   p: 190
   a: 183
+  diameter: 198.0
+  mass: 1.5528e+19
+  aTilt: 0.38
+  lNorth: 312
 Hyperion:
   type: Planet
-  path: GasGiants/Hyperion/properties.yml
+  path: GasGiants/Hyperion/
   par: Trinity B
   t: 3.14928e+7
   e: 0.0006
   i: 0
   p: 99
   a: 221
+  diameter: 154190.0
+  mass: 9.7347e+27
+  aTilt: 2.15
+  lNorth: 27
+  rotationalPeriod: 8.071
 Kolasi:
   type: Moon
-  path: Planets/Kolasi/properties.yml
+  path: Planets/Kolasi/
   par: Hyperion
   ref: Tantalus
   td: 96
@@ -566,9 +784,13 @@ Kolasi:
   i: 0
   p: 0
   a: 90
+  diameter: 4100.0
+  mass: 1.7319e+23
+  aTilt: 0
+  lNorth: 0
 Apollo:
   type: Moon
-  path: Planets/Apollo/properties.yml
+  path: Planets/Apollo/
   par: Hyperion
   ref: Tantalus
   td: 48
@@ -576,19 +798,27 @@ Apollo:
   i: 0
   p: 0
   a: 177
+  diameter: 5700.0
+  mass: 3.5833e+23
+  aTilt: 0
+  lNorth: 0
 Gemini:
   type: Moon
   par: Hyperion
-  path: Planets/Gemini/properties.yml
+  path: Planets/Gemini/
   ref: Tantalus
   td: 32
   e: 0.00006
   i: 0
   p: 0
   a: 110
+  diameter: 6400.0
+  mass: 5.9722e+23
+  aTilt: 0
+  lNorth: 0
 Aldrin:
   type: Moon
-  path: Planets/Aldrin/properties.yml
+  path: Planets/Aldrin/
   par: Hyperion
   ref: Tantalus
   td: 16
@@ -596,9 +826,13 @@ Aldrin:
   i: 0
   p: 0
   a: 3
+  diameter: 9200.0
+  mass: 2.2694e+24
+  aTilt: 0.0
+  lNorth: 0.0
 Darwin:
   type: Moon
-  path: Planets/Darwin/properties.yml
+  path: Planets/Darwin/
   par: Hyperion
   ref: Tantalus
   td: 8
@@ -606,9 +840,13 @@ Darwin:
   i: 0
   p: 0
   a: 237
+  diameter: 9700.0
+  mass: 2.6875e+24
+  aTilt: 0
+  lNorth: 0
 Fyto:
   type: Moon
-  path: Planets/Fyto/properties.yml
+  path: Planets/Fyto/
   par: Hyperion
   ref: Tantalus
   tf: 2
@@ -617,9 +855,13 @@ Fyto:
   i: 0
   p: 0
   a: 51
+  diameter: 10000.0
+  mass: 2.9861e+24
+  aTilt: 0
+  lNorth: 0
 Selene:
   type: Moon
-  path: Planets/Selene/properties.yml
+  path: Planets/Selene/
   par: Hyperion
   ref: Tantalus
   tf: 4
@@ -628,9 +870,13 @@ Selene:
   i: 0
   p: 0
   a: 277
+  diameter: 13350.0
+  mass: 7.1666e+24
+  aTilt: 0
+  lNorth: 0
 Niobe:
   type: Moon
-  path: Planets/Niobe/properties.yml
+  path: Planets/Niobe/
   par: Hyperion
   ref: Tantalus
   tf: 2
@@ -639,42 +885,63 @@ Niobe:
   i: 0
   p: 0
   a: 196
+  diameter: 11950.0
+  mass: 5.0764e+24
+  aTilt: 0
+  lNorth: 0
 Hyperion-1:
   type: DwarfMoon
-  path: Asteroids/Hyperion1.yml
   par: Hyperion
   ref: Niobe
   trojan: L4
+  diameter: 20.0
+  mass: 1.3736e+16
+  aTilt: 0
+  lNorth: 0
 Hyperion-2:
   type: DwarfMoon
-  path: Asteroids/Hyperion2.yml
   par: Hyperion
   ref: Niobe
   trojan: L5
+  diameter: 24.0
+  mass: 2.2694e+16
+  aTilt: 0
+  lNorth: 0
 Tantalus:
   type: Moon
-  path: Planets/Tantalus/properties.yml
+  path: Planets/Tantalus/
   par: Hyperion
   t: 1.3986e+6
   e: 0
   i: 0
   p: 0
   a: 45
+  diameter: 19800.0
+  mass: 2.6875e+25
+  aTilt: 0
+  lNorth: 0
 Pelops:
   type: Moon
-  path: Planets/Pelops/properties.yml
+  path: Planets/Pelops/
   par: Hyperion
   ref: Tantalus
   trojan: L4
+  diameter: 1100.0
+  mass: 2.2097e+21
+  aTilt: 0
+  lNorth: 0
 Hyperion-3:
   type: DwarfMoon
-  path: Asteroids/Hyperion3.yml
   par: Hyperion
   ref: Tantalus
   trojan: L5
+  diameter: 134.0
+  mass: 3.8819e+18
+  aTilt: 0
+  lNorth: 0
 Arctos:
   type: Moon
-  path: Planets/Arctos/properties.yml
+  path: Planets/Arctos/
   par: Hyperion
   ref: Tantalus
   tf: 7
@@ -683,9 +950,13 @@ Arctos:
   i: 0
   p: 0
   a: 184
+  diameter: 6000.0
+  mass: 4.5986e+23
+  aTilt: 0
+  lNorth: 0
 Junos:
   type: Moon
-  path: Planets/Junos/properties.yml
+  path: Planets/Junos/
   par: Hyperion
   ref: Tantalus
   tf: 8
@@ -694,9 +965,13 @@ Junos:
   i: 0
   p: 0
   a: 325
+  diameter: 3600.0
+  mass: 8.3611e+22
+  aTilt: 0
+  lNorth: 0
 Elios:
   type: Moon
-  path: Planets/Elios/properties.yml
+  path: Planets/Elios/
   par: Hyperion
   ref: Tantalus
   tf: 9
@@ -705,9 +980,13 @@ Elios:
   i: 0
   p: 0
   a: 67
+  diameter: 2000.0
+  mass: 1.3736e+22
+  aTilt: 0
+  lNorth: 0
 Lotos:
   type: Moon
-  path: Planets/Lotos/properties.yml
+  path: Planets/Lotos/
   par: Hyperion
   ref: Tantalus
   tf: 2
@@ -715,9 +994,12 @@ Lotos:
   i: 0
   p: 0
   a: 220
+  diameter: 1800.0
+  mass: 9.5555e+21
+  aTilt: 0
+  lNorth: 0
 Hyperion-4:
   type: DwarfMoon
-  path: Asteroids/Hyperion4.yml
   par: Hyperion
   ref: Tantalus
   tf: 11
@@ -726,9 +1008,12 @@ Hyperion-4:
   i: 0
   p: 0
   a: 145
+  diameter: 321.0
+  mass: 5.3750e+19
+  aTilt: 0
+  lNorth: 0
 Hyperion-5:
   type: DwarfMoon
-  path: Asteroids/Hyperion5.yml
   par: Hyperion
   ref: Tantalus
   tf: 12
@@ -737,9 +1022,13 @@ Hyperion-5:
   i: 0
   p: 0
   a: 302
+  diameter: 156.0
+  mass: 5.9722e+18
+  aTilt: 0
+  lNorth: 0
 Tros:
   type: Moon
-  path: Planets/Tros/properties.yml
+  path: Planets/Tros/
   par: Hyperion
   ref: Tantalus
   tf: 4
@@ -748,9 +1037,12 @@ Tros:
   n: 84
   p: 198
   a: 280
+  diameter: 900.0
+  mass: 1.0750e+21
+  aTilt: 1.66
+  lNorth: 159
 Hyperion-6:
   type: IrregularDwarfMoon
-  path: Asteroids/Hyperion6.yml
   par: Hyperion
   t: 7.1234e+6
   e: 0.2187
@@ -760,7 +1052,6 @@ Hyperion-6:
   a: 118
 Hyperion-7:
   type: IrregularDwarfMoon
-  path: Asteroids/Hyperion7.yml
   par: Hyperion
   t: 6.2531e+6
   e: 0.0544
@@ -768,9 +1059,13 @@ Hyperion-7:
   n: 359
   p: 324
   a: 87
+  diameter: 9
+  mass: 8.9738e+14
+  aTilt: 24
+  lNorth: 83
+  rotationalPeriod: 27.03
 Hyperion-8:
   type: IrregularDwarfMoon
-  path: Asteroids/Hyperion8.yml
   par: Hyperion
   t: 6.5545e+6
   e: 0.0382
@@ -778,9 +1073,13 @@ Hyperion-8:
   n: 334
   p: 277
   a: 62
+  diameter: 8
+  mass: 9.21e+14
+  aTilt: 32.5
+  lNorth: 230
+  rotationalPeriod: 18
 Hyperion-9:
   type: IrregularDwarfMoon
-  path: Asteroids/Hyperion9.yml
   par: Hyperion
   t: 7.9543e+6
   e: 0.1155
@@ -788,9 +1087,13 @@ Hyperion-9:
   n: 259
   p: 237
   a: 298
+  diameter: 7
+  mass: 3.193e+14
+  aTilt: 151
+  lNorth: 23
+  rotationalPeriod: 32.1
 Hyperion-10:
   type: IrregularDwarfMoon
-  path: Asteroids/Hyperion10.yml
   par: Hyperion
   t: 7.8932e+6
   e: 0.0694
@@ -798,9 +1101,13 @@ Hyperion-10:
   n: 23
   p: 234
   a: 206
+  diameter: 2.6
+  mass: 1.92e+13
+  aTilt: 35
+  lNorth: 106
+  rotationalPeriod: 12.45
 Hyperion-11:
   type: IrregularDwarfMoon
-  path: Asteroids/Hyperion11.yml
   par: Hyperion
   t: 8.4532e+6
   e: 0.0581
@@ -810,7 +1117,6 @@ Hyperion-11:
   a: 5
 Hyperion-12:
   type: IrregularDwarfMoon
-  path: Asteroids/Hyperion12.yml
   par: Hyperion
   t: 8.6209e+6
   e: 0.0702
@@ -818,9 +1124,14 @@ Hyperion-12:
   n: 150
   p: 271
   a: 302
+  diameter: 20
+  mass: 9.7201e+15
+  aTilt: 25
+  lNorth: 249
+  rotationalPeriod: 14.06
 Pantheon:
   type: Planet
-  path: GasGiants/Pantheon/properties.yml
+  path: GasGiants/Pantheon/
   par: Trinity B
   ref: Hyperion
   tf: 4
@@ -829,9 +1140,14 @@ Pantheon:
   n: 252
   p: 112
   a: 136
+  diameter: 132570.0
+  mass: 1.4930e+27
+  aTilt: 9.66
+  lNorth: 134
+  rotationalPeriod: 9.716
 Medusa:
   type: Moon
-  path: Planets/Medusa/properties.yml
+  path: Planets/Medusa/
   par: Pantheon
   ref: Galatea
   td: 12
@@ -840,9 +1156,13 @@ Medusa:
   n: 157
   p: 125
   a: 191
+  diameter: 3300.0
+  mass: 6.5694e+22
+  aTilt: 0
+  lNorth: 0
 Xenia:
   type: Moon
-  path: Planets/Xenia/properties.yml
+  path: Planets/Xenia/
   par: Pantheon
   ref: Galatea
   td: 4
@@ -851,10 +1171,14 @@ Xenia:
   n: 277
   p: 75
   a: 154
+  diameter: 3600.0
+  mass: 7.3458e+22
+  aTilt: 0
+  lNorth: 0
 Achillea:
   type: Moon
-  path: Planets/Achillea/properties.yml
   par: Pantheon
+  path: Planets/Achillea/
   ref: Galatea
   td: 2
   e: 0.0002
@@ -862,18 +1186,26 @@ Achillea:
   n: 140
   p: 258
   a: 87
+  diameter: 4800.0
+  mass: 1.1944e+23
+  aTilt: 0
+  lNorth: 0
 Galatea:
   type: Moon
-  path: Planets/Galatea/properties.yml
+  path: Planets/Galatea/
   par: Pantheon
   t: 7.02e+5
   e: 0
   i: 0.01
   n: 98
   a: 235
+  diameter: 5500.0
+  mass: 1.6722e+23
+  aTilt: 0
+  lNorth: 0
 Callinara:
   type: Moon
-  path: Planets/Callinara/properties.yml
+  path: Planets/Callinara/
   par: Pantheon
   ref: Galatea
   tf: 7
@@ -883,9 +1215,13 @@ Callinara:
   n: 164
   p: 124
   a: 32
+  diameter: 4100.0
+  mass: 6.5694e+22
+  aTilt: 0
+  lNorth: 0
 Maia:
   type: Moon
-  path: Planets/Maia/properties.yml
+  path: Planets/Maia/
   par: Pantheon
   ref: Galatea
   tf: 4
@@ -894,9 +1230,12 @@ Maia:
   n: 10
   p: 46
   a: 283
+  diameter: 4000.0
+  mass: 6.0916e+22
+  aTilt: 0
+  lNorth: 0
 (B-2) Eunomia:
   type: Asteroid
-  path: Asteroids/B2_Eunomia.yml
   par: Trinity B
   ref: Hyperion
   tf: 6
@@ -905,9 +1244,14 @@ Maia:
   n: 5
   p: 355
   a: 72
+  diameter: 521.0
+  mass: 1.25e+20
+  aTilt: 6.8
+  lNorth: 132
+  rotationalPeriod: 21.12
 (B-3) Philotes:
   type: DwarfPlanet
-  path: Planets/Philotes/properties.yml
+  path: Planets/Philotes/
   par: Trinity B
   ref: Hyperion
   tf: 8
@@ -916,9 +1260,14 @@ Maia:
   n: 176
   p: 103
   a: 44
+  diameter: 950.0
+  mass: 8.7e+20
+  aTilt: 4.26
+  lNorth: 87
+  rotationalPeriod: 10.8
 (B-4) Miseria:
   type: DwarfPlanet
-  path: Planets/Miseria/properties.yml
+  path: Planets/Miseria/
   par: Trinity B
   ref: Hyperion
   tf: 10
@@ -927,9 +1276,13 @@ Maia:
   n: 306
   p: 116
   a: 234
+  diameter: 1030.0
+  mass: 1.11e+21
+  aTilt: 1.3
+  lNorth: 154
+  rotationalPeriod: 9.84
 (B-5) Hygeia:
   type: Asteroid
-  path: Asteroids/B5_Hygeia.yml
   par: Trinity B
   ref: Hyperion
   tf: 11
@@ -938,9 +1291,14 @@ Maia:
   n: 138
   p: 87
   a: 260
+  diameter: 360.0
+  mass: 5.8e+19
+  aTilt: 72.9
+  lNorth: 233
+  rotationalPeriod: 15.84
 (B-6) Aeon:
   type: DwarfPlanet
-  path: Planets/Aeon/properties.yml
+  path: Planets/Aeon/
   par: Trinity B
   ref: Hyperion
   tf: 12
@@ -949,17 +1307,26 @@ Maia:
   n: 345
   p: 159
   a: 286
+  diameter: 2510.0
+  mass: 9.04e+21
+  aTilt: 98.6
+  lNorth: 240
+  rotationalPeriod: 25.49
 (B-6) Puck:
   type: Moon
-  path: Planets/Puck/properties.yml
+  path: Planets/Puck/
   par: (B-6) Aeon
   t: 9.1764e+4
   e: 0
   i: 0
   a: 2
+  diameter: 630.0
+  mass: 1.26e+20
+  aTilt: 0
+  lNorth: 0
 Algor:
   type: Planet
-  path: Planets/Algor/properties.yml
+  path: Planets/Algor/
   par: Trinity B
   ref: Hyperion
   tf: 20
@@ -968,9 +1335,14 @@ Algor:
   n: 175
   p: 290
   a: 249
+  diameter: 22000.0
+  mass: 1.0451e+25
+  aTilt: 12.22
+  lNorth: 345
+  rotationalPeriod: 40.32
 Rigor:
   type: Moon
-  path: Planets/Rigor/properties.yml
+  path: Planets/Rigor/
   par: Algor
   ref: Cryos
   td: 2
@@ -978,18 +1350,26 @@ Rigor:
   i: 0
   p: 166
   a: 299
+  diameter: 2400.0
+  mass: 7.9251e+21
+  aTilt: 0
+  lNorth: 0
 Cryos:
   type: Moon
-  path: Planets/Cryos/properties.yml
+  path: Planets/Cryos/
   par: Algor
   t: 3.2004e+5
   e: 0.0004
   i: 0
   p: 87
   a: 229
+  diameter: 3850.0
+  mass: 3.7625e+22
+  aTilt: 0
+  lNorth: 0
 Frigus:
   type: Moon
-  path: Planets/Frigus/properties.yml
+  path: Planets/Frigus/
   par: Algor
   ref: Cryos
   tf: 2
@@ -997,9 +1377,12 @@ Frigus:
   i: 0
   p: 103
   a: 318
+  diameter: 1100.0
+  mass: 6.9636e+20
+  aTilt: 0
+  lNorth: 0
 Algor-1:
   type: DwarfMoon
-  path: Asteroids/Algor1.yml
   par: Algor
   ref: Cryos
   tf: 3
@@ -1007,9 +1390,12 @@ Algor-1:
   i: 0.8
   n: 79
   a: 65
+  diameter: 61
+  mass: 1.3139e+17
+  aTilt: 0.05
+  lNorth: 345
 Algor-2:
   type: DwarfMoon
-  path: Asteroids/Algor2.yml
   par: Algor
   ref: Cryos
   tf: 7
@@ -1018,9 +1404,12 @@ Algor-2:
   i: 0.8
   n: 79
   a: 115
+  diameter: 130
+  mass: 1.2542e+18
+  aTilt: 0.04
+  lNorth: 342
 Algor-3:
   type: DwarfMoon
-  path: Asteroids/Algor3.yml
   par: Algor
   ref: Cryos
   tf: 4
@@ -1028,9 +1417,12 @@ Algor-3:
   i: 0.8
   n: 79
   a: 326
+  diameter: 19.0
+  mass: 2.9264e+15
+  aTilt: 0.06
+  lNorth: 339
 Algor-4:
   type: DwarfMoon
-  path: Asteroids/Algor4.yml
   par: Algor
   ref: Cryos
   tf: 5
@@ -1039,9 +1431,12 @@ Algor-4:
   n: 88
   p: 132
   a: 298
+  diameter: 31.0
+  mass: 1.4333e+16
+  aTilt: 0.44
+  lNorth: 307
 Algor-5:
   type: DwarfMoon
-  path: Asteroids/Algor5.yml
   par: Algor
   ref: Cryos
   tf: 6
@@ -1050,6 +1445,10 @@ Algor-5:
   n: 88
   p: 130
   a: 346
+  diameter: 20.0
+  mass: 2.9861e+15
+  aTilt: 1.72
+  lNorth: 78
 Karimoon-Keobar:
   type: Barycenter
   comps: ["Keobar", "Karimoon"]
@@ -1063,7 +1462,7 @@ Karimoon-Keobar:
   a: 208
 Keobar:
   type: Planet
-  path: Planets/Keobar/properties.yml
+  path: Planets/Keobar/
   par: Karimoon-Keobar
   t: 4.2336e+5
   e: 0.0223
@@ -1071,13 +1470,20 @@ Keobar:
   n: 37
   p: 75
   a: 267
+  diameter: 6800.0
+  mass: 3.0458e+23
+  aTilt: 0
+  lNorth: 0
 Karimoon:
   type: Planet
-  path: Planets/Karimoon/properties.yml
+  path: Planets/Karimoon/
   par: Karimoon-Keobar
+  diameter: 6600.0
+  mass: 2.6875e+23
+  aTilt: 0
+  lNorth: 0
 Karimoon-Keobar-1:
   type: DwarfMoon
-  path: Asteroids/KarimKeob1.yml
   par: Karimoon-Keobar
   ref: Keobar
   tf: 7
@@ -1086,9 +1492,12 @@ Karimoon-Keobar-1:
   n: 282
   p: 112
   a: 195
+  diameter: 29.0
+  mass: 5.3750e+15
+  aTilt: 0.05
+  lNorth: 196
 Karimoon-Keobar-2:
   type: DwarfMoon
-  path: Asteroids/KarimKeob2.yml
   par: Karimoon-Keobar
   ref: Keobar
   tf: 35
@@ -1098,9 +1507,12 @@ Karimoon-Keobar-2:
   n: 282
   p: 112
   a: 81
+  diameter: 80.0
+  mass: 2.5083e+17
+  aTilt: 0.05
+  lNorth: 175
 Karimoon-Keobar-3:
   type: DwarfMoon
-  path: Asteroids/KarimKeob3.yml
   par: Karimoon-Keobar
   ref: Keobar
   tf: 14
@@ -1109,9 +1521,12 @@ Karimoon-Keobar-3:
   n: 282
   p: 112
   a: 344
+  diameter: 25.0
+  mass: 5.3750e+15
+  aTilt: 0.05
+  lNorth: 203
 Karimoon-Keobar-4:
   type: DwarfMoon
-  path: Asteroids/KarimKeob4.yml
   par: Karimoon-Keobar
   ref: Keobar
   tf: 49
@@ -1121,9 +1536,14 @@ Karimoon-Keobar-4:
   n: 282
   p: 112
   a: 174
+  diameter: 5.0
+  mass: 2.9861e+13
+  aTilt: 0.05
+  lNorth: 142
+  rotationalPeriod: 117.84
 Nemesis:
   type: Planet
-  path: IceGiants/Nemesis/properties.yml
+  path: IceGiants/Nemesis/
   par: Trinity AB
   ref: Trinity A
   tf: 8
@@ -1132,9 +1552,13 @@ Nemesis:
   n: 35
   p: 117
   a: 254
+  diameter: 63000.0
+  mass: 2.8667e+26
+  aTilt: 14.91
+  lNorth: 81
+  rotationalPeriod: 13.2
 Nemesis-1:
   type: DwarfMoon
-  path: Asteroids/Nemesis1.yml
   par: Nemesis
   ref: Erebos
   tf: 5
@@ -1142,9 +1566,12 @@ Nemesis-1:
   e: 0
   i: 0
   a: 250
+  diameter: 106
+  mass: 9.5555e+17
+  aTilt: 0.0
+  lNorth: 0.0
 Nemesis-2:
   type: DwarfMoon
-  path: Asteroids/Nemesis2.yml
   par: Nemesis
   ref: Erebos
   tf: 5
@@ -1152,9 +1579,12 @@ Nemesis-2:
   e: 0
   i: 0
   a: 32
+  diameter: 282
+  mass: 1.7917e+19
+  aTilt: 0.0
+  lNorth: 0.0
 Nemesis-3:
   type: DwarfMoon
-  path: Asteroids/Nemesis3.yml
   par: Nemesis
   ref: Erebos
   tf: 2
@@ -1162,18 +1592,26 @@ Nemesis-3:
   e: 0
   i: 0
   a: 330
+  diameter: 321
+  mass: 2.6875e+19
+  aTilt: 0.0
+  lNorth: 0.0
 Erebos:
   type: Moon
-  path: Planets/Erebos/properties.yml
+  path: Planets/Erebos/
   par: Nemesis
   t: 1.188e+5
   e: 0.0027
   i: 0
   p: 315
   a: 95
+  diameter: 5300.0
+  mass: 1.6125e+23
+  aTilt: 0
+  lNorth: 0
 Caligo:
   type: Moon
-  path: Planets/Caligo/properties.yml
+  path: Planets/Caligo/
   par: Nemesis
   ref: Erebos
   tf: 2
@@ -1181,9 +1619,13 @@ Caligo:
   i: 0
   p: 354
   a: 175
+  diameter: 3300.0
+  mass: 3.8819e+22
+  aTilt: 0
+  lNorth: 0
 Tenebrio:
   type: Moon
-  path: Planets/Tenebrio/properties.yml
+  path: Planets/Tenebrio/
   par: Nemesis
   ref: Erebos
   tf: 3
@@ -1191,9 +1633,13 @@ Tenebrio:
   i: 0
   p: 32
   a: 93
+  diameter: 2000.0
+  mass: 4.3e+21
+  aTilt: 0
+  lNorth: 0
 Obscurio:
   type: Moon
-  path: Planets/Obscurio/properties.yml
+  path: Planets/Obscurio/
   par: Nemesis
   ref: Erebos
   tf: 5
@@ -1201,9 +1647,13 @@ Obscurio:
   i: 0
   p: 72
   a: 163
+  diameter: 1800.0
+  mass: 3.2847e+21
+  aTilt: 0
+  lNorth: 0
 Minos:
   type: Moon
-  path: Planets/Minos/properties.yml
+  path: Planets/Minos/
   par: Nemesis
   t: 3.2076e+6
   e: 0.17
@@ -1211,9 +1661,13 @@ Minos:
   p: 20
   n: 325
   a: 80
+  diameter: 900.0
+  mass: 6.5694e+20
+  aTilt: 0
+  lNorth: 0
 Nox:
   type: Moon
-  path: Planets/Nox/properties.yml
+  path: Planets/Nox/
   par: Nemesis
   t: 2.208744e+8
   e: 0.86
@@ -1221,18 +1675,32 @@ Nox:
   p: 354
   n: 75
   a: 287
+  diameter: 780.0
+  mass: 5.5004e+20
+  aTilt: 160.5
+  lNorth: 57
+  rotationalPeriod: 34.8
 (AB-1) Moros:
   type: DwarfPlanet
-  path: Planets/Moros/properties.yml
+  path: Planets/Moros/
   par: Trinity AB
   ref: Nemesis
   trojan: L4
+  diameter: 1095.0
+  mass: 1.4e+21
+  aTilt: 9.5
+  lNorth: 72
+  rotationalPeriod: 25.92
 (AB-2) Ker:
   type: Asteroid
-  path: Asteroids/AB2_Ker.yml
   par: Trinity AB
   ref: Nemesis
   trojan: L5
+  diameter: 440.0
+  mass: 1.17e+20
+  aTilt: 6.28
+  lNorth: 147
+  rotationalPeriod: 9.36
 (AB-4) Horkos-Aite:
   type: Barycenter
   comps: ["(AB-4) Horkos", "(AB-4) Aite"]
@@ -1246,7 +1714,6 @@ Nox:
   a: 202
 (AB-4) Horkos:
   type: Asteroid
-  path: Asteroids/AB4_Horkos.yml
   par: (AB-4) Horkos-Aite
   t: 2.09952e+5
   e: 0.1469
@@ -1254,13 +1721,20 @@ Nox:
   n: 27
   p: 331
   a: 71
+  diameter: 309.0
+  mass: 6.1e+19
+  aTilt: 0.
+  lNorth: 0
 (AB-4) Aite:
   type: Asteroid
-  path: Asteroids/AB4_Aite.yml
   par: (AB-4) Horkos-Aite
+  diameter: 147.0
+  mass: 6.09e+18
+  aTilt: 0.
+  lNorth: 0
 (AB-5) Argos:
   type: DwarfPlanet
-  path: Planets/Argos/properties.yml
+  path: Planets/Argos/
   par: Trinity AB
   ref: Trinity A
   tf: 9
@@ -1269,6 +1743,11 @@ Nox:
   n: 204
   p: 287
   a: 206
+  diameter: 1900.0
+  mass: 9.0e+21
+  aTilt: 59
+  lNorth: 241
+  rotationalPeriod: 216
 (AB-3) Somnus:
   type: Asteroid
   path: Comets/AB3_Somnus.yml
@@ -1280,3 +1759,8 @@ Nox:
   n: 0
   p: 100
   a: 45
+  diameter: 58
+  mass: 4.2e+16
+  aTilt: 84.3
+  lNorth: 240
+  rotationalPeriod: 7.68
