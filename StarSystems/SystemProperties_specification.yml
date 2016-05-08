@@ -1,19 +1,18 @@
-﻿##########  SystemProperties.yml  -  specification / property explanations - last updated: 07.02.2016
+﻿##########  SystemProperties.yml  -  specification / property explanations - last updated: 05.05.2016
 
 description: Short description/info text about the system
 
-### The orbit path type / path color is auto-detected for each object:
-    # For barycenters, the colors are taken from its binary component A type and used for the barycenter marker cross, selector and orbit
-    # Star - used for all kinds of stellar and substellar objects (ObjectType=star in their properties file)
-    # Planet - used for planetary-mass satellites of stars (ObjectType=planet or ObjectType=gasGiant)
-    # DwarfPlanet - used for spherical satellites of stars with a mass <2.5e+22 kg (ObjectType=planet)
-    # Moon - used for spherical satellites of planets (ObjectType=planet or ObjectType=gasGiant)
-    # DwarfMoon - used for irregular satellites of planets, which are resonant with other moons (ObjectType=asteroid)
-    # IrregularDwarfMoon - used for irregular satellites of planets with no orbital resonance defined (ObjectType=asteroid). Orbits and name labels are only shown on mouse hover or when selected.
-    # Asteroid - used for irregular satellites of stars (ObjectType=asteroid). Orbits and name labels are only shown on mouse hover or when selected.
-
 (Object Name):
-  barycenter: [compNameA, compNameB] - The binary components of a binary barycenter
+  type: Orbit path type, determining the appearance of the orbit, object position marker and selector. The color values can be modified in PathColors.yml.
+    # Barycenter - The colors are taken from its binary component A type and used for the barycenter marker cross, selector and orbit
+    # Star - used for all kinds of stellar and substellar objects
+    # Planet - used for planetary-mass satellites of stars
+    # DwarfPlanet - used for spherical satellites of stars with a mass <2.5e+22 kg
+    # Moon - used for spherical satellites of planets
+    # DwarfMoon - used for irregular satellites of planets in regular, usually resonant orbits
+    # IrregularDwarfMoon - used for irregular satellites of planets in irregular orbits (captured asteroids). Orbits and name labels are only shown on mouse hover or when selected.
+    # Asteroid - used for irregular satellites of stars. Orbits and name labels are only shown on mouse hover or when selected.
+  comps: ["compNameA", "compNameB"] - The binary components of a barycenter
   path: Path of the object properties yaml file within the star system folder
   par: parent object
     # static - Fixed objects in space with no orbit use this as parent, the distance (in ly) and position (right ascension in h / declination in °) relative to our sun is looked up in Stars.tsv
@@ -26,6 +25,11 @@ description: Short description/info text about the system
   i: Inclination in °
   n:  Longitude of the ascending node in °
   a: Mean anomaly (starting position) in °
-  trojan: Position of co-orbital objects, uses the same period and orbital parameters than its orbital reference body, only modifies the anomaly
+  trojan: Position of co-orbital objects, uses the same period and orbital parameters than its orbital reference body, only modifies the anomaly.
     # L4 - Trojan occupying lagrangian point 4 of the reference bodies orbit (a+60°)
     # L5 - Trojan occupying lagrangian point 5 of the reference bodies orbit (a-60°)
+  mass: Mass in kg
+  diameter: Mean equatorial diameter in km
+  aTilt: Axial tilt of the rotation axis in °
+  lNorth: Longitude of the north of the rotation axis in ° (not required if aTilt=0°)
+  rotationalPeriod: Rotational period in h (not used for tidal-locked objects)
