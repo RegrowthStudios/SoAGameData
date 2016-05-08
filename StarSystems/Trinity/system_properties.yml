@@ -3,7 +3,6 @@ description: "The Trinity system is so cool"
 Trinity:
   type: Barycenter
   comps: ["Trinity AB", "Trinity C"]
-  par: static
 Trinity C:
   type: Star
   par: Trinity
@@ -47,10 +46,10 @@ Delphius:
   p: 81
   a: 56
   diameter: 13650.0
-  mass: 9.2569e24
+  mass: 9.2569e+24
   aTilt: 0
   lNorth: 0
-  rotationalPeriod: 844.08S
+  rotationalPeriod: 844.08
 Demoleon:
   type: Planet
   path: Planets/Demoleon/
@@ -164,7 +163,7 @@ Himerus:
   diameter: 4200
   mass: 1.3736e+23
   aTilt: 0.0
-  lNorth: 0.0S
+  lNorth: 0.0
 Horribilis:
   type: Moon
   path: Planets/Horribilis/
@@ -176,7 +175,7 @@ Horribilis:
   p: 99
   a: 75
   diameter: 800
-  mass: 7.1666e20
+  mass: 7.1666e+20
   aTilt: 0.7
   lNorth: 321
 Aquarius:
@@ -195,7 +194,7 @@ Aquarius:
   mass: 5.3750e+24
   aTilt: 20.13
   lNorth: 184
-  rotationalPeriod: 31.056S
+  rotationalPeriod: 31.056
 Oedipus:
   type: Moon
   path: Planets/Oedipus/
@@ -251,6 +250,11 @@ Elysion:
   i: 0
   p: 105
   a: 199
+  diameter: 122080.0
+  mass: 7.1666e+26
+  aTilt: 21.3
+  lNorth: 75
+  rotationalPeriod: 10.117
 Elysion-1:
   type: DwarfMoon
   par: Elysion
@@ -259,11 +263,6 @@ Elysion-1:
   e: 0.0
   i: 0.0
   a: 213
-  diameter: 122080.0
-  mass: 7.1666e+26
-  aTilt: 21.3
-  lNorth: 75
-  rotationalPeriod: 10.117
   diameter: 0.6
   mass: 6.5694e+10
   aTilt: 0
@@ -1050,6 +1049,11 @@ Hyperion-6:
   n: 149
   p: 37
   a: 118
+  diameter: 9
+  mass: 8.9738e+14
+  aTilt: 24
+  lNorth: 83
+  rotationalPeriod: 27.03 
 Hyperion-7:
   type: IrregularDwarfMoon
   par: Hyperion
@@ -1115,6 +1119,11 @@ Hyperion-11:
   n: 36
   p: 271
   a: 5
+  diameter: 20
+  mass: 9.7201e+15
+  aTilt: 25
+  lNorth: 249
+  rotationalPeriod: 14.06 
 Hyperion-12:
   type: IrregularDwarfMoon
   par: Hyperion
