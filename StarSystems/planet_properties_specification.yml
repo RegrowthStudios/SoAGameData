@@ -1,4 +1,4 @@
-﻿##########  Specifications for the planet property files - last updated: 13.05.2016
+﻿##########  Specifications for the planet property files - last updated: 17.05.2016
 
 planet:
 # Used for solid, spherical planets with procedural voxel terrain generation and biome support
@@ -9,7 +9,7 @@ planet:
     km: ?
     g: ?
     waveLength: [R, G, B] - light scattering color of the atmosphere
-    composition: [H2, D2, He, H2O, CH4, NH3, N2, O2, Ar, CO2, SO2, NO2, Xe] - Optional, determines the composition of the atmosphere by weight numbers
+    composition: [N2, O2, CO2, NO2, SO2, H2O, CH4, NH3, H2, He, Ne, Ar, Kr, Xe] - Optional, determines the composition of the atmosphere by weight numbers
     # Optional, but only used if surfacePressure > 0. Defaults to Earth's atmosphere (dry) for voxel planets.
     # The volume fraction of each gas is calculated by dividing its weight number by the sum of all weight numbers
     # The partial pressure of each gas at a certain height is calculated by multiplying total atmospheric pressure with the volume fraction of the gas
@@ -34,7 +34,7 @@ gasGiant:
     km: ?
     g: ?
     waveLength: [R, G, B] - light scattering color of the atmosphere
-    composition: [H2, D2, He, H2O, CH4, NH3, N2, O2, Ar, CO2, SO2, NO2, Xe] - Optional, determines the composition of the atmosphere by weight numbers
+    composition: [N2, O2, CO2, NO2, SO2, H2O, CH4, NH3, H2, He, Ne, Ar, Kr, Xe] - Optional, determines the composition of the atmosphere by weight numbers
     # Optional, defaults to Jupiters's atmosphere for gas planets
     # The volume fraction of each gas is calculated by dividing its weight number by the sum of all weight numbers
     # The partial pressure of each gas at a certain height is calculated by multiplying total atmospheric pressure with the volume fraction of the gas
