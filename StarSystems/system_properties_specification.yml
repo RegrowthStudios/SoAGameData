@@ -1,4 +1,4 @@
-﻿##########  SystemProperties.yml  -  specification and property explanations - last updated: 13.05.2016
+﻿##########  SystemProperties.yml  -  specification and property explanations - last updated: 17.05.2016
 
 description: Short description/info text about the system
 
@@ -25,9 +25,9 @@ description: Short description/info text about the system
   i: Inclination in °
   n:  Longitude of the ascending node in °
   a: Mean anomaly (starting position) in °
-  trojan: Position of co-orbital objects, uses the same period and orbital parameters than its orbital reference body, only modifies the anomaly.
-    # L4 - Trojan occupying lagrangian point 4 of the reference bodies orbit (a+60°)
-    # L5 - Trojan occupying lagrangian point 5 of the reference bodies orbit (a-60°)
+  trojan: Position of co-orbital objects, uses the same orbital period and orbital parameters as its reference body to calculate the orbit, only modifies the anomaly.
+    # L4 - Trojan occupying lagrangian point 4 of the reference body (a+60°)
+    # L5 - Trojan occupying lagrangian point 5 of the reference body (a-60°)
   mass: Mass in kg
   diameter: Mean equatorial diameter in km
   aTilt: Axial tilt of the rotation axis in °
