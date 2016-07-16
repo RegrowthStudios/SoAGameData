@@ -39,7 +39,7 @@ description: Short description/info text about the system
   tempDeviation: Positive or negative deviation of the average surface temperature from the equilibrium temperature in K (not used for stars)
     # This deviation can be caused by: Atmospheric greenhouse effect, tidal heating, radioactive decay, Kelvin-Helmholtz mechanism, ...
   colorDeviation: [R, G, B] - Optional, RGB factors to determine the deviation of reflected light from incoming star light, defaults to [1, 1, 1]
-    # Applied to planet light rflected onto moons and to the distant rendering dots of all objects except stars.
+    # Applied to planet light reflected onto moons and to the distant rendering dots of all objects except stars.
 
 
 ########## NOTES ##########

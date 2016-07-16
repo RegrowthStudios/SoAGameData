@@ -1228,9 +1228,9 @@ Callinara:
   mass: 6.5694e+22
   aTilt: 0
   lNorth: 0
-Maia:
+Meia:
   type: Moon
-  path: Planets/Maia/
+  path: Planets/Meia/
   par: Pantheon
   ref: Galatea
   tf: 4
