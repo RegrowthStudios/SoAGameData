@@ -1,8 +1,8 @@
-baseLookupMap: "Planets/Aldrin/base_biomes.png"
+baseLookupMap: "Moons/Aldrin/base_biomes.png"
 arid_badlands:
   displayName: "Arid Badlands"
   mapColor: [230, 230, 158]
-  childColorMap: "Planets/Aldrin/arid_badlands_biomes.png"
+  childColorMap: "Moons/Aldrin/arid_badlands_biomes.png"
   childNoise:
     funcs:
       - octaves: 4

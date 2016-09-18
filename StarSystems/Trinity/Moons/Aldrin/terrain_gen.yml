@@ -1,9 +1,9 @@
-biomes: "Planets/Aldrin/biome_gen.yml"
-flora: "Planets/Aldrin/flora.yml"
-trees: "Planets/Aldrin/trees.yml"
+biomes: "Moons/Aldrin/biome_gen.yml"
+flora: "Moons/Aldrin/flora.yml"
+trees: "Moons/Aldrin/trees.yml"
 terrainColor: 
   tint: [255, 255, 255]
-  colorPath: Planets/Aldrin/TerrainColor.png
+  colorPath: Moons/Aldrin/TerrainColor.png
   grassTexturePath: _shared/terrain_b.png
   rockTexturePath: _shared/terrain_a.png
 liquidColor: 

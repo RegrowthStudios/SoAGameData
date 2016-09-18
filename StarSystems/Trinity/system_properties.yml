@@ -125,7 +125,7 @@ Palamedes-2:
   lNorth: 0
 Helenus:
   type: Moon
-  path: Planets/Helenus/
+  path: Moons/Helenus/
   par: Palamedes
   ref: Himerus
   td: 5
@@ -139,7 +139,7 @@ Helenus:
   lNorth: 131
 Hesperus:
   type: Moon
-  path: Planets/Hesperus/
+  path: Moons/Hesperus/
   par: Palamedes
   ref: Himerus
   td: 2
@@ -153,7 +153,7 @@ Hesperus:
   lNorth: 96
 Himerus:
   type: Moon
-  path: Planets/Himerus/
+  path: Moons/Himerus/
   par: Palamedes
   t: 1.368e+6
   e: 0.0008
@@ -166,7 +166,7 @@ Himerus:
   lNorth: 0.0
 Horribilis:
   type: Moon
-  path: Planets/Horribilis/
+  path: Moons/Horribilis/
   par: Palamedes
   ref: Himerus
   tf: 2
@@ -197,7 +197,7 @@ Aquarius:
   rotationalPeriod: 31.056
 Oedipus:
   type: Moon
-  path: Planets/Oedipus/
+  path: Moons/Oedipus/
   par: Aquarius
   ref: Narcissus
   tf: 2
@@ -213,7 +213,7 @@ Oedipus:
   lNorth: 254
 Narcissus:
   type: Moon
-  path: Planets/Narcissus/
+  path: Moons/Narcissus/
   par: Aquarius
   t: 2.3688e+6
   e: 0.0088
@@ -305,7 +305,7 @@ Elysion-4:
   lNorth: 0
 Mikro:
   type: Moon
-  path: Planets/Mikro/
+  path: Moons/Mikro/
   par: Elysion
   ref: Eridanus
   td: 33
@@ -319,7 +319,7 @@ Mikro:
   lNorth: 0
 Galantus:
   type: Moon
-  path: Planets/Galantus/
+  path: Moons/Galantus/
   par: Elysion
   ref: Eridanus
   td: 22
@@ -333,7 +333,7 @@ Galantus:
   lNorth: 0
 Callonia:
   type: Moon
-  path: Planets/Callonia/
+  path: Moons/Callonia/
   par: Elysion
   ref: Eridanus
   tf: 2
@@ -366,7 +366,7 @@ Elysion-6:
   lNorth: 0
 Dominia:
   type: Moon
-  path: Planets/Dominia/
+  path: Moons/Dominia/
   par: Elysion
   ref: Eridanus
   td: 11
@@ -398,7 +398,7 @@ Elysion-8:
 Aegis:
   type: Moon
   par: Elysion
-  path: Planets/Aegis/
+  path: Moons/Aegis/
   ref: Eridanus
   td: 8
   e: 0.0
@@ -411,7 +411,7 @@ Aegis:
 Adoris:
   type: Moon
   par: Elysion
-  path: Planets/Adoris/
+  path: Moons/Adoris/
   ref: Eridanus
   td: 5
   e: 0.0001
@@ -425,7 +425,7 @@ Adoris:
   lNorth: 106
 Peleus:
   type: Moon
-  path: Planets/Peleus/
+  path: Moons/Peleus/
   par: Elysion
   ref: Eridanus
   td: 2
@@ -440,7 +440,7 @@ Peleus:
   lNorth: 85
 Eridanus:
   type: Moon
-  path: Planets/Eridanus/
+  path: Moons/Eridanus/
   par: Elysion
   t: 2.52e+6
   e: 0.025
@@ -463,7 +463,7 @@ Elysion-9:
   lNorth: 0
 Flox:
   type: Moon
-  path: Planets/Flox/
+  path: Moons/Flox/
   par: Elysion
   ref: Eridanus
   tf: 2
@@ -602,7 +602,7 @@ Elysion-12:
   rotationalPeriod: 17.28
 (A-5) Xerxes:
   type: DwarfPlanet
-  path: Planets/Xerxes/
+  path: DwarfPlanets/Xerxes/
   par: Trinity A
   ref: Elysion
   tf: 5
@@ -689,7 +689,7 @@ Endor:
 Abyssos:
   type: Moon
   par: Endor
-  path: Planets/Abyssos/
+  path: Moons/Abyssos/
   ref: Baros
   td: 25
   e: 0.00017
@@ -703,7 +703,7 @@ Abyssos:
   lNorth: 284
 Vandor:
   type: Moon
-  path: Planets/Vandor/
+  path: Moons/Vandor/
   par: Endor
   ref: Baros
   tf: 2
@@ -719,7 +719,7 @@ Vandor:
   lNorth: 0
 Ares:
   type: Moon
-  path: Planets/Ares/
+  path: Moons/Ares/
   par: Endor
   ref: Baros
   tf: 2
@@ -735,7 +735,7 @@ Ares:
   lNorth: 0
 Baros:
   type: Moon
-  path: Planets/Baros/
+  path: Moons/Baros/
   par: Endor
   t: 1.656e+6
   e: 0.0163
@@ -775,7 +775,7 @@ Hyperion:
   rotationalPeriod: 8.071
 Kolasi:
   type: Moon
-  path: Planets/Kolasi/
+  path: Moons/Kolasi/
   par: Hyperion
   ref: Tantalus
   td: 96
@@ -789,7 +789,7 @@ Kolasi:
   lNorth: 0
 Apollo:
   type: Moon
-  path: Planets/Apollo/
+  path: Moons/Apollo/
   par: Hyperion
   ref: Tantalus
   td: 48
@@ -804,7 +804,7 @@ Apollo:
 Gemini:
   type: Moon
   par: Hyperion
-  path: Planets/Gemini/
+  path: Moons/Gemini/
   ref: Tantalus
   td: 32
   e: 0.00006
@@ -817,7 +817,7 @@ Gemini:
   lNorth: 0
 Aldrin:
   type: Moon
-  path: Planets/Aldrin/
+  path: Moons/Aldrin/
   par: Hyperion
   ref: Tantalus
   td: 16
@@ -831,7 +831,7 @@ Aldrin:
   lNorth: 0.0
 Darwin:
   type: Moon
-  path: Planets/Darwin/
+  path: Moons/Darwin/
   par: Hyperion
   ref: Tantalus
   td: 8
@@ -845,7 +845,7 @@ Darwin:
   lNorth: 0
 Fyto:
   type: Moon
-  path: Planets/Fyto/
+  path: Moons/Fyto/
   par: Hyperion
   ref: Tantalus
   tf: 2
@@ -860,7 +860,7 @@ Fyto:
   lNorth: 0
 Selene:
   type: Moon
-  path: Planets/Selene/
+  path: Moons/Selene/
   par: Hyperion
   ref: Tantalus
   tf: 4
@@ -875,7 +875,7 @@ Selene:
   lNorth: 0
 Niobe:
   type: Moon
-  path: Planets/Niobe/
+  path: Moons/Niobe/
   par: Hyperion
   ref: Tantalus
   tf: 2
@@ -908,7 +908,7 @@ Hyperion-2:
   lNorth: 0
 Tantalus:
   type: Moon
-  path: Planets/Tantalus/
+  path: Moons/Tantalus/
   par: Hyperion
   t: 1.3986e+6
   e: 0
@@ -921,7 +921,7 @@ Tantalus:
   lNorth: 0
 Pelops:
   type: Moon
-  path: Planets/Pelops/
+  path: Moons/Pelops/
   par: Hyperion
   ref: Tantalus
   trojan: L4
@@ -940,7 +940,7 @@ Hyperion-3:
   lNorth: 0
 Arctos:
   type: Moon
-  path: Planets/Arctos/
+  path: Moons/Arctos/
   par: Hyperion
   ref: Tantalus
   tf: 7
@@ -955,7 +955,7 @@ Arctos:
   lNorth: 0
 Junos:
   type: Moon
-  path: Planets/Junos/
+  path: Moons/Junos/
   par: Hyperion
   ref: Tantalus
   tf: 8
@@ -970,7 +970,7 @@ Junos:
   lNorth: 0
 Elios:
   type: Moon
-  path: Planets/Elios/
+  path: Moons/Elios/
   par: Hyperion
   ref: Tantalus
   tf: 9
@@ -985,7 +985,7 @@ Elios:
   lNorth: 0
 Lotos:
   type: Moon
-  path: Planets/Lotos/
+  path: Moons/Lotos/
   par: Hyperion
   ref: Tantalus
   tf: 2
@@ -1027,7 +1027,7 @@ Hyperion-5:
   lNorth: 0
 Tros:
   type: Moon
-  path: Planets/Tros/
+  path: Moons/Tros/
   par: Hyperion
   ref: Tantalus
   tf: 4
@@ -1156,7 +1156,7 @@ Pantheon:
   rotationalPeriod: 9.716
 Medusa:
   type: Moon
-  path: Planets/Medusa/
+  path: Moons/Medusa/
   par: Pantheon
   ref: Galatea
   td: 12
@@ -1171,7 +1171,7 @@ Medusa:
   lNorth: 0
 Xenia:
   type: Moon
-  path: Planets/Xenia/
+  path: Moons/Xenia/
   par: Pantheon
   ref: Galatea
   td: 4
@@ -1187,7 +1187,7 @@ Xenia:
 Achillea:
   type: Moon
   par: Pantheon
-  path: Planets/Achillea/
+  path: Moons/Achillea/
   ref: Galatea
   td: 2
   e: 0.0002
@@ -1201,7 +1201,7 @@ Achillea:
   lNorth: 0
 Galatea:
   type: Moon
-  path: Planets/Galatea/
+  path: Moons/Galatea/
   par: Pantheon
   t: 7.02e+5
   e: 0
@@ -1214,7 +1214,7 @@ Galatea:
   lNorth: 0
 Callinara:
   type: Moon
-  path: Planets/Callinara/
+  path: Moons/Callinara/
   par: Pantheon
   ref: Galatea
   tf: 7
@@ -1230,7 +1230,7 @@ Callinara:
   lNorth: 0
 Meia:
   type: Moon
-  path: Planets/Meia/
+  path: Moons/Meia/
   par: Pantheon
   ref: Galatea
   tf: 4
@@ -1260,7 +1260,7 @@ Meia:
   rotationalPeriod: 21.12
 (B-3) Philotes:
   type: DwarfPlanet
-  path: Planets/Philotes/
+  path: DwarfPlanets/Philotes/
   par: Trinity B
   ref: Hyperion
   tf: 8
@@ -1276,7 +1276,7 @@ Meia:
   rotationalPeriod: 10.8
 (B-4) Miseria:
   type: DwarfPlanet
-  path: Planets/Miseria/
+  path: DwarfPlanets/Miseria/
   par: Trinity B
   ref: Hyperion
   tf: 10
@@ -1307,7 +1307,7 @@ Meia:
   rotationalPeriod: 15.84
 (B-6) Aeon:
   type: DwarfPlanet
-  path: Planets/Aeon/
+  path: DwarfPlanets/Aeon/
   par: Trinity B
   ref: Hyperion
   tf: 12
@@ -1323,7 +1323,7 @@ Meia:
   rotationalPeriod: 25.49
 (B-6) Puck:
   type: Moon
-  path: Planets/Puck/
+  path: DwarfPlanets/Puck/
   par: (B-6) Aeon
   t: 9.1764e+4
   e: 0
@@ -1351,7 +1351,7 @@ Algor:
   rotationalPeriod: 40.32
 Rigor:
   type: Moon
-  path: Planets/Rigor/
+  path: Moons/Rigor/
   par: Algor
   ref: Cryos
   td: 2
@@ -1365,7 +1365,7 @@ Rigor:
   lNorth: 0
 Cryos:
   type: Moon
-  path: Planets/Cryos/
+  path: Moons/Cryos/
   par: Algor
   t: 3.2004e+5
   e: 0.0004
@@ -1378,7 +1378,7 @@ Cryos:
   lNorth: 0
 Frigus:
   type: Moon
-  path: Planets/Frigus/
+  path: Moons/Frigus/
   par: Algor
   ref: Cryos
   tf: 2
@@ -1607,7 +1607,7 @@ Nemesis-3:
   lNorth: 0.0
 Erebos:
   type: Moon
-  path: Planets/Erebos/
+  path: Moons/Erebos/
   par: Nemesis
   t: 1.188e+5
   e: 0.0027
@@ -1620,7 +1620,7 @@ Erebos:
   lNorth: 0
 Caligo:
   type: Moon
-  path: Planets/Caligo/
+  path: Moons/Caligo/
   par: Nemesis
   ref: Erebos
   tf: 2
@@ -1634,7 +1634,7 @@ Caligo:
   lNorth: 0
 Tenebrio:
   type: Moon
-  path: Planets/Tenebrio/
+  path: Moons/Tenebrio/
   par: Nemesis
   ref: Erebos
   tf: 3
@@ -1648,7 +1648,7 @@ Tenebrio:
   lNorth: 0
 Obscurio:
   type: Moon
-  path: Planets/Obscurio/
+  path: Moons/Obscurio/
   par: Nemesis
   ref: Erebos
   tf: 5
@@ -1662,7 +1662,7 @@ Obscurio:
   lNorth: 0
 Minos:
   type: Moon
-  path: Planets/Minos/
+  path: Moons/Minos/
   par: Nemesis
   t: 3.2076e+6
   e: 0.17
@@ -1676,7 +1676,7 @@ Minos:
   lNorth: 0
 Nox:
   type: Moon
-  path: Planets/Nox/
+  path: Moons/Nox/
   par: Nemesis
   t: 2.208744e+8
   e: 0.86
@@ -1691,7 +1691,7 @@ Nox:
   rotationalPeriod: 34.8
 (AB-1) Moros:
   type: DwarfPlanet
-  path: Planets/Moros/
+  path: DwarfPlanets/Moros/
   par: Trinity AB
   ref: Nemesis
   trojan: L4
@@ -1743,7 +1743,7 @@ Nox:
   lNorth: 0
 (AB-5) Argos:
   type: DwarfPlanet
-  path: Planets/Argos/
+  path: DwarfPlanets/Argos/
   par: Trinity AB
   ref: Trinity A
   tf: 9
@@ -1759,7 +1759,6 @@ Nox:
   rotationalPeriod: 216
 (AB-3) Somnus:
   type: Asteroid
-  path: Comets/AB3_Somnus.yml
   par: Trinity AB
   ref: Trinity A
   tf: 10
