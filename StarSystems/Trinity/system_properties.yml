@@ -29,11 +29,11 @@ Trinity A:
   i: 2.2
   n: 136
   a: 45
-  diameter: 1697000.0
+  diameter: 1672000.0
   aTilt: 2.27
   lNorth: 0
   rotationalPeriod: 912
-  surfaceTemperature: 5813
+  surfaceTemperature: 5773
 Delphius:
   type: Planet
   path: Planets/Delphius/
@@ -621,11 +621,11 @@ Trinity B:
   type: Star
   par: Trinity AB
   mass: 1.9884e+30
-  diameter: 1392000.0
+  diameter: 1371000.0
   aTilt: 0.81
   lNorth: 0
   rotationalPeriod: 600
-  surfaceTemperature: 5780
+  surfaceTemperature: 5736
 Hermes:
   type: Planet
   path: Planets/Hermes/
