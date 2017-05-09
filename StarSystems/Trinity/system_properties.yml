@@ -772,18 +772,18 @@ Hyperion:
   mass: 9.7347e+27
   aTilt: 2.15
   lNorth: 27
-  rotationalPeriod: 8.071
+  rotationalPeriod: 7.916
 Kolasi:
   type: Moon
   path: Moons/Kolasi/
   par: Hyperion
   ref: Tantalus
   td: 96
-  e: 0.001208
+  e: 0.01208
   i: 0
   p: 0
   a: 90
-  diameter: 4100.0
+  diameter: 3900.0
   mass: 1.7319e+23
   aTilt: 0
   lNorth: 0
@@ -792,12 +792,12 @@ Apollo:
   path: Moons/Apollo/
   par: Hyperion
   ref: Tantalus
-  td: 48
-  e: 0.000033
+  td: 48.98
+  e: 0.033
   i: 0
   p: 0
   a: 177
-  diameter: 5700.0
+  diameter: 5100.0
   mass: 3.5833e+23
   aTilt: 0
   lNorth: 0
@@ -806,7 +806,7 @@ Gemini:
   par: Hyperion
   path: Moons/Gemini/
   ref: Tantalus
-  td: 32
+  td: 32.16
   e: 0.00006
   i: 0
   p: 0
@@ -834,7 +834,7 @@ Darwin:
   path: Moons/Darwin/
   par: Hyperion
   ref: Tantalus
-  td: 8
+  td: 7.92
   e: 0.0032
   i: 0
   p: 0
@@ -848,7 +848,7 @@ Fyto:
   path: Moons/Fyto/
   par: Hyperion
   ref: Tantalus
-  tf: 2
+  tf: 1.98
   td: 9
   e: 0.00068
   i: 0
@@ -873,39 +873,6 @@ Selene:
   mass: 7.1666e+24
   aTilt: 0
   lNorth: 0
-Niobe:
-  type: Moon
-  path: Moons/Niobe/
-  par: Hyperion
-  ref: Tantalus
-  tf: 2
-  td: 3
-  e: 0.00004
-  i: 0
-  p: 0
-  a: 196
-  diameter: 11950.0
-  mass: 5.0764e+24
-  aTilt: 0
-  lNorth: 0
-Hyperion-1:
-  type: DwarfMoon
-  par: Hyperion
-  ref: Niobe
-  trojan: L4
-  diameter: 20.0
-  mass: 1.3736e+16
-  aTilt: 0
-  lNorth: 0
-Hyperion-2:
-  type: DwarfMoon
-  par: Hyperion
-  ref: Niobe
-  trojan: L5
-  diameter: 24.0
-  mass: 2.2694e+16
-  aTilt: 0
-  lNorth: 0
 Tantalus:
   type: Moon
   path: Moons/Tantalus/
@@ -924,123 +891,88 @@ Pelops:
   path: Moons/Pelops/
   par: Hyperion
   ref: Tantalus
-  trojan: L4
+  e: 0
+  i: 0
+  p: 0
+  a: 105
   diameter: 1100.0
   mass: 2.2097e+21
   aTilt: 0
   lNorth: 0
-Hyperion-3:
+Hyperion-1:
   type: DwarfMoon
   par: Hyperion
   ref: Tantalus
-  trojan: L5
+  e: 0
+  i: 0
+  p: 0
+  a: 345
   diameter: 134.0
   mass: 3.8819e+18
   aTilt: 0
   lNorth: 0
-Arctos:
+Niobe:
   type: Moon
-  path: Moons/Arctos/
+  path: Moons/Niobe/
   par: Hyperion
   ref: Tantalus
-  tf: 7
-  td: 5
-  e: 0.00015
+  tf: 9
+  td: 4
+  e: 0.02348
   i: 0
-  p: 0
-  a: 184
-  diameter: 6000.0
-  mass: 4.5986e+23
+  p: 65
+  a: 196
+  diameter: 11950.0
+  mass: 5.0764e+24
   aTilt: 0
   lNorth: 0
+Hyperion-2:
+  type: DwarfMoon
+  par: Hyperion
+  ref: Tantalus
+  tf: 9
+  td: 4
+  e: 0.04475
+  i: 0
+  p: 3
+  a: 196
+  diameter: 20.0
+  mass: 1.3736e+16
+  aTilt: 0
+  lNorth: 0
+  rotationalPeriod: 699.30
+Hyperion-3:
+  type: DwarfMoon
+  par: Hyperion
+  ref: Tantalus
+  tf: 9
+  td: 4
+  e: 0.05651
+  i: 0
+  p: 141
+  a: 196
+  diameter: 24.0
+  mass: 2.2694e+16
+  aTilt: 0
+  lNorth: 0
+  rotationalPeriod: 699.30
 Junos:
   type: Moon
   path: Moons/Junos/
   par: Hyperion
   ref: Tantalus
-  tf: 8
-  td: 5
-  e: 0.00018
-  i: 0
-  p: 0
+  tf: 27
+  td: 8
+  e: 0.0544
+  i: 17.59
+  n: 147
+  p: 54
   a: 325
   diameter: 3600.0
   mass: 8.3611e+22
   aTilt: 0
   lNorth: 0
-Elios:
-  type: Moon
-  path: Moons/Elios/
-  par: Hyperion
-  ref: Tantalus
-  tf: 9
-  td: 5
-  e: 0.0002
-  i: 0
-  p: 0
-  a: 67
-  diameter: 2000.0
-  mass: 1.3736e+22
-  aTilt: 0
-  lNorth: 0
-Lotos:
-  type: Moon
-  path: Moons/Lotos/
-  par: Hyperion
-  ref: Tantalus
-  tf: 2
-  e: 0.00022
-  i: 0
-  p: 0
-  a: 220
-  diameter: 1800.0
-  mass: 9.5555e+21
-  aTilt: 0
-  lNorth: 0
 Hyperion-4:
-  type: DwarfMoon
-  par: Hyperion
-  ref: Tantalus
-  tf: 11
-  td: 5
-  e: 0.00012
-  i: 0
-  p: 0
-  a: 145
-  diameter: 321.0
-  mass: 5.3750e+19
-  aTilt: 0
-  lNorth: 0
-Hyperion-5:
-  type: DwarfMoon
-  par: Hyperion
-  ref: Tantalus
-  tf: 12
-  td: 5
-  e: 0.00016
-  i: 0
-  p: 0
-  a: 302
-  diameter: 156.0
-  mass: 5.9722e+18
-  aTilt: 0
-  lNorth: 0
-Tros:
-  type: Moon
-  path: Moons/Tros/
-  par: Hyperion
-  ref: Tantalus
-  tf: 4
-  e: 0.0744
-  i: 7.59
-  n: 84
-  p: 198
-  a: 280
-  diameter: 900.0
-  mass: 1.0750e+21
-  aTilt: 1.66
-  lNorth: 159
-Hyperion-6:
   type: IrregularDwarfMoon
   par: Hyperion
   t: 7.1234e+6
@@ -1054,90 +986,76 @@ Hyperion-6:
   aTilt: 24
   lNorth: 83
   rotationalPeriod: 27.03 
-Hyperion-7:
+Hyperion-5:
   type: IrregularDwarfMoon
   par: Hyperion
   t: 6.2531e+6
-  e: 0.0544
-  i: 18.10
+  e: 0.0841
+  i: 168.10
   n: 359
   p: 324
   a: 87
-  diameter: 9
-  mass: 8.9738e+14
-  aTilt: 24
-  lNorth: 83
-  rotationalPeriod: 27.03
-Hyperion-8:
+  diameter: 29.6
+  mass: 5.0859e+16
+  aTilt: 65
+  lNorth: 98
+  rotationalPeriod: 7.14
+Hyperion-6:
   type: IrregularDwarfMoon
   par: Hyperion
-  t: 6.5545e+6
-  e: 0.0382
-  i: 22.92
+  t: 8.5634e+6
+  e: 0.0990
+  i: 141.85
   n: 334
   p: 277
   a: 62
-  diameter: 8
-  mass: 9.21e+14
+  diameter: 2.5
+  mass: 1.5302e+13
   aTilt: 32.5
   lNorth: 230
-  rotationalPeriod: 18
-Hyperion-9:
-  type: IrregularDwarfMoon
-  par: Hyperion
-  t: 7.9543e+6
-  e: 0.1155
-  i: 145.37
-  n: 259
-  p: 237
-  a: 298
-  diameter: 7
-  mass: 3.193e+14
-  aTilt: 151
-  lNorth: 23
-  rotationalPeriod: 32.1
-Hyperion-10:
-  type: IrregularDwarfMoon
-  par: Hyperion
-  t: 7.8932e+6
-  e: 0.0694
-  i: 92.10
-  n: 23
-  p: 234
-  a: 206
-  diameter: 2.6
-  mass: 1.92e+13
-  aTilt: 35
-  lNorth: 106
-  rotationalPeriod: 12.45
-Hyperion-11:
-  type: IrregularDwarfMoon
-  par: Hyperion
-  t: 8.4532e+6
-  e: 0.0581
-  i: 133.18
-  n: 36
-  p: 271
-  a: 5
-  diameter: 20
-  mass: 9.7201e+15
-  aTilt: 25
-  lNorth: 249
-  rotationalPeriod: 14.06 
-Hyperion-12:
+  rotationalPeriod: 18.70
+Hyperion-7:
   type: IrregularDwarfMoon
   par: Hyperion
   t: 8.6209e+6
   e: 0.0702
-  i: 129.05
+  i: 172.05
   n: 150
   p: 271
   a: 302
-  diameter: 20
-  mass: 9.7201e+15
-  aTilt: 25
+  diameter: 6.9
+  mass: 4.9760e+14
+  aTilt: 0.9
   lNorth: 249
-  rotationalPeriod: 14.06
+  rotationalPeriod: 2.34
+Hyperion-8:
+  type: IrregularDwarfMoon
+  par: Hyperion
+  t: 9.3345e+6
+  e: 0.0400
+  i: 159.00
+  n: 23
+  p: 234
+  a: 206
+  diameter: 5.8
+  mass: 1.5825e+14
+  aTilt: 78
+  lNorth: 106
+  rotationalPeriod: 137.00
+Hyperion-9:
+  type: IrregularDwarfMoon
+  par: Hyperion
+  t: 8.3164e+6
+  e: 0.0778
+  i: 158.44
+  n: 36
+  p: 271
+  a: 5
+  diameter: 4
+  mass: 1.1955e+14
+  aTilt: 35
+  lNorth: 249
+  rotationalPeriod: 5.19
 Pantheon:
   type: Planet
   path: GasGiants/Pantheon/
