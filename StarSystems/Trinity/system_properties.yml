@@ -349,8 +349,13 @@ Callonia:
 Elysion-5:
   type: DwarfMoon
   par: Elysion
-  ref: Callonia
-  trojan: L4
+  ref: Eridanus
+  tf: 2
+  td: 33
+  e: 0.0003
+  i: 0.0
+  p: 127
+  a: 197
   diameter: 24
   mass: 4.1805e+15
   aTilt: 0
@@ -358,8 +363,13 @@ Elysion-5:
 Elysion-6:
   type: DwarfMoon
   par: Elysion
-  ref: Callonia
-  trojan: L5
+  ref: Eridanus
+  tf: 2
+  td: 33
+  e: 0.0004
+  i: 0.0
+  p: 336
+  a: 228
   diameter: 19
   mass: 2.0305e+15
   aTilt: 0
@@ -380,8 +390,12 @@ Dominia:
 Elysion-7:
   type: DwarfMoon
   par: Elysion
-  ref: Dominia
-  trojan: L4
+  ref: Eridanus
+  td: 11
+  e: 0.0015
+  i: 0.0
+  p: 354
+  a: 2
   diameter: 37
   mass: 1.4333e+16
   aTilt: 0
@@ -389,8 +403,12 @@ Elysion-7:
 Elysion-8:
   type: DwarfMoon
   par: Elysion
-  ref: Dominia
-  trojan: L5
+  ref: Eridanus
+  td: 11
+  e: 0.0009
+  i: 0.0
+  p: 7
+  a: 229
   diameter: 4
   mass: 1.7917e+13
   aTilt: 0
@@ -456,7 +474,11 @@ Elysion-9:
   type: DwarfMoon
   par: Elysion
   ref: Eridanus
-  trojan: L4
+  e: 0.036
+  i: 0.73
+  n: 28
+  p: 223
+  a: 105
   diameter: 59
   mass: 8.9583e+16
   aTilt: 0
@@ -1611,8 +1633,13 @@ Nox:
   type: DwarfPlanet
   path: DwarfPlanets/Moros/
   par: Trinity AB
-  ref: Nemesis
-  trojan: L4
+  ref: Trinity A
+  tf: 8
+  e: 0.095
+  i: 1.36
+  p: 37
+  n: 20
+  a: 294
   diameter: 1095.0
   mass: 1.4e+21
   aTilt: 9.5
@@ -1621,8 +1648,13 @@ Nox:
 (AB-2) Ker:
   type: Asteroid
   par: Trinity AB
-  ref: Nemesis
-  trojan: L5
+  ref: Trinity A
+  tf: 8
+  e: 0.118
+  i: 4.28
+  p: 8
+  n: 306
+  a: 202
   diameter: 440.0
   mass: 1.17e+20
   aTilt: 6.28
