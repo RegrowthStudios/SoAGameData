@@ -1251,9 +1251,9 @@ Meia:
   mass: 1.26e+20
   aTilt: 0
   lNorth: 0
-Algor:
-  type: Planet
-  path: Planets/Algor/
+Karimoon-Keobar:
+  type: Barycenter
+  comps: ["Karimoon", "Keobar"]
   par: Trinity B
   ref: Hyperion
   tf: 20
@@ -1262,134 +1262,9 @@ Algor:
   n: 175
   p: 290
   a: 249
-  diameter: 22000.0
-  mass: 1.0451e+25
-  aTilt: 12.22
-  lNorth: 345
-  rotationalPeriod: 40.32
-Rigor:
-  type: Moon
-  path: Moons/Rigor/
-  par: Algor
-  ref: Cryos
-  td: 2
-  e: 0.0003
-  i: 0
-  p: 166
-  a: 299
-  diameter: 2400.0
-  mass: 7.9251e+21
-  aTilt: 0
-  lNorth: 0
-Cryos:
-  type: Moon
-  path: Moons/Cryos/
-  par: Algor
-  t: 3.2004e+5
-  e: 0.0004
-  i: 0
-  p: 87
-  a: 229
-  diameter: 3850.0
-  mass: 3.7625e+22
-  aTilt: 0
-  lNorth: 0
-Frigus:
-  type: Moon
-  path: Moons/Frigus/
-  par: Algor
-  ref: Cryos
-  tf: 2
-  e: 0.0002
-  i: 0
-  p: 103
-  a: 318
-  diameter: 1100.0
-  mass: 6.9636e+20
-  aTilt: 0
-  lNorth: 0
-Algor-1:
-  type: DwarfMoon
-  par: Algor
-  ref: Cryos
-  tf: 3
-  e: 0
-  i: 0.8
-  n: 79
-  a: 65
-  diameter: 61
-  mass: 1.3139e+17
-  aTilt: 0.05
-  lNorth: 345
-Algor-2:
-  type: DwarfMoon
-  par: Algor
-  ref: Cryos
-  tf: 7
-  td: 2
-  e: 0
-  i: 0.8
-  n: 79
-  a: 115
-  diameter: 130
-  mass: 1.2542e+18
-  aTilt: 0.04
-  lNorth: 342
-Algor-3:
-  type: DwarfMoon
-  par: Algor
-  ref: Cryos
-  tf: 4
-  e: 0
-  i: 0.8
-  n: 79
-  a: 326
-  diameter: 19.0
-  mass: 2.9264e+15
-  aTilt: 0.06
-  lNorth: 339
-Algor-4:
-  type: DwarfMoon
-  par: Algor
-  ref: Cryos
-  tf: 5
-  e: 0.0005
-  i: 1.53
-  n: 88
-  p: 132
-  a: 298
-  diameter: 31.0
-  mass: 1.4333e+16
-  aTilt: 0.44
-  lNorth: 307
-Algor-5:
-  type: DwarfMoon
-  par: Algor
-  ref: Cryos
-  tf: 6
-  e: 0.0005
-  i: 1.49
-  n: 88
-  p: 130
-  a: 346
-  diameter: 20.0
-  mass: 2.9861e+15
-  aTilt: 1.72
-  lNorth: 78
-Karimoon-Keobar:
-  type: Barycenter
-  comps: ["Keobar", "Karimoon"]
-  par: Trinity B
-  ref: Hyperion
-  tf: 36
-  e: 0.067
-  i: 5.01
-  n: 180
-  p: 53
-  a: 208
-Keobar:
+Karimoon:
   type: Planet
-  path: Planets/Keobar/
+  path: Planets/Karimoon/
   par: Karimoon-Keobar
   t: 4.2336e+5
   e: 0.0223
@@ -1401,9 +1276,9 @@ Keobar:
   mass: 3.0458e+23
   aTilt: 0
   lNorth: 0
-Karimoon:
+Keobar:
   type: Planet
-  path: Planets/Karimoon/
+  path: Planets/Keobar/
   par: Karimoon-Keobar
   diameter: 6600.0
   mass: 2.6875e+23
@@ -1412,7 +1287,7 @@ Karimoon:
 Karimoon-Keobar-1:
   type: DwarfMoon
   par: Karimoon-Keobar
-  ref: Keobar
+  ref: Karimoon
   tf: 7
   e: 0.005
   i: 0.3
@@ -1426,7 +1301,7 @@ Karimoon-Keobar-1:
 Karimoon-Keobar-2:
   type: DwarfMoon
   par: Karimoon-Keobar
-  ref: Keobar
+  ref: Karimoon
   tf: 35
   td: 3
   e: 0.005
@@ -1441,7 +1316,7 @@ Karimoon-Keobar-2:
 Karimoon-Keobar-3:
   type: DwarfMoon
   par: Karimoon-Keobar
-  ref: Keobar
+  ref: Karimoon
   tf: 14
   e: 0.005
   i: 0.49
@@ -1455,7 +1330,7 @@ Karimoon-Keobar-3:
 Karimoon-Keobar-4:
   type: DwarfMoon
   par: Karimoon-Keobar
-  ref: Keobar
+  ref: Karimoon
   tf: 49
   td: 3
   e: 0.005
@@ -1468,6 +1343,131 @@ Karimoon-Keobar-4:
   aTilt: 0.05
   lNorth: 142
   rotationalPeriod: 117.84
+Arctos:
+  type: Planet
+  path: Planets/Arctos/
+  par: Trinity B
+  ref: Hyperion
+  tf: 36
+  e: 0.067
+  i: 5.01
+  n: 180
+  p: 53
+  a: 208
+  diameter: 22000.0
+  mass: 1.0451e+25
+  aTilt: 12.22
+  lNorth: 345
+  rotationalPeriod: 40.32
+Rigor:
+  type: Moon
+  path: Moons/Rigor/
+  par: Arctos
+  ref: Cryos
+  td: 2
+  e: 0.0003
+  i: 0
+  p: 166
+  a: 299
+  diameter: 2400.0
+  mass: 7.9251e+21
+  aTilt: 0
+  lNorth: 0
+Cryos:
+  type: Moon
+  path: Moons/Cryos/
+  par: Arctos
+  t: 3.2004e+5
+  e: 0.0004
+  i: 0
+  p: 87
+  a: 229
+  diameter: 3850.0
+  mass: 3.7625e+22
+  aTilt: 0
+  lNorth: 0
+Frigus:
+  type: Moon
+  path: Moons/Frigus/
+  par: Arctos
+  ref: Cryos
+  tf: 2
+  e: 0.0002
+  i: 0
+  p: 103
+  a: 318
+  diameter: 1100.0
+  mass: 6.9636e+20
+  aTilt: 0
+  lNorth: 0
+Arctos-1:
+  type: DwarfMoon
+  par: Arctos
+  ref: Cryos
+  tf: 3
+  e: 0
+  i: 0.8
+  n: 79
+  a: 65
+  diameter: 61
+  mass: 1.3139e+17
+  aTilt: 0.05
+  lNorth: 345
+Arctos-2:
+  type: DwarfMoon
+  par: Arctos
+  ref: Cryos
+  tf: 7
+  td: 2
+  e: 0
+  i: 0.8
+  n: 79
+  a: 115
+  diameter: 130
+  mass: 1.2542e+18
+  aTilt: 0.04
+  lNorth: 342
+Arctos-3:
+  type: DwarfMoon
+  par: Arctos
+  ref: Cryos
+  tf: 4
+  e: 0
+  i: 0.8
+  n: 79
+  a: 326
+  diameter: 19.0
+  mass: 2.9264e+15
+  aTilt: 0.06
+  lNorth: 339
+Arctos-4:
+  type: DwarfMoon
+  par: Arctos
+  ref: Cryos
+  tf: 5
+  e: 0.0005
+  i: 1.53
+  n: 88
+  p: 132
+  a: 298
+  diameter: 31.0
+  mass: 1.4333e+16
+  aTilt: 0.44
+  lNorth: 307
+Arctos-5:
+  type: DwarfMoon
+  par: Arctos
+  ref: Cryos
+  tf: 6
+  e: 0.0005
+  i: 1.49
+  n: 88
+  p: 130
+  a: 346
+  diameter: 20.0
+  mass: 2.9861e+15
+  aTilt: 1.72
+  lNorth: 78
 Nemesis:
   type: Planet
   path: IceGiants/Nemesis/
