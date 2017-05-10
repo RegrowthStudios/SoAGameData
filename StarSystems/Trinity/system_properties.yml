@@ -478,7 +478,7 @@ Elysion-9:
   i: 0.73
   n: 28
   p: 223
-  a: 105
+  a: 129
   diameter: 59
   mass: 8.9583e+16
   aTilt: 0
@@ -803,8 +803,8 @@ Kolasi:
   td: 96
   e: 0.01208
   i: 0
-  p: 0
-  a: 90
+  p: 51
+  a: 344
   diameter: 3900.0
   mass: 1.7319e+23
   aTilt: 0
@@ -817,8 +817,8 @@ Apollo:
   td: 48.98
   e: 0.033
   i: 0
-  p: 0
-  a: 177
+  p: 142
+  a: 61
   diameter: 5100.0
   mass: 3.5833e+23
   aTilt: 0
@@ -831,7 +831,7 @@ Gemini:
   td: 32.16
   e: 0.00006
   i: 0
-  p: 0
+  p: 89
   a: 110
   diameter: 6400.0
   mass: 5.9722e+23
@@ -845,7 +845,7 @@ Aldrin:
   td: 16
   e: 0.00089
   i: 0
-  p: 0
+  p: 12
   a: 3
   diameter: 9200.0
   mass: 2.2694e+24
@@ -859,8 +859,8 @@ Darwin:
   td: 7.92
   e: 0.0032
   i: 0
-  p: 0
-  a: 237
+  p: 286
+  a: 267
   diameter: 9700.0
   mass: 2.6875e+24
   aTilt: 0
@@ -874,8 +874,8 @@ Fyto:
   td: 9
   e: 0.00068
   i: 0
-  p: 0
-  a: 51
+  p: 167
+  a: 49
   diameter: 10000.0
   mass: 2.9861e+24
   aTilt: 0
@@ -889,8 +889,8 @@ Selene:
   td: 9
   e: 0.00058
   i: 0
-  p: 0
-  a: 277
+  p: 78
+  a: 15
   diameter: 13350.0
   mass: 7.1666e+24
   aTilt: 0
@@ -902,7 +902,6 @@ Tantalus:
   t: 1.3986e+6
   e: 0
   i: 0
-  p: 0
   a: 45
   diameter: 19800.0
   mass: 2.6875e+25
@@ -915,7 +914,6 @@ Pelops:
   ref: Tantalus
   e: 0
   i: 0
-  p: 0
   a: 105
   diameter: 1100.0
   mass: 2.2097e+21
@@ -927,7 +925,6 @@ Hyperion-1:
   ref: Tantalus
   e: 0
   i: 0
-  p: 0
   a: 345
   diameter: 134.0
   mass: 3.8819e+18
@@ -943,7 +940,7 @@ Niobe:
   e: 0.02348
   i: 0
   p: 65
-  a: 196
+  a: 195
   diameter: 11950.0
   mass: 5.0764e+24
   aTilt: 0
@@ -957,7 +954,7 @@ Hyperion-2:
   e: 0.04475
   i: 0
   p: 3
-  a: 196
+  a: 317
   diameter: 20.0
   mass: 1.3736e+16
   aTilt: 0
@@ -972,7 +969,7 @@ Hyperion-3:
   e: 0.05651
   i: 0
   p: 141
-  a: 196
+  a: 59
   diameter: 24.0
   mass: 2.2694e+16
   aTilt: 0
@@ -989,7 +986,7 @@ Junos:
   i: 17.59
   n: 147
   p: 54
-  a: 325
+  a: 11
   diameter: 3600.0
   mass: 8.3611e+22
   aTilt: 0
@@ -1607,8 +1604,8 @@ Minos:
   t: 3.2076e+6
   e: 0.17
   i: 11.4
-  p: 20
   n: 325
+  p: 20
   a: 80
   diameter: 900.0
   mass: 6.5694e+20
@@ -1621,8 +1618,8 @@ Nox:
   t: 2.208744e+8
   e: 0.86
   i: 166.9
-  p: 354
   n: 75
+  p: 354
   a: 287
   diameter: 780.0
   mass: 5.5004e+20
@@ -1637,9 +1634,9 @@ Nox:
   tf: 8
   e: 0.095
   i: 1.36
-  p: 37
   n: 20
-  a: 294
+  p: 37
+  a: 31
   diameter: 1095.0
   mass: 1.4e+21
   aTilt: 9.5
@@ -1652,9 +1649,9 @@ Nox:
   tf: 8
   e: 0.118
   i: 4.28
-  p: 8
   n: 306
-  a: 202
+  p: 8
+  a: 299
   diameter: 440.0
   mass: 1.17e+20
   aTilt: 6.28
@@ -1714,7 +1711,7 @@ Nox:
   tf: 10
   e: 0.145
   i: 3.03
-  n: 0
+  n: 54
   p: 100
   a: 45
   diameter: 58
