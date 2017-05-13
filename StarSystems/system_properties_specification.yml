@@ -1,4 +1,4 @@
-﻿##########  SystemProperties.yml  -  specification and property explanations - last updated: 10.05.2017
+﻿##########  SystemProperties.yml  -  specification and property explanations - last updated: 12.05.2017
 
 description: Short description/info text about the system
 
@@ -17,7 +17,7 @@ description: Short description/info text about the system
   path: Path of the planet properties yaml file within the star system folder (required for voxel planets and gas giants)
   par: Parent object, used by all objects except the highest ranked one, which is fixed in space (static / no orbit), the coordinates of the static object are looked up in Stars.tsv
   t: Orbital period in s
-  ref: Orbital period reference body
+  ref: Orbital period reference body (can be used instead of t to create mean motion resonances via tf and td)
   tf: Reference body period factor
   td: Reference body period divisor
   e: Eccentricity
