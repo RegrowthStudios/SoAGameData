@@ -18,16 +18,17 @@ Trinity AB:
   par: Trinity
   t: 4.76193541668919e+11
   e: 0.13
-  p: 246.0
-  a: 180.0
+  p: 246
+  a: 180
 Trinity A:
   type: Star
   par: Trinity AB
   mass: 2.18724e+30
   t: 1.02469311556389e+10
-  e: 0.0
+  e: 0.019
   i: 2.2
   n: 136
+  p: 54
   a: 45
   diameter: 1672000.0
   aTilt: 2.27
@@ -66,21 +67,6 @@ Demoleon:
   aTilt: 0.05
   lNorth: 41
   rotationalPeriod: 1426.34146341463
-(A-7) Ferros:
-  type: Asteroid
-  par: Trinity A
-  ref: Elysion
-  td: 27
-  e: 0.1550
-  i: 7.3
-  n: 244
-  p: 77
-  a: 333
-  diameter: 452
-  mass: 3.75e+20
-  aTilt: 0
-  lNorth: 0
-  rotationalPeriod: 1093.2
 Palamedes:
   type: Planet
   path: Planets/Palamedes/
@@ -575,6 +561,22 @@ Elysion-12:
   aTilt: 12
   lNorth: 55
   rotationalPeriod: 5.28
+(A-7) Ker:
+  type: Asteroid
+  par: Trinity A
+  ref: Elysion
+  tf: 3
+  td: 2
+  e: 0.1049
+  i: 11.28
+  n: 306
+  p: 8
+  a: 299
+  diameter: 440.0
+  mass: 1.17e+20
+  aTilt: 6.28
+  lNorth: 147
+  rotationalPeriod: 9.36
 (A-1) Atropos:
   type: Asteroid
   par: Trinity A
@@ -678,6 +680,22 @@ Minerva:
   mass: 8.9583e+24
   aTilt: 0.3
   lNorth: 334
+(B-7) Ferros:
+  type: Asteroid
+  par: Trinity B
+  ref: Hyperion
+  tf: 2
+  td: 12.38
+  e: 0.1350
+  i: 7.3
+  n: 244
+  p: 77
+  a: 333
+  diameter: 452
+  mass: 3.75e+20
+  aTilt: 0
+  lNorth: 0
+  rotationalPeriod: 1093.2
 (B-1) Phidias:
   type: Asteroid
   par: Trinity B
@@ -1490,11 +1508,10 @@ Arctos-5:
 Nemesis:
   type: Planet
   path: IceGiants/Nemesis/
-  par: Trinity AB
-  ref: Trinity A
-  tf: 8
-  e: 0.08
-  i: 0.86
+  par: Trinity C
+  t: 2.4029e+9
+  e: 0.3114
+  i: 17.60
   n: 35
   p: 117
   a: 254
@@ -1615,8 +1632,8 @@ Nox:
   type: Moon
   path: Moons/Nox/
   par: Nemesis
-  t: 2.208744e+8
-  e: 0.86
+  t: 1.4527e+8
+  e: 0.8139
   i: 166.9
   n: 75
   p: 354
@@ -1626,14 +1643,13 @@ Nox:
   aTilt: 160.5
   lNorth: 57
   rotationalPeriod: 34.8
-(AB-1) Moros:
+(C-6) Argos:
   type: DwarfPlanet
-  path: DwarfPlanets/Moros/
-  par: Trinity AB
-  ref: Trinity A
-  tf: 8
-  e: 0.095
-  i: 1.36
+  path: DwarfPlanets/Argos/
+  par: Trinity C
+  t: 1.8122e+9
+  e: 0.9170
+  i: 29.82
   n: 20
   p: 37
   a: 31
@@ -1642,80 +1658,3 @@ Nox:
   aTilt: 9.5
   lNorth: 72
   rotationalPeriod: 25.92
-(AB-2) Ker:
-  type: Asteroid
-  par: Trinity AB
-  ref: Trinity A
-  tf: 8
-  e: 0.118
-  i: 4.28
-  n: 306
-  p: 8
-  a: 299
-  diameter: 440.0
-  mass: 1.17e+20
-  aTilt: 6.28
-  lNorth: 147
-  rotationalPeriod: 9.36
-(AB-4) Horkos-Aite:
-  type: Barycenter
-  comps: ["(AB-4) Horkos", "(AB-4) Aite"]
-  par: Trinity AB
-  ref: Trinity A
-  tf: 9
-  e: 0.181
-  i: 4.75
-  n: 226
-  p: 5
-  a: 202
-(AB-4) Horkos:
-  type: Asteroid
-  par: (AB-4) Horkos-Aite
-  t: 2.09952e+5
-  e: 0.1469
-  i: 17.08
-  n: 27
-  p: 331
-  a: 71
-  diameter: 309.0
-  mass: 6.1e+19
-  aTilt: 0.
-  lNorth: 0
-(AB-4) Aite:
-  type: Asteroid
-  par: (AB-4) Horkos-Aite
-  diameter: 147.0
-  mass: 6.09e+18
-  aTilt: 0.
-  lNorth: 0
-(AB-5) Argos:
-  type: DwarfPlanet
-  path: DwarfPlanets/Argos/
-  par: Trinity AB
-  ref: Trinity A
-  tf: 9
-  e: 0.09
-  i: 2.87
-  n: 204
-  p: 287
-  a: 206
-  diameter: 1900.0
-  mass: 9.0e+21
-  aTilt: 59
-  lNorth: 241
-  rotationalPeriod: 216
-(AB-3) Somnus:
-  type: Asteroid
-  par: Trinity AB
-  ref: Trinity A
-  tf: 10
-  e: 0.145
-  i: 3.03
-  n: 54
-  p: 100
-  a: 45
-  diameter: 58
-  mass: 4.2e+16
-  aTilt: 84.3
-  lNorth: 240
-  rotationalPeriod: 7.68
