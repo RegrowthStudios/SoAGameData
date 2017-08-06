@@ -39,9 +39,8 @@ Delphius:
   type: Planet
   path: Planets/Delphius/
   par: Trinity A
-  ref: Elysion
-  td: 82
-  e: 0.034
+  t: 3.8304e+6
+  e: 0.003
   i: 3.39
   n: 327
   p: 81
@@ -50,13 +49,12 @@ Delphius:
   mass: 9.2569e+24
   aTilt: 0
   lNorth: 0
-  rotationalPeriod: 713.170731707317
+  rotationalPeriod: 709.333333333333
 Demoleon:
   type: Planet
   path: Planets/Demoleon/
   par: Trinity A
-  ref: Elysion
-  td: 41
+  t: 77076e+6
   e: 0.045
   i: 3.87
   n: 333
@@ -66,7 +64,7 @@ Demoleon:
   mass: 1.0153e+25
   aTilt: 0.05
   lNorth: 41
-  rotationalPeriod: 1426.34146341463
+  rotationalPeriod: 1427.33333333333
 Palamedes:
   type: Planet
   path: Planets/Palamedes/
@@ -169,7 +167,7 @@ Aquarius:
   path: Planets/Aquarius/
   par: Trinity A
   ref: Elysion
-  tf: 2
+  tf: 2.001
   td: 15
   e: 0.016
   i: 1.34
@@ -216,6 +214,7 @@ Thoas:
   path: Planets/Thoas/
   par: Trinity A
   ref: Elysion
+  tf: 0.99932
   td: 3
   e: 0.0097
   i: 1.82
@@ -534,8 +533,8 @@ Elysion-12:
   par: Trinity A
   ref: Elysion
   tf: 4
-  td: 3
-  e: 0.0333
+  td: 2.97
+  e: 0.0233
   i: 1.11
   n: 10
   p: 340
@@ -550,7 +549,7 @@ Elysion-12:
   par: Trinity A
   ref: Elysion
   tf: 7
-  td: 5
+  td: 4.97
   e: 0.0505
   i: 1.27
   n: 236
@@ -567,7 +566,7 @@ Elysion-12:
   ref: Elysion
   tf: 3
   td: 2
-  e: 0.1049
+  e: 0.1804
   i: 11.28
   n: 306
   p: 8
@@ -583,7 +582,7 @@ Elysion-12:
   ref: Elysion
   tf: 3
   td: 2
-  e: 0.0909
+  e: 0.1209
   i: 2.3
   n: 135
   p: 288
@@ -598,6 +597,7 @@ Elysion-12:
   par: Trinity A
   ref: Elysion
   tf: 2
+  td: 0989
   e: 0.745
   i: 20.50
   n: 34
@@ -608,22 +608,6 @@ Elysion-12:
   aTilt: 178.0
   lNorth: 205
   rotationalPeriod: 9.84
-(A-2) Lameia:
-  type: Asteroid
-  par: Trinity A
-  ref: Elysion
-  tf: 5
-  td: 2
-  e: 0.37
-  i: 19.46
-  n: 300
-  p: 10
-  a: 23
-  diameter: 303.0
-  mass: 1.55e+19
-  aTilt: 27
-  lNorth: 312
-  rotationalPeriod: 17.28
 (A-5) Xerxes:
   type: DwarfPlanet
   path: DwarfPlanets/Xerxes/
@@ -641,6 +625,22 @@ Elysion-12:
   aTilt: 55.09
   lNorth: 9
   rotationalPeriod: 22.56
+(A-2) Lameia:
+  type: Asteroid
+  par: Trinity A
+  ref: Elysion
+  tf: 13
+  td: 5
+  e: 0.35
+  i: 19.46
+  n: 300
+  p: 10
+  a: 23
+  diameter: 303.0
+  mass: 1.55e+19
+  aTilt: 27
+  lNorth: 312
+  rotationalPeriod: 17.28
 Trinity B:
   type: Star
   par: Trinity AB
