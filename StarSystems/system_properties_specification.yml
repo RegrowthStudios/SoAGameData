@@ -1,4 +1,4 @@
-﻿##########  SystemProperties.yml  -  specification and property explanations - last updated: 12.05.2017
+﻿##########  SystemProperties.yml  -  specification and property explanations - last updated: 11.08.2017
 
 description: Short description/info text about the system
 
@@ -33,9 +33,11 @@ description: Short description/info text about the system
   surfaceTemperature: The photosphere temperature of stars and substellar objects in K
   starSpots: <true | false> Optional, enables/disables star spots (true by default)
   albedo: Fraction of light reflected by the object (not used for stars)
+  anisotropy: Parameter to adjust the directional dependence of the reflectance (not used for stars)
+    # A value of 1 represents default isotropic Lambertian reflectance, values from 0-1 cause an opposition surge, values >1 cause specular reflectance.
   tempDeviation: Positive or negative deviation of the average surface temperature from the equilibrium temperature in K (not used for stars)
     # This deviation can be caused by: Atmospheric greenhouse effect, tidal heating, radioactive decay, Kelvin-Helmholtz mechanism, ...
-  colorDeviation: [R, G, B] - Optional, RGB factors to determine the deviation of reflected light from incoming star light, defaults to [1, 1, 1]
+  colorDeviation: [R, G, B] - Optional RGB factors to determine the deviation of reflected light from incoming star light, defaults to [1, 1, 1]
     # Applied to planet light reflected onto moons and to the distant rendering dots of all objects except stars.
 
 
