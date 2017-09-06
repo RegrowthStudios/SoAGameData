@@ -528,7 +528,21 @@ Elysion-12:
   aTilt: 0
   lNorth: 0
   rotationalPeriod: 21.49
-(A-3) Themis:
+(TrA-8) Tros:
+  type: Asteroid
+  par: Trinity A
+  ref: Elysion
+  e: 0.0137
+  i: 1.28
+  n: 47
+  p: 135
+  a: 102
+  diameter: 58.0
+  mass: 1.45e+17
+  aTilt: 15.5
+  lNorth: 87
+  rotationalPeriod: 3.12
+(TrA-3) Themis:
   type: Asteroid
   par: Trinity A
   ref: Elysion
@@ -544,7 +558,7 @@ Elysion-12:
   aTilt: 45.3
   lNorth: 270
   rotationalPeriod: 19.92
-(A-4) Opis:
+(TrA-4) Opis:
   type: Asteroid
   par: Trinity A
   ref: Elysion
@@ -560,7 +574,7 @@ Elysion-12:
   aTilt: 12
   lNorth: 55
   rotationalPeriod: 5.28
-(A-7) Ker:
+(TrA-7) Ker:
   type: Asteroid
   par: Trinity A
   ref: Elysion
@@ -576,7 +590,7 @@ Elysion-12:
   aTilt: 6.28
   lNorth: 147
   rotationalPeriod: 9.36
-(A-1) Atropos:
+(TrA-1) Atropos:
   type: Asteroid
   par: Trinity A
   ref: Elysion
@@ -592,7 +606,7 @@ Elysion-12:
   aTilt: 34
   lNorth: 145
   rotationalPeriod: 13.2
-(A-6) Rivus:
+(TrA-6) Rivus:
   type: Asteroid
   par: Trinity A
   ref: Elysion
@@ -608,7 +622,7 @@ Elysion-12:
   aTilt: 178.0
   lNorth: 205
   rotationalPeriod: 9.84
-(A-5) Xerxes:
+(TrA-5) Xerxes:
   type: DwarfPlanet
   path: DwarfPlanets/Xerxes/
   par: Trinity A
@@ -625,7 +639,7 @@ Elysion-12:
   aTilt: 55.09
   lNorth: 9
   rotationalPeriod: 22.56
-(A-2) Lameia:
+(TrA-2) Lameia:
   type: Asteroid
   par: Trinity A
   ref: Elysion
@@ -680,14 +694,29 @@ Minerva:
   mass: 8.9583e+24
   aTilt: 0.3
   lNorth: 334
-(B-7) Ferros:
+(TrB-8) Metos:
+  type: Asteroid
+  par: Trinity B
+  ref: Hyperion
+  td: 6.9
+  e: 0.104
+  i: 8.96
+  n: 35
+  p: 357
+  a: 1
+  diameter: 93
+  mass: 2.405e+18
+  aTilt: 135.17
+  lNorth: 86
+  rotationalPeriod: 1.92
+(TrB-7) Ferros:
   type: Asteroid
   par: Trinity B
   ref: Hyperion
   tf: 2
   td: 12.38
-  e: 0.1350
-  i: 7.3
+  e: 0.0315
+  i: 5.1
   n: 244
   p: 77
   a: 333
@@ -696,7 +725,7 @@ Minerva:
   aTilt: 0
   lNorth: 0
   rotationalPeriod: 1093.2
-(B-1) Phidias:
+(TrB-1) Phidias:
   type: Asteroid
   par: Trinity B
   ref: Hyperion
@@ -706,8 +735,8 @@ Minerva:
   n: 351
   p: 24
   a: 186
-  diameter: 480.0
-  mass: 1.99e+20
+  diameter: 257.0
+  mass: 3.87e+19
   aTilt: 6
   lNorth: 10
   rotationalPeriod: 53.28
@@ -1198,7 +1227,37 @@ Meia:
   mass: 6.0916e+22
   aTilt: 0
   lNorth: 0
-(B-2) Eunomia:
+(TrB-9) Elios:
+  type: Asteroid
+  par: Trinity B
+  ref: Hyperion
+  tf: 4
+  e: 0.0382
+  i: 1.05
+  n: 198
+  p: 204
+  a: 98
+  diameter: 224.0
+  mass: 1.472e+19
+  aTilt: 5.29
+  lNorth: 8
+  rotationalPeriod: 6.72
+(TrB-10) Lotos:
+  type: Asteroid
+  par: Trinity B
+  ref: Hyperion
+  tf: 4
+  e: 0.0571
+  i: 0.04
+  n: 251
+  p: 188
+  a: 350
+  diameter: 114.0
+  mass: 1.483e+18
+  aTilt: 46.12
+  lNorth: 178
+  rotationalPeriod: 3.36
+(TrB-2) Eunomia:
   type: Asteroid
   par: Trinity B
   ref: Hyperion
@@ -1213,7 +1272,7 @@ Meia:
   aTilt: 6.8
   lNorth: 132
   rotationalPeriod: 21.12
-(B-3) Philotes:
+(TrB-3) Philotes:
   type: DwarfPlanet
   path: DwarfPlanets/Philotes/
   par: Trinity B
@@ -1229,7 +1288,7 @@ Meia:
   aTilt: 4.26
   lNorth: 87
   rotationalPeriod: 10.8
-(B-4) Miseria:
+(TrB-4) Miseria:
   type: DwarfPlanet
   path: DwarfPlanets/Miseria/
   par: Trinity B
@@ -1245,7 +1304,7 @@ Meia:
   aTilt: 1.3
   lNorth: 154
   rotationalPeriod: 9.84
-(B-5) Hygeia:
+(TrB-5) Hygeia:
   type: Asteroid
   par: Trinity B
   ref: Hyperion
@@ -1260,7 +1319,7 @@ Meia:
   aTilt: 72.9
   lNorth: 233
   rotationalPeriod: 15.84
-(B-6) Aeon:
+(TrB-6) Aeon:
   type: DwarfPlanet
   path: DwarfPlanets/Aeon/
   par: Trinity B
@@ -1276,10 +1335,10 @@ Meia:
   aTilt: 98.6
   lNorth: 240
   rotationalPeriod: 25.49
-(B-6) Puck:
+(TrB-6) Puck:
   type: Moon
   path: DwarfPlanets/Puck/
-  par: (B-6) Aeon
+  par: (TrB-6) Aeon
   t: 9.1764e+4
   e: 0
   i: 0
