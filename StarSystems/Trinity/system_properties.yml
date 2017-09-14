@@ -669,8 +669,8 @@ Hermes:
   path: Planets/Hermes/
   par: Trinity B
   ref: Hyperion
-  td: 54
-  e: 0.055
+  td: 54.464
+  e: 0.0
   i: 4.39
   n: 161
   p: 238
@@ -684,7 +684,7 @@ Minerva:
   path: Planets/Minerva/
   par: Trinity B
   ref: Hyperion
-  td: 18
+  td: 18.074
   e: 0.025
   i: 2.05
   n: 157
@@ -713,8 +713,7 @@ Minerva:
   type: Asteroid
   par: Trinity B
   ref: Hyperion
-  tf: 2
-  td: 12.38
+  td: 6.224
   e: 0.0315
   i: 5.1
   n: 244
@@ -729,8 +728,8 @@ Minerva:
   type: Asteroid
   par: Trinity B
   ref: Hyperion
-  td: 6
-  e: 0.0806
+  td: 5.4
+  e: 0.1556
   i: 6.45
   n: 351
   p: 24
@@ -745,8 +744,8 @@ Endor:
   path: IceGiants/Endor/
   par: Trinity B
   ref: Hyperion
-  td: 3
-  e: 0.002
+  td: 3.016
+  e: 0.0325
   i: 0.5
   n: 55
   p: 278
@@ -832,7 +831,7 @@ Hyperion:
   type: Planet
   path: GasGiants/Hyperion/
   par: Trinity B
-  t: 3.14928e+7
+  t: 3.16224e+7
   e: 0.0006
   i: 0
   p: 99
@@ -1127,8 +1126,8 @@ Pantheon:
   path: GasGiants/Pantheon/
   par: Trinity B
   ref: Hyperion
-  tf: 4
-  e: 0.0059
+  tf: 4.03
+  e: 0.014
   i: 0.08
   n: 252
   p: 112
@@ -1231,7 +1230,7 @@ Meia:
   type: Asteroid
   par: Trinity B
   ref: Hyperion
-  tf: 4
+  tf: 4.03
   e: 0.0382
   i: 1.05
   n: 198
@@ -1246,7 +1245,7 @@ Meia:
   type: Asteroid
   par: Trinity B
   ref: Hyperion
-  tf: 4
+  tf: 4.03
   e: 0.0571
   i: 0.04
   n: 251
@@ -1261,9 +1260,9 @@ Meia:
   type: Asteroid
   par: Trinity B
   ref: Hyperion
-  tf: 6
-  e: 0.0384
-  i: 1.5
+  tf: 6.13
+  e: 0.0563
+  i: 7.5
   n: 5
   p: 355
   a: 72
@@ -1277,8 +1276,8 @@ Meia:
   path: DwarfPlanets/Philotes/
   par: Trinity B
   ref: Hyperion
-  tf: 8
-  e: 0.0682
+  tf: 8.265
+  e: 0.0825
   i: 0.08
   n: 176
   p: 103
@@ -1293,9 +1292,9 @@ Meia:
   path: DwarfPlanets/Miseria/
   par: Trinity B
   ref: Hyperion
-  tf: 10
-  e: 0.0501
-  i: 0.08
+  tf: 10.485
+  e: 0.0437
+  i: 1.36
   n: 306
   p: 116
   a: 234
@@ -1308,8 +1307,8 @@ Meia:
   type: Asteroid
   par: Trinity B
   ref: Hyperion
-  tf: 11
-  e: 0.1544
+  tf: 10.73
+  e: 0.1238
   i: 5.7
   n: 138
   p: 87
@@ -1324,8 +1323,8 @@ Meia:
   path: DwarfPlanets/Aeon/
   par: Trinity B
   ref: Hyperion
-  tf: 12
-  e: 0.0023
+  tf: 12.05
+  e: 0.0205
   i: 0.08
   n: 345
   p: 159
@@ -1351,9 +1350,8 @@ Karimoon-Keobar:
   type: Barycenter
   comps: ["Karimoon", "Keobar"]
   par: Trinity B
-  ref: Hyperion
-  tf: 20
-  e: 0.062
+  t: 6.20352e+8
+  e: 0.0975
   i: 2.45
   n: 175
   p: 290
@@ -1443,9 +1441,8 @@ Arctos:
   type: Planet
   path: Planets/Arctos/
   par: Trinity B
-  ref: Hyperion
-  tf: 36
-  e: 0.067
+  t: 1.1326176e+9
+  e: 0.085
   i: 5.01
   n: 180
   p: 53
