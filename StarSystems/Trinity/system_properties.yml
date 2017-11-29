@@ -817,7 +817,7 @@ Baros:
 Endor-1:
   type: IrregularDwarfMoon
   par: Endor
-  t: 3.42e+6
+  t: 3.12e+6
   e: 0.0192
   i: 158.1
   n: 65
@@ -1561,6 +1561,21 @@ Arctos-5:
   mass: 2.9861e+15
   aTilt: 1.72
   lNorth: 78
+(TrC-6) Argos:
+  type: DwarfPlanet
+  path: DwarfPlanets/Argos/
+  par: Trinity C
+  t: 1.8122e+9
+  e: 0.9170
+  i: 29.82
+  n: 304
+  p: 301
+  a: 21
+  diameter: 1095.0
+  mass: 1.4e+21
+  aTilt: 9.5
+  lNorth: 72
+  rotationalPeriod: 25.92
 Nemesis:
   type: Planet
   path: IceGiants/Nemesis/
@@ -1699,18 +1714,17 @@ Nox:
   aTilt: 160.5
   lNorth: 57
   rotationalPeriod: 34.8
-(C-6) Argos:
-  type: DwarfPlanet
-  path: DwarfPlanets/Argos/
+(TrC-7) Somnus:
+  type: Asteroid
   par: Trinity C
-  t: 1.8122e+9
-  e: 0.9170
-  i: 29.82
-  n: 304
-  p: 301
-  a: 21
-  diameter: 1095.0
-  mass: 1.4e+21
-  aTilt: 9.5
-  lNorth: 72
-  rotationalPeriod: 25.92
+  t: 2.1686e+10
+  e: 0.9995
+  i: 64.84
+  n: 254
+  p: 32
+  a: 6.8
+  diameter: 15.8
+  mass: 8.48e+14
+  aTilt: 84.3
+  lNorth: 65
+  rotationalPeriod: 7.68
