@@ -78,16 +78,16 @@ Palamedes:
   a: 210
   diameter: 23500.0
   mass: 4.7778e+25
-  aTilt: 5.6
+  aTilt: 0.4
   lNorth: 252
-  rotationalPeriod: 18.96
+  rotationalPeriod: 14.16
 Palamedes-1:
   type: DwarfMoon
   par: Palamedes
   ref: Himerus
-  td: 20
+  td: 24
   e: 0.0
-  i: 1.9
+  i: 0.0
   n: 232
   a: 190
   diameter: 111
@@ -98,9 +98,9 @@ Palamedes-2:
   type: DwarfMoon
   par: Palamedes
   ref: Himerus
-  td: 15
+  td: 18
   e: 0.0
-  i: 1.8
+  i: 0.0
   n: 229
   a: 121
   diameter: 247
@@ -112,23 +112,25 @@ Helenus:
   path: Moons/Helenus/
   par: Palamedes
   ref: Himerus
-  td: 5
-  e: 0.0175
-  i: 0
+  td: 35
+  tf: 6
+  e: 0.0375
+  i: 0.3
   p: 35
-  a: 193
-  diameter: 1000
-  mass: 1.4930e+21
-  aTilt: 1.5
+  a: 194
+  diameter: 800
+  mass: 7.953e+20
+  aTilt: 0.7
   lNorth: 131
 Hesperus:
   type: Moon
   path: Moons/Hesperus/
   par: Palamedes
   ref: Himerus
-  td: 2
-  e: 0.0045
-  i: 0
+  td: 7
+  tf: 3
+  e: 0.0145
+  i: 1.7
   p: 317
   a: 232
   diameter: 3400
@@ -139,29 +141,15 @@ Himerus:
   type: Moon
   path: Moons/Himerus/
   par: Palamedes
-  t: 1.368e+6
-  e: 0.0008
-  i: 0
+  t: 1.332e+6
+  e: 0.008
+  i: 0.7
   p: 7
-  a: 336
+  a: 343
   diameter: 4200
   mass: 1.3736e+23
   aTilt: 0.0
   lNorth: 0.0
-Horribilis:
-  type: Moon
-  path: Moons/Horribilis/
-  par: Palamedes
-  ref: Himerus
-  tf: 2
-  e: 0.0269
-  i: 0
-  p: 99
-  a: 75
-  diameter: 800
-  mass: 7.1666e+20
-  aTilt: 0.7
-  lNorth: 321
 Aquarius:
   type: Planet
   path: Planets/Aquarius/
