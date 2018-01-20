@@ -88,7 +88,6 @@ Palamedes-1:
   td: 24
   e: 0.0
   i: 0.0
-  n: 232
   a: 190
   diameter: 111
   mass: 2.4486e+18
@@ -101,7 +100,6 @@ Palamedes-2:
   td: 18
   e: 0.0
   i: 0.0
-  n: 229
   a: 121
   diameter: 247
   mass: 2.3292e+19
@@ -116,6 +114,7 @@ Helenus:
   tf: 6
   e: 0.0375
   i: 0.3
+  n: 232
   p: 35
   a: 194
   diameter: 800
@@ -131,6 +130,7 @@ Hesperus:
   tf: 3
   e: 0.0145
   i: 1.7
+  n: 229
   p: 317
   a: 232
   diameter: 3400
@@ -144,6 +144,7 @@ Himerus:
   t: 1.332e+6
   e: 0.008
   i: 0.7
+  n: 205
   p: 7
   a: 343
   diameter: 4200
@@ -172,11 +173,11 @@ Oedipus:
   path: Moons/Oedipus/
   par: Aquarius
   ref: Narcissus
-  tf: 2
-  td: 5
-  e: 0.0555
-  i: 8.23
-  n: 198
+  tf: 4.95
+  td: 13
+  e: 0.0125
+  i: 22.36
+  n: 94
   p: 289
   a: 121
   diameter: 1100
@@ -187,10 +188,10 @@ Narcissus:
   type: Moon
   path: Moons/Narcissus/
   par: Aquarius
-  t: 2.3688e+6
+  t: 2.3868e+6
   e: 0.0088
-  i: 10.44
-  n: 195
+  i: 21.57
+  n: 95
   p: 292
   a: 224
   diameter: 2500
