@@ -226,7 +226,7 @@ Elysion:
   a: 199
   diameter: 122080.0
   mass: 7.1666e+26
-  aTilt: 21.3
+  aTilt: 1.3
   lNorth: 75
   rotationalPeriod: 10.117
 Elysion-1:
@@ -326,7 +326,7 @@ Elysion-5:
   ref: Eridanus
   tf: 2
   td: 33
-  e: 0.0003
+  e: 0.013
   i: 0.0
   p: 127
   a: 197
@@ -340,7 +340,7 @@ Elysion-6:
   ref: Eridanus
   tf: 2
   td: 33
-  e: 0.0004
+  e: 0.024
   i: 0.0
   p: 336
   a: 228
@@ -366,7 +366,7 @@ Elysion-7:
   par: Elysion
   ref: Eridanus
   td: 11
-  e: 0.0015
+  e: 0.035
   i: 0.0
   p: 354
   a: 2
@@ -379,7 +379,7 @@ Elysion-8:
   par: Elysion
   ref: Eridanus
   td: 11
-  e: 0.0009
+  e: 0.039
   i: 0.0
   p: 7
   a: 229
@@ -393,8 +393,9 @@ Aegis:
   path: Moons/Aegis/
   ref: Eridanus
   td: 8
-  e: 0.0
+  e: 0.0205
   i: 0.0
+  p: 135
   a: 140
   diameter: 1600.0
   mass: 2.6875e+21
@@ -407,8 +408,7 @@ Adoris:
   ref: Eridanus
   td: 5
   e: 0.0001
-  i: 0.03
-  n: 199
+  i: 0.0
   p: 203
   a: 46
   diameter: 2200.0
@@ -420,10 +420,10 @@ Peleus:
   path: Moons/Peleus/
   par: Elysion
   ref: Eridanus
-  td: 2
+  tf: 4
+  td: 7
   e: 0.0082
-  i: 1.6
-  n: 329
+  i: 0.0
   p: 69
   a: 155
   diameter: 5600.0
@@ -436,8 +436,7 @@ Eridanus:
   par: Elysion
   t: 2.52e+6
   e: 0.025
-  i: 0.88
-  n: 175
+  i: 0.0
   p: 24
   a: 268
   diameter: 8100.0
@@ -449,8 +448,7 @@ Elysion-9:
   par: Elysion
   ref: Eridanus
   e: 0.036
-  i: 0.73
-  n: 28
+  i: 0.0
   p: 223
   a: 129
   diameter: 59
@@ -462,9 +460,9 @@ Flox:
   path: Moons/Flox/
   par: Elysion
   ref: Eridanus
-  tf: 2
+  tf: 2.04
   e: 0.028
-  i: 3.99
+  i: 1.24
   n: 342
   p: 129
   a: 24
@@ -508,7 +506,7 @@ Elysion-12:
   ref: Eridanus
   tf: 4
   e: 0.017
-  i: 0.6
+  i: 2.60
   n: 53
   p: 76
   a: 101
@@ -1372,9 +1370,9 @@ Karimoon-Keobar-1:
   par: Karimoon-Keobar
   ref: Karimoon
   tf: 7
-  e: 0.005
-  i: 0.3
-  n: 282
+  e: 0.0055
+  i: 35.50
+  n: 37
   p: 112
   a: 195
   diameter: 29.0
@@ -1387,9 +1385,9 @@ Karimoon-Keobar-2:
   ref: Karimoon
   tf: 35
   td: 3
-  e: 0.005
-  i: 0.55
-  n: 282
+  e: 0.0042
+  i: 35.75
+  n: 37
   p: 112
   a: 81
   diameter: 80.0
@@ -1401,9 +1399,9 @@ Karimoon-Keobar-3:
   par: Karimoon-Keobar
   ref: Karimoon
   tf: 14
-  e: 0.005
-  i: 0.49
-  n: 282
+  e: 0.0016
+  i: 35.69
+  n: 37
   p: 112
   a: 344
   diameter: 25.0
@@ -1416,9 +1414,9 @@ Karimoon-Keobar-4:
   ref: Karimoon
   tf: 49
   td: 3
-  e: 0.005
-  i: 1.2
-  n: 282
+  e: 0.0027
+  i: 35.40
+  n: 37
   p: 112
   a: 174
   diameter: 5.0
