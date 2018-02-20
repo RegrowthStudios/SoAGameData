@@ -131,7 +131,7 @@ Hesperus:
   e: 0.0145
   i: 1.7
   n: 229
-  p: 317
+  p: 4
   a: 232
   diameter: 3400
   mass: 7.1666e+22
@@ -236,7 +236,7 @@ Elysion-1:
   td: 99
   e: 0.0
   i: 0.0
-  a: 213
+  a: 255
   diameter: 0.6
   mass: 6.5694e+10
   aTilt: 0
@@ -248,7 +248,7 @@ Elysion-2:
   td: 77
   e: 0.0
   i: 0.0
-  a: 312
+  a: 149
   diameter: 0.7
   mass: 8.9583e+10
   aTilt: 0
@@ -260,7 +260,7 @@ Elysion-3:
   td: 66
   e: 0.0
   i: 0.0
-  a: 108
+  a: 96
   diameter: 3.4
   mass: 1.8514e+13
   aTilt: 0
@@ -272,7 +272,7 @@ Elysion-4:
   td: 55
   e: 0.0
   i: 0.0
-  a: 19
+  a: 43
   diameter: 12
   mass: 1.0153e+15
   aTilt: 0
@@ -315,7 +315,7 @@ Callonia:
   e: 0.0002
   i: 0.0
   p: 225
-  a: 39
+  a: 82
   diameter: 1200.0
   mass: 9.0180e+20
   aTilt: 0
@@ -329,7 +329,7 @@ Elysion-5:
   e: 0.013
   i: 0.0
   p: 127
-  a: 197
+  a: 240
   diameter: 24
   mass: 4.1805e+15
   aTilt: 0
@@ -343,7 +343,7 @@ Elysion-6:
   e: 0.024
   i: 0.0
   p: 336
-  a: 228
+  a: 271
   diameter: 19
   mass: 2.0305e+15
   aTilt: 0
@@ -356,7 +356,7 @@ Dominia:
   td: 11
   e: 0.0
   i: 0.0
-  a: 296
+  a: 10
   diameter: 1300.0
   mass: 1.2542e+21
   aTilt: 0
@@ -368,7 +368,7 @@ Elysion-7:
   td: 11
   e: 0.035
   i: 0.0
-  p: 354
+  p: 38
   a: 2
   diameter: 37
   mass: 1.4333e+16
@@ -381,8 +381,8 @@ Elysion-8:
   td: 11
   e: 0.039
   i: 0.0
-  p: 7
-  a: 229
+  p: 229
+  a: 80
   diameter: 4
   mass: 1.7917e+13
   aTilt: 0
@@ -396,7 +396,7 @@ Aegis:
   e: 0.0205
   i: 0.0
   p: 135
-  a: 140
+  a: 286
   diameter: 1600.0
   mass: 2.6875e+21
   aTilt: 0.02
@@ -410,7 +410,7 @@ Adoris:
   e: 0.0001
   i: 0.0
   p: 203
-  a: 46
+  a: 89
   diameter: 2200.0
   mass: 8.9583e+21
   aTilt: 0.03
@@ -425,7 +425,7 @@ Peleus:
   e: 0.0082
   i: 0.0
   p: 69
-  a: 155
+  a: 158
   diameter: 5600.0
   mass: 1.7917e+23
   aTilt: 1.92
@@ -438,7 +438,7 @@ Eridanus:
   e: 0.025
   i: 0.0
   p: 24
-  a: 268
+  a: 257
   diameter: 8100.0
   mass: 6.5694e+23
   aTilt: 0.83
@@ -450,7 +450,7 @@ Elysion-9:
   e: 0.036
   i: 0.0
   p: 223
-  a: 129
+  a: 118
   diameter: 59
   mass: 8.9583e+16
   aTilt: 0
@@ -494,7 +494,7 @@ Elysion-11:
   i: 2.13
   n: 255
   p: 338
-  a: 206
+  a: 25
   diameter: 230
   mass: 6.5694e+18
   aTilt: 0
@@ -509,7 +509,7 @@ Elysion-12:
   i: 2.60
   n: 53
   p: 76
-  a: 101
+  a: 87
   diameter: 178
   mass: 2.9562e+18
   aTilt: 0
@@ -735,7 +735,8 @@ Endor:
   e: 0.0325
   i: 0.5
   n: 55
-  p: 278
+  p: 183
+  a: 27
   diameter: 54000.0
   mass: 1.6125e+26
   aTilt: 29.51
@@ -745,11 +746,12 @@ Abyssos:
   type: Moon
   par: Endor
   path: Moons/Abyssos/
-  ref: Baros
-  td: 25
+  ref: Ares
+  tf: 3
+  td: 26
   e: 0.00017
-  i: 0.6
-  n: 62
+  i: 29.56
+  n: 175
   p: 290
   a: 90
   diameter: 2300.0
@@ -760,12 +762,12 @@ Vandor:
   type: Moon
   path: Moons/Vandor/
   par: Endor
-  ref: Baros
-  tf: 2
-  td: 15
+  ref: Ares
+  tf: 3
+  td: 8
   e: 0.00042
-  i: 0.4
-  n: 64
+  i: 29.56
+  n: 175
   p: 288
   a: 270
   diameter: 3900.0
@@ -777,28 +779,14 @@ Ares:
   path: Moons/Ares/
   par: Endor
   ref: Baros
-  tf: 2
-  td: 5
+  t: 6.624e+5
   e: 0.003
-  i: 0.05
-  n: 68
-  p: 286
+  i: 29.56
+  n: 175
+  p: 255
   a: 23
   diameter: 5200.0
   mass: 3.3444e+23
-  aTilt: 0
-  lNorth: 0
-Baros:
-  type: Moon
-  path: Moons/Baros/
-  par: Endor
-  t: 1.656e+6
-  e: 0.0163
-  i: 0
-  p: 306
-  a: 351
-  diameter: 5600.0
-  mass: 5.9722e+23
   aTilt: 0
   lNorth: 0
 Endor-1:
@@ -807,7 +795,7 @@ Endor-1:
   t: 3.12e+6
   e: 0.0192
   i: 158.1
-  n: 65
+  n: 355
   p: 190
   a: 183
   diameter: 198.0
