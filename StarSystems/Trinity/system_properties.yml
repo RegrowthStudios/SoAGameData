@@ -813,7 +813,7 @@ Hyperion:
   a: 221
   diameter: 154190.0
   mass: 9.7347e+27
-  aTilt: 2.15
+  aTilt: 0.55
   lNorth: 27
   rotationalPeriod: 7.916
 Kolasi:
@@ -975,7 +975,7 @@ Hyperion-2:
   e: 0.04475
   i: 0
   p: 3
-  a: 317
+  a: 311
   diameter: 20.0
   mass: 1.3736e+16
   aTilt: 0
@@ -990,7 +990,7 @@ Hyperion-3:
   e: 0.05651
   i: 0
   p: 141
-  a: 59
+  a: 56
   diameter: 24.0
   mass: 2.2694e+16
   aTilt: 0
