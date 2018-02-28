@@ -1109,7 +1109,7 @@ Pantheon:
   a: 136
   diameter: 132570.0
   mass: 1.4930e+27
-  aTilt: 9.66
+  aTilt: 5.66
   lNorth: 134
   rotationalPeriod: 9.716
 Medusa:
@@ -1119,12 +1119,12 @@ Medusa:
   ref: Galatea
   td: 12
   e: 0.00052
-  i: 0.04
-  n: 157
+  i: 3.54
+  n: 47
   p: 125
   a: 191
   diameter: 3300.0
-  mass: 6.5694e+22
+  mass: 6.5724e+22
   aTilt: 0
   lNorth: 0
 Xenia:
@@ -1132,13 +1132,14 @@ Xenia:
   path: Moons/Xenia/
   par: Pantheon
   ref: Galatea
-  td: 4
+  tf: 0.992
+  td: 4.016
   e: 0.0011
-  i: 0.17
-  n: 277
+  i: 3.77
+  n: 47
   p: 75
   a: 154
-  diameter: 3600.0
+  diameter: 3560.0
   mass: 7.3458e+22
   aTilt: 0
   lNorth: 0
@@ -1147,10 +1148,11 @@ Achillea:
   par: Pantheon
   path: Moons/Achillea/
   ref: Galatea
+  tf: 0.992
   td: 2
   e: 0.0002
-  i: 0.21
-  n: 140
+  i: 3.91
+  n: 47
   p: 258
   a: 87
   diameter: 4800.0
@@ -1163,9 +1165,9 @@ Galatea:
   par: Pantheon
   t: 7.02e+5
   e: 0
-  i: 0.01
-  n: 98
-  a: 235
+  i: 4.01
+  n: 47
+  a: 313
   diameter: 5500.0
   mass: 1.6722e+23
   aTilt: 0
@@ -1178,8 +1180,8 @@ Callinara:
   tf: 7
   td: 3
   e: 0.0007
-  i: 0.53
-  n: 164
+  i: 4.53
+  n: 47
   p: 124
   a: 32
   diameter: 4100.0
@@ -1193,10 +1195,10 @@ Meia:
   ref: Galatea
   tf: 4
   e: 0.0013
-  i: 0.61
-  n: 10
+  i: 5.49
+  n: 47
   p: 46
-  a: 283
+  a: 72
   diameter: 4000.0
   mass: 6.0916e+22
   aTilt: 0
