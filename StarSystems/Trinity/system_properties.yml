@@ -1355,65 +1355,6 @@ Keobar:
   mass: 2.6875e+23
   aTilt: 0
   lNorth: 0
-Karimoon-Keobar-1:
-  type: DwarfMoon
-  par: Karimoon-Keobar
-  ref: Karimoon
-  tf: 7
-  e: 0.0055
-  i: 35.50
-  n: 37
-  p: 112
-  a: 195
-  diameter: 29.0
-  mass: 5.3750e+15
-  aTilt: 0.05
-  lNorth: 196
-Karimoon-Keobar-2:
-  type: DwarfMoon
-  par: Karimoon-Keobar
-  ref: Karimoon
-  tf: 35
-  td: 3
-  e: 0.0042
-  i: 35.75
-  n: 37
-  p: 112
-  a: 81
-  diameter: 80.0
-  mass: 2.5083e+17
-  aTilt: 0.05
-  lNorth: 175
-Karimoon-Keobar-3:
-  type: DwarfMoon
-  par: Karimoon-Keobar
-  ref: Karimoon
-  tf: 14
-  e: 0.0016
-  i: 35.69
-  n: 37
-  p: 112
-  a: 344
-  diameter: 25.0
-  mass: 5.3750e+15
-  aTilt: 0.05
-  lNorth: 203
-Karimoon-Keobar-4:
-  type: DwarfMoon
-  par: Karimoon-Keobar
-  ref: Karimoon
-  tf: 49
-  td: 3
-  e: 0.0027
-  i: 35.40
-  n: 37
-  p: 112
-  a: 174
-  diameter: 5.0
-  mass: 2.9861e+13
-  aTilt: 0.05
-  lNorth: 142
-  rotationalPeriod: 117.84
 Arctos:
   type: Planet
   path: Planets/Arctos/
