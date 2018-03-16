@@ -1369,13 +1369,14 @@ Arctos:
   mass: 1.0451e+25
   aTilt: 12.22
   lNorth: 345
-  rotationalPeriod: 40.32
+  rotationalPeriod: 32.64
 Rigor:
   type: Moon
   path: Moons/Rigor/
   par: Arctos
   ref: Cryos
-  td: 2
+  tf: 8
+  td: 3
   e: 0.0003
   i: 0
   p: 166
@@ -1402,11 +1403,12 @@ Frigus:
   path: Moons/Frigus/
   par: Arctos
   ref: Cryos
-  tf: 2
+  tf: 4
+  td: 9
   e: 0.0002
   i: 0
   p: 103
-  a: 318
+  a: 320
   diameter: 1100.0
   mass: 6.9636e+20
   aTilt: 0
@@ -1415,7 +1417,7 @@ Arctos-1:
   type: DwarfMoon
   par: Arctos
   ref: Cryos
-  tf: 3
+  tf: 3.007
   e: 0
   i: 0.8
   n: 79
