@@ -1,0 +1,10 @@
+Star catalog data for real stars extracted from HYG Database v3.0
+
+© 2014 David Nash
+-  http://www.astronexus.com/hyg
+-  https://github.com/astronexus/HYG-Database
+
+Licensed under the Creative Commons Attribution-ShareAlike 2.5 Generic License - 
+http://creativecommons.org/licenses/by-sa/2.5/
+
+NOTE: The SoA star catalog may contain changes, corrections, updates and deviations from the raw HYG data. Absolute visual magnitudes were converted to brightness values (given in bolometric solar units, converted per IAU resolutions B2 and B3), distances are given in light years instead parsec.

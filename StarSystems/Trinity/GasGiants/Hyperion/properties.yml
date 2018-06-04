@@ -1,0 +1,15 @@
+gasGiant:
+  oblateness: 0.024
+  colorMap: GasGiants/Hyperion/color.png
+  atmosphere:
+    scaleDepth: 0.25
+    kr: 0.0025
+    km: 0.002
+    g: -0.99
+    waveLength: [0.65, 0.57, 0.475]
+  rings:
+    - innerRadius: 88095.0
+      outerRadius: 122095.0
+      aTilt: 0.0
+      lNorth: 0.0
+      colorLookup: GasGiants/Hyperion/ring.png

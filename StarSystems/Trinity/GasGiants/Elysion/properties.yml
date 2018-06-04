@@ -1,0 +1,15 @@
+gasGiant:
+  oblateness: 0.09
+  colorMap: GasGiants/Elysion/color.png
+  atmosphere:
+    scaleDepth: 0.25
+    kr: 0.0025
+    km: 0.002
+    g: -0.99
+    waveLength: [0.75, 0.72, 0.65]
+  rings:
+    - innerRadius: 69285.0
+      outerRadius: 146400.0
+      aTilt: 0.0
+      lNorth: 0.0
+      colorLookup: GasGiants/Elysion/ring.png

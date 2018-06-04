@@ -8,12 +8,13 @@ atlas*.bmp
 *.pak
 *vcxproj*
 errorlog.txt
+SFont_Orbitron_Bold_32.png
 
 # Saves And User Files
-Saves/
 Data/options.ini
-Data/test.ini
-Data/KeyConfig.ini
+Data/Blocks/BlockMapping.ini
+Data/Blocks/SavedBlockData.yml
+Saves/
 
 #OS junk files
 [Tt]humbs.db

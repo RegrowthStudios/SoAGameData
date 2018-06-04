@@ -1,0 +1,10 @@
+dirt:
+  base: dirt
+  overlay: dirt_overlay
+sandbags_side:
+  base: sandbags_side
+sandbags_top:
+  base: sandbags_top
+stone:
+  base: stone
+  overlay: stone_overlay

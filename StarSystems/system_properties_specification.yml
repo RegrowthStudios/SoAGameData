@@ -1,0 +1,76 @@
+﻿##########  SystemProperties.yml  -  specification and property explanations - last updated: 11.08.2017
+
+description: Short description/info text about the system
+
+(Object Name):
+  type: Orbit path type, determining the appearance of the orbit, object position marker and selector. The color values can be modified in pathColors.yml.
+    # Barycenter - The colors are taken from its binary component A type and used for the barycenter marker cross, selector and orbit
+    # Star - used for all kinds of stellar and substellar objects
+    # Planet - used for planetary-mass satellites of stars
+    # DwarfPlanet - used for spherical satellites of stars with a mass <2.5e+22 kg
+    # Moon - used for spherical satellites of planets
+    # DwarfMoon - used for irregular satellites of planets in regular, usually resonant orbits
+    # IrregularDwarfMoon - used for irregular satellites of planets in irregular orbits (captured asteroids). Orbits and name labels are only shown on mouse hover or when selected.
+    # Asteroid - used for irregular satellites of stars. Orbits and name labels are only shown on mouse hover or when selected.
+  typeName: (Object Type Name) - Optional, overrides the auto-detected object type names (see below)
+  comps: ["compNameA", "compNameB"] - The binary components of a barycenter
+  path: Path of the planet properties yaml file within the star system folder (required for voxel planets and gas giants)
+  par: Parent object, used by all objects except the highest ranked one, which is fixed in space (static / no orbit), the coordinates of the static object are looked up in Stars.tsv
+  t: Orbital period in s
+  ref: Orbital period reference body (can be used instead of t to create mean motion resonances via tf and td)
+  tf: Reference body period factor
+  td: Reference body period divisor
+  e: Eccentricity
+  p: Longitude of the periapsis in °
+  i: Inclination in °
+  n:  Longitude of the ascending node in °
+  a: Mean anomaly (starting position) in °
+  mass: Mass in kg
+  diameter: Mean equatorial diameter in km
+  aTilt: Axial tilt of the rotation axis in °
+  lNorth: Longitude of the north of the rotation axis in ° (not required if aTilt=0°)
+  rotationalPeriod: Rotational period in h (not used for tidal-locked objects)
+  surfaceTemperature: The photosphere temperature of stars and substellar objects in K
+  starSpots: <true | false> Optional, enables/disables star spots (true by default)
+  albedo: Fraction of light reflected by the object (not used for stars)
+  anisotropy: Parameter to adjust the directional dependence of the reflectance (not used for stars)
+    # A value of 1 represents default isotropic Lambertian reflectance, values from 0-1 cause an opposition surge, values >1 cause specular reflectance.
+  tempDeviation: Positive or negative deviation of the average surface temperature from the equilibrium temperature in K (not used for stars)
+    # This deviation can be caused by: Atmospheric greenhouse effect, tidal heating, radioactive decay, Kelvin-Helmholtz mechanism, ...
+  colorDeviation: [R, G, B] - Optional RGB factors to determine the deviation of reflected light from incoming star light, defaults to [1, 1, 1]
+    # Applied to planet light reflected onto moons and to the distant rendering dots of all objects except stars.
+
+
+########## NOTES ##########
+
+  ### The object type name displayed in-game is (by default) auto-detected based on following conditions:
+    # Stars use StarTypeNames.tsv as an expandable reference table for their various names (supported colors / spectral classes: T, L, M, K, G, F, A, B, O)
+    # Gas Giant:    OrbitPathType = "Planet", ObjectType = "gasGiant", mass = 50 mE - 25 mJ
+    # Ice Giant:    OrbitPathType = "Planet", ObjectType = "gasGiant", mass <50 mE
+    # Ice Planet:    OrbitPathType = "Planet", ObjectType = "planet", density <2.5 g/cm³
+    # Silicate Planet:    OrbitPathType = "Planet", ObjectType = "planet", density ≥2.5 and <5.0 g/cm³
+    # Terrestrial Planet:    OrbitPathType = "Planet", ObjectType = "planet", density ≥5.0 and <7.5 g/cm³
+    # Iron Planet:    OrbitPathType = "Planet", ObjectType = "planet", density ≥7.5 g/cm³
+    # Giant Gas Moon:    OrbitPathType = "Moon", ObjectType = "gasGiant", mass = 50 mE - 200 mE
+    # Giant Ice Moon:    OrbitPathType = "Moon", ObjectType = "gasGiant", mass <50 mE
+    # Ice Moon:    OrbitPathType = "Moon", ObjectType = "planet", density <2.5 g/cm³
+    # Silicate Moon:    OrbitPathType = "Moon", ObjectType = "planet", density ≥2.5 and <5.0 g/cm³
+    # Terrestrial Moon:    OrbitPathType = "Moon", ObjectType = "planet", density ≥5.0 and <7.5 g/cm³
+    # Iron Moon:    OrbitPathType = "Moon", ObjectType = "planet", density ≥7.5 g/cm³
+    # Dwarf Planet:    OrbitPathType = "DwarfPlanet"
+    # Dwarf Moon:    OrbitPathType = "DwarfMoon"
+    # Irregular Dwarf Moon:    OrbitPathType = "IrregularDwarfMoon"
+    # Asteroid:    OrbitPathType = "Asteroid", density ≥0.5 g/cm³
+    # Comet:    OrbitPathType = "Asteroid", density <0.5 g/cm³
+  # "typeName" can be used to override this, e.g. to add exotic types of planets like carbon planets, helium planets, gas dwarfs, etc.
+  # "typeName" can also be used to add custom, non-main sequence stars that don't fit into StarData.tsv
+
+
+  ### All star data (mass, diameter, temperature) must fit the respective parameter ranges given in StarData.tsv and StarTemp.tsv, unless a custom type is used
+  # Supported luminosity / spectral classes and subclasses (auto-detected by comparing given data with StarData.tsv):
+    # V (L0, M, K, G, F, A, B, O) - Main Sequence, automatically uses the main sequence rendering type (small convection zones and star spots)
+    # Vb (L) - Brown Dwarf, automatically uses the brown dwarf rendering type (random, dark cloud patches and large convection zones)
+    # Vc (T) - Cool Brown Dwarf, uses the cool brown dwarf rendering type (dark cloud bands, similar to gas giants)
+
+  ### Asteroids: The irregular body shape and craters are procedurally generated, the composition is approximated from the density
+  # This applies automatically when the following orbit path types are used: Asteroid, DwarfMoon, IrregularDwarfMoon

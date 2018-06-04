@@ -1,0 +1,12 @@
+planet:
+  rings:
+    - innerRadius: 14000.0
+      outerRadius: 16250.0
+      aTilt: 0.0
+      lNorth: 0.0
+      colorLookup: Planets/Arctos/ring1.png
+    - innerRadius: 22000.0
+      outerRadius: 24500.0
+      aTilt: 0.0
+      lNorth: 0.0
+      colorLookup: Planets/Arctos/ring2.png
