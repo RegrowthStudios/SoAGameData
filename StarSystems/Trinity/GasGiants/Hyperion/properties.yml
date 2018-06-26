@@ -1,4 +1,9 @@
 gasGiant:
+  diameter: 154190.0
+  mass: 9.7347e+27
+  aTilt: 0.55
+  lNorth: 27
+  rotationalPeriod: 7.916
   oblateness: 0.024
   colorMap: GasGiants/Hyperion/color.png
   atmosphere:

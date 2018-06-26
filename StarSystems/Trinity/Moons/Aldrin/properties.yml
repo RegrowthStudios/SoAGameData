@@ -1,4 +1,9 @@
 planet:
+  generation: Generator/Rocky/terrain_gen.yml
+  diameter: 9200.0
+  mass: 2.2694e+24
+  aTilt: 0.0
+  lNorth: 0.0
   atmosphere:
     scaleDepth: 0.25
     kr: 0.0025

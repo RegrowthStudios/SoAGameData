@@ -1,0 +1,95 @@
+biomes: "Generator/Rocky/biome_gen.yml"
+flora: "Generator/Rocky/flora.yml"
+trees: "Generator/Rocky/trees.yml"
+terrainColor: 
+  tint: [255, 255, 255]
+  colorPath: Generator/Rocky/TerrainColor.png
+  grassTexturePath: _shared/terrain_b.png
+  rockTexturePath: _shared/terrain_a.png
+liquidColor: 
+  depthScale: 30000.0
+  tint: [255, 255, 255]
+  freezeTemp: 88.0
+  colorPath: _shared/water_color.png
+  texturePath: _shared/water_a.png
+tempLatitudeFalloff: 350.0
+tempHeightFalloff: 5.0
+humLatitudeFalloff: 30.0
+humHeightFalloff: 1.0
+baseHeight:
+  base: 0
+  funcs:
+    # Tiny detail
+    - octaves: 8
+      persistence: 0.8
+      frequency: 0.15
+      low: -25.0
+      high: 25.0
+    # Large hills and lakes
+    - octaves: 7
+      persistence: 0.7
+      frequency: 0.012
+      low: -200.0
+      high: 400.0
+    # Mountains
+    - type: noise_cubed
+      op: mul
+      octaves: 7
+      persistence: 0.7
+      frequency: 0.002
+      low: -13.0
+      high: 13.0
+      clamp: [0.0, 1.0]
+      children:
+        - type: noise_cellular_squared
+          octaves: 3
+          persistence: 0.6
+          frequency: 0.05
+          low: -25000.0
+          high: 25000.0
+        - type: noise_ridged
+          octaves: 12
+          persistence: 0.5
+          frequency: 0.03
+          low:  0.0
+          high: 7500.0
+    # Oceans
+    - type: noise
+      op: mul
+      octaves: 7
+      persistence: 0.75
+      frequency: 0.00015
+      low: -5.0
+      high: 7.0
+      clamp: [0.0, 1.0]
+      children:
+        - type: noise
+          op: sub
+          octaves: 6
+          persistence: 0.9
+          frequency: 0.002
+  #        low: 10000.0
+  #        high: 20000.0
+temperature:
+  base: 220.0
+  funcs:
+    - octaves: 6
+      persistence: 0.75
+      frequency: 0.0005
+      low: -64.0
+      high: 64.0
+humidity:
+  base: 128.0
+  funcs:
+    - octaves: 6
+      persistence: 0.75
+      frequency: 0.0007
+      low: -178.0
+      high: 178.0
+blockLayers:
+  dirt:
+    width: 10
+    surface: grass
+  stone:
+    width: 10
+     
