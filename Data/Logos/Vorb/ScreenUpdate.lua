@@ -6,7 +6,7 @@ Access to window size is provided:
 
 -- A slowing-down tween
 function lerpSlowdown(a, b, t)
-  local newT = math.pow(t, 1 / 6.0)
+  local newT = t^(1 / 6.0)
   return (b - a) * newT + a
 end
 
