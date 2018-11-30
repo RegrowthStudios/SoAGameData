@@ -3,7 +3,6 @@ function UIPrint(_, x, y, button, clicks)
     C_Print(tostring(x + y))
     C_Print(button)
 end
-RegisterFunction("UIPrint")
 
 local viewport = UI.View.port
 
