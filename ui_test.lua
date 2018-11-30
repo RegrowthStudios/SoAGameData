@@ -3,6 +3,7 @@ function UIPrint(_, x, y, button, clicks)
     C_Print(tostring(x + y))
     C_Print(button)
 end
+RegisterFunction("UIPrint")
 
 local viewport = UI.View.port
 
@@ -90,7 +91,7 @@ UI.Button.setText(button, "Click Me!")
 UI.Button.setTextScale(button, 0.65, 0.65)
 UI.Button.setTextAlign(button, Graphics.TextAlign.CENTER)
 
-UI.Button.onMouseClick("button_print", "UIPrint", button)
+UI.Button.onMouseClick(button, "UIPrint")
 
 
 
