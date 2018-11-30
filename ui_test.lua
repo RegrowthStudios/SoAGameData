@@ -90,7 +90,7 @@ UI.Button.setText(button, "Click Me!")
 UI.Button.setTextScale(button, 0.65, 0.65)
 UI.Button.setTextAlign(button, Graphics.TextAlign.CENTER)
 
-UI.Button.onMouseClick(button, "UIPrint")
+UI.Button.onMouseClick.subscribe(button, "UIPrint")
 
 
 
