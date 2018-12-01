@@ -14,7 +14,7 @@ local totalLength = 6.0
 local finalFadeLength = 0.6
 
 -- Maximum duration of the screen
-Vorb.register("Regrowth.MaxDuration", function ()
+function RegrowthMaxDuration ()
   return totalLength
 end)
 
@@ -30,13 +30,13 @@ local function finalFade(totalTime)
 end
 
 -- Maximum duration of the screen
-Vorb.register("Regrowth.Scale", function ()
+function RegrowthScale ()
   scale = 0.8 * (WindowWidth / 1908.0)
   return scale
 end)
 
 -- Screen's background color
-Vorb.register("Regrowth.BackgroundColor", function (t)
+function RegrowthBackgroundColor (t)
   local val = math.max(0.0, 1.0 - t * 2.0)
   return val, val, val, 1.0
 end)
@@ -72,13 +72,11 @@ local colorFuncs = {
 }
 
 -- Obtain a texture position 
-function getTexturePos (totalTime, textureName)
+function RegrowthPositionAtTime (totalTime, textureName)
   return posFuncs[textureName](totalTime)
 end
-Vorb.register("Regrowth.PositionAtTime", getTexturePos)
 
 -- Obtain a texture color 
-function getTextureColor (totalTime, textureName)
+function RegrowthColorAtTime (totalTime, textureName)
   return colorFuncs[textureName](totalTime)
 end
-Vorb.register("Regrowth.ColorAtTime", getTextureColor)

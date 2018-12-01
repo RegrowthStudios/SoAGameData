@@ -14,14 +14,14 @@ local totalLength = 6.0
 local finalFadeLength = 1.0
 
 -- Maximum duration of the screen
-Vorb.register("Vorb.MaxDuration", function ()
-  return totalLength
-end)
+function VorbMaxDuration()
+    return totalLength
+end
 
 -- Screen's background color
-Vorb.register("Vorb.BackgroundColor", function (t)
+function VorbBackgroundColor (t)
   return 1.0, 1.0, 1.0, 1.0
-end)
+end
 
 -- Amount of time before cube is visible
 local cubeEntranceTimeOffset = 1.0
@@ -114,13 +114,11 @@ local colorFuncs = {
 }
 
 -- Obtain a texture position 
-function getTexturePos (totalTime, textureName)
+function VorbPositionAtTime (totalTime, textureName)
   return posFuncs[textureName](totalTime)
 end
-Vorb.register("Vorb.PositionAtTime", getTexturePos)
 
 -- Obtain a texture color 
-function getTextureColor (totalTime, textureName)
+function VorbColorAtTime (totalTime, textureName)
   return colorFuncs[textureName](totalTime)
 end
-Vorb.register("Vorb.ColorAtTime", getTextureColor)
