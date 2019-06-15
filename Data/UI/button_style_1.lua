@@ -12,7 +12,7 @@ local bra = 0
 local bhlr = 255
 local bhlg = 255
 local bhlb = 255
-local grad = GradientType.HORIZONTAL
+local grad = Graphics.GradientType.HORIZONTAL
 -- Text
 local tr = 255
 local tg = 255
