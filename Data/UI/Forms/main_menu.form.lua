@@ -1,8 +1,9 @@
+local viewport=UI.View.port
+
 function onNew(_, x, y, button, clicks)
+    UI.disableView(viewport)
     newGame()
 end
-
-local viewport=UI.View.port
 
 UI.Viewport.setRawSize(viewport, 1.0, UI.DimensionType.WINDOW_WIDTH_PERCENTAGE, 1.0, UI.DimensionType.WINDOW_HEIGHT_PERCENTAGE)
 
