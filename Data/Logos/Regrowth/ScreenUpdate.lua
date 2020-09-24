@@ -16,7 +16,7 @@ local finalFadeLength = 0.6
 -- Maximum duration of the screen
 function RegrowthMaxDuration ()
   return totalLength
-end)
+end
 
 local scale
 -- Texture dimensions
@@ -33,13 +33,13 @@ end
 function RegrowthScale ()
   scale = 0.8 * (WindowWidth / 1908.0)
   return scale
-end)
+end
 
 -- Screen's background color
 function RegrowthBackgroundColor (t)
   local val = math.max(0.0, 1.0 - t * 2.0)
   return val, val, val, 1.0
-end)
+end
 
 -- Individual pos/color update functions
 local function posR (totalTime)
