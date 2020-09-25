@@ -3,8 +3,11 @@ profiles:
   - name: "test_profile"
     createdTimestamp: "2020"
     lastModifiedTimestamp: "2021"
-    mods: [ "test", "test2" ]
+    mods:
+      - "test"
+      - "test2"
   - name: "other_profile"
     createdTimestamp: "2010"
     lastModifiedTimestamp: "2011"
-    mods: [ "other" ]
+    mods:
+      - "other"
