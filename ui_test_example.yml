@@ -1,75 +1,75 @@
-name: NAME_OF_VIEWPORT
-size: [400, 500]
-position: [300, 200]
-padding: [0, 0, 0, 0]
-clipping:
-  left: hidden
-  top: hidden
-  right: hidden
-  bottom: hidden
-z_index: 1
-dock:
-  state: none
-  size: 0.0
-child_offset: [20, 0]
-positioning: static_to_window
-raw_dimensions:
-  position:
-    x: 20
-    y: 30
-    dim_x: pixel
-    dim_y: pixel
-  size:
-    x: 0.3
-    y: 0.45
+NAME_OF_VIEWPORT
+  size: [400, 500]
+  position: [300, 200]
+  padding: [0, 0, 0, 0]
+  clipping:
+    left: hidden
+    top: hidden
+    right: hidden
+    bottom: hidden
+  z_index: 1
+  dock:
+    state: none
+    size: 0.0
+  child_offset: [20, 0]
+  positioning: static_to_window
+  raw_dimensions:
+    position:
+      x: 20
+      y: 30
+      dim_x: pixel
+      dim_y: pixel
+    size:
+      x: 0.3
+      y: 0.45
+      dim_x: window_width_percentage
+      dim_y: window_height_percentage
+  raw_rel_pos:
+    left:
+      x: 0.1
+      dim_x: window_width_percentage
+    top:
+      x: 0.1
+      dim_x: window_width_percentage
+    right:
+      x: 0.1
+      dim_x: window_width_percentage
+    bottom:
+      x: 0.1
+      dim_x: window_width_percentage
+  raw_min_size:
+    x: 0.2
+    y: 0.3
     dim_x: window_width_percentage
     dim_y: window_height_percentage
-raw_rel_pos:
-  left:
+  raw_max_size:
+    x: 0.4
+    y: 0.6
+    dim_x: window_width_percentage
+    dim_y: window_height_percentage
+  raw_dock_size:
     x: 0.1
     dim_x: window_width_percentage
-  top:
-    x: 0.1
+  raw_padding:
+    x: 0.4
+    y: 0.6
+    z: 0.4
+    w: 0.6
     dim_x: window_width_percentage
-  right:
-    x: 0.1
-    dim_x: window_width_percentage
-  bottom:
-    x: 0.1
-    dim_x: window_width_percentage
-raw_min_size:
-  x: 0.2
-  y: 0.3
-  dim_x: window_width_percentage
-  dim_y: window_height_percentage
-raw_max_size:
-  x: 0.4
-  y: 0.6
-  dim_x: window_width_percentage
-  dim_y: window_height_percentage
-raw_dock_size:
-  x: 0.1
-  dim_x: window_width_percentage
-raw_padding:
-  x: 0.4
-  y: 0.6
-  z: 0.4
-  w: 0.6
-  dim_x: window_width_percentage
-  dim_y: window_height_percentage
-  dim_z: window_width_percentage
-  dim_w: window_height_percentage
-widgets:
-  NAME_OF_WIDGET_KIND: relpath/to/another/yaml.yml
-  panel:
-    name: NAME_OF_WIDGET
-    size: [400, 500]
-    position: [300, 200]
-    padding: [0, 0, 0, 0]
-    clipping:
-      left: hidden
-      top: hidden
-      right: hidden
-      bottom: hidden
-    z_index: 1
-    ...
+    dim_y: window_height_percentage
+    dim_z: window_width_percentage
+    dim_w: window_height_percentage
+  widgets:
+    NAME_OF_WIDGET_KIND: relpath/to/another/yaml.yml
+    panel:
+      name: NAME_OF_WIDGET
+      size: [400, 500]
+      position: [300, 200]
+      padding: [0, 0, 0, 0]
+      clipping:
+        left: hidden
+        top: hidden
+        right: hidden
+        bottom: hidden
+      z_index: 1
+      ...

@@ -1,38 +1,49 @@
-name: NAME_OF_VIEWPORT
-  size: [400, 500]
-  position: [300, 200]
-  padding: [0, 0, 0, 0]
-  clipping:
-    left: hidden
-    top: hidden
-    right: hidden
-    bottom: hidden
-  z_index: 1
-  dock:
-    state: NONE
-    size: 0.0
-  child_offset: [20, 0]
-  positioning: static_to_window
-  raw_padding:
-    x: 0.4
-    y: 0.6
-    z: 0.4
-    w: 0.6
-    dim_x: window_width_percentage
-    dim_y: window_height_percentage
-    dim_z: window_width_percentage
-    dim_w: window_height_percentage
-  widgets:
-    NAME_OF_WIDGET: relpath/to/another/yaml.yml
-    NAME_OF_ANOTHER_WIDGET:
-      kind: panel
-      size: [400, 500]
-      position: [300, 200]
-      padding: [0, 0, 0, 0]
-      clipping:
-        left: hidden
-        top: hidden
-        right: hidden
-        bottom: hidden
-      z_index: 1
-      
+size: [400, 500]
+position: [300, 200]
+padding: [0, 0, 0, 0]
+clipping:
+  left: hidden
+  top: hidden
+  right: hidden
+  bottom: hidden
+z_index: 1
+dock:
+  state: NONE
+  size: 0.0
+child_offset: [20, 0]
+positioning: static_to_window
+raw_padding:
+  x: 0.4
+  y: 0.6
+  z: 0.4
+  w: 0.6
+  dim_x: window_width_percentage
+  dim_y: window_height_percentage
+  dim_z: window_width_percentage
+  dim_w: window_height_percentage
+widgets:
+  panel:
+    kind: panel
+    size: [100, 80]
+    position: [200, 100]
+    padding: [0, 0, 0, 0]
+    bg_color: [200, 40, 30, 255]
+    clipping:
+      left: hidden
+      top: hidden
+      right: hidden
+      bottom: hidden
+    z_index: 1
+  panel:
+    kind: panel
+    size: [140, 150]
+    position: [300, 200]
+    padding: [0, 0, 0, 0]
+    bg_color: [0, 255, 0, 255]
+    clipping:
+      left: hidden
+      top: hidden
+      right: hidden
+      bottom: hidden
+    z_index: 1
+    
