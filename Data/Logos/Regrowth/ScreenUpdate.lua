@@ -1,7 +1,7 @@
 --[[
 Access to window size is provided:
- * (Number) WindowWidth
- * (Number) WindowHeight
+ * (Number) Window.Width
+ * (Number) Window.Height
 ]]--
 
 -- A slowing-down tween
@@ -31,7 +31,7 @@ end
 
 -- Maximum duration of the screen
 function RegrowthScale ()
-  scale = 0.8 * (WindowWidth / 1908.0)
+  scale = 0.8 * (Window.Width / 1908.0)
   return scale
 end
 
@@ -43,7 +43,7 @@ end
 
 -- Individual pos/color update functions
 local function posR (totalTime)
-  return (-rWidth * scale + WindowWidth) / 2.0, (-rHeight * scale + WindowHeight) / 2.5
+  return (-rWidth * scale + Window.Width) / 2.0, (-rHeight * scale + Window.Height) / 2.5
 end
 local function colorR (totalTime)
   local opacity = math.min(finalFade(totalTime), math.max(0.0, (totalTime - 0.5) / 1.0))

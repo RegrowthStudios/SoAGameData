@@ -1,7 +1,7 @@
 --[[
 Access to window size is provided:
- * (Number) WindowWidth
- * (Number) WindowHeight
+ * (Number) Window.Width
+ * (Number) Window.Height
 ]]--
 
 -- A slowing-down tween
@@ -26,8 +26,8 @@ end
 -- Amount of time before cube is visible
 local cubeEntranceTimeOffset = 1.0
 local cubeOffscreenDelta = -500.0
-local globalOffsetX = (WindowWidth - 661) / 2.0
-local globalOffsetY = (WindowHeight - 161) / 2.0
+local globalOffsetX = (Window.Width - 661) / 2.0
+local globalOffsetY = (Window.Height - 161) / 2.0
 
 local function finalFade(totalTime)
   return math.max(0.0, math.min(1.0, (totalLength - totalTime) / finalFadeLength))
