@@ -12,7 +12,7 @@ local bra = 0
 local bhlr = 255
 local bhlg = 255
 local bhlb = 255
-local grad = GradientType.HORIZONTAL
+local grad = Graphics.GradientType.HORIZONTAL
 -- Text
 local tr = 255
 local tg = 255
@@ -31,14 +31,14 @@ function ButtonStyle.set(b, text)
   Button.setBackHoverColor(b, bhlr, bhlg, bhlb, bla);
   Button.setText(b, text)
   Button.setTextScale(b, ts, ts)
-  Button.setTextAlign(b, TextAlign.LEFT)
+  Button.setTextAlign(b, Graphics.TextAlign.LEFT)
 end
 
 function ButtonStyle.make(name, text, callback)
-  local b = Form.makeButton(this, name, 0, 0, 300, 50)
+  local b = UI.View.makeButton(this, name, 0, 0, 300, 50)
   ButtonStyle.set(b, text)
   if string.len(callback) > 0 then
-    Button.addCallback(b, EventType.MOUSE_CLICK, callback)
+    UI.Button.onMouseClick.subscribe(b, callback)
   end
   return b
 end

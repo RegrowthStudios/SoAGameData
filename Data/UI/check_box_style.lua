@@ -21,10 +21,10 @@ function CheckBoxStyle.setDisabled(c, text)
 end
 
 function CheckBoxStyle.make(name, text, callback)
-  local c = Form.makeCheckBox(this, name, 0, 0, 30, 30)
+  local c = UI.View.makeCheckBox(this, name, 0, 0, 30, 30)
   CheckBoxStyle.set(c, text)
   if string.len(callback) > 0 then
-    CheckBox.addCallback(c, EventType.VALUE_CHANGE, callback)
+    UI.CheckBox.onValueChange.subscribe(c, callback)
   end
   return c
 end

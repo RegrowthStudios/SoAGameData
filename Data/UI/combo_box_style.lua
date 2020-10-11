@@ -20,11 +20,11 @@ function ComboBoxStyle.setDisabled(c)
 end
 
 function ComboBoxStyle.make(name, text, callback)
-  local c = Form.makeComboBox(this, name, 0, 0, 170, 40)
+  local c = UI.View.makeComboBox(this, name, 0, 0, 170, 40)
   ComboBoxStyle.set(c)
   ComboBox.setText(c, text)
   if string.len(callback) > 0 then
-     ComboBox.addCallback(c, EventType.VALUE_CHANGE, callback)
+     UI.ComboBox.onValueChange.subscribe(c, callback)
   end
   return c
 end

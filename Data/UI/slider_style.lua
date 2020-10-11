@@ -8,11 +8,11 @@ function SliderStyle.set(s)
 end
 
 function SliderStyle.make(name, rMin, rMax, callback)
-  local s = Form.makeSlider(this, name, 0, 0, 100, 15)
+  local s = UI.View.makeSlider(this, name, 0, 0, 100, 15)
   SliderStyle.set(s)
   Slider.setRange(s, rMin, rMax)
   if string.len(callback) > 0 then
-    Slider.addCallback(s, EventType.VALUE_CHANGE, callback)
+    UI.Slider.onValueChange.subscribe(s, callback)
   end
   return s
 end
