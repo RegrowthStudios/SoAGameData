@@ -4,6 +4,8 @@ function doPrint(_, a)
     onMessage.unsubscribe("doPrint");
 end
 
+xyz = "hello"
+
 onMessage.subscribe("doPrint")
 
 C_Print(tostring(C_Add(1, 5)))
