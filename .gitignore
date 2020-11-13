@@ -23,3 +23,6 @@ desktop.ini
 app.config
 PDA_UI/
 MainMenu_UI/
+
+# VS Code
+.vscode/
